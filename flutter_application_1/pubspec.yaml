@@ -43,6 +43,7 @@ dependencies:
   xml: ^6.5.0
   webview_flutter: ^4.4.4
   path_parsing: ^1.0.1
+  flutter_colorpicker: ^1.0.3
 
 dev_dependencies:
   flutter_test:
@@ -73,6 +74,7 @@ flutter:
   assets:
     - assets/car_front.svg
     - assets/image_2.svg
+    - assets/image_3.svg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

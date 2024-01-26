@@ -1,104 +1,502 @@
 import 'package:flutter/material.dart';
 
+//Add this CustomPaint widget to the Widget Tree
+//Copy this CustomPainter code to the Bottom of the File
 class RPSCustomPainter extends CustomPainter {
+  Path? _path;
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
-    path_0.moveTo(2411, 553.3);
-    path_0.cubicTo(2440.43, 584.17, 2457.17, 628.05, 2456.12, 672.53);
-    path_0.cubicTo(2455.22, 710.81, 2440.88, 744.43, 2416.78, 764.74);
-    path_0.cubicTo(2364.44, 808.87, 2306.78, 816.89, 2223.9, 791.63);
-    path_0.cubicTo(2205.68, 786.07, 2186.9, 792.57, 2178.16, 807.42);
-    path_0.cubicTo(2166.79, 826.82, 2136.24, 873.84, 2098.1, 891.52);
-    path_0.cubicTo(2050.16, 913.76, 1997.42, 886.86, 1996.91, 886.59);
-    path_0.cubicTo(1996.59, 886.414, 1996.25, 886.26, 1995.91, 886.13);
-    path_0.lineTo(1988.12, 883.31);
-    path_0.lineTo(1984.86, 881.31);
-    path_0.lineTo(1980.27, 836.68);
-    path_0.cubicTo(1979.99, 834.026, 1978.72, 831.575, 1976.72, 829.81);
-    path_0.cubicTo(1972.26, 825.89, 1968.02, 821.866, 1963.99, 817.74);
-    path_0.cubicTo(1949.49, 799.15, 1926.32, 764.85, 1921.43, 730.4);
-    path_0.cubicTo(1918.9, 712.57, 1921.27, 694.7, 1932.28, 678.93);
-    path_0.cubicTo(1960.6, 638.37, 2017.28, 624.3, 2100.82, 637.13);
-    path_0.cubicTo(2108.87, 638.342, 2117.09, 637.451, 2124.7, 634.542);
-    path_0.cubicTo(2132.3, 631.633, 2139.02, 626.806, 2144.2, 620.53);
-    path_0.lineTo(2247.3, 537.75);
-    path_0.cubicTo(2249.76, 536.46, 2341.83, 488.75, 2404.54, 546.92);
-    path_0.cubicTo(2406.71, 548.973, 2408.86, 551.1, 2411, 553.3);
+    path_0.moveTo(size.width * 0.7238067, size.height * 0.1788300);
+    path_0.cubicTo(
+        size.width * 0.7326418,
+        size.height * 0.1888074,
+        size.width * 0.7376674,
+        size.height * 0.2029897,
+        size.width * 0.7373521,
+        size.height * 0.2173659);
+    path_0.cubicTo(
+        size.width * 0.7370820,
+        size.height * 0.2297382,
+        size.width * 0.7327769,
+        size.height * 0.2406044,
+        size.width * 0.7255419,
+        size.height * 0.2471687);
+    path_0.cubicTo(
+        size.width * 0.7098289,
+        size.height * 0.2614318,
+        size.width * 0.6925188,
+        size.height * 0.2640239,
+        size.width * 0.6676373,
+        size.height * 0.2558597);
+    path_0.cubicTo(
+        size.width * 0.6621675,
+        size.height * 0.2540627,
+        size.width * 0.6565296,
+        size.height * 0.2561635,
+        size.width * 0.6539057,
+        size.height * 0.2609632);
+    path_0.cubicTo(
+        size.width * 0.6504923,
+        size.height * 0.2672334,
+        size.width * 0.6413209,
+        size.height * 0.2824305,
+        size.width * 0.6298709,
+        size.height * 0.2881448);
+    path_0.cubicTo(
+        size.width * 0.6154788,
+        size.height * 0.2953329,
+        size.width * 0.5996458,
+        size.height * 0.2866387,
+        size.width * 0.5994926,
+        size.height * 0.2865514);
+    path_0.cubicTo(
+        size.width * 0.5993966,
+        size.height * 0.2864945,
+        size.width * 0.5992945,
+        size.height * 0.2864447,
+        size.width * 0.5991924,
+        size.height * 0.2864027);
+    path_0.lineTo(size.width * 0.5968538, size.height * 0.2854913);
+    path_0.lineTo(size.width * 0.5958751, size.height * 0.2848449);
+    path_0.lineTo(size.width * 0.5944971, size.height * 0.2704202);
+    path_0.cubicTo(
+        size.width * 0.5944131,
+        size.height * 0.2695624,
+        size.width * 0.5940318,
+        size.height * 0.2687702,
+        size.width * 0.5934314,
+        size.height * 0.2681997);
+    path_0.cubicTo(
+        size.width * 0.5920925,
+        size.height * 0.2669328,
+        size.width * 0.5908196,
+        size.height * 0.2656322,
+        size.width * 0.5896097,
+        size.height * 0.2642986);
+    path_0.cubicTo(
+        size.width * 0.5852567,
+        size.height * 0.2582902,
+        size.width * 0.5783008,
+        size.height * 0.2472043,
+        size.width * 0.5768328,
+        size.height * 0.2360698);
+    path_0.cubicTo(
+        size.width * 0.5760733,
+        size.height * 0.2303070,
+        size.width * 0.5767847,
+        size.height * 0.2245314,
+        size.width * 0.5800901,
+        size.height * 0.2194344);
+    path_0.cubicTo(
+        size.width * 0.5885920,
+        size.height * 0.2063251,
+        size.width * 0.6056079,
+        size.height * 0.2017776,
+        size.width * 0.6306875,
+        size.height * 0.2059244);
+    path_0.cubicTo(
+        size.width * 0.6331042,
+        size.height * 0.2063161,
+        size.width * 0.6355719,
+        size.height * 0.2060281,
+        size.width * 0.6378565,
+        size.height * 0.2050879);
+    path_0.cubicTo(
+        size.width * 0.6401381,
+        size.height * 0.2041477,
+        size.width * 0.6421555,
+        size.height * 0.2025876,
+        size.width * 0.6437106,
+        size.height * 0.2005591);
+    path_0.lineTo(size.width * 0.6746623, size.height * 0.1738041);
+    path_0.cubicTo(
+        size.width * 0.6754008,
+        size.height * 0.1733872,
+        size.width * 0.7030411,
+        size.height * 0.1579670,
+        size.width * 0.7218673,
+        size.height * 0.1767679);
+    path_0.cubicTo(
+        size.width * 0.7225188,
+        size.height * 0.1774315,
+        size.width * 0.7231642,
+        size.height * 0.1781189,
+        size.width * 0.7238067,
+        size.height * 0.1788300);
     path_0.close();
-    path_0.moveTo(2383.68, 726);
-    path_0.cubicTo(2387.25, 720.37, 2383.17, 719, 2376.09, 719.73);
-    path_0.cubicTo(2377.74, 710.982, 2376.79, 701.945, 2373.36, 693.73);
-    path_0.lineTo(2366, 675.9);
-    path_0.cubicTo(2365.32, 673.681, 2364.5, 671.509, 2363.53, 669.4);
-    path_0.lineTo(2361.11, 664.13);
-    path_0.lineTo(2348.11, 632.83);
-    path_0.cubicTo(2345.7, 627.013, 2342.12, 621.757, 2337.58, 617.389);
-    path_0.cubicTo(2333.05, 613.022, 2327.66, 609.638, 2321.76, 607.45);
-    path_0.cubicTo(2321.29, 607.22, 2320.76, 607, 2320.32, 606.79);
-    path_0.cubicTo(2326.22, 598.692, 2331.7, 590.291, 2336.72, 581.62);
-    path_0.cubicTo(2338.72, 578.39, 2334.36, 574.62, 2331.41, 576.96);
-    path_0.cubicTo(2300.61, 601.14, 2273.81, 629.88, 2249.18, 660.06);
-    path_0.lineTo(2244.61, 665.84);
-    path_0.cubicTo(2240.05, 663.27, 2235.53, 658.6, 2230.87, 655.27);
-    path_0.cubicTo(2228.17, 652.75, 2223.59, 655.96, 2225.14, 659.39);
-    path_0.cubicTo(2229.3, 668.1, 2234.14, 679.87, 2245.01, 682.95);
-    path_0.cubicTo(2246.39, 683.212, 2247.81, 683.196, 2249.18, 682.904);
-    path_0.cubicTo(2250.55, 682.612, 2251.86, 682.05, 2253.01, 681.25);
-    path_0.lineTo(2253.52, 680.84);
-    path_0.lineTo(2263.93, 703.55);
-    path_0.lineTo(2276.54, 733.92);
-    path_0.cubicTo(2280.6, 743.722, 2287.94, 751.808, 2297.3, 756.79);
-    path_0.cubicTo(2296.59, 757.53, 2295.89, 758.28, 2295.2, 759.04);
-    path_0.cubicTo(2294.72, 759.613, 2294.41, 760.316, 2294.32, 761.062);
-    path_0.cubicTo(2294.23, 761.807, 2294.36, 762.563, 2294.69, 763.236);
-    path_0.cubicTo(2295.03, 763.909, 2295.55, 764.469, 2296.2, 764.848);
-    path_0.cubicTo(2296.85, 765.227, 2297.59, 765.409, 2298.34, 765.37);
-    path_0.cubicTo(2306.82, 764.84, 2314.53, 762.77, 2322.06, 760.37);
-    path_0.cubicTo(2344.42, 752.525, 2365.26, 740.899, 2383.68, 726);
+    path_0.moveTo(size.width * 0.7156049, size.height * 0.2346477);
+    path_0.cubicTo(
+        size.width * 0.7166767,
+        size.height * 0.2328281,
+        size.width * 0.7154518,
+        size.height * 0.2323853,
+        size.width * 0.7133263,
+        size.height * 0.2326212);
+    path_0.cubicTo(
+        size.width * 0.7138217,
+        size.height * 0.2297938,
+        size.width * 0.7135365,
+        size.height * 0.2268730,
+        size.width * 0.7125068,
+        size.height * 0.2242178);
+    path_0.lineTo(size.width * 0.7102972, size.height * 0.2184551);
+    path_0.cubicTo(
+        size.width * 0.7100931,
+        size.height * 0.2177379,
+        size.width * 0.7098469,
+        size.height * 0.2170359,
+        size.width * 0.7095557,
+        size.height * 0.2163542);
+    path_0.lineTo(size.width * 0.7088292, size.height * 0.2146509);
+    path_0.lineTo(size.width * 0.7049264, size.height * 0.2045346);
+    path_0.cubicTo(
+        size.width * 0.7042029,
+        size.height * 0.2026545,
+        size.width * 0.7031282,
+        size.height * 0.2009557,
+        size.width * 0.7017652,
+        size.height * 0.1995440);
+    path_0.cubicTo(
+        size.width * 0.7004053,
+        size.height * 0.1981325,
+        size.width * 0.6987872,
+        size.height * 0.1970388,
+        size.width * 0.6970159,
+        size.height * 0.1963316);
+    path_0.cubicTo(
+        size.width * 0.6968748,
+        size.height * 0.1962573,
+        size.width * 0.6967157,
+        size.height * 0.1961862,
+        size.width * 0.6965836,
+        size.height * 0.1961183);
+    path_0.cubicTo(
+        size.width * 0.6983548,
+        size.height * 0.1935010,
+        size.width * 0.7000000,
+        size.height * 0.1907857,
+        size.width * 0.7015071,
+        size.height * 0.1879832);
+    path_0.cubicTo(
+        size.width * 0.7021075,
+        size.height * 0.1869392,
+        size.width * 0.7007986,
+        size.height * 0.1857207,
+        size.width * 0.6999129,
+        size.height * 0.1864771);
+    path_0.cubicTo(
+        size.width * 0.6906665,
+        size.height * 0.1942922,
+        size.width * 0.6826208,
+        size.height * 0.2035811,
+        size.width * 0.6752267,
+        size.height * 0.2133355);
+    path_0.lineTo(size.width * 0.6738547, size.height * 0.2152036);
+    path_0.cubicTo(
+        size.width * 0.6724857,
+        size.height * 0.2143730,
+        size.width * 0.6711288,
+        size.height * 0.2128636,
+        size.width * 0.6697298,
+        size.height * 0.2117873);
+    path_0.cubicTo(
+        size.width * 0.6689192,
+        size.height * 0.2109729,
+        size.width * 0.6675443,
+        size.height * 0.2120103,
+        size.width * 0.6680096,
+        size.height * 0.2131189);
+    path_0.cubicTo(
+        size.width * 0.6692585,
+        size.height * 0.2159341,
+        size.width * 0.6707115,
+        size.height * 0.2197382,
+        size.width * 0.6739748,
+        size.height * 0.2207337);
+    path_0.cubicTo(
+        size.width * 0.6743891,
+        size.height * 0.2208184,
+        size.width * 0.6748154,
+        size.height * 0.2208132,
+        size.width * 0.6752267,
+        size.height * 0.2207188);
+    path_0.cubicTo(
+        size.width * 0.6756379,
+        size.height * 0.2206244,
+        size.width * 0.6760312,
+        size.height * 0.2204428,
+        size.width * 0.6763765,
+        size.height * 0.2201842);
+    path_0.lineTo(size.width * 0.6765296, size.height * 0.2200517);
+    path_0.lineTo(size.width * 0.6796548, size.height * 0.2273917);
+    path_0.lineTo(size.width * 0.6834404, size.height * 0.2372075);
+    path_0.cubicTo(
+        size.width * 0.6846593,
+        size.height * 0.2403756,
+        size.width * 0.6868628,
+        size.height * 0.2429890,
+        size.width * 0.6896728,
+        size.height * 0.2445992);
+    path_0.cubicTo(
+        size.width * 0.6894596,
+        size.height * 0.2448384,
+        size.width * 0.6892495,
+        size.height * 0.2450808,
+        size.width * 0.6890423,
+        size.height * 0.2453264);
+    path_0.cubicTo(
+        size.width * 0.6888982,
+        size.height * 0.2455116,
+        size.width * 0.6888052,
+        size.height * 0.2457388,
+        size.width * 0.6887781,
+        size.height * 0.2459800);
+    path_0.cubicTo(
+        size.width * 0.6887511,
+        size.height * 0.2462207,
+        size.width * 0.6887902,
+        size.height * 0.2464651,
+        size.width * 0.6888892,
+        size.height * 0.2466826);
+    path_0.cubicTo(
+        size.width * 0.6889913,
+        size.height * 0.2469001,
+        size.width * 0.6891474,
+        size.height * 0.2470811,
+        size.width * 0.6893425,
+        size.height * 0.2472036);
+    path_0.cubicTo(
+        size.width * 0.6895377,
+        size.height * 0.2473261,
+        size.width * 0.6897598,
+        size.height * 0.2473849,
+        size.width * 0.6899850,
+        size.height * 0.2473723);
+    path_0.cubicTo(
+        size.width * 0.6925308,
+        size.height * 0.2472010,
+        size.width * 0.6948454,
+        size.height * 0.2465320,
+        size.width * 0.6971060,
+        size.height * 0.2457563);
+    path_0.cubicTo(
+        size.width * 0.7038187,
+        size.height * 0.2432207,
+        size.width * 0.7100751,
+        size.height * 0.2394632,
+        size.width * 0.7156049,
+        size.height * 0.2346477);
     path_0.close();
-    path_0.moveTo(2098, 832.83);
-    path_0.cubicTo(2100.69, 830.77, 2099, 826.07, 2095.6, 826.19);
-    path_0.cubicTo(2092.81, 826.25, 2090.02, 826.457, 2087.25, 826.81);
-    path_0.cubicTo(2087.34, 825.63, 2087.39, 824.45, 2087.39, 823.26);
-    path_0.cubicTo(2087.38, 816.993, 2086.13, 810.791, 2083.71, 805.01);
-    path_0.lineTo(2061.25, 750.91);
-    path_0.cubicTo(2072.11, 748.69, 2070.5, 735.39, 2067.2, 727.63);
-    path_0.cubicTo(2066.92, 726.94, 2066.44, 726.348, 2065.83, 725.926);
-    path_0.cubicTo(2065.21, 725.505, 2064.49, 725.273, 2063.74, 725.259);
-    path_0.cubicTo(2063, 725.245, 2062.27, 725.45, 2061.64, 725.848);
-    path_0.cubicTo(2061.01, 726.247, 2060.51, 726.821, 2060.2, 727.5);
-    path_0.cubicTo(2059.56, 728.77, 2058.45, 731.5, 2057.41, 733.72);
-    path_0.cubicTo(2036.71, 728.004, 2015.5, 724.283, 1994.09, 722.61);
-    path_0.cubicTo(1984.55, 721.805, 1974.97, 721.671, 1965.41, 722.21);
-    path_0.cubicTo(1961.82, 722.34, 1960.75, 727.63, 1964.04, 729.14);
-    path_0.cubicTo(1970.22, 732.111, 1976.56, 734.732, 1983.04, 736.99);
-    path_0.cubicTo(1972.19, 749.45, 1968.8, 767.99, 1975.82, 784.88);
-    path_0.lineTo(1998.82, 840.24);
-    path_0.cubicTo(2002.66, 849.57, 2009.39, 857.421, 2018.02, 862.64);
-    path_0.cubicTo(2017.56, 863.19, 2017.11, 863.74, 2016.67, 864.31);
-    path_0.cubicTo(2016.24, 864.91, 2015.99, 865.619, 2015.95, 866.356);
-    path_0.cubicTo(2015.91, 867.092, 2016.08, 867.826, 2016.43, 868.471);
-    path_0.cubicTo(2016.79, 869.116, 2017.33, 869.646, 2017.97, 870);
-    path_0.cubicTo(2018.62, 870.354, 2019.35, 870.517, 2020.09, 870.47);
-    path_0.cubicTo(2027.56, 869.717, 2034.91, 867.999, 2041.94, 865.36);
-    path_0.cubicTo(2062.24, 857.57, 2081.16, 846.588, 2098, 832.83);
+    path_0.moveTo(size.width * 0.6298409, size.height * 0.2691758);
+    path_0.cubicTo(
+        size.width * 0.6306485,
+        size.height * 0.2685100,
+        size.width * 0.6301411,
+        size.height * 0.2669910,
+        size.width * 0.6291204,
+        size.height * 0.2670297);
+    path_0.cubicTo(
+        size.width * 0.6282828,
+        size.height * 0.2670491,
+        size.width * 0.6274452,
+        size.height * 0.2671160,
+        size.width * 0.6266136,
+        size.height * 0.2672301);
+    path_0.cubicTo(
+        size.width * 0.6266406,
+        size.height * 0.2668487,
+        size.width * 0.6266557,
+        size.height * 0.2664674,
+        size.width * 0.6266557,
+        size.height * 0.2660827);
+    path_0.cubicTo(
+        size.width * 0.6266527,
+        size.height * 0.2640572,
+        size.width * 0.6262774,
+        size.height * 0.2620527,
+        size.width * 0.6255509,
+        size.height * 0.2601842);
+    path_0.lineTo(size.width * 0.6188082, size.height * 0.2426988);
+    path_0.cubicTo(
+        size.width * 0.6220684,
+        size.height * 0.2419813,
+        size.width * 0.6215851,
+        size.height * 0.2376826,
+        size.width * 0.6205944,
+        size.height * 0.2351745);
+    path_0.cubicTo(
+        size.width * 0.6205104,
+        size.height * 0.2349515,
+        size.width * 0.6203663,
+        size.height * 0.2347602,
+        size.width * 0.6201831,
+        size.height * 0.2346238);
+    path_0.cubicTo(
+        size.width * 0.6199970,
+        size.height * 0.2344877,
+        size.width * 0.6197808,
+        size.height * 0.2344127,
+        size.width * 0.6195557,
+        size.height * 0.2344082);
+    path_0.cubicTo(
+        size.width * 0.6193335,
+        size.height * 0.2344037,
+        size.width * 0.6191144,
+        size.height * 0.2344699,
+        size.width * 0.6189252,
+        size.height * 0.2345986);
+    path_0.cubicTo(
+        size.width * 0.6187361,
+        size.height * 0.2347275,
+        size.width * 0.6185860,
+        size.height * 0.2349131,
+        size.width * 0.6184929,
+        size.height * 0.2351325);
+    path_0.cubicTo(
+        size.width * 0.6183008,
+        size.height * 0.2355430,
+        size.width * 0.6179676,
+        size.height * 0.2364253,
+        size.width * 0.6176554,
+        size.height * 0.2371429);
+    path_0.cubicTo(
+        size.width * 0.6114410,
+        size.height * 0.2352954,
+        size.width * 0.6050736,
+        size.height * 0.2340928,
+        size.width * 0.5986461,
+        size.height * 0.2335520);
+    path_0.cubicTo(
+        size.width * 0.5957820,
+        size.height * 0.2332919,
+        size.width * 0.5929060,
+        size.height * 0.2332485,
+        size.width * 0.5900360,
+        size.height * 0.2334228);
+    path_0.cubicTo(
+        size.width * 0.5889583,
+        size.height * 0.2334648,
+        size.width * 0.5886370,
+        size.height * 0.2351745,
+        size.width * 0.5896247,
+        size.height * 0.2356626);
+    path_0.cubicTo(
+        size.width * 0.5914800,
+        size.height * 0.2366228,
+        size.width * 0.5933834,
+        size.height * 0.2374699,
+        size.width * 0.5953287,
+        size.height * 0.2381997);
+    path_0.cubicTo(
+        size.width * 0.5920715,
+        size.height * 0.2422269,
+        size.width * 0.5910537,
+        size.height * 0.2482191,
+        size.width * 0.5931612,
+        size.height * 0.2536781);
+    path_0.lineTo(size.width * 0.6000660, size.height * 0.2715708);
+    path_0.cubicTo(
+        size.width * 0.6012189,
+        size.height * 0.2745863,
+        size.width * 0.6032393,
+        size.height * 0.2771238,
+        size.width * 0.6058301,
+        size.height * 0.2788106);
+    path_0.cubicTo(
+        size.width * 0.6056920,
+        size.height * 0.2789884,
+        size.width * 0.6055569,
+        size.height * 0.2791661,
+        size.width * 0.6054248,
+        size.height * 0.2793504);
+    path_0.cubicTo(
+        size.width * 0.6052957,
+        size.height * 0.2795443,
+        size.width * 0.6052207,
+        size.height * 0.2797734,
+        size.width * 0.6052086,
+        size.height * 0.2800116);
+    path_0.cubicTo(
+        size.width * 0.6051966,
+        size.height * 0.2802495,
+        size.width * 0.6052477,
+        size.height * 0.2804867,
+        size.width * 0.6053527,
+        size.height * 0.2806952);
+    path_0.cubicTo(
+        size.width * 0.6054608,
+        size.height * 0.2809037,
+        size.width * 0.6056229,
+        size.height * 0.2810750,
+        size.width * 0.6058151,
+        size.height * 0.2811894);
+    path_0.cubicTo(
+        size.width * 0.6060102,
+        size.height * 0.2813038,
+        size.width * 0.6062294,
+        size.height * 0.2813565,
+        size.width * 0.6064515,
+        size.height * 0.2813413);
+    path_0.cubicTo(
+        size.width * 0.6086941,
+        size.height * 0.2810979,
+        size.width * 0.6109006,
+        size.height * 0.2805427,
+        size.width * 0.6130111,
+        size.height * 0.2796897);
+    path_0.cubicTo(
+        size.width * 0.6191054,
+        size.height * 0.2771719,
+        size.width * 0.6247853,
+        size.height * 0.2736225,
+        size.width * 0.6298409,
+        size.height * 0.2691758);
     path_0.close();
 
     Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Color(0xffFF0000).withOpacity(1.0);
+    paint_0_fill.color = Color.fromARGB(255, 33, 153, 167).withOpacity(1.0);
     canvas.drawPath(path_0, paint_0_fill);
-
     Path path_1 = Path();
-    path_1.moveTo(1977.13, 901.49);
-    path_1.lineTo(1977.74, 912.69);
-    path_1.cubicTo(1965.76, 903.716, 1955.1, 893.102, 1946.07, 881.16);
-    path_1.cubicTo(1931.38, 861.9, 1930.49, 831.65, 1931.58, 813.36);
-    path_1.cubicTo(1940.14, 823.889, 1949.47, 833.76, 1959.51, 842.89);
-    path_1.lineTo(1964.21, 888.59);
-    path_1.cubicTo(1964.38, 890.193, 1964.91, 891.736, 1965.76, 893.104);
-    path_1.cubicTo(1966.61, 894.471, 1967.76, 895.626, 1969.13, 896.48);
-    path_1.lineTo(1977.13, 901.49);
+    path_1.moveTo(size.width * 0.5935545, size.height * 0.2913672);
+    path_1.lineTo(size.width * 0.5937376, size.height * 0.2949871);
+    path_1.cubicTo(
+        size.width * 0.5901411,
+        size.height * 0.2920866,
+        size.width * 0.5869409,
+        size.height * 0.2886561,
+        size.width * 0.5842300,
+        size.height * 0.2847964);
+    path_1.cubicTo(
+        size.width * 0.5798199,
+        size.height * 0.2785714,
+        size.width * 0.5795527,
+        size.height * 0.2687944,
+        size.width * 0.5798799,
+        size.height * 0.2628830);
+    path_1.cubicTo(
+        size.width * 0.5824497,
+        size.height * 0.2662860,
+        size.width * 0.5852507,
+        size.height * 0.2694764,
+        size.width * 0.5882648,
+        size.height * 0.2724273);
+    path_1.lineTo(size.width * 0.5896758, size.height * 0.2871978);
+    path_1.cubicTo(
+        size.width * 0.5897268,
+        size.height * 0.2877159,
+        size.width * 0.5898859,
+        size.height * 0.2882146,
+        size.width * 0.5901411,
+        size.height * 0.2886568);
+    path_1.cubicTo(
+        size.width * 0.5903963,
+        size.height * 0.2890986,
+        size.width * 0.5907415,
+        size.height * 0.2894719,
+        size.width * 0.5911528,
+        size.height * 0.2897479);
+    path_1.lineTo(size.width * 0.5935545, size.height * 0.2913672);
     path_1.close();
 
     Paint paint_1_fill = Paint()..style = PaintingStyle.fill;
@@ -106,68 +504,416 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_1, paint_1_fill);
 
     Path path_2 = Path();
-    path_2.moveTo(2655.35, 506.22);
-    path_2.cubicTo(2634.17, 507.5, 2603.2, 517.22, 2583.41, 547.47);
-    path_2.cubicTo(2562.29, 527.29, 2512.6, 483.08, 2475.08, 475.11);
-    path_2.cubicTo(2392.89, 457.65, 2343.47, 426.67, 2332.18, 385.54);
-    path_2.cubicTo(2331.73, 383.894, 2330.88, 382.381, 2329.72, 381.131);
-    path_2.cubicTo(2328.56, 379.88, 2327.11, 378.93, 2325.5, 378.359);
-    path_2.cubicTo(2323.89, 377.789, 2322.17, 377.615, 2320.48, 377.854);
-    path_2.cubicTo(2318.79, 378.093, 2317.18, 378.736, 2315.79, 379.73);
-    path_2.cubicTo(2314.79, 380.47, 2211.31, 453.6, 2093.85, 458.85);
-    path_2.cubicTo(2080.34, 458.71, 2066.57, 459.42, 2053.03, 460.06);
-    path_2.cubicTo(2038.67, 461.3, 2025.96, 459.35, 2011.63, 464.4);
-    path_2.cubicTo(2011.45, 464.445, 2011.29, 464.538, 2011.17, 464.668);
-    path_2.cubicTo(2011.04, 464.798, 2010.95, 464.96, 2010.91, 465.137);
-    path_2.cubicTo(2010.86, 465.313, 2010.87, 465.499, 2010.93, 465.672);
-    path_2.cubicTo(2010.98, 465.845, 2011.08, 466, 2011.22, 466.12);
-    path_2.cubicTo(2022.91, 476.92, 2038.06, 476.43, 2052.41, 478.76);
-    path_2.cubicTo(2055.73, 479.12, 2059.05, 479.43, 2062.35, 479.69);
-    path_2.cubicTo(2025, 505.09, 1950.57, 548.55, 1869.96, 555.69);
-    path_2.cubicTo(1857.46, 555.01, 1844.96, 556.76, 1832.72, 558.98);
-    path_2.cubicTo(1827.93, 559.633, 1823.5, 561.926, 1820.21, 565.47);
-    path_2.cubicTo(1819.98, 565.707, 1819.86, 566.022, 1819.86, 566.35);
-    path_2.cubicTo(1819.86, 566.678, 1819.98, 566.993, 1820.21, 567.23);
-    path_2.cubicTo(1823.51, 570.773, 1827.93, 573.06, 1832.73, 573.7);
-    path_2.cubicTo(1842.58, 575.623, 1852.58, 576.743, 1862.61, 577.05);
-    path_2.cubicTo(1870.54, 603, 1882.72, 656.45, 1870.81, 683.15);
-    path_2.cubicTo(1869.89, 685.191, 1869.65, 687.472, 1870.12, 689.66);
-    path_2.cubicTo(1870.55, 691.66, 1876.39, 718.25, 1892.89, 752.25);
-    path_2.cubicTo(1807.82, 661.08, 1762.34, 548.54, 1761.83, 547.25);
-    path_2.cubicTo(1761.19, 545.641, 1760.16, 544.214, 1758.84, 543.094);
-    path_2.cubicTo(1757.52, 541.973, 1755.94, 541.192, 1754.25, 540.82);
-    path_2.cubicTo(1733.25, 536.22, 1706.01, 504.13, 1691.11, 483.77);
-    path_2.lineTo(1721.22, 471.18);
-    path_2.cubicTo(1723.12, 470.384, 1724.75, 469.052, 1725.9, 467.345);
-    path_2.cubicTo(1727.06, 465.638, 1727.69, 463.632, 1727.73, 461.571);
-    path_2.cubicTo(1727.76, 459.511, 1727.19, 457.485, 1726.09, 455.743);
-    path_2.cubicTo(1724.99, 454, 1723.4, 452.616, 1721.53, 451.76);
-    path_2.cubicTo(1692.05, 438.3, 1674.39, 412.58, 1666.21, 397.76);
-    path_2.cubicTo(1678.53, 394.24, 1697.52, 386.7, 1718.63, 370.76);
-    path_2.cubicTo(1752.9, 344.89, 1786.74, 307.64, 1788.16, 306.06);
-    path_2.cubicTo(1789.18, 304.929, 1789.95, 303.591, 1790.4, 302.137);
-    path_2.cubicTo(1790.86, 300.684, 1791, 299.149, 1790.81, 297.637);
-    path_2.cubicTo(1790.62, 296.125, 1790.11, 294.672, 1789.3, 293.376);
-    path_2.cubicTo(1788.5, 292.081, 1787.43, 290.974, 1786.16, 290.13);
-    path_2.cubicTo(1758.4, 271.65, 1749.61, 247.92, 1746.84, 235.13);
-    path_2.cubicTo(1757.84, 232.32, 1775.43, 225.03, 1797.22, 206.22);
-    path_2.cubicTo(1841.43, 168.08, 1959.94, 75.2201, 2105.51, 36.6001);
-    path_2.cubicTo(2256.17, -3.39994, 2393.15, 54.2201, 2394.51, 54.8101);
-    path_2.cubicTo(2396.12, 55.4983, 2397.88, 55.7773, 2399.62, 55.6222);
-    path_2.cubicTo(2401.36, 55.4672, 2403.04, 54.8829, 2404.51, 53.9215);
-    path_2.cubicTo(2405.97, 52.96, 2407.17, 51.6513, 2408.01, 50.1121);
-    path_2.cubicTo(2408.84, 48.5729, 2409.28, 46.851, 2409.29, 45.1001);
-    path_2.lineTo(2409.29, 27.9201);
-    path_2.cubicTo(2428.14, 41.1701, 2456.07, 69.0301, 2472.81, 87.5001);
-    path_2.cubicTo(2473.9, 88.725, 2475.27, 89.6788, 2476.79, 90.2863);
-    path_2.cubicTo(2478.32, 90.8937, 2479.96, 91.1381, 2481.6, 91.0001);
-    path_2.cubicTo(2511.7, 88.4601, 2545.84, 101.9, 2566.68, 112);
-    path_2.lineTo(2547.05, 119.81);
-    path_2.cubicTo(2545.36, 120.479, 2543.88, 121.571, 2542.73, 122.979);
-    path_2.cubicTo(2541.59, 124.388, 2540.83, 126.066, 2540.52, 127.854);
-    path_2.cubicTo(2540.21, 129.642, 2540.37, 131.479, 2540.97, 133.189);
-    path_2.cubicTo(2541.58, 134.899, 2542.62, 136.425, 2543.98, 137.62);
-    path_2.cubicTo(2647.77, 228.61, 2655.06, 454.91, 2655.35, 506.22);
+    path_2.moveTo(size.width * 0.7971630, size.height * 0.1636134);
+    path_2.cubicTo(
+        size.width * 0.7908046,
+        size.height * 0.1640271,
+        size.width * 0.7815071,
+        size.height * 0.1671687,
+        size.width * 0.7755659,
+        size.height * 0.1769457);
+    path_2.cubicTo(
+        size.width * 0.7692255,
+        size.height * 0.1704234,
+        size.width * 0.7543080,
+        size.height * 0.1561345,
+        size.width * 0.7430441,
+        size.height * 0.1535585);
+    path_2.cubicTo(
+        size.width * 0.7183699,
+        size.height * 0.1479153,
+        size.width * 0.7035335,
+        size.height * 0.1379024,
+        size.width * 0.7001441,
+        size.height * 0.1246089);
+    path_2.cubicTo(
+        size.width * 0.7000090,
+        size.height * 0.1240769,
+        size.width * 0.6997538,
+        size.height * 0.1235879,
+        size.width * 0.6994056,
+        size.height * 0.1231839);
+    path_2.cubicTo(
+        size.width * 0.6990573,
+        size.height * 0.1227796,
+        size.width * 0.6986220,
+        size.height * 0.1224725,
+        size.width * 0.6981387,
+        size.height * 0.1222880);
+    path_2.cubicTo(
+        size.width * 0.6976554,
+        size.height * 0.1221037,
+        size.width * 0.6971390,
+        size.height * 0.1220475,
+        size.width * 0.6966316,
+        size.height * 0.1221248);
+    path_2.cubicTo(
+        size.width * 0.6961243,
+        size.height * 0.1222020,
+        size.width * 0.6956409,
+        size.height * 0.1224098,
+        size.width * 0.6952237,
+        size.height * 0.1227311);
+    path_2.cubicTo(
+        size.width * 0.6949234,
+        size.height * 0.1229703,
+        size.width * 0.6638577,
+        size.height * 0.1466063,
+        size.width * 0.6285950,
+        size.height * 0.1483032);
+    path_2.cubicTo(
+        size.width * 0.6245392,
+        size.height * 0.1482579,
+        size.width * 0.6204053,
+        size.height * 0.1484874,
+        size.width * 0.6163404,
+        size.height * 0.1486942);
+    path_2.cubicTo(
+        size.width * 0.6120294,
+        size.height * 0.1490950,
+        size.width * 0.6082137,
+        size.height * 0.1484648,
+        size.width * 0.6039117,
+        size.height * 0.1500970);
+    path_2.cubicTo(
+        size.width * 0.6038577,
+        size.height * 0.1501115,
+        size.width * 0.6038097,
+        size.height * 0.1501416,
+        size.width * 0.6037736,
+        size.height * 0.1501836);
+    path_2.cubicTo(
+        size.width * 0.6037346,
+        size.height * 0.1502256,
+        size.width * 0.6037076,
+        size.height * 0.1502780,
+        size.width * 0.6036956,
+        size.height * 0.1503352);
+    path_2.cubicTo(
+        size.width * 0.6036806,
+        size.height * 0.1503920,
+        size.width * 0.6036836,
+        size.height * 0.1504522,
+        size.width * 0.6037016,
+        size.height * 0.1505081);
+    path_2.cubicTo(
+        size.width * 0.6037166,
+        size.height * 0.1505640,
+        size.width * 0.6037466,
+        size.height * 0.1506141,
+        size.width * 0.6037887,
+        size.height * 0.1506529);
+    path_2.cubicTo(
+        size.width * 0.6072981,
+        size.height * 0.1541435,
+        size.width * 0.6118463,
+        size.height * 0.1539851,
+        size.width * 0.6161543,
+        size.height * 0.1547382);
+    path_2.cubicTo(
+        size.width * 0.6171510,
+        size.height * 0.1548546,
+        size.width * 0.6181477,
+        size.height * 0.1549548,
+        size.width * 0.6191384,
+        size.height * 0.1550388);
+    path_2.cubicTo(
+        size.width * 0.6079255,
+        size.height * 0.1632482,
+        size.width * 0.5855809,
+        size.height * 0.1772948,
+        size.width * 0.5613810,
+        size.height * 0.1796025);
+    path_2.cubicTo(
+        size.width * 0.5576283,
+        size.height * 0.1793827,
+        size.width * 0.5538757,
+        size.height * 0.1799483,
+        size.width * 0.5502011,
+        size.height * 0.1806658);
+    path_2.cubicTo(
+        size.width * 0.5487631,
+        size.height * 0.1808769,
+        size.width * 0.5474332,
+        size.height * 0.1816180,
+        size.width * 0.5464455,
+        size.height * 0.1827634);
+    path_2.cubicTo(
+        size.width * 0.5463765,
+        size.height * 0.1828400,
+        size.width * 0.5463404,
+        size.height * 0.1829418,
+        size.width * 0.5463404,
+        size.height * 0.1830478);
+    path_2.cubicTo(
+        size.width * 0.5463404,
+        size.height * 0.1831538,
+        size.width * 0.5463765,
+        size.height * 0.1832557,
+        size.width * 0.5464455,
+        size.height * 0.1833323);
+    path_2.cubicTo(
+        size.width * 0.5474362,
+        size.height * 0.1844774,
+        size.width * 0.5487631,
+        size.height * 0.1852165,
+        size.width * 0.5502041,
+        size.height * 0.1854234);
+    path_2.cubicTo(
+        size.width * 0.5531612,
+        size.height * 0.1860449,
+        size.width * 0.5561633,
+        size.height * 0.1864069,
+        size.width * 0.5591744,
+        size.height * 0.1865061);
+    path_2.cubicTo(
+        size.width * 0.5615551,
+        size.height * 0.1948933,
+        size.width * 0.5652116,
+        size.height * 0.2121687,
+        size.width * 0.5616361,
+        size.height * 0.2207983);
+    path_2.cubicTo(
+        size.width * 0.5613600,
+        size.height * 0.2214580,
+        size.width * 0.5612879,
+        size.height * 0.2221952,
+        size.width * 0.5614290,
+        size.height * 0.2229024);
+    path_2.cubicTo(
+        size.width * 0.5615581,
+        size.height * 0.2235488,
+        size.width * 0.5633113,
+        size.height * 0.2321429,
+        size.width * 0.5682648,
+        size.height * 0.2431319);
+    path_2.cubicTo(
+        size.width * 0.5427259,
+        size.height * 0.2136652,
+        size.width * 0.5290724,
+        size.height * 0.1772915,
+        size.width * 0.5289192,
+        size.height * 0.1768746);
+    path_2.cubicTo(
+        size.width * 0.5287271,
+        size.height * 0.1763546,
+        size.width * 0.5284179,
+        size.height * 0.1758933,
+        size.width * 0.5280216,
+        size.height * 0.1755314);
+    path_2.cubicTo(
+        size.width * 0.5276253,
+        size.height * 0.1751690,
+        size.width * 0.5271510,
+        size.height * 0.1749166,
+        size.width * 0.5266437,
+        size.height * 0.1747964);
+    path_2.cubicTo(
+        size.width * 0.5203392,
+        size.height * 0.1733096,
+        size.width * 0.5121615,
+        size.height * 0.1629379,
+        size.width * 0.5076884,
+        size.height * 0.1563575);
+    path_2.lineTo(size.width * 0.5167277, size.height * 0.1522883);
+    path_2.cubicTo(
+        size.width * 0.5172981,
+        size.height * 0.1520310,
+        size.width * 0.5177875,
+        size.height * 0.1516005,
+        size.width * 0.5181327,
+        size.height * 0.1510488);
+    path_2.cubicTo(
+        size.width * 0.5184809,
+        size.height * 0.1504971,
+        size.width * 0.5186701,
+        size.height * 0.1498487,
+        size.width * 0.5186821,
+        size.height * 0.1491826);
+    path_2.cubicTo(
+        size.width * 0.5186911,
+        size.height * 0.1485168,
+        size.width * 0.5185200,
+        size.height * 0.1478620,
+        size.width * 0.5181897,
+        size.height * 0.1472990);
+    path_2.cubicTo(
+        size.width * 0.5178595,
+        size.height * 0.1467356,
+        size.width * 0.5173822,
+        size.height * 0.1462883,
+        size.width * 0.5168208,
+        size.height * 0.1460116);
+    path_2.cubicTo(
+        size.width * 0.5079706,
+        size.height * 0.1416613,
+        size.width * 0.5026689,
+        size.height * 0.1333484,
+        size.width * 0.5002131,
+        size.height * 0.1285585);
+    path_2.cubicTo(
+        size.width * 0.5039117,
+        size.height * 0.1274208,
+        size.width * 0.5096127,
+        size.height * 0.1249838,
+        size.width * 0.5159502,
+        size.height * 0.1198319);
+    path_2.cubicTo(
+        size.width * 0.5262384,
+        size.height * 0.1114706,
+        size.width * 0.5363975,
+        size.height * 0.09943116,
+        size.width * 0.5368238,
+        size.height * 0.09892049);
+    path_2.cubicTo(
+        size.width * 0.5371300,
+        size.height * 0.09855495,
+        size.width * 0.5373612,
+        size.height * 0.09812250,
+        size.width * 0.5374962,
+        size.height * 0.09765255);
+    path_2.cubicTo(
+        size.width * 0.5376343,
+        size.height * 0.09718293,
+        size.width * 0.5376764,
+        size.height * 0.09668681,
+        size.width * 0.5376193,
+        size.height * 0.09619813);
+    path_2.cubicTo(
+        size.width * 0.5375623,
+        size.height * 0.09570944,
+        size.width * 0.5374092,
+        size.height * 0.09523982,
+        size.width * 0.5371660,
+        size.height * 0.09482094);
+    path_2.cubicTo(
+        size.width * 0.5369258,
+        size.height * 0.09440239,
+        size.width * 0.5366046,
+        size.height * 0.09404460,
+        size.width * 0.5362234,
+        size.height * 0.09377182);
+    path_2.cubicTo(
+        size.width * 0.5278895,
+        size.height * 0.08779897,
+        size.width * 0.5252507,
+        size.height * 0.08012928,
+        size.width * 0.5244191,
+        size.height * 0.07599548);
+    path_2.cubicTo(
+        size.width * 0.5277214,
+        size.height * 0.07508727,
+        size.width * 0.5330021,
+        size.height * 0.07273109,
+        size.width * 0.5395437,
+        size.height * 0.06665158);
+    path_2.cubicTo(
+        size.width * 0.5528160,
+        size.height * 0.05432450,
+        size.width * 0.5883939,
+        size.height * 0.02431160,
+        size.width * 0.6320955,
+        size.height * 0.01182938);
+    path_2.cubicTo(
+        size.width * 0.6773251,
+        size.height * -0.001098882,
+        size.width * 0.7184479,
+        size.height * 0.01752427,
+        size.width * 0.7188562,
+        size.height * 0.01771496);
+    path_2.cubicTo(
+        size.width * 0.7193395,
+        size.height * 0.01793739,
+        size.width * 0.7198679,
+        size.height * 0.01802757,
+        size.width * 0.7203903,
+        size.height * 0.01797744);
+    path_2.cubicTo(
+        size.width * 0.7209126,
+        size.height * 0.01792734,
+        size.width * 0.7214170,
+        size.height * 0.01773849,
+        size.width * 0.7218583,
+        size.height * 0.01742776);
+    path_2.cubicTo(
+        size.width * 0.7222966,
+        size.height * 0.01711700,
+        size.width * 0.7226569,
+        size.height * 0.01669402,
+        size.width * 0.7229090,
+        size.height * 0.01619654);
+    path_2.cubicTo(
+        size.width * 0.7231582,
+        size.height * 0.01569906,
+        size.width * 0.7232903,
+        size.height * 0.01514253,
+        size.width * 0.7232933,
+        size.height * 0.01457663);
+    path_2.lineTo(size.width * 0.7232933, size.height * 0.009023950);
+    path_2.cubicTo(
+        size.width * 0.7289523,
+        size.height * 0.01330643,
+        size.width * 0.7373371,
+        size.height * 0.02231096,
+        size.width * 0.7423627,
+        size.height * 0.02828058);
+    path_2.cubicTo(
+        size.width * 0.7426899,
+        size.height * 0.02867647,
+        size.width * 0.7431012,
+        size.height * 0.02898474,
+        size.width * 0.7435575,
+        size.height * 0.02918109);
+    path_2.cubicTo(
+        size.width * 0.7440168,
+        size.height * 0.02937741,
+        size.width * 0.7445092,
+        size.height * 0.02945640,
+        size.width * 0.7450015,
+        size.height * 0.02941180);
+    path_2.cubicTo(
+        size.width * 0.7540378,
+        size.height * 0.02859085,
+        size.width * 0.7642870,
+        size.height * 0.03293471,
+        size.width * 0.7705434,
+        size.height * 0.03619910);
+    path_2.lineTo(size.width * 0.7646503, size.height * 0.03872334);
+    path_2.cubicTo(
+        size.width * 0.7641429,
+        size.height * 0.03893956,
+        size.width * 0.7636986,
+        size.height * 0.03929250,
+        size.width * 0.7633533,
+        size.height * 0.03974758);
+    path_2.cubicTo(
+        size.width * 0.7630111,
+        size.height * 0.04020297,
+        size.width * 0.7627829,
+        size.height * 0.04074531,
+        size.width * 0.7626899,
+        size.height * 0.04132321);
+    path_2.cubicTo(
+        size.width * 0.7625968,
+        size.height * 0.04190110,
+        size.width * 0.7626449,
+        size.height * 0.04249483,
+        size.width * 0.7628250,
+        size.height * 0.04304751);
+    path_2.cubicTo(
+        size.width * 0.7630081,
+        size.height * 0.04360019,
+        size.width * 0.7633203,
+        size.height * 0.04409341,
+        size.width * 0.7637286,
+        size.height * 0.04447964);
+    path_2.cubicTo(
+        size.width * 0.7948874,
+        size.height * 0.07388817,
+        size.width * 0.7970760,
+        size.height * 0.1470297,
+        size.width * 0.7971630,
+        size.height * 0.1636134);
     path_2.close();
 
     Paint paint_2_fill = Paint()..style = PaintingStyle.fill;
@@ -175,22 +921,112 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_2, paint_2_fill);
 
     Path path_3 = Path();
-    path_3.moveTo(2027.67, 811.45);
-    path_3.cubicTo(2028.19, 813.634, 2028.06, 815.921, 2027.29, 818.031);
-    path_3.cubicTo(2026.53, 820.141, 2025.17, 821.983, 2023.37, 823.33);
-    path_3.cubicTo(2022.66, 823.866, 2021.88, 824.31, 2021.05, 824.65);
-    path_3.cubicTo(2019.97, 825.1, 2018.82, 825.376, 2017.65, 825.47);
-    path_3.cubicTo(2015.22, 825.636, 2012.8, 825.032, 2010.73, 823.743);
-    path_3.cubicTo(2008.66, 822.454, 2007.05, 820.546, 2006.13, 818.29);
-    path_3.cubicTo(2005.49, 816.903, 2005.14, 815.403, 2005.1, 813.878);
-    path_3.cubicTo(2005.06, 812.353, 2005.32, 810.834, 2005.88, 809.414);
-    path_3.cubicTo(2006.43, 807.993, 2007.27, 806.7, 2008.34, 805.61);
-    path_3.cubicTo(2009.41, 804.52, 2010.68, 803.657, 2012.09, 803.072);
-    path_3.cubicTo(2013.5, 802.487, 2015.01, 802.192, 2016.54, 802.204);
-    path_3.cubicTo(2018.07, 802.217, 2019.57, 802.537, 2020.97, 803.146);
-    path_3.cubicTo(2022.37, 803.754, 2023.63, 804.638, 2024.68, 805.746);
-    path_3.cubicTo(2025.73, 806.853, 2026.55, 808.16, 2027.08, 809.59);
-    path_3.cubicTo(2027.33, 810.192, 2027.53, 810.815, 2027.67, 811.45);
+    path_3.moveTo(size.width * 0.6087271, size.height * 0.2622657);
+    path_3.cubicTo(
+        size.width * 0.6088832,
+        size.height * 0.2629716,
+        size.width * 0.6088442,
+        size.height * 0.2637107,
+        size.width * 0.6086130,
+        size.height * 0.2643927);
+    path_3.cubicTo(
+        size.width * 0.6083849,
+        size.height * 0.2650747,
+        size.width * 0.6079766,
+        size.height * 0.2656700,
+        size.width * 0.6074362,
+        size.height * 0.2661054);
+    path_3.cubicTo(
+        size.width * 0.6072231,
+        size.height * 0.2662786,
+        size.width * 0.6069889,
+        size.height * 0.2664221,
+        size.width * 0.6067397,
+        size.height * 0.2665320);
+    path_3.cubicTo(
+        size.width * 0.6064155,
+        size.height * 0.2666774,
+        size.width * 0.6060702,
+        size.height * 0.2667666,
+        size.width * 0.6057190,
+        size.height * 0.2667970);
+    path_3.cubicTo(
+        size.width * 0.6049895,
+        size.height * 0.2668507,
+        size.width * 0.6042630,
+        size.height * 0.2666555,
+        size.width * 0.6036415,
+        size.height * 0.2662388);
+    path_3.cubicTo(
+        size.width * 0.6030201,
+        size.height * 0.2658222,
+        size.width * 0.6025368,
+        size.height * 0.2652056,
+        size.width * 0.6022606,
+        size.height * 0.2644764);
+    path_3.cubicTo(
+        size.width * 0.6020684,
+        size.height * 0.2640281,
+        size.width * 0.6019634,
+        size.height * 0.2635433,
+        size.width * 0.6019514,
+        size.height * 0.2630504);
+    path_3.cubicTo(
+        size.width * 0.6019394,
+        size.height * 0.2625575,
+        size.width * 0.6020174,
+        size.height * 0.2620666,
+        size.width * 0.6021855,
+        size.height * 0.2616076);
+    path_3.cubicTo(
+        size.width * 0.6023506,
+        size.height * 0.2611484,
+        size.width * 0.6026028,
+        size.height * 0.2607304,
+        size.width * 0.6029240,
+        size.height * 0.2603782);
+    path_3.cubicTo(
+        size.width * 0.6032453,
+        size.height * 0.2600259,
+        size.width * 0.6036265,
+        size.height * 0.2597469,
+        size.width * 0.6040498,
+        size.height * 0.2595579);
+    path_3.cubicTo(
+        size.width * 0.6044731,
+        size.height * 0.2593688,
+        size.width * 0.6049264,
+        size.height * 0.2592734,
+        size.width * 0.6053858,
+        size.height * 0.2592773);
+    path_3.cubicTo(
+        size.width * 0.6058451,
+        size.height * 0.2592815,
+        size.width * 0.6062954,
+        size.height * 0.2593849,
+        size.width * 0.6067157,
+        size.height * 0.2595818);
+    path_3.cubicTo(
+        size.width * 0.6071360,
+        size.height * 0.2597783,
+        size.width * 0.6075143,
+        size.height * 0.2600640,
+        size.width * 0.6078295,
+        size.height * 0.2604221);
+    path_3.cubicTo(
+        size.width * 0.6081447,
+        size.height * 0.2607799,
+        size.width * 0.6083909,
+        size.height * 0.2612023,
+        size.width * 0.6085500,
+        size.height * 0.2616645);
+    path_3.cubicTo(
+        size.width * 0.6086250,
+        size.height * 0.2618591,
+        size.width * 0.6086851,
+        size.height * 0.2620604,
+        size.width * 0.6087271,
+        size.height * 0.2622657);
     path_3.close();
 
     Paint paint_3_fill = Paint()..style = PaintingStyle.fill;
@@ -198,23 +1034,113 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_3, paint_3_fill);
 
     Path path_4 = Path();
-    path_4.moveTo(2049.11, 754.35);
-    path_4.cubicTo(2049.16, 755.986, 2049.01, 757.623, 2048.65, 759.22);
-    path_4.cubicTo(2048.18, 761.326, 2047.36, 763.338, 2046.22, 765.17);
-    path_4.cubicTo(2044.58, 767.807, 2042.3, 769.991, 2039.6, 771.521);
-    path_4.cubicTo(2036.9, 773.052, 2033.86, 773.88, 2030.75, 773.93);
-    path_4.lineTo(2029.61, 773.93);
-    path_4.cubicTo(2028.86, 773.892, 2028.1, 773.809, 2027.36, 773.68);
-    path_4.cubicTo(2026.98, 773.62, 2026.61, 773.54, 2026.25, 773.46);
-    path_4.cubicTo(2022.16, 772.497, 2018.49, 770.229, 2015.8, 767);
-    path_4.cubicTo(2014.56, 765.474, 2013.54, 763.772, 2012.8, 761.95);
-    path_4.cubicTo(2011.79, 759.525, 2011.27, 756.92, 2011.29, 754.293);
-    path_4.cubicTo(2011.32, 751.665, 2011.87, 749.068, 2012.92, 746.66);
-    path_4.cubicTo(2013.08, 746.29, 2013.25, 745.93, 2013.44, 745.57);
-    path_4.cubicTo(2015.09, 745.95, 2016.75, 746.31, 2018.44, 746.67);
-    path_4.cubicTo(2024.64, 747.94, 2030.95, 749.11, 2037.3, 749.95);
-    path_4.cubicTo(2041.12, 750.45, 2044.95, 750.84, 2048.79, 751.05);
-    path_4.cubicTo(2048.99, 752.139, 2049.1, 753.243, 2049.11, 754.35);
+    path_4.moveTo(size.width * 0.6151636, size.height * 0.2438106);
+    path_4.cubicTo(
+        size.width * 0.6151786,
+        size.height * 0.2443394,
+        size.width * 0.6151336,
+        size.height * 0.2448685,
+        size.width * 0.6150255,
+        size.height * 0.2453846);
+    path_4.cubicTo(
+        size.width * 0.6148844,
+        size.height * 0.2460653,
+        size.width * 0.6146382,
+        size.height * 0.2467156,
+        size.width * 0.6142960,
+        size.height * 0.2473077);
+    path_4.cubicTo(
+        size.width * 0.6138037,
+        size.height * 0.2481600,
+        size.width * 0.6131192,
+        size.height * 0.2488659,
+        size.width * 0.6123086,
+        size.height * 0.2493604);
+    path_4.cubicTo(
+        size.width * 0.6114980,
+        size.height * 0.2498552,
+        size.width * 0.6105854,
+        size.height * 0.2501228,
+        size.width * 0.6096518,
+        size.height * 0.2501390);
+    path_4.lineTo(size.width * 0.6093095, size.height * 0.2501390);
+    path_4.cubicTo(
+        size.width * 0.6090844,
+        size.height * 0.2501267,
+        size.width * 0.6088562,
+        size.height * 0.2500999,
+        size.width * 0.6086340,
+        size.height * 0.2500582);
+    path_4.cubicTo(
+        size.width * 0.6085200,
+        size.height * 0.2500388,
+        size.width * 0.6084089,
+        size.height * 0.2500129,
+        size.width * 0.6083008,
+        size.height * 0.2499871);
+    path_4.cubicTo(
+        size.width * 0.6070730,
+        size.height * 0.2496758,
+        size.width * 0.6059712,
+        size.height * 0.2489428,
+        size.width * 0.6051636,
+        size.height * 0.2478992);
+    path_4.cubicTo(
+        size.width * 0.6047914,
+        size.height * 0.2474059,
+        size.width * 0.6044851,
+        size.height * 0.2468559,
+        size.width * 0.6042630,
+        size.height * 0.2462670);
+    path_4.cubicTo(
+        size.width * 0.6039598,
+        size.height * 0.2454832,
+        size.width * 0.6038037,
+        size.height * 0.2446412,
+        size.width * 0.6038097,
+        size.height * 0.2437922);
+    path_4.cubicTo(
+        size.width * 0.6038187,
+        size.height * 0.2429428,
+        size.width * 0.6039838,
+        size.height * 0.2421034,
+        size.width * 0.6042990,
+        size.height * 0.2413251);
+    path_4.cubicTo(
+        size.width * 0.6043470,
+        size.height * 0.2412056,
+        size.width * 0.6043981,
+        size.height * 0.2410892,
+        size.width * 0.6044551,
+        size.height * 0.2409729);
+    path_4.cubicTo(
+        size.width * 0.6049505,
+        size.height * 0.2410957,
+        size.width * 0.6054488,
+        size.height * 0.2412120,
+        size.width * 0.6059562,
+        size.height * 0.2413284);
+    path_4.cubicTo(
+        size.width * 0.6078175,
+        size.height * 0.2417388,
+        size.width * 0.6097118,
+        size.height * 0.2421170,
+        size.width * 0.6116181,
+        size.height * 0.2423885);
+    path_4.cubicTo(
+        size.width * 0.6127649,
+        size.height * 0.2425501,
+        size.width * 0.6139147,
+        size.height * 0.2426761,
+        size.width * 0.6150675,
+        size.height * 0.2427440);
+    path_4.cubicTo(
+        size.width * 0.6151276,
+        size.height * 0.2430960,
+        size.width * 0.6151606,
+        size.height * 0.2434528,
+        size.width * 0.6151636,
+        size.height * 0.2438106);
     path_4.close();
 
     Paint paint_4_fill = Paint()..style = PaintingStyle.fill;
@@ -222,16 +1148,64 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_4, paint_4_fill);
 
     Path path_5 = Path();
-    path_5.moveTo(2308.94, 699.61);
-    path_5.cubicTo(2309.35, 700.817, 2309.55, 702.085, 2309.54, 703.36);
-    path_5.cubicTo(2309.48, 705.596, 2308.83, 707.778, 2307.67, 709.687);
-    path_5.cubicTo(2306.5, 711.596, 2304.85, 713.166, 2302.89, 714.24);
-    path_5.cubicTo(2302.47, 714.492, 2302.03, 714.712, 2301.58, 714.9);
-    path_5.lineTo(2301.34, 715.01);
-    path_5.cubicTo(2294.73, 717.76, 2287.34, 715.01, 2284.76, 708.85);
-    path_5.cubicTo(2282.18, 702.69, 2285.49, 695.5, 2292.1, 692.76);
-    path_5.cubicTo(2298.71, 690.02, 2306.1, 692.76, 2308.68, 698.92);
-    path_5.cubicTo(2308.78, 699.15, 2308.86, 699.38, 2308.94, 699.61);
+    path_5.moveTo(size.width * 0.6931672, size.height * 0.2261183);
+    path_5.cubicTo(
+        size.width * 0.6932903,
+        size.height * 0.2265084,
+        size.width * 0.6933503,
+        size.height * 0.2269182,
+        size.width * 0.6933473,
+        size.height * 0.2273303);
+    path_5.cubicTo(
+        size.width * 0.6933293,
+        size.height * 0.2280530,
+        size.width * 0.6931342,
+        size.height * 0.2287582,
+        size.width * 0.6927860,
+        size.height * 0.2293752);
+    path_5.cubicTo(
+        size.width * 0.6924347,
+        size.height * 0.2299922,
+        size.width * 0.6919394,
+        size.height * 0.2304997,
+        size.width * 0.6913509,
+        size.height * 0.2308468);
+    path_5.cubicTo(
+        size.width * 0.6912249,
+        size.height * 0.2309282,
+        size.width * 0.6910928,
+        size.height * 0.2309994,
+        size.width * 0.6909577,
+        size.height * 0.2310601);
+    path_5.lineTo(size.width * 0.6908856, size.height * 0.2310957);
+    path_5.cubicTo(
+        size.width * 0.6889012,
+        size.height * 0.2319845,
+        size.width * 0.6866827,
+        size.height * 0.2310957,
+        size.width * 0.6859081,
+        size.height * 0.2291047);
+    path_5.cubicTo(
+        size.width * 0.6851336,
+        size.height * 0.2271138,
+        size.width * 0.6861273,
+        size.height * 0.2247899,
+        size.width * 0.6881117,
+        size.height * 0.2239043);
+    path_5.cubicTo(
+        size.width * 0.6900961,
+        size.height * 0.2230187,
+        size.width * 0.6923146,
+        size.height * 0.2239043,
+        size.width * 0.6930892,
+        size.height * 0.2258953);
+    path_5.cubicTo(
+        size.width * 0.6931192,
+        size.height * 0.2259696,
+        size.width * 0.6931432,
+        size.height * 0.2260440,
+        size.width * 0.6931672,
+        size.height * 0.2261183);
     path_5.close();
 
     Paint paint_5_fill = Paint()..style = PaintingStyle.fill;
@@ -239,36 +1213,180 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_5, paint_5_fill);
 
     Path path_6 = Path();
-    path_6.moveTo(2330.93, 629.23);
-    path_6.cubicTo(2332.45, 632.439, 2333.26, 635.938, 2333.31, 639.489);
-    path_6.cubicTo(2333.36, 643.041, 2332.64, 646.56, 2331.21, 649.81);
-    path_6.cubicTo(2331.12, 650.02, 2331.02, 650.22, 2330.92, 650.43);
-    path_6.lineTo(2330.69, 650.89);
-    path_6.cubicTo(2330.61, 651.04, 2330.53, 651.19, 2330.44, 651.33);
-    path_6.cubicTo(2330.36, 651.499, 2330.26, 651.662, 2330.16, 651.82);
-    path_6.cubicTo(2330.05, 652.02, 2329.93, 652.21, 2329.81, 652.4);
-    path_6.cubicTo(2329.43, 653.003, 2329.02, 653.584, 2328.57, 654.14);
-    path_6.cubicTo(2328.44, 654.3, 2328.32, 654.46, 2328.18, 654.62);
-    path_6.cubicTo(2328.04, 654.78, 2327.71, 655.17, 2327.46, 655.43);
-    path_6.lineTo(2326.94, 655.97);
-    path_6.lineTo(2326.39, 656.49);
-    path_6.cubicTo(2325.8, 657.043, 2325.17, 657.554, 2324.5, 658.02);
-    path_6.lineTo(2324, 658.36);
-    path_6.lineTo(2323.56, 658.65);
-    path_6.cubicTo(2323.02, 658.93, 2322.46, 659.19, 2321.88, 659.43);
-    path_6.cubicTo(2318.7, 660.793, 2315.24, 661.384, 2311.78, 661.157);
-    path_6.cubicTo(2308.32, 660.929, 2304.97, 659.889, 2301.99, 658.12);
-    path_6.cubicTo(2300.87, 657.433, 2299.81, 656.632, 2298.85, 655.73);
-    path_6.cubicTo(2297.87, 654.828, 2297, 653.822, 2296.24, 652.73);
-    path_6.cubicTo(2293.98, 649.49, 2292.8, 645.62, 2292.86, 641.67);
-    path_6.cubicTo(2298.47, 635.07, 2303.86, 628.3, 2309.24, 621.45);
-    path_6.cubicTo(2311.84, 620.725, 2314.55, 620.474, 2317.24, 620.71);
-    path_6.cubicTo(2318.96, 620.858, 2320.66, 621.214, 2322.29, 621.77);
-    path_6.cubicTo(2323.09, 622.057, 2323.88, 622.391, 2324.64, 622.77);
-    path_6.cubicTo(2326.16, 623.496, 2327.59, 624.417, 2328.87, 625.51);
-    path_6.cubicTo(2329.06, 625.8, 2329.26, 626.1, 2329.44, 626.4);
-    path_6.cubicTo(2329.62, 626.7, 2329.71, 626.84, 2329.84, 627.07);
-    path_6.cubicTo(2330.21, 627.76, 2330.59, 628.48, 2330.93, 629.23);
+    path_6.moveTo(size.width * 0.6997688, size.height * 0.2033710);
+    path_6.cubicTo(
+        size.width * 0.7002252,
+        size.height * 0.2044082,
+        size.width * 0.7004683,
+        size.height * 0.2055391,
+        size.width * 0.7004833,
+        size.height * 0.2066868);
+    path_6.cubicTo(
+        size.width * 0.7004983,
+        size.height * 0.2078348,
+        size.width * 0.7002822,
+        size.height * 0.2089722,
+        size.width * 0.6998529,
+        size.height * 0.2100226);
+    path_6.cubicTo(
+        size.width * 0.6998259,
+        size.height * 0.2100905,
+        size.width * 0.6997959,
+        size.height * 0.2101551,
+        size.width * 0.6997658,
+        size.height * 0.2102230);
+    path_6.lineTo(size.width * 0.6996968, size.height * 0.2103717);
+    path_6.cubicTo(
+        size.width * 0.6996728,
+        size.height * 0.2104202,
+        size.width * 0.6996488,
+        size.height * 0.2104686,
+        size.width * 0.6996217,
+        size.height * 0.2105139);
+    path_6.cubicTo(
+        size.width * 0.6995977,
+        size.height * 0.2105685,
+        size.width * 0.6995677,
+        size.height * 0.2106212,
+        size.width * 0.6995377,
+        size.height * 0.2106723);
+    path_6.cubicTo(
+        size.width * 0.6995047,
+        size.height * 0.2107369,
+        size.width * 0.6994686,
+        size.height * 0.2107983,
+        size.width * 0.6994326,
+        size.height * 0.2108597);
+    path_6.cubicTo(
+        size.width * 0.6993185,
+        size.height * 0.2110546,
+        size.width * 0.6991954,
+        size.height * 0.2112424,
+        size.width * 0.6990603,
+        size.height * 0.2114221);
+    path_6.cubicTo(
+        size.width * 0.6990213,
+        size.height * 0.2114738,
+        size.width * 0.6989853,
+        size.height * 0.2115255,
+        size.width * 0.6989433,
+        size.height * 0.2115772);
+    path_6.cubicTo(
+        size.width * 0.6989012,
+        size.height * 0.2116290,
+        size.width * 0.6988022,
+        size.height * 0.2117550,
+        size.width * 0.6987271,
+        size.height * 0.2118390);
+    path_6.lineTo(size.width * 0.6985710, size.height * 0.2120136);
+    path_6.lineTo(size.width * 0.6984059, size.height * 0.2121816);
+    path_6.cubicTo(
+        size.width * 0.6982288,
+        size.height * 0.2123604,
+        size.width * 0.6980396,
+        size.height * 0.2125255,
+        size.width * 0.6978385,
+        size.height * 0.2126761);
+    path_6.lineTo(size.width * 0.6976884, size.height * 0.2127860);
+    path_6.lineTo(size.width * 0.6975563, size.height * 0.2128798);
+    path_6.cubicTo(
+        size.width * 0.6973942,
+        size.height * 0.2129703,
+        size.width * 0.6972261,
+        size.height * 0.2130543,
+        size.width * 0.6970519,
+        size.height * 0.2131319);
+    path_6.cubicTo(
+        size.width * 0.6960973,
+        size.height * 0.2135724,
+        size.width * 0.6950585,
+        size.height * 0.2137634,
+        size.width * 0.6940198,
+        size.height * 0.2136900);
+    path_6.cubicTo(
+        size.width * 0.6929811,
+        size.height * 0.2136164,
+        size.width * 0.6919754,
+        size.height * 0.2132802,
+        size.width * 0.6910808,
+        size.height * 0.2127085);
+    path_6.cubicTo(
+        size.width * 0.6907445,
+        size.height * 0.2124864,
+        size.width * 0.6904263,
+        size.height * 0.2122275,
+        size.width * 0.6901381,
+        size.height * 0.2119360);
+    path_6.cubicTo(
+        size.width * 0.6898439,
+        size.height * 0.2116445,
+        size.width * 0.6895827,
+        size.height * 0.2113193,
+        size.width * 0.6893545,
+        size.height * 0.2109664);
+    path_6.cubicTo(
+        size.width * 0.6886761,
+        size.height * 0.2099192,
+        size.width * 0.6883218,
+        size.height * 0.2086684,
+        size.width * 0.6883398,
+        size.height * 0.2073917);
+    path_6.cubicTo(
+        size.width * 0.6900240,
+        size.height * 0.2052586,
+        size.width * 0.6916421,
+        size.height * 0.2030705,
+        size.width * 0.6932573,
+        size.height * 0.2008565);
+    path_6.cubicTo(
+        size.width * 0.6940378,
+        size.height * 0.2006222,
+        size.width * 0.6948514,
+        size.height * 0.2005410,
+        size.width * 0.6956590,
+        size.height * 0.2006173);
+    path_6.cubicTo(
+        size.width * 0.6961753,
+        size.height * 0.2006652,
+        size.width * 0.6966857,
+        size.height * 0.2007802,
+        size.width * 0.6971750,
+        size.height * 0.2009599);
+    path_6.cubicTo(
+        size.width * 0.6974152,
+        size.height * 0.2010527,
+        size.width * 0.6976524,
+        size.height * 0.2011606,
+        size.width * 0.6978805,
+        size.height * 0.2012831);
+    path_6.cubicTo(
+        size.width * 0.6983368,
+        size.height * 0.2015178,
+        size.width * 0.6987661,
+        size.height * 0.2018154,
+        size.width * 0.6991504,
+        size.height * 0.2021687);
+    path_6.cubicTo(
+        size.width * 0.6992074,
+        size.height * 0.2022624,
+        size.width * 0.6992675,
+        size.height * 0.2023594,
+        size.width * 0.6993215,
+        size.height * 0.2024564);
+    path_6.cubicTo(
+        size.width * 0.6993756,
+        size.height * 0.2025533,
+        size.width * 0.6994026,
+        size.height * 0.2025986,
+        size.width * 0.6994416,
+        size.height * 0.2026729);
+    path_6.cubicTo(
+        size.width * 0.6995527,
+        size.height * 0.2028959,
+        size.width * 0.6996668,
+        size.height * 0.2031286,
+        size.width * 0.6997688,
+        size.height * 0.2033710);
     path_6.close();
 
     Paint paint_6_fill = Paint()..style = PaintingStyle.fill;
@@ -276,11 +1394,35 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_6, paint_6_fill);
 
     Path path_7 = Path();
-    path_7.moveTo(2238.71, 841.35);
-    path_7.cubicTo(2245.78, 847.7, 2257.46, 859.35, 2264.76, 872.55);
-    path_7.cubicTo(2251.34, 875.48, 2227.5, 880.86, 2208.76, 886.06);
-    path_7.cubicTo(2205.48, 880.828, 2201.31, 876.206, 2196.44, 872.4);
-    path_7.cubicTo(2208.61, 865.29, 2226.56, 853.77, 2238.71, 841.35);
+    path_7.moveTo(size.width * 0.6720835, size.height * 0.2719295);
+    path_7.cubicTo(
+        size.width * 0.6742059,
+        size.height * 0.2739819,
+        size.width * 0.6777124,
+        size.height * 0.2777473,
+        size.width * 0.6799039,
+        size.height * 0.2820136);
+    path_7.cubicTo(
+        size.width * 0.6758751,
+        size.height * 0.2829606,
+        size.width * 0.6687181,
+        size.height * 0.2846994,
+        size.width * 0.6630922,
+        size.height * 0.2863801);
+    path_7.cubicTo(
+        size.width * 0.6621075,
+        size.height * 0.2846891,
+        size.width * 0.6608556,
+        size.height * 0.2831952,
+        size.width * 0.6593936,
+        size.height * 0.2819651);
+    path_7.cubicTo(
+        size.width * 0.6630471,
+        size.height * 0.2796671,
+        size.width * 0.6684359,
+        size.height * 0.2759438,
+        size.width * 0.6720835,
+        size.height * 0.2719295);
     path_7.close();
 
     Paint paint_7_fill = Paint()..style = PaintingStyle.fill;
@@ -288,111 +1430,657 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_7, paint_7_fill);
 
     Path path_8 = Path();
-    path_8.moveTo(2663.19, 527.36);
-    path_8.cubicTo(2672.44, 532.13, 2717.41, 559.18, 2702.31, 629.36);
-    path_8.cubicTo(2700.6, 637.614, 2697.87, 645.625, 2694.19, 653.21);
-    path_8.cubicTo(2673.19, 695.93, 2629.91, 697.54, 2627.83, 697.59);
-    path_8.cubicTo(2625.47, 697.627, 2623.19, 698.45, 2621.35, 699.93);
-    path_8.cubicTo(2621.04, 700.176, 2620.74, 700.447, 2620.47, 700.74);
-    path_8.cubicTo(2620.27, 700.93, 2620.09, 701.13, 2619.91, 701.34);
-    path_8.cubicTo(2619.72, 701.57, 2619.53, 701.82, 2619.35, 702.07);
-    path_8.cubicTo(2619.17, 702.32, 2619.04, 702.53, 2618.89, 702.77);
-    path_8.cubicTo(2618.84, 702.839, 2618.8, 702.913, 2618.77, 702.99);
-    path_8.cubicTo(2618.65, 703.194, 2618.54, 703.404, 2618.45, 703.62);
-    path_8.cubicTo(2618.44, 703.649, 2618.44, 703.681, 2618.45, 703.71);
-    path_8.cubicTo(2618.34, 703.95, 2618.23, 704.19, 2618.14, 704.44);
-    path_8.cubicTo(2618.12, 704.488, 2618.1, 704.539, 2618.09, 704.59);
-    path_8.cubicTo(2618, 704.808, 2617.93, 705.032, 2617.87, 705.26);
-    path_8.cubicTo(2617.82, 705.397, 2617.79, 705.538, 2617.76, 705.68);
-    path_8.cubicTo(2617.73, 705.755, 2617.71, 705.832, 2617.7, 705.91);
-    path_8.cubicTo(2617.7, 706.03, 2617.65, 706.16, 2617.62, 706.28);
-    path_8.cubicTo(2617.62, 706.3, 2617.62, 706.32, 2617.62, 706.34);
-    path_8.cubicTo(2617.62, 706.417, 2617.62, 706.493, 2617.62, 706.57);
-    path_8.cubicTo(2617.62, 706.67, 2617.62, 706.79, 2617.54, 706.94);
-    path_8.cubicTo(2617.46, 707.09, 2617.47, 707.27, 2617.42, 707.47);
-    path_8.cubicTo(2617.37, 707.67, 2617.32, 707.9, 2617.26, 708.15);
-    path_8.cubicTo(2617.2, 708.4, 2617.19, 708.43, 2617.16, 708.57);
-    path_8.cubicTo(2614.43, 719.5, 2599.86, 768.42, 2544.96, 832.78);
-    path_8.cubicTo(2542.49, 835.66, 2539.84, 838.58, 2536.96, 841.52);
-    path_8.lineTo(2536.63, 841.86);
-    path_8.lineTo(2536.26, 842.22);
-    path_8.cubicTo(2530.02, 848.367, 2523.46, 854.44, 2516.59, 860.44);
-    path_8.lineTo(2516.53, 860.44);
-    path_8.cubicTo(2510.87, 865.207, 2504.84, 870.003, 2498.45, 874.83);
-    path_8.cubicTo(2470.45, 895.9, 2436.04, 917.06, 2399.52, 936.41);
-    path_8.cubicTo(2385.12, 944.04, 2370.4, 951.41, 2355.63, 958.34);
-    path_8.cubicTo(2336.53, 967.34, 2317.35, 975.66, 2298.68, 983.07);
-    path_8.lineTo(2298.1, 983.3);
-    path_8.cubicTo(2261.53, 997.79, 2226.92, 1008.76, 2198.66, 1014.3);
-    path_8.cubicTo(2122.36, 1029.38, 2072.45, 1006.76, 2056.03, 997.46);
-    path_8.lineTo(2055.03, 996.87);
-    path_8.cubicTo(2053.35, 995.87, 2051.72, 994.82, 2050.13, 993.78);
-    path_8.lineTo(2049.33, 993.24);
-    path_8.cubicTo(2013.65, 969.24, 2001.88, 936.24, 2000.04, 930.42);
-    path_8.lineTo(1998.7, 905.81);
-    path_8.cubicTo(2006.46, 908.906, 2014.44, 911.41, 2022.58, 913.3);
-    path_8.cubicTo(2033.57, 915.898, 2044.81, 917.24, 2056.1, 917.3);
-    path_8.cubicTo(2073.07, 917.441, 2089.86, 913.864, 2105.29, 906.82);
-    path_8.cubicTo(2147.77, 887.12, 2180.67, 836.69, 2192.84, 815.92);
-    path_8.cubicTo(2197.49, 807.99, 2208.5, 804.54, 2219.02, 807.77);
-    path_8.cubicTo(2306.87, 834.55, 2371.26, 825.26, 2427.77, 777.62);
-    path_8.cubicTo(2455.57, 754.18, 2472.11, 715.99, 2473.13, 672.84);
-    path_8.cubicTo(2474.37, 620.41, 2453.03, 568.63, 2416.07, 534.36);
-    path_8.cubicTo(2344.07, 467.55, 2243.47, 520.44, 2239.23, 522.72);
-    path_8.lineTo(2239.12, 522.78);
-    path_8.cubicTo(2183.4, 553.78, 2149.64, 587.14, 2131.12, 609.62);
-    path_8.cubicTo(2127.81, 613.633, 2123.51, 616.72, 2118.65, 618.583);
-    path_8.cubicTo(2113.79, 620.446, 2108.54, 621.02, 2103.39, 620.25);
-    path_8.cubicTo(2012.96, 606.35, 1950.71, 622.79, 1918.39, 669.1);
-    path_8.cubicTo(1906.39, 686.25, 1902.51, 704.92, 1903.58, 723.46);
-    path_8.cubicTo(1898.86, 711.999, 1894.89, 700.241, 1891.71, 688.26);
-    path_8.cubicTo(1904.39, 654.26, 1891.42, 599.89, 1884.34, 575.4);
-    path_8.cubicTo(1990.64, 561.49, 2081.18, 493.4, 2098.34, 479.77);
-    path_8.cubicTo(2198.65, 474.25, 2286.02, 424.21, 2316.69, 404.61);
-    path_8.cubicTo(2335.82, 447.45, 2387.55, 478.09, 2470.78, 495.77);
-    path_8.cubicTo(2512.38, 504.6, 2577.78, 571.44, 2578.42, 572.11);
-    path_8.cubicTo(2579.62, 573.343, 2581.11, 574.264, 2582.74, 574.794);
-    path_8.cubicTo(2584.38, 575.324, 2586.12, 575.447, 2587.82, 575.151);
-    path_8.cubicTo(2589.52, 574.855, 2591.12, 574.151, 2592.48, 573.098);
-    path_8.cubicTo(2593.84, 572.046, 2594.93, 570.677, 2595.64, 569.11);
-    path_8.cubicTo(2614.77, 527.59, 2654.53, 526.85, 2663.28, 527.23);
-    path_8.lineTo(2663.19, 527.36);
+    path_8.moveTo(size.width * 0.7995167, size.height * 0.1704460);
+    path_8.cubicTo(
+        size.width * 0.8022936,
+        size.height * 0.1719877,
+        size.width * 0.8157941,
+        size.height * 0.1807304,
+        size.width * 0.8112609,
+        size.height * 0.2034131);
+    path_8.cubicTo(
+        size.width * 0.8107475,
+        size.height * 0.2060808,
+        size.width * 0.8099279,
+        size.height * 0.2086700,
+        size.width * 0.8088232,
+        size.height * 0.2111215);
+    path_8.cubicTo(
+        size.width * 0.8025188,
+        size.height * 0.2249289,
+        size.width * 0.7895257,
+        size.height * 0.2254493,
+        size.width * 0.7889012,
+        size.height * 0.2254654);
+    path_8.cubicTo(
+        size.width * 0.7881927,
+        size.height * 0.2254774,
+        size.width * 0.7875083,
+        size.height * 0.2257434,
+        size.width * 0.7869559,
+        size.height * 0.2262217);
+    path_8.cubicTo(
+        size.width * 0.7868628,
+        size.height * 0.2263012,
+        size.width * 0.7867727,
+        size.height * 0.2263888,
+        size.width * 0.7866917,
+        size.height * 0.2264835);
+    path_8.cubicTo(
+        size.width * 0.7866316,
+        size.height * 0.2265449,
+        size.width * 0.7865776,
+        size.height * 0.2266096,
+        size.width * 0.7865236,
+        size.height * 0.2266774);
+    path_8.cubicTo(
+        size.width * 0.7864665,
+        size.height * 0.2267518,
+        size.width * 0.7864095,
+        size.height * 0.2268326,
+        size.width * 0.7863554,
+        size.height * 0.2269134);
+    path_8.cubicTo(
+        size.width * 0.7863014,
+        size.height * 0.2269942,
+        size.width * 0.7862624,
+        size.height * 0.2270621,
+        size.width * 0.7862174,
+        size.height * 0.2271396);
+    path_8.cubicTo(
+        size.width * 0.7862023,
+        size.height * 0.2271619,
+        size.width * 0.7861903,
+        size.height * 0.2271858,
+        size.width * 0.7861813,
+        size.height * 0.2272107);
+    path_8.cubicTo(
+        size.width * 0.7861453,
+        size.height * 0.2272767,
+        size.width * 0.7861123,
+        size.height * 0.2273445,
+        size.width * 0.7860853,
+        size.height * 0.2274144);
+    path_8.cubicTo(
+        size.width * 0.7860823,
+        size.height * 0.2274237,
+        size.width * 0.7860823,
+        size.height * 0.2274341,
+        size.width * 0.7860853,
+        size.height * 0.2274434);
+    path_8.cubicTo(
+        size.width * 0.7860522,
+        size.height * 0.2275210,
+        size.width * 0.7860192,
+        size.height * 0.2275986,
+        size.width * 0.7859922,
+        size.height * 0.2276794);
+    path_8.cubicTo(
+        size.width * 0.7859862,
+        size.height * 0.2276949,
+        size.width * 0.7859802,
+        size.height * 0.2277114,
+        size.width * 0.7859772,
+        size.height * 0.2277279);
+    path_8.cubicTo(
+        size.width * 0.7859502,
+        size.height * 0.2277983,
+        size.width * 0.7859292,
+        size.height * 0.2278707,
+        size.width * 0.7859111,
+        size.height * 0.2279444);
+    path_8.cubicTo(
+        size.width * 0.7858961,
+        size.height * 0.2279887,
+        size.width * 0.7858871,
+        size.height * 0.2280343,
+        size.width * 0.7858781,
+        size.height * 0.2280802);
+    path_8.cubicTo(
+        size.width * 0.7858691,
+        size.height * 0.2281044,
+        size.width * 0.7858631,
+        size.height * 0.2281293,
+        size.width * 0.7858601,
+        size.height * 0.2281545);
+    path_8.cubicTo(
+        size.width * 0.7858601,
+        size.height * 0.2281933,
+        size.width * 0.7858451,
+        size.height * 0.2282353,
+        size.width * 0.7858361,
+        size.height * 0.2282741);
+    path_8.cubicTo(
+        size.width * 0.7858361,
+        size.height * 0.2282805,
+        size.width * 0.7858361,
+        size.height * 0.2282870,
+        size.width * 0.7858361,
+        size.height * 0.2282935);
+    path_8.cubicTo(
+        size.width * 0.7858361,
+        size.height * 0.2283184,
+        size.width * 0.7858361,
+        size.height * 0.2283429,
+        size.width * 0.7858361,
+        size.height * 0.2283678);
+    path_8.cubicTo(
+        size.width * 0.7858361,
+        size.height * 0.2284001,
+        size.width * 0.7858361,
+        size.height * 0.2284389,
+        size.width * 0.7858121,
+        size.height * 0.2284874);
+    path_8.cubicTo(
+        size.width * 0.7857881,
+        size.height * 0.2285359,
+        size.width * 0.7857911,
+        size.height * 0.2285941,
+        size.width * 0.7857760,
+        size.height * 0.2286587);
+    path_8.cubicTo(
+        size.width * 0.7857610,
+        size.height * 0.2287233,
+        size.width * 0.7857460,
+        size.height * 0.2287977,
+        size.width * 0.7857280,
+        size.height * 0.2288785);
+    path_8.cubicTo(
+        size.width * 0.7857100,
+        size.height * 0.2289593,
+        size.width * 0.7857070,
+        size.height * 0.2289690,
+        size.width * 0.7856980,
+        size.height * 0.2290142);
+    path_8.cubicTo(
+        size.width * 0.7848784,
+        size.height * 0.2325469,
+        size.width * 0.7805044,
+        size.height * 0.2483581,
+        size.width * 0.7640228,
+        size.height * 0.2691597);
+    path_8.cubicTo(
+        size.width * 0.7632813,
+        size.height * 0.2700905,
+        size.width * 0.7624857,
+        size.height * 0.2710343,
+        size.width * 0.7616211,
+        size.height * 0.2719845);
+    path_8.lineTo(size.width * 0.7615221, size.height * 0.2720944);
+    path_8.lineTo(size.width * 0.7614110, size.height * 0.2722107);
+    path_8.cubicTo(
+        size.width * 0.7595377,
+        size.height * 0.2741975,
+        size.width * 0.7575683,
+        size.height * 0.2761603,
+        size.width * 0.7555059,
+        size.height * 0.2780995);
+    path_8.lineTo(size.width * 0.7554878, size.height * 0.2780995);
+    path_8.cubicTo(
+        size.width * 0.7537887,
+        size.height * 0.2796403,
+        size.width * 0.7519784,
+        size.height * 0.2811904,
+        size.width * 0.7500600,
+        size.height * 0.2827505);
+    path_8.cubicTo(
+        size.width * 0.7416542,
+        size.height * 0.2895604,
+        size.width * 0.7313239,
+        size.height * 0.2963995,
+        size.width * 0.7203603,
+        size.height * 0.3026535);
+    path_8.cubicTo(
+        size.width * 0.7160372,
+        size.height * 0.3051196,
+        size.width * 0.7116181,
+        size.height * 0.3075016,
+        size.width * 0.7071840,
+        size.height * 0.3097414);
+    path_8.cubicTo(
+        size.width * 0.7014500,
+        size.height * 0.3126503,
+        size.width * 0.6956920,
+        size.height * 0.3153394,
+        size.width * 0.6900871,
+        size.height * 0.3177343);
+    path_8.lineTo(size.width * 0.6899129, size.height * 0.3178087);
+    path_8.cubicTo(
+        size.width * 0.6789343,
+        size.height * 0.3224919,
+        size.width * 0.6685440,
+        size.height * 0.3260375,
+        size.width * 0.6600600,
+        size.height * 0.3278281);
+    path_8.cubicTo(
+        size.width * 0.6371540,
+        size.height * 0.3327020,
+        size.width * 0.6221705,
+        size.height * 0.3253911,
+        size.width * 0.6172411,
+        size.height * 0.3223853);
+    path_8.lineTo(size.width * 0.6169409, size.height * 0.3221946);
+    path_8.cubicTo(
+        size.width * 0.6164365,
+        size.height * 0.3218714,
+        size.width * 0.6159472,
+        size.height * 0.3215320,
+        size.width * 0.6154698,
+        size.height * 0.3211959);
+    path_8.lineTo(size.width * 0.6152297, size.height * 0.3210213);
+    path_8.cubicTo(
+        size.width * 0.6045182,
+        size.height * 0.3132644,
+        size.width * 0.6009847,
+        size.height * 0.3025986,
+        size.width * 0.6004323,
+        size.height * 0.3007175);
+    path_8.lineTo(size.width * 0.6000300, size.height * 0.2927634);
+    path_8.cubicTo(
+        size.width * 0.6023597,
+        size.height * 0.2937641,
+        size.width * 0.6047553,
+        size.height * 0.2945734,
+        size.width * 0.6071990,
+        size.height * 0.2951842);
+    path_8.cubicTo(
+        size.width * 0.6104983,
+        size.height * 0.2960239,
+        size.width * 0.6138727,
+        size.height * 0.2964577,
+        size.width * 0.6172621,
+        size.height * 0.2964771);
+    path_8.cubicTo(
+        size.width * 0.6223566,
+        size.height * 0.2965226,
+        size.width * 0.6273972,
+        size.height * 0.2953665,
+        size.width * 0.6320294,
+        size.height * 0.2930899);
+    path_8.cubicTo(
+        size.width * 0.6447823,
+        size.height * 0.2867227,
+        size.width * 0.6546593,
+        size.height * 0.2704234,
+        size.width * 0.6583128,
+        size.height * 0.2637104);
+    path_8.cubicTo(
+        size.width * 0.6597088,
+        size.height * 0.2611474,
+        size.width * 0.6630141,
+        size.height * 0.2600323,
+        size.width * 0.6661723,
+        size.height * 0.2610763);
+    path_8.cubicTo(
+        size.width * 0.6925458,
+        size.height * 0.2697317,
+        size.width * 0.7118763,
+        size.height * 0.2667292,
+        size.width * 0.7288412,
+        size.height * 0.2513316);
+    path_8.cubicTo(
+        size.width * 0.7371870,
+        size.height * 0.2437557,
+        size.width * 0.7421525,
+        size.height * 0.2314124,
+        size.width * 0.7424587,
+        size.height * 0.2174661);
+    path_8.cubicTo(
+        size.width * 0.7428310,
+        size.height * 0.2005204,
+        size.width * 0.7364245,
+        size.height * 0.1837847,
+        size.width * 0.7253287,
+        size.height * 0.1727085);
+    path_8.cubicTo(
+        size.width * 0.7037136,
+        size.height * 0.1511151,
+        size.width * 0.6735125,
+        size.height * 0.1682094,
+        size.width * 0.6722396,
+        size.height * 0.1689463);
+    path_8.lineTo(size.width * 0.6722065, size.height * 0.1689657);
+    path_8.cubicTo(
+        size.width * 0.6554788,
+        size.height * 0.1789851,
+        size.width * 0.6453437,
+        size.height * 0.1897673,
+        size.width * 0.6397838,
+        size.height * 0.1970330);
+    path_8.cubicTo(
+        size.width * 0.6387902,
+        size.height * 0.1983300,
+        size.width * 0.6374992,
+        size.height * 0.1993277,
+        size.width * 0.6360402,
+        size.height * 0.1999299);
+    path_8.cubicTo(
+        size.width * 0.6345812,
+        size.height * 0.2005320,
+        size.width * 0.6330051,
+        size.height * 0.2007175,
+        size.width * 0.6314590,
+        size.height * 0.2004686);
+    path_8.cubicTo(
+        size.width * 0.6043110,
+        size.height * 0.1959761,
+        size.width * 0.5856229,
+        size.height * 0.2012896,
+        size.width * 0.5759201,
+        size.height * 0.2162573);
+    path_8.cubicTo(
+        size.width * 0.5723176,
+        size.height * 0.2218003,
+        size.width * 0.5711528,
+        size.height * 0.2278345,
+        size.width * 0.5714740,
+        size.height * 0.2338268);
+    path_8.cubicTo(
+        size.width * 0.5700570,
+        size.height * 0.2301225,
+        size.width * 0.5688652,
+        size.height * 0.2263222,
+        size.width * 0.5679105,
+        size.height * 0.2224499);
+    path_8.cubicTo(
+        size.width * 0.5717172,
+        size.height * 0.2114609,
+        size.width * 0.5678235,
+        size.height * 0.1938882,
+        size.width * 0.5656980,
+        size.height * 0.1859729);
+    path_8.cubicTo(
+        size.width * 0.5976103,
+        size.height * 0.1814771,
+        size.width * 0.6247914,
+        size.height * 0.1594699,
+        size.width * 0.6299430,
+        size.height * 0.1550646);
+    path_8.cubicTo(
+        size.width * 0.6600570,
+        size.height * 0.1532805,
+        size.width * 0.6862864,
+        size.height * 0.1371073,
+        size.width * 0.6954938,
+        size.height * 0.1307725);
+    path_8.cubicTo(
+        size.width * 0.7012369,
+        size.height * 0.1446186,
+        size.width * 0.7167667,
+        size.height * 0.1545217,
+        size.width * 0.7417532,
+        size.height * 0.1602359);
+    path_8.cubicTo(
+        size.width * 0.7542420,
+        size.height * 0.1630899,
+        size.width * 0.7738757,
+        size.height * 0.1846930,
+        size.width * 0.7740678,
+        size.height * 0.1849095);
+    path_8.cubicTo(
+        size.width * 0.7744281,
+        size.height * 0.1853080,
+        size.width * 0.7748754,
+        size.height * 0.1856057,
+        size.width * 0.7753648,
+        size.height * 0.1857770);
+    path_8.cubicTo(
+        size.width * 0.7758571,
+        size.height * 0.1859483,
+        size.width * 0.7763795,
+        size.height * 0.1859880,
+        size.width * 0.7768898,
+        size.height * 0.1858924);
+    path_8.cubicTo(
+        size.width * 0.7774002,
+        size.height * 0.1857967,
+        size.width * 0.7778805,
+        size.height * 0.1855692,
+        size.width * 0.7782888,
+        size.height * 0.1852288);
+    path_8.cubicTo(
+        size.width * 0.7786971,
+        size.height * 0.1848888,
+        size.width * 0.7790243,
+        size.height * 0.1844463,
+        size.width * 0.7792375,
+        size.height * 0.1839399);
+    path_8.cubicTo(
+        size.width * 0.7849805,
+        size.height * 0.1705204,
+        size.width * 0.7969168,
+        size.height * 0.1702812,
+        size.width * 0.7995437,
+        size.height * 0.1704040);
+    path_8.lineTo(size.width * 0.7995167, size.height * 0.1704460);
     path_8.close();
-    path_8.moveTo(2657.55, 581.29);
-    path_8.cubicTo(2657.63, 580.518, 2657.41, 579.744, 2656.94, 579.131);
-    path_8.cubicTo(2656.46, 578.517, 2655.77, 578.112, 2655, 578);
-    path_8.cubicTo(2628.81, 574.87, 2596.62, 592.66, 2595.45, 621.34);
-    path_8.cubicTo(2595.45, 624.17, 2599.22, 625.23, 2600.85, 623);
-    path_8.cubicTo(2607.94, 615.953, 2615.47, 609.353, 2623.38, 603.24);
-    path_8.cubicTo(2625.19, 606.31, 2627.02, 609.24, 2628.73, 612.13);
-    path_8.cubicTo(2637.94, 626.43, 2644.32, 640.48, 2642.67, 657.98);
-    path_8.cubicTo(2642.22, 660.79, 2646.02, 662.57, 2647.82, 660.29);
-    path_8.cubicTo(2664.53, 640.46, 2653.57, 609.75, 2632.99, 596.66);
-    path_8.cubicTo(2640.46, 592.06, 2648.39, 588.04, 2655.99, 583.55);
-    path_8.cubicTo(2656.41, 583.325, 2656.77, 583.002, 2657.04, 582.609);
-    path_8.cubicTo(2657.31, 582.216, 2657.49, 581.764, 2657.55, 581.29);
+    path_8.moveTo(size.width * 0.7978235, size.height * 0.1878765);
+    path_8.cubicTo(
+        size.width * 0.7978475,
+        size.height * 0.1876270,
+        size.width * 0.7977814,
+        size.height * 0.1873769,
+        size.width * 0.7976403,
+        size.height * 0.1871787);
+    path_8.cubicTo(
+        size.width * 0.7974962,
+        size.height * 0.1869803,
+        size.width * 0.7972891,
+        size.height * 0.1868494,
+        size.width * 0.7970579,
+        size.height * 0.1868132);
+    path_8.cubicTo(
+        size.width * 0.7891954,
+        size.height * 0.1858016,
+        size.width * 0.7795317,
+        size.height * 0.1915514,
+        size.width * 0.7791804,
+        size.height * 0.2008209);
+    path_8.cubicTo(
+        size.width * 0.7791804,
+        size.height * 0.2017356,
+        size.width * 0.7803122,
+        size.height * 0.2020782,
+        size.width * 0.7808016,
+        size.height * 0.2013575);
+    path_8.cubicTo(
+        size.width * 0.7829301,
+        size.height * 0.1990798,
+        size.width * 0.7851906,
+        size.height * 0.1969467,
+        size.width * 0.7875653,
+        size.height * 0.1949709);
+    path_8.cubicTo(
+        size.width * 0.7881087,
+        size.height * 0.1959632,
+        size.width * 0.7886581,
+        size.height * 0.1969101,
+        size.width * 0.7891714,
+        size.height * 0.1978442);
+    path_8.cubicTo(
+        size.width * 0.7919364,
+        size.height * 0.2024661,
+        size.width * 0.7938517,
+        size.height * 0.2070071,
+        size.width * 0.7933563,
+        size.height * 0.2126632);
+    path_8.cubicTo(
+        size.width * 0.7932213,
+        size.height * 0.2135714,
+        size.width * 0.7943621,
+        size.height * 0.2141467,
+        size.width * 0.7949024,
+        size.height * 0.2134098);
+    path_8.cubicTo(
+        size.width * 0.7999189,
+        size.height * 0.2070006,
+        size.width * 0.7966286,
+        size.height * 0.1970750,
+        size.width * 0.7904503,
+        size.height * 0.1928442);
+    path_8.cubicTo(
+        size.width * 0.7926929,
+        size.height * 0.1913575,
+        size.width * 0.7950736,
+        size.height * 0.1900582,
+        size.width * 0.7973551,
+        size.height * 0.1886070);
+    path_8.cubicTo(
+        size.width * 0.7974812,
+        size.height * 0.1885343,
+        size.width * 0.7975893,
+        size.height * 0.1884299,
+        size.width * 0.7976704,
+        size.height * 0.1883028);
+    path_8.cubicTo(
+        size.width * 0.7977514,
+        size.height * 0.1881758,
+        size.width * 0.7978055,
+        size.height * 0.1880297,
+        size.width * 0.7978235,
+        size.height * 0.1878765);
     path_8.close();
-    path_8.moveTo(2284.22, 882.77);
-    path_8.cubicTo(2284.81, 881.713, 2285.17, 880.541, 2285.27, 879.333);
-    path_8.cubicTo(2285.37, 878.125, 2285.21, 876.91, 2284.8, 875.77);
-    path_8.cubicTo(2274.58, 847.26, 2244.29, 823.77, 2243.01, 822.77);
-    path_8.cubicTo(2241.23, 821.403, 2238.98, 820.798, 2236.75, 821.089);
-    path_8.cubicTo(2234.53, 821.379, 2232.51, 822.542, 2231.14, 824.32);
-    path_8.cubicTo(2216.14, 843.76, 2175.94, 864.32, 2175.54, 864.56);
-    path_8.cubicTo(2174.1, 865.292, 2172.9, 866.42, 2172.08, 867.81);
-    path_8.cubicTo(2171.26, 869.2, 2170.86, 870.796, 2170.91, 872.409);
-    path_8.cubicTo(2170.97, 874.022, 2171.48, 875.585, 2172.4, 876.916);
-    path_8.cubicTo(2173.31, 878.246, 2174.58, 879.288, 2176.07, 879.92);
-    path_8.cubicTo(2182.26, 882.434, 2187.73, 886.435, 2192, 891.57);
-    path_8.cubicTo(2191.25, 891.93, 2190.5, 892.31, 2189.76, 892.7);
-    path_8.cubicTo(2185.1, 895.62, 2181.09, 896.22, 2179.22, 902.94);
-    path_8.cubicTo(2179.15, 903.181, 2179.15, 903.436, 2179.23, 903.675);
-    path_8.cubicTo(2179.3, 903.914, 2179.44, 904.127, 2179.63, 904.29);
-    path_8.cubicTo(2182.71, 906.99, 2185.12, 907.47, 2187.36, 907.39);
-    path_8.cubicTo(2193.97, 907.23, 2200.67, 906.71, 2206.84, 904.24);
-    path_8.cubicTo(2233.17, 896.45, 2278.13, 887.03, 2278.59, 886.93);
-    path_8.cubicTo(2279.77, 886.678, 2280.88, 886.176, 2281.85, 885.459);
-    path_8.cubicTo(2282.83, 884.741, 2283.63, 883.824, 2284.22, 882.77);
+    path_8.moveTo(size.width * 0.6857460, size.height * 0.2853167);
+    path_8.cubicTo(
+        size.width * 0.6859231,
+        size.height * 0.2849751,
+        size.width * 0.6860312,
+        size.height * 0.2845963,
+        size.width * 0.6860612,
+        size.height * 0.2842059);
+    path_8.cubicTo(
+        size.width * 0.6860913,
+        size.height * 0.2838154,
+        size.width * 0.6860432,
+        size.height * 0.2834228,
+        size.width * 0.6859201,
+        size.height * 0.2830543);
+    path_8.cubicTo(
+        size.width * 0.6828520,
+        size.height * 0.2738397,
+        size.width * 0.6737586,
+        size.height * 0.2662476,
+        size.width * 0.6733744,
+        size.height * 0.2659244);
+    path_8.cubicTo(
+        size.width * 0.6728400,
+        size.height * 0.2654825,
+        size.width * 0.6721645,
+        size.height * 0.2652870,
+        size.width * 0.6714950,
+        size.height * 0.2653811);
+    path_8.cubicTo(
+        size.width * 0.6708286,
+        size.height * 0.2654748,
+        size.width * 0.6702222,
+        size.height * 0.2658507,
+        size.width * 0.6698109,
+        size.height * 0.2664253);
+    path_8.cubicTo(
+        size.width * 0.6653077,
+        size.height * 0.2727085,
+        size.width * 0.6532393,
+        size.height * 0.2793536,
+        size.width * 0.6531192,
+        size.height * 0.2794312);
+    path_8.cubicTo(
+        size.width * 0.6526869,
+        size.height * 0.2796677,
+        size.width * 0.6523266,
+        size.height * 0.2800323,
+        size.width * 0.6520805,
+        size.height * 0.2804816);
+    path_8.cubicTo(
+        size.width * 0.6518343,
+        size.height * 0.2809308,
+        size.width * 0.6517142,
+        size.height * 0.2814467,
+        size.width * 0.6517292,
+        size.height * 0.2819680);
+    path_8.cubicTo(
+        size.width * 0.6517472,
+        size.height * 0.2824893,
+        size.width * 0.6519003,
+        size.height * 0.2829945,
+        size.width * 0.6521765,
+        size.height * 0.2834247);
+    path_8.cubicTo(
+        size.width * 0.6524497,
+        size.height * 0.2838546,
+        size.width * 0.6528310,
+        size.height * 0.2841913,
+        size.width * 0.6532783,
+        size.height * 0.2843956);
+    path_8.cubicTo(
+        size.width * 0.6551366,
+        size.height * 0.2852081,
+        size.width * 0.6567787,
+        size.height * 0.2865013,
+        size.width * 0.6580606,
+        size.height * 0.2881610);
+    path_8.cubicTo(
+        size.width * 0.6578355,
+        size.height * 0.2882773,
+        size.width * 0.6576103,
+        size.height * 0.2884001,
+        size.width * 0.6573882,
+        size.height * 0.2885262);
+    path_8.cubicTo(
+        size.width * 0.6559892,
+        size.height * 0.2894699,
+        size.width * 0.6547853,
+        size.height * 0.2896639,
+        size.width * 0.6542240,
+        size.height * 0.2918358);
+    path_8.cubicTo(
+        size.width * 0.6542029,
+        size.height * 0.2919137,
+        size.width * 0.6542029,
+        size.height * 0.2919961,
+        size.width * 0.6542270,
+        size.height * 0.2920734);
+    path_8.cubicTo(
+        size.width * 0.6542480,
+        size.height * 0.2921506,
+        size.width * 0.6542900,
+        size.height * 0.2922195,
+        size.width * 0.6543470,
+        size.height * 0.2922721);
+    path_8.cubicTo(
+        size.width * 0.6552717,
+        size.height * 0.2931448,
+        size.width * 0.6559952,
+        size.height * 0.2932999,
+        size.width * 0.6566677,
+        size.height * 0.2932741);
+    path_8.cubicTo(
+        size.width * 0.6586521,
+        size.height * 0.2932224,
+        size.width * 0.6606635,
+        size.height * 0.2930543,
+        size.width * 0.6625158,
+        size.height * 0.2922560);
+    path_8.cubicTo(
+        size.width * 0.6704203,
+        size.height * 0.2897382,
+        size.width * 0.6839177,
+        size.height * 0.2866936,
+        size.width * 0.6840558,
+        size.height * 0.2866613);
+    path_8.cubicTo(
+        size.width * 0.6844101,
+        size.height * 0.2865798,
+        size.width * 0.6847433,
+        size.height * 0.2864176,
+        size.width * 0.6850345,
+        size.height * 0.2861858);
+    path_8.cubicTo(
+        size.width * 0.6853287,
+        size.height * 0.2859538,
+        size.width * 0.6855689,
+        size.height * 0.2856574,
+        size.width * 0.6857460,
+        size.height * 0.2853167);
     path_8.close();
 
     Paint paint_8_fill = Paint()..style = PaintingStyle.fill;
@@ -400,42 +2088,252 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_8, paint_8_fill);
 
     Path path_9 = Path();
-    path_9.moveTo(3062.31, 765.35);
-    path_9.cubicTo(3055.59, 760, 3048.16, 756.63, 3041.85, 759.04);
-    path_9.cubicTo(3041.56, 759.147, 3041.31, 759.352, 3041.16, 759.621);
-    path_9.cubicTo(3041, 759.889, 3040.94, 760.203, 3040.99, 760.51);
-    path_9.cubicTo(3041.9, 766.01, 3043.29, 769.03, 3045.33, 771.69);
-    path_9.cubicTo(3050.54, 779.13, 3055.13, 787.55, 3060.43, 794.94);
-    path_9.cubicTo(3060.43, 795.13, 3060.43, 795.32, 3060.52, 795.52);
-    path_9.cubicTo(3061.16, 799.04, 3062.09, 804.14, 3059.08, 809.71);
-    path_9.cubicTo(3056.37, 806.131, 3053.46, 802.712, 3050.36, 799.47);
-    path_9.cubicTo(3043.13, 792.83, 3037.5, 784.73, 3026.07, 784.98);
-    path_9.cubicTo(3025.75, 784.995, 3025.44, 785.139, 3025.22, 785.379);
-    path_9.cubicTo(3025, 785.618, 3024.89, 785.935, 3024.9, 786.26);
-    path_9.cubicTo(3025.01, 791.087, 3026.48, 795.786, 3029.13, 799.82);
-    path_9.cubicTo(3035, 809.65, 3040.4, 820.14, 3046.6, 829.74);
-    path_9.cubicTo(3045.94, 836.11, 3042.38, 850.49, 3023.94, 852.74);
-    path_9.cubicTo(3020.16, 849.81, 3016.21, 846.93, 3012.28, 844.07);
-    path_9.cubicTo(3008.35, 841.21, 3004.45, 838.37, 3000.78, 835.51);
-    path_9.cubicTo(2999.48, 834.51, 2998.29, 833.51, 2997.22, 832.51);
-    path_9.cubicTo(3000.15, 831.526, 3002.99, 830.292, 3005.7, 828.82);
-    path_9.cubicTo(3005.92, 828.627, 3006.06, 828.355, 3006.08, 828.063);
-    path_9.cubicTo(3006.1, 827.77, 3006, 827.482, 3005.81, 827.26);
-    path_9.cubicTo(3003.54, 824.675, 3000.62, 822.739, 2997.36, 821.65);
-    path_9.cubicTo(2988.36, 818.01, 2976.76, 824.21, 2979.41, 835.2);
-    path_9.cubicTo(2979.89, 837.1, 2980.64, 838.921, 2981.64, 840.61);
-    path_9.cubicTo(2989.33, 852.5, 2999.28, 861.36, 3010.4, 869.37);
-    path_9.cubicTo(3010.34, 871.122, 3009.79, 872.824, 3008.83, 874.29);
-    path_9.cubicTo(3007.44, 876.18, 3004.71, 877.36, 3000.7, 877.81);
-    path_9.cubicTo(2980.25, 880.11, 2949.42, 868.81, 2941.7, 860.75);
-    path_9.cubicTo(2939.56, 858.353, 2937.72, 855.703, 2936.23, 852.86);
-    path_9.cubicTo(2931.15, 844.13, 2924.82, 833.28, 2900.61, 819.86);
-    path_9.cubicTo(2889.91, 813.93, 2861.83, 803.86, 2816.14, 824.04);
-    path_9.cubicTo(2814.42, 739.99, 2766.39, 679.2, 2743.27, 654.73);
-    path_9.cubicTo(2774.17, 642.84, 2809.42, 634, 2845.88, 634);
-    path_9.cubicTo(2863.73, 633.936, 2881.51, 636.195, 2898.77, 640.72);
-    path_9.cubicTo(3027.39, 674.89, 3060.64, 760.02, 3060.97, 760.88);
-    path_9.cubicTo(3061.5, 762.344, 3061.95, 763.836, 3062.31, 765.35);
+    path_9.moveTo(size.width * 0.9193365, size.height * 0.2473659);
+    path_9.cubicTo(
+        size.width * 0.9173191,
+        size.height * 0.2456367,
+        size.width * 0.9150886,
+        size.height * 0.2445475,
+        size.width * 0.9131942,
+        size.height * 0.2453264);
+    path_9.cubicTo(
+        size.width * 0.9131072,
+        size.height * 0.2453610,
+        size.width * 0.9130321,
+        size.height * 0.2454273,
+        size.width * 0.9129871,
+        size.height * 0.2455142);
+    path_9.cubicTo(
+        size.width * 0.9129391,
+        size.height * 0.2456008,
+        size.width * 0.9129210,
+        size.height * 0.2457023,
+        size.width * 0.9129361,
+        size.height * 0.2458016);
+    path_9.cubicTo(
+        size.width * 0.9132092,
+        size.height * 0.2475792,
+        size.width * 0.9136265,
+        size.height * 0.2485553,
+        size.width * 0.9142390,
+        size.height * 0.2494150);
+    path_9.cubicTo(
+        size.width * 0.9158031,
+        size.height * 0.2518197,
+        size.width * 0.9171810,
+        size.height * 0.2545410,
+        size.width * 0.9187721,
+        size.height * 0.2569295);
+    path_9.cubicTo(
+        size.width * 0.9187721,
+        size.height * 0.2569910,
+        size.width * 0.9187721,
+        size.height * 0.2570524,
+        size.width * 0.9187992,
+        size.height * 0.2571170);
+    path_9.cubicTo(
+        size.width * 0.9189913,
+        size.height * 0.2582547,
+        size.width * 0.9192705,
+        size.height * 0.2599030,
+        size.width * 0.9183669,
+        size.height * 0.2617033);
+    path_9.cubicTo(
+        size.width * 0.9175533,
+        size.height * 0.2605465,
+        size.width * 0.9166797,
+        size.height * 0.2594415,
+        size.width * 0.9157490,
+        size.height * 0.2583937);
+    path_9.cubicTo(
+        size.width * 0.9135785,
+        size.height * 0.2562476,
+        size.width * 0.9118883,
+        size.height * 0.2536296,
+        size.width * 0.9084569,
+        size.height * 0.2537104);
+    path_9.cubicTo(
+        size.width * 0.9083609,
+        size.height * 0.2537153,
+        size.width * 0.9082678,
+        size.height * 0.2537618,
+        size.width * 0.9082017,
+        size.height * 0.2538394);
+    path_9.cubicTo(
+        size.width * 0.9081357,
+        size.height * 0.2539166,
+        size.width * 0.9081027,
+        size.height * 0.2540191,
+        size.width * 0.9081057,
+        size.height * 0.2541241);
+    path_9.cubicTo(
+        size.width * 0.9081387,
+        size.height * 0.2556842,
+        size.width * 0.9085800,
+        size.height * 0.2572030,
+        size.width * 0.9093756,
+        size.height * 0.2585068);
+    path_9.cubicTo(
+        size.width * 0.9111378,
+        size.height * 0.2616839,
+        size.width * 0.9127589,
+        size.height * 0.2650743,
+        size.width * 0.9146202,
+        size.height * 0.2681771);
+    path_9.cubicTo(
+        size.width * 0.9144221,
+        size.height * 0.2702359,
+        size.width * 0.9133533,
+        size.height * 0.2748836,
+        size.width * 0.9078175,
+        size.height * 0.2756109);
+    path_9.cubicTo(
+        size.width * 0.9066827,
+        size.height * 0.2746639,
+        size.width * 0.9054968,
+        size.height * 0.2737330,
+        size.width * 0.9043170,
+        size.height * 0.2728087);
+    path_9.cubicTo(
+        size.width * 0.9031372,
+        size.height * 0.2718843,
+        size.width * 0.9019664,
+        size.height * 0.2709664,
+        size.width * 0.9008646,
+        size.height * 0.2700420);
+    path_9.cubicTo(
+        size.width * 0.9004743,
+        size.height * 0.2697188,
+        size.width * 0.9001171,
+        size.height * 0.2693956,
+        size.width * 0.8997959,
+        size.height * 0.2690724);
+    path_9.cubicTo(
+        size.width * 0.9006755,
+        size.height * 0.2687544,
+        size.width * 0.9015281,
+        size.height * 0.2683555,
+        size.width * 0.9023416,
+        size.height * 0.2678798);
+    path_9.cubicTo(
+        size.width * 0.9024077,
+        size.height * 0.2678174,
+        size.width * 0.9024497,
+        size.height * 0.2677295,
+        size.width * 0.9024557,
+        size.height * 0.2676351);
+    path_9.cubicTo(
+        size.width * 0.9024617,
+        size.height * 0.2675404,
+        size.width * 0.9024317,
+        size.height * 0.2674473,
+        size.width * 0.9023747,
+        size.height * 0.2673756);
+    path_9.cubicTo(
+        size.width * 0.9016932,
+        size.height * 0.2665401,
+        size.width * 0.9008166,
+        size.height * 0.2659144,
+        size.width * 0.8998379,
+        size.height * 0.2655624);
+    path_9.cubicTo(
+        size.width * 0.8971360,
+        size.height * 0.2643859,
+        size.width * 0.8936536,
+        size.height * 0.2663898,
+        size.width * 0.8944491,
+        size.height * 0.2699418);
+    path_9.cubicTo(
+        size.width * 0.8945932,
+        size.height * 0.2705559,
+        size.width * 0.8948184,
+        size.height * 0.2711445,
+        size.width * 0.8951186,
+        size.height * 0.2716904);
+    path_9.cubicTo(
+        size.width * 0.8974272,
+        size.height * 0.2755333,
+        size.width * 0.9004143,
+        size.height * 0.2783969,
+        size.width * 0.9037526,
+        size.height * 0.2809858);
+    path_9.cubicTo(
+        size.width * 0.9037346,
+        size.height * 0.2815520,
+        size.width * 0.9035695,
+        size.height * 0.2821021,
+        size.width * 0.9032813,
+        size.height * 0.2825760);
+    path_9.cubicTo(
+        size.width * 0.9028640,
+        size.height * 0.2831868,
+        size.width * 0.9020444,
+        size.height * 0.2835682,
+        size.width * 0.9008406,
+        size.height * 0.2837136);
+    path_9.cubicTo(
+        size.width * 0.8947013,
+        size.height * 0.2844570,
+        size.width * 0.8854458,
+        size.height * 0.2808048,
+        size.width * 0.8831282,
+        size.height * 0.2781997);
+    path_9.cubicTo(
+        size.width * 0.8824857,
+        size.height * 0.2774250,
+        size.width * 0.8819334,
+        size.height * 0.2765685,
+        size.width * 0.8814860,
+        size.height * 0.2756496);
+    path_9.cubicTo(
+        size.width * 0.8799610,
+        size.height * 0.2728281,
+        size.width * 0.8780606,
+        size.height * 0.2693213,
+        size.width * 0.8707926,
+        size.height * 0.2649838);
+    path_9.cubicTo(
+        size.width * 0.8675803,
+        size.height * 0.2630672,
+        size.width * 0.8591504,
+        size.height * 0.2598125,
+        size.width * 0.8454338,
+        size.height * 0.2663348);
+    path_9.cubicTo(
+        size.width * 0.8449174,
+        size.height * 0.2391694,
+        size.width * 0.8304983,
+        size.height * 0.2195217,
+        size.width * 0.8235575,
+        size.height * 0.2116128);
+    path_9.cubicTo(
+        size.width * 0.8328340,
+        size.height * 0.2077699,
+        size.width * 0.8434164,
+        size.height * 0.2049127,
+        size.width * 0.8543621,
+        size.height * 0.2049127);
+    path_9.cubicTo(
+        size.width * 0.8597208,
+        size.height * 0.2048920,
+        size.width * 0.8650585,
+        size.height * 0.2056222,
+        size.width * 0.8702402,
+        size.height * 0.2070847);
+    path_9.cubicTo(
+        size.width * 0.9088532,
+        size.height * 0.2181286,
+        size.width * 0.9188352,
+        size.height * 0.2456432,
+        size.width * 0.9189343,
+        size.height * 0.2459211);
+    path_9.cubicTo(
+        size.width * 0.9190934,
+        size.height * 0.2463943,
+        size.width * 0.9192285,
+        size.height * 0.2468765,
+        size.width * 0.9193365,
+        size.height * 0.2473659);
     path_9.close();
 
     Paint paint_9_fill = Paint()..style = PaintingStyle.fill;
@@ -443,20 +2341,98 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_9, paint_9_fill);
 
     Path path_10 = Path();
-    path_10.moveTo(3269.05, 900.37);
-    path_10.cubicTo(3308.93, 937.91, 3318.98, 1015.37, 3298.45, 1124.99);
-    path_10.cubicTo(3275.08, 1100.84, 3221.01, 1064.99, 3109.85, 1073.43);
-    path_10.cubicTo(3109.57, 1073.43, 3109.28, 1073.43, 3108.98, 1073.5);
-    path_10.cubicTo(3090.46, 1076.06, 3070.86, 1077.5, 3051.64, 1078.22);
-    path_10.cubicTo(2994.29, 1079.97, 2936.22, 1076.22, 2880.4, 1062.5);
-    path_10.cubicTo(2843.48, 1052.76, 2809.15, 1035.25, 2777.23, 1014.32);
-    path_10.cubicTo(2762.85, 1005.16, 2748.97, 994.9, 2735.33, 984.26);
-    path_10.cubicTo(2725.48, 960.79, 2717.14, 943.1, 2712.73, 934.03);
-    path_10.cubicTo(2716.8, 929.49, 2720.82, 925.126, 2724.78, 920.94);
-    path_10.cubicTo(2759.51, 958.35, 2819.22, 1005.1, 2895.78, 996.6);
-    path_10.cubicTo(2962.18, 989.21, 2997.38, 964.6, 3034.66, 938.6);
-    path_10.cubicTo(3064.39, 917.84, 3095.14, 896.38, 3145.19, 882.33);
-    path_10.cubicTo(3182, 872, 3233.33, 866.75, 3269.05, 900.37);
+    path_10.moveTo(size.width * 0.9814020, size.height * 0.2910052);
+    path_10.cubicTo(
+        size.width * 0.9933744,
+        size.height * 0.3031383,
+        size.width * 0.9963915,
+        size.height * 0.3281739,
+        size.width * 0.9902282,
+        size.height * 0.3636037);
+    path_10.cubicTo(
+        size.width * 0.9832122,
+        size.height * 0.3557983,
+        size.width * 0.9669799,
+        size.height * 0.3442114,
+        size.width * 0.9336085,
+        size.height * 0.3469392);
+    path_10.cubicTo(
+        size.width * 0.9335245,
+        size.height * 0.3469392,
+        size.width * 0.9334374,
+        size.height * 0.3469392,
+        size.width * 0.9333473,
+        size.height * 0.3469619);
+    path_10.cubicTo(
+        size.width * 0.9277875,
+        size.height * 0.3477893,
+        size.width * 0.9219033,
+        size.height * 0.3482547,
+        size.width * 0.9161333,
+        size.height * 0.3484874);
+    path_10.cubicTo(
+        size.width * 0.8989162,
+        size.height * 0.3490530,
+        size.width * 0.8814830,
+        size.height * 0.3478410,
+        size.width * 0.8647253,
+        size.height * 0.3434066);
+    path_10.cubicTo(
+        size.width * 0.8536415,
+        size.height * 0.3402586,
+        size.width * 0.8433353,
+        size.height * 0.3345992,
+        size.width * 0.8337526,
+        size.height * 0.3278345);
+    path_10.cubicTo(
+        size.width * 0.8294356,
+        size.height * 0.3248739,
+        size.width * 0.8252687,
+        size.height * 0.3215579,
+        size.width * 0.8211738,
+        size.height * 0.3181189);
+    path_10.cubicTo(
+        size.width * 0.8182168,
+        size.height * 0.3105333,
+        size.width * 0.8157130,
+        size.height * 0.3048158,
+        size.width * 0.8143891,
+        size.height * 0.3018843);
+    path_10.cubicTo(
+        size.width * 0.8156109,
+        size.height * 0.3004169,
+        size.width * 0.8168178,
+        size.height * 0.2990065,
+        size.width * 0.8180066,
+        size.height * 0.2976535);
+    path_10.cubicTo(
+        size.width * 0.8284329,
+        size.height * 0.3097447,
+        size.width * 0.8463585,
+        size.height * 0.3248546,
+        size.width * 0.8693425,
+        size.height * 0.3221073);
+    path_10.cubicTo(
+        size.width * 0.8892765,
+        size.height * 0.3197188,
+        size.width * 0.8998439,
+        size.height * 0.3117647,
+        size.width * 0.9110357,
+        size.height * 0.3033613);
+    path_10.cubicTo(
+        size.width * 0.9199610,
+        size.height * 0.2966516,
+        size.width * 0.9291924,
+        size.height * 0.2897156,
+        size.width * 0.9442180,
+        size.height * 0.2851745);
+    path_10.cubicTo(
+        size.width * 0.9552687,
+        size.height * 0.2818358,
+        size.width * 0.9706785,
+        size.height * 0.2801390,
+        size.width * 0.9814020,
+        size.height * 0.2910052);
     path_10.close();
 
     Paint paint_10_fill = Paint()..style = PaintingStyle.fill;
@@ -464,18 +2440,84 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_10, paint_10_fill);
 
     Path path_11 = Path();
-    path_11.moveTo(3144.48, 1243.79);
-    path_11.cubicTo(3179.14, 1295.79, 3177.84, 1337.43, 3140.63, 1367.6);
-    path_11.cubicTo(3128.39, 1377.52, 3105.18, 1386.11, 3080.63, 1395.2);
-    path_11.cubicTo(3037.24, 1411.26, 2988.46, 1429.3, 2965.63, 1464.82);
-    path_11.cubicTo(2960.76, 1463.05, 2955.84, 1461.23, 2950.93, 1459.37);
-    path_11.cubicTo(2964.33, 1408.95, 2974.44, 1357.16, 2974.24, 1320.37);
-    path_11.cubicTo(2973.97, 1270.2, 2945.88, 1224.52, 2899.1, 1198.18);
-    path_11.cubicTo(2867.33, 1180.17, 2830.27, 1173.83, 2794.32, 1180.28);
-    path_11.cubicTo(2784.55, 1118.03, 2763.62, 1055.39, 2745, 1008);
-    path_11.cubicTo(2783.52, 1039.86, 2827.58, 1065.65, 2875.38, 1080.4);
-    path_11.cubicTo(2948.68, 1100.1, 3025.01, 1104.61, 3100.29, 1095.94);
-    path_11.cubicTo(3102, 1123.22, 3109.88, 1191.89, 3144.48, 1243.79);
+    path_11.moveTo(size.width * 0.9440048, size.height * 0.4020006);
+    path_11.cubicTo(
+        size.width * 0.9544101,
+        size.height * 0.4188074,
+        size.width * 0.9540198,
+        size.height * 0.4322657,
+        size.width * 0.9428490,
+        size.height * 0.4420168);
+    path_11.cubicTo(
+        size.width * 0.9391744,
+        size.height * 0.4452230,
+        size.width * 0.9322065,
+        size.height * 0.4479994,
+        size.width * 0.9248364,
+        size.height * 0.4509373);
+    path_11.cubicTo(
+        size.width * 0.9118103,
+        size.height * 0.4561280,
+        size.width * 0.8971660,
+        size.height * 0.4619586,
+        size.width * 0.8903122,
+        size.height * 0.4734389);
+    path_11.cubicTo(
+        size.width * 0.8888502,
+        size.height * 0.4728668,
+        size.width * 0.8873732,
+        size.height * 0.4722786,
+        size.width * 0.8858991,
+        size.height * 0.4716774);
+    path_11.cubicTo(
+        size.width * 0.8899219,
+        size.height * 0.4553814,
+        size.width * 0.8929571,
+        size.height * 0.4386425,
+        size.width * 0.8928970,
+        size.height * 0.4267518);
+    path_11.cubicTo(
+        size.width * 0.8928160,
+        size.height * 0.4105365,
+        size.width * 0.8843831,
+        size.height * 0.3957725,
+        size.width * 0.8703392,
+        size.height * 0.3872592);
+    path_11.cubicTo(
+        size.width * 0.8608016,
+        size.height * 0.3814383,
+        size.width * 0.8496758,
+        size.height * 0.3793891,
+        size.width * 0.8388832,
+        size.height * 0.3814738);
+    path_11.cubicTo(
+        size.width * 0.8359502,
+        size.height * 0.3613542,
+        size.width * 0.8296668,
+        size.height * 0.3411086,
+        size.width * 0.8240769,
+        size.height * 0.3257919);
+    path_11.cubicTo(
+        size.width * 0.8356409,
+        size.height * 0.3360892,
+        size.width * 0.8488682,
+        size.height * 0.3444247,
+        size.width * 0.8632183,
+        size.height * 0.3491920);
+    path_11.cubicTo(
+        size.width * 0.8852237,
+        size.height * 0.3555591,
+        size.width * 0.9081387,
+        size.height * 0.3570168,
+        size.width * 0.9307385,
+        size.height * 0.3542146);
+    path_11.cubicTo(
+        size.width * 0.9312519,
+        size.height * 0.3630317,
+        size.width * 0.9336175,
+        size.height * 0.3852262,
+        size.width * 0.9440048,
+        size.height * 0.4020006);
     path_11.close();
 
     Paint paint_11_fill = Paint()..style = PaintingStyle.fill;
@@ -483,11 +2525,35 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_11, paint_11_fill);
 
     Path path_12 = Path();
-    path_12.moveTo(3106, 1526.79);
-    path_12.cubicTo(3080, 1551.5, 3017.35, 1596.45, 2903.41, 1600.7);
-    path_12.cubicTo(2915.14, 1574.33, 2931.29, 1528.98, 2945.2, 1480.14);
-    path_12.cubicTo(2952.28, 1482.77, 2959.42, 1485.27, 2966.61, 1487.66);
-    path_12.cubicTo(2974, 1491, 3044.29, 1521.72, 3106, 1526.79);
+    path_12.moveTo(size.width * 0.9324527, size.height * 0.4934680);
+    path_12.cubicTo(
+        size.width * 0.9246473,
+        size.height * 0.5014544,
+        size.width * 0.9058391,
+        size.height * 0.5159825,
+        size.width * 0.8716331,
+        size.height * 0.5173562);
+    path_12.cubicTo(
+        size.width * 0.8751546,
+        size.height * 0.5088332,
+        size.width * 0.8800030,
+        size.height * 0.4941758,
+        size.width * 0.8841789,
+        size.height * 0.4783904);
+    path_12.cubicTo(
+        size.width * 0.8863044,
+        size.height * 0.4792405,
+        size.width * 0.8884479,
+        size.height * 0.4800485,
+        size.width * 0.8906064,
+        size.height * 0.4808209);
+    path_12.cubicTo(
+        size.width * 0.8928250,
+        size.height * 0.4819005,
+        size.width * 0.9139267,
+        size.height * 0.4918293,
+        size.width * 0.9324527,
+        size.height * 0.4934680);
     path_12.close();
 
     Paint paint_12_fill = Paint()..style = PaintingStyle.fill;
@@ -495,11 +2561,35 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_12, paint_12_fill);
 
     Path path_13 = Path();
-    path_13.moveTo(2603.07, 1468.19);
-    path_13.cubicTo(2598.18, 1476.78, 2594.77, 1486.13, 2592.99, 1495.85);
-    path_13.cubicTo(2591.06, 1505.47, 2589.91, 1515.23, 2589.54, 1525.04);
-    path_13.cubicTo(2572.02, 1514.49, 2555.47, 1502.4, 2540.09, 1488.91);
-    path_13.cubicTo(2558.27, 1483.78, 2580, 1477, 2603.07, 1468.19);
+    path_13.moveTo(size.width * 0.7814680, size.height * 0.4745281);
+    path_13.cubicTo(
+        size.width * 0.7800000,
+        size.height * 0.4773045,
+        size.width * 0.7789763,
+        size.height * 0.4803264,
+        size.width * 0.7784419,
+        size.height * 0.4834680);
+    path_13.cubicTo(
+        size.width * 0.7778625,
+        size.height * 0.4865772,
+        size.width * 0.7775173,
+        size.height * 0.4897317,
+        size.width * 0.7774062,
+        size.height * 0.4929024);
+    path_13.cubicTo(
+        size.width * 0.7721465,
+        size.height * 0.4894926,
+        size.width * 0.7671780,
+        size.height * 0.4855850,
+        size.width * 0.7625608,
+        size.height * 0.4812250);
+    path_13.cubicTo(
+        size.width * 0.7680186,
+        size.height * 0.4795669,
+        size.width * 0.7745422,
+        size.height * 0.4773756,
+        size.width * 0.7814680,
+        size.height * 0.4745281);
     path_13.close();
 
     Paint paint_13_fill = Paint()..style = PaintingStyle.fill;
@@ -507,22 +2597,100 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_13, paint_13_fill);
 
     Path path_14 = Path();
-    path_14.moveTo(2588.33, 1628.43);
-    path_14.cubicTo(2598.48, 1670.27, 2579.43, 1724.2, 2533.26, 1784.43);
-    path_14.cubicTo(2465.26, 1873.07, 2437.64, 1875.76, 2400.21, 1869.61);
-    path_14.cubicTo(2376.26, 1865.69, 2374.88, 1805.47, 2378.35, 1767.36);
-    path_14.cubicTo(2382.58, 1768.17, 2386.84, 1768.77, 2391.13, 1769.13);
-    path_14.cubicTo(2394.07, 1769.45, 2397.27, 1769.07, 2401.45, 1765.97);
-    path_14.cubicTo(2401.7, 1765.78, 2401.9, 1765.53, 2402, 1765.23);
-    path_14.cubicTo(2402.11, 1764.94, 2402.13, 1764.61, 2402.05, 1764.31);
-    path_14.cubicTo(2400.82, 1759.25, 2398.6, 1756.92, 2396.13, 1755.31);
-    path_14.cubicTo(2388.92, 1750.37, 2381.35, 1745.74, 2372.87, 1743.46);
-    path_14.lineTo(2372.78, 1743.46);
-    path_14.lineTo(2372.44, 1743.34);
-    path_14.cubicTo(2372.01, 1743.2, 2355.44, 1737.86, 2333.29, 1725.57);
-    path_14.cubicTo(2377.65, 1712.13, 2465.88, 1672.67, 2490.7, 1567.57);
-    path_14.cubicTo(2493, 1568.77, 2495.49, 1570.05, 2498.2, 1571.45);
-    path_14.cubicTo(2521.77, 1583.57, 2584.48, 1615.91, 2588.33, 1628.43);
+    path_14.moveTo(size.width * 0.7770429, size.height * 0.5263187);
+    path_14.cubicTo(
+        size.width * 0.7800901,
+        size.height * 0.5398416,
+        size.width * 0.7743711,
+        size.height * 0.5572721,
+        size.width * 0.7605104,
+        size.height * 0.5767388);
+    path_14.cubicTo(
+        size.width * 0.7400961,
+        size.height * 0.6053878,
+        size.width * 0.7318043,
+        size.height * 0.6062573,
+        size.width * 0.7205674,
+        size.height * 0.6042696);
+    path_14.cubicTo(
+        size.width * 0.7133774,
+        size.height * 0.6030026,
+        size.width * 0.7129631,
+        size.height * 0.5835391,
+        size.width * 0.7140048,
+        size.height * 0.5712217);
+    path_14.cubicTo(
+        size.width * 0.7152747,
+        size.height * 0.5714835,
+        size.width * 0.7165536,
+        size.height * 0.5716774,
+        size.width * 0.7178415,
+        size.height * 0.5717938);
+    path_14.cubicTo(
+        size.width * 0.7187241,
+        size.height * 0.5718972,
+        size.width * 0.7196848,
+        size.height * 0.5717744,
+        size.width * 0.7209397,
+        size.height * 0.5707725);
+    path_14.cubicTo(
+        size.width * 0.7210147,
+        size.height * 0.5707111,
+        size.width * 0.7210748,
+        size.height * 0.5706303,
+        size.width * 0.7211048,
+        size.height * 0.5705333);
+    path_14.cubicTo(
+        size.width * 0.7211378,
+        size.height * 0.5704396,
+        size.width * 0.7211438,
+        size.height * 0.5703329,
+        size.width * 0.7211198,
+        size.height * 0.5702359);
+    path_14.cubicTo(
+        size.width * 0.7207505,
+        size.height * 0.5686005,
+        size.width * 0.7200841,
+        size.height * 0.5678474,
+        size.width * 0.7193425,
+        size.height * 0.5673271);
+    path_14.cubicTo(
+        size.width * 0.7171780,
+        size.height * 0.5657304,
+        size.width * 0.7149054,
+        size.height * 0.5642340,
+        size.width * 0.7123597,
+        size.height * 0.5634971);
+    path_14.lineTo(size.width * 0.7123326, size.height * 0.5634971);
+    path_14.lineTo(size.width * 0.7122306, size.height * 0.5634583);
+    path_14.cubicTo(
+        size.width * 0.7121015,
+        size.height * 0.5634131,
+        size.width * 0.7071270,
+        size.height * 0.5616871,
+        size.width * 0.7004773,
+        size.height * 0.5577149);
+    path_14.cubicTo(
+        size.width * 0.7137947,
+        size.height * 0.5533710,
+        size.width * 0.7402822,
+        size.height * 0.5406173,
+        size.width * 0.7477334,
+        size.height * 0.5066484);
+    path_14.cubicTo(
+        size.width * 0.7484239,
+        size.height * 0.5070362,
+        size.width * 0.7491714,
+        size.height * 0.5074499,
+        size.width * 0.7499850,
+        size.height * 0.5079024);
+    path_14.cubicTo(
+        size.width * 0.7570609,
+        size.height * 0.5118197,
+        size.width * 0.7758871,
+        size.height * 0.5222721,
+        size.width * 0.7770429,
+        size.height * 0.5263187);
     path_14.close();
 
     Paint paint_14_fill = Paint()..style = PaintingStyle.fill;
@@ -530,41 +2698,209 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_14, paint_14_fill);
 
     Path path_15 = Path();
-    path_15.moveTo(2668.32, 1312.13);
-    path_15.cubicTo(2656.99, 1355.13, 2656.49, 1397.37, 2657.38, 1420.43);
-    path_15.cubicTo(2608.68, 1446.03, 2555.91, 1462.63, 2521.91, 1471.72);
-    path_15.cubicTo(2512.62, 1474.21, 2504.74, 1476.13, 2498.72, 1477.53);
-    path_15.cubicTo(2490.72, 1479.38, 2486.05, 1480.3, 2485.72, 1480.36);
-    path_15.lineTo(2485.59, 1480.36);
-    path_15.lineTo(2485.53, 1480.36);
-    path_15.lineTo(2485.41, 1480.36);
-    path_15.cubicTo(2467.32, 1483.24, 2449.09, 1485.19, 2430.79, 1486.21);
-    path_15.cubicTo(2411.48, 1487.95, 2393.37, 1484.87, 2373.92, 1489.83);
-    path_15.cubicTo(2373.75, 1489.89, 2373.6, 1489.99, 2373.48, 1490.13);
-    path_15.cubicTo(2373.36, 1490.27, 2373.28, 1490.43, 2373.25, 1490.61);
-    path_15.cubicTo(2373.22, 1490.79, 2373.24, 1490.98, 2373.31, 1491.14);
-    path_15.cubicTo(2373.38, 1491.31, 2373.49, 1491.46, 2373.63, 1491.57);
-    path_15.cubicTo(2390.97, 1502.72, 2411.06, 1503.06, 2430.72, 1504.92);
-    path_15.cubicTo(2444.19, 1505.78, 2457.7, 1505.52, 2471.12, 1504.14);
-    path_15.cubicTo(2457.97, 1539.65, 2460.6, 1545.35, 2462.12, 1548.6);
-    path_15.cubicTo(2463.4, 1551.39, 2465.12, 1553.32, 2471.31, 1557.01);
-    path_15.cubicTo(2446.31, 1677.79, 2332.31, 1705.47, 2308.62, 1709.95);
-    path_15.cubicTo(2277.84, 1688.3, 2244.29, 1654.87, 2228.76, 1606.25);
-    path_15.cubicTo(2211.18, 1549.12, 2255.22, 1461.77, 2274.88, 1427);
-    path_15.cubicTo(2276.83, 1429.74, 2279.01, 1432.31, 2281.39, 1434.68);
-    path_15.cubicTo(2291.6, 1454, 2306.39, 1471.68, 2327.07, 1480.41);
-    path_15.cubicTo(2339.46, 1485.31, 2347.82, 1467.84, 2336.15, 1461.31);
-    path_15.cubicTo(2324.15, 1455.25, 2313.52, 1446.63, 2304.15, 1436.79);
-    path_15.cubicTo(2342.88, 1415.72, 2386.3, 1397.01, 2430.83, 1380.59);
-    path_15.cubicTo(2434.38, 1379.29, 2437.94, 1377.99, 2441.5, 1376.72);
-    path_15.lineTo(2467.55, 1391.72);
-    path_15.cubicTo(2468.87, 1392.48, 2470.34, 1392.95, 2471.86, 1393.09);
-    path_15.cubicTo(2473.38, 1393.24, 2474.91, 1393.05, 2476.35, 1392.54);
-    path_15.lineTo(2585.06, 1354.54);
-    path_15.cubicTo(2586.67, 1353.98, 2588.12, 1353.04, 2589.28, 1351.8);
-    path_15.cubicTo(2590.45, 1350.56, 2591.3, 1349.06, 2591.76, 1347.42);
-    path_15.lineTo(2596.87, 1329.35);
-    path_15.cubicTo(2622.2, 1322.86, 2646.3, 1317.1, 2668.32, 1312.13);
+    path_15.moveTo(size.width * 0.8010567, size.height * 0.4240886);
+    path_15.cubicTo(
+        size.width * 0.7976554,
+        size.height * 0.4379864,
+        size.width * 0.7975053,
+        size.height * 0.4516387,
+        size.width * 0.7977724,
+        size.height * 0.4590918);
+    path_15.cubicTo(
+        size.width * 0.7831522,
+        size.height * 0.4673659,
+        size.width * 0.7673101,
+        size.height * 0.4727311,
+        size.width * 0.7571030,
+        size.height * 0.4756690);
+    path_15.cubicTo(
+        size.width * 0.7543140,
+        size.height * 0.4764738,
+        size.width * 0.7519484,
+        size.height * 0.4770944,
+        size.width * 0.7501411,
+        size.height * 0.4775469);
+    path_15.cubicTo(
+        size.width * 0.7477394,
+        size.height * 0.4781448,
+        size.width * 0.7463374,
+        size.height * 0.4784421,
+        size.width * 0.7462384,
+        size.height * 0.4784615);
+    path_15.lineTo(size.width * 0.7461993, size.height * 0.4784615);
+    path_15.lineTo(size.width * 0.7461813, size.height * 0.4784615);
+    path_15.lineTo(size.width * 0.7461453, size.height * 0.4784615);
+    path_15.cubicTo(
+        size.width * 0.7407145,
+        size.height * 0.4793924,
+        size.width * 0.7352417,
+        size.height * 0.4800226,
+        size.width * 0.7297478,
+        size.height * 0.4803523);
+    path_15.cubicTo(
+        size.width * 0.7239508,
+        size.height * 0.4809147,
+        size.width * 0.7185140,
+        size.height * 0.4799192,
+        size.width * 0.7126749,
+        size.height * 0.4815223);
+    path_15.cubicTo(
+        size.width * 0.7126238,
+        size.height * 0.4815417,
+        size.width * 0.7125788,
+        size.height * 0.4815740,
+        size.width * 0.7125428,
+        size.height * 0.4816193);
+    path_15.cubicTo(
+        size.width * 0.7125068,
+        size.height * 0.4816645,
+        size.width * 0.7124827,
+        size.height * 0.4817162,
+        size.width * 0.7124737,
+        size.height * 0.4817744);
+    path_15.cubicTo(
+        size.width * 0.7124647,
+        size.height * 0.4818326,
+        size.width * 0.7124707,
+        size.height * 0.4818940,
+        size.width * 0.7124917,
+        size.height * 0.4819457);
+    path_15.cubicTo(
+        size.width * 0.7125128,
+        size.height * 0.4820006,
+        size.width * 0.7125458,
+        size.height * 0.4820491,
+        size.width * 0.7125878,
+        size.height * 0.4820847);
+    path_15.cubicTo(
+        size.width * 0.7177935,
+        size.height * 0.4856884,
+        size.width * 0.7238247,
+        size.height * 0.4857983,
+        size.width * 0.7297268,
+        size.height * 0.4863995);
+    path_15.cubicTo(
+        size.width * 0.7337706,
+        size.height * 0.4866774,
+        size.width * 0.7378265,
+        size.height * 0.4865934,
+        size.width * 0.7418553,
+        size.height * 0.4861474);
+    path_15.cubicTo(
+        size.width * 0.7379075,
+        size.height * 0.4976244,
+        size.width * 0.7386971,
+        size.height * 0.4994667,
+        size.width * 0.7391534,
+        size.height * 0.5005171);
+    path_15.cubicTo(
+        size.width * 0.7395377,
+        size.height * 0.5014189,
+        size.width * 0.7400540,
+        size.height * 0.5020427,
+        size.width * 0.7419123,
+        size.height * 0.5032353);
+    path_15.cubicTo(
+        size.width * 0.7344071,
+        size.height * 0.5422721,
+        size.width * 0.7001831,
+        size.height * 0.5512185,
+        size.width * 0.6930711,
+        size.height * 0.5526665);
+    path_15.cubicTo(
+        size.width * 0.6838307,
+        size.height * 0.5456690,
+        size.width * 0.6737586,
+        size.height * 0.5348643,
+        size.width * 0.6690964,
+        size.height * 0.5191500);
+    path_15.cubicTo(
+        size.width * 0.6638187,
+        size.height * 0.5006852,
+        size.width * 0.6770399,
+        size.height * 0.4724531,
+        size.width * 0.6829421,
+        size.height * 0.4612153);
+    path_15.cubicTo(
+        size.width * 0.6835275,
+        size.height * 0.4621008,
+        size.width * 0.6841819,
+        size.height * 0.4629315,
+        size.width * 0.6848964,
+        size.height * 0.4636975);
+    path_15.cubicTo(
+        size.width * 0.6879616,
+        size.height * 0.4699418,
+        size.width * 0.6924017,
+        size.height * 0.4756561,
+        size.width * 0.6986100,
+        size.height * 0.4784777);
+    path_15.cubicTo(
+        size.width * 0.7023296,
+        size.height * 0.4800614,
+        size.width * 0.7048394,
+        size.height * 0.4744150,
+        size.width * 0.7013359,
+        size.height * 0.4723045);
+    path_15.cubicTo(
+        size.width * 0.6977334,
+        size.height * 0.4703458,
+        size.width * 0.6945422,
+        size.height * 0.4675598,
+        size.width * 0.6917292,
+        size.height * 0.4643794);
+    path_15.cubicTo(
+        size.width * 0.7033563,
+        size.height * 0.4575695,
+        size.width * 0.7163915,
+        size.height * 0.4515223,
+        size.width * 0.7297598,
+        size.height * 0.4462153);
+    path_15.cubicTo(
+        size.width * 0.7308256,
+        size.height * 0.4457951,
+        size.width * 0.7318943,
+        size.height * 0.4453749,
+        size.width * 0.7329631,
+        size.height * 0.4449644);
+    path_15.lineTo(size.width * 0.7407835, size.height * 0.4498125);
+    path_15.cubicTo(
+        size.width * 0.7411798,
+        size.height * 0.4500582,
+        size.width * 0.7416211,
+        size.height * 0.4502101,
+        size.width * 0.7420775,
+        size.height * 0.4502553);
+    path_15.cubicTo(
+        size.width * 0.7425338,
+        size.height * 0.4503038,
+        size.width * 0.7429931,
+        size.height * 0.4502424,
+        size.width * 0.7434254,
+        size.height * 0.4500776);
+    path_15.lineTo(size.width * 0.7760612, size.height * 0.4377957);
+    path_15.cubicTo(
+        size.width * 0.7765446,
+        size.height * 0.4376147,
+        size.width * 0.7769799,
+        size.height * 0.4373109,
+        size.width * 0.7773281,
+        size.height * 0.4369101);
+    path_15.cubicTo(
+        size.width * 0.7776794,
+        size.height * 0.4365094,
+        size.width * 0.7779346,
+        size.height * 0.4360246,
+        size.width * 0.7780727,
+        size.height * 0.4354945);
+    path_15.lineTo(size.width * 0.7796067, size.height * 0.4296542);
+    path_15.cubicTo(
+        size.width * 0.7872110,
+        size.height * 0.4275566,
+        size.width * 0.7944461,
+        size.height * 0.4256949,
+        size.width * 0.8010567,
+        size.height * 0.4240886);
     path_15.close();
 
     Paint paint_15_fill = Paint()..style = PaintingStyle.fill;
@@ -572,33 +2908,183 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_15, paint_15_fill);
 
     Path path_16 = Path();
-    path_16.moveTo(2948.23, 1337);
-    path_16.cubicTo(2946.08, 1369.94, 2937.63, 1410.53, 2927.09, 1450.1);
-    path_16.cubicTo(2925.23, 1457.07, 2923.32, 1463.98, 2921.35, 1470.85);
-    path_16.cubicTo(2904.35, 1530.42, 2884.07, 1584.1, 2875.65, 1600.94);
-    path_16.cubicTo(2874.93, 1602.39, 2874.29, 1603.57, 2873.75, 1604.45);
-    path_16.cubicTo(2862.47, 1612.21, 2852.94, 1610.88, 2815.01, 1604.18);
-    path_16.cubicTo(2794.77, 1600.6, 2767.01, 1595.71, 2728.58, 1591);
-    path_16.cubicTo(2666.58, 1583.42, 2634.88, 1572.93, 2622.45, 1555.92);
-    path_16.cubicTo(2618.98, 1551.06, 2616.71, 1545.45, 2615.81, 1539.54);
-    path_16.cubicTo(2614.1, 1529.67, 2614.81, 1517.1, 2617.97, 1500.6);
-    path_16.cubicTo(2626.06, 1457.85, 2666.97, 1450.27, 2672.25, 1449.46);
-    path_16.cubicTo(2691.92, 1449.34, 2711.54, 1451.44, 2730.74, 1455.71);
-    path_16.cubicTo(2751.74, 1459.8, 2767.3, 1470.2, 2788.5, 1476.29);
-    path_16.cubicTo(2788.71, 1476.35, 2788.94, 1476.36, 2789.15, 1476.3);
-    path_16.cubicTo(2789.36, 1476.24, 2789.55, 1476.12, 2789.7, 1475.96);
-    path_16.cubicTo(2789.85, 1475.8, 2789.95, 1475.6, 2790, 1475.39);
-    path_16.cubicTo(2790.04, 1475.17, 2790.02, 1474.95, 2789.94, 1474.74);
-    path_16.cubicTo(2775.86, 1441.8, 2720.94, 1424.8, 2683.05, 1423.74);
-    path_16.cubicTo(2682.84, 1419.01, 2682.66, 1412.99, 2682.68, 1406);
-    path_16.cubicTo(2682.68, 1380.61, 2685.18, 1342.36, 2696.86, 1305.86);
-    path_16.cubicTo(2699, 1299.16, 2701.46, 1292.52, 2704.26, 1286.03);
-    path_16.cubicTo(2711.26, 1283.93, 2721.45, 1281.19, 2733.95, 1278.74);
-    path_16.cubicTo(2748.31, 1275.91, 2762.85, 1274.07, 2777.46, 1273.22);
-    path_16.cubicTo(2780.88, 1273.03, 2784.36, 1272.89, 2787.9, 1272.82);
-    path_16.cubicTo(2791.44, 1272.75, 2795.02, 1272.73, 2798.65, 1272.82);
-    path_16.lineTo(2798.78, 1272.82);
-    path_16.cubicTo(2847.69, 1273.68, 2904.59, 1287.83, 2948.23, 1337);
+    path_16.moveTo(size.width * 0.8850886, size.height * 0.4321267);
+    path_16.cubicTo(
+        size.width * 0.8844431,
+        size.height * 0.4427731,
+        size.width * 0.8819063,
+        size.height * 0.4558920,
+        size.width * 0.8787421,
+        size.height * 0.4686813);
+    path_16.cubicTo(
+        size.width * 0.8781837,
+        size.height * 0.4709341,
+        size.width * 0.8776103,
+        size.height * 0.4731674,
+        size.width * 0.8770189,
+        size.height * 0.4753878);
+    path_16.cubicTo(
+        size.width * 0.8719153,
+        size.height * 0.4946412,
+        size.width * 0.8658271,
+        size.height * 0.5119910,
+        size.width * 0.8632993,
+        size.height * 0.5174337);
+    path_16.cubicTo(
+        size.width * 0.8630832,
+        size.height * 0.5179024,
+        size.width * 0.8628910,
+        size.height * 0.5182838,
+        size.width * 0.8627289,
+        size.height * 0.5185682);
+    path_16.cubicTo(
+        size.width * 0.8593425,
+        size.height * 0.5210763,
+        size.width * 0.8564815,
+        size.height * 0.5206464,
+        size.width * 0.8450946,
+        size.height * 0.5184809);
+    path_16.cubicTo(
+        size.width * 0.8390183,
+        size.height * 0.5173239,
+        size.width * 0.8306845,
+        size.height * 0.5157434,
+        size.width * 0.8191474,
+        size.height * 0.5142211);
+    path_16.cubicTo(
+        size.width * 0.8005344,
+        size.height * 0.5117712,
+        size.width * 0.7910177,
+        size.height * 0.5083807,
+        size.width * 0.7872861,
+        size.height * 0.5028830);
+    path_16.cubicTo(
+        size.width * 0.7862444,
+        size.height * 0.5013122,
+        size.width * 0.7855629,
+        size.height * 0.4994990,
+        size.width * 0.7852927,
+        size.height * 0.4975889);
+    path_16.cubicTo(
+        size.width * 0.7847793,
+        size.height * 0.4943988,
+        size.width * 0.7849925,
+        size.height * 0.4903361,
+        size.width * 0.7859412,
+        size.height * 0.4850032);
+    path_16.cubicTo(
+        size.width * 0.7883699,
+        size.height * 0.4711862,
+        size.width * 0.8006515,
+        size.height * 0.4687363,
+        size.width * 0.8022366,
+        size.height * 0.4684745);
+    path_16.cubicTo(
+        size.width * 0.8081417,
+        size.height * 0.4684357,
+        size.width * 0.8140318,
+        size.height * 0.4691144,
+        size.width * 0.8197959,
+        size.height * 0.4704945);
+    path_16.cubicTo(
+        size.width * 0.8261003,
+        size.height * 0.4718164,
+        size.width * 0.8307715,
+        size.height * 0.4751778,
+        size.width * 0.8371360,
+        size.height * 0.4771461);
+    path_16.cubicTo(
+        size.width * 0.8371990,
+        size.height * 0.4771655,
+        size.width * 0.8372681,
+        size.height * 0.4771687,
+        size.width * 0.8373311,
+        size.height * 0.4771493);
+    path_16.cubicTo(
+        size.width * 0.8373942,
+        size.height * 0.4771299,
+        size.width * 0.8374512,
+        size.height * 0.4770911,
+        size.width * 0.8374962,
+        size.height * 0.4770394);
+    path_16.cubicTo(
+        size.width * 0.8375413,
+        size.height * 0.4769877,
+        size.width * 0.8375713,
+        size.height * 0.4769231,
+        size.width * 0.8375863,
+        size.height * 0.4768552);
+    path_16.cubicTo(
+        size.width * 0.8375983,
+        size.height * 0.4767841,
+        size.width * 0.8375923,
+        size.height * 0.4767130,
+        size.width * 0.8375683,
+        size.height * 0.4766451);
+    path_16.cubicTo(
+        size.width * 0.8333413,
+        size.height * 0.4659987,
+        size.width * 0.8168538,
+        size.height * 0.4605042,
+        size.width * 0.8054788,
+        size.height * 0.4601616);
+    path_16.cubicTo(
+        size.width * 0.8054158,
+        size.height * 0.4586328,
+        size.width * 0.8053618,
+        size.height * 0.4566871,
+        size.width * 0.8053678,
+        size.height * 0.4544279);
+    path_16.cubicTo(
+        size.width * 0.8053678,
+        size.height * 0.4462217,
+        size.width * 0.8061183,
+        size.height * 0.4338591,
+        size.width * 0.8096247,
+        size.height * 0.4220621);
+    path_16.cubicTo(
+        size.width * 0.8102672,
+        size.height * 0.4198966,
+        size.width * 0.8110057,
+        size.height * 0.4177505,
+        size.width * 0.8118463,
+        size.height * 0.4156529);
+    path_16.cubicTo(
+        size.width * 0.8139478,
+        size.height * 0.4149741,
+        size.width * 0.8170069,
+        size.height * 0.4140886,
+        size.width * 0.8207595,
+        size.height * 0.4132967);
+    path_16.cubicTo(
+        size.width * 0.8250705,
+        size.height * 0.4123820,
+        size.width * 0.8294356,
+        size.height * 0.4117873,
+        size.width * 0.8338217,
+        size.height * 0.4115126);
+    path_16.cubicTo(
+        size.width * 0.8348484,
+        size.height * 0.4114512,
+        size.width * 0.8358931,
+        size.height * 0.4114059,
+        size.width * 0.8369559,
+        size.height * 0.4113833);
+    path_16.cubicTo(
+        size.width * 0.8380186,
+        size.height * 0.4113607,
+        size.width * 0.8390934,
+        size.height * 0.4113542,
+        size.width * 0.8401831,
+        size.height * 0.4113833);
+    path_16.lineTo(size.width * 0.8402222, size.height * 0.4113833);
+    path_16.cubicTo(
+        size.width * 0.8549054,
+        size.height * 0.4116613,
+        size.width * 0.8719874,
+        size.height * 0.4162346,
+        size.width * 0.8850886,
+        size.height * 0.4321267);
     path_16.close();
 
     Paint paint_16_fill = Paint()..style = PaintingStyle.fill;
@@ -606,19 +3092,73 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_16, paint_16_fill);
 
     Path path_17 = Path();
-    path_17.moveTo(2886.59, 1220.32);
-    path_17.cubicTo(2920.83, 1239.59, 2942.97, 1271.1, 2947.78, 1306.44);
-    path_17.cubicTo(2902.23, 1265.22, 2847.46, 1252.66, 2799.84, 1251.74);
-    path_17.lineTo(2799.29, 1251.74);
-    path_17.cubicTo(2792.22, 1251.61, 2785.29, 1251.74, 2778.61, 1252.08);
-    path_17.lineTo(2778.09, 1252.08);
-    path_17.cubicTo(2757.77, 1253.16, 2737.58, 1256.02, 2717.75, 1260.61);
-    path_17.cubicTo(2728.09, 1244.66, 2741.4, 1230.69, 2758.49, 1220.44);
-    path_17.cubicTo(2764.24, 1216.99, 2770.26, 1214.01, 2776.49, 1211.54);
-    path_17.cubicTo(2776.59, 1211.49, 2776.69, 1211.45, 2776.8, 1211.42);
-    path_17.cubicTo(2783.43, 1208.81, 2790.28, 1206.78, 2797.27, 1205.36);
-    path_17.lineTo(2797.56, 1205.36);
-    path_17.cubicTo(2827, 1199.42, 2858.34, 1204.42, 2886.59, 1220.32);
+    path_17.moveTo(size.width * 0.8665836, size.height * 0.3944150);
+    path_17.cubicTo(
+        size.width * 0.8768628,
+        size.height * 0.4006432,
+        size.width * 0.8835095,
+        size.height * 0.4108274,
+        size.width * 0.8849535,
+        size.height * 0.4222495);
+    path_17.cubicTo(
+        size.width * 0.8712789,
+        size.height * 0.4089270,
+        size.width * 0.8548364,
+        size.height * 0.4048675,
+        size.width * 0.8405404,
+        size.height * 0.4045701);
+    path_17.lineTo(size.width * 0.8403753, size.height * 0.4045701);
+    path_17.cubicTo(
+        size.width * 0.8382528,
+        size.height * 0.4045281,
+        size.width * 0.8361723,
+        size.height * 0.4045701,
+        size.width * 0.8341669,
+        size.height * 0.4046800);
+    path_17.lineTo(size.width * 0.8340108, size.height * 0.4046800);
+    path_17.cubicTo(
+        size.width * 0.8279105,
+        size.height * 0.4050291,
+        size.width * 0.8218493,
+        size.height * 0.4059535,
+        size.width * 0.8158961,
+        size.height * 0.4074370);
+    path_17.cubicTo(
+        size.width * 0.8190003,
+        size.height * 0.4022818,
+        size.width * 0.8229961,
+        size.height * 0.3977666,
+        size.width * 0.8281267,
+        size.height * 0.3944538);
+    path_17.cubicTo(
+        size.width * 0.8298529,
+        size.height * 0.3933387,
+        size.width * 0.8316602,
+        size.height * 0.3923756,
+        size.width * 0.8335305,
+        size.height * 0.3915772);
+    path_17.cubicTo(
+        size.width * 0.8335605,
+        size.height * 0.3915611,
+        size.width * 0.8335905,
+        size.height * 0.3915482,
+        size.width * 0.8336235,
+        size.height * 0.3915385);
+    path_17.cubicTo(
+        size.width * 0.8356139,
+        size.height * 0.3906949,
+        size.width * 0.8376704,
+        size.height * 0.3900388,
+        size.width * 0.8397688,
+        size.height * 0.3895798);
+    path_17.lineTo(size.width * 0.8398559, size.height * 0.3895798);
+    path_17.cubicTo(
+        size.width * 0.8486941,
+        size.height * 0.3876600,
+        size.width * 0.8581027,
+        size.height * 0.3892760,
+        size.width * 0.8665836,
+        size.height * 0.3944150);
     path_17.close();
 
     Paint paint_17_fill = Paint()..style = PaintingStyle.fill;
@@ -626,16 +3166,58 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_17, paint_17_fill);
 
     Path path_18 = Path();
-    path_18.moveTo(2728, 1211);
-    path_18.cubicTo(2707.5, 1227.87, 2692.81, 1249.39, 2682.33, 1272.44);
-    path_18.cubicTo(2680.76, 1274.16, 2679.8, 1276.36, 2679.6, 1278.68);
-    path_18.cubicTo(2678.2, 1282.05, 2676.87, 1285.44, 2675.6, 1288.86);
-    path_18.cubicTo(2653.6, 1293.7, 2629.32, 1299.39, 2603.51, 1305.93);
-    path_18.lineTo(2614.51, 1267.07);
-    path_18.cubicTo(2615.12, 1264.92, 2615.03, 1262.64, 2614.26, 1260.54);
-    path_18.cubicTo(2613.5, 1258.45, 2612.09, 1256.65, 2610.24, 1255.4);
-    path_18.lineTo(2584.24, 1237.88);
-    path_18.cubicTo(2630.89, 1225.28, 2679.6, 1215.5, 2728, 1211);
+    path_18.moveTo(size.width * 0.8189733, size.height * 0.3914027);
+    path_18.cubicTo(
+        size.width * 0.8128190,
+        size.height * 0.3968552,
+        size.width * 0.8084089,
+        size.height * 0.4038106,
+        size.width * 0.8052627,
+        size.height * 0.4112605);
+    path_18.cubicTo(
+        size.width * 0.8047914,
+        size.height * 0.4118164,
+        size.width * 0.8045032,
+        size.height * 0.4125275,
+        size.width * 0.8044431,
+        size.height * 0.4132773);
+    path_18.cubicTo(
+        size.width * 0.8040228,
+        size.height * 0.4143665,
+        size.width * 0.8036235,
+        size.height * 0.4154622,
+        size.width * 0.8032423,
+        size.height * 0.4165676);
+    path_18.cubicTo(
+        size.width * 0.7966376,
+        size.height * 0.4181319,
+        size.width * 0.7893485,
+        size.height * 0.4199709,
+        size.width * 0.7816001,
+        size.height * 0.4220847);
+    path_18.lineTo(size.width * 0.7849024, size.height * 0.4095249);
+    path_18.cubicTo(
+        size.width * 0.7850856,
+        size.height * 0.4088300,
+        size.width * 0.7850585,
+        size.height * 0.4080931,
+        size.width * 0.7848274,
+        size.height * 0.4074144);
+    path_18.cubicTo(
+        size.width * 0.7845992,
+        size.height * 0.4067388,
+        size.width * 0.7841759,
+        size.height * 0.4061571,
+        size.width * 0.7836205,
+        size.height * 0.4057531);
+    path_18.lineTo(size.width * 0.7758151, size.height * 0.4000905);
+    path_18.cubicTo(
+        size.width * 0.7898199,
+        size.height * 0.3960181,
+        size.width * 0.8044431,
+        size.height * 0.3928571,
+        size.width * 0.8189733,
+        size.height * 0.3914027);
     path_18.close();
 
     Paint paint_18_fill = Paint()..style = PaintingStyle.fill;
@@ -643,27 +3225,93 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_18, paint_18_fill);
 
     Path path_19 = Path();
-    path_19.moveTo(2483.32, 1056.29);
-    path_19.lineTo(2507, 1088);
-    path_19.lineTo(2468, 1081.63);
-    path_19.cubicTo(2466.4, 1081.38, 2464.77, 1081.59, 2463.29, 1082.23);
-    path_19.cubicTo(2461.8, 1082.87, 2460.53, 1083.92, 2459.62, 1085.25);
-    path_19.lineTo(2435.52, 1120.87);
-    path_19.lineTo(2429.8, 1076.27);
-    path_19.cubicTo(2429.59, 1074.64, 2428.92, 1073.1, 2427.85, 1071.84);
-    path_19.cubicTo(2426.79, 1070.59, 2425.38, 1069.67, 2423.8, 1069.2);
-    path_19.lineTo(2387.47, 1058.68);
-    path_19.lineTo(2422.01, 1043.37);
-    path_19.cubicTo(2423.6, 1042.66, 2424.93, 1041.48, 2425.83, 1039.98);
-    path_19.cubicTo(2426.72, 1038.49, 2427.14, 1036.76, 2427.01, 1035.02);
-    path_19.cubicTo(2427.01, 1032.31, 2427.58, 1014.38, 2428.21, 996.68);
-    path_19.lineTo(2451.97, 1022.68);
-    path_19.cubicTo(2453.07, 1023.88, 2454.49, 1024.73, 2456.05, 1025.14);
-    path_19.cubicTo(2457.62, 1025.56, 2459.28, 1025.51, 2460.82, 1025.01);
-    path_19.lineTo(2502.08, 1011.73);
-    path_19.lineTo(2482.69, 1047.23);
-    path_19.cubicTo(2481.92, 1048.64, 2481.58, 1050.25, 2481.69, 1051.85);
-    path_19.cubicTo(2481.8, 1053.46, 2482.37, 1055, 2483.32, 1056.29);
+    path_19.moveTo(size.width * 0.7455179, size.height * 0.3413995);
+    path_19.lineTo(size.width * 0.7526268, size.height * 0.3516484);
+    path_19.lineTo(size.width * 0.7409186, size.height * 0.3495895);
+    path_19.cubicTo(
+        size.width * 0.7404383,
+        size.height * 0.3495087,
+        size.width * 0.7399490,
+        size.height * 0.3495766,
+        size.width * 0.7395047,
+        size.height * 0.3497835);
+    path_19.cubicTo(
+        size.width * 0.7390573,
+        size.height * 0.3499903,
+        size.width * 0.7386761,
+        size.height * 0.3503297,
+        size.width * 0.7384029,
+        size.height * 0.3507595);
+    path_19.lineTo(size.width * 0.7311678, size.height * 0.3622721);
+    path_19.lineTo(size.width * 0.7294506, size.height * 0.3478571);
+    path_19.cubicTo(
+        size.width * 0.7293876,
+        size.height * 0.3473303,
+        size.width * 0.7291864,
+        size.height * 0.3468326,
+        size.width * 0.7288652,
+        size.height * 0.3464253);
+    path_19.cubicTo(
+        size.width * 0.7285470,
+        size.height * 0.3460213,
+        size.width * 0.7281237,
+        size.height * 0.3457240,
+        size.width * 0.7276494,
+        size.height * 0.3455721);
+    path_19.lineTo(size.width * 0.7167427, size.height * 0.3421719);
+    path_19.lineTo(size.width * 0.7271120, size.height * 0.3372237);
+    path_19.cubicTo(
+        size.width * 0.7275893,
+        size.height * 0.3369942,
+        size.width * 0.7279886,
+        size.height * 0.3366128,
+        size.width * 0.7282588,
+        size.height * 0.3361280);
+    path_19.cubicTo(
+        size.width * 0.7285260,
+        size.height * 0.3356464,
+        size.width * 0.7286521,
+        size.height * 0.3350873,
+        size.width * 0.7286130,
+        size.height * 0.3345249);
+    path_19.cubicTo(
+        size.width * 0.7286130,
+        size.height * 0.3336490,
+        size.width * 0.7287841,
+        size.height * 0.3278539,
+        size.width * 0.7289733,
+        size.height * 0.3221332);
+    path_19.lineTo(size.width * 0.7361063, size.height * 0.3305365);
+    path_19.cubicTo(
+        size.width * 0.7364365,
+        size.height * 0.3309244,
+        size.width * 0.7368628,
+        size.height * 0.3311991,
+        size.width * 0.7373311,
+        size.height * 0.3313316);
+    path_19.cubicTo(
+        size.width * 0.7378025,
+        size.height * 0.3314674,
+        size.width * 0.7383008,
+        size.height * 0.3314512,
+        size.width * 0.7387631,
+        size.height * 0.3312896);
+    path_19.lineTo(size.width * 0.7511498, size.height * 0.3269974);
+    path_19.lineTo(size.width * 0.7453287, size.height * 0.3384712);
+    path_19.cubicTo(
+        size.width * 0.7450976,
+        size.height * 0.3389270,
+        size.width * 0.7449955,
+        size.height * 0.3394473,
+        size.width * 0.7450285,
+        size.height * 0.3399644);
+    path_19.cubicTo(
+        size.width * 0.7450615,
+        size.height * 0.3404848,
+        size.width * 0.7452327,
+        size.height * 0.3409825,
+        size.width * 0.7455179,
+        size.height * 0.3413995);
     path_19.close();
 
     Paint paint_19_fill = Paint()..style = PaintingStyle.fill;
@@ -671,19 +3319,19 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_19, paint_19_fill);
 
     Path path_20 = Path();
-    path_20.moveTo(2592, 1268.64);
-    path_20.lineTo(2579.72, 1312.06);
-    path_20.lineTo(2573.03, 1335.74);
-    path_20.lineTo(2572.83, 1336.44);
-    path_20.lineTo(2473.9, 1371.05);
-    path_20.lineTo(2467.89, 1367.58);
-    path_20.lineTo(2443.64, 1353.57);
-    path_20.lineTo(2409.32, 1333.75);
-    path_20.lineTo(2427.83, 1291.33);
-    path_20.lineTo(2437.43, 1269.33);
-    path_20.lineTo(2539.33, 1233.13);
-    path_20.lineTo(2557.51, 1245.39);
-    path_20.lineTo(2592, 1268.64);
+    path_20.moveTo(size.width * 0.7781447, size.height * 0.4100323);
+    path_20.lineTo(size.width * 0.7744581, size.height * 0.4240659);
+    path_20.lineTo(size.width * 0.7724497, size.height * 0.4317195);
+    path_20.lineTo(size.width * 0.7723897, size.height * 0.4319457);
+    path_20.lineTo(size.width * 0.7426899, size.height * 0.4431319);
+    path_20.lineTo(size.width * 0.7408856, size.height * 0.4420103);
+    path_20.lineTo(size.width * 0.7336055, size.height * 0.4374822);
+    path_20.lineTo(size.width * 0.7233023, size.height * 0.4310763);
+    path_20.lineTo(size.width * 0.7288592, size.height * 0.4173659);
+    path_20.lineTo(size.width * 0.7317412, size.height * 0.4102553);
+    path_20.lineTo(size.width * 0.7623326, size.height * 0.3985553);
+    path_20.lineTo(size.width * 0.7677905, size.height * 0.4025178);
+    path_20.lineTo(size.width * 0.7781447, size.height * 0.4100323);
     path_20.close();
 
     Paint paint_20_fill = Paint()..style = PaintingStyle.fill;
@@ -691,16 +3339,52 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_20, paint_20_fill);
 
     Path path_21 = Path();
-    path_21.moveTo(2390.52, 1347.37);
-    path_21.lineTo(2417.61, 1363.01);
-    path_21.cubicTo(2374.45, 1379.14, 2332.4, 1397.41, 2294.61, 1417.89);
-    path_21.cubicTo(2290.97, 1413.67, 2285.52, 1405.56, 2281.09, 1391.39);
-    path_21.cubicTo(2278.64, 1382.3, 2276.78, 1373.07, 2275.53, 1363.74);
-    path_21.cubicTo(2290.93, 1355.18, 2334.47, 1331.74, 2394.37, 1305.49);
-    path_21.lineTo(2399.47, 1303.26);
-    path_21.lineTo(2386.08, 1333.96);
-    path_21.cubicTo(2385.04, 1336.35, 2384.92, 1339.04, 2385.74, 1341.51);
-    path_21.cubicTo(2386.56, 1343.99, 2388.26, 1346.07, 2390.52, 1347.37);
+    path_21.moveTo(size.width * 0.7176584, size.height * 0.4354783);
+    path_21.lineTo(size.width * 0.7257911, size.height * 0.4405333);
+    path_21.cubicTo(
+        size.width * 0.7128340,
+        size.height * 0.4457466,
+        size.width * 0.7002101,
+        size.height * 0.4516516,
+        size.width * 0.6888652,
+        size.height * 0.4582708);
+    path_21.cubicTo(
+        size.width * 0.6877724,
+        size.height * 0.4569069,
+        size.width * 0.6861363,
+        size.height * 0.4542857,
+        size.width * 0.6848064,
+        size.height * 0.4497059);
+    path_21.cubicTo(
+        size.width * 0.6840708,
+        size.height * 0.4467679,
+        size.width * 0.6835125,
+        size.height * 0.4437847,
+        size.width * 0.6831372,
+        size.height * 0.4407692);
+    path_21.cubicTo(
+        size.width * 0.6877604,
+        size.height * 0.4380026,
+        size.width * 0.7008316,
+        size.height * 0.4304266,
+        size.width * 0.7188142,
+        size.height * 0.4219425);
+    path_21.lineTo(size.width * 0.7203452, size.height * 0.4212217);
+    path_21.lineTo(size.width * 0.7163254, size.height * 0.4311441);
+    path_21.cubicTo(
+        size.width * 0.7160132,
+        size.height * 0.4319166,
+        size.width * 0.7159772,
+        size.height * 0.4327860,
+        size.width * 0.7162234,
+        size.height * 0.4335844);
+    path_21.cubicTo(
+        size.width * 0.7164695,
+        size.height * 0.4343859,
+        size.width * 0.7169799,
+        size.height * 0.4350582,
+        size.width * 0.7176584,
+        size.height * 0.4354783);
     path_21.close();
 
     Paint paint_21_fill = Paint()..style = PaintingStyle.fill;
@@ -708,105 +3392,579 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_21, paint_21_fill);
 
     Path path_22 = Path();
-    path_22.moveTo(2722.14, 663.61);
-    path_22.cubicTo(2739.53, 680.91, 2797.53, 745.5, 2794.87, 835.05);
-    path_22.cubicTo(2774.67, 846.91, 2751.69, 864.35, 2725.87, 889.54);
-    path_22.cubicTo(2720.93, 894.36, 2715.89, 899.47, 2710.76, 904.87);
-    path_22.cubicTo(2707.92, 907.843, 2705.05, 910.913, 2702.16, 914.08);
-    path_22.cubicTo(2698.11, 907.16, 2693.78, 900.427, 2689.16, 893.88);
-    path_22.cubicTo(2684.54, 887.32, 2679.67, 880.88, 2674.61, 874.67);
-    path_22.cubicTo(2670.12, 869.2, 2664.69, 863.57, 2656.81, 861.04);
-    path_22.cubicTo(2656.67, 861.048, 2656.54, 861.085, 2656.41, 861.148);
-    path_22.cubicTo(2656.29, 861.211, 2656.18, 861.299, 2656.1, 861.406);
-    path_22.cubicTo(2656.01, 861.513, 2655.94, 861.637, 2655.91, 861.77);
-    path_22.cubicTo(2655.87, 861.904, 2655.86, 862.043, 2655.88, 862.18);
-    path_22.cubicTo(2656.82, 875.92, 2666.11, 889.3, 2671.42, 901.12);
-    path_22.cubicTo(2677.49, 913.31, 2683.71, 925.6, 2690.68, 937.27);
-    path_22.lineTo(2691.85, 939.63);
-    path_22.cubicTo(2693.29, 942.56, 2695.85, 947.95, 2699.31, 955.38);
-    path_22.cubicTo(2699.87, 956.58, 2700.45, 957.84, 2701.04, 959.15);
-    path_22.cubicTo(2702.84, 963.15, 2704.83, 967.54, 2706.97, 972.39);
-    path_22.cubicTo(2727.28, 1018.62, 2760.77, 1103.45, 2773.5, 1185.6);
-    path_22.cubicTo(2772.03, 1186.09, 2770.56, 1186.6, 2769.1, 1187.17);
-    path_22.cubicTo(2699.52, 1189.08, 2627.93, 1203.17, 2561.19, 1222.29);
-    path_22.lineTo(2546.71, 1212.53);
-    path_22.cubicTo(2545.34, 1211.6, 2543.76, 1211.01, 2542.12, 1210.8);
-    path_22.cubicTo(2540.47, 1210.59, 2538.8, 1210.77, 2537.24, 1211.33);
-    path_22.lineTo(2426, 1250.9);
-    path_22.cubicTo(2424.63, 1251.39, 2423.38, 1252.15, 2422.32, 1253.14);
-    path_22.cubicTo(2421.26, 1254.13, 2420.41, 1255.32, 2419.83, 1256.65);
-    path_22.lineTo(2411.77, 1275.12);
-    path_22.lineTo(2405.53, 1277.73);
-    path_22.cubicTo(2398.9, 1280.52, 2392.44, 1283.29, 2386.15, 1286.04);
-    path_22.cubicTo(2333.74, 1308.94, 2293.64, 1329.8, 2273.39, 1340.78);
-    path_22.cubicTo(2272.63, 1325.64, 2272.96, 1310.46, 2274.39, 1295.36);
-    path_22.cubicTo(2278.56, 1250.18, 2270.19, 1200.41, 2263.17, 1168.89);
-    path_22.cubicTo(2261.25, 1160.28, 2259.43, 1153.04, 2257.99, 1147.62);
-    path_22.cubicTo(2256.61, 1142.4, 2255.58, 1138.88, 2255.16, 1137.47);
-    path_22.cubicTo(2254.49, 1130.24, 2250.36, 1121.73, 2248.74, 1116.29);
-    path_22.cubicTo(2243.38, 1102.69, 2236.45, 1089.76, 2228.11, 1077.75);
-    path_22.cubicTo(2224.11, 1071.75, 2219.05, 1066.2, 2211.62, 1062.59);
-    path_22.cubicTo(2211.46, 1062.5, 2211.28, 1062.46, 2211.09, 1062.46);
-    path_22.cubicTo(2210.91, 1062.47, 2210.73, 1062.53, 2210.57, 1062.63);
-    path_22.cubicTo(2210.42, 1062.74, 2210.3, 1062.88, 2210.22, 1063.05);
-    path_22.cubicTo(2210.15, 1063.22, 2210.12, 1063.41, 2210.14, 1063.59);
-    path_22.cubicTo(2210.63, 1079.09, 2218.19, 1090.1, 2222.41, 1104.03);
-    path_22.cubicTo(2225.53, 1112.89, 2228.53, 1122.28, 2231.3, 1131.43);
-    path_22.cubicTo(2211.88, 1134.7, 2173.8, 1142.43, 2149.38, 1155.76);
-    path_22.cubicTo(2148.6, 1155.37, 2147.83, 1154.99, 2147.04, 1154.63);
-    path_22.cubicTo(2136.76, 1138.63, 2088.85, 1067.49, 2025.43, 1022.27);
-    path_22.cubicTo(2031.96, 1018.86, 2037.74, 1016.19, 2042.38, 1014.27);
-    path_22.cubicTo(2044.17, 1015.38, 2046.43, 1016.69, 2049.15, 1018.15);
-    path_22.lineTo(2049.5, 1018.34);
-    path_22.cubicTo(2051.01, 1019.16, 2052.5, 1019.97, 2054.11, 1020.76);
-    path_22.cubicTo(2080.59, 1034.14, 2111.26, 1040.83, 2146.11, 1040.82);
-    path_22.cubicTo(2146.71, 1040.82, 2147.3, 1040.82, 2147.9, 1040.82);
-    path_22.cubicTo(2148.79, 1040.82, 2149.68, 1040.82, 2150.57, 1040.82);
-    path_22.cubicTo(2160.72, 1040.72, 2170.86, 1040.06, 2180.93, 1038.82);
-    path_22.lineTo(2181.13, 1038.82);
-    path_22.cubicTo(2214.95, 1034.93, 2252.01, 1025.59, 2292.31, 1010.82);
-    path_22.cubicTo(2298.23, 1008.65, 2304.23, 1006.36, 2310.31, 1003.94);
-    path_22.lineTo(2313.17, 1002.79);
-    path_22.cubicTo(2395.04, 969.99, 2457.07, 934.59, 2503.91, 898.97);
-    path_22.cubicTo(2509.7, 894.57, 2515.25, 890.167, 2520.58, 885.76);
-    path_22.cubicTo(2530.13, 877.88, 2538.98, 870.01, 2547.13, 862.15);
-    path_22.cubicTo(2555.8, 853.83, 2563.72, 845.557, 2570.91, 837.33);
-    path_22.cubicTo(2608.6, 794.44, 2627.64, 753.26, 2636.57, 718.09);
-    path_22.cubicTo(2652.66, 715.57, 2688.05, 706.01, 2709.38, 669.86);
-    path_22.cubicTo(2713.51, 667.687, 2717.76, 665.603, 2722.14, 663.61);
+    path_22.moveTo(size.width * 0.8172140, size.height * 0.2144829);
+    path_22.cubicTo(
+        size.width * 0.8224347,
+        size.height * 0.2200743,
+        size.width * 0.8398469,
+        size.height * 0.2409502,
+        size.width * 0.8390483,
+        size.height * 0.2698933);
+    path_22.cubicTo(
+        size.width * 0.8329841,
+        size.height * 0.2737266,
+        size.width * 0.8260853,
+        size.height * 0.2793633,
+        size.width * 0.8183338,
+        size.height * 0.2875048);
+    path_22.cubicTo(
+        size.width * 0.8168508,
+        size.height * 0.2890627,
+        size.width * 0.8153377,
+        size.height * 0.2907143,
+        size.width * 0.8137977,
+        size.height * 0.2924596);
+    path_22.cubicTo(
+        size.width * 0.8129451,
+        size.height * 0.2934205,
+        size.width * 0.8120835,
+        size.height * 0.2944127,
+        size.width * 0.8112159,
+        size.height * 0.2954363);
+    path_22.cubicTo(
+        size.width * 0.8100000,
+        size.height * 0.2931997,
+        size.width * 0.8087001,
+        size.height * 0.2910236,
+        size.width * 0.8073131,
+        size.height * 0.2889076);
+    path_22.cubicTo(
+        size.width * 0.8059261,
+        size.height * 0.2867873,
+        size.width * 0.8044641,
+        size.height * 0.2847059,
+        size.width * 0.8029451,
+        size.height * 0.2826988);
+    path_22.cubicTo(
+        size.width * 0.8015971,
+        size.height * 0.2809308,
+        size.width * 0.7999670,
+        size.height * 0.2791112,
+        size.width * 0.7976013,
+        size.height * 0.2782935);
+    path_22.cubicTo(
+        size.width * 0.7975593,
+        size.height * 0.2782961,
+        size.width * 0.7975203,
+        size.height * 0.2783080,
+        size.width * 0.7974812,
+        size.height * 0.2783284);
+    path_22.cubicTo(
+        size.width * 0.7974452,
+        size.height * 0.2783487,
+        size.width * 0.7974122,
+        size.height * 0.2783772,
+        size.width * 0.7973882,
+        size.height * 0.2784118);
+    path_22.cubicTo(
+        size.width * 0.7973612,
+        size.height * 0.2784463,
+        size.width * 0.7973401,
+        size.height * 0.2784864,
+        size.width * 0.7973311,
+        size.height * 0.2785294);
+    path_22.cubicTo(
+        size.width * 0.7973191,
+        size.height * 0.2785727,
+        size.width * 0.7973161,
+        size.height * 0.2786176,
+        size.width * 0.7973221,
+        size.height * 0.2786619);
+    path_22.cubicTo(
+        size.width * 0.7976043,
+        size.height * 0.2831028,
+        size.width * 0.8003933,
+        size.height * 0.2874273,
+        size.width * 0.8019874,
+        size.height * 0.2912476);
+    path_22.cubicTo(
+        size.width * 0.8038097,
+        size.height * 0.2951875,
+        size.width * 0.8056770,
+        size.height * 0.2991597,
+        size.width * 0.8077694,
+        size.height * 0.3029315);
+    path_22.lineTo(size.width * 0.8081207, size.height * 0.3036942);
+    path_22.cubicTo(
+        size.width * 0.8085530,
+        size.height * 0.3046412,
+        size.width * 0.8093215,
+        size.height * 0.3063833,
+        size.width * 0.8103603,
+        size.height * 0.3087847);
+    path_22.cubicTo(
+        size.width * 0.8105284,
+        size.height * 0.3091726,
+        size.width * 0.8107025,
+        size.height * 0.3095798,
+        size.width * 0.8108796,
+        size.height * 0.3100032);
+    path_22.cubicTo(
+        size.width * 0.8114200,
+        size.height * 0.3112961,
+        size.width * 0.8120174,
+        size.height * 0.3127149,
+        size.width * 0.8126599,
+        size.height * 0.3142825);
+    path_22.cubicTo(
+        size.width * 0.8187571,
+        size.height * 0.3292243,
+        size.width * 0.8288112,
+        size.height * 0.3566419,
+        size.width * 0.8326328,
+        size.height * 0.3831933);
+    path_22.cubicTo(
+        size.width * 0.8321915,
+        size.height * 0.3833516,
+        size.width * 0.8317502,
+        size.height * 0.3835165,
+        size.width * 0.8313119,
+        size.height * 0.3837007);
+    path_22.cubicTo(
+        size.width * 0.8104233,
+        size.height * 0.3843180,
+        size.width * 0.7889313,
+        size.height * 0.3888720,
+        size.width * 0.7688952,
+        size.height * 0.3950517);
+    path_22.lineTo(size.width * 0.7645482, size.height * 0.3918972);
+    path_22.cubicTo(
+        size.width * 0.7641369,
+        size.height * 0.3915966,
+        size.width * 0.7636626,
+        size.height * 0.3914059,
+        size.width * 0.7631702,
+        size.height * 0.3913381);
+    path_22.cubicTo(
+        size.width * 0.7626749,
+        size.height * 0.3912702,
+        size.width * 0.7621735,
+        size.height * 0.3913284,
+        size.width * 0.7617052,
+        size.height * 0.3915094);
+    path_22.lineTo(size.width * 0.7283098, size.height * 0.4042986);
+    path_22.cubicTo(
+        size.width * 0.7278985,
+        size.height * 0.4044570,
+        size.width * 0.7275233,
+        size.height * 0.4047027,
+        size.width * 0.7272050,
+        size.height * 0.4050226);
+    path_22.cubicTo(
+        size.width * 0.7268868,
+        size.height * 0.4053426,
+        size.width * 0.7266316,
+        size.height * 0.4057272,
+        size.width * 0.7264575,
+        size.height * 0.4061571);
+    path_22.lineTo(size.width * 0.7240378, size.height * 0.4121267);
+    path_22.lineTo(size.width * 0.7221645, size.height * 0.4129703);
+    path_22.cubicTo(
+        size.width * 0.7201741,
+        size.height * 0.4138720,
+        size.width * 0.7182348,
+        size.height * 0.4147673,
+        size.width * 0.7163464,
+        size.height * 0.4156561);
+    path_22.cubicTo(
+        size.width * 0.7006124,
+        size.height * 0.4230575,
+        size.width * 0.6885740,
+        size.height * 0.4297996,
+        size.width * 0.6824947,
+        size.height * 0.4333484);
+    path_22.cubicTo(
+        size.width * 0.6822666,
+        size.height * 0.4284551,
+        size.width * 0.6823657,
+        size.height * 0.4235488,
+        size.width * 0.6827950,
+        size.height * 0.4186684);
+    path_22.cubicTo(
+        size.width * 0.6840468,
+        size.height * 0.4040659,
+        size.width * 0.6815341,
+        size.height * 0.3879800,
+        size.width * 0.6794266,
+        size.height * 0.3777925);
+    path_22.cubicTo(
+        size.width * 0.6788502,
+        size.height * 0.3750097,
+        size.width * 0.6783038,
+        size.height * 0.3726697,
+        size.width * 0.6778715,
+        size.height * 0.3709179);
+    path_22.cubicTo(
+        size.width * 0.6774572,
+        size.height * 0.3692308,
+        size.width * 0.6771480,
+        size.height * 0.3680931,
+        size.width * 0.6770219,
+        size.height * 0.3676374);
+    path_22.cubicTo(
+        size.width * 0.6768208,
+        size.height * 0.3653006,
+        size.width * 0.6755809,
+        size.height * 0.3625501,
+        size.width * 0.6750946,
+        size.height * 0.3607919);
+    path_22.cubicTo(
+        size.width * 0.6734854,
+        size.height * 0.3563963,
+        size.width * 0.6714050,
+        size.height * 0.3522172,
+        size.width * 0.6689012,
+        size.height * 0.3483355);
+    path_22.cubicTo(
+        size.width * 0.6677004,
+        size.height * 0.3463963,
+        size.width * 0.6661813,
+        size.height * 0.3446025,
+        size.width * 0.6639508,
+        size.height * 0.3434357);
+    path_22.cubicTo(
+        size.width * 0.6639027,
+        size.height * 0.3434066,
+        size.width * 0.6638487,
+        size.height * 0.3433937,
+        size.width * 0.6637917,
+        size.height * 0.3433937);
+    path_22.cubicTo(
+        size.width * 0.6637376,
+        size.height * 0.3433969,
+        size.width * 0.6636836,
+        size.height * 0.3434163,
+        size.width * 0.6636355,
+        size.height * 0.3434486);
+    path_22.cubicTo(
+        size.width * 0.6635905,
+        size.height * 0.3434842,
+        size.width * 0.6635545,
+        size.height * 0.3435294,
+        size.width * 0.6635305,
+        size.height * 0.3435844);
+    path_22.cubicTo(
+        size.width * 0.6635095,
+        size.height * 0.3436393,
+        size.width * 0.6635005,
+        size.height * 0.3437007,
+        size.width * 0.6635065,
+        size.height * 0.3437589);
+    path_22.cubicTo(
+        size.width * 0.6636536,
+        size.height * 0.3487686,
+        size.width * 0.6659231,
+        size.height * 0.3523271,
+        size.width * 0.6671900,
+        size.height * 0.3568293);
+    path_22.cubicTo(
+        size.width * 0.6681267,
+        size.height * 0.3596930,
+        size.width * 0.6690273,
+        size.height * 0.3627279,
+        size.width * 0.6698589,
+        size.height * 0.3656852);
+    path_22.cubicTo(
+        size.width * 0.6640288,
+        size.height * 0.3667421,
+        size.width * 0.6525968,
+        size.height * 0.3692405,
+        size.width * 0.6452657,
+        size.height * 0.3735488);
+    path_22.cubicTo(
+        size.width * 0.6450315,
+        size.height * 0.3734228,
+        size.width * 0.6448004,
+        size.height * 0.3732999,
+        size.width * 0.6445632,
+        size.height * 0.3731836);
+    path_22.cubicTo(
+        size.width * 0.6414770,
+        size.height * 0.3680123,
+        size.width * 0.6270940,
+        size.height * 0.3450194,
+        size.width * 0.6080546,
+        size.height * 0.3304040);
+    path_22.cubicTo(
+        size.width * 0.6100150,
+        size.height * 0.3293019,
+        size.width * 0.6117502,
+        size.height * 0.3284389,
+        size.width * 0.6131432,
+        size.height * 0.3278184);
+    path_22.cubicTo(
+        size.width * 0.6136806,
+        size.height * 0.3281771,
+        size.width * 0.6143591,
+        size.height * 0.3286005,
+        size.width * 0.6151756,
+        size.height * 0.3290724);
+    path_22.lineTo(size.width * 0.6152807, size.height * 0.3291338);
+    path_22.cubicTo(
+        size.width * 0.6157340,
+        size.height * 0.3293988,
+        size.width * 0.6161813,
+        size.height * 0.3296606,
+        size.width * 0.6166647,
+        size.height * 0.3299160);
+    path_22.cubicTo(
+        size.width * 0.6246142,
+        size.height * 0.3342405,
+        size.width * 0.6338217,
+        size.height * 0.3364027,
+        size.width * 0.6442840,
+        size.height * 0.3363995);
+    path_22.cubicTo(
+        size.width * 0.6444641,
+        size.height * 0.3363995,
+        size.width * 0.6446412,
+        size.height * 0.3363995,
+        size.width * 0.6448214,
+        size.height * 0.3363995);
+    path_22.cubicTo(
+        size.width * 0.6450886,
+        size.height * 0.3363995,
+        size.width * 0.6453557,
+        size.height * 0.3363995,
+        size.width * 0.6456229,
+        size.height * 0.3363995);
+    path_22.cubicTo(
+        size.width * 0.6486701,
+        size.height * 0.3363672,
+        size.width * 0.6517142,
+        size.height * 0.3361538,
+        size.width * 0.6547373,
+        size.height * 0.3357531);
+    path_22.lineTo(size.width * 0.6547974, size.height * 0.3357531);
+    path_22.cubicTo(
+        size.width * 0.6649505,
+        size.height * 0.3344958,
+        size.width * 0.6760763,
+        size.height * 0.3314771,
+        size.width * 0.6881747,
+        size.height * 0.3267033);
+    path_22.cubicTo(
+        size.width * 0.6899520,
+        size.height * 0.3260019,
+        size.width * 0.6917532,
+        size.height * 0.3252618,
+        size.width * 0.6935785,
+        size.height * 0.3244796);
+    path_22.lineTo(size.width * 0.6944371, size.height * 0.3241080);
+    path_22.cubicTo(
+        size.width * 0.7190153,
+        size.height * 0.3135068,
+        size.width * 0.7376373,
+        size.height * 0.3020653,
+        size.width * 0.7516992,
+        size.height * 0.2905527);
+    path_22.cubicTo(
+        size.width * 0.7534374,
+        size.height * 0.2891306,
+        size.width * 0.7551036,
+        size.height * 0.2877075,
+        size.width * 0.7567037,
+        size.height * 0.2862831);
+    path_22.cubicTo(
+        size.width * 0.7595707,
+        size.height * 0.2837363,
+        size.width * 0.7622276,
+        size.height * 0.2811926,
+        size.width * 0.7646743,
+        size.height * 0.2786522);
+    path_22.cubicTo(
+        size.width * 0.7672771,
+        size.height * 0.2759632,
+        size.width * 0.7696548,
+        size.height * 0.2732893,
+        size.width * 0.7718133,
+        size.height * 0.2706303);
+    path_22.cubicTo(
+        size.width * 0.7831282,
+        size.height * 0.2567679,
+        size.width * 0.7888442,
+        size.height * 0.2434583,
+        size.width * 0.7915251,
+        size.height * 0.2320911);
+    path_22.cubicTo(
+        size.width * 0.7963554,
+        size.height * 0.2312767,
+        size.width * 0.8069799,
+        size.height * 0.2281868,
+        size.width * 0.8133834,
+        size.height * 0.2165029);
+    path_22.cubicTo(
+        size.width * 0.8146232,
+        size.height * 0.2158006,
+        size.width * 0.8158991,
+        size.height * 0.2151270,
+        size.width * 0.8172140,
+        size.height * 0.2144829);
     path_22.close();
-    path_22.moveTo(2533.63, 1104.11);
-    path_22.cubicTo(2534.51, 1102.67, 2534.93, 1101, 2534.85, 1099.31);
-    path_22.cubicTo(2534.77, 1097.62, 2534.18, 1096, 2533.17, 1094.65);
-    path_22.lineTo(2500.17, 1050.5);
-    path_22.lineTo(2527.17, 1001.13);
-    path_22.cubicTo(2527.98, 999.645, 2528.32, 997.954, 2528.16, 996.273);
-    path_22.cubicTo(2527.99, 994.592, 2527.33, 992.998, 2526.26, 991.695);
-    path_22.cubicTo(2525.18, 990.392, 2523.75, 989.439, 2522.13, 988.959);
-    path_22.cubicTo(2520.51, 988.479, 2518.78, 988.493, 2517.17, 989);
-    path_22.lineTo(2460.87, 1007.13);
-    path_22.lineTo(2426.72, 970);
-    path_22.cubicTo(2425.58, 968.762, 2424.11, 967.89, 2422.47, 967.494);
-    path_22.cubicTo(2420.84, 967.098, 2419.13, 967.196, 2417.55, 967.776);
-    path_22.cubicTo(2415.97, 968.355, 2414.6, 969.391, 2413.61, 970.75);
-    path_22.cubicTo(2412.63, 972.109, 2412.07, 973.731, 2412, 975.41);
-    path_22.cubicTo(2410.8, 1007.68, 2410.3, 1022.79, 2410.14, 1030.08);
-    path_22.lineTo(2359.3, 1052.61);
-    path_22.cubicTo(2357.71, 1053.32, 2356.38, 1054.49, 2355.48, 1055.98);
-    path_22.cubicTo(2354.59, 1057.47, 2354.17, 1059.2, 2354.29, 1060.93);
-    path_22.cubicTo(2354.41, 1062.67, 2355.05, 1064.32, 2356.14, 1065.68);
-    path_22.cubicTo(2357.23, 1067.03, 2358.71, 1068.01, 2360.38, 1068.5);
-    path_22.lineTo(2413.7, 1083.95);
-    path_22.lineTo(2421.57, 1145.28);
-    path_22.cubicTo(2421.79, 1146.99, 2422.53, 1148.59, 2423.68, 1149.87);
-    path_22.cubicTo(2424.83, 1151.15, 2426.35, 1152.05, 2428.02, 1152.45);
-    path_22.cubicTo(2428.68, 1152.61, 2429.35, 1152.69, 2430.02, 1152.68);
-    path_22.cubicTo(2431.4, 1152.68, 2432.76, 1152.34, 2433.98, 1151.68);
-    path_22.cubicTo(2435.2, 1151.03, 2436.25, 1150.1, 2437.02, 1148.95);
-    path_22.lineTo(2470.65, 1099.25);
-    path_22.lineTo(2525.04, 1108.13);
-    path_22.cubicTo(2526.71, 1108.39, 2528.42, 1108.15, 2529.95, 1107.43);
-    path_22.cubicTo(2531.48, 1106.72, 2532.76, 1105.56, 2533.63, 1104.11);
+    path_22.moveTo(size.width * 0.7606214, size.height * 0.3568552);
+    path_22.cubicTo(
+        size.width * 0.7608856,
+        size.height * 0.3563898,
+        size.width * 0.7610117,
+        size.height * 0.3558500,
+        size.width * 0.7609877,
+        size.height * 0.3553038);
+    path_22.cubicTo(
+        size.width * 0.7609637,
+        size.height * 0.3547576,
+        size.width * 0.7607866,
+        size.height * 0.3542340,
+        size.width * 0.7604833,
+        size.height * 0.3537977);
+    path_22.lineTo(size.width * 0.7505764, size.height * 0.3395281);
+    path_22.lineTo(size.width * 0.7586821, size.height * 0.3235714);
+    path_22.cubicTo(
+        size.width * 0.7589252,
+        size.height * 0.3230915,
+        size.width * 0.7590273,
+        size.height * 0.3225449,
+        size.width * 0.7589793,
+        size.height * 0.3220016);
+    path_22.cubicTo(
+        size.width * 0.7589282,
+        size.height * 0.3214583,
+        size.width * 0.7587301,
+        size.height * 0.3209431,
+        size.width * 0.7584089,
+        size.height * 0.3205220);
+    path_22.cubicTo(
+        size.width * 0.7580847,
+        size.height * 0.3201008,
+        size.width * 0.7576554,
+        size.height * 0.3197928,
+        size.width * 0.7571690,
+        size.height * 0.3196377);
+    path_22.cubicTo(
+        size.width * 0.7566827,
+        size.height * 0.3194825,
+        size.width * 0.7561633,
+        size.height * 0.3194871,
+        size.width * 0.7556800,
+        size.height * 0.3196509);
+    path_22.lineTo(size.width * 0.7387781, size.height * 0.3255107);
+    path_22.lineTo(size.width * 0.7285260, size.height * 0.3135100);
+    path_22.cubicTo(
+        size.width * 0.7281837,
+        size.height * 0.3131099,
+        size.width * 0.7277424,
+        size.height * 0.3128281,
+        size.width * 0.7272501,
+        size.height * 0.3127001);
+    path_22.cubicTo(
+        size.width * 0.7267607,
+        size.height * 0.3125721,
+        size.width * 0.7262474,
+        size.height * 0.3126037,
+        size.width * 0.7257730,
+        size.height * 0.3127912);
+    path_22.cubicTo(
+        size.width * 0.7252987,
+        size.height * 0.3129783,
+        size.width * 0.7248874,
+        size.height * 0.3133132,
+        size.width * 0.7245902,
+        size.height * 0.3137524);
+    path_22.cubicTo(
+        size.width * 0.7242960,
+        size.height * 0.3141917,
+        size.width * 0.7241279,
+        size.height * 0.3147159,
+        size.width * 0.7241069,
+        size.height * 0.3152586);
+    path_22.cubicTo(
+        size.width * 0.7237466,
+        size.height * 0.3256884,
+        size.width * 0.7235965,
+        size.height * 0.3305721,
+        size.width * 0.7235485,
+        size.height * 0.3329282);
+    path_22.lineTo(size.width * 0.7082858, size.height * 0.3402101);
+    path_22.cubicTo(
+        size.width * 0.7078085,
+        size.height * 0.3404396,
+        size.width * 0.7074092,
+        size.height * 0.3408177,
+        size.width * 0.7071390,
+        size.height * 0.3412993);
+    path_22.cubicTo(
+        size.width * 0.7068718,
+        size.height * 0.3417809,
+        size.width * 0.7067457,
+        size.height * 0.3423400,
+        size.width * 0.7067817,
+        size.height * 0.3428992);
+    path_22.cubicTo(
+        size.width * 0.7068178,
+        size.height * 0.3434615,
+        size.width * 0.7070099,
+        size.height * 0.3439948,
+        size.width * 0.7073371,
+        size.height * 0.3444344);
+    path_22.cubicTo(
+        size.width * 0.7076644,
+        size.height * 0.3448707,
+        size.width * 0.7081087,
+        size.height * 0.3451875,
+        size.width * 0.7086100,
+        size.height * 0.3453458);
+    path_22.lineTo(size.width * 0.7246172, size.height * 0.3503394);
+    path_22.lineTo(size.width * 0.7269799, size.height * 0.3701616);
+    path_22.cubicTo(
+        size.width * 0.7270459,
+        size.height * 0.3707143,
+        size.width * 0.7272681,
+        size.height * 0.3712314,
+        size.width * 0.7276133,
+        size.height * 0.3716451);
+    path_22.cubicTo(
+        size.width * 0.7279586,
+        size.height * 0.3720588,
+        size.width * 0.7284149,
+        size.height * 0.3723497,
+        size.width * 0.7289162,
+        size.height * 0.3724790);
+    path_22.cubicTo(
+        size.width * 0.7291144,
+        size.height * 0.3725307,
+        size.width * 0.7293155,
+        size.height * 0.3725566,
+        size.width * 0.7295167,
+        size.height * 0.3725533);
+    path_22.cubicTo(
+        size.width * 0.7299310,
+        size.height * 0.3725533,
+        size.width * 0.7303392,
+        size.height * 0.3724434,
+        size.width * 0.7307055,
+        size.height * 0.3722301);
+    path_22.cubicTo(
+        size.width * 0.7310718,
+        size.height * 0.3720200,
+        size.width * 0.7313870,
+        size.height * 0.3717195,
+        size.width * 0.7316181,
+        size.height * 0.3713478);
+    path_22.lineTo(size.width * 0.7417142, size.height * 0.3552844);
+    path_22.lineTo(size.width * 0.7580426, size.height * 0.3581545);
+    path_22.cubicTo(
+        size.width * 0.7585440,
+        size.height * 0.3582385,
+        size.width * 0.7590573,
+        size.height * 0.3581610,
+        size.width * 0.7595167,
+        size.height * 0.3579282);
+    path_22.cubicTo(
+        size.width * 0.7599760,
+        size.height * 0.3576988,
+        size.width * 0.7603603,
+        size.height * 0.3573239,
+        size.width * 0.7606214,
+        size.height * 0.3568552);
     path_22.close();
 
     Paint paint_22_fill = Paint()..style = PaintingStyle.fill;
@@ -814,14 +3972,50 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_22, paint_22_fill);
 
     Path path_23 = Path();
-    path_23.moveTo(2201.66, 1301.43);
-    path_23.cubicTo(2204.26, 1311.05, 2205.14, 1323.68, 2197.09, 1333.74);
-    path_23.cubicTo(2187.09, 1346.23, 2174.52, 1353.74, 2164.19, 1353.1);
-    path_23.cubicTo(2159.76, 1352.83, 2155.54, 1351.1, 2152.19, 1348.18);
-    path_23.cubicTo(2158.87, 1342.82, 2164.91, 1336.7, 2170.19, 1329.96);
-    path_23.cubicTo(2174.01, 1325.16, 2177.52, 1320.12, 2180.71, 1314.88);
-    path_23.cubicTo(2188.41, 1311.6, 2195.51, 1307.05, 2201.71, 1301.42);
-    path_23.lineTo(2201.66, 1301.43);
+    path_23.moveTo(size.width * 0.6609607, size.height * 0.4206303);
+    path_23.cubicTo(
+        size.width * 0.6617412,
+        size.height * 0.4237395,
+        size.width * 0.6620054,
+        size.height * 0.4278216,
+        size.width * 0.6595887,
+        size.height * 0.4310730);
+    path_23.cubicTo(
+        size.width * 0.6565866,
+        size.height * 0.4351099,
+        size.width * 0.6528130,
+        size.height * 0.4375372,
+        size.width * 0.6497118,
+        size.height * 0.4373303);
+    path_23.cubicTo(
+        size.width * 0.6483819,
+        size.height * 0.4372431,
+        size.width * 0.6471150,
+        size.height * 0.4366839,
+        size.width * 0.6461093,
+        size.height * 0.4357401);
+    path_23.cubicTo(
+        size.width * 0.6481147,
+        size.height * 0.4340078,
+        size.width * 0.6499279,
+        size.height * 0.4320297,
+        size.width * 0.6515131,
+        size.height * 0.4298513);
+    path_23.cubicTo(
+        size.width * 0.6526599,
+        size.height * 0.4282999,
+        size.width * 0.6537136,
+        size.height * 0.4266710,
+        size.width * 0.6546713,
+        size.height * 0.4249774);
+    path_23.cubicTo(
+        size.width * 0.6569829,
+        size.height * 0.4239173,
+        size.width * 0.6591144,
+        size.height * 0.4224467,
+        size.width * 0.6609757,
+        size.height * 0.4206270);
+    path_23.lineTo(size.width * 0.6609607, size.height * 0.4206303);
     path_23.close();
 
     Paint paint_23_fill = Paint()..style = PaintingStyle.fill;
@@ -829,30 +4023,168 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_23, paint_23_fill);
 
     Path path_24 = Path();
-    path_24.moveTo(2190.18, 1226.7);
-    path_24.cubicTo(2201.89, 1253.25, 2196.5, 1272.98, 2195.25, 1276.81);
-    path_24.cubicTo(2190.88, 1283.16, 2185.15, 1288.46, 2178.48, 1292.32);
-    path_24.cubicTo(2174.44, 1284.64, 2169.86, 1277.25, 2164.76, 1270.23);
-    path_24.cubicTo(2156.76, 1260.36, 2150.49, 1248.57, 2136.76, 1245.31);
-    path_24.cubicTo(2136.48, 1245.33, 2136.21, 1245.46, 2136.02, 1245.68);
-    path_24.cubicTo(2135.84, 1245.89, 2135.74, 1246.17, 2135.76, 1246.46);
-    path_24.cubicTo(2136.22, 1252.7, 2138.05, 1258.75, 2141.13, 1264.2);
-    path_24.cubicTo(2148.06, 1277.94, 2154.3, 1292.27, 2161.29, 1305.99);
-    path_24.cubicTo(2157.57, 1311.83, 2150.41, 1321.99, 2141.39, 1329.71);
-    path_24.cubicTo(2136.16, 1321.57, 2130.51, 1313.71, 2124.45, 1306.17);
-    path_24.cubicTo(2117.3, 1287.9, 2109.78, 1269.57, 2101.87, 1251.17);
-    path_24.cubicTo(2069.16, 1175.11, 2032.35, 1103.84, 1993.87, 1041.42);
-    path_24.cubicTo(1997.68, 1038.75, 2001.46, 1036.25, 2005.15, 1033.92);
-    path_24.cubicTo(2054.37, 1066.41, 2095.86, 1118.68, 2116.68, 1147.7);
-    path_24.cubicTo(2105.49, 1147.28, 2094.37, 1146.57, 2084.95, 1154.59);
-    path_24.cubicTo(2084.83, 1154.7, 2084.73, 1154.83, 2084.66, 1154.99);
-    path_24.cubicTo(2084.6, 1155.14, 2084.57, 1155.3, 2084.58, 1155.47);
-    path_24.cubicTo(2084.58, 1155.63, 2084.63, 1155.79, 2084.7, 1155.94);
-    path_24.cubicTo(2084.78, 1156.08, 2084.89, 1156.21, 2085.02, 1156.31);
-    path_24.cubicTo(2087.58, 1158.16, 2090.41, 1159.6, 2093.41, 1160.59);
-    path_24.cubicTo(2110.59, 1164.77, 2127.88, 1168.4, 2143.55, 1176.74);
-    path_24.cubicTo(2143.74, 1176.87, 2143.93, 1176.99, 2144.13, 1177.1);
-    path_24.cubicTo(2144.33, 1177.21, 2176.74, 1196.24, 2190.18, 1226.7);
+    path_24.moveTo(size.width * 0.6575143, size.height * 0.3964771);
+    path_24.cubicTo(
+        size.width * 0.6610297,
+        size.height * 0.4050582,
+        size.width * 0.6594116,
+        size.height * 0.4114350,
+        size.width * 0.6590363,
+        size.height * 0.4126729);
+    path_24.cubicTo(
+        size.width * 0.6577244,
+        size.height * 0.4147253,
+        size.width * 0.6560042,
+        size.height * 0.4164383,
+        size.width * 0.6540018,
+        size.height * 0.4176858);
+    path_24.cubicTo(
+        size.width * 0.6527890,
+        size.height * 0.4152036,
+        size.width * 0.6514140,
+        size.height * 0.4128151,
+        size.width * 0.6498829,
+        size.height * 0.4105462);
+    path_24.cubicTo(
+        size.width * 0.6474812,
+        size.height * 0.4073562,
+        size.width * 0.6455989,
+        size.height * 0.4035456,
+        size.width * 0.6414770,
+        size.height * 0.4024919);
+    path_24.cubicTo(
+        size.width * 0.6413930,
+        size.height * 0.4024984,
+        size.width * 0.6413119,
+        size.height * 0.4025404,
+        size.width * 0.6412549,
+        size.height * 0.4026115);
+    path_24.cubicTo(
+        size.width * 0.6412008,
+        size.height * 0.4026794,
+        size.width * 0.6411708,
+        size.height * 0.4027699,
+        size.width * 0.6411768,
+        size.height * 0.4028636);
+    path_24.cubicTo(
+        size.width * 0.6413149,
+        size.height * 0.4048804,
+        size.width * 0.6418643,
+        size.height * 0.4068358,
+        size.width * 0.6427890,
+        size.height * 0.4085973);
+    path_24.cubicTo(
+        size.width * 0.6448694,
+        size.height * 0.4130381,
+        size.width * 0.6467427,
+        size.height * 0.4176697,
+        size.width * 0.6488412,
+        size.height * 0.4221041);
+    path_24.cubicTo(
+        size.width * 0.6477244,
+        size.height * 0.4239916,
+        size.width * 0.6455749,
+        size.height * 0.4272754,
+        size.width * 0.6428670,
+        size.height * 0.4297705);
+    path_24.cubicTo(
+        size.width * 0.6412969,
+        size.height * 0.4271396,
+        size.width * 0.6396007,
+        size.height * 0.4245992,
+        size.width * 0.6377814,
+        size.height * 0.4221622);
+    path_24.cubicTo(
+        size.width * 0.6356349,
+        size.height * 0.4162573,
+        size.width * 0.6333774,
+        size.height * 0.4103329,
+        size.width * 0.6310027,
+        size.height * 0.4043859);
+    path_24.cubicTo(
+        size.width * 0.6211828,
+        size.height * 0.3798028,
+        size.width * 0.6101321,
+        size.height * 0.3567679,
+        size.width * 0.5985800,
+        size.height * 0.3365934);
+    path_24.cubicTo(
+        size.width * 0.5997238,
+        size.height * 0.3357304,
+        size.width * 0.6008586,
+        size.height * 0.3349224,
+        size.width * 0.6019664,
+        size.height * 0.3341694);
+    path_24.cubicTo(
+        size.width * 0.6167427,
+        size.height * 0.3446703,
+        size.width * 0.6291984,
+        size.height * 0.3615643,
+        size.width * 0.6354488,
+        size.height * 0.3709438);
+    path_24.cubicTo(
+        size.width * 0.6320895,
+        size.height * 0.3708080,
+        size.width * 0.6287511,
+        size.height * 0.3705785,
+        size.width * 0.6259231,
+        size.height * 0.3731707);
+    path_24.cubicTo(
+        size.width * 0.6258871,
+        size.height * 0.3732062,
+        size.width * 0.6258571,
+        size.height * 0.3732482,
+        size.width * 0.6258361,
+        size.height * 0.3732999);
+    path_24.cubicTo(
+        size.width * 0.6258181,
+        size.height * 0.3733484,
+        size.width * 0.6258091,
+        size.height * 0.3734001,
+        size.width * 0.6258121,
+        size.height * 0.3734551);
+    path_24.cubicTo(
+        size.width * 0.6258121,
+        size.height * 0.3735068,
+        size.width * 0.6258271,
+        size.height * 0.3735585,
+        size.width * 0.6258481,
+        size.height * 0.3736070);
+    path_24.cubicTo(
+        size.width * 0.6258721,
+        size.height * 0.3736522,
+        size.width * 0.6259051,
+        size.height * 0.3736942,
+        size.width * 0.6259442,
+        size.height * 0.3737266);
+    path_24.cubicTo(
+        size.width * 0.6267127,
+        size.height * 0.3743245,
+        size.width * 0.6275623,
+        size.height * 0.3747899,
+        size.width * 0.6284629,
+        size.height * 0.3751099);
+    path_24.cubicTo(
+        size.width * 0.6336205,
+        size.height * 0.3764609,
+        size.width * 0.6388112,
+        size.height * 0.3776341,
+        size.width * 0.6435155,
+        size.height * 0.3803297);
+    path_24.cubicTo(
+        size.width * 0.6435725,
+        size.height * 0.3803717,
+        size.width * 0.6436295,
+        size.height * 0.3804105,
+        size.width * 0.6436896,
+        size.height * 0.3804460);
+    path_24.cubicTo(
+        size.width * 0.6437496,
+        size.height * 0.3804816,
+        size.width * 0.6534794,
+        size.height * 0.3866322,
+        size.width * 0.6575143,
+        size.height * 0.3964771);
     path_24.close();
 
     Paint paint_24_fill = Paint()..style = PaintingStyle.fill;
@@ -860,30 +4192,162 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_24, paint_24_fill);
 
     Path path_25 = Path();
-    path_25.moveTo(2187.71, 1626.06);
-    path_25.cubicTo(2194.5, 1688.47, 2191.46, 1737.63, 2179.48, 1769.36);
-    path_25.cubicTo(2183.11, 1751.9, 2184.48, 1731.36, 2183.92, 1708.27);
-    path_25.cubicTo(2183.93, 1708.18, 2183.93, 1708.08, 2183.92, 1707.99);
-    path_25.cubicTo(2183.94, 1707.49, 2183.91, 1706.99, 2183.84, 1706.5);
-    path_25.cubicTo(2182.18, 1649.5, 2168.62, 1577.59, 2146.93, 1500.27);
-    path_25.cubicTo(2146.93, 1500.12, 2146.93, 1499.98, 2146.93, 1499.83);
-    path_25.cubicTo(2146.85, 1498.45, 2146.44, 1497.11, 2145.72, 1495.93);
-    path_25.cubicTo(2134.16, 1455.18, 2120.37, 1412.93, 2104.91, 1370.69);
-    path_25.cubicTo(2102.45, 1363.94, 2099.94, 1357.2, 2097.38, 1350.45);
-    path_25.cubicTo(2086.85, 1322.6, 2075.63, 1294.81, 2063.88, 1267.45);
-    path_25.cubicTo(2032.57, 1194.65, 1998.55, 1126.24, 1963.81, 1065.75);
-    path_25.cubicTo(1960.13, 1059.34, 1956.44, 1053.02, 1952.75, 1046.81);
-    path_25.cubicTo(1927.08, 1003.57, 1901.14, 964.81, 1875.69, 931.94);
-    path_25.cubicTo(1844.43, 891.56, 1815.47, 861.94, 1789.4, 843.46);
-    path_25.cubicTo(1838.4, 869.19, 1901.6, 935.75, 1965.53, 1035.89);
-    path_25.cubicTo(1969.34, 1041.85, 1973.15, 1047.93, 1976.96, 1054.13);
-    path_25.cubicTo(2012.88, 1112.57, 2048.8, 1181.46, 2082.36, 1259.51);
-    path_25.cubicTo(2084.73, 1265.02, 2087.06, 1270.53, 2089.36, 1276.04);
-    path_25.lineTo(2090.04, 1277.69);
-    path_25.cubicTo(2093.6, 1286.23, 2097.08, 1294.76, 2100.48, 1303.28);
-    path_25.cubicTo(2106.04, 1317.19, 2111.37, 1331.04, 2116.48, 1344.83);
-    path_25.cubicTo(2118.94, 1351.5, 2121.34, 1358.16, 2123.69, 1364.83);
-    path_25.cubicTo(2157.14, 1459.15, 2179.38, 1549.35, 2187.71, 1626.06);
+    path_25.moveTo(size.width * 0.6567727, size.height * 0.5255527);
+    path_25.cubicTo(
+        size.width * 0.6588112,
+        size.height * 0.5457240,
+        size.width * 0.6578985,
+        size.height * 0.5616128,
+        size.width * 0.6543020,
+        size.height * 0.5718681);
+    path_25.cubicTo(
+        size.width * 0.6553918,
+        size.height * 0.5662250,
+        size.width * 0.6558031,
+        size.height * 0.5595863,
+        size.width * 0.6556349,
+        size.height * 0.5521235);
+    path_25.cubicTo(
+        size.width * 0.6556379,
+        size.height * 0.5520944,
+        size.width * 0.6556379,
+        size.height * 0.5520621,
+        size.width * 0.6556349,
+        size.height * 0.5520330);
+    path_25.cubicTo(
+        size.width * 0.6556409,
+        size.height * 0.5518714,
+        size.width * 0.6556319,
+        size.height * 0.5517098,
+        size.width * 0.6556109,
+        size.height * 0.5515514);
+    path_25.cubicTo(
+        size.width * 0.6551126,
+        size.height * 0.5331286,
+        size.width * 0.6510417,
+        size.height * 0.5098869,
+        size.width * 0.6445302,
+        size.height * 0.4848966);
+    path_25.cubicTo(
+        size.width * 0.6445302,
+        size.height * 0.4848481,
+        size.width * 0.6445302,
+        size.height * 0.4848028,
+        size.width * 0.6445302,
+        size.height * 0.4847544);
+    path_25.cubicTo(
+        size.width * 0.6445062,
+        size.height * 0.4843083,
+        size.width * 0.6443831,
+        size.height * 0.4838752,
+        size.width * 0.6441669,
+        size.height * 0.4834939);
+    path_25.cubicTo(
+        size.width * 0.6406965,
+        size.height * 0.4703232,
+        size.width * 0.6365566,
+        size.height * 0.4566677,
+        size.width * 0.6319153,
+        size.height * 0.4430155);
+    path_25.cubicTo(
+        size.width * 0.6311768,
+        size.height * 0.4408339,
+        size.width * 0.6304233,
+        size.height * 0.4386555,
+        size.width * 0.6296548,
+        size.height * 0.4364738);
+    path_25.cubicTo(
+        size.width * 0.6264935,
+        size.height * 0.4274725,
+        size.width * 0.6231252,
+        size.height * 0.4184906,
+        size.width * 0.6195977,
+        size.height * 0.4096477);
+    path_25.cubicTo(
+        size.width * 0.6101981,
+        size.height * 0.3861183,
+        size.width * 0.5999850,
+        size.height * 0.3640078,
+        size.width * 0.5895557,
+        size.height * 0.3444570);
+    path_25.cubicTo(
+        size.width * 0.5884509,
+        size.height * 0.3423853,
+        size.width * 0.5873431,
+        size.height * 0.3403426,
+        size.width * 0.5862354,
+        size.height * 0.3383355);
+    path_25.cubicTo(
+        size.width * 0.5785290,
+        size.height * 0.3243601,
+        size.width * 0.5707415,
+        size.height * 0.3118326,
+        size.width * 0.5631012,
+        size.height * 0.3012088);
+    path_25.cubicTo(
+        size.width * 0.5537166,
+        size.height * 0.2881577,
+        size.width * 0.5450225,
+        size.height * 0.2785844,
+        size.width * 0.5371960,
+        size.height * 0.2726115);
+    path_25.cubicTo(
+        size.width * 0.5519063,
+        size.height * 0.2809276,
+        size.width * 0.5708796,
+        size.height * 0.3024402,
+        size.width * 0.5900721,
+        size.height * 0.3348061);
+    path_25.cubicTo(
+        size.width * 0.5912159,
+        size.height * 0.3367324,
+        size.width * 0.5923597,
+        size.height * 0.3386975,
+        size.width * 0.5935035,
+        size.height * 0.3407014);
+    path_25.cubicTo(
+        size.width * 0.6042870,
+        size.height * 0.3595895,
+        size.width * 0.6150705,
+        size.height * 0.3818552,
+        size.width * 0.6251456,
+        size.height * 0.4070814);
+    path_25.cubicTo(
+        size.width * 0.6258571,
+        size.height * 0.4088623,
+        size.width * 0.6265566,
+        size.height * 0.4106432,
+        size.width * 0.6272471,
+        size.height * 0.4124240);
+    path_25.lineTo(size.width * 0.6274512, size.height * 0.4129573);
+    path_25.cubicTo(
+        size.width * 0.6285200,
+        size.height * 0.4157175,
+        size.width * 0.6295647,
+        size.height * 0.4184745,
+        size.width * 0.6305854,
+        size.height * 0.4212282);
+    path_25.cubicTo(
+        size.width * 0.6322546,
+        size.height * 0.4257240,
+        size.width * 0.6338547,
+        size.height * 0.4302004,
+        size.width * 0.6353888,
+        size.height * 0.4346574);
+    path_25.cubicTo(
+        size.width * 0.6361273,
+        size.height * 0.4368132,
+        size.width * 0.6368478,
+        size.height * 0.4389657,
+        size.width * 0.6375533,
+        size.height * 0.4411215);
+    path_25.cubicTo(
+        size.width * 0.6475953,
+        size.height * 0.4716063,
+        size.width * 0.6542720,
+        size.height * 0.5007595,
+        size.width * 0.6567727,
+        size.height * 0.5255527);
     path_25.close();
 
     Paint paint_25_fill = Paint()..style = PaintingStyle.fill;
@@ -891,11 +4355,35 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_25, paint_25_fill);
 
     Path path_26 = Path();
-    path_26.moveTo(1934.76, 1050.1);
-    path_26.cubicTo(1915.95, 1075.99, 1900.45, 1110.84, 1891.76, 1132.45);
-    path_26.cubicTo(1850.76, 1060.87, 1808.76, 1004.26, 1774.11, 981.45);
-    path_26.cubicTo(1779.75, 963.16, 1795.81, 917.29, 1821.18, 894.04);
-    path_26.cubicTo(1856.41, 931, 1895.45, 984.58, 1934.76, 1050.1);
+    path_26.moveTo(size.width * 0.5808346, size.height * 0.3393988);
+    path_26.cubicTo(
+        size.width * 0.5751876,
+        size.height * 0.3477666,
+        size.width * 0.5705344,
+        size.height * 0.3590304,
+        size.width * 0.5679255,
+        size.height * 0.3660149);
+    path_26.cubicTo(
+        size.width * 0.5556169,
+        size.height * 0.3428798,
+        size.width * 0.5430081,
+        size.height * 0.3245831,
+        size.width * 0.5326058,
+        size.height * 0.3172107);
+    path_26.cubicTo(
+        size.width * 0.5342990,
+        size.height * 0.3112993,
+        size.width * 0.5391204,
+        size.height * 0.2964738,
+        size.width * 0.5467367,
+        size.height * 0.2889593);
+    path_26.cubicTo(
+        size.width * 0.5573131,
+        size.height * 0.3009050,
+        size.width * 0.5690333,
+        size.height * 0.3182224,
+        size.width * 0.5808346,
+        size.height * 0.3393988);
     path_26.close();
 
     Paint paint_26_fill = Paint()..style = PaintingStyle.fill;
@@ -903,19 +4391,91 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_26, paint_26_fill);
 
     Path path_27 = Path();
-    path_27.moveTo(2127.68, 1492.23);
-    path_27.cubicTo(2077.23, 1492.47, 2044.6, 1471.14, 2033.19, 1462.23);
-    path_27.cubicTo(2024.19, 1431.9, 2013.39, 1400.11, 2001.34, 1367.96);
-    path_27.cubicTo(1993.61, 1347.33, 1985.34, 1326.54, 1976.67, 1305.89);
-    path_27.cubicTo(1974.74, 1301.27, 1972.79, 1296.66, 1970.8, 1292.06);
-    path_27.cubicTo(1954.11, 1253.25, 1935.97, 1214.94, 1917.22, 1179.06);
-    path_27.cubicTo(1912.36, 1169.73, 1907.46, 1160.6, 1902.53, 1151.67);
-    path_27.cubicTo(1908.24, 1136.41, 1924.21, 1096.08, 1944.24, 1066.16);
-    path_27.cubicTo(1946.64, 1070.27, 1949.04, 1074.42, 1951.43, 1078.61);
-    path_27.cubicTo(1984.63, 1136.72, 2017.65, 1202.86, 2048.33, 1274.2);
-    path_27.cubicTo(2060.62, 1302.79, 2071.89, 1330.56, 2082.16, 1357.52);
-    path_27.cubicTo(2085.05, 1365.09, 2087.86, 1372.59, 2090.59, 1380.02);
-    path_27.cubicTo(2105.12, 1419.53, 2117.45, 1457, 2127.68, 1492.23);
+    path_27.moveTo(size.width * 0.6387511, size.height * 0.4822980);
+    path_27.cubicTo(
+        size.width * 0.6236055,
+        size.height * 0.4823756,
+        size.width * 0.6138097,
+        size.height * 0.4754816,
+        size.width * 0.6103843,
+        size.height * 0.4726018);
+    path_27.cubicTo(
+        size.width * 0.6076824,
+        size.height * 0.4627990,
+        size.width * 0.6044401,
+        size.height * 0.4525242,
+        size.width * 0.6008226,
+        size.height * 0.4421332);
+    path_27.cubicTo(
+        size.width * 0.5985020,
+        size.height * 0.4354654,
+        size.width * 0.5960192,
+        size.height * 0.4287460,
+        size.width * 0.5934164,
+        size.height * 0.4220718);
+    path_27.cubicTo(
+        size.width * 0.5928370,
+        size.height * 0.4205785,
+        size.width * 0.5922516,
+        size.height * 0.4190886,
+        size.width * 0.5916542,
+        size.height * 0.4176018);
+    path_27.cubicTo(
+        size.width * 0.5866437,
+        size.height * 0.4050582,
+        size.width * 0.5811978,
+        size.height * 0.3926761,
+        size.width * 0.5755689,
+        size.height * 0.3810795);
+    path_27.cubicTo(
+        size.width * 0.5741099,
+        size.height * 0.3780640,
+        size.width * 0.5726388,
+        size.height * 0.3751131,
+        size.width * 0.5711588,
+        size.height * 0.3722269);
+    path_27.cubicTo(
+        size.width * 0.5728730,
+        size.height * 0.3672948,
+        size.width * 0.5776674,
+        size.height * 0.3542599,
+        size.width * 0.5836806,
+        size.height * 0.3445895);
+    path_27.cubicTo(
+        size.width * 0.5844011,
+        size.height * 0.3459179,
+        size.width * 0.5851216,
+        size.height * 0.3472592,
+        size.width * 0.5858391,
+        size.height * 0.3486134);
+    path_27.cubicTo(
+        size.width * 0.5958061,
+        size.height * 0.3673950,
+        size.width * 0.6057190,
+        size.height * 0.3887718,
+        size.width * 0.6149295,
+        size.height * 0.4118293);
+    path_27.cubicTo(
+        size.width * 0.6186190,
+        size.height * 0.4210698,
+        size.width * 0.6220024,
+        size.height * 0.4300452,
+        size.width * 0.6250856,
+        size.height * 0.4387589);
+    path_27.cubicTo(
+        size.width * 0.6259532,
+        size.height * 0.4412056,
+        size.width * 0.6267968,
+        size.height * 0.4436296,
+        size.width * 0.6276163,
+        size.height * 0.4460310);
+    path_27.cubicTo(
+        size.width * 0.6319784,
+        size.height * 0.4588009,
+        size.width * 0.6356800,
+        size.height * 0.4709114,
+        size.width * 0.6387511,
+        size.height * 0.4822980);
     path_27.close();
 
     Paint paint_27_fill = Paint()..style = PaintingStyle.fill;
@@ -923,13 +4483,49 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_27, paint_27_fill);
 
     Path path_28 = Path();
-    path_28.moveTo(2132.47, 1509.1);
-    path_28.cubicTo(2153.41, 1584.52, 2164.39, 1648.66, 2166.57, 1698.43);
-    path_28.cubicTo(2115.98, 1692.58, 2074.8, 1658.07, 2061.47, 1645.67);
-    path_28.cubicTo(2066.91, 1609.56, 2058.23, 1552.81, 2040.37, 1487.37);
-    path_28.cubicTo(2051.59, 1493.67, 2063.51, 1498.65, 2075.89, 1502.19);
-    path_28.cubicTo(2092.39, 1506.89, 2109.47, 1509.25, 2126.63, 1509.19);
-    path_28.cubicTo(2128.55, 1509.19, 2130.5, 1509.16, 2132.47, 1509.1);
+    path_28.moveTo(size.width * 0.6401891, size.height * 0.4877505);
+    path_28.cubicTo(
+        size.width * 0.6464755,
+        size.height * 0.5121267,
+        size.width * 0.6497718,
+        size.height * 0.5328571,
+        size.width * 0.6504263,
+        size.height * 0.5489431);
+    path_28.cubicTo(
+        size.width * 0.6352387,
+        size.height * 0.5470524,
+        size.width * 0.6228760,
+        size.height * 0.5358985,
+        size.width * 0.6188742,
+        size.height * 0.5318908);
+    path_28.cubicTo(
+        size.width * 0.6205074,
+        size.height * 0.5202198,
+        size.width * 0.6179015,
+        size.height * 0.5018778,
+        size.width * 0.6125398,
+        size.height * 0.4807272);
+    path_28.cubicTo(
+        size.width * 0.6159081,
+        size.height * 0.4827634,
+        size.width * 0.6194866,
+        size.height * 0.4843730,
+        size.width * 0.6232032,
+        size.height * 0.4855171);
+    path_28.cubicTo(
+        size.width * 0.6281567,
+        size.height * 0.4870362,
+        size.width * 0.6332843,
+        size.height * 0.4877990,
+        size.width * 0.6384359,
+        size.height * 0.4877796);
+    path_28.cubicTo(
+        size.width * 0.6390123,
+        size.height * 0.4877796,
+        size.width * 0.6395977,
+        size.height * 0.4877699,
+        size.width * 0.6401891,
+        size.height * 0.4877505);
     path_28.close();
 
     Paint paint_28_fill = Paint()..style = PaintingStyle.fill;
@@ -937,14 +4533,56 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_28, paint_28_fill);
 
     Path path_29 = Path();
-    path_29.moveTo(2167, 1715.52);
-    path_29.cubicTo(2167.12, 1764.31, 2157.63, 1796.77, 2139.87, 1809.31);
-    path_29.cubicTo(2128.17, 1811.47, 2114.59, 1809.15, 2099.52, 1802.6);
-    path_29.cubicTo(2067.93, 1761.52, 2045.52, 1707.85, 2036.88, 1685.32);
-    path_29.cubicTo(2037.51, 1685.1, 2038.14, 1684.86, 2038.76, 1684.59);
-    path_29.cubicTo(2046.83, 1681.12, 2052.76, 1674.15, 2056.76, 1664.23);
-    path_29.cubicTo(2070.17, 1675.8, 2084.79, 1685.87, 2100.37, 1694.29);
-    path_29.cubicTo(2119.18, 1704.4, 2141.91, 1713.05, 2167, 1715.52);
+    path_29.moveTo(size.width * 0.6505554, size.height * 0.5544667);
+    path_29.cubicTo(
+        size.width * 0.6505914,
+        size.height * 0.5702359,
+        size.width * 0.6477424,
+        size.height * 0.5807272,
+        size.width * 0.6424107,
+        size.height * 0.5847802);
+    path_29.cubicTo(
+        size.width * 0.6388982,
+        size.height * 0.5854783,
+        size.width * 0.6348214,
+        size.height * 0.5847285,
+        size.width * 0.6302972,
+        size.height * 0.5826115);
+    path_29.cubicTo(
+        size.width * 0.6208136,
+        size.height * 0.5693342,
+        size.width * 0.6140859,
+        size.height * 0.5519877,
+        size.width * 0.6114920,
+        size.height * 0.5447059);
+    path_29.cubicTo(
+        size.width * 0.6116812,
+        size.height * 0.5446348,
+        size.width * 0.6118703,
+        size.height * 0.5445572,
+        size.width * 0.6120564,
+        size.height * 0.5444699);
+    path_29.cubicTo(
+        size.width * 0.6144791,
+        size.height * 0.5433484,
+        size.width * 0.6162594,
+        size.height * 0.5410957,
+        size.width * 0.6174602,
+        size.height * 0.5378895);
+    path_29.cubicTo(
+        size.width * 0.6214860,
+        size.height * 0.5416290,
+        size.width * 0.6258751,
+        size.height * 0.5448836,
+        size.width * 0.6305524,
+        size.height * 0.5476050);
+    path_29.cubicTo(
+        size.width * 0.6361993,
+        size.height * 0.5508727,
+        size.width * 0.6430231,
+        size.height * 0.5536684,
+        size.width * 0.6505554,
+        size.height * 0.5544667);
     path_29.close();
 
     Paint paint_29_fill = Paint()..style = PaintingStyle.fill;
@@ -952,14 +4590,50 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_29, paint_29_fill);
 
     Path path_30 = Path();
-    path_30.moveTo(2019, 1686.11);
-    path_30.cubicTo(2024.57, 1701.31, 2040.65, 1742.4, 2065, 1782.11);
-    path_30.cubicTo(2052.44, 1772.75, 2040.53, 1762.56, 2029.34, 1751.6);
-    path_30.cubicTo(2016.99, 1739.65, 2004.27, 1725.99, 1991.17, 1710.6);
-    path_30.cubicTo(1966.17, 1681.13, 1941.07, 1646.8, 1916.56, 1608.67);
-    path_30.lineTo(1923.82, 1595.2);
-    path_30.cubicTo(1925.56, 1597.7, 1927.29, 1600.15, 1929.01, 1602.56);
-    path_30.cubicTo(1965.07, 1653, 1995.23, 1681, 2019, 1686.11);
+    path_30.moveTo(size.width * 0.6061243, size.height * 0.5449612);
+    path_30.cubicTo(
+        size.width * 0.6077965,
+        size.height * 0.5498739,
+        size.width * 0.6126238,
+        size.height * 0.5631545,
+        size.width * 0.6199340,
+        size.height * 0.5759890);
+    path_30.cubicTo(
+        size.width * 0.6161633,
+        size.height * 0.5729638,
+        size.width * 0.6125878,
+        size.height * 0.5696703,
+        size.width * 0.6092285,
+        size.height * 0.5661280);
+    path_30.cubicTo(
+        size.width * 0.6055209,
+        size.height * 0.5622657,
+        size.width * 0.6017022,
+        size.height * 0.5578507,
+        size.width * 0.5977694,
+        size.height * 0.5528765);
+    path_30.cubicTo(
+        size.width * 0.5902642,
+        size.height * 0.5433516,
+        size.width * 0.5827289,
+        size.height * 0.5322560,
+        size.width * 0.5753708,
+        size.height * 0.5199321);
+    path_30.lineTo(size.width * 0.5775503, size.height * 0.5155785);
+    path_30.cubicTo(
+        size.width * 0.5780727,
+        size.height * 0.5163866,
+        size.width * 0.5785920,
+        size.height * 0.5171784,
+        size.width * 0.5791084,
+        size.height * 0.5179573);
+    path_30.cubicTo(
+        size.width * 0.5899340,
+        size.height * 0.5342599,
+        size.width * 0.5989883,
+        size.height * 0.5433096,
+        size.width * 0.6061243,
+        size.height * 0.5449612);
     path_30.close();
 
     Paint paint_30_fill = Paint()..style = PaintingStyle.fill;
@@ -967,13 +4641,37 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_30, paint_30_fill);
 
     Path path_31 = Path();
-    path_31.moveTo(1913.1, 1579.37);
-    path_31.lineTo(1906.16, 1592.22);
-    path_31.cubicTo(1886.83, 1561.09, 1867.9, 1527.66, 1849.7, 1492.44);
-    path_31.cubicTo(1831.5, 1457.22, 1814.03, 1420.24, 1797.58, 1382.01);
-    path_31.cubicTo(1796.47, 1379.43, 1795.37, 1376.84, 1794.27, 1374.26);
-    path_31.lineTo(1802.2, 1369.1);
-    path_31.cubicTo(1836.9, 1449.31, 1875.68, 1522.72, 1913.1, 1579.37);
+    path_31.moveTo(size.width * 0.5743320, size.height * 0.5104622);
+    path_31.lineTo(size.width * 0.5722486, size.height * 0.5146154);
+    path_31.cubicTo(
+        size.width * 0.5664455,
+        size.height * 0.5045540,
+        size.width * 0.5607625,
+        size.height * 0.4937492,
+        size.width * 0.5552987,
+        size.height * 0.4823659);
+    path_31.cubicTo(
+        size.width * 0.5498349,
+        size.height * 0.4709825,
+        size.width * 0.5445902,
+        size.height * 0.4590304,
+        size.width * 0.5396518,
+        size.height * 0.4466742);
+    path_31.cubicTo(
+        size.width * 0.5393185,
+        size.height * 0.4458403,
+        size.width * 0.5389883,
+        size.height * 0.4450032,
+        size.width * 0.5386581,
+        size.height * 0.4441694);
+    path_31.lineTo(size.width * 0.5410387, size.height * 0.4425016);
+    path_31.cubicTo(
+        size.width * 0.5514560,
+        size.height * 0.4684260,
+        size.width * 0.5630982,
+        size.height * 0.4921526,
+        size.width * 0.5743320,
+        size.height * 0.5104622);
     path_31.close();
 
     Paint paint_31_fill = Paint()..style = PaintingStyle.fill;
@@ -981,12 +4679,42 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_31, paint_31_fill);
 
     Path path_32 = Path();
-    path_32.moveTo(1876.77, 1326.88);
-    path_32.cubicTo(1895.6, 1370.68, 1893.27, 1406.11, 1883.47, 1410.32);
-    path_32.cubicTo(1873.67, 1414.53, 1846.34, 1391.87, 1827.47, 1348.07);
-    path_32.cubicTo(1808.6, 1304.27, 1810.97, 1268.86, 1820.77, 1264.64);
-    path_32.cubicTo(1821.61, 1264.3, 1822.51, 1264.13, 1823.42, 1264.14);
-    path_32.cubicTo(1834.89, 1264.14, 1859.43, 1286.56, 1876.77, 1326.88);
+    path_32.moveTo(size.width * 0.5634254, size.height * 0.4288559);
+    path_32.cubicTo(
+        size.width * 0.5690784,
+        size.height * 0.4430123,
+        size.width * 0.5683789,
+        size.height * 0.4544635,
+        size.width * 0.5654368,
+        size.height * 0.4558242);
+    path_32.cubicTo(
+        size.width * 0.5624947,
+        size.height * 0.4571849,
+        size.width * 0.5542900,
+        size.height * 0.4498610,
+        size.width * 0.5486250,
+        size.height * 0.4357046);
+    path_32.cubicTo(
+        size.width * 0.5429601,
+        size.height * 0.4215482,
+        size.width * 0.5436716,
+        size.height * 0.4101034,
+        size.width * 0.5466136,
+        size.height * 0.4087395);
+    path_32.cubicTo(
+        size.width * 0.5468658,
+        size.height * 0.4086296,
+        size.width * 0.5471360,
+        size.height * 0.4085747,
+        size.width * 0.5474092,
+        size.height * 0.4085779);
+    path_32.cubicTo(
+        size.width * 0.5508526,
+        size.height * 0.4085779,
+        size.width * 0.5582198,
+        size.height * 0.4158242,
+        size.width * 0.5634254,
+        size.height * 0.4288559);
     path_32.close();
 
     Paint paint_32_fill = Paint()..style = PaintingStyle.fill;
@@ -994,21 +4722,105 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_32, paint_32_fill);
 
     Path path_33 = Path();
-    path_33.moveTo(1958.45, 1317.23);
-    path_33.cubicTo(2041.85, 1516.62, 2057.03, 1653.65, 2030.36, 1665.12);
-    path_33.cubicTo(2021.68, 1668.85, 1994.18, 1657.29, 1946.25, 1590.22);
-    path_33.cubicTo(1913.19, 1543.97, 1878.33, 1482.69, 1845.71, 1413.84);
-    path_33.cubicTo(1857.21, 1425.01, 1869.43, 1432.01, 1881.01, 1432.01);
-    path_33.cubicTo(1884.73, 1432.02, 1888.42, 1431.26, 1891.84, 1429.79);
-    path_33.cubicTo(1920.48, 1417.47, 1915.48, 1363.26, 1896.24, 1318.52);
-    path_33.cubicTo(1877, 1273.78, 1841.08, 1232.85, 1812.44, 1245.18);
-    path_33.cubicTo(1798.13, 1251.33, 1792.22, 1267.93, 1792.28, 1288.59);
-    path_33.cubicTo(1777.28, 1249.21, 1765.2, 1212.81, 1755.76, 1179.98);
-    path_33.cubicTo(1724.16, 1070.14, 1722.27, 1000.28, 1740.99, 992.23);
-    path_33.cubicTo(1749.17, 988.71, 1763.21, 996.17, 1781.27, 1013.92);
-    path_33.cubicTo(1811.44, 1043.56, 1852.84, 1101.92, 1896.84, 1185.65);
-    path_33.cubicTo(1914.77, 1219.76, 1933.12, 1258.09, 1951.32, 1300.42);
-    path_33.cubicTo(1953.77, 1306.07, 1956.15, 1311.68, 1958.45, 1317.23);
+    path_33.moveTo(size.width * 0.5879466, size.height * 0.4257369);
+    path_33.cubicTo(
+        size.width * 0.6129841,
+        size.height * 0.4901810,
+        size.width * 0.6175413,
+        size.height * 0.5344699,
+        size.width * 0.6095347,
+        size.height * 0.5381771);
+    path_33.cubicTo(
+        size.width * 0.6069289,
+        size.height * 0.5393827,
+        size.width * 0.5986731,
+        size.height * 0.5356464,
+        size.width * 0.5842840,
+        size.height * 0.5139690);
+    path_33.cubicTo(
+        size.width * 0.5743591,
+        size.height * 0.4990207,
+        size.width * 0.5638937,
+        size.height * 0.4792146,
+        size.width * 0.5541009,
+        size.height * 0.4569619);
+    path_33.cubicTo(
+        size.width * 0.5575533,
+        size.height * 0.4605721,
+        size.width * 0.5612219,
+        size.height * 0.4628345,
+        size.width * 0.5646983,
+        size.height * 0.4628345);
+    path_33.cubicTo(
+        size.width * 0.5658151,
+        size.height * 0.4628378,
+        size.width * 0.5669228,
+        size.height * 0.4625921,
+        size.width * 0.5679496,
+        size.height * 0.4621170);
+    path_33.cubicTo(
+        size.width * 0.5765476,
+        size.height * 0.4581351,
+        size.width * 0.5750465,
+        size.height * 0.4406141,
+        size.width * 0.5692705,
+        size.height * 0.4261538);
+    path_33.cubicTo(
+        size.width * 0.5634944,
+        size.height * 0.4116936,
+        size.width * 0.5527109,
+        size.height * 0.3984648,
+        size.width * 0.5441129,
+        size.height * 0.4024499);
+    path_33.cubicTo(
+        size.width * 0.5398169,
+        size.height * 0.4044376,
+        size.width * 0.5380426,
+        size.height * 0.4098028,
+        size.width * 0.5380606,
+        size.height * 0.4164803);
+    path_33.cubicTo(
+        size.width * 0.5335575,
+        size.height * 0.4037524,
+        size.width * 0.5299310,
+        size.height * 0.3919877,
+        size.width * 0.5270970,
+        size.height * 0.3813769);
+    path_33.cubicTo(
+        size.width * 0.5176103,
+        size.height * 0.3458759,
+        size.width * 0.5170429,
+        size.height * 0.3232967,
+        size.width * 0.5226629,
+        size.height * 0.3206949);
+    path_33.cubicTo(
+        size.width * 0.5251186,
+        size.height * 0.3195572,
+        size.width * 0.5293335,
+        size.height * 0.3219683,
+        size.width * 0.5347553,
+        size.height * 0.3277052);
+    path_33.cubicTo(
+        size.width * 0.5438127,
+        size.height * 0.3372851,
+        size.width * 0.5562414,
+        size.height * 0.3561474,
+        size.width * 0.5694506,
+        size.height * 0.3832094);
+    path_33.cubicTo(
+        size.width * 0.5748334,
+        size.height * 0.3942340,
+        size.width * 0.5803422,
+        size.height * 0.4066225,
+        size.width * 0.5858061,
+        size.height * 0.4203038);
+    path_33.cubicTo(
+        size.width * 0.5865416,
+        size.height * 0.4221299,
+        size.width * 0.5872561,
+        size.height * 0.4239431,
+        size.width * 0.5879466,
+        size.height * 0.4257369);
     path_33.close();
 
     Paint paint_33_fill = Paint()..style = PaintingStyle.fill;
@@ -1016,12 +4828,30 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_33, paint_33_fill);
 
     Path path_34 = Path();
-    path_34.moveTo(1795.44, 1353.28);
-    path_34.lineTo(1787.62, 1358.36);
-    path_34.cubicTo(1751.35, 1270.59, 1723.82, 1184.02, 1707.11, 1105.84);
-    path_34.lineTo(1717.92, 1115.72);
-    path_34.cubicTo(1724.92, 1150.24, 1735.59, 1188.86, 1748.84, 1229.23);
-    path_34.cubicTo(1762.09, 1269.6, 1777.94, 1311.74, 1795.44, 1353.28);
+    path_34.moveTo(size.width * 0.5390093, size.height * 0.4373885);
+    path_34.lineTo(size.width * 0.5366617, size.height * 0.4390304);
+    path_34.cubicTo(
+        size.width * 0.5257730,
+        size.height * 0.4106626,
+        size.width * 0.5175083,
+        size.height * 0.3826826,
+        size.width * 0.5124917,
+        size.height * 0.3574144);
+    path_34.lineTo(size.width * 0.5157370, size.height * 0.3606076);
+    path_34.cubicTo(
+        size.width * 0.5178385,
+        size.height * 0.3717647,
+        size.width * 0.5210417,
+        size.height * 0.3842469,
+        size.width * 0.5250195,
+        size.height * 0.3972948);
+    path_34.cubicTo(
+        size.width * 0.5289973,
+        size.height * 0.4103426,
+        size.width * 0.5337556,
+        size.height * 0.4239625,
+        size.width * 0.5390093,
+        size.height * 0.4373885);
     path_34.close();
 
     Paint paint_34_fill = Paint()..style = PaintingStyle.fill;
@@ -1029,14 +4859,50 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_34, paint_34_fill);
 
     Path path_35 = Path();
-    path_35.moveTo(1712.92, 1088.18);
-    path_35.lineTo(1701.49, 1077.73);
-    path_35.cubicTo(1699.49, 1066.96, 1697.72, 1056.38, 1696.19, 1045.99);
-    path_35.cubicTo(1694.66, 1035.6, 1693.34, 1025.43, 1692.25, 1015.49);
-    path_35.cubicTo(1687.72, 973.77, 1687.57, 937.98, 1691.54, 909.36);
-    path_35.cubicTo(1698.07, 950.92, 1710.85, 974.6, 1718.43, 985.57);
-    path_35.cubicTo(1711.43, 996.89, 1708.27, 1014.07, 1708.27, 1035.69);
-    path_35.cubicTo(1708.27, 1051.1, 1709.89, 1068.77, 1712.92, 1088.18);
+    path_35.moveTo(size.width * 0.5142360, size.height * 0.3517065);
+    path_35.lineTo(size.width * 0.5108046, size.height * 0.3483290);
+    path_35.cubicTo(
+        size.width * 0.5102041,
+        size.height * 0.3448481,
+        size.width * 0.5096728,
+        size.height * 0.3414286,
+        size.width * 0.5092134,
+        size.height * 0.3380705);
+    path_35.cubicTo(
+        size.width * 0.5087541,
+        size.height * 0.3347123,
+        size.width * 0.5083579,
+        size.height * 0.3314253,
+        size.width * 0.5080306,
+        size.height * 0.3282127);
+    path_35.cubicTo(
+        size.width * 0.5066707,
+        size.height * 0.3147285,
+        size.width * 0.5066256,
+        size.height * 0.3031610,
+        size.width * 0.5078175,
+        size.height * 0.2939108);
+    path_35.cubicTo(
+        size.width * 0.5097778,
+        size.height * 0.3073432,
+        size.width * 0.5136145,
+        size.height * 0.3149968,
+        size.width * 0.5158901,
+        size.height * 0.3185423);
+    path_35.cubicTo(
+        size.width * 0.5137887,
+        size.height * 0.3222010,
+        size.width * 0.5128400,
+        size.height * 0.3277537,
+        size.width * 0.5128400,
+        size.height * 0.3347414);
+    path_35.cubicTo(
+        size.width * 0.5128400,
+        size.height * 0.3397220,
+        size.width * 0.5133263,
+        size.height * 0.3454331,
+        size.width * 0.5142360,
+        size.height * 0.3517065);
     path_35.close();
 
     Paint paint_35_fill = Paint()..style = PaintingStyle.fill;
@@ -1044,14 +4910,56 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_35, paint_35_fill);
 
     Path path_36 = Path();
-    path_36.moveTo(1809.25, 882);
-    path_36.cubicTo(1782.25, 907.22, 1765.54, 952.22, 1758.83, 973.43);
-    path_36.cubicTo(1749.25, 969.81, 1740.44, 969.43, 1732.62, 972.81);
-    path_36.cubicTo(1732.02, 973.07, 1731.44, 973.34, 1730.87, 973.64);
-    path_36.cubicTo(1722.15, 959.93, 1706.03, 926.2, 1704.52, 862.86);
-    path_36.cubicTo(1709.94, 851.86, 1716.71, 843.62, 1724.79, 838.36);
-    path_36.cubicTo(1727.24, 837.875, 1729.74, 837.634, 1732.24, 837.64);
-    path_36.cubicTo(1753.22, 837.6, 1779.66, 853.4, 1809.25, 882);
+    path_36.moveTo(size.width * 0.5431552, size.height * 0.2850679);
+    path_36.cubicTo(
+        size.width * 0.5350495,
+        size.height * 0.2932191,
+        size.width * 0.5300330,
+        size.height * 0.3077634,
+        size.width * 0.5280186,
+        size.height * 0.3146186);
+    path_36.cubicTo(
+        size.width * 0.5251426,
+        size.height * 0.3134486,
+        size.width * 0.5224977,
+        size.height * 0.3133258,
+        size.width * 0.5201501,
+        size.height * 0.3144182);
+    path_36.cubicTo(
+        size.width * 0.5199700,
+        size.height * 0.3145023,
+        size.width * 0.5197959,
+        size.height * 0.3145895,
+        size.width * 0.5196247,
+        size.height * 0.3146865);
+    path_36.cubicTo(
+        size.width * 0.5170069,
+        size.height * 0.3102553,
+        size.width * 0.5121675,
+        size.height * 0.2993536,
+        size.width * 0.5117142,
+        size.height * 0.2788817);
+    path_36.cubicTo(
+        size.width * 0.5133413,
+        size.height * 0.2753264,
+        size.width * 0.5153738,
+        size.height * 0.2726632,
+        size.width * 0.5177995,
+        size.height * 0.2709632);
+    path_36.cubicTo(
+        size.width * 0.5185350,
+        size.height * 0.2708064,
+        size.width * 0.5192855,
+        size.height * 0.2707285,
+        size.width * 0.5200360,
+        size.height * 0.2707304);
+    path_36.cubicTo(
+        size.width * 0.5263344,
+        size.height * 0.2707175,
+        size.width * 0.5342720,
+        size.height * 0.2758242,
+        size.width * 0.5431552,
+        size.height * 0.2850679);
     path_36.close();
 
     Paint paint_36_fill = Paint()..style = PaintingStyle.fill;
@@ -1059,12 +4967,42 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_36, paint_36_fill);
 
     Path path_37 = Path();
-    path_37.moveTo(1317.08, 1752.19);
-    path_37.cubicTo(1317.59, 1768.63, 1305.97, 1789.19, 1296.59, 1793.13);
-    path_37.cubicTo(1293.83, 1794.29, 1291.77, 1793.87, 1289.73, 1791.74);
-    path_37.cubicTo(1282.44, 1784.11, 1297.43, 1755.05, 1311, 1735.74);
-    path_37.cubicTo(1311.56, 1735.9, 1312.08, 1736.18, 1312.52, 1736.56);
-    path_37.cubicTo(1314.08, 1737.82, 1316.74, 1741.54, 1317.08, 1752.19);
+    path_37.moveTo(size.width * 0.3954008, size.height * 0.5663187);
+    path_37.cubicTo(
+        size.width * 0.3955539,
+        size.height * 0.5716322,
+        size.width * 0.3920654,
+        size.height * 0.5782773,
+        size.width * 0.3892495,
+        size.height * 0.5795507);
+    path_37.cubicTo(
+        size.width * 0.3884209,
+        size.height * 0.5799257,
+        size.width * 0.3878025,
+        size.height * 0.5797899,
+        size.width * 0.3871900,
+        size.height * 0.5791015);
+    path_37.cubicTo(
+        size.width * 0.3850015,
+        size.height * 0.5766354,
+        size.width * 0.3895017,
+        size.height * 0.5672431,
+        size.width * 0.3935755,
+        size.height * 0.5610019);
+    path_37.cubicTo(
+        size.width * 0.3937436,
+        size.height * 0.5610537,
+        size.width * 0.3938997,
+        size.height * 0.5611441,
+        size.width * 0.3940318,
+        size.height * 0.5612670);
+    path_37.cubicTo(
+        size.width * 0.3945002,
+        size.height * 0.5616742,
+        size.width * 0.3952987,
+        size.height * 0.5628765,
+        size.width * 0.3954008,
+        size.height * 0.5663187);
     path_37.close();
 
     Paint paint_37_fill = Paint()..style = PaintingStyle.fill;
@@ -1072,11 +5010,35 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_37, paint_37_fill);
 
     Path path_38 = Path();
-    path_38.moveTo(1192.91, 1612.12);
-    path_38.cubicTo(1193.21, 1612.12, 1193.51, 1612.15, 1193.81, 1612.21);
-    path_38.cubicTo(1193.02, 1615.88, 1184.23, 1625.57, 1173.68, 1634.46);
-    path_38.cubicTo(1171.85, 1632.63, 1170.93, 1629.95, 1173.36, 1625.63);
-    path_38.cubicTo(1177.79, 1617.71, 1188.41, 1612.12, 1192.91, 1612.12);
+    path_38.moveTo(size.width * 0.3581237, size.height * 0.5210472);
+    path_38.cubicTo(
+        size.width * 0.3582137,
+        size.height * 0.5210472,
+        size.width * 0.3583038,
+        size.height * 0.5210569,
+        size.width * 0.3583939,
+        size.height * 0.5210763);
+    path_38.cubicTo(
+        size.width * 0.3581567,
+        size.height * 0.5222624,
+        size.width * 0.3555179,
+        size.height * 0.5253943,
+        size.width * 0.3523506,
+        size.height * 0.5282676);
+    path_38.cubicTo(
+        size.width * 0.3518013,
+        size.height * 0.5276761,
+        size.width * 0.3515251,
+        size.height * 0.5268100,
+        size.width * 0.3522546,
+        size.height * 0.5254137);
+    path_38.cubicTo(
+        size.width * 0.3535845,
+        size.height * 0.5228539,
+        size.width * 0.3567727,
+        size.height * 0.5210472,
+        size.width * 0.3581237,
+        size.height * 0.5210472);
     path_38.close();
 
     Paint paint_38_fill = Paint()..style = PaintingStyle.fill;
@@ -1084,50 +5046,296 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_38, paint_38_fill);
 
     Path path_39 = Path();
-    path_39.moveTo(1746.67, 1343.3);
-    path_39.cubicTo(1745.84, 1350.1, 1741, 1351.3, 1738.32, 1351.36);
-    path_39.cubicTo(1736.94, 1351.36, 1735.58, 1351.7, 1734.35, 1352.33);
-    path_39.cubicTo(1733.12, 1352.96, 1732.06, 1353.88, 1731.26, 1355);
-    path_39.cubicTo(1730.45, 1356.12, 1729.93, 1357.42, 1729.73, 1358.79);
-    path_39.cubicTo(1729.52, 1360.16, 1729.65, 1361.55, 1730.09, 1362.86);
-    path_39.cubicTo(1730.33, 1363.56, 1753.46, 1433.43, 1719.62, 1496.45);
-    path_39.cubicTo(1687.16, 1556.9, 1525.78, 1613.26, 1456.87, 1637.33);
-    path_39.lineTo(1444.27, 1641.75);
-    path_39.cubicTo(1407.65, 1654.66, 1389, 1670.91, 1376.66, 1681.67);
-    path_39.cubicTo(1365.66, 1691.22, 1362.87, 1693.1, 1357.75, 1691.24);
-    path_39.cubicTo(1357.22, 1691.05, 1356.7, 1690.81, 1356.21, 1690.54);
-    path_39.cubicTo(1355.76, 1688.62, 1358.45, 1682.54, 1359.89, 1679.23);
-    path_39.cubicTo(1363.11, 1671.91, 1366.76, 1663.61, 1363.11, 1656.17);
-    path_39.cubicTo(1361.7, 1653.28, 1358.6, 1649.48, 1351.87, 1647.8);
-    path_39.cubicTo(1337.4, 1644.18, 1326.54, 1655.93, 1315.04, 1668.36);
-    path_39.cubicTo(1303.54, 1680.79, 1290.52, 1694.87, 1271.21, 1700.05);
-    path_39.cubicTo(1259.32, 1703.26, 1247.13, 1705.19, 1234.83, 1705.81);
-    path_39.cubicTo(1220.51, 1706.81, 1208.15, 1707.73, 1188.49, 1720.17);
-    path_39.cubicTo(1178.94, 1726.23, 1171.94, 1733.07, 1164.49, 1740.3);
-    path_39.lineTo(1161.77, 1742.96);
-    path_39.cubicTo(1165.14, 1736.49, 1168.11, 1729.33, 1171.2, 1721.88);
-    path_39.cubicTo(1179.84, 1701.07, 1188.78, 1679.55, 1207.73, 1669.41);
-    path_39.cubicTo(1218.33, 1663.74, 1228.25, 1660.41, 1237.85, 1657.13);
-    path_39.cubicTo(1256.61, 1650.76, 1274.34, 1644.76, 1287.78, 1623.47);
-    path_39.cubicTo(1307.28, 1592.6, 1307.35, 1580.77, 1299.03, 1534.1);
-    path_39.cubicTo(1290.95, 1488.78, 1290.17, 1474.78, 1325.03, 1453.84);
-    path_39.cubicTo(1368.54, 1427.73, 1393.5, 1385.49, 1393.5, 1337.96);
-    path_39.cubicTo(1393.5, 1314.4, 1408.91, 1283.26, 1430.96, 1262.23);
-    path_39.cubicTo(1445.26, 1248.6, 1460.17, 1241.23, 1473.17, 1241.23);
-    path_39.cubicTo(1473.71, 1241.23, 1474.24, 1241.23, 1474.76, 1241.23);
-    path_39.cubicTo(1476.19, 1241.27, 1477.6, 1240.96, 1478.89, 1240.33);
-    path_39.cubicTo(1480.17, 1239.69, 1481.28, 1238.76, 1482.12, 1237.61);
-    path_39.cubicTo(1482.96, 1236.45, 1483.5, 1235.11, 1483.71, 1233.69);
-    path_39.cubicTo(1483.92, 1232.28, 1483.78, 1230.84, 1483.3, 1229.49);
-    path_39.cubicTo(1482.52, 1226.6, 1482.86, 1223.53, 1484.25, 1220.88);
-    path_39.cubicTo(1487.16, 1215.08, 1494.66, 1210.1, 1505.93, 1206.5);
-    path_39.cubicTo(1533.45, 1197.71, 1598.73, 1228.5, 1621.57, 1241.16);
-    path_39.cubicTo(1623.21, 1242.04, 1625.08, 1242.38, 1626.92, 1242.13);
-    path_39.cubicTo(1628.76, 1241.89, 1630.47, 1241.07, 1631.82, 1239.79);
-    path_39.cubicTo(1633.89, 1237.79, 1644.96, 1228.79, 1659.88, 1243.37);
-    path_39.cubicTo(1670.57, 1253.78, 1674.67, 1269.55, 1677.96, 1282.22);
-    path_39.cubicTo(1681.3, 1295.13, 1683.96, 1305.32, 1692.96, 1308.75);
-    path_39.cubicTo(1712.46, 1316.13, 1745.61, 1335.71, 1746.67, 1343.3);
+    path_39.moveTo(size.width * 0.5243681, size.height * 0.4341629);
+    path_39.cubicTo(
+        size.width * 0.5241189,
+        size.height * 0.4363607,
+        size.width * 0.5226659,
+        size.height * 0.4367485,
+        size.width * 0.5218613,
+        size.height * 0.4367679);
+    path_39.cubicTo(
+        size.width * 0.5214470,
+        size.height * 0.4367679,
+        size.width * 0.5210387,
+        size.height * 0.4368778,
+        size.width * 0.5206695,
+        size.height * 0.4370814);
+    path_39.cubicTo(
+        size.width * 0.5203002,
+        size.height * 0.4372851,
+        size.width * 0.5199820,
+        size.height * 0.4375824,
+        size.width * 0.5197418,
+        size.height * 0.4379444);
+    path_39.cubicTo(
+        size.width * 0.5194986,
+        size.height * 0.4383064,
+        size.width * 0.5193425,
+        size.height * 0.4387266,
+        size.width * 0.5192825,
+        size.height * 0.4391694);
+    path_39.cubicTo(
+        size.width * 0.5192195,
+        size.height * 0.4396122,
+        size.width * 0.5192585,
+        size.height * 0.4400614,
+        size.width * 0.5193906,
+        size.height * 0.4404848);
+    path_39.cubicTo(
+        size.width * 0.5194626,
+        size.height * 0.4407111,
+        size.width * 0.5264065,
+        size.height * 0.4632935,
+        size.width * 0.5162474,
+        size.height * 0.4836619);
+    path_39.cubicTo(
+        size.width * 0.5065026,
+        size.height * 0.5031997,
+        size.width * 0.4580546,
+        size.height * 0.5214156,
+        size.width * 0.4373672,
+        size.height * 0.5291952);
+    path_39.lineTo(size.width * 0.4335845, size.height * 0.5306238);
+    path_39.cubicTo(
+        size.width * 0.4225908,
+        size.height * 0.5347964,
+        size.width * 0.4169919,
+        size.height * 0.5400485,
+        size.width * 0.4132873,
+        size.height * 0.5435262);
+    path_39.cubicTo(
+        size.width * 0.4099850,
+        size.height * 0.5466128,
+        size.width * 0.4091474,
+        size.height * 0.5472204,
+        size.width * 0.4076103,
+        size.height * 0.5466193);
+    path_39.cubicTo(
+        size.width * 0.4074512,
+        size.height * 0.5465579,
+        size.width * 0.4072951,
+        size.height * 0.5464803,
+        size.width * 0.4071480,
+        size.height * 0.5463930);
+    path_39.cubicTo(
+        size.width * 0.4070129,
+        size.height * 0.5457725,
+        size.width * 0.4078205,
+        size.height * 0.5438074,
+        size.width * 0.4082528,
+        size.height * 0.5427376);
+    path_39.cubicTo(
+        size.width * 0.4092195,
+        size.height * 0.5403717,
+        size.width * 0.4103152,
+        size.height * 0.5376891,
+        size.width * 0.4092195,
+        size.height * 0.5352844);
+    path_39.cubicTo(
+        size.width * 0.4087962,
+        size.height * 0.5343504,
+        size.width * 0.4078655,
+        size.height * 0.5331222,
+        size.width * 0.4058451,
+        size.height * 0.5325792);
+    path_39.cubicTo(
+        size.width * 0.4015011,
+        size.height * 0.5314092,
+        size.width * 0.3982408,
+        size.height * 0.5352069,
+        size.width * 0.3947884,
+        size.height * 0.5392243);
+    path_39.cubicTo(
+        size.width * 0.3913359,
+        size.height * 0.5432418,
+        size.width * 0.3874272,
+        size.height * 0.5477925,
+        size.width * 0.3816301,
+        size.height * 0.5494667);
+    path_39.cubicTo(
+        size.width * 0.3780606,
+        size.height * 0.5505042,
+        size.width * 0.3744011,
+        size.height * 0.5511280,
+        size.width * 0.3707085,
+        size.height * 0.5513284);
+    path_39.cubicTo(
+        size.width * 0.3664095,
+        size.height * 0.5516516,
+        size.width * 0.3626989,
+        size.height * 0.5519489,
+        size.width * 0.3567968,
+        size.height * 0.5559696);
+    path_39.cubicTo(
+        size.width * 0.3539298,
+        size.height * 0.5579282,
+        size.width * 0.3518283,
+        size.height * 0.5601390,
+        size.width * 0.3495917,
+        size.height * 0.5624758);
+    path_39.lineTo(size.width * 0.3487751, size.height * 0.5633355);
+    path_39.cubicTo(
+        size.width * 0.3497869,
+        size.height * 0.5612443,
+        size.width * 0.3506785,
+        size.height * 0.5589302,
+        size.width * 0.3516061,
+        size.height * 0.5565223);
+    path_39.cubicTo(
+        size.width * 0.3541999,
+        size.height * 0.5497964,
+        size.width * 0.3568838,
+        size.height * 0.5428410,
+        size.width * 0.3625728,
+        size.height * 0.5395637);
+    path_39.cubicTo(
+        size.width * 0.3657550,
+        size.height * 0.5377311,
+        size.width * 0.3687331,
+        size.height * 0.5366548,
+        size.width * 0.3716151,
+        size.height * 0.5355947);
+    path_39.cubicTo(
+        size.width * 0.3772471,
+        size.height * 0.5335359,
+        size.width * 0.3825698,
+        size.height * 0.5315966,
+        size.width * 0.3866046,
+        size.height * 0.5247156);
+    path_39.cubicTo(
+        size.width * 0.3924587,
+        size.height * 0.5147382,
+        size.width * 0.3924797,
+        size.height * 0.5109147,
+        size.width * 0.3899820,
+        size.height * 0.4958306);
+    path_39.cubicTo(
+        size.width * 0.3875563,
+        size.height * 0.4811829,
+        size.width * 0.3873221,
+        size.height * 0.4766580,
+        size.width * 0.3977875,
+        size.height * 0.4698901);
+    path_39.cubicTo(
+        size.width * 0.4108496,
+        size.height * 0.4614512,
+        size.width * 0.4183428,
+        size.height * 0.4477990,
+        size.width * 0.4183428,
+        size.height * 0.4324370);
+    path_39.cubicTo(
+        size.width * 0.4183428,
+        size.height * 0.4248222,
+        size.width * 0.4229691,
+        size.height * 0.4147576,
+        size.width * 0.4295887,
+        size.height * 0.4079606);
+    path_39.cubicTo(
+        size.width * 0.4338817,
+        size.height * 0.4035553,
+        size.width * 0.4383579,
+        size.height * 0.4011732,
+        size.width * 0.4422606,
+        size.height * 0.4011732);
+    path_39.cubicTo(
+        size.width * 0.4424227,
+        size.height * 0.4011732,
+        size.width * 0.4425818,
+        size.height * 0.4011732,
+        size.width * 0.4427379,
+        size.height * 0.4011732);
+    path_39.cubicTo(
+        size.width * 0.4431672,
+        size.height * 0.4011862,
+        size.width * 0.4435905,
+        size.height * 0.4010860,
+        size.width * 0.4439778,
+        size.height * 0.4008824);
+    path_39.cubicTo(
+        size.width * 0.4443621,
+        size.height * 0.4006755,
+        size.width * 0.4446953,
+        size.height * 0.4003749,
+        size.width * 0.4449475,
+        size.height * 0.4000032);
+    path_39.cubicTo(
+        size.width * 0.4451996,
+        size.height * 0.3996283,
+        size.width * 0.4453618,
+        size.height * 0.3991952,
+        size.width * 0.4454248,
+        size.height * 0.3987363);
+    path_39.cubicTo(
+        size.width * 0.4454878,
+        size.height * 0.3982805,
+        size.width * 0.4454458,
+        size.height * 0.3978151,
+        size.width * 0.4453017,
+        size.height * 0.3973788);
+    path_39.cubicTo(
+        size.width * 0.4450675,
+        size.height * 0.3964447,
+        size.width * 0.4451696,
+        size.height * 0.3954525,
+        size.width * 0.4455869,
+        size.height * 0.3945960);
+    path_39.cubicTo(
+        size.width * 0.4464605,
+        size.height * 0.3927214,
+        size.width * 0.4487121,
+        size.height * 0.3911118,
+        size.width * 0.4520955,
+        size.height * 0.3899483);
+    path_39.cubicTo(
+        size.width * 0.4603573,
+        size.height * 0.3871073,
+        size.width * 0.4799550,
+        size.height * 0.3970588,
+        size.width * 0.4868118,
+        size.height * 0.4011506);
+    path_39.cubicTo(
+        size.width * 0.4873041,
+        size.height * 0.4014350,
+        size.width * 0.4878655,
+        size.height * 0.4015449,
+        size.width * 0.4884179,
+        size.height * 0.4014641);
+    path_39.cubicTo(
+        size.width * 0.4889703,
+        size.height * 0.4013866,
+        size.width * 0.4894836,
+        size.height * 0.4011215,
+        size.width * 0.4898889,
+        size.height * 0.4007078);
+    path_39.cubicTo(
+        size.width * 0.4905104,
+        size.height * 0.4000614,
+        size.width * 0.4938337,
+        size.height * 0.3971526,
+        size.width * 0.4983128,
+        size.height * 0.4018649);
+    path_39.cubicTo(
+        size.width * 0.5015221,
+        size.height * 0.4052295,
+        size.width * 0.5027529,
+        size.height * 0.4103264,
+        size.width * 0.5037406,
+        size.height * 0.4144215);
+    path_39.cubicTo(
+        size.width * 0.5047433,
+        size.height * 0.4185941,
+        size.width * 0.5055419,
+        size.height * 0.4218875,
+        size.width * 0.5082438,
+        size.height * 0.4229961);
+    path_39.cubicTo(
+        size.width * 0.5140979,
+        size.height * 0.4253814,
+        size.width * 0.5240498,
+        size.height * 0.4317098,
+        size.width * 0.5243681,
+        size.height * 0.4341629);
     path_39.close();
 
     Paint paint_39_fill = Paint()..style = PaintingStyle.fill;
@@ -1135,11 +5343,29 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_39, paint_39_fill);
 
     Path path_40 = Path();
-    path_40.moveTo(256.271, 1981.18);
-    path_40.lineTo(298.401, 1973.46);
-    path_40.cubicTo(291.491, 2000.35, 284.831, 2032.59, 282.011, 2046.66);
-    path_40.cubicTo(261.891, 2050.08, 241.731, 2050.78, 235.621, 2048.17);
-    path_40.cubicTo(234.451, 2039.66, 243.571, 2010.09, 256.271, 1981.18);
+    path_40.moveTo(size.width * 0.07693515, size.height * 0.6403297);
+    path_40.lineTo(size.width * 0.08958301, size.height * 0.6378345);
+    path_40.cubicTo(
+        size.width * 0.08750856,
+        size.height * 0.6465255,
+        size.width * 0.08550916,
+        size.height * 0.6569457,
+        size.width * 0.08466256,
+        size.height * 0.6614932);
+    path_40.cubicTo(
+        size.width * 0.07862234,
+        size.height * 0.6625986,
+        size.width * 0.07257010,
+        size.height * 0.6628248,
+        size.width * 0.07073582,
+        size.height * 0.6619813);
+    path_40.cubicTo(
+        size.width * 0.07038457,
+        size.height * 0.6592308,
+        size.width * 0.07312249,
+        size.height * 0.6496736,
+        size.width * 0.07693515,
+        size.height * 0.6403297);
     path_40.close();
 
     Paint paint_40_fill = Paint()..style = PaintingStyle.fill;
@@ -1147,10 +5373,28 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_40, paint_40_fill);
 
     Path path_41 = Path();
-    path_41.moveTo(296.68, 1721.14);
-    path_41.cubicTo(255.6, 1758.43, 219.2, 1790.41, 208.13, 1800.14);
-    path_41.cubicTo(169.78, 1795.66, 152.94, 1776.2, 145.9, 1763.35);
-    path_41.cubicTo(187.56, 1758.68, 248.84, 1740, 296.68, 1721.14);
+    path_41.moveTo(size.width * 0.08906635, size.height * 0.5562831);
+    path_41.cubicTo(
+        size.width * 0.07673371,
+        size.height * 0.5683355,
+        size.width * 0.06580606,
+        size.height * 0.5786716,
+        size.width * 0.06248274,
+        size.height * 0.5818164);
+    path_41.cubicTo(
+        size.width * 0.05096968,
+        size.height * 0.5803685,
+        size.width * 0.04591414,
+        size.height * 0.5740789,
+        size.width * 0.04380066,
+        size.height * 0.5699257);
+    path_41.cubicTo(
+        size.width * 0.05630742,
+        size.height * 0.5684163,
+        size.width * 0.07470429,
+        size.height * 0.5623788,
+        size.width * 0.08906635,
+        size.height * 0.5562831);
     path_41.close();
 
     Paint paint_41_fill = Paint()..style = PaintingStyle.fill;
@@ -1158,14 +5402,50 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_41, paint_41_fill);
 
     Path path_42 = Path();
-    path_42.moveTo(1273.77, 2280.66);
-    path_42.cubicTo(1249.28, 2279.66, 1211.06, 2285.85, 1164.25, 2319.2);
-    path_42.lineTo(1138.91, 2313.42);
-    path_42.cubicTo(1120.47, 2302.22, 1101.06, 2292.7, 1080.91, 2284.97);
-    path_42.cubicTo(1061.24, 2277.39, 1041.01, 2271.34, 1020.41, 2266.87);
-    path_42.cubicTo(1114.17, 2164.13, 1158.57, 2063.52, 1174.19, 2022.13);
-    path_42.cubicTo(1206.98, 2072.82, 1236.78, 2166.22, 1257.19, 2230.27);
-    path_42.cubicTo(1264.2, 2252, 1269.49, 2268.32, 1273.77, 2280.66);
+    path_42.moveTo(size.width * 0.3823987, size.height * 0.7371235);
+    path_42.cubicTo(
+        size.width * 0.3750465,
+        size.height * 0.7368003,
+        size.width * 0.3635725,
+        size.height * 0.7388009,
+        size.width * 0.3495197,
+        size.height * 0.7495798);
+    path_42.lineTo(size.width * 0.3419123, size.height * 0.7477117);
+    path_42.cubicTo(
+        size.width * 0.3363765,
+        size.height * 0.7440918,
+        size.width * 0.3305494,
+        size.height * 0.7410149,
+        size.width * 0.3245002,
+        size.height * 0.7385165);
+    path_42.cubicTo(
+        size.width * 0.3185950,
+        size.height * 0.7360666,
+        size.width * 0.3125218,
+        size.height * 0.7341112,
+        size.width * 0.3063374,
+        size.height * 0.7326665);
+    path_42.cubicTo(
+        size.width * 0.3344851,
+        size.height * 0.6994602,
+        size.width * 0.3478145,
+        size.height * 0.6669425,
+        size.width * 0.3525038,
+        size.height * 0.6535650);
+    path_42.cubicTo(
+        size.width * 0.3623476,
+        size.height * 0.6699483,
+        size.width * 0.3712939,
+        size.height * 0.7001357,
+        size.width * 0.3774212,
+        size.height * 0.7208371);
+    path_42.cubicTo(
+        size.width * 0.3795257,
+        size.height * 0.7278604,
+        size.width * 0.3811138,
+        size.height * 0.7331351,
+        size.width * 0.3823987,
+        size.height * 0.7371235);
     path_42.close();
 
     Paint paint_42_fill = Paint()..style = PaintingStyle.fill;
@@ -1173,11 +5453,35 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_42, paint_42_fill);
 
     Path path_43 = Path();
-    path_43.moveTo(1436.81, 2169.66);
-    path_43.cubicTo(1474.81, 2215.48, 1519.21, 2284.47, 1549.62, 2332);
-    path_43.cubicTo(1494.82, 2303.17, 1404.34, 2267.31, 1313.44, 2282.44);
-    path_43.cubicTo(1318.44, 2184.61, 1273.91, 2077.88, 1248.44, 2025.6);
-    path_43.cubicTo(1297, 2054.23, 1389.94, 2113.18, 1436.81, 2169.66);
+    path_43.moveTo(size.width * 0.4313449, size.height * 0.7012476);
+    path_43.cubicTo(
+        size.width * 0.4427529,
+        size.height * 0.7160569,
+        size.width * 0.4560823,
+        size.height * 0.7383549,
+        size.width * 0.4652116,
+        size.height * 0.7537169);
+    path_43.cubicTo(
+        size.width * 0.4487601,
+        size.height * 0.7443988,
+        size.width * 0.4215971,
+        size.height * 0.7328087,
+        size.width * 0.3943080,
+        size.height * 0.7376988);
+    path_43.cubicTo(
+        size.width * 0.3958091,
+        size.height * 0.7060795,
+        size.width * 0.3824407,
+        size.height * 0.6715837,
+        size.width * 0.3747944,
+        size.height * 0.6546865);
+    path_43.cubicTo(
+        size.width * 0.3893726,
+        size.height * 0.6639399,
+        size.width * 0.4172741,
+        size.height * 0.6829929,
+        size.width * 0.4313449,
+        size.height * 0.7012476);
     path_43.close();
 
     Paint paint_43_fill = Paint()..style = PaintingStyle.fill;
@@ -1185,28 +5489,154 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_43, paint_43_fill);
 
     Path path_44 = Path();
-    path_44.moveTo(1575.38, 2333);
-    path_44.cubicTo(1573.7, 2330.37, 1572.01, 2327.72, 1570.32, 2325.09);
-    path_44.cubicTo(1539.6, 2277.09, 1493.17, 2204.46, 1453.11, 2156.18);
-    path_44.cubicTo(1385.65, 2074.87, 1233.87, 1992.72, 1227.45, 1989.27);
-    path_44.cubicTo(1225.42, 1988.18, 1223.09, 1987.77, 1220.82, 1988.12);
-    path_44.cubicTo(1218.54, 1988.47, 1216.44, 1989.55, 1214.83, 1991.2);
-    path_44.cubicTo(1213.22, 1992.85, 1212.2, 1994.98, 1211.91, 1997.27);
-    path_44.cubicTo(1211.62, 1999.56, 1212.09, 2001.87, 1213.24, 2003.87);
-    path_44.cubicTo(1214.13, 2005.42, 1293.78, 2145.87, 1292.59, 2270.28);
-    path_44.cubicTo(1287.83, 2256.38, 1282.49, 2239.63, 1277.46, 2223.88);
-    path_44.cubicTo(1252.76, 2146.47, 1218.92, 2040.46, 1179, 1992.82);
-    path_44.cubicTo(1177.77, 1991.35, 1176.17, 1990.25, 1174.37, 1989.62);
-    path_44.cubicTo(1172.56, 1988.99, 1170.62, 1988.86, 1168.75, 1989.25);
-    path_44.cubicTo(1166.88, 1989.63, 1165.15, 1990.51, 1163.74, 1991.8);
-    path_44.cubicTo(1162.33, 1993.09, 1161.29, 1994.74, 1160.74, 1996.57);
-    path_44.cubicTo(1160.32, 1997.95, 1119.06, 2131.46, 995.82, 2262.3);
-    path_44.cubicTo(982.95, 2260.3, 970.24, 2258.88, 957.82, 2258.07);
-    path_44.cubicTo(952.487, 2257.72, 947.253, 2257.38, 942.12, 2257.07);
-    path_44.cubicTo(987.82, 2215.35, 1064.48, 2140.07, 1092.64, 2080.7);
-    path_44.cubicTo(1134.81, 1991.86, 1142.29, 1970.89, 1152.15, 1933.98);
-    path_44.cubicTo(1177.15, 1933.04, 1271.4, 1937.68, 1399.76, 2047.98);
-    path_44.cubicTo(1512.72, 2145, 1558.11, 2266.86, 1575.38, 2333);
+    path_44.moveTo(size.width * 0.4729451, size.height * 0.7540401);
+    path_44.cubicTo(
+        size.width * 0.4724407,
+        size.height * 0.7531900,
+        size.width * 0.4719334,
+        size.height * 0.7523335,
+        size.width * 0.4714260,
+        size.height * 0.7514835);
+    path_44.cubicTo(
+        size.width * 0.4622035,
+        size.height * 0.7359696,
+        size.width * 0.4482648,
+        size.height * 0.7124952,
+        size.width * 0.4362384,
+        size.height * 0.6968908);
+    path_44.cubicTo(
+        size.width * 0.4159862,
+        size.height * 0.6706109,
+        size.width * 0.3704203,
+        size.height * 0.6440595,
+        size.width * 0.3684929,
+        size.height * 0.6429444);
+    path_44.cubicTo(
+        size.width * 0.3678835,
+        size.height * 0.6425921,
+        size.width * 0.3671840,
+        size.height * 0.6424596,
+        size.width * 0.3665026,
+        size.height * 0.6425727);
+    path_44.cubicTo(
+        size.width * 0.3658181,
+        size.height * 0.6426858,
+        size.width * 0.3651876,
+        size.height * 0.6430349,
+        size.width * 0.3647043,
+        size.height * 0.6435682);
+    path_44.cubicTo(
+        size.width * 0.3642210,
+        size.height * 0.6441015,
+        size.width * 0.3639147,
+        size.height * 0.6447899,
+        size.width * 0.3638277,
+        size.height * 0.6455301);
+    path_44.cubicTo(
+        size.width * 0.3637406,
+        size.height * 0.6462702,
+        size.width * 0.3638817,
+        size.height * 0.6470168,
+        size.width * 0.3642270,
+        size.height * 0.6476632);
+    path_44.cubicTo(
+        size.width * 0.3644941,
+        size.height * 0.6481642,
+        size.width * 0.3884059,
+        size.height * 0.6935585,
+        size.width * 0.3880486,
+        size.height * 0.7337686);
+    path_44.cubicTo(
+        size.width * 0.3866196,
+        size.height * 0.7292760,
+        size.width * 0.3850165,
+        size.height * 0.7238623,
+        size.width * 0.3835065,
+        size.height * 0.7187718);
+    path_44.cubicTo(
+        size.width * 0.3760913,
+        size.height * 0.6937524,
+        size.width * 0.3659322,
+        size.height * 0.6594893,
+        size.width * 0.3539478,
+        size.height * 0.6440918);
+    path_44.cubicTo(
+        size.width * 0.3535785,
+        size.height * 0.6436167,
+        size.width * 0.3530982,
+        size.height * 0.6432612,
+        size.width * 0.3525578,
+        size.height * 0.6430575);
+    path_44.cubicTo(
+        size.width * 0.3520144,
+        size.height * 0.6428539,
+        size.width * 0.3514320,
+        size.height * 0.6428119,
+        size.width * 0.3508706,
+        size.height * 0.6429379);
+    path_44.cubicTo(
+        size.width * 0.3503092,
+        size.height * 0.6430608,
+        size.width * 0.3497899,
+        size.height * 0.6433452,
+        size.width * 0.3493666,
+        size.height * 0.6437621);
+    path_44.cubicTo(
+        size.width * 0.3489433,
+        size.height * 0.6441791,
+        size.width * 0.3486310,
+        size.height * 0.6447123,
+        size.width * 0.3484659,
+        size.height * 0.6453038);
+    path_44.cubicTo(
+        size.width * 0.3483398,
+        size.height * 0.6457498,
+        size.width * 0.3359532,
+        size.height * 0.6889011,
+        size.width * 0.2989553,
+        size.height * 0.7311894);
+    path_44.cubicTo(
+        size.width * 0.2950916,
+        size.height * 0.7305430,
+        size.width * 0.2912759,
+        size.height * 0.7300840,
+        size.width * 0.2875473,
+        size.height * 0.7298222);
+    path_44.cubicTo(
+        size.width * 0.2859463,
+        size.height * 0.7297091,
+        size.width * 0.2843750,
+        size.height * 0.7295992,
+        size.width * 0.2828340,
+        size.height * 0.7294990);
+    path_44.cubicTo(
+        size.width * 0.2965536,
+        size.height * 0.7160149,
+        size.width * 0.3195677,
+        size.height * 0.6916839,
+        size.width * 0.3280216,
+        size.height * 0.6724952);
+    path_44.cubicTo(
+        size.width * 0.3406815,
+        size.height * 0.6437815,
+        size.width * 0.3429270,
+        size.height * 0.6370039,
+        size.width * 0.3458871,
+        size.height * 0.6250743);
+    path_44.cubicTo(
+        size.width * 0.3533924,
+        size.height * 0.6247705,
+        size.width * 0.3816872,
+        size.height * 0.6262702,
+        size.width * 0.4202222,
+        size.height * 0.6619198);
+    path_44.cubicTo(
+        size.width * 0.4541339,
+        size.height * 0.6932773,
+        size.width * 0.4677604,
+        size.height * 0.7326632,
+        size.width * 0.4729451,
+        size.height * 0.7540401);
     path_44.close();
 
     Paint paint_44_fill = Paint()..style = PaintingStyle.fill;
@@ -1214,80 +5644,500 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_44, paint_44_fill);
 
     Path path_45 = Path();
-    path_45.moveTo(1869.61, 2337.3);
-    path_45.cubicTo(1853.61, 2364.16, 1836.16, 2390.53, 1817.27, 2416.42);
-    path_45.cubicTo(1649, 2572.34, 1322.46, 2795, 969.001, 2607.89);
-    path_45.cubicTo(932.334, 2588.49, 900.541, 2567.88, 873.621, 2546.05);
-    path_45.cubicTo(902.841, 2538.05, 929.211, 2519.73, 927.811, 2489.14);
-    path_45.cubicTo(927.719, 2488.43, 927.44, 2487.75, 927.002, 2487.18);
-    path_45.cubicTo(926.564, 2486.61, 925.983, 2486.17, 925.318, 2485.9);
-    path_45.cubicTo(924.654, 2485.63, 923.929, 2485.54, 923.218, 2485.64);
-    path_45.cubicTo(922.506, 2485.74, 921.835, 2486.03, 921.271, 2486.47);
-    path_45.cubicTo(902.711, 2500.19, 894.901, 2516.65, 873.531, 2524.05);
-    path_45.cubicTo(867.058, 2526.35, 860.35, 2527.92, 853.531, 2528.73);
-    path_45.cubicTo(845.591, 2529.7, 837.574, 2529.88, 829.601, 2529.24);
-    path_45.cubicTo(827.707, 2529.09, 825.827, 2528.91, 823.961, 2528.69);
-    path_45.cubicTo(824.371, 2527.35, 824.751, 2525.99, 825.101, 2524.63);
-    path_45.cubicTo(826.871, 2517.82, 828.17, 2510.9, 828.991, 2503.92);
-    path_45.cubicTo(829.321, 2501.27, 829.581, 2498.61, 829.801, 2495.92);
-    path_45.cubicTo(830.231, 2490.77, 829.801, 2485.16, 826.041, 2479.66);
-    path_45.cubicTo(825.939, 2479.54, 825.814, 2479.45, 825.675, 2479.38);
-    path_45.cubicTo(825.536, 2479.31, 825.384, 2479.27, 825.23, 2479.26);
-    path_45.cubicTo(825.075, 2479.26, 824.92, 2479.28, 824.774, 2479.33);
-    path_45.cubicTo(824.628, 2479.38, 824.495, 2479.46, 824.381, 2479.57);
-    path_45.cubicTo(821.208, 2482.31, 818.637, 2485.68, 816.831, 2489.47);
-    path_45.cubicTo(814.081, 2494.91, 812.401, 2500.87, 809.931, 2506.16);
-    path_45.cubicTo(809.781, 2506.53, 809.631, 2506.9, 809.471, 2507.27);
-    path_45.cubicTo(805.991, 2515.79, 802.471, 2524.56, 799.851, 2533.27);
-    path_45.cubicTo(799.554, 2534.2, 799.393, 2535.16, 799.371, 2536.13);
-    path_45.lineTo(799.211, 2536.25);
-    path_45.cubicTo(796.411, 2548.17, 785.951, 2556.25, 774.211, 2560.93);
-    path_45.cubicTo(774.016, 2557.64, 774.016, 2554.34, 774.211, 2551.05);
-    path_45.cubicTo(774.211, 2542, 777.571, 2533.45, 773.861, 2524.37);
-    path_45.cubicTo(773.802, 2524.22, 773.715, 2524.09, 773.605, 2523.97);
-    path_45.cubicTo(773.494, 2523.86, 773.362, 2523.77, 773.216, 2523.71);
-    path_45.cubicTo(773.07, 2523.64, 772.913, 2523.61, 772.754, 2523.61);
-    path_45.cubicTo(772.595, 2523.61, 772.438, 2523.64, 772.291, 2523.7);
-    path_45.cubicTo(761.501, 2528.23, 759.291, 2538.2, 755.781, 2547.81);
-    path_45.cubicTo(754.112, 2553.55, 753.135, 2559.46, 752.871, 2565.43);
-    path_45.cubicTo(730.931, 2564.72, 719.441, 2549.64, 714.161, 2530.43);
-    path_45.cubicTo(713.023, 2526.24, 712.165, 2521.98, 711.591, 2517.68);
-    path_45.cubicTo(709.211, 2500.5, 710.591, 2481.94, 713.121, 2468.02);
-    path_45.cubicTo(716.781, 2449.37, 720.911, 2427.53, 736.771, 2416.16);
-    path_45.cubicTo(736.871, 2416.06, 737.671, 2415.84, 736.611, 2416.16);
-    path_45.lineTo(736.681, 2416.03);
-    path_45.cubicTo(737.274, 2415.9, 737.856, 2415.72, 738.421, 2415.49);
-    path_45.cubicTo(750.471, 2410.39, 763.691, 2404.79, 776.681, 2402.87);
-    path_45.cubicTo(781.812, 2402.3, 786.78, 2400.72, 791.301, 2398.23);
-    path_45.cubicTo(791.443, 2398.15, 791.566, 2398.04, 791.663, 2397.91);
-    path_45.cubicTo(791.76, 2397.78, 791.828, 2397.63, 791.863, 2397.47);
-    path_45.cubicTo(791.898, 2397.31, 791.899, 2397.15, 791.866, 2396.99);
-    path_45.cubicTo(791.833, 2396.83, 791.766, 2396.68, 791.671, 2396.55);
-    path_45.cubicTo(782.371, 2384.31, 759.771, 2385.55, 742.801, 2390.77);
-    path_45.cubicTo(742.854, 2383.01, 744.692, 2375.37, 748.171, 2368.43);
-    path_45.cubicTo(752.132, 2360.58, 757.564, 2353.57, 764.171, 2347.78);
-    path_45.cubicTo(770.901, 2341.8, 778.518, 2336.9, 786.751, 2333.25);
-    path_45.cubicTo(817.181, 2318.48, 847.281, 2328.34, 879.911, 2332.3);
-    path_45.cubicTo(880.671, 2332.48, 881.467, 2332.41, 882.19, 2332.12);
-    path_45.cubicTo(882.913, 2331.82, 883.526, 2331.31, 883.946, 2330.65);
-    path_45.cubicTo(884.365, 2329.99, 884.569, 2329.22, 884.531, 2328.44);
-    path_45.cubicTo(884.492, 2327.66, 884.213, 2326.91, 883.731, 2326.3);
-    path_45.cubicTo(855.461, 2293.86, 803.291, 2297.3, 765.831, 2320.3);
-    path_45.cubicTo(769.161, 2294.28, 776.643, 2268.95, 787.991, 2245.3);
-    path_45.lineTo(788.401, 2246);
-    path_45.cubicTo(801.461, 2267.23, 835.401, 2271.77, 890.561, 2275.18);
-    path_45.cubicTo(898.731, 2275.68, 907.361, 2276.18, 916.461, 2276.67);
-    path_45.cubicTo(929.021, 2277.38, 942.411, 2278.12, 956.551, 2279.05);
-    path_45.cubicTo(958.491, 2279.18, 960.441, 2279.33, 962.401, 2279.48);
-    path_45.cubicTo(964.081, 2279.61, 965.761, 2279.76, 967.401, 2279.92);
-    path_45.cubicTo(979.211, 2281.02, 991.271, 2282.67, 1003.4, 2284.92);
-    path_45.cubicTo(1044.3, 2292.49, 1086.4, 2306.74, 1124.1, 2329.11);
-    path_45.cubicTo(1126.36, 2330.45, 1128.61, 2331.8, 1130.83, 2333.2);
-    path_45.cubicTo(1154.19, 2347.68, 1175.24, 2365.58, 1193.28, 2386.31);
-    path_45.cubicTo(1212.2, 2408.18, 1227.1, 2433.24, 1237.28, 2460.31);
-    path_45.cubicTo(1271.28, 2550.37, 1320.71, 2591.69, 1407.68, 2591.68);
-    path_45.cubicTo(1447.28, 2591.68, 1494.68, 2583.11, 1551.85, 2566.68);
-    path_45.cubicTo(1674.71, 2531.47, 1798.14, 2414.81, 1869.61, 2337.3);
+    path_45.moveTo(size.width * 0.5612759, size.height * 0.7554299);
+    path_45.cubicTo(
+        size.width * 0.5564725,
+        size.height * 0.7641112,
+        size.width * 0.5512339,
+        size.height * 0.7726341,
+        size.width * 0.5455629,
+        size.height * 0.7810019);
+    path_45.cubicTo(
+        size.width * 0.4950465,
+        size.height * 0.8313963,
+        size.width * 0.3970159,
+        size.height * 0.9033613,
+        size.width * 0.2909039,
+        size.height * 0.8428862);
+    path_45.cubicTo(
+        size.width * 0.2798961,
+        size.height * 0.8366160,
+        size.width * 0.2703515,
+        size.height * 0.8299548,
+        size.width * 0.2622699,
+        size.height * 0.8228992);
+    path_45.cubicTo(
+        size.width * 0.2710420,
+        size.height * 0.8203135,
+        size.width * 0.2789586,
+        size.height * 0.8143924,
+        size.width * 0.2785383,
+        size.height * 0.8045055);
+    path_45.cubicTo(
+        size.width * 0.2785107,
+        size.height * 0.8042760,
+        size.width * 0.2784269,
+        size.height * 0.8040562,
+        size.width * 0.2782954,
+        size.height * 0.8038720);
+    path_45.cubicTo(
+        size.width * 0.2781639,
+        size.height * 0.8036878,
+        size.width * 0.2779895,
+        size.height * 0.8035456,
+        size.width * 0.2777899,
+        size.height * 0.8034583);
+    path_45.cubicTo(
+        size.width * 0.2775905,
+        size.height * 0.8033710,
+        size.width * 0.2773729,
+        size.height * 0.8033420,
+        size.width * 0.2771594,
+        size.height * 0.8033743);
+    path_45.cubicTo(
+        size.width * 0.2769457,
+        size.height * 0.8034066,
+        size.width * 0.2767442,
+        size.height * 0.8035003,
+        size.width * 0.2765749,
+        size.height * 0.8036425);
+    path_45.cubicTo(
+        size.width * 0.2710030,
+        size.height * 0.8080769,
+        size.width * 0.2686584,
+        size.height * 0.8133969,
+        size.width * 0.2622429,
+        size.height * 0.8157886);
+    path_45.cubicTo(
+        size.width * 0.2602996,
+        size.height * 0.8165320,
+        size.width * 0.2582858,
+        size.height * 0.8170394,
+        size.width * 0.2562387,
+        size.height * 0.8173012);
+    path_45.cubicTo(
+        size.width * 0.2538550,
+        size.height * 0.8176147,
+        size.width * 0.2514482,
+        size.height * 0.8176729,
+        size.width * 0.2490546,
+        size.height * 0.8174661);
+    path_45.cubicTo(
+        size.width * 0.2484860,
+        size.height * 0.8174176,
+        size.width * 0.2479216,
+        size.height * 0.8173594,
+        size.width * 0.2473615,
+        size.height * 0.8172883);
+    path_45.cubicTo(
+        size.width * 0.2474845,
+        size.height * 0.8168552,
+        size.width * 0.2475986,
+        size.height * 0.8164156,
+        size.width * 0.2477037,
+        size.height * 0.8159761);
+    path_45.cubicTo(
+        size.width * 0.2482351,
+        size.height * 0.8137750,
+        size.width * 0.2486250,
+        size.height * 0.8115385,
+        size.width * 0.2488715,
+        size.height * 0.8092825);
+    path_45.cubicTo(
+        size.width * 0.2489706,
+        size.height * 0.8084260,
+        size.width * 0.2490486,
+        size.height * 0.8075663,
+        size.width * 0.2491147,
+        size.height * 0.8066968);
+    path_45.cubicTo(
+        size.width * 0.2492438,
+        size.height * 0.8050323,
+        size.width * 0.2491147,
+        size.height * 0.8032191,
+        size.width * 0.2479859,
+        size.height * 0.8014415);
+    path_45.cubicTo(
+        size.width * 0.2479553,
+        size.height * 0.8014027,
+        size.width * 0.2479177,
+        size.height * 0.8013736,
+        size.width * 0.2478760,
+        size.height * 0.8013510);
+    path_45.cubicTo(
+        size.width * 0.2478343,
+        size.height * 0.8013284,
+        size.width * 0.2477887,
+        size.height * 0.8013154,
+        size.width * 0.2477424,
+        size.height * 0.8013122);
+    path_45.cubicTo(
+        size.width * 0.2476959,
+        size.height * 0.8013122,
+        size.width * 0.2476494,
+        size.height * 0.8013187,
+        size.width * 0.2476055,
+        size.height * 0.8013348);
+    path_45.cubicTo(
+        size.width * 0.2475617,
+        size.height * 0.8013510,
+        size.width * 0.2475218,
+        size.height * 0.8013769,
+        size.width * 0.2474875,
+        size.height * 0.8014124);
+    path_45.cubicTo(
+        size.width * 0.2465350,
+        size.height * 0.8022980,
+        size.width * 0.2457631,
+        size.height * 0.8033872,
+        size.width * 0.2452210,
+        size.height * 0.8046122);
+    path_45.cubicTo(
+        size.width * 0.2443954,
+        size.height * 0.8063704,
+        size.width * 0.2438910,
+        size.height * 0.8082967,
+        size.width * 0.2431495,
+        size.height * 0.8100065);
+    path_45.cubicTo(
+        size.width * 0.2431045,
+        size.height * 0.8101261,
+        size.width * 0.2430594,
+        size.height * 0.8102456,
+        size.width * 0.2430114,
+        size.height * 0.8103652);
+    path_45.cubicTo(
+        size.width * 0.2419667,
+        size.height * 0.8131189,
+        size.width * 0.2409099,
+        size.height * 0.8159535,
+        size.width * 0.2401234,
+        size.height * 0.8187686);
+    path_45.cubicTo(
+        size.width * 0.2400342,
+        size.height * 0.8190692,
+        size.width * 0.2399859,
+        size.height * 0.8193794,
+        size.width * 0.2399793,
+        size.height * 0.8196930);
+    path_45.lineTo(size.width * 0.2399313, size.height * 0.8197317);
+    path_45.cubicTo(
+        size.width * 0.2390907,
+        size.height * 0.8235844,
+        size.width * 0.2359505,
+        size.height * 0.8261959,
+        size.width * 0.2324260,
+        size.height * 0.8277085);
+    path_45.cubicTo(
+        size.width * 0.2323675,
+        size.height * 0.8266451,
+        size.width * 0.2323675,
+        size.height * 0.8255785,
+        size.width * 0.2324260,
+        size.height * 0.8245152);
+    path_45.cubicTo(
+        size.width * 0.2324260,
+        size.height * 0.8215902,
+        size.width * 0.2334347,
+        size.height * 0.8188268,
+        size.width * 0.2323209,
+        size.height * 0.8158920);
+    path_45.cubicTo(
+        size.width * 0.2323032,
+        size.height * 0.8158436,
+        size.width * 0.2322771,
+        size.height * 0.8158016,
+        size.width * 0.2322441,
+        size.height * 0.8157628);
+    path_45.cubicTo(
+        size.width * 0.2322107,
+        size.height * 0.8157272,
+        size.width * 0.2321711,
+        size.height * 0.8156981,
+        size.width * 0.2321273,
+        size.height * 0.8156787);
+    path_45.cubicTo(
+        size.width * 0.2320835,
+        size.height * 0.8156561,
+        size.width * 0.2320363,
+        size.height * 0.8156464,
+        size.width * 0.2319886,
+        size.height * 0.8156464);
+    path_45.cubicTo(
+        size.width * 0.2319409,
+        size.height * 0.8156464,
+        size.width * 0.2318937,
+        size.height * 0.8156561,
+        size.width * 0.2318496,
+        size.height * 0.8156755);
+    path_45.cubicTo(
+        size.width * 0.2286103,
+        size.height * 0.8171396,
+        size.width * 0.2279469,
+        size.height * 0.8203620,
+        size.width * 0.2268931,
+        size.height * 0.8234680);
+    path_45.cubicTo(
+        size.width * 0.2263921,
+        size.height * 0.8253232,
+        size.width * 0.2260988,
+        size.height * 0.8272334,
+        size.width * 0.2260195,
+        size.height * 0.8291629);
+    path_45.cubicTo(
+        size.width * 0.2194329,
+        size.height * 0.8289334,
+        size.width * 0.2159835,
+        size.height * 0.8240595,
+        size.width * 0.2143984,
+        size.height * 0.8178507);
+    path_45.cubicTo(
+        size.width * 0.2140567,
+        size.height * 0.8164964,
+        size.width * 0.2137992,
+        size.height * 0.8151196,
+        size.width * 0.2136268,
+        size.height * 0.8137298);
+    path_45.cubicTo(
+        size.width * 0.2129123,
+        size.height * 0.8081771,
+        size.width * 0.2133266,
+        size.height * 0.8021784,
+        size.width * 0.2140862,
+        size.height * 0.7976794);
+    path_45.cubicTo(
+        size.width * 0.2151849,
+        size.height * 0.7916516,
+        size.width * 0.2164248,
+        size.height * 0.7845928,
+        size.width * 0.2211861,
+        size.height * 0.7809179);
+    path_45.cubicTo(
+        size.width * 0.2212162,
+        size.height * 0.7808856,
+        size.width * 0.2214563,
+        size.height * 0.7808145,
+        size.width * 0.2211381,
+        size.height * 0.7809179);
+    path_45.lineTo(size.width * 0.2211591, size.height * 0.7808759);
+    path_45.cubicTo(
+        size.width * 0.2213371,
+        size.height * 0.7808339,
+        size.width * 0.2215119,
+        size.height * 0.7807757,
+        size.width * 0.2216815,
+        size.height * 0.7807014);
+    path_45.cubicTo(
+        size.width * 0.2252990,
+        size.height * 0.7790530,
+        size.width * 0.2292678,
+        size.height * 0.7772431,
+        size.width * 0.2331675,
+        size.height * 0.7766225);
+    path_45.cubicTo(
+        size.width * 0.2347079,
+        size.height * 0.7764383,
+        size.width * 0.2361993,
+        size.height * 0.7759276,
+        size.width * 0.2375566,
+        size.height * 0.7751228);
+    path_45.cubicTo(
+        size.width * 0.2375992,
+        size.height * 0.7750970,
+        size.width * 0.2376361,
+        size.height * 0.7750614,
+        size.width * 0.2376653,
+        size.height * 0.7750194);
+    path_45.cubicTo(
+        size.width * 0.2376944,
+        size.height * 0.7749774,
+        size.width * 0.2377148,
+        size.height * 0.7749289,
+        size.width * 0.2377253,
+        size.height * 0.7748772);
+    path_45.cubicTo(
+        size.width * 0.2377358,
+        size.height * 0.7748255,
+        size.width * 0.2377361,
+        size.height * 0.7747738,
+        size.width * 0.2377262,
+        size.height * 0.7747220);
+    path_45.cubicTo(
+        size.width * 0.2377163,
+        size.height * 0.7746703,
+        size.width * 0.2376962,
+        size.height * 0.7746218,
+        size.width * 0.2376677,
+        size.height * 0.7745798);
+    path_45.cubicTo(
+        size.width * 0.2348757,
+        size.height * 0.7706238,
+        size.width * 0.2280910,
+        size.height * 0.7710246,
+        size.width * 0.2229964,
+        size.height * 0.7727117);
+    path_45.cubicTo(
+        size.width * 0.2230123,
+        size.height * 0.7702036,
+        size.width * 0.2235641,
+        size.height * 0.7677343,
+        size.width * 0.2246085,
+        size.height * 0.7654913);
+    path_45.cubicTo(
+        size.width * 0.2257977,
+        size.height * 0.7629541,
+        size.width * 0.2274284,
+        size.height * 0.7606884,
+        size.width * 0.2294119,
+        size.height * 0.7588171);
+    path_45.cubicTo(
+        size.width * 0.2314323,
+        size.height * 0.7568843,
+        size.width * 0.2337190,
+        size.height * 0.7553006,
+        size.width * 0.2361906,
+        size.height * 0.7541209);
+    path_45.cubicTo(
+        size.width * 0.2453260,
+        size.height * 0.7493471,
+        size.width * 0.2543624,
+        size.height * 0.7525339,
+        size.width * 0.2641582,
+        size.height * 0.7538138);
+    path_45.cubicTo(
+        size.width * 0.2643864,
+        size.height * 0.7538720,
+        size.width * 0.2646253,
+        size.height * 0.7538494,
+        size.width * 0.2648424,
+        size.height * 0.7537557);
+    path_45.cubicTo(
+        size.width * 0.2650594,
+        size.height * 0.7536587,
+        size.width * 0.2652435,
+        size.height * 0.7534939,
+        size.width * 0.2653696,
+        size.height * 0.7532805);
+    path_45.cubicTo(
+        size.width * 0.2654953,
+        size.height * 0.7530672,
+        size.width * 0.2655566,
+        size.height * 0.7528184,
+        size.width * 0.2655452,
+        size.height * 0.7525663);
+    path_45.cubicTo(
+        size.width * 0.2655335,
+        size.height * 0.7523142,
+        size.width * 0.2654497,
+        size.height * 0.7520718,
+        size.width * 0.2653050,
+        size.height * 0.7518746);
+    path_45.cubicTo(
+        size.width * 0.2568181,
+        size.height * 0.7413898,
+        size.width * 0.2411561,
+        size.height * 0.7425016,
+        size.width * 0.2299102,
+        size.height * 0.7499354);
+    path_45.cubicTo(
+        size.width * 0.2309099,
+        size.height * 0.7415255,
+        size.width * 0.2331561,
+        size.height * 0.7333387,
+        size.width * 0.2365629,
+        size.height * 0.7256949);
+    path_45.lineTo(size.width * 0.2366860, size.height * 0.7259211);
+    path_45.cubicTo(
+        size.width * 0.2406067,
+        size.height * 0.7327828,
+        size.width * 0.2507959,
+        size.height * 0.7342502,
+        size.width * 0.2673554,
+        size.height * 0.7353523);
+    path_45.cubicTo(
+        size.width * 0.2698082,
+        size.height * 0.7355139,
+        size.width * 0.2723990,
+        size.height * 0.7356755,
+        size.width * 0.2751309,
+        size.height * 0.7358339);
+    path_45.cubicTo(
+        size.width * 0.2789015,
+        size.height * 0.7360633,
+        size.width * 0.2829213,
+        size.height * 0.7363025,
+        size.width * 0.2871663,
+        size.height * 0.7366031);
+    path_45.cubicTo(
+        size.width * 0.2877487,
+        size.height * 0.7366451,
+        size.width * 0.2883341,
+        size.height * 0.7366936,
+        size.width * 0.2889225,
+        size.height * 0.7367421);
+    path_45.cubicTo(
+        size.width * 0.2894269,
+        size.height * 0.7367841,
+        size.width * 0.2899313,
+        size.height * 0.7368326,
+        size.width * 0.2904236,
+        size.height * 0.7368843);
+    path_45.cubicTo(
+        size.width * 0.2939691,
+        size.height * 0.7372398,
+        size.width * 0.2975896,
+        size.height * 0.7377731,
+        size.width * 0.3012309,
+        size.height * 0.7385003);
+    path_45.cubicTo(
+        size.width * 0.3135095,
+        size.height * 0.7409470,
+        size.width * 0.3261483,
+        size.height * 0.7455527,
+        size.width * 0.3374662,
+        size.height * 0.7527828);
+    path_45.cubicTo(
+        size.width * 0.3381447,
+        size.height * 0.7532159,
+        size.width * 0.3388202,
+        size.height * 0.7536522,
+        size.width * 0.3394866,
+        size.height * 0.7541047);
+    path_45.cubicTo(
+        size.width * 0.3464995,
+        size.height * 0.7587847,
+        size.width * 0.3528190,
+        size.height * 0.7645701,
+        size.width * 0.3582348,
+        size.height * 0.7712702);
+    path_45.cubicTo(
+        size.width * 0.3639147,
+        size.height * 0.7783387,
+        size.width * 0.3683879,
+        size.height * 0.7864383,
+        size.width * 0.3714440,
+        size.height * 0.7951875);
+    path_45.cubicTo(
+        size.width * 0.3816512,
+        size.height * 0.8242954,
+        size.width * 0.3964905,
+        size.height * 0.8376503,
+        size.width * 0.4225998,
+        size.height * 0.8376471);
+    path_45.cubicTo(
+        size.width * 0.4344881,
+        size.height * 0.8376471,
+        size.width * 0.4487181,
+        size.height * 0.8348772,
+        size.width * 0.4658811,
+        size.height * 0.8295669);
+    path_45.cubicTo(
+        size.width * 0.5027649,
+        size.height * 0.8181868,
+        size.width * 0.5398199,
+        size.height * 0.7804816,
+        size.width * 0.5612759,
+        size.height * 0.7554299);
     path_45.close();
 
     Paint paint_45_fill = Paint()..style = PaintingStyle.fill;
@@ -1295,10 +6145,28 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_45, paint_45_fill);
 
     Path path_46 = Path();
-    path_46.moveTo(1760, 2488.24);
-    path_46.cubicTo(1710.82, 2544.81, 1656.39, 2596.59, 1597.43, 2642.89);
-    path_46.cubicTo(1596.75, 2629.09, 1590.64, 2615.27, 1579.43, 2607.55);
-    path_46.cubicTo(1647.83, 2571.92, 1708.76, 2529.49, 1760, 2488.24);
+    path_46.moveTo(size.width * 0.5283699, size.height * 0.8042146);
+    path_46.cubicTo(
+        size.width * 0.5136055,
+        size.height * 0.8224984,
+        size.width * 0.4972651,
+        size.height * 0.8392340,
+        size.width * 0.4795647,
+        size.height * 0.8541984);
+    path_46.cubicTo(
+        size.width * 0.4793606,
+        size.height * 0.8497382,
+        size.width * 0.4775263,
+        size.height * 0.8452715,
+        size.width * 0.4741609,
+        size.height * 0.8427763);
+    path_46.cubicTo(
+        size.width * 0.4946953,
+        size.height * 0.8312605,
+        size.width * 0.5129871,
+        size.height * 0.8175469,
+        size.width * 0.5283699,
+        size.height * 0.8042146);
     path_46.close();
 
     Paint paint_46_fill = Paint()..style = PaintingStyle.fill;
@@ -1306,65 +6174,383 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_46, paint_46_fill);
 
     Path path_47 = Path();
-    path_47.moveTo(1573.42, 2621.59);
-    path_47.cubicTo(1577.88, 2631.83, 1581.63, 2641.7, 1586.01, 2651.81);
-    path_47.cubicTo(1565.06, 2667.9, 1543.55, 2683.33, 1521.46, 2698.09);
-    path_47.cubicTo(1499.37, 2712.85, 1476.81, 2726.87, 1453.76, 2740.16);
-    path_47.cubicTo(1448.97, 2742.92, 1444.17, 2745.64, 1439.35, 2748.32);
-    path_47.cubicTo(1448.49, 2724.57, 1446.12, 2695.25, 1430.26, 2674.89);
-    path_47.cubicTo(1429.87, 2674.44, 1429.36, 2674.11, 1428.79, 2673.94);
-    path_47.cubicTo(1428.21, 2673.78, 1427.61, 2673.79, 1427.04, 2673.98);
-    path_47.cubicTo(1426.47, 2674.17, 1425.97, 2674.52, 1425.61, 2674.99);
-    path_47.cubicTo(1425.24, 2675.46, 1425.02, 2676.03, 1424.98, 2676.62);
-    path_47.cubicTo(1424.09, 2689.31, 1425.69, 2701.22, 1427.34, 2713.52);
-    path_47.cubicTo(1429.01, 2724.39, 1430.65, 2738.87, 1432.89, 2749.7);
-    path_47.cubicTo(1433.01, 2750.34, 1433.34, 2750.93, 1433.83, 2751.37);
-    path_47.cubicTo(1416.3, 2761.01, 1398.7, 2770.09, 1381.03, 2778.6);
-    path_47.cubicTo(1375.28, 2781.38, 1369.53, 2784.08, 1363.78, 2786.71);
-    path_47.cubicTo(1362.41, 2787.34, 1361.04, 2787.99, 1359.67, 2788.61);
-    path_47.cubicTo(1323.33, 2805.21, 1286.03, 2819.65, 1247.97, 2831.83);
-    path_47.lineTo(1244.08, 2833.05);
-    path_47.cubicTo(1235.29, 2835.82, 1226.51, 2838.45, 1217.73, 2840.92);
-    path_47.cubicTo(1159.06, 2857.48, 1101.01, 2867.54, 1044.84, 2870.92);
-    path_47.cubicTo(1042.27, 2871.08, 1039.7, 2871.21, 1037.13, 2871.34);
-    path_47.cubicTo(1035.13, 2871.44, 1033.11, 2871.53, 1031.07, 2871.61);
-    path_47.cubicTo(1021.74, 2871.99, 1012.47, 2872.18, 1003.28, 2872.18);
-    path_47.cubicTo(948.68, 2872.18, 896.22, 2865.53, 847.09, 2852.04);
-    path_47.cubicTo(832.464, 2848.04, 818.207, 2843.54, 804.32, 2838.54);
-    path_47.cubicTo(674.48, 2780.57, 591.35, 2698.46, 557, 2594.16);
-    path_47.cubicTo(553.303, 2582.92, 550.195, 2571.49, 547.69, 2559.93);
-    path_47.cubicTo(582.31, 2562.72, 617.06, 2558.41, 650.79, 2550.6);
-    path_47.cubicTo(665.493, 2547.24, 679.996, 2543.05, 694.23, 2538.07);
-    path_47.cubicTo(694.38, 2538.59, 694.54, 2539.07, 694.71, 2539.64);
-    path_47.cubicTo(703.83, 2571.29, 733.84, 2593.79, 767.53, 2585.05);
-    path_47.cubicTo(787.68, 2580.56, 808.79, 2568.81, 817.15, 2549.17);
-    path_47.cubicTo(819.95, 2549.59, 822.72, 2549.89, 825.59, 2550.17);
-    path_47.cubicTo(834.361, 2551.14, 843.214, 2551.13, 851.98, 2550.12);
-    path_47.cubicTo(881.98, 2576.02, 918.314, 2600.27, 960.98, 2622.87);
-    path_47.cubicTo(1113.98, 2703.87, 1277.53, 2717.39, 1447.25, 2663.17);
-    path_47.cubicTo(1489.45, 2649.54, 1530.5, 2632.57, 1570, 2612.4);
-    path_47.cubicTo(1571.11, 2615.6, 1572.3, 2618.67, 1573.42, 2621.59);
+    path_47.moveTo(size.width * 0.4723566, size.height * 0.8473142);
+    path_47.cubicTo(
+        size.width * 0.4736956,
+        size.height * 0.8506238,
+        size.width * 0.4748214,
+        size.height * 0.8538138,
+        size.width * 0.4761363,
+        size.height * 0.8570814);
+    path_47.cubicTo(
+        size.width * 0.4698469,
+        size.height * 0.8622818,
+        size.width * 0.4633894,
+        size.height * 0.8672689,
+        size.width * 0.4567577,
+        size.height * 0.8720394);
+    path_47.cubicTo(
+        size.width * 0.4501261,
+        size.height * 0.8768100,
+        size.width * 0.4433533,
+        size.height * 0.8813413,
+        size.width * 0.4364335,
+        size.height * 0.8856367);
+    path_47.cubicTo(
+        size.width * 0.4349955,
+        size.height * 0.8865288,
+        size.width * 0.4335545,
+        size.height * 0.8874079,
+        size.width * 0.4321075,
+        size.height * 0.8882741);
+    path_47.cubicTo(
+        size.width * 0.4348514,
+        size.height * 0.8805979,
+        size.width * 0.4341399,
+        size.height * 0.8711215,
+        size.width * 0.4293786,
+        size.height * 0.8645410);
+    path_47.cubicTo(
+        size.width * 0.4292615,
+        size.height * 0.8643956,
+        size.width * 0.4291084,
+        size.height * 0.8642889,
+        size.width * 0.4289373,
+        size.height * 0.8642340);
+    path_47.cubicTo(
+        size.width * 0.4287631,
+        size.height * 0.8641823,
+        size.width * 0.4285830,
+        size.height * 0.8641855,
+        size.width * 0.4284119,
+        size.height * 0.8642469);
+    path_47.cubicTo(
+        size.width * 0.4282408,
+        size.height * 0.8643083,
+        size.width * 0.4280907,
+        size.height * 0.8644215,
+        size.width * 0.4279826,
+        size.height * 0.8645734);
+    path_47.cubicTo(
+        size.width * 0.4278715,
+        size.height * 0.8647253,
+        size.width * 0.4278055,
+        size.height * 0.8649095,
+        size.width * 0.4277935,
+        size.height * 0.8651002);
+    path_47.cubicTo(
+        size.width * 0.4275263,
+        size.height * 0.8692017,
+        size.width * 0.4280066,
+        size.height * 0.8730511,
+        size.width * 0.4285020,
+        size.height * 0.8770265);
+    path_47.cubicTo(
+        size.width * 0.4290033,
+        size.height * 0.8805398,
+        size.width * 0.4294956,
+        size.height * 0.8852198,
+        size.width * 0.4301681,
+        size.height * 0.8887201);
+    path_47.cubicTo(
+        size.width * 0.4302041,
+        size.height * 0.8889270,
+        size.width * 0.4303032,
+        size.height * 0.8891176,
+        size.width * 0.4304503,
+        size.height * 0.8892599);
+    path_47.cubicTo(
+        size.width * 0.4251876,
+        size.height * 0.8923756,
+        size.width * 0.4199039,
+        size.height * 0.8953103,
+        size.width * 0.4145992,
+        size.height * 0.8980608);
+    path_47.cubicTo(
+        size.width * 0.4128730,
+        size.height * 0.8989593,
+        size.width * 0.4111468,
+        size.height * 0.8998319,
+        size.width * 0.4094206,
+        size.height * 0.9006820);
+    path_47.cubicTo(
+        size.width * 0.4090093,
+        size.height * 0.9008856,
+        size.width * 0.4085980,
+        size.height * 0.9010957,
+        size.width * 0.4081867,
+        size.height * 0.9012961);
+    path_47.cubicTo(
+        size.width * 0.3972771,
+        size.height * 0.9066613,
+        size.width * 0.3860793,
+        size.height * 0.9113284,
+        size.width * 0.3746533,
+        size.height * 0.9152650);
+    path_47.lineTo(size.width * 0.3734854, size.height * 0.9156593);
+    path_47.cubicTo(
+        size.width * 0.3708466,
+        size.height * 0.9165546,
+        size.width * 0.3682107,
+        size.height * 0.9174047,
+        size.width * 0.3655749,
+        size.height * 0.9182030);
+    path_47.cubicTo(
+        size.width * 0.3479616,
+        size.height * 0.9235553,
+        size.width * 0.3305344,
+        size.height * 0.9268067,
+        size.width * 0.3136716,
+        size.height * 0.9278992);
+    path_47.cubicTo(
+        size.width * 0.3129000,
+        size.height * 0.9279509,
+        size.width * 0.3121285,
+        size.height * 0.9279929,
+        size.width * 0.3113569,
+        size.height * 0.9280349);
+    path_47.cubicTo(
+        size.width * 0.3107565,
+        size.height * 0.9280672,
+        size.width * 0.3101501,
+        size.height * 0.9280963,
+        size.width * 0.3095377,
+        size.height * 0.9281222);
+    path_47.cubicTo(
+        size.width * 0.3067367,
+        size.height * 0.9282450,
+        size.width * 0.3039538,
+        size.height * 0.9283064,
+        size.width * 0.3011948,
+        size.height * 0.9283064);
+    path_47.cubicTo(
+        size.width * 0.2848034,
+        size.height * 0.9283064,
+        size.width * 0.2690543,
+        size.height * 0.9261571,
+        size.width * 0.2543050,
+        size.height * 0.9217970);
+    path_47.cubicTo(
+        size.width * 0.2499141,
+        size.height * 0.9205042,
+        size.width * 0.2456340,
+        size.height * 0.9190498,
+        size.width * 0.2414650,
+        size.height * 0.9174337);
+    path_47.cubicTo(
+        size.width * 0.2024857,
+        size.height * 0.8986975,
+        size.width * 0.1775293,
+        size.height * 0.8721590,
+        size.width * 0.1672171,
+        size.height * 0.8384486);
+    path_47.cubicTo(
+        size.width * 0.1661072,
+        size.height * 0.8348158,
+        size.width * 0.1651741,
+        size.height * 0.8311215,
+        size.width * 0.1644221,
+        size.height * 0.8273853);
+    path_47.cubicTo(
+        size.width * 0.1748154,
+        size.height * 0.8282870,
+        size.width * 0.1852477,
+        size.height * 0.8268940,
+        size.width * 0.1953738,
+        size.height * 0.8243697);
+    path_47.cubicTo(
+        size.width * 0.1997878,
+        size.height * 0.8232838,
+        size.width * 0.2041417,
+        size.height * 0.8219295,
+        size.width * 0.2084149,
+        size.height * 0.8203200);
+    path_47.cubicTo(
+        size.width * 0.2084599,
+        size.height * 0.8204880,
+        size.width * 0.2085080,
+        size.height * 0.8206432,
+        size.width * 0.2085590,
+        size.height * 0.8208274);
+    path_47.cubicTo(
+        size.width * 0.2112969,
+        size.height * 0.8310569,
+        size.width * 0.2203062,
+        size.height * 0.8383290,
+        size.width * 0.2304203,
+        size.height * 0.8355042);
+    path_47.cubicTo(
+        size.width * 0.2364695,
+        size.height * 0.8340530,
+        size.width * 0.2428070,
+        size.height * 0.8302553,
+        size.width * 0.2453167,
+        size.height * 0.8239076);
+    path_47.cubicTo(
+        size.width * 0.2461573,
+        size.height * 0.8240433,
+        size.width * 0.2469889,
+        size.height * 0.8241403,
+        size.width * 0.2478505,
+        size.height * 0.8242308);
+    path_47.cubicTo(
+        size.width * 0.2504836,
+        size.height * 0.8245443,
+        size.width * 0.2531414,
+        size.height * 0.8245410,
+        size.width * 0.2557730,
+        size.height * 0.8242146);
+    path_47.cubicTo(
+        size.width * 0.2647793,
+        size.height * 0.8325856,
+        size.width * 0.2756872,
+        size.height * 0.8404234,
+        size.width * 0.2884959,
+        size.height * 0.8477279);
+    path_47.cubicTo(
+        size.width * 0.3344281,
+        size.height * 0.8739076,
+        size.width * 0.3835275,
+        size.height * 0.8782773,
+        size.width * 0.4344791,
+        size.height * 0.8607531);
+    path_47.cubicTo(
+        size.width * 0.4471480,
+        size.height * 0.8563478,
+        size.width * 0.4594716,
+        size.height * 0.8508630,
+        size.width * 0.4713299,
+        size.height * 0.8443439);
+    path_47.cubicTo(
+        size.width * 0.4716632,
+        size.height * 0.8453782,
+        size.width * 0.4720204,
+        size.height * 0.8463704,
+        size.width * 0.4723566,
+        size.height * 0.8473142);
     path_47.close();
-    path_47.moveTo(1198.22, 2728.52);
-    path_47.cubicTo(1198.22, 2727.85, 1198, 2727.2, 1197.57, 2726.69);
-    path_47.cubicTo(1197.15, 2726.17, 1196.56, 2725.82, 1195.9, 2725.69);
-    path_47.cubicTo(1195.25, 2725.57, 1194.57, 2725.67, 1193.99, 2725.99);
-    path_47.cubicTo(1193.4, 2726.31, 1192.95, 2726.83, 1192.7, 2727.45);
-    path_47.cubicTo(1176.26, 2770.35, 1145.7, 2807.45, 1123.54, 2847.37);
-    path_47.cubicTo(1121.93, 2849.93, 1125.34, 2853.01, 1127.74, 2851.15);
-    path_47.cubicTo(1137.63, 2843.92, 1145.96, 2835.31, 1153.84, 2826.26);
-    path_47.cubicTo(1165.57, 2812.49, 1175.55, 2797.32, 1183.55, 2781.1);
-    path_47.cubicTo(1186.26, 2775.66, 1188.68, 2770.08, 1190.82, 2764.39);
-    path_47.cubicTo(1194.94, 2752.93, 1198.08, 2740.85, 1198.22, 2728.52);
+    path_47.moveTo(size.width * 0.3597178, size.height * 0.8818746);
+    path_47.cubicTo(
+        size.width * 0.3597178,
+        size.height * 0.8816580,
+        size.width * 0.3596518,
+        size.height * 0.8814480,
+        size.width * 0.3595227,
+        size.height * 0.8812831);
+    path_47.cubicTo(
+        size.width * 0.3593966,
+        size.height * 0.8811151,
+        size.width * 0.3592195,
+        size.height * 0.8810019,
+        size.width * 0.3590213,
+        size.height * 0.8809599);
+    path_47.cubicTo(
+        size.width * 0.3588262,
+        size.height * 0.8809211,
+        size.width * 0.3586220,
+        size.height * 0.8809535,
+        size.width * 0.3584479,
+        size.height * 0.8810569);
+    path_47.cubicTo(
+        size.width * 0.3582708,
+        size.height * 0.8811603,
+        size.width * 0.3581357,
+        size.height * 0.8813284,
+        size.width * 0.3580606,
+        size.height * 0.8815288);
+    path_47.cubicTo(
+        size.width * 0.3531252,
+        size.height * 0.8953943,
+        size.width * 0.3439508,
+        size.height * 0.9073853,
+        size.width * 0.3372981,
+        size.height * 0.9202877);
+    path_47.cubicTo(
+        size.width * 0.3368148,
+        size.height * 0.9211151,
+        size.width * 0.3378385,
+        size.height * 0.9221105,
+        size.width * 0.3385590,
+        size.height * 0.9215094);
+    path_47.cubicTo(
+        size.width * 0.3415281,
+        size.height * 0.9191726,
+        size.width * 0.3440288,
+        size.height * 0.9163898,
+        size.width * 0.3463945,
+        size.height * 0.9134648);
+    path_47.cubicTo(
+        size.width * 0.3499159,
+        size.height * 0.9090142,
+        size.width * 0.3529120,
+        size.height * 0.9041112,
+        size.width * 0.3553137,
+        size.height * 0.8988688);
+    path_47.cubicTo(
+        size.width * 0.3561273,
+        size.height * 0.8971105,
+        size.width * 0.3568538,
+        size.height * 0.8953070,
+        size.width * 0.3574962,
+        size.height * 0.8934680);
+    path_47.cubicTo(
+        size.width * 0.3587331,
+        size.height * 0.8897641,
+        size.width * 0.3596758,
+        size.height * 0.8858597,
+        size.width * 0.3597178,
+        size.height * 0.8818746);
     path_47.close();
-    path_47.moveTo(956.91, 2631);
-    path_47.cubicTo(958.4, 2627.87, 953.83, 2625.49, 952, 2628.2);
-    path_47.cubicTo(937.861, 2646.33, 922.63, 2663.57, 906.39, 2679.84);
-    path_47.cubicTo(876.17, 2710.24, 842.05, 2736.33, 804.2, 2756.32);
-    path_47.cubicTo(781.2, 2768.13, 757.14, 2776.61, 732.08, 2784.05);
-    path_47.cubicTo(728.58, 2784.85, 729.6, 2790.05, 733.08, 2789.61);
-    path_47.cubicTo(741.49, 2788.56, 751.08, 2787.07, 759.46, 2785.75);
-    path_47.cubicTo(842.43, 2767.9, 919.52, 2707.14, 956.91, 2631);
+    path_47.moveTo(size.width * 0.2872741, size.height * 0.8503555);
+    path_47.cubicTo(
+        size.width * 0.2877214,
+        size.height * 0.8493439,
+        size.width * 0.2863494,
+        size.height * 0.8485747,
+        size.width * 0.2858001,
+        size.height * 0.8494505);
+    path_47.cubicTo(
+        size.width * 0.2815554,
+        size.height * 0.8553103,
+        size.width * 0.2769829,
+        size.height * 0.8608824,
+        size.width * 0.2721075,
+        size.height * 0.8661409);
+    path_47.cubicTo(
+        size.width * 0.2630351,
+        size.height * 0.8759664,
+        size.width * 0.2527920,
+        size.height * 0.8843988,
+        size.width * 0.2414290,
+        size.height * 0.8908597);
+    path_47.cubicTo(
+        size.width * 0.2345242,
+        size.height * 0.8946768,
+        size.width * 0.2273011,
+        size.height * 0.8974176,
+        size.width * 0.2197778,
+        size.height * 0.8998222);
+    path_47.cubicTo(
+        size.width * 0.2187271,
+        size.height * 0.9000808,
+        size.width * 0.2190333,
+        size.height * 0.9017615,
+        size.width * 0.2200781,
+        size.height * 0.9016193);
+    path_47.cubicTo(
+        size.width * 0.2226028,
+        size.height * 0.9012799,
+        size.width * 0.2254818,
+        size.height * 0.9007983,
+        size.width * 0.2279976,
+        size.height * 0.9003717);
+    path_47.cubicTo(
+        size.width * 0.2529060,
+        size.height * 0.8946025,
+        size.width * 0.2760492,
+        size.height * 0.8749644,
+        size.width * 0.2872741,
+        size.height * 0.8503555);
     path_47.close();
 
     Paint paint_47_fill = Paint()..style = PaintingStyle.fill;
@@ -1372,27 +6558,147 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_47, paint_47_fill);
 
     Path path_48 = Path();
-    path_48.moveTo(1401.83, 2839.88);
-    path_48.cubicTo(1406.08, 2857.4, 1404.95, 2875.79, 1398.57, 2892.65);
-    path_48.cubicTo(1393.02, 2887.92, 1387.8, 2882.81, 1382.94, 2877.37);
-    path_48.cubicTo(1380.09, 2873.75, 1376.49, 2870.79, 1372.38, 2868.71);
-    path_48.cubicTo(1372.24, 2868.62, 1372.08, 2868.57, 1371.92, 2868.54);
-    path_48.cubicTo(1371.76, 2868.52, 1371.59, 2868.53, 1371.43, 2868.57);
-    path_48.cubicTo(1371.27, 2868.61, 1371.13, 2868.69, 1371, 2868.79);
-    path_48.cubicTo(1370.87, 2868.89, 1370.76, 2869.02, 1370.68, 2869.16);
-    path_48.cubicTo(1367.68, 2874.6, 1368.37, 2880.01, 1370.08, 2884.54);
-    path_48.cubicTo(1373.98, 2894.84, 1380.08, 2904.16, 1387.95, 2911.86);
-    path_48.cubicTo(1378.74, 2923.86, 1365.81, 2932.37, 1349.51, 2934.51);
-    path_48.cubicTo(1338.82, 2929.8, 1328.51, 2923.8, 1321.11, 2914.51);
-    path_48.cubicTo(1318.34, 2911.15, 1315.65, 2907.7, 1310.11, 2904.14);
-    path_48.cubicTo(1309.97, 2904.05, 1309.82, 2904, 1309.66, 2903.98);
-    path_48.cubicTo(1309.5, 2903.95, 1309.34, 2903.96, 1309.18, 2904.01);
-    path_48.cubicTo(1309.03, 2904.05, 1308.88, 2904.12, 1308.76, 2904.23);
-    path_48.cubicTo(1308.64, 2904.33, 1308.53, 2904.46, 1308.46, 2904.6);
-    path_48.cubicTo(1304.85, 2912.97, 1307.04, 2922.14, 1312.18, 2930.39);
-    path_48.cubicTo(1282.29, 2918.04, 1267.18, 2883.91, 1255.52, 2851.66);
-    path_48.cubicTo(1297.1, 2838.3, 1337.8, 2822.32, 1377.36, 2803.82);
-    path_48.cubicTo(1388.24, 2814.13, 1397.49, 2825.78, 1401.83, 2839.88);
+    path_48.moveTo(size.width * 0.4208436, size.height * 0.9178668);
+    path_48.cubicTo(
+        size.width * 0.4221195,
+        size.height * 0.9235294,
+        size.width * 0.4217802,
+        size.height * 0.9294732,
+        size.width * 0.4198649,
+        size.height * 0.9349224);
+    path_48.cubicTo(
+        size.width * 0.4181987,
+        size.height * 0.9333937,
+        size.width * 0.4166316,
+        size.height * 0.9317421,
+        size.width * 0.4151726,
+        size.height * 0.9299838);
+    path_48.cubicTo(
+        size.width * 0.4143170,
+        size.height * 0.9288138,
+        size.width * 0.4132363,
+        size.height * 0.9278571,
+        size.width * 0.4120024,
+        size.height * 0.9271849);
+    path_48.cubicTo(
+        size.width * 0.4119604,
+        size.height * 0.9271558,
+        size.width * 0.4119123,
+        size.height * 0.9271396,
+        size.width * 0.4118643,
+        size.height * 0.9271299);
+    path_48.cubicTo(
+        size.width * 0.4118163,
+        size.height * 0.9271235,
+        size.width * 0.4117652,
+        size.height * 0.9271267,
+        size.width * 0.4117172,
+        size.height * 0.9271396);
+    path_48.cubicTo(
+        size.width * 0.4116692,
+        size.height * 0.9271526,
+        size.width * 0.4116271,
+        size.height * 0.9271784,
+        size.width * 0.4115881,
+        size.height * 0.9272107);
+    path_48.cubicTo(
+        size.width * 0.4115491,
+        size.height * 0.9272431,
+        size.width * 0.4115161,
+        size.height * 0.9272851,
+        size.width * 0.4114920,
+        size.height * 0.9273303);
+    path_48.cubicTo(
+        size.width * 0.4105914,
+        size.height * 0.9290886,
+        size.width * 0.4107986,
+        size.height * 0.9308371,
+        size.width * 0.4113119,
+        size.height * 0.9323012);
+    path_48.cubicTo(
+        size.width * 0.4124827,
+        size.height * 0.9356303,
+        size.width * 0.4143140,
+        size.height * 0.9386425,
+        size.width * 0.4166767,
+        size.height * 0.9411312);
+    path_48.cubicTo(
+        size.width * 0.4139117,
+        size.height * 0.9450097,
+        size.width * 0.4100300,
+        size.height * 0.9477602,
+        size.width * 0.4051366,
+        size.height * 0.9484518);
+    path_48.cubicTo(
+        size.width * 0.4019273,
+        size.height * 0.9469295,
+        size.width * 0.3988322,
+        size.height * 0.9449903,
+        size.width * 0.3966106,
+        size.height * 0.9419877);
+    path_48.cubicTo(
+        size.width * 0.3957790,
+        size.height * 0.9409017,
+        size.width * 0.3949715,
+        size.height * 0.9397867,
+        size.width * 0.3933083,
+        size.height * 0.9386361);
+    path_48.cubicTo(
+        size.width * 0.3932663,
+        size.height * 0.9386070,
+        size.width * 0.3932213,
+        size.height * 0.9385908,
+        size.width * 0.3931732,
+        size.height * 0.9385844);
+    path_48.cubicTo(
+        size.width * 0.3931252,
+        size.height * 0.9385747,
+        size.width * 0.3930772,
+        size.height * 0.9385779,
+        size.width * 0.3930291,
+        size.height * 0.9385941);
+    path_48.cubicTo(
+        size.width * 0.3929841,
+        size.height * 0.9386070,
+        size.width * 0.3929391,
+        size.height * 0.9386296,
+        size.width * 0.3929030,
+        size.height * 0.9386652);
+    path_48.cubicTo(
+        size.width * 0.3928670,
+        size.height * 0.9386975,
+        size.width * 0.3928340,
+        size.height * 0.9387395,
+        size.width * 0.3928130,
+        size.height * 0.9387847);
+    path_48.cubicTo(
+        size.width * 0.3917292,
+        size.height * 0.9414900,
+        size.width * 0.3923867,
+        size.height * 0.9444538,
+        size.width * 0.3939298,
+        size.height * 0.9471202);
+    path_48.cubicTo(
+        size.width * 0.3849565,
+        size.height * 0.9431286,
+        size.width * 0.3804203,
+        size.height * 0.9320976,
+        size.width * 0.3769198,
+        size.height * 0.9216742);
+    path_48.cubicTo(
+        size.width * 0.3894026,
+        size.height * 0.9173562,
+        size.width * 0.4016211,
+        size.height * 0.9121913,
+        size.width * 0.4134974,
+        size.height * 0.9062120);
+    path_48.cubicTo(
+        size.width * 0.4167637,
+        size.height * 0.9095443,
+        size.width * 0.4195407,
+        size.height * 0.9133096,
+        size.width * 0.4208436,
+        size.height * 0.9178668);
     path_48.close();
 
     Paint paint_48_fill = Paint()..style = PaintingStyle.fill;
@@ -1400,195 +6706,993 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_48, paint_48_fill);
 
     Path path_49 = Path();
-    path_49.moveTo(1143.72, 1853.54);
-    path_49.cubicTo(1142.32, 1863.8, 1139.19, 1875.54, 1132.8, 1884.15);
-    path_49.cubicTo(1123.47, 1896.76, 1085.59, 1924.73, 1052.16, 1949.41);
-    path_49.cubicTo(1029.52, 1966.13, 1006.11, 1983.41, 988.61, 1997.87);
-    path_49.cubicTo(975.19, 2008.95, 963.21, 2027.57, 949.33, 2049.12);
-    path_49.cubicTo(919.05, 2096.12, 879.63, 2157.38, 797.64, 2192.18);
-    path_49.cubicTo(795.68, 2193.01, 793.68, 2193.82, 791.64, 2194.63);
-    path_49.cubicTo(789.6, 2195.44, 787.487, 2196.25, 785.3, 2197.08);
-    path_49.lineTo(785.24, 2197.08);
-    path_49.cubicTo(783.08, 2197.89, 780.89, 2198.67, 778.67, 2199.44);
-    path_49.lineTo(778.06, 2199.65);
-    path_49.cubicTo(776.72, 2200.11, 775.35, 2200.56, 773.98, 2201.01);
-    path_49.cubicTo(772.61, 2201.46, 771.23, 2201.91, 769.85, 2202.34);
-    path_49.cubicTo(768.47, 2202.77, 766.85, 2203.34, 765.26, 2203.76);
-    path_49.lineTo(764.06, 2204.1);
-    path_49.cubicTo(762.127, 2204.67, 760.177, 2205.22, 758.21, 2205.77);
-    path_49.lineTo(757.71, 2205.91);
-    path_49.cubicTo(755.637, 2206.47, 753.547, 2207.01, 751.44, 2207.54);
-    path_49.lineTo(750.65, 2207.74);
-    path_49.lineTo(749.85, 2207.93);
-    path_49.cubicTo(747.68, 2208.47, 745.5, 2208.99, 743.28, 2209.49);
-    path_49.lineTo(743.03, 2209.49);
-    path_49.cubicTo(740.583, 2210.05, 738.104, 2210.58, 735.59, 2211.09);
-    path_49.cubicTo(733.704, 2211.47, 731.82, 2211.83, 729.94, 2212.17);
-    path_49.lineTo(729.38, 2212.27);
-    path_49.cubicTo(727.64, 2212.58, 725.89, 2212.87, 724.15, 2213.15);
-    path_49.lineTo(723.25, 2213.29);
-    path_49.cubicTo(721.58, 2213.54, 719.91, 2213.78, 718.25, 2214);
-    path_49.lineTo(717.73, 2214.07);
-    path_49.lineTo(717.14, 2214.14);
-    path_49.cubicTo(715.37, 2214.37, 713.6, 2214.58, 711.84, 2214.77);
-    path_49.lineTo(711.41, 2214.77);
-    path_49.cubicTo(710.49, 2214.88, 709.58, 2214.97, 708.67, 2215.05);
-    path_49.lineTo(708.07, 2215.11);
-    path_49.lineTo(705.44, 2215.34);
-    path_49.lineTo(702.65, 2215.55);
-    path_49.lineTo(700.55, 2215.69);
-    path_49.lineTo(698, 2216);
-    path_49.cubicTo(697.1, 2216.05, 696.21, 2216.1, 695.32, 2216.13);
-    path_49.lineTo(692.91, 2216.22);
-    path_49.cubicTo(692.19, 2216.22, 691.47, 2216.24, 690.75, 2216.28);
-    path_49.cubicTo(689.75, 2216.28, 688.66, 2216.33, 687.62, 2216.34);
-    path_49.cubicTo(685.97, 2216.34, 684.33, 2216.34, 682.69, 2216.34);
-    path_49.cubicTo(670.733, 2216.25, 658.796, 2215.36, 646.96, 2213.66);
-    path_49.cubicTo(645.73, 2213.49, 644.51, 2213.3, 643.29, 2213.11);
-    path_49.cubicTo(642.6, 2213.01, 641.92, 2212.9, 641.29, 2212.78);
-    path_49.cubicTo(640.86, 2212.72, 640.43, 2212.65, 640.01, 2212.57);
-    path_49.lineTo(638.01, 2212.22);
-    path_49.cubicTo(636.84, 2212.02, 635.67, 2211.8, 634.51, 2211.58);
-    path_49.cubicTo(633.13, 2211.33, 631.75, 2211.06, 630.38, 2210.77);
-    path_49.cubicTo(629.01, 2210.48, 627.38, 2210.14, 625.83, 2209.77);
-    path_49.lineTo(622.21, 2208.95);
-    path_49.lineTo(618.44, 2208.04);
-    path_49.lineTo(618.17, 2207.97);
-    path_49.cubicTo(616.94, 2207.67, 615.72, 2207.36, 614.5, 2207.04);
-    path_49.lineTo(614.16, 2206.95);
-    path_49.lineTo(611.86, 2206.33);
-    path_49.lineTo(609.94, 2205.81);
-    path_49.lineTo(608.6, 2205.43);
-    path_49.lineTo(606.11, 2204.72);
-    path_49.lineTo(605.4, 2204.51);
-    path_49.lineTo(603.75, 2204.01);
-    path_49.lineTo(601.6, 2203.36);
-    path_49.cubicTo(600.35, 2202.98, 599.1, 2202.58, 597.85, 2202.18);
-    path_49.lineTo(597.48, 2202.06);
-    path_49.lineTo(597.16, 2201.96);
-    path_49.cubicTo(595.83, 2201.52, 594.51, 2201.09, 593.16, 2200.63);
-    path_49.cubicTo(589.273, 2199.3, 585.43, 2197.92, 581.63, 2196.49);
-    path_49.cubicTo(580.11, 2195.91, 578.63, 2195.33, 577.1, 2194.72);
-    path_49.lineTo(576.65, 2194.55);
-    path_49.lineTo(574.77, 2193.79);
-    path_49.cubicTo(573.56, 2193.3, 572.35, 2192.79, 571.15, 2192.3);
-    path_49.cubicTo(569.95, 2191.81, 568.8, 2191.3, 567.64, 2190.81);
-    path_49.cubicTo(564.634, 2189.48, 561.654, 2188.14, 558.7, 2186.81);
-    path_49.cubicTo(557.44, 2186.23, 556.19, 2185.64, 554.95, 2185.04);
-    path_49.lineTo(554.76, 2184.95);
-    path_49.cubicTo(553.59, 2184.4, 552.43, 2183.84, 551.29, 2183.27);
-    path_49.cubicTo(550.59, 2182.93, 549.9, 2182.59, 549.2, 2182.27);
-    path_49.cubicTo(548.5, 2181.95, 547.64, 2181.5, 546.86, 2181.1);
-    path_49.cubicTo(545.62, 2180.47, 544.37, 2179.84, 543.14, 2179.19);
-    path_49.lineTo(539.38, 2177.19);
-    path_49.lineTo(539.16, 2177.07);
-    path_49.lineTo(535.62, 2175.15);
-    path_49.cubicTo(531.79, 2173.06, 528.05, 2170.92, 524.4, 2168.77);
-    path_49.lineTo(520.95, 2166.7);
-    path_49.cubicTo(520.15, 2166.22, 519.35, 2165.7, 518.56, 2165.25);
-    path_49.cubicTo(517.56, 2164.64, 516.56, 2164.04, 515.61, 2163.43);
-    path_49.cubicTo(513.89, 2162.36, 512.197, 2161.29, 510.53, 2160.22);
-    path_49.cubicTo(508.317, 2158.79, 506.14, 2157.36, 504, 2155.93);
-    path_49.cubicTo(500.38, 2153.51, 496.877, 2151.09, 493.49, 2148.68);
-    path_49.cubicTo(491.81, 2147.49, 490.16, 2146.3, 488.54, 2145.11);
-    path_49.lineTo(486.01, 2143.24);
-    path_49.lineTo(485.31, 2142.73);
-    path_49.cubicTo(484.46, 2142.1, 483.63, 2141.47, 482.8, 2140.84);
-    path_49.cubicTo(481.97, 2140.21, 480.93, 2139.43, 480.02, 2138.73);
-    path_49.cubicTo(448.18, 2114.3, 429.54, 2093.43, 429.02, 2092.87);
-    path_49.cubicTo(428.021, 2091.73, 426.79, 2090.82, 425.411, 2090.2);
-    path_49.cubicTo(424.031, 2089.58, 422.534, 2089.26, 421.02, 2089.26);
-    path_49.cubicTo(420.091, 2089.26, 419.166, 2089.38, 418.27, 2089.63);
-    path_49.cubicTo(365.54, 2103.83, 313.66, 2111.56, 305.02, 2106.52);
-    path_49.cubicTo(297.02, 2101.05, 297.68, 2075.07, 301.28, 2058.26);
-    path_49.cubicTo(301.28, 2058.13, 301.34, 2058.01, 301.36, 2057.88);
-    path_49.cubicTo(301.365, 2057.85, 301.365, 2057.82, 301.36, 2057.79);
-    path_49.cubicTo(301.48, 2057.19, 313.15, 1997.37, 323.18, 1962.98);
-    path_49.cubicTo(323.683, 1961.24, 323.734, 1959.41, 323.328, 1957.65);
-    path_49.cubicTo(322.923, 1955.89, 322.075, 1954.26, 320.864, 1952.92);
-    path_49.cubicTo(319.653, 1951.58, 318.12, 1950.57, 316.409, 1949.98);
-    path_49.cubicTo(314.699, 1949.4, 312.868, 1949.27, 311.09, 1949.59);
-    path_49.lineTo(247, 1961.34);
-    path_49.lineTo(246.49, 1961.45);
-    path_49.cubicTo(147.33, 1984.93, 78.4902, 1946.64, 65.6602, 1931.04);
-    path_49.cubicTo(140.47, 1896.88, 212.88, 1824.95, 218.93, 1818.86);
-    path_49.cubicTo(223.93, 1814.47, 299.66, 1748.3, 364.99, 1687.09);
-    path_49.cubicTo(371.91, 1681.95, 381.38, 1674.44, 392.77, 1665.42);
-    path_49.cubicTo(450.05, 1620.03, 556.67, 1535.54, 645.13, 1506.72);
-    path_49.cubicTo(731.37, 1478.63, 838.06, 1514.55, 895.38, 1533.85);
-    path_49.cubicTo(911.08, 1539.13, 922.38, 1542.95, 929.82, 1544.29);
-    path_49.cubicTo(945.94, 1547.29, 961.21, 1540.53, 977.39, 1533.45);
-    path_49.cubicTo(999.32, 1523.85, 1024.19, 1512.96, 1058.16, 1522.51);
-    path_49.cubicTo(1099.76, 1534.21, 1126.94, 1568.11, 1138.82, 1586.02);
-    path_49.cubicTo(1126.12, 1589.72, 1107.43, 1596.02, 1092.51, 1604.63);
-    path_49.lineTo(1092.4, 1604.7);
-    path_49.lineTo(1092.07, 1604.84);
-    path_49.cubicTo(1090.07, 1605.84, 1043.23, 1629.84, 1011.16, 1693.94);
-    path_49.cubicTo(1008.38, 1699.51, 1005.6, 1705.27, 1002.76, 1711.16);
-    path_49.cubicTo(974.21, 1770.32, 941.86, 1837.36, 843.76, 1842.4);
-    path_49.cubicTo(841.521, 1842.51, 839.376, 1843.33, 837.634, 1844.74);
-    path_49.cubicTo(835.891, 1846.15, 834.64, 1848.08, 834.062, 1850.25);
-    path_49.cubicTo(833.484, 1852.41, 833.608, 1854.7, 834.416, 1856.8);
-    path_49.cubicTo(835.225, 1858.89, 836.676, 1860.67, 838.56, 1861.88);
-    path_49.cubicTo(839.56, 1862.51, 901.36, 1901.38, 987.11, 1901.38);
-    path_49.cubicTo(1034.1, 1901.38, 1088.36, 1889.67, 1143.72, 1853.54);
+    path_49.moveTo(size.width * 0.3433563, size.height * 0.5990756);
+    path_49.cubicTo(
+        size.width * 0.3429361,
+        size.height * 0.6023917,
+        size.width * 0.3419964,
+        size.height * 0.6061862,
+        size.width * 0.3400781,
+        size.height * 0.6089690);
+    path_49.cubicTo(
+        size.width * 0.3372771,
+        size.height * 0.6130446,
+        size.width * 0.3259051,
+        size.height * 0.6220847,
+        size.width * 0.3158691,
+        size.height * 0.6300614);
+    path_49.cubicTo(
+        size.width * 0.3090724,
+        size.height * 0.6354654,
+        size.width * 0.3020444,
+        size.height * 0.6410504,
+        size.width * 0.2967908,
+        size.height * 0.6457240);
+    path_49.cubicTo(
+        size.width * 0.2927619,
+        size.height * 0.6493051,
+        size.width * 0.2891654,
+        size.height * 0.6553232,
+        size.width * 0.2849985,
+        size.height * 0.6622883);
+    path_49.cubicTo(
+        size.width * 0.2759081,
+        size.height * 0.6774790,
+        size.width * 0.2640739,
+        size.height * 0.6972786,
+        size.width * 0.2394596,
+        size.height * 0.7085262);
+    path_49.cubicTo(
+        size.width * 0.2388712,
+        size.height * 0.7087944,
+        size.width * 0.2382708,
+        size.height * 0.7090562,
+        size.width * 0.2376584,
+        size.height * 0.7093180);
+    path_49.cubicTo(
+        size.width * 0.2370459,
+        size.height * 0.7095798,
+        size.width * 0.2364116,
+        size.height * 0.7098416,
+        size.width * 0.2357550,
+        size.height * 0.7101099);
+    path_49.lineTo(size.width * 0.2357370, size.height * 0.7101099);
+    path_49.cubicTo(
+        size.width * 0.2350886,
+        size.height * 0.7103717,
+        size.width * 0.2344311,
+        size.height * 0.7106238,
+        size.width * 0.2337646,
+        size.height * 0.7108727);
+    path_49.lineTo(size.width * 0.2335815, size.height * 0.7109405);
+    path_49.cubicTo(
+        size.width * 0.2331792,
+        size.height * 0.7110892,
+        size.width * 0.2327679,
+        size.height * 0.7112346,
+        size.width * 0.2323566,
+        size.height * 0.7113801);
+    path_49.cubicTo(
+        size.width * 0.2319454,
+        size.height * 0.7115255,
+        size.width * 0.2315311,
+        size.height * 0.7116710,
+        size.width * 0.2311168,
+        size.height * 0.7118100);
+    path_49.cubicTo(
+        size.width * 0.2307025,
+        size.height * 0.7119489,
+        size.width * 0.2302162,
+        size.height * 0.7121332,
+        size.width * 0.2297388,
+        size.height * 0.7122689);
+    path_49.lineTo(size.width * 0.2293786, size.height * 0.7123788);
+    path_49.cubicTo(
+        size.width * 0.2287983,
+        size.height * 0.7125630,
+        size.width * 0.2282128,
+        size.height * 0.7127408,
+        size.width * 0.2276223,
+        size.height * 0.7129186);
+    path_49.lineTo(size.width * 0.2274722, size.height * 0.7129638);
+    path_49.cubicTo(
+        size.width * 0.2268499,
+        size.height * 0.7131448,
+        size.width * 0.2262225,
+        size.height * 0.7133193,
+        size.width * 0.2255899,
+        size.height * 0.7134906);
+    path_49.lineTo(size.width * 0.2253527, size.height * 0.7135553);
+    path_49.lineTo(size.width * 0.2251126, size.height * 0.7136167);
+    path_49.cubicTo(
+        size.width * 0.2244611,
+        size.height * 0.7137912,
+        size.width * 0.2238067,
+        size.height * 0.7139593,
+        size.width * 0.2231402,
+        size.height * 0.7141209);
+    path_49.lineTo(size.width * 0.2230651, size.height * 0.7141209);
+    path_49.cubicTo(
+        size.width * 0.2223305,
+        size.height * 0.7143019,
+        size.width * 0.2215863,
+        size.height * 0.7144732,
+        size.width * 0.2208316,
+        size.height * 0.7146380);
+    path_49.cubicTo(
+        size.width * 0.2202654,
+        size.height * 0.7147608,
+        size.width * 0.2196998,
+        size.height * 0.7148772,
+        size.width * 0.2191354,
+        size.height * 0.7149871);
+    path_49.lineTo(size.width * 0.2189673, size.height * 0.7150194);
+    path_49.cubicTo(
+        size.width * 0.2184449,
+        size.height * 0.7151196,
+        size.width * 0.2179195,
+        size.height * 0.7152133,
+        size.width * 0.2173972,
+        size.height * 0.7153038);
+    path_49.lineTo(size.width * 0.2171270, size.height * 0.7153491);
+    path_49.cubicTo(
+        size.width * 0.2166256,
+        size.height * 0.7154299,
+        size.width * 0.2161243,
+        size.height * 0.7155074,
+        size.width * 0.2156259,
+        size.height * 0.7155785);
+    path_49.lineTo(size.width * 0.2154698, size.height * 0.7156012);
+    path_49.lineTo(size.width * 0.2152927, size.height * 0.7156238);
+    path_49.cubicTo(
+        size.width * 0.2147613,
+        size.height * 0.7156981,
+        size.width * 0.2142300,
+        size.height * 0.7157660,
+        size.width * 0.2137016,
+        size.height * 0.7158274);
+    path_49.lineTo(size.width * 0.2135725, size.height * 0.7158274);
+    path_49.cubicTo(
+        size.width * 0.2132963,
+        size.height * 0.7158630,
+        size.width * 0.2130231,
+        size.height * 0.7158920,
+        size.width * 0.2127499,
+        size.height * 0.7159179);
+    path_49.lineTo(size.width * 0.2125698, size.height * 0.7159373);
+    path_49.lineTo(size.width * 0.2117802, size.height * 0.7160116);
+    path_49.lineTo(size.width * 0.2109427, size.height * 0.7160795);
+    path_49.lineTo(size.width * 0.2103122, size.height * 0.7161248);
+    path_49.lineTo(size.width * 0.2095467, size.height * 0.7162250);
+    path_49.cubicTo(
+        size.width * 0.2092765,
+        size.height * 0.7162411,
+        size.width * 0.2090093,
+        size.height * 0.7162573,
+        size.width * 0.2087421,
+        size.height * 0.7162670);
+    path_49.lineTo(size.width * 0.2080186, size.height * 0.7162961);
+    path_49.cubicTo(
+        size.width * 0.2078025,
+        size.height * 0.7162961,
+        size.width * 0.2075863,
+        size.height * 0.7163025,
+        size.width * 0.2073702,
+        size.height * 0.7163154);
+    path_49.cubicTo(
+        size.width * 0.2070699,
+        size.height * 0.7163154,
+        size.width * 0.2067427,
+        size.height * 0.7163316,
+        size.width * 0.2064305,
+        size.height * 0.7163348);
+    path_49.cubicTo(
+        size.width * 0.2059352,
+        size.height * 0.7163348,
+        size.width * 0.2054428,
+        size.height * 0.7163348,
+        size.width * 0.2049505,
+        size.height * 0.7163348);
+    path_49.cubicTo(
+        size.width * 0.2013609,
+        size.height * 0.7163058,
+        size.width * 0.1977772,
+        size.height * 0.7160181,
+        size.width * 0.1942240,
+        size.height * 0.7154686);
+    path_49.cubicTo(
+        size.width * 0.1938547,
+        size.height * 0.7154137,
+        size.width * 0.1934884,
+        size.height * 0.7153523,
+        size.width * 0.1931222,
+        size.height * 0.7152909);
+    path_49.cubicTo(
+        size.width * 0.1929150,
+        size.height * 0.7152586,
+        size.width * 0.1927109,
+        size.height * 0.7152230,
+        size.width * 0.1925218,
+        size.height * 0.7151842);
+    path_49.cubicTo(
+        size.width * 0.1923927,
+        size.height * 0.7151648,
+        size.width * 0.1922636,
+        size.height * 0.7151422,
+        size.width * 0.1921375,
+        size.height * 0.7151164);
+    path_49.lineTo(size.width * 0.1915371, size.height * 0.7150032);
+    path_49.cubicTo(
+        size.width * 0.1911858,
+        size.height * 0.7149386,
+        size.width * 0.1908346,
+        size.height * 0.7148675,
+        size.width * 0.1904863,
+        size.height * 0.7147964);
+    path_49.cubicTo(
+        size.width * 0.1900721,
+        size.height * 0.7147156,
+        size.width * 0.1896578,
+        size.height * 0.7146283,
+        size.width * 0.1892465,
+        size.height * 0.7145346);
+    path_49.cubicTo(
+        size.width * 0.1888352,
+        size.height * 0.7144409,
+        size.width * 0.1883458,
+        size.height * 0.7143310,
+        size.width * 0.1878805,
+        size.height * 0.7142114);
+    path_49.lineTo(size.width * 0.1867938, size.height * 0.7139463);
+    path_49.lineTo(size.width * 0.1856620, size.height * 0.7136522);
+    path_49.lineTo(size.width * 0.1855809, size.height * 0.7136296);
+    path_49.cubicTo(
+        size.width * 0.1852116,
+        size.height * 0.7135326,
+        size.width * 0.1848454,
+        size.height * 0.7134324,
+        size.width * 0.1844791,
+        size.height * 0.7133290);
+    path_49.lineTo(size.width * 0.1843771, size.height * 0.7132999);
+    path_49.lineTo(size.width * 0.1836866, size.height * 0.7130995);
+    path_49.lineTo(size.width * 0.1831102, size.height * 0.7129315);
+    path_49.lineTo(size.width * 0.1827079, size.height * 0.7128087);
+    path_49.lineTo(size.width * 0.1819604, size.height * 0.7125792);
+    path_49.lineTo(size.width * 0.1817472, size.height * 0.7125113);
+    path_49.lineTo(size.width * 0.1812519, size.height * 0.7123497);
+    path_49.lineTo(size.width * 0.1806064, size.height * 0.7121396);
+    path_49.cubicTo(
+        size.width * 0.1802312,
+        size.height * 0.7120168,
+        size.width * 0.1798559,
+        size.height * 0.7118875,
+        size.width * 0.1794806,
+        size.height * 0.7117582);
+    path_49.lineTo(size.width * 0.1793696, size.height * 0.7117195);
+    path_49.lineTo(size.width * 0.1792735, size.height * 0.7116871);
+    path_49.cubicTo(
+        size.width * 0.1788742,
+        size.height * 0.7115449,
+        size.width * 0.1784779,
+        size.height * 0.7114059,
+        size.width * 0.1780727,
+        size.height * 0.7112573);
+    path_49.cubicTo(
+        size.width * 0.1769057,
+        size.height * 0.7108274,
+        size.width * 0.1757520,
+        size.height * 0.7103814,
+        size.width * 0.1746112,
+        size.height * 0.7099192);
+    path_49.cubicTo(
+        size.width * 0.1741549,
+        size.height * 0.7097317,
+        size.width * 0.1737106,
+        size.height * 0.7095443,
+        size.width * 0.1732513,
+        size.height * 0.7093471);
+    path_49.lineTo(size.width * 0.1731162, size.height * 0.7092922);
+    path_49.lineTo(size.width * 0.1725518, size.height * 0.7090465);
+    path_49.cubicTo(
+        size.width * 0.1721885,
+        size.height * 0.7088882,
+        size.width * 0.1718253,
+        size.height * 0.7087233,
+        size.width * 0.1714650,
+        size.height * 0.7085650);
+    path_49.cubicTo(
+        size.width * 0.1711048,
+        size.height * 0.7084066,
+        size.width * 0.1707595,
+        size.height * 0.7082418,
+        size.width * 0.1704113,
+        size.height * 0.7080834);
+    path_49.cubicTo(
+        size.width * 0.1695089,
+        size.height * 0.7076535,
+        size.width * 0.1686142,
+        size.height * 0.7072204,
+        size.width * 0.1677274,
+        size.height * 0.7067906);
+    path_49.cubicTo(
+        size.width * 0.1673491,
+        size.height * 0.7066031,
+        size.width * 0.1669739,
+        size.height * 0.7064124,
+        size.width * 0.1666016,
+        size.height * 0.7062185);
+    path_49.lineTo(size.width * 0.1665446, size.height * 0.7061894);
+    path_49.cubicTo(
+        size.width * 0.1661933,
+        size.height * 0.7060116,
+        size.width * 0.1658451,
+        size.height * 0.7058306,
+        size.width * 0.1655029,
+        size.height * 0.7056464);
+    path_49.cubicTo(
+        size.width * 0.1652927,
+        size.height * 0.7055365,
+        size.width * 0.1650856,
+        size.height * 0.7054266,
+        size.width * 0.1648754,
+        size.height * 0.7053232);
+    path_49.cubicTo(
+        size.width * 0.1646653,
+        size.height * 0.7052198,
+        size.width * 0.1644071,
+        size.height * 0.7050743,
+        size.width * 0.1641729,
+        size.height * 0.7049451);
+    path_49.cubicTo(
+        size.width * 0.1638007,
+        size.height * 0.7047414,
+        size.width * 0.1634254,
+        size.height * 0.7045378,
+        size.width * 0.1630561,
+        size.height * 0.7043277);
+    path_49.lineTo(size.width * 0.1619273, size.height * 0.7036813);
+    path_49.lineTo(size.width * 0.1618613, size.height * 0.7036425);
+    path_49.lineTo(size.width * 0.1607986, size.height * 0.7030220);
+    path_49.cubicTo(
+        size.width * 0.1596488,
+        size.height * 0.7023465,
+        size.width * 0.1585260,
+        size.height * 0.7016548,
+        size.width * 0.1574302,
+        size.height * 0.7009599);
+    path_49.lineTo(size.width * 0.1563945, size.height * 0.7002909);
+    path_49.cubicTo(
+        size.width * 0.1561543,
+        size.height * 0.7001357,
+        size.width * 0.1559141,
+        size.height * 0.6999677,
+        size.width * 0.1556770,
+        size.height * 0.6998222);
+    path_49.cubicTo(
+        size.width * 0.1553768,
+        size.height * 0.6996251,
+        size.width * 0.1550766,
+        size.height * 0.6994312,
+        size.width * 0.1547914,
+        size.height * 0.6992340);
+    path_49.cubicTo(
+        size.width * 0.1542750,
+        size.height * 0.6988882,
+        size.width * 0.1537667,
+        size.height * 0.6985423,
+        size.width * 0.1532663,
+        size.height * 0.6981965);
+    path_49.cubicTo(
+        size.width * 0.1526019,
+        size.height * 0.6977343,
+        size.width * 0.1519484,
+        size.height * 0.6972721,
+        size.width * 0.1513059,
+        size.height * 0.6968100);
+    path_49.cubicTo(
+        size.width * 0.1502192,
+        size.height * 0.6960278,
+        size.width * 0.1491675,
+        size.height * 0.6952456,
+        size.width * 0.1481507,
+        size.height * 0.6944667);
+    path_49.cubicTo(
+        size.width * 0.1476464,
+        size.height * 0.6940821,
+        size.width * 0.1471510,
+        size.height * 0.6936975,
+        size.width * 0.1466647,
+        size.height * 0.6933129);
+    path_49.lineTo(size.width * 0.1459051, size.height * 0.6927085);
+    path_49.lineTo(size.width * 0.1456950, size.height * 0.6925436);
+    path_49.cubicTo(
+        size.width * 0.1454398,
+        size.height * 0.6923400,
+        size.width * 0.1451906,
+        size.height * 0.6921364,
+        size.width * 0.1449415,
+        size.height * 0.6919328);
+    path_49.cubicTo(
+        size.width * 0.1446923,
+        size.height * 0.6917292,
+        size.width * 0.1443801,
+        size.height * 0.6914771,
+        size.width * 0.1441069,
+        size.height * 0.6912508);
+    path_49.cubicTo(
+        size.width * 0.1345482,
+        size.height * 0.6833549,
+        size.width * 0.1289523,
+        size.height * 0.6766096,
+        size.width * 0.1287962,
+        size.height * 0.6764286);
+    path_49.cubicTo(
+        size.width * 0.1284962,
+        size.height * 0.6760601,
+        size.width * 0.1281267,
+        size.height * 0.6757660,
+        size.width * 0.1277127,
+        size.height * 0.6755656);
+    path_49.cubicTo(
+        size.width * 0.1272984,
+        size.height * 0.6753652,
+        size.width * 0.1268490,
+        size.height * 0.6752618,
+        size.width * 0.1263945,
+        size.height * 0.6752618);
+    path_49.cubicTo(
+        size.width * 0.1261156,
+        size.height * 0.6752618,
+        size.width * 0.1258379,
+        size.height * 0.6753006,
+        size.width * 0.1255689,
+        size.height * 0.6753814);
+    path_49.cubicTo(
+        size.width * 0.1097388,
+        size.height * 0.6799709,
+        size.width * 0.09416391,
+        size.height * 0.6824693,
+        size.width * 0.09157010,
+        size.height * 0.6808403);
+    path_49.cubicTo(
+        size.width * 0.08916842,
+        size.height * 0.6790724,
+        size.width * 0.08936656,
+        size.height * 0.6706755,
+        size.width * 0.09044731,
+        size.height * 0.6652424);
+    path_49.cubicTo(
+        size.width * 0.09044731,
+        size.height * 0.6652004,
+        size.width * 0.09046533,
+        size.height * 0.6651616,
+        size.width * 0.09047133,
+        size.height * 0.6651196);
+    path_49.cubicTo(
+        size.width * 0.09047283,
+        size.height * 0.6651099,
+        size.width * 0.09047283,
+        size.height * 0.6651002,
+        size.width * 0.09047133,
+        size.height * 0.6650905);
+    path_49.cubicTo(
+        size.width * 0.09050736,
+        size.height * 0.6648966,
+        size.width * 0.09401081,
+        size.height * 0.6455624,
+        size.width * 0.09702192,
+        size.height * 0.6344473);
+    path_49.cubicTo(
+        size.width * 0.09717292,
+        size.height * 0.6338849,
+        size.width * 0.09718823,
+        size.height * 0.6332935,
+        size.width * 0.09706635,
+        size.height * 0.6327246);
+    path_49.cubicTo(
+        size.width * 0.09694476,
+        size.height * 0.6321558,
+        size.width * 0.09669018,
+        size.height * 0.6316290,
+        size.width * 0.09632663,
+        size.height * 0.6311959);
+    path_49.cubicTo(
+        size.width * 0.09596307,
+        size.height * 0.6307628,
+        size.width * 0.09550285,
+        size.height * 0.6304363,
+        size.width * 0.09498919,
+        size.height * 0.6302456);
+    path_49.cubicTo(
+        size.width * 0.09447583,
+        size.height * 0.6300582,
+        size.width * 0.09392615,
+        size.height * 0.6300162,
+        size.width * 0.09339237,
+        size.height * 0.6301196);
+    path_49.lineTo(size.width * 0.07415191, size.height * 0.6339173);
+    path_49.lineTo(size.width * 0.07399880, size.height * 0.6339528);
+    path_49.cubicTo(
+        size.width * 0.04422996,
+        size.height * 0.6415417,
+        size.width * 0.02356355,
+        size.height * 0.6291661,
+        size.width * 0.01971186,
+        size.height * 0.6241241);
+    path_49.cubicTo(
+        size.width * 0.04217052,
+        size.height * 0.6130834,
+        size.width * 0.06390874,
+        size.height * 0.5898352,
+        size.width * 0.06572501,
+        size.height * 0.5878668);
+    path_49.cubicTo(
+        size.width * 0.06722606,
+        size.height * 0.5864480,
+        size.width * 0.08996097,
+        size.height * 0.5650614,
+        size.width * 0.1095737,
+        size.height * 0.5452780);
+    path_49.cubicTo(
+        size.width * 0.1116512,
+        size.height * 0.5436167,
+        size.width * 0.1144941,
+        size.height * 0.5411894,
+        size.width * 0.1179135,
+        size.height * 0.5382741);
+    path_49.cubicTo(
+        size.width * 0.1351096,
+        size.height * 0.5236037,
+        size.width * 0.1671180,
+        size.height * 0.4962961,
+        size.width * 0.1936746,
+        size.height * 0.4869813);
+    path_49.cubicTo(
+        size.width * 0.2195647,
+        size.height * 0.4779024,
+        size.width * 0.2515941,
+        size.height * 0.4895120,
+        size.width * 0.2688022,
+        size.height * 0.4957498);
+    path_49.cubicTo(
+        size.width * 0.2735155,
+        size.height * 0.4974564,
+        size.width * 0.2769078,
+        size.height * 0.4986910,
+        size.width * 0.2791414,
+        size.height * 0.4991241);
+    path_49.cubicTo(
+        size.width * 0.2839808,
+        size.height * 0.5000937,
+        size.width * 0.2885650,
+        size.height * 0.4979089,
+        size.width * 0.2934224,
+        size.height * 0.4956206);
+    path_49.cubicTo(
+        size.width * 0.3000060,
+        size.height * 0.4925178,
+        size.width * 0.3074722,
+        size.height * 0.4889981,
+        size.width * 0.3176704,
+        size.height * 0.4920847);
+    path_49.cubicTo(
+        size.width * 0.3301591,
+        size.height * 0.4958662,
+        size.width * 0.3383188,
+        size.height * 0.5068229,
+        size.width * 0.3418853,
+        size.height * 0.5126115);
+    path_49.cubicTo(
+        size.width * 0.3380727,
+        size.height * 0.5138074,
+        size.width * 0.3324617,
+        size.height * 0.5158436,
+        size.width * 0.3279826,
+        size.height * 0.5186264);
+    path_49.lineTo(size.width * 0.3279496, size.height * 0.5186490);
+    path_49.lineTo(size.width * 0.3278505, size.height * 0.5186942);
+    path_49.cubicTo(
+        size.width * 0.3272501,
+        size.height * 0.5190175,
+        size.width * 0.3131882,
+        size.height * 0.5267744,
+        size.width * 0.3035605,
+        size.height * 0.5474919);
+    path_49.cubicTo(
+        size.width * 0.3027259,
+        size.height * 0.5492922,
+        size.width * 0.3018913,
+        size.height * 0.5511538,
+        size.width * 0.3010387,
+        size.height * 0.5530575);
+    path_49.cubicTo(
+        size.width * 0.2924677,
+        size.height * 0.5721784,
+        size.width * 0.2827559,
+        size.height * 0.5938462,
+        size.width * 0.2533053,
+        size.height * 0.5954751);
+    path_49.cubicTo(
+        size.width * 0.2526331,
+        size.height * 0.5955107,
+        size.width * 0.2519892,
+        size.height * 0.5957757,
+        size.width * 0.2514662,
+        size.height * 0.5962314);
+    path_49.cubicTo(
+        size.width * 0.2509430,
+        size.height * 0.5966871,
+        size.width * 0.2505674,
+        size.height * 0.5973109,
+        size.width * 0.2503939,
+        size.height * 0.5980123);
+    path_49.cubicTo(
+        size.width * 0.2502204,
+        size.height * 0.5987104,
+        size.width * 0.2502576,
+        size.height * 0.5994505,
+        size.width * 0.2505002,
+        size.height * 0.6001293);
+    path_49.cubicTo(
+        size.width * 0.2507430,
+        size.height * 0.6008048,
+        size.width * 0.2511786,
+        size.height * 0.6013801,
+        size.width * 0.2517442,
+        size.height * 0.6017712);
+    path_49.cubicTo(
+        size.width * 0.2520444,
+        size.height * 0.6019748,
+        size.width * 0.2705974,
+        size.height * 0.6145378,
+        size.width * 0.2963404,
+        size.height * 0.6145378);
+    path_49.cubicTo(
+        size.width * 0.3104473,
+        size.height * 0.6145378,
+        size.width * 0.3267367,
+        size.height * 0.6107531,
+        size.width * 0.3433563,
+        size.height * 0.5990756);
     path_49.close();
-    path_49.moveTo(1024.25, 1556.46);
-    path_49.cubicTo(1036.47, 1554.92, 1036.61, 1536.89, 1024.25, 1535.27);
-    path_49.cubicTo(1017.04, 1534.53, 1009.91, 1536.33, 1003.04, 1538.51);
-    path_49.cubicTo(1000.68, 1539.21, 998.32, 1540.65, 995.96, 1544.99);
-    path_49.cubicTo(995.817, 1545.26, 995.743, 1545.56, 995.743, 1545.87);
-    path_49.cubicTo(995.743, 1546.18, 995.817, 1546.48, 995.96, 1546.75);
-    path_49.cubicTo(998.32, 1551.09, 1000.68, 1552.53, 1003.04, 1553.23);
-    path_49.cubicTo(1009.91, 1555.41, 1017, 1557.21, 1024.25, 1556.46);
+    path_49.moveTo(size.width * 0.3074902, size.height * 0.5030575);
+    path_49.cubicTo(
+        size.width * 0.3111588,
+        size.height * 0.5025598,
+        size.width * 0.3112008,
+        size.height * 0.4967324,
+        size.width * 0.3074902,
+        size.height * 0.4962088);
+    path_49.cubicTo(
+        size.width * 0.3053257,
+        size.height * 0.4959696,
+        size.width * 0.3031852,
+        size.height * 0.4965514,
+        size.width * 0.3011228,
+        size.height * 0.4972560);
+    path_49.cubicTo(
+        size.width * 0.3004143,
+        size.height * 0.4974822,
+        size.width * 0.2997058,
+        size.height * 0.4979476,
+        size.width * 0.2989973,
+        size.height * 0.4993504);
+    path_49.cubicTo(
+        size.width * 0.2989544,
+        size.height * 0.4994376,
+        size.width * 0.2989322,
+        size.height * 0.4995346,
+        size.width * 0.2989322,
+        size.height * 0.4996348);
+    path_49.cubicTo(
+        size.width * 0.2989322,
+        size.height * 0.4997350,
+        size.width * 0.2989544,
+        size.height * 0.4998319,
+        size.width * 0.2989973,
+        size.height * 0.4999192);
+    path_49.cubicTo(
+        size.width * 0.2997058,
+        size.height * 0.5013219,
+        size.width * 0.3004143,
+        size.height * 0.5017873,
+        size.width * 0.3011228,
+        size.height * 0.5020136);
+    path_49.cubicTo(
+        size.width * 0.3031852,
+        size.height * 0.5027182,
+        size.width * 0.3053137,
+        size.height * 0.5032999,
+        size.width * 0.3074902,
+        size.height * 0.5030575);
     path_49.close();
-    path_49.moveTo(845.55, 1734);
-    path_49.cubicTo(872.39, 1716.18, 873.82, 1671.12, 848.75, 1633.36);
-    path_49.cubicTo(845.07, 1627.8, 840.907, 1622.58, 836.31, 1617.75);
-    path_49.cubicTo(851.83, 1603.61, 835.5, 1581.27, 820.95, 1573.47);
-    path_49.cubicTo(817.81, 1571.47, 813.89, 1575.56, 816.12, 1578.62);
-    path_49.cubicTo(820.05, 1585.96, 825.61, 1593.91, 825.35, 1601.62);
-    path_49.cubicTo(824.95, 1603.62, 824.3, 1603.11, 823.25, 1603.62);
-    path_49.lineTo(822.9, 1603.84);
-    path_49.lineTo(821.97, 1604.21);
-    path_49.cubicTo(799.83, 1612.96, 776.64, 1618.87, 754.11, 1627.11);
-    path_49.cubicTo(741.68, 1631.48, 729.25, 1636.03, 717.05, 1641.62);
-    path_49.cubicTo(713.54, 1643.08, 714.86, 1648.71, 718.67, 1648.49);
-    path_49.cubicTo(723.76, 1648.34, 728.79, 1647.99, 733.8, 1647.49);
-    path_49.cubicTo(734.8, 1663.77, 740.69, 1681.49, 751.55, 1697.84);
-    path_49.cubicTo(776.62, 1735.61, 818.71, 1751.77, 845.55, 1734);
+    path_49.moveTo(size.width * 0.2538427, size.height * 0.5604396);
+    path_49.cubicTo(
+        size.width * 0.2619003,
+        size.height * 0.5546800,
+        size.width * 0.2623296,
+        size.height * 0.5401164,
+        size.width * 0.2548034,
+        size.height * 0.5279121);
+    path_49.cubicTo(
+        size.width * 0.2536986,
+        size.height * 0.5261151,
+        size.width * 0.2524488,
+        size.height * 0.5244279,
+        size.width * 0.2510687,
+        size.height * 0.5228668);
+    path_49.cubicTo(
+        size.width * 0.2557280,
+        size.height * 0.5182967,
+        size.width * 0.2508256,
+        size.height * 0.5110763,
+        size.width * 0.2464575,
+        size.height * 0.5085553);
+    path_49.cubicTo(
+        size.width * 0.2455149,
+        size.height * 0.5079089,
+        size.width * 0.2443380,
+        size.height * 0.5092308,
+        size.width * 0.2450075,
+        size.height * 0.5102198);
+    path_49.cubicTo(
+        size.width * 0.2461873,
+        size.height * 0.5125921,
+        size.width * 0.2478565,
+        size.height * 0.5151616,
+        size.width * 0.2477784,
+        size.height * 0.5176535);
+    path_49.cubicTo(
+        size.width * 0.2476584,
+        size.height * 0.5182999,
+        size.width * 0.2474632,
+        size.height * 0.5181351,
+        size.width * 0.2471480,
+        size.height * 0.5182999);
+    path_49.lineTo(size.width * 0.2470429, size.height * 0.5183710);
+    path_49.lineTo(size.width * 0.2467637, size.height * 0.5184906);
+    path_49.cubicTo(
+        size.width * 0.2401171,
+        size.height * 0.5213187,
+        size.width * 0.2331552,
+        size.height * 0.5232288,
+        size.width * 0.2263915,
+        size.height * 0.5258920);
+    path_49.cubicTo(
+        size.width * 0.2226599,
+        size.height * 0.5273045,
+        size.width * 0.2189282,
+        size.height * 0.5287750,
+        size.width * 0.2152657,
+        size.height * 0.5305818);
+    path_49.cubicTo(
+        size.width * 0.2142119,
+        size.height * 0.5310537,
+        size.width * 0.2146082,
+        size.height * 0.5328733,
+        size.width * 0.2157520,
+        size.height * 0.5328022);
+    path_49.cubicTo(
+        size.width * 0.2172801,
+        size.height * 0.5327537,
+        size.width * 0.2187902,
+        size.height * 0.5326406,
+        size.width * 0.2202942,
+        size.height * 0.5324790);
+    path_49.cubicTo(
+        size.width * 0.2205944,
+        size.height * 0.5377408,
+        size.width * 0.2223627,
+        size.height * 0.5434680,
+        size.width * 0.2256229,
+        size.height * 0.5487524);
+    path_49.cubicTo(
+        size.width * 0.2331492,
+        size.height * 0.5609599,
+        size.width * 0.2457850,
+        size.height * 0.5661829,
+        size.width * 0.2538427,
+        size.height * 0.5604396);
     path_49.close();
-    path_49.moveTo(739.18, 2121.86);
-    path_49.cubicTo(756.45, 2112.04, 761.91, 2090.72, 759.98, 2072.17);
-    path_49.cubicTo(759.52, 2067.92, 758.68, 2063.76, 757.89, 2059.66);
-    path_49.cubicTo(757.687, 2058.84, 757.201, 2058.13, 756.518, 2057.63);
-    path_49.cubicTo(755.836, 2057.14, 755.001, 2056.91, 754.162, 2056.97);
-    path_49.cubicTo(753.323, 2057.04, 752.534, 2057.4, 751.935, 2057.99);
-    path_49.cubicTo(751.336, 2058.58, 750.966, 2059.36, 750.89, 2060.2);
-    path_49.cubicTo(750.31, 2065.65, 748.89, 2074.99, 747.73, 2080.2);
-    path_49.cubicTo(740.24, 2112.63, 713.2, 2112.55, 687.79, 2099.95);
-    path_49.cubicTo(671.1, 2089.83, 682.89, 2056.45, 686.97, 2039.06);
-    path_49.cubicTo(687.234, 2038.26, 687.211, 2037.4, 686.905, 2036.62);
-    path_49.cubicTo(686.599, 2035.84, 686.03, 2035.19, 685.297, 2034.79);
-    path_49.cubicTo(684.563, 2034.38, 683.711, 2034.25, 682.888, 2034.4);
-    path_49.cubicTo(682.065, 2034.56, 681.323, 2035, 680.79, 2035.65);
-    path_49.cubicTo(675.444, 2042.28, 670.987, 2049.58, 667.53, 2057.36);
-    path_49.cubicTo(657.53, 2077.72, 655.53, 2109.16, 680.68, 2119.98);
-    path_49.cubicTo(698.4, 2128.6, 721, 2132.33, 739.18, 2121.86);
+    path_49.moveTo(size.width * 0.2219093, size.height * 0.6857983);
+    path_49.cubicTo(
+        size.width * 0.2270940,
+        size.height * 0.6826244,
+        size.width * 0.2287331,
+        size.height * 0.6757337,
+        size.width * 0.2281537,
+        size.height * 0.6697382);
+    path_49.cubicTo(
+        size.width * 0.2280156,
+        size.height * 0.6683646,
+        size.width * 0.2277634,
+        size.height * 0.6670200,
+        size.width * 0.2275263,
+        size.height * 0.6656949);
+    path_49.cubicTo(
+        size.width * 0.2274653,
+        size.height * 0.6654299,
+        size.width * 0.2273194,
+        size.height * 0.6652004,
+        size.width * 0.2271144,
+        size.height * 0.6650388);
+    path_49.cubicTo(
+        size.width * 0.2269096,
+        size.height * 0.6648804,
+        size.width * 0.2266590,
+        size.height * 0.6648061,
+        size.width * 0.2264071,
+        size.height * 0.6648255);
+    path_49.cubicTo(
+        size.width * 0.2261552,
+        size.height * 0.6648481,
+        size.width * 0.2259183,
+        size.height * 0.6649644,
+        size.width * 0.2257385,
+        size.height * 0.6651551);
+    path_49.cubicTo(
+        size.width * 0.2255587,
+        size.height * 0.6653458,
+        size.width * 0.2254476,
+        size.height * 0.6655979,
+        size.width * 0.2254248,
+        size.height * 0.6658694);
+    path_49.cubicTo(
+        size.width * 0.2252507,
+        size.height * 0.6676309,
+        size.width * 0.2248244,
+        size.height * 0.6706496,
+        size.width * 0.2244761,
+        size.height * 0.6723335);
+    path_49.cubicTo(
+        size.width * 0.2222276,
+        size.height * 0.6828151,
+        size.width * 0.2141099,
+        size.height * 0.6827893,
+        size.width * 0.2064815,
+        size.height * 0.6787169);
+    path_49.cubicTo(
+        size.width * 0.2014710,
+        size.height * 0.6754460,
+        size.width * 0.2050105,
+        size.height * 0.6646574,
+        size.width * 0.2062354,
+        size.height * 0.6590368);
+    path_49.cubicTo(
+        size.width * 0.2063146,
+        size.height * 0.6587783,
+        size.width * 0.2063077,
+        size.height * 0.6585003,
+        size.width * 0.2062159,
+        size.height * 0.6582482);
+    path_49.cubicTo(
+        size.width * 0.2061240,
+        size.height * 0.6579961,
+        size.width * 0.2059532,
+        size.height * 0.6577860,
+        size.width * 0.2057331,
+        size.height * 0.6576568);
+    path_49.cubicTo(
+        size.width * 0.2055128,
+        size.height * 0.6575242,
+        size.width * 0.2052570,
+        size.height * 0.6574822,
+        size.width * 0.2050099,
+        size.height * 0.6575307);
+    path_49.cubicTo(
+        size.width * 0.2047628,
+        size.height * 0.6575824,
+        size.width * 0.2045401,
+        size.height * 0.6577246,
+        size.width * 0.2043801,
+        size.height * 0.6579347);
+    path_49.cubicTo(
+        size.width * 0.2027751,
+        size.height * 0.6600776,
+        size.width * 0.2014371,
+        size.height * 0.6624370,
+        size.width * 0.2003993,
+        size.height * 0.6649515);
+    path_49.cubicTo(
+        size.width * 0.1973972,
+        size.height * 0.6715320,
+        size.width * 0.1967968,
+        size.height * 0.6816936,
+        size.width * 0.2043470,
+        size.height * 0.6851907);
+    path_49.cubicTo(
+        size.width * 0.2096668,
+        size.height * 0.6879767,
+        size.width * 0.2164515,
+        size.height * 0.6891823,
+        size.width * 0.2219093,
+        size.height * 0.6857983);
     path_49.close();
-    path_49.moveTo(650, 2023.51);
-    path_49.cubicTo(650.59, 2019.43, 644.51, 2017.93, 643.15, 2021.84);
-    path_49.cubicTo(639.02, 2033.07, 634.31, 2043.91, 628.15, 2053.43);
-    path_49.cubicTo(609.91, 2083.43, 575.89, 2090.48, 549.03, 2067.59);
-    path_49.cubicTo(532.65, 2054.19, 526.4, 2032.99, 531.4, 2012.89);
-    path_49.cubicTo(536.4, 1992.79, 553.26, 1975.08, 572.55, 1962.28);
-    path_49.cubicTo(573.326, 1961.86, 573.918, 1961.17, 574.21, 1960.33);
-    path_49.cubicTo(574.502, 1959.5, 574.474, 1958.59, 574.13, 1957.78);
-    path_49.cubicTo(573.787, 1956.96, 573.153, 1956.31, 572.353, 1955.94);
-    path_49.cubicTo(571.552, 1955.57, 570.642, 1955.51, 569.8, 1955.77);
-    path_49.cubicTo(563.688, 1957.69, 557.795, 1960.25, 552.22, 1963.41);
-    path_49.cubicTo(506.02, 1987.75, 493, 2048.93, 535.59, 2083.65);
-    path_49.cubicTo(590.48, 2125.74, 643.8, 2085.46, 650, 2023.51);
+    path_49.moveTo(size.width * 0.1951366, size.height * 0.6540110);
+    path_49.cubicTo(
+        size.width * 0.1953137,
+        size.height * 0.6526923,
+        size.width * 0.1934884,
+        size.height * 0.6522075,
+        size.width * 0.1930802,
+        size.height * 0.6534712);
+    path_49.cubicTo(
+        size.width * 0.1918403,
+        size.height * 0.6571008,
+        size.width * 0.1904263,
+        size.height * 0.6606044,
+        size.width * 0.1885770,
+        size.height * 0.6636813);
+    path_49.cubicTo(
+        size.width * 0.1831012,
+        size.height * 0.6733775,
+        size.width * 0.1728880,
+        size.height * 0.6756561,
+        size.width * 0.1648244,
+        size.height * 0.6682579);
+    path_49.cubicTo(
+        size.width * 0.1599069,
+        size.height * 0.6639270,
+        size.width * 0.1580306,
+        size.height * 0.6570750,
+        size.width * 0.1595317,
+        size.height * 0.6505785);
+    path_49.cubicTo(
+        size.width * 0.1610327,
+        size.height * 0.6440821,
+        size.width * 0.1660943,
+        size.height * 0.6383581,
+        size.width * 0.1718853,
+        size.height * 0.6342211);
+    path_49.cubicTo(
+        size.width * 0.1721183,
+        size.height * 0.6340853,
+        size.width * 0.1722960,
+        size.height * 0.6338623,
+        size.width * 0.1723837,
+        size.height * 0.6335908);
+    path_49.cubicTo(
+        size.width * 0.1724713,
+        size.height * 0.6333226,
+        size.width * 0.1724629,
+        size.height * 0.6330284,
+        size.width * 0.1723597,
+        size.height * 0.6327666);
+    path_49.cubicTo(
+        size.width * 0.1722567,
+        size.height * 0.6325016,
+        size.width * 0.1720663,
+        size.height * 0.6322915,
+        size.width * 0.1718262,
+        size.height * 0.6321719);
+    path_49.cubicTo(
+        size.width * 0.1715857,
+        size.height * 0.6320524,
+        size.width * 0.1713125,
+        size.height * 0.6320330,
+        size.width * 0.1710597,
+        size.height * 0.6321170);
+    path_49.cubicTo(
+        size.width * 0.1692249,
+        size.height * 0.6327376,
+        size.width * 0.1674557,
+        size.height * 0.6335650,
+        size.width * 0.1657820,
+        size.height * 0.6345863);
+    path_49.cubicTo(
+        size.width * 0.1519123,
+        size.height * 0.6424531,
+        size.width * 0.1480036,
+        size.height * 0.6622269,
+        size.width * 0.1607896,
+        size.height * 0.6734486);
+    path_49.cubicTo(
+        size.width * 0.1772681,
+        size.height * 0.6870524,
+        size.width * 0.1932753,
+        size.height * 0.6740336,
+        size.width * 0.1951366,
+        size.height * 0.6540110);
     path_49.close();
 
     Paint paint_49_fill = Paint()..style = PaintingStyle.fill;
@@ -1596,29 +7700,161 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_49, paint_49_fill);
 
     Path path_50 = Path();
-    path_50.moveTo(1140.31, 3015.52);
-    path_50.cubicTo(1142.88, 3026.52, 1145.53, 3046.83, 1134.47, 3059.8);
-    path_50.cubicTo(1131.14, 3063.61, 1126.96, 3066.57, 1122.26, 3068.45);
-    path_50.cubicTo(1112.26, 3062.34, 1101.75, 3055.6, 1093.67, 3047.35);
-    path_50.cubicTo(1090.19, 3043.53, 1086, 3040.43, 1081.33, 3038.22);
-    path_50.cubicTo(1081.18, 3038.15, 1081.02, 3038.12, 1080.86, 3038.12);
-    path_50.cubicTo(1080.7, 3038.11, 1080.54, 3038.15, 1080.39, 3038.21);
-    path_50.cubicTo(1080.25, 3038.27, 1080.11, 3038.37, 1080, 3038.49);
-    path_50.cubicTo(1079.89, 3038.61, 1079.81, 3038.75, 1079.76, 3038.9);
-    path_50.cubicTo(1076.43, 3049.9, 1083.54, 3062.45, 1093.25, 3072.57);
-    path_50.cubicTo(1091.84, 3072.52, 1090.4, 3072.44, 1088.93, 3072.34);
-    path_50.cubicTo(1049.03, 3069.49, 1036.24, 3043.79, 1023.86, 3018.94);
-    path_50.cubicTo(1019.38, 3009.94, 1015.14, 3001.42, 1009.72, 2994.7);
-    path_50.cubicTo(998.96, 2981.36, 978.11, 2982.01, 951.72, 2982.81);
-    path_50.cubicTo(918.33, 2983.81, 872.63, 2985.23, 830.89, 2958.62);
-    path_50.cubicTo(796.33, 2936.62, 778.07, 2903.32, 768.46, 2875.45);
-    path_50.cubicTo(764.88, 2865.06, 762.118, 2854.4, 760.2, 2843.57);
-    path_50.cubicTo(786.516, 2855.23, 813.673, 2864.89, 841.44, 2872.46);
-    path_50.cubicTo(892.35, 2886.46, 946.66, 2893.31, 1003.14, 2893.31);
-    path_50.cubicTo(1015.31, 2893.31, 1027.57, 2892.98, 1039.92, 2892.31);
-    path_50.cubicTo(1045.54, 2895.37, 1053.92, 2900.03, 1062.12, 2904.85);
-    path_50.cubicTo(1070.32, 2909.67, 1078.31, 2914.67, 1083.12, 2918.41);
-    path_50.cubicTo(1094.61, 2927.36, 1132.57, 2982.47, 1140.31, 3015.52);
+    path_50.moveTo(size.width * 0.3423326, size.height * 0.9746348);
+    path_50.cubicTo(
+        size.width * 0.3431042,
+        size.height * 0.9781900,
+        size.width * 0.3438997,
+        size.height * 0.9847544,
+        size.width * 0.3405794,
+        size.height * 0.9889463);
+    path_50.cubicTo(
+        size.width * 0.3395797,
+        size.height * 0.9901778,
+        size.width * 0.3383248,
+        size.height * 0.9911345,
+        size.width * 0.3369138,
+        size.height * 0.9917421);
+    path_50.cubicTo(
+        size.width * 0.3339117,
+        size.height * 0.9897673,
+        size.width * 0.3307565,
+        size.height * 0.9875889,
+        size.width * 0.3283308,
+        size.height * 0.9849224);
+    path_50.cubicTo(
+        size.width * 0.3272861,
+        size.height * 0.9836878,
+        size.width * 0.3260282,
+        size.height * 0.9826858,
+        size.width * 0.3246262,
+        size.height * 0.9819716);
+    path_50.cubicTo(
+        size.width * 0.3245812,
+        size.height * 0.9819489,
+        size.width * 0.3245332,
+        size.height * 0.9819392,
+        size.width * 0.3244851,
+        size.height * 0.9819392);
+    path_50.cubicTo(
+        size.width * 0.3244371,
+        size.height * 0.9819360,
+        size.width * 0.3243891,
+        size.height * 0.9819489,
+        size.width * 0.3243440,
+        size.height * 0.9819683);
+    path_50.cubicTo(
+        size.width * 0.3243020,
+        size.height * 0.9819877,
+        size.width * 0.3242600,
+        size.height * 0.9820200,
+        size.width * 0.3242270,
+        size.height * 0.9820588);
+    path_50.cubicTo(
+        size.width * 0.3241939,
+        size.height * 0.9820976,
+        size.width * 0.3241699,
+        size.height * 0.9821429,
+        size.width * 0.3241549,
+        size.height * 0.9821913);
+    path_50.cubicTo(
+        size.width * 0.3231552,
+        size.height * 0.9857466,
+        size.width * 0.3252897,
+        size.height * 0.9898028,
+        size.width * 0.3282047,
+        size.height * 0.9930737);
+    path_50.cubicTo(
+        size.width * 0.3277814,
+        size.height * 0.9930575,
+        size.width * 0.3273491,
+        size.height * 0.9930317,
+        size.width * 0.3269078,
+        size.height * 0.9929994);
+    path_50.cubicTo(
+        size.width * 0.3149295,
+        size.height * 0.9920782,
+        size.width * 0.3110898,
+        size.height * 0.9837718,
+        size.width * 0.3073732,
+        size.height * 0.9757401);
+    path_50.cubicTo(
+        size.width * 0.3060282,
+        size.height * 0.9728313,
+        size.width * 0.3047553,
+        size.height * 0.9700776,
+        size.width * 0.3031282,
+        size.height * 0.9679056);
+    path_50.cubicTo(
+        size.width * 0.2998979,
+        size.height * 0.9635941,
+        size.width * 0.2936385,
+        size.height * 0.9638041,
+        size.width * 0.2857160,
+        size.height * 0.9640627);
+    path_50.cubicTo(
+        size.width * 0.2756920,
+        size.height * 0.9643859,
+        size.width * 0.2619724,
+        size.height * 0.9648449,
+        size.width * 0.2494416,
+        size.height * 0.9562443);
+    path_50.cubicTo(
+        size.width * 0.2390663,
+        size.height * 0.9491338,
+        size.width * 0.2335845,
+        size.height * 0.9383710,
+        size.width * 0.2306995,
+        size.height * 0.9293633);
+    path_50.cubicTo(
+        size.width * 0.2296247,
+        size.height * 0.9260052,
+        size.width * 0.2287956,
+        size.height * 0.9225598,
+        size.width * 0.2282198,
+        size.height * 0.9190595);
+    path_50.cubicTo(
+        size.width * 0.2361201,
+        size.height * 0.9228281,
+        size.width * 0.2442729,
+        size.height * 0.9259502,
+        size.width * 0.2526088,
+        size.height * 0.9283969);
+    path_50.cubicTo(
+        size.width * 0.2678925,
+        size.height * 0.9329218,
+        size.width * 0.2841969,
+        size.height * 0.9351357,
+        size.width * 0.3011528,
+        size.height * 0.9351357);
+    path_50.cubicTo(
+        size.width * 0.3048064,
+        size.height * 0.9351357,
+        size.width * 0.3084869,
+        size.height * 0.9350291,
+        size.width * 0.3121945,
+        size.height * 0.9348125);
+    path_50.cubicTo(
+        size.width * 0.3138817,
+        size.height * 0.9358016,
+        size.width * 0.3163975,
+        size.height * 0.9373077,
+        size.width * 0.3188592,
+        size.height * 0.9388655);
+    path_50.cubicTo(
+        size.width * 0.3213209,
+        size.height * 0.9404234,
+        size.width * 0.3237196,
+        size.height * 0.9420394,
+        size.width * 0.3251636,
+        size.height * 0.9432482);
+    path_50.cubicTo(
+        size.width * 0.3286130,
+        size.height * 0.9461409,
+        size.width * 0.3400090,
+        size.height * 0.9639528,
+        size.width * 0.3423326,
+        size.height * 0.9746348);
     path_50.close();
 
     Paint paint_50_fill = Paint()..style = PaintingStyle.fill;
@@ -1626,21 +7862,99 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_50, paint_50_fill);
 
     Path path_51 = Path();
-    path_51.moveTo(1007.58, 1842.28);
-    path_51.cubicTo(1037.22, 1855.92, 1070.58, 1857.42, 1098.41, 1854.91);
-    path_51.cubicTo(1005.77, 1899.53, 922.17, 1877.08, 879.54, 1859.06);
-    path_51.cubicTo(963.63, 1840.86, 995.54, 1774.72, 1021.78, 1720.38);
-    path_51.cubicTo(1024.58, 1714.58, 1027.32, 1708.9, 1030.05, 1703.38);
-    path_51.cubicTo(1037, 1689.42, 1045.48, 1676.28, 1055.32, 1664.19);
-    path_51.cubicTo(1053.32, 1671.19, 1051.32, 1678.57, 1049.41, 1686.19);
-    path_51.cubicTo(1047.5, 1693.81, 1045.53, 1701.79, 1043.56, 1709.82);
-    path_51.cubicTo(1039.97, 1724.49, 1036.56, 1738.34, 1033.17, 1750.29);
-    path_51.cubicTo(1021.85, 1789.9, 1002.77, 1827.35, 1002.58, 1827.72);
-    path_51.cubicTo(1001.93, 1828.99, 1001.54, 1830.38, 1001.43, 1831.81);
-    path_51.cubicTo(1001.33, 1833.24, 1001.52, 1834.67, 1001.99, 1836.02);
-    path_51.cubicTo(1002.46, 1837.37, 1003.19, 1838.61, 1004.15, 1839.67);
-    path_51.cubicTo(1005.11, 1840.73, 1006.28, 1841.58, 1007.58, 1842.18);
-    path_51.lineTo(1007.58, 1842.28);
+    path_51.moveTo(size.width * 0.3024857, size.height * 0.5954363);
+    path_51.cubicTo(
+        size.width * 0.3113840,
+        size.height * 0.5998449,
+        size.width * 0.3213990,
+        size.height * 0.6003297,
+        size.width * 0.3297538,
+        size.height * 0.5995184);
+    path_51.cubicTo(
+        size.width * 0.3019424,
+        size.height * 0.6139399,
+        size.width * 0.2768448,
+        size.height * 0.6066839,
+        size.width * 0.2640468,
+        size.height * 0.6008597);
+    path_51.cubicTo(
+        size.width * 0.2892915,
+        size.height * 0.5949774,
+        size.width * 0.2988712,
+        size.height * 0.5736005,
+        size.width * 0.3067487,
+        size.height * 0.5560375);
+    path_51.cubicTo(
+        size.width * 0.3075893,
+        size.height * 0.5541629,
+        size.width * 0.3084119,
+        size.height * 0.5523271,
+        size.width * 0.3092315,
+        size.height * 0.5505430);
+    path_51.cubicTo(
+        size.width * 0.3113179,
+        size.height * 0.5460310,
+        size.width * 0.3138637,
+        size.height * 0.5417841,
+        size.width * 0.3168178,
+        size.height * 0.5378765);
+    path_51.cubicTo(
+        size.width * 0.3162174,
+        size.height * 0.5401390,
+        size.width * 0.3156169,
+        size.height * 0.5425242,
+        size.width * 0.3150435,
+        size.height * 0.5449871);
+    path_51.cubicTo(
+        size.width * 0.3144701,
+        size.height * 0.5474499,
+        size.width * 0.3138787,
+        size.height * 0.5500291,
+        size.width * 0.3132873,
+        size.height * 0.5526244);
+    path_51.cubicTo(
+        size.width * 0.3122095,
+        size.height * 0.5573659,
+        size.width * 0.3111858,
+        size.height * 0.5618423,
+        size.width * 0.3101681,
+        size.height * 0.5657046);
+    path_51.cubicTo(
+        size.width * 0.3067697,
+        size.height * 0.5785068,
+        size.width * 0.3010417,
+        size.height * 0.5906109,
+        size.width * 0.3009847,
+        size.height * 0.5907304);
+    path_51.cubicTo(
+        size.width * 0.3007896,
+        size.height * 0.5911409,
+        size.width * 0.3006725,
+        size.height * 0.5915902,
+        size.width * 0.3006394,
+        size.height * 0.5920524);
+    path_51.cubicTo(
+        size.width * 0.3006094,
+        size.height * 0.5925145,
+        size.width * 0.3006665,
+        size.height * 0.5929767,
+        size.width * 0.3008076,
+        size.height * 0.5934131);
+    path_51.cubicTo(
+        size.width * 0.3009487,
+        size.height * 0.5938494,
+        size.width * 0.3011678,
+        size.height * 0.5942502,
+        size.width * 0.3014560,
+        size.height * 0.5945928);
+    path_51.cubicTo(
+        size.width * 0.3017442,
+        size.height * 0.5949354,
+        size.width * 0.3020955,
+        size.height * 0.5952101,
+        size.width * 0.3024857,
+        size.height * 0.5954040);
+    path_51.lineTo(size.width * 0.3024857, size.height * 0.5954363);
     path_51.close();
 
     Paint paint_51_fill = Paint()..style = PaintingStyle.fill;
@@ -1648,17 +7962,77 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_51, paint_51_fill);
 
     Path path_52 = Path();
-    path_52.moveTo(825.301, 1625.43);
-    path_52.cubicTo(829.154, 1625.43, 832.882, 1626.79, 835.827, 1629.28);
-    path_52.cubicTo(838.771, 1631.76, 840.741, 1635.21, 841.389, 1639.01);
-    path_52.cubicTo(842.036, 1642.81, 841.318, 1646.71, 839.363, 1650.03);
-    path_52.cubicTo(837.408, 1653.35, 834.341, 1655.87, 830.705, 1657.15);
-    path_52.cubicTo(827.07, 1658.43, 823.1, 1658.37, 819.499, 1657);
-    path_52.cubicTo(815.897, 1655.63, 812.897, 1653.03, 811.028, 1649.66);
-    path_52.cubicTo(809.16, 1646.3, 808.543, 1642.37, 809.289, 1638.59);
-    path_52.cubicTo(810.034, 1634.81, 812.093, 1631.42, 815.101, 1629.01);
-    path_52.cubicTo(817.881, 1627.93, 820.637, 1626.78, 823.371, 1625.55);
-    path_52.cubicTo(824.011, 1625.47, 824.656, 1625.43, 825.301, 1625.43);
+    path_52.moveTo(size.width * 0.2477637, size.height * 0.5253491);
+    path_52.cubicTo(
+        size.width * 0.2489204,
+        size.height * 0.5253491,
+        size.width * 0.2500396,
+        size.height * 0.5257886,
+        size.width * 0.2509237,
+        size.height * 0.5265934);
+    path_52.cubicTo(
+        size.width * 0.2518076,
+        size.height * 0.5273950,
+        size.width * 0.2523990,
+        size.height * 0.5285100,
+        size.width * 0.2525935,
+        size.height * 0.5297382);
+    path_52.cubicTo(
+        size.width * 0.2527878,
+        size.height * 0.5309664,
+        size.width * 0.2525722,
+        size.height * 0.5322269,
+        size.width * 0.2519853,
+        size.height * 0.5332999);
+    path_52.cubicTo(
+        size.width * 0.2513984,
+        size.height * 0.5343730,
+        size.width * 0.2504776,
+        size.height * 0.5351875,
+        size.width * 0.2493861,
+        size.height * 0.5356012);
+    path_52.cubicTo(
+        size.width * 0.2482948,
+        size.height * 0.5360149,
+        size.width * 0.2471030,
+        size.height * 0.5359955,
+        size.width * 0.2460219,
+        size.height * 0.5355527);
+    path_52.cubicTo(
+        size.width * 0.2449406,
+        size.height * 0.5351099,
+        size.width * 0.2440399,
+        size.height * 0.5342696,
+        size.width * 0.2434788,
+        size.height * 0.5331803);
+    path_52.cubicTo(
+        size.width * 0.2429180,
+        size.height * 0.5320944,
+        size.width * 0.2427328,
+        size.height * 0.5308242,
+        size.width * 0.2429568,
+        size.height * 0.5296025);
+    path_52.cubicTo(
+        size.width * 0.2431804,
+        size.height * 0.5283807,
+        size.width * 0.2437986,
+        size.height * 0.5272851,
+        size.width * 0.2447016,
+        size.height * 0.5265061);
+    path_52.cubicTo(
+        size.width * 0.2455362,
+        size.height * 0.5261571,
+        size.width * 0.2463636,
+        size.height * 0.5257854,
+        size.width * 0.2471843,
+        size.height * 0.5253878);
+    path_52.cubicTo(
+        size.width * 0.2473765,
+        size.height * 0.5253620,
+        size.width * 0.2475701,
+        size.height * 0.5253491,
+        size.width * 0.2477637,
+        size.height * 0.5253491);
     path_52.close();
 
     Paint paint_52_fill = Paint()..style = PaintingStyle.fill;
@@ -1666,19 +8040,91 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_52, paint_52_fill);
 
     Path path_53 = Path();
-    path_53.moveTo(814.73, 1687.53);
-    path_53.cubicTo(816.275, 1687.53, 817.785, 1687.99, 819.07, 1688.85);
-    path_53.cubicTo(820.355, 1689.71, 821.356, 1690.93, 821.946, 1692.35);
-    path_53.cubicTo(822.537, 1693.78, 822.691, 1695.35, 822.389, 1696.87);
-    path_53.cubicTo(822.087, 1698.38, 821.342, 1699.77, 820.249, 1700.87);
-    path_53.cubicTo(819.156, 1701.96, 817.763, 1702.7, 816.247, 1703);
-    path_53.cubicTo(814.732, 1703.3, 813.161, 1703.15, 811.734, 1702.55);
-    path_53.cubicTo(810.307, 1701.96, 809.088, 1700.96, 808.231, 1699.67);
-    path_53.cubicTo(807.374, 1698.39, 806.918, 1696.88, 806.92, 1695.33);
-    path_53.cubicTo(806.92, 1694.31, 807.122, 1693.29, 807.515, 1692.34);
-    path_53.cubicTo(807.907, 1691.4, 808.483, 1690.54, 809.208, 1689.81);
-    path_53.cubicTo(809.933, 1689.09, 810.794, 1688.51, 811.742, 1688.12);
-    path_53.cubicTo(812.689, 1687.73, 813.705, 1687.53, 814.73, 1687.53);
+    path_53.moveTo(size.width * 0.2445902, size.height * 0.5454202);
+    path_53.cubicTo(
+        size.width * 0.2450540,
+        size.height * 0.5454202,
+        size.width * 0.2455074,
+        size.height * 0.5455688,
+        size.width * 0.2458931,
+        size.height * 0.5458468);
+    path_53.cubicTo(
+        size.width * 0.2462789,
+        size.height * 0.5461248,
+        size.width * 0.2465794,
+        size.height * 0.5465191,
+        size.width * 0.2467565,
+        size.height * 0.5469780);
+    path_53.cubicTo(
+        size.width * 0.2469340,
+        size.height * 0.5474402,
+        size.width * 0.2469802,
+        size.height * 0.5479476,
+        size.width * 0.2468895,
+        size.height * 0.5484389);
+    path_53.cubicTo(
+        size.width * 0.2467989,
+        size.height * 0.5489270,
+        size.width * 0.2465752,
+        size.height * 0.5493762,
+        size.width * 0.2462471,
+        size.height * 0.5497317);
+    path_53.cubicTo(
+        size.width * 0.2459189,
+        size.height * 0.5500840,
+        size.width * 0.2455008,
+        size.height * 0.5503232,
+        size.width * 0.2450456,
+        size.height * 0.5504202);
+    path_53.cubicTo(
+        size.width * 0.2445908,
+        size.height * 0.5505171,
+        size.width * 0.2441192,
+        size.height * 0.5504686,
+        size.width * 0.2436908,
+        size.height * 0.5502747);
+    path_53.cubicTo(
+        size.width * 0.2432624,
+        size.height * 0.5500840,
+        size.width * 0.2428964,
+        size.height * 0.5497608,
+        size.width * 0.2426391,
+        size.height * 0.5493439);
+    path_53.cubicTo(
+        size.width * 0.2423819,
+        size.height * 0.5489302,
+        size.width * 0.2422450,
+        size.height * 0.5484421,
+        size.width * 0.2422456,
+        size.height * 0.5479412);
+    path_53.cubicTo(
+        size.width * 0.2422456,
+        size.height * 0.5476115,
+        size.width * 0.2423062,
+        size.height * 0.5472818,
+        size.width * 0.2424242,
+        size.height * 0.5469748);
+    path_53.cubicTo(
+        size.width * 0.2425419,
+        size.height * 0.5466710,
+        size.width * 0.2427148,
+        size.height * 0.5463930,
+        size.width * 0.2429325,
+        size.height * 0.5461571);
+    path_53.cubicTo(
+        size.width * 0.2431501,
+        size.height * 0.5459244,
+        size.width * 0.2434086,
+        size.height * 0.5457369,
+        size.width * 0.2436932,
+        size.height * 0.5456109);
+    path_53.cubicTo(
+        size.width * 0.2439775,
+        size.height * 0.5454848,
+        size.width * 0.2442825,
+        size.height * 0.5454202,
+        size.width * 0.2445902,
+        size.height * 0.5454202);
     path_53.close();
 
     Paint paint_53_fill = Paint()..style = PaintingStyle.fill;
@@ -1686,22 +8132,112 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_53, paint_53_fill);
 
     Path path_54 = Path();
-    path_54.moveTo(781.531, 2220.87);
-    path_54.cubicTo(768.388, 2243.54, 758.768, 2268.08, 753.001, 2293.64);
-    path_54.cubicTo(696.391, 2306.43, 639.001, 2297.82, 581.211, 2295.47);
-    path_54.cubicTo(578.061, 2295.14, 576.991, 2299.87, 579.941, 2300.97);
-    path_54.cubicTo(594.551, 2306.85, 609.671, 2310.37, 624.991, 2313.09);
-    path_54.cubicTo(666.521, 2319.38, 712.071, 2320.09, 751.111, 2302.83);
-    path_54.cubicTo(749.153, 2313.29, 747.894, 2323.87, 747.341, 2334.5);
-    path_54.cubicTo(734.601, 2346.65, 725.511, 2361.63, 722.761, 2378.31);
-    path_54.cubicTo(721.443, 2385.66, 721.255, 2393.16, 722.201, 2400.57);
-    path_54.cubicTo(703.071, 2414.21, 695.951, 2443.33, 692.141, 2464.57);
-    path_54.cubicTo(689.071, 2483.5, 687.521, 2503.48, 690.901, 2523.45);
-    path_54.cubicTo(643.381, 2536.13, 595.001, 2545.15, 546.181, 2552.22);
-    path_54.cubicTo(519.531, 2415.22, 576.611, 2280.41, 603.691, 2226.59);
-    path_54.cubicTo(629.641, 2233.83, 656.45, 2237.53, 683.391, 2237.59);
-    path_54.cubicTo(702.354, 2237.59, 721.269, 2235.68, 739.851, 2231.9);
-    path_54.cubicTo(753.954, 2229.07, 767.873, 2225.38, 781.531, 2220.87);
+    path_54.moveTo(size.width * 0.2346235, size.height * 0.7177990);
+    path_54.cubicTo(
+        size.width * 0.2306779,
+        size.height * 0.7251261,
+        size.width * 0.2277899,
+        size.height * 0.7330575,
+        size.width * 0.2260585,
+        size.height * 0.7413187);
+    path_54.cubicTo(
+        size.width * 0.2090636,
+        size.height * 0.7454525,
+        size.width * 0.1918346,
+        size.height * 0.7426697,
+        size.width * 0.1744854,
+        size.height * 0.7419101);
+    path_54.cubicTo(
+        size.width * 0.1735398,
+        size.height * 0.7418035,
+        size.width * 0.1732186,
+        size.height * 0.7433323,
+        size.width * 0.1741042,
+        size.height * 0.7436878);
+    path_54.cubicTo(
+        size.width * 0.1784902,
+        size.height * 0.7455882,
+        size.width * 0.1830294,
+        size.height * 0.7467259,
+        size.width * 0.1876286,
+        size.height * 0.7476050);
+    path_54.cubicTo(
+        size.width * 0.2000964,
+        size.height * 0.7496380,
+        size.width * 0.2137709,
+        size.height * 0.7498675,
+        size.width * 0.2254911,
+        size.height * 0.7442889);
+    path_54.cubicTo(
+        size.width * 0.2249033,
+        size.height * 0.7476697,
+        size.width * 0.2245254,
+        size.height * 0.7510892,
+        size.width * 0.2243594,
+        size.height * 0.7545249);
+    path_54.cubicTo(
+        size.width * 0.2205347,
+        size.height * 0.7584518,
+        size.width * 0.2178058,
+        size.height * 0.7632935,
+        size.width * 0.2169802,
+        size.height * 0.7686846);
+    path_54.cubicTo(
+        size.width * 0.2165845,
+        size.height * 0.7710601,
+        size.width * 0.2165281,
+        size.height * 0.7734842,
+        size.width * 0.2168121,
+        size.height * 0.7758791);
+    path_54.cubicTo(
+        size.width * 0.2110690,
+        size.height * 0.7802877,
+        size.width * 0.2089316,
+        size.height * 0.7896994,
+        size.width * 0.2077878,
+        size.height * 0.7965643);
+    path_54.cubicTo(
+        size.width * 0.2068661,
+        size.height * 0.8026826,
+        size.width * 0.2064008,
+        size.height * 0.8091403,
+        size.width * 0.2074155,
+        size.height * 0.8155947);
+    path_54.cubicTo(
+        size.width * 0.1931495,
+        size.height * 0.8196930,
+        size.width * 0.1786253,
+        size.height * 0.8226083,
+        size.width * 0.1639691,
+        size.height * 0.8248933);
+    path_54.cubicTo(
+        size.width * 0.1559685,
+        size.height * 0.7806141,
+        size.width * 0.1731045,
+        size.height * 0.7370427,
+        size.width * 0.1812342,
+        size.height * 0.7196477);
+    path_54.cubicTo(
+        size.width * 0.1890246,
+        size.height * 0.7219877,
+        size.width * 0.1970730,
+        size.height * 0.7231836,
+        size.width * 0.2051609,
+        size.height * 0.7232030);
+    path_54.cubicTo(
+        size.width * 0.2108538,
+        size.height * 0.7232030,
+        size.width * 0.2165323,
+        size.height * 0.7225856,
+        size.width * 0.2221108,
+        size.height * 0.7213639);
+    path_54.cubicTo(
+        size.width * 0.2263446,
+        size.height * 0.7204493,
+        size.width * 0.2305233,
+        size.height * 0.7192566,
+        size.width * 0.2346235,
+        size.height * 0.7177990);
     path_54.close();
 
     Paint paint_54_fill = Paint()..style = PaintingStyle.fill;
@@ -1709,29 +8245,149 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_54, paint_54_fill);
 
     Path path_55 = Path();
-    path_55.moveTo(540.91, 2599.36);
-    path_55.cubicTo(548.989, 2623.94, 559.751, 2647.56, 573, 2669.78);
-    path_55.cubicTo(548.414, 2637.19, 527.027, 2600.85, 508.84, 2560.78);
-    path_55.cubicTo(506.774, 2556.22, 504.774, 2551.68, 502.84, 2547.15);
-    path_55.cubicTo(496.64, 2532.54, 491.2, 2518.15, 486.44, 2504.29);
-    path_55.cubicTo(481.68, 2490.43, 477.58, 2476.95, 474.06, 2464.16);
-    path_55.cubicTo(472.6, 2458.87, 471.24, 2453.7, 469.98, 2448.63);
-    path_55.cubicTo(468.767, 2443.77, 467.637, 2439.03, 466.59, 2434.42);
-    path_55.cubicTo(466.52, 2434.1, 466.45, 2433.78, 466.37, 2433.42);
-    path_55.lineTo(466.16, 2432.42);
-    path_55.cubicTo(465.47, 2429.35, 464.81, 2426.34, 464.16, 2423.42);
-    path_55.cubicTo(463.91, 2422.24, 463.66, 2421.07, 463.43, 2419.91);
-    path_55.cubicTo(462.604, 2415.86, 461.837, 2411.94, 461.13, 2408.17);
-    path_55.cubicTo(458.05, 2391.67, 456.13, 2377.75, 454.87, 2367.24);
-    path_55.cubicTo(453.4, 2354.6, 452.98, 2346.92, 452.92, 2345.67);
-    path_55.lineTo(452.92, 2345.61);
-    path_55.cubicTo(452.917, 2345.57, 452.917, 2345.54, 452.92, 2345.5);
-    path_55.cubicTo(452.92, 2345.09, 452.86, 2344.67, 452.8, 2344.27);
-    path_55.cubicTo(452.8, 2344.27, 452.8, 2344.21, 452.8, 2344.18);
-    path_55.cubicTo(452.4, 2341.67, 452.027, 2339.17, 451.68, 2336.69);
-    path_55.cubicTo(439.68, 2251.4, 455.86, 2182.49, 464.44, 2154.03);
-    path_55.cubicTo(494.63, 2177.71, 536.75, 2204.81, 587.22, 2221.56);
-    path_55.cubicTo(555.73, 2285.12, 490.32, 2445.4, 540.91, 2599.36);
+    path_55.moveTo(size.width * 0.1623867, size.height * 0.8401293);
+    path_55.cubicTo(
+        size.width * 0.1648121,
+        size.height * 0.8480737,
+        size.width * 0.1680429,
+        size.height * 0.8557078,
+        size.width * 0.1720204,
+        size.height * 0.8628895);
+    path_55.cubicTo(
+        size.width * 0.1646394,
+        size.height * 0.8523562,
+        size.width * 0.1582189,
+        size.height * 0.8406109,
+        size.width * 0.1527589,
+        size.height * 0.8276600);
+    path_55.cubicTo(
+        size.width * 0.1521387,
+        size.height * 0.8261862,
+        size.width * 0.1515383,
+        size.height * 0.8247188,
+        size.width * 0.1509577,
+        size.height * 0.8232547);
+    path_55.cubicTo(
+        size.width * 0.1490964,
+        size.height * 0.8185326,
+        size.width * 0.1474632,
+        size.height * 0.8138817,
+        size.width * 0.1460342,
+        size.height * 0.8094021);
+    path_55.cubicTo(
+        size.width * 0.1446052,
+        size.height * 0.8049224,
+        size.width * 0.1433744,
+        size.height * 0.8005656,
+        size.width * 0.1423176,
+        size.height * 0.7964318);
+    path_55.cubicTo(
+        size.width * 0.1418793,
+        size.height * 0.7947220,
+        size.width * 0.1414710,
+        size.height * 0.7930511,
+        size.width * 0.1410928,
+        size.height * 0.7914124);
+    path_55.cubicTo(
+        size.width * 0.1407286,
+        size.height * 0.7898416,
+        size.width * 0.1403894,
+        size.height * 0.7883096,
+        size.width * 0.1400751,
+        size.height * 0.7868197);
+    path_55.cubicTo(
+        size.width * 0.1400540,
+        size.height * 0.7867162,
+        size.width * 0.1400330,
+        size.height * 0.7866128,
+        size.width * 0.1400090,
+        size.height * 0.7864964);
+    path_55.lineTo(size.width * 0.1399460, size.height * 0.7861732);
+    path_55.cubicTo(
+        size.width * 0.1397388,
+        size.height * 0.7851810,
+        size.width * 0.1395407,
+        size.height * 0.7842081,
+        size.width * 0.1393455,
+        size.height * 0.7832644);
+    path_55.cubicTo(
+        size.width * 0.1392705,
+        size.height * 0.7828830,
+        size.width * 0.1391954,
+        size.height * 0.7825048,
+        size.width * 0.1391264,
+        size.height * 0.7821299);
+    path_55.cubicTo(
+        size.width * 0.1388784,
+        size.height * 0.7808209,
+        size.width * 0.1386482,
+        size.height * 0.7795540,
+        size.width * 0.1384359,
+        size.height * 0.7783355);
+    path_55.cubicTo(
+        size.width * 0.1375113,
+        size.height * 0.7730026,
+        size.width * 0.1369349,
+        size.height * 0.7685036,
+        size.width * 0.1365566,
+        size.height * 0.7651067);
+    path_55.cubicTo(
+        size.width * 0.1361153,
+        size.height * 0.7610213,
+        size.width * 0.1359892,
+        size.height * 0.7585391,
+        size.width * 0.1359712,
+        size.height * 0.7581351);
+    path_55.lineTo(size.width * 0.1359712, size.height * 0.7581157);
+    path_55.cubicTo(
+        size.width * 0.1359703,
+        size.height * 0.7581028,
+        size.width * 0.1359703,
+        size.height * 0.7580931,
+        size.width * 0.1359712,
+        size.height * 0.7580802);
+    path_55.cubicTo(
+        size.width * 0.1359712,
+        size.height * 0.7579476,
+        size.width * 0.1359532,
+        size.height * 0.7578119,
+        size.width * 0.1359352,
+        size.height * 0.7576826);
+    path_55.cubicTo(
+        size.width * 0.1359352,
+        size.height * 0.7576826,
+        size.width * 0.1359352,
+        size.height * 0.7576632,
+        size.width * 0.1359352,
+        size.height * 0.7576535);
+    path_55.cubicTo(
+        size.width * 0.1358151,
+        size.height * 0.7568423,
+        size.width * 0.1357031,
+        size.height * 0.7560343,
+        size.width * 0.1355989,
+        size.height * 0.7552327);
+    path_55.cubicTo(
+        size.width * 0.1319964,
+        size.height * 0.7276665,
+        size.width * 0.1368538,
+        size.height * 0.7053943,
+        size.width * 0.1394296,
+        size.height * 0.6961959);
+    path_55.cubicTo(
+        size.width * 0.1484929,
+        size.height * 0.7038494,
+        size.width * 0.1611378,
+        size.height * 0.7126083,
+        size.width * 0.1762894,
+        size.height * 0.7180220);
+    path_55.cubicTo(
+        size.width * 0.1668358,
+        size.height * 0.7385650,
+        size.width * 0.1471990,
+        size.height * 0.7903685,
+        size.width * 0.1623867,
+        size.height * 0.8401293);
     path_55.close();
 
     Paint paint_55_fill = Paint()..style = PaintingStyle.fill;
@@ -1739,31 +8395,169 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_55, paint_55_fill);
 
     Path path_56 = Path();
-    path_56.moveTo(481.37, 2550.77);
-    path_56.cubicTo(480.684, 2555.63, 479.394, 2560.39, 477.53, 2564.93);
-    path_56.cubicTo(475.391, 2570.37, 472.518, 2575.48, 468.99, 2580.14);
-    path_56.cubicTo(468.1, 2578.49, 467.24, 2576.83, 466.44, 2575.14);
-    path_56.cubicTo(462.68, 2568.06, 462.98, 2562.22, 455.44, 2556.14);
-    path_56.cubicTo(455.195, 2555.93, 454.883, 2555.81, 454.56, 2555.81);
-    path_56.cubicTo(454.237, 2555.81, 453.925, 2555.93, 453.68, 2556.14);
-    path_56.cubicTo(444.91, 2563.52, 446.76, 2580.79, 452.09, 2593.26);
-    path_56.cubicTo(446.112, 2595.43, 439.651, 2595.9, 433.42, 2594.63);
-    path_56.lineTo(432.94, 2594.53);
-    path_56.cubicTo(431.78, 2592, 430.54, 2589.29, 430.35, 2588.89);
-    path_56.cubicTo(427.35, 2582, 424.54, 2574.89, 422.16, 2567.57);
-    path_56.cubicTo(420.908, 2563.08, 418.329, 2559.08, 414.76, 2556.09);
-    path_56.cubicTo(414.516, 2555.88, 414.198, 2555.77, 413.874, 2555.78);
-    path_56.cubicTo(413.55, 2555.8, 413.244, 2555.94, 413.02, 2556.17);
-    path_56.cubicTo(409.529, 2559.67, 407.563, 2564.41, 407.55, 2569.36);
-    path_56.cubicTo(407.342, 2573.8, 407.438, 2578.25, 407.84, 2582.68);
-    path_56.cubicTo(397.52, 2573.79, 389.95, 2560.29, 385.01, 2542.03);
-    path_56.cubicTo(383.192, 2535.19, 381.786, 2528.25, 380.8, 2521.24);
-    path_56.cubicTo(380.54, 2519.42, 380.34, 2517.6, 380.21, 2515.8);
-    path_56.cubicTo(378.21, 2488.96, 389.72, 2464.28, 392.92, 2458.02);
-    path_56.cubicTo(407.45, 2446.1, 425.04, 2433.84, 444.12, 2431.83);
-    path_56.cubicTo(444.887, 2435.39, 445.707, 2439.03, 446.58, 2442.76);
-    path_56.cubicTo(448.434, 2450.64, 450.517, 2458.85, 452.83, 2467.39);
-    path_56.cubicTo(460.551, 2495.76, 470.084, 2523.62, 481.37, 2550.77);
+    path_56.moveTo(size.width * 0.1445122, size.height * 0.8244247);
+    path_56.cubicTo(
+        size.width * 0.1443062,
+        size.height * 0.8259955,
+        size.width * 0.1439189,
+        size.height * 0.8275339,
+        size.width * 0.1433594,
+        size.height * 0.8290013);
+    path_56.cubicTo(
+        size.width * 0.1427172,
+        size.height * 0.8307595,
+        size.width * 0.1418547,
+        size.height * 0.8324111,
+        size.width * 0.1407956,
+        size.height * 0.8339173);
+    path_56.cubicTo(
+        size.width * 0.1405284,
+        size.height * 0.8333840,
+        size.width * 0.1402702,
+        size.height * 0.8328474,
+        size.width * 0.1400300,
+        size.height * 0.8323012);
+    path_56.cubicTo(
+        size.width * 0.1389012,
+        size.height * 0.8300129,
+        size.width * 0.1389913,
+        size.height * 0.8281254,
+        size.width * 0.1367277,
+        size.height * 0.8261603);
+    path_56.cubicTo(
+        size.width * 0.1366542,
+        size.height * 0.8260924,
+        size.width * 0.1365605,
+        size.height * 0.8260537,
+        size.width * 0.1364635,
+        size.height * 0.8260537);
+    path_56.cubicTo(
+        size.width * 0.1363666,
+        size.height * 0.8260537,
+        size.width * 0.1362729,
+        size.height * 0.8260924,
+        size.width * 0.1361993,
+        size.height * 0.8261603);
+    path_56.cubicTo(
+        size.width * 0.1335665,
+        size.height * 0.8285456,
+        size.width * 0.1341219,
+        size.height * 0.8341273,
+        size.width * 0.1357220,
+        size.height * 0.8381577);
+    path_56.cubicTo(
+        size.width * 0.1339273,
+        size.height * 0.8388591,
+        size.width * 0.1319877,
+        size.height * 0.8390110,
+        size.width * 0.1301171,
+        size.height * 0.8386005);
+    path_56.lineTo(size.width * 0.1299730, size.height * 0.8385682);
+    path_56.cubicTo(
+        size.width * 0.1296247,
+        size.height * 0.8377505,
+        size.width * 0.1292525,
+        size.height * 0.8368746,
+        size.width * 0.1291954,
+        size.height * 0.8367453);
+    path_56.cubicTo(
+        size.width * 0.1282948,
+        size.height * 0.8345184,
+        size.width * 0.1274512,
+        size.height * 0.8322204,
+        size.width * 0.1267367,
+        size.height * 0.8298546);
+    path_56.cubicTo(
+        size.width * 0.1263609,
+        size.height * 0.8284034,
+        size.width * 0.1255866,
+        size.height * 0.8271105,
+        size.width * 0.1245152,
+        size.height * 0.8261441);
+    path_56.cubicTo(
+        size.width * 0.1244419,
+        size.height * 0.8260763,
+        size.width * 0.1243464,
+        size.height * 0.8260407,
+        size.width * 0.1242492,
+        size.height * 0.8260440);
+    path_56.cubicTo(
+        size.width * 0.1241519,
+        size.height * 0.8260504,
+        size.width * 0.1240600,
+        size.height * 0.8260957,
+        size.width * 0.1239928,
+        size.height * 0.8261700);
+    path_56.cubicTo(
+        size.width * 0.1229448,
+        size.height * 0.8273012,
+        size.width * 0.1223545,
+        size.height * 0.8288332,
+        size.width * 0.1223506,
+        size.height * 0.8304331);
+    path_56.cubicTo(
+        size.width * 0.1222882,
+        size.height * 0.8318681,
+        size.width * 0.1223170,
+        size.height * 0.8333064,
+        size.width * 0.1224377,
+        size.height * 0.8347382);
+    path_56.cubicTo(
+        size.width * 0.1193395,
+        size.height * 0.8318649,
+        size.width * 0.1170669,
+        size.height * 0.8275016,
+        size.width * 0.1155839,
+        size.height * 0.8215999);
+    path_56.cubicTo(
+        size.width * 0.1150381,
+        size.height * 0.8193891,
+        size.width * 0.1146160,
+        size.height * 0.8171461,
+        size.width * 0.1143200,
+        size.height * 0.8148804);
+    path_56.cubicTo(
+        size.width * 0.1142420,
+        size.height * 0.8142922,
+        size.width * 0.1141819,
+        size.height * 0.8137039,
+        size.width * 0.1141429,
+        size.height * 0.8131222);
+    path_56.cubicTo(
+        size.width * 0.1135425,
+        size.height * 0.8044473,
+        size.width * 0.1169979,
+        size.height * 0.7964706,
+        size.width * 0.1179586,
+        size.height * 0.7944473);
+    path_56.cubicTo(
+        size.width * 0.1223206,
+        size.height * 0.7905947,
+        size.width * 0.1276013,
+        size.height * 0.7866322,
+        size.width * 0.1333293,
+        size.height * 0.7859825);
+    path_56.cubicTo(
+        size.width * 0.1335596,
+        size.height * 0.7871332,
+        size.width * 0.1338058,
+        size.height * 0.7883096,
+        size.width * 0.1340678,
+        size.height * 0.7895152);
+    path_56.cubicTo(
+        size.width * 0.1346244,
+        size.height * 0.7920621,
+        size.width * 0.1352498,
+        size.height * 0.7947156,
+        size.width * 0.1359442,
+        size.height * 0.7974758);
+    path_56.cubicTo(
+        size.width * 0.1382621,
+        size.height * 0.8066451,
+        size.width * 0.1411240,
+        size.height * 0.8156496,
+        size.width * 0.1445122,
+        size.height * 0.8244247);
     path_56.close();
 
     Paint paint_56_fill = Paint()..style = PaintingStyle.fill;
@@ -1771,19 +8565,91 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_56, paint_56_fill);
 
     Path path_57 = Path();
-    path_57.moveTo(440.73, 2415.05);
-    path_57.cubicTo(436.226, 2415.01, 431.73, 2415.45, 427.32, 2416.37);
-    path_57.cubicTo(426.49, 2416.55, 425.66, 2416.73, 424.84, 2416.93);
-    path_57.cubicTo(414.992, 2419.33, 405.569, 2423.22, 396.9, 2428.47);
-    path_57.cubicTo(397.83, 2421.22, 399.338, 2414.06, 401.41, 2407.05);
-    path_57.cubicTo(402.85, 2402.16, 404.864, 2397.46, 407.41, 2393.05);
-    path_57.cubicTo(408.05, 2391.98, 408.74, 2390.91, 409.47, 2389.84);
-    path_57.cubicTo(409.88, 2389.23, 410.29, 2388.62, 410.73, 2388.01);
-    path_57.cubicTo(414.014, 2383.49, 417.616, 2379.2, 421.51, 2375.19);
-    path_57.cubicTo(425.41, 2371.12, 429.45, 2367.33, 433.19, 2364.01);
-    path_57.cubicTo(433.65, 2368.47, 434.24, 2373.7, 435.03, 2379.63);
-    path_57.cubicTo(435.82, 2385.56, 436.78, 2392.16, 437.98, 2399.38);
-    path_57.cubicTo(438.774, 2404.33, 439.69, 2409.55, 440.73, 2415.05);
+    path_57.moveTo(size.width * 0.1323116, size.height * 0.7805591);
+    path_57.cubicTo(
+        size.width * 0.1309595,
+        size.height * 0.7805462,
+        size.width * 0.1296097,
+        size.height * 0.7806884,
+        size.width * 0.1282858,
+        size.height * 0.7809858);
+    path_57.cubicTo(
+        size.width * 0.1280366,
+        size.height * 0.7810440,
+        size.width * 0.1277875,
+        size.height * 0.7811021,
+        size.width * 0.1275413,
+        size.height * 0.7811668);
+    path_57.cubicTo(
+        size.width * 0.1245848,
+        size.height * 0.7819425,
+        size.width * 0.1217559,
+        size.height * 0.7831997,
+        size.width * 0.1191534,
+        size.height * 0.7848966);
+    path_57.cubicTo(
+        size.width * 0.1194326,
+        size.height * 0.7825533,
+        size.width * 0.1198853,
+        size.height * 0.7802392,
+        size.width * 0.1205074,
+        size.height * 0.7779735);
+    path_57.cubicTo(
+        size.width * 0.1209397,
+        size.height * 0.7763930,
+        size.width * 0.1215443,
+        size.height * 0.7748739,
+        size.width * 0.1223086,
+        size.height * 0.7734486);
+    path_57.cubicTo(
+        size.width * 0.1225008,
+        size.height * 0.7731028,
+        size.width * 0.1227079,
+        size.height * 0.7727569,
+        size.width * 0.1229270,
+        size.height * 0.7724111);
+    path_57.cubicTo(
+        size.width * 0.1230501,
+        size.height * 0.7722140,
+        size.width * 0.1231732,
+        size.height * 0.7720168,
+        size.width * 0.1233053,
+        size.height * 0.7718197);
+    path_57.cubicTo(
+        size.width * 0.1242912,
+        size.height * 0.7703588,
+        size.width * 0.1253726,
+        size.height * 0.7689722,
+        size.width * 0.1265416,
+        size.height * 0.7676761);
+    path_57.cubicTo(
+        size.width * 0.1277124,
+        size.height * 0.7663607,
+        size.width * 0.1289252,
+        size.height * 0.7651357,
+        size.width * 0.1300480,
+        size.height * 0.7640627);
+    path_57.cubicTo(
+        size.width * 0.1301861,
+        size.height * 0.7655042,
+        size.width * 0.1303633,
+        size.height * 0.7671946,
+        size.width * 0.1306004,
+        size.height * 0.7691112);
+    path_57.cubicTo(
+        size.width * 0.1308376,
+        size.height * 0.7710278,
+        size.width * 0.1311258,
+        size.height * 0.7731610,
+        size.width * 0.1314860,
+        size.height * 0.7754945);
+    path_57.cubicTo(
+        size.width * 0.1317244,
+        size.height * 0.7770944,
+        size.width * 0.1319994,
+        size.height * 0.7787815,
+        size.width * 0.1323116,
+        size.height * 0.7805591);
     path_57.close();
 
     Paint paint_57_fill = Paint()..style = PaintingStyle.fill;
@@ -1791,28 +8657,154 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_57, paint_57_fill);
 
     Path path_58 = Path();
-    path_58.moveTo(413.4, 2353.35);
-    path_58.cubicTo(409.47, 2357.07, 405.4, 2361.17, 401.59, 2365.52);
-    path_58.cubicTo(397.768, 2369.81, 394.256, 2374.36, 391.08, 2379.14);
-    path_58.cubicTo(335.611, 2353.22, 282.71, 2322.13, 233.08, 2286.27);
-    path_58.cubicTo(195.47, 2259.08, 174.34, 2239.5, 173.84, 2239.03);
-    path_58.cubicTo(172.34, 2237.62, 170.463, 2236.69, 168.438, 2236.33);
-    path_58.cubicTo(166.413, 2235.97, 164.328, 2236.21, 162.438, 2237.02);
-    path_58.cubicTo(160.547, 2237.83, 158.933, 2239.17, 157.791, 2240.88);
-    path_58.cubicTo(156.65, 2242.59, 156.031, 2244.59, 156.01, 2246.65);
-    path_58.cubicTo(155.4, 2307.49, 194.26, 2418.4, 222.63, 2499.4);
-    path_58.cubicTo(227.08, 2512.09, 231.63, 2524.94, 235.57, 2536.64);
-    path_58.cubicTo(163.83, 2424.38, 138.97, 2269.1, 138.7, 2267.34);
-    path_58.cubicTo(138.349, 2265.07, 137.273, 2262.98, 135.631, 2261.38);
-    path_58.cubicTo(133.99, 2259.78, 131.873, 2258.75, 129.599, 2258.46);
-    path_58.cubicTo(127.325, 2258.16, 125.016, 2258.61, 123.02, 2259.74);
-    path_58.cubicTo(121.024, 2260.87, 119.448, 2262.62, 118.53, 2264.72);
-    path_58.cubicTo(115.89, 2270.72, 53.9701, 2413.49, 53.4201, 2517.51);
-    path_58.cubicTo(53.1001, 2578.86, 62.6301, 2664.84, 68.9901, 2722.08);
-    path_58.cubicTo(41.9901, 2652.69, 4.93015, 2525.45, 28.5901, 2390.96);
-    path_58.cubicTo(55.7201, 2236.83, 119.59, 2189.96, 138.89, 2179.06);
-    path_58.cubicTo(168.4, 2208.16, 186.19, 2223.58, 270.66, 2285.19);
-    path_58.cubicTo(307.15, 2311.83, 362.85, 2335.39, 413.4, 2353.35);
+    path_58.moveTo(size.width * 0.1241069, size.height * 0.7606173);
+    path_58.cubicTo(
+        size.width * 0.1229270,
+        size.height * 0.7618197,
+        size.width * 0.1217052,
+        size.height * 0.7631448,
+        size.width * 0.1205614,
+        size.height * 0.7645507);
+    path_58.cubicTo(
+        size.width * 0.1194140,
+        size.height * 0.7659373,
+        size.width * 0.1183597,
+        size.height * 0.7674079,
+        size.width * 0.1174062,
+        size.height * 0.7689528);
+    path_58.cubicTo(
+        size.width * 0.1007538,
+        size.height * 0.7605753,
+        size.width * 0.08487241,
+        size.height * 0.7505268,
+        size.width * 0.06997298,
+        size.height * 0.7389367);
+    path_58.cubicTo(
+        size.width * 0.05868208,
+        size.height * 0.7301487,
+        size.width * 0.05233864,
+        size.height * 0.7238203,
+        size.width * 0.05218853,
+        size.height * 0.7236684);
+    path_58.cubicTo(
+        size.width * 0.05173822,
+        size.height * 0.7232127,
+        size.width * 0.05117472,
+        size.height * 0.7229121,
+        size.width * 0.05056680,
+        size.height * 0.7227957);
+    path_58.cubicTo(
+        size.width * 0.04995887,
+        size.height * 0.7226794,
+        size.width * 0.04933293,
+        size.height * 0.7227569,
+        size.width * 0.04876554,
+        size.height * 0.7230187);
+    path_58.cubicTo(
+        size.width * 0.04819784,
+        size.height * 0.7232805,
+        size.width * 0.04771330,
+        size.height * 0.7237136,
+        size.width * 0.04737046,
+        size.height * 0.7242663);
+    path_58.cubicTo(
+        size.width * 0.04702792,
+        size.height * 0.7248190,
+        size.width * 0.04684209,
+        size.height * 0.7254654,
+        size.width * 0.04683579,
+        size.height * 0.7261312);
+    path_58.cubicTo(
+        size.width * 0.04665266,
+        size.height * 0.7457951,
+        size.width * 0.05831882,
+        size.height * 0.7816419,
+        size.width * 0.06683579,
+        size.height * 0.8078216);
+    path_58.cubicTo(
+        size.width * 0.06817172,
+        size.height * 0.8119231,
+        size.width * 0.06953768,
+        size.height * 0.8160763,
+        size.width * 0.07072050,
+        size.height * 0.8198578);
+    path_58.cubicTo(
+        size.width * 0.04918343,
+        size.height * 0.7835747,
+        size.width * 0.04172020,
+        size.height * 0.7333872,
+        size.width * 0.04163915,
+        size.height * 0.7328184);
+    path_58.cubicTo(
+        size.width * 0.04153377,
+        size.height * 0.7320847,
+        size.width * 0.04121075,
+        size.height * 0.7314092,
+        size.width * 0.04071780,
+        size.height * 0.7308920);
+    path_58.cubicTo(
+        size.width * 0.04022516,
+        size.height * 0.7303749,
+        size.width * 0.03958961,
+        size.height * 0.7300420,
+        size.width * 0.03890693,
+        size.height * 0.7299483);
+    path_58.cubicTo(
+        size.width * 0.03822426,
+        size.height * 0.7298513,
+        size.width * 0.03753107,
+        size.height * 0.7299968,
+        size.width * 0.03693185,
+        size.height * 0.7303620);
+    path_58.cubicTo(
+        size.width * 0.03633263,
+        size.height * 0.7307272,
+        size.width * 0.03585950,
+        size.height * 0.7312928,
+        size.width * 0.03558391,
+        size.height * 0.7319716);
+    path_58.cubicTo(
+        size.width * 0.03479135,
+        size.height * 0.7339108,
+        size.width * 0.01620237,
+        size.height * 0.7800549,
+        size.width * 0.01603726,
+        size.height * 0.8136749);
+    path_58.cubicTo(
+        size.width * 0.01594119,
+        size.height * 0.8335036,
+        size.width * 0.01880219,
+        size.height * 0.8612928,
+        size.width * 0.02071153,
+        size.height * 0.8797931);
+    path_58.cubicTo(
+        size.width * 0.01260585,
+        size.height * 0.8573659,
+        size.width * 0.001480081,
+        size.height * 0.8162411,
+        size.width * 0.008583038,
+        size.height * 0.7727731);
+    path_58.cubicTo(
+        size.width * 0.01672774,
+        size.height * 0.7229573,
+        size.width * 0.03590213,
+        size.height * 0.7078087,
+        size.width * 0.04169619,
+        size.height * 0.7042857);
+    path_58.cubicTo(
+        size.width * 0.05055539,
+        size.height * 0.7136910,
+        size.width * 0.05589613,
+        size.height * 0.7186749,
+        size.width * 0.08125488,
+        size.height * 0.7385876);
+    path_58.cubicTo(
+        size.width * 0.09220955,
+        size.height * 0.7471978,
+        size.width * 0.1089313,
+        size.height * 0.7548125,
+        size.width * 0.1241069,
+        size.height * 0.7606173);
     path_58.close();
 
     Paint paint_58_fill = Paint()..style = PaintingStyle.fill;
@@ -1820,14 +8812,56 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_58, paint_58_fill);
 
     Path path_59 = Path();
-    path_59.moveTo(382.001, 2398.28);
-    path_59.cubicTo(375.371, 2418.23, 374.191, 2440.8, 374.001, 2448.56);
-    path_59.cubicTo(369.361, 2457.64, 354.831, 2489.49, 359.871, 2524.32);
-    path_59.cubicTo(360.271, 2527.06, 360.711, 2529.75, 361.191, 2532.32);
-    path_59.cubicTo(309.901, 2524.62, 279.011, 2535.72, 261.491, 2547.47);
-    path_59.cubicTo(257.181, 2534.15, 251.031, 2516.39, 242.601, 2492.34);
-    path_59.cubicTo(219.671, 2426.87, 186.501, 2332.2, 178.801, 2271.18);
-    path_59.cubicTo(211.481, 2298.09, 283.571, 2352.42, 382.001, 2398.28);
+    path_59.moveTo(size.width * 0.1146806, size.height * 0.7751390);
+    path_59.cubicTo(
+        size.width * 0.1126902,
+        size.height * 0.7815869,
+        size.width * 0.1123359,
+        size.height * 0.7888817,
+        size.width * 0.1122789,
+        size.height * 0.7913898);
+    path_59.cubicTo(
+        size.width * 0.1108859,
+        size.height * 0.7943245,
+        size.width * 0.1065239,
+        size.height * 0.8046186,
+        size.width * 0.1080369,
+        size.height * 0.8158759);
+    path_59.cubicTo(
+        size.width * 0.1081570,
+        size.height * 0.8167615,
+        size.width * 0.1082891,
+        size.height * 0.8176309,
+        size.width * 0.1084332,
+        size.height * 0.8184615);
+    path_59.cubicTo(
+        size.width * 0.09303542,
+        size.height * 0.8159729,
+        size.width * 0.08376193,
+        size.height * 0.8195604,
+        size.width * 0.07850225,
+        size.height * 0.8233581);
+    path_59.cubicTo(
+        size.width * 0.07720835,
+        size.height * 0.8190530,
+        size.width * 0.07536205,
+        size.height * 0.8133129,
+        size.width * 0.07283128,
+        size.height * 0.8055398);
+    path_59.cubicTo(
+        size.width * 0.06594746,
+        size.height * 0.7843794,
+        size.width * 0.05598949,
+        size.height * 0.7537815,
+        size.width * 0.05367787,
+        size.height * 0.7340595);
+    path_59.cubicTo(
+        size.width * 0.06348874,
+        size.height * 0.7427569,
+        size.width * 0.08513089,
+        size.height * 0.7603167,
+        size.width * 0.1146806,
+        size.height * 0.7751390);
     path_59.close();
 
     Paint paint_59_fill = Paint()..style = PaintingStyle.fill;
@@ -1835,11 +8869,35 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_59, paint_59_fill);
 
     Path path_60 = Path();
-    path_60.moveTo(124.6, 2306.38);
-    path_60.cubicTo(137.21, 2364.64, 168.6, 2481.66, 231.13, 2567.86);
-    path_60.cubicTo(157.13, 2595.56, 112.83, 2666.47, 89.7099, 2716.94);
-    path_60.cubicTo(83.4099, 2660.21, 74.2699, 2576.77, 74.5799, 2517.62);
-    path_60.cubicTo(74.9999, 2447.2, 106.13, 2354.93, 124.6, 2306.38);
+    path_60.moveTo(size.width * 0.03740618, size.height * 0.7454363);
+    path_60.cubicTo(
+        size.width * 0.04119183,
+        size.height * 0.7642663,
+        size.width * 0.05061543,
+        size.height * 0.8020879,
+        size.width * 0.06938757,
+        size.height * 0.8299483);
+    path_60.cubicTo(
+        size.width * 0.04717202,
+        size.height * 0.8389011,
+        size.width * 0.03387271,
+        size.height * 0.8618197,
+        size.width * 0.02693182,
+        size.height * 0.8781319);
+    path_60.cubicTo(
+        size.width * 0.02504050,
+        size.height * 0.8597964,
+        size.width * 0.02229658,
+        size.height * 0.8328281,
+        size.width * 0.02238964,
+        size.height * 0.8137104);
+    path_60.cubicTo(
+        size.width * 0.02251573,
+        size.height * 0.7909502,
+        size.width * 0.03186130,
+        size.height * 0.7611280,
+        size.width * 0.03740618,
+        size.height * 0.7454363);
     path_60.close();
 
     Paint paint_60_fill = Paint()..style = PaintingStyle.fill;
@@ -1847,833 +8905,4823 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_60, paint_60_fill);
 
     Path path_61 = Path();
-    path_61.moveTo(1691.69, 909.36);
-    path_61.cubicTo(1687.69, 937.98, 1687.87, 973.77, 1692.4, 1015.49);
-    path_61.cubicTo(1693.48, 1025.44, 1694.79, 1035.6, 1696.34, 1045.99);
-    path_61.cubicTo(1697.89, 1056.38, 1699.65, 1066.96, 1701.64, 1077.73);
-    path_61.lineTo(1713.07, 1088.18);
-    path_61.cubicTo(1710.07, 1068.77, 1708.42, 1051.1, 1708.42, 1035.69);
-    path_61.cubicTo(1708.42, 1014.07, 1711.61, 996.89, 1718.58, 985.57);
-    path_61.cubicTo(1711, 974.6, 1698.22, 950.92, 1691.69, 909.36);
+    path_61.moveTo(size.width * 0.5078625, size.height * 0.2939108);
+    path_61.cubicTo(
+        size.width * 0.5066617,
+        size.height * 0.3031610,
+        size.width * 0.5067157,
+        size.height * 0.3147285,
+        size.width * 0.5080757,
+        size.height * 0.3282127);
+    path_61.cubicTo(
+        size.width * 0.5083999,
+        size.height * 0.3314286,
+        size.width * 0.5087932,
+        size.height * 0.3347123,
+        size.width * 0.5092585,
+        size.height * 0.3380705);
+    path_61.cubicTo(
+        size.width * 0.5097238,
+        size.height * 0.3414286,
+        size.width * 0.5102522,
+        size.height * 0.3448481,
+        size.width * 0.5108496,
+        size.height * 0.3483290);
+    path_61.lineTo(size.width * 0.5142810, size.height * 0.3517065);
+    path_61.cubicTo(
+        size.width * 0.5133804,
+        size.height * 0.3454331,
+        size.width * 0.5128850,
+        size.height * 0.3397220,
+        size.width * 0.5128850,
+        size.height * 0.3347414);
+    path_61.cubicTo(
+        size.width * 0.5128850,
+        size.height * 0.3277537,
+        size.width * 0.5138427,
+        size.height * 0.3222010,
+        size.width * 0.5159352,
+        size.height * 0.3185423);
+    path_61.cubicTo(
+        size.width * 0.5136596,
+        size.height * 0.3149968,
+        size.width * 0.5098229,
+        size.height * 0.3073432,
+        size.width * 0.5078625,
+        size.height * 0.2939108);
     path_61.close();
-    path_61.moveTo(3283.69, 884.94);
-    path_61.cubicTo(3332.69, 931.05, 3343.1, 1020.94, 3314.69, 1152.21);
-    path_61.cubicTo(3314.23, 1154.37, 3313.1, 1156.32, 3311.47, 1157.81);
-    path_61.cubicTo(3309.85, 1159.29, 3307.79, 1160.23, 3305.61, 1160.5);
-    path_61.cubicTo(3303.42, 1160.76, 3301.2, 1160.34, 3299.27, 1159.28);
-    path_61.cubicTo(3297.33, 1158.23, 3295.77, 1156.59, 3294.81, 1154.61);
-    path_61.cubicTo(3293.4, 1151.83, 3258.81, 1086.61, 3121.52, 1093.9);
-    path_61.cubicTo(3123.18, 1118.71, 3130.52, 1184.41, 3162.24, 1232.04);
-    path_61.cubicTo(3214.24, 1310.04, 3186.52, 1357.78, 3154.1, 1384.04);
-    path_61.cubicTo(3139.15, 1396.16, 3115.49, 1404.91, 3088.1, 1415.04);
-    path_61.cubicTo(3049.49, 1429.33, 3006.25, 1445.32, 2985.96, 1472.76);
-    path_61.cubicTo(3012.13, 1483.41, 3079.31, 1508.35, 3128.96, 1506.13);
-    path_61.cubicTo(3130.93, 1506.02, 3132.9, 1506.48, 3134.62, 1507.44);
-    path_61.cubicTo(3136.35, 1508.41, 3137.77, 1509.84, 3138.71, 1511.58);
-    path_61.cubicTo(3139.67, 1513.31, 3140.12, 1515.27, 3140.03, 1517.24);
-    path_61.cubicTo(3139.93, 1519.21, 3139.28, 1521.12, 3138.16, 1522.74);
-    path_61.cubicTo(3134.9, 1527.46, 3068.08, 1620.74, 2891.91, 1622.32);
-    path_61.cubicTo(2891.44, 1622.91, 2890.9, 1623.44, 2890.31, 1623.91);
-    path_61.cubicTo(2879.23, 1632.09, 2869.25, 1635.15, 2856.31, 1635.15);
-    path_61.cubicTo(2844.58, 1635.15, 2830.39, 1632.64, 2810.73, 1629.15);
-    path_61.cubicTo(2790.78, 1625.63, 2763.45, 1620.8, 2725.64, 1616.15);
-    path_61.cubicTo(2654.15, 1607.4, 2619.51, 1594.69, 2602.07, 1570.83);
-    path_61.cubicTo(2597.62, 1564.77, 2594.34, 1557.93, 2592.38, 1550.67);
-    path_61.cubicTo(2564.75, 1535.5, 2539.19, 1516.85, 2516.31, 1495.17);
-    path_61.cubicTo(2507.31, 1497.39, 2500.2, 1498.97, 2495.57, 1499.94);
-    path_61.cubicTo(2489.75, 1514.86, 2484.1, 1531.38, 2482.57, 1538.94);
-    path_61.cubicTo(2484.07, 1539.83, 2486, 1540.94, 2488.22, 1542.1);
-    path_61.cubicTo(2493.8, 1545.1, 2501.22, 1548.92, 2508.05, 1552.47);
-    path_61.cubicTo(2571.62, 1585.25, 2604.7, 1605.22, 2609.05, 1623.34);
-    path_61.cubicTo(2620.93, 1672.34, 2601.13, 1730.8, 2550.2, 1797.18);
-    path_61.cubicTo(2492.73, 1872.09, 2459.5, 1892.58, 2420.98, 1892.59);
-    path_61.cubicTo(2412.91, 1892.51, 2404.87, 1891.77, 2396.92, 1890.38);
-    path_61.cubicTo(2348.92, 1882.52, 2354.61, 1790.95, 2357.86, 1760.38);
-    path_61.cubicTo(2329.59, 1749.62, 2239.3, 1708.47, 2208.65, 1612.53);
-    path_61.cubicTo(2207.88, 1610.02, 2207.2, 1607.47, 2206.65, 1604.88);
-    path_61.cubicTo(2207.5, 1611.21, 2208.26, 1617.46, 2208.93, 1623.63);
-    path_61.cubicTo(2220.99, 1734.63, 2202.7, 1806.45, 2157.43, 1825.91);
-    path_61.cubicTo(2149.27, 1829.38, 2140.49, 1831.13, 2131.63, 1831.06);
-    path_61.cubicTo(2089.01, 1831.06, 2034.63, 1794.19, 1975.17, 1724.16);
-    path_61.cubicTo(1905.52, 1642.16, 1835.59, 1523.55, 1778.26, 1390.24);
-    path_61.cubicTo(1772.8, 1377.57, 1767.52, 1364.91, 1762.41, 1352.24);
-    path_61.cubicTo(1761.28, 1355.33, 1759.53, 1358.16, 1757.28, 1360.56);
-    path_61.cubicTo(1755.02, 1362.95, 1752.31, 1364.86, 1749.29, 1366.18);
-    path_61.cubicTo(1754.96, 1388.5, 1765.43, 1448.04, 1735.08, 1504.57);
-    path_61.cubicTo(1699.42, 1570.97, 1539.57, 1626.8, 1462.75, 1653.64);
-    path_61.lineTo(1450.19, 1658.03);
-    path_61.cubicTo(1416.71, 1669.84, 1400.19, 1684.19, 1388.19, 1694.67);
-    path_61.cubicTo(1376.9, 1704.5, 1367.19, 1713.01, 1351.94, 1707.47);
-    path_61.cubicTo(1346.26, 1705.4, 1342.36, 1701.97, 1340.35, 1697.28);
-    path_61.cubicTo(1336.75, 1688.86, 1340.66, 1679.97, 1344.11, 1672.13);
-    path_61.cubicTo(1345.27, 1669.64, 1346.27, 1667.08, 1347.11, 1664.46);
-    path_61.cubicTo(1342.69, 1664.22, 1335.44, 1671.91, 1327.89, 1680.06);
-    path_61.cubicTo(1315.45, 1693.51, 1299.97, 1710.25, 1275.81, 1716.73);
-    path_61.cubicTo(1262.85, 1720.21, 1249.57, 1722.33, 1236.17, 1723.04);
-    path_61.cubicTo(1222.73, 1724.04, 1213.85, 1724.64, 1197.89, 1734.75);
-    path_61.cubicTo(1189.89, 1739.83, 1183.81, 1745.75, 1176.78, 1752.63);
-    path_61.cubicTo(1158.95, 1770.06, 1136.78, 1791.76, 1069.35, 1813.01);
-    path_61.cubicTo(1068.51, 1813.27, 1067.63, 1813.41, 1066.74, 1813.41);
-    path_61.cubicTo(1064.8, 1813.41, 1062.91, 1812.75, 1061.38, 1811.55);
-    path_61.cubicTo(1059.85, 1810.35, 1058.77, 1808.67, 1058.31, 1806.78);
-    path_61.cubicTo(1057.85, 1804.89, 1058.03, 1802.9, 1058.84, 1801.13);
-    path_61.cubicTo(1059.64, 1799.36, 1061.01, 1797.91, 1062.74, 1797.01);
-    path_61.cubicTo(1080.83, 1787.65, 1130.42, 1759.5, 1142.36, 1741.87);
-    path_61.cubicTo(1147.09, 1734.87, 1151.08, 1725.29, 1155.3, 1715.13);
-    path_61.cubicTo(1164.65, 1692.59, 1175.3, 1667.05, 1199.68, 1653.99);
-    path_61.cubicTo(1211.54, 1647.65, 1222.68, 1643.89, 1232.41, 1640.57);
-    path_61.cubicTo(1250.21, 1634.57, 1263.07, 1630.18, 1273.23, 1614.09);
-    path_61.cubicTo(1289.85, 1587.78, 1289.84, 1580.67, 1282.07, 1537.09);
-    path_61.cubicTo(1273.85, 1490.98, 1271.63, 1465.67, 1316.27, 1438.89);
-    path_61.cubicTo(1354.43, 1415.99, 1376.27, 1379.18, 1376.27, 1337.89);
-    path_61.cubicTo(1376.27, 1309.51, 1393.49, 1274.02, 1419.11, 1249.59);
-    path_61.cubicTo(1434.11, 1235.25, 1450.38, 1226.5, 1465.74, 1224.29);
-    path_61.cubicTo(1466.01, 1220.62, 1466.95, 1217.03, 1468.52, 1213.71);
-    path_61.cubicTo(1473.52, 1203.14, 1484.35, 1195.12, 1500.78, 1189.88);
-    path_61.cubicTo(1536.24, 1178.56, 1604.67, 1212.38, 1625.08, 1223.15);
-    path_61.cubicTo(1635.45, 1216.59, 1653.58, 1212.76, 1672.14, 1230.84);
-    path_61.cubicTo(1686.31, 1244.64, 1691.28, 1263.79, 1694.91, 1277.78);
-    path_61.cubicTo(1696.33, 1283.25, 1698.26, 1290.67, 1699.83, 1292.66);
-    path_61.cubicTo(1704.13, 1294.4, 1732.66, 1306.34, 1750.22, 1321.42);
-    path_61.cubicTo(1708.5, 1212.03, 1680.85, 1106.19, 1671.22, 1017.71);
-    path_61.cubicTo(1659.15, 906.71, 1677.44, 834.89, 1722.72, 815.42);
-    path_61.cubicTo(1768, 795.95, 1832.72, 832.09, 1904.97, 917.18);
-    path_61.cubicTo(1930.97, 947.82, 1957.05, 983.56, 1982.47, 1023.27);
-    path_61.cubicTo(1987.78, 1019.6, 1993.01, 1016.27, 1998.08, 1013.17);
-    path_61.cubicTo(1998.97, 1012.4, 1999.99, 1011.79, 2001.08, 1011.36);
-    path_61.lineTo(2001.17, 1011.3);
-    path_61.cubicTo(2008.94, 1006.71, 2016.25, 1002.85, 2022.7, 999.74);
-    path_61.cubicTo(1995.79, 976.6, 1984.42, 950.33, 1980.7, 939.74);
-    path_61.cubicTo(1971.55, 934.74, 1949.94, 921.1, 1929.25, 893.97);
-    path_61.cubicTo(1906.25, 863.79, 1909.45, 816.73, 1911.49, 800.05);
-    path_61.cubicTo(1811.75, 711.4, 1755.49, 586.48, 1744.3, 560);
-    path_61.cubicTo(1707.84, 547.39, 1670.54, 491.54, 1666.21, 484.91);
-    path_61.cubicTo(1665.36, 483.608, 1664.81, 482.135, 1664.59, 480.596);
-    path_61.cubicTo(1664.38, 479.057, 1664.5, 477.489, 1664.96, 476.003);
-    path_61.cubicTo(1665.42, 474.517, 1666.19, 473.15, 1667.24, 471.999);
-    path_61.cubicTo(1668.28, 470.847, 1669.57, 469.94, 1671, 469.34);
-    path_61.lineTo(1693.42, 459.97);
-    path_61.cubicTo(1656.8, 434.45, 1641.77, 395.91, 1641.06, 394.03);
-    path_61.cubicTo(1640.48, 392.497, 1640.26, 390.849, 1640.42, 389.217);
-    path_61.cubicTo(1640.58, 387.585, 1641.12, 386.012, 1641.99, 384.623);
-    path_61.cubicTo(1642.86, 383.234, 1644.05, 382.067, 1645.45, 381.212);
-    path_61.cubicTo(1646.85, 380.358, 1648.43, 379.84, 1650.06, 379.7);
-    path_61.cubicTo(1650.26, 379.7, 1675.36, 377.05, 1706.06, 353.9);
-    path_61.cubicTo(1729.13, 336.49, 1752.67, 312.9, 1764.62, 300.44);
-    path_61.cubicTo(1725.73, 268.72, 1724.62, 228.35, 1724.62, 226.52);
-    path_61.cubicTo(1724.6, 225.084, 1724.87, 223.658, 1725.41, 222.329);
-    path_61.cubicTo(1725.96, 221, 1726.77, 219.796, 1727.79, 218.79);
-    path_61.cubicTo(1728.82, 217.792, 1730.05, 217.012, 1731.39, 216.497);
-    path_61.cubicTo(1732.73, 215.982, 1734.16, 215.741, 1735.59, 215.79);
-    path_61.cubicTo(1735.59, 215.79, 1754.53, 215.4, 1783.59, 190.29);
-    path_61.cubicTo(1828.9, 151.19, 1950.47, 55.97, 2100.29, 16.23);
-    path_61.cubicTo(2230.54, -18.31, 2347.89, 15.46, 2388.29, 29.8);
-    path_61.lineTo(2388.29, 10.6);
-    path_61.cubicTo(2388.29, 8.97353, 2388.66, 7.36851, 2389.38, 5.90919);
-    path_61.cubicTo(2390.1, 4.44987, 2391.14, 3.1754, 2392.43, 2.18442);
-    path_61.cubicTo(2393.72, 1.19344, 2395.22, 0.512551, 2396.82, 0.19445);
-    path_61.cubicTo(2398.41, -0.12365, 2400.06, -0.0704266, 2401.63, 0.350002);
-    path_61.cubicTo(2425.53, 6.61, 2470.18, 53.25, 2485.29, 69.61);
-    path_61.cubicTo(2538.03, 67.68, 2595, 102.93, 2597.48, 104.47);
-    path_61.cubicTo(2599.14, 105.508, 2600.49, 106.986, 2601.36, 108.741);
-    path_61.cubicTo(2602.23, 110.495, 2602.6, 112.457, 2602.43, 114.409);
-    path_61.cubicTo(2602.25, 116.361, 2601.54, 118.227, 2600.37, 119.798);
-    path_61.cubicTo(2599.2, 121.369, 2597.61, 122.585, 2595.79, 123.31);
-    path_61.lineTo(2570.37, 133.42);
-    path_61.cubicTo(2673.68, 240.42, 2677.03, 468.33, 2676.73, 510.71);
-    path_61.cubicTo(2694.17, 521.31, 2739.73, 557.01, 2723.18, 633.82);
-    path_61.cubicTo(2722.7, 636.06, 2722.17, 638.243, 2721.6, 640.37);
-    path_61.cubicTo(2772.87, 618.37, 2838.26, 602.74, 2904.32, 620.3);
-    path_61.cubicTo(3043.39, 657.24, 3079.45, 749.58, 3080.92, 753.49);
-    path_61.cubicTo(3087.18, 770.19, 3085, 786.24, 3081.86, 793.76);
-    path_61.cubicTo(3084.11, 809.22, 3079.39, 822.14, 3067.8, 832.25);
-    path_61.cubicTo(3066.14, 846.94, 3057.09, 867.9, 3031.47, 873.07);
-    path_61.cubicTo(3030.87, 877.943, 3029.08, 882.593, 3026.26, 886.61);
-    path_61.cubicTo(3022.81, 891.44, 3016, 897.49, 3003.2, 898.9);
-    path_61.cubicTo(2976.93, 901.9, 2939.09, 888.47, 2926.58, 875.49);
-    path_61.cubicTo(2923.25, 871.89, 2920.39, 867.886, 2918.06, 863.57);
-    path_61.cubicTo(2913.89, 856.42, 2909.58, 849.02, 2890.47, 838.43);
-    path_61.cubicTo(2865, 824.31, 2811.89, 835.43, 2740.03, 905.61);
-    path_61.cubicTo(2769.37, 937.17, 2817.95, 976.38, 2878.17, 976.39);
-    path_61.cubicTo(2883.32, 976.391, 2888.46, 976.108, 2893.57, 975.54);
-    path_61.cubicTo(2954.57, 968.75, 2986.14, 946.73, 3022.66, 921.23);
-    path_61.cubicTo(3053.84, 899.46, 3086.09, 876.95, 3139.59, 861.94);
-    path_61.cubicTo(3199.05, 845.24, 3250.23, 853.42, 3283.72, 884.94);
-    path_61.lineTo(3283.69, 884.94);
+    path_61.moveTo(size.width * 0.9857971, size.height * 0.2860181);
+    path_61.cubicTo(
+        size.width * 1.000507,
+        size.height * 0.3009211,
+        size.width * 1.003633,
+        size.height * 0.3299741,
+        size.width * 0.9951036,
+        size.height * 0.3724014);
+    path_61.cubicTo(
+        size.width * 0.9949655,
+        size.height * 0.3730995,
+        size.width * 0.9946262,
+        size.height * 0.3737298,
+        size.width * 0.9941369,
+        size.height * 0.3742114);
+    path_61.cubicTo(
+        size.width * 0.9936506,
+        size.height * 0.3746897,
+        size.width * 0.9930321,
+        size.height * 0.3749935,
+        size.width * 0.9923777,
+        size.height * 0.3750808);
+    path_61.cubicTo(
+        size.width * 0.9917202,
+        size.height * 0.3751648,
+        size.width * 0.9910537,
+        size.height * 0.3750291,
+        size.width * 0.9904743,
+        size.height * 0.3746865);
+    path_61.cubicTo(
+        size.width * 0.9898919,
+        size.height * 0.3743471,
+        size.width * 0.9894236,
+        size.height * 0.3738171,
+        size.width * 0.9891354,
+        size.height * 0.3731771);
+    path_61.cubicTo(
+        size.width * 0.9887121,
+        size.height * 0.3722786,
+        size.width * 0.9783278,
+        size.height * 0.3511991,
+        size.width * 0.9371120,
+        size.height * 0.3535553);
+    path_61.cubicTo(
+        size.width * 0.9376103,
+        size.height * 0.3615740,
+        size.width * 0.9398139,
+        size.height * 0.3828087,
+        size.width * 0.9493365,
+        size.height * 0.3982030);
+    path_61.cubicTo(
+        size.width * 0.9649475,
+        size.height * 0.4234131,
+        size.width * 0.9566256,
+        size.height * 0.4388429,
+        size.width * 0.9468928,
+        size.height * 0.4473303);
+    path_61.cubicTo(
+        size.width * 0.9424047,
+        size.height * 0.4512476,
+        size.width * 0.9353017,
+        size.height * 0.4540756,
+        size.width * 0.9270790,
+        size.height * 0.4573497);
+    path_61.cubicTo(
+        size.width * 0.9154878,
+        size.height * 0.4619683,
+        size.width * 0.9025068,
+        size.height * 0.4671364,
+        size.width * 0.8964155,
+        size.height * 0.4760052);
+    path_61.cubicTo(
+        size.width * 0.9042720,
+        size.height * 0.4794473,
+        size.width * 0.9244401,
+        size.height * 0.4875081,
+        size.width * 0.9393455,
+        size.height * 0.4867906);
+    path_61.cubicTo(
+        size.width * 0.9399370,
+        size.height * 0.4867550,
+        size.width * 0.9405284,
+        size.height * 0.4869037,
+        size.width * 0.9410447,
+        size.height * 0.4872140);
+    path_61.cubicTo(
+        size.width * 0.9415641,
+        size.height * 0.4875275,
+        size.width * 0.9419904,
+        size.height * 0.4879897,
+        size.width * 0.9422726,
+        size.height * 0.4885520);
+    path_61.cubicTo(
+        size.width * 0.9425608,
+        size.height * 0.4891112,
+        size.width * 0.9426959,
+        size.height * 0.4897447,
+        size.width * 0.9426689,
+        size.height * 0.4903814);
+    path_61.cubicTo(
+        size.width * 0.9426388,
+        size.height * 0.4910181,
+        size.width * 0.9424437,
+        size.height * 0.4916354,
+        size.width * 0.9421075,
+        size.height * 0.4921590);
+    path_61.cubicTo(
+        size.width * 0.9411288,
+        size.height * 0.4936846,
+        size.width * 0.9210687,
+        size.height * 0.5238332,
+        size.width * 0.8681807,
+        size.height * 0.5243439);
+    path_61.cubicTo(
+        size.width * 0.8680396,
+        size.height * 0.5245346,
+        size.width * 0.8678775,
+        size.height * 0.5247059,
+        size.width * 0.8677004,
+        size.height * 0.5248578);
+    path_61.cubicTo(
+        size.width * 0.8643741,
+        size.height * 0.5275016,
+        size.width * 0.8613780,
+        size.height * 0.5284906,
+        size.width * 0.8574932,
+        size.height * 0.5284906);
+    path_61.cubicTo(
+        size.width * 0.8539718,
+        size.height * 0.5284906,
+        size.width * 0.8497118,
+        size.height * 0.5276794,
+        size.width * 0.8438097,
+        size.height * 0.5265514);
+    path_61.cubicTo(
+        size.width * 0.8378205,
+        size.height * 0.5254137,
+        size.width * 0.8296157,
+        size.height * 0.5238526,
+        size.width * 0.8182648,
+        size.height * 0.5223497);
+    path_61.cubicTo(
+        size.width * 0.7968028,
+        size.height * 0.5195217,
+        size.width * 0.7864035,
+        size.height * 0.5154137,
+        size.width * 0.7811678,
+        size.height * 0.5077020);
+    path_61.cubicTo(
+        size.width * 0.7798319,
+        size.height * 0.5057434,
+        size.width * 0.7788472,
+        size.height * 0.5035326,
+        size.width * 0.7782588,
+        size.height * 0.5011862);
+    path_61.cubicTo(
+        size.width * 0.7699640,
+        size.height * 0.4962831,
+        size.width * 0.7622906,
+        size.height * 0.4902553,
+        size.width * 0.7554218,
+        size.height * 0.4832482);
+    path_61.cubicTo(
+        size.width * 0.7527199,
+        size.height * 0.4839657,
+        size.width * 0.7505854,
+        size.height * 0.4844764,
+        size.width * 0.7491954,
+        size.height * 0.4847899);
+    path_61.cubicTo(
+        size.width * 0.7474482,
+        size.height * 0.4896122,
+        size.width * 0.7457520,
+        size.height * 0.4949515,
+        size.width * 0.7452927,
+        size.height * 0.4973950);
+    path_61.cubicTo(
+        size.width * 0.7457430,
+        size.height * 0.4976826,
+        size.width * 0.7463224,
+        size.height * 0.4980414,
+        size.width * 0.7469889,
+        size.height * 0.4984163);
+    path_61.cubicTo(
+        size.width * 0.7486641,
+        size.height * 0.4993859,
+        size.width * 0.7508916,
+        size.height * 0.5006206,
+        size.width * 0.7529421,
+        size.height * 0.5017679);
+    path_61.cubicTo(
+        size.width * 0.7720264,
+        size.height * 0.5123626,
+        size.width * 0.7819574,
+        size.height * 0.5188171,
+        size.width * 0.7832633,
+        size.height * 0.5246736);
+    path_61.cubicTo(
+        size.width * 0.7868298,
+        size.height * 0.5405107,
+        size.width * 0.7808856,
+        size.height * 0.5594053,
+        size.width * 0.7655959,
+        size.height * 0.5808597);
+    path_61.cubicTo(
+        size.width * 0.7483428,
+        size.height * 0.6050711,
+        size.width * 0.7383669,
+        size.height * 0.6116936,
+        size.width * 0.7268028,
+        size.height * 0.6116968);
+    path_61.cubicTo(
+        size.width * 0.7243801,
+        size.height * 0.6116710,
+        size.width * 0.7219664,
+        size.height * 0.6114318,
+        size.width * 0.7195797,
+        size.height * 0.6109825);
+    path_61.cubicTo(
+        size.width * 0.7051696,
+        size.height * 0.6084421,
+        size.width * 0.7068778,
+        size.height * 0.5788462,
+        size.width * 0.7078535,
+        size.height * 0.5689657);
+    path_61.cubicTo(
+        size.width * 0.6993666,
+        size.height * 0.5654880,
+        size.width * 0.6722606,
+        size.height * 0.5521881,
+        size.width * 0.6630591,
+        size.height * 0.5211797);
+    path_61.cubicTo(
+        size.width * 0.6628280,
+        size.height * 0.5203685,
+        size.width * 0.6626238,
+        size.height * 0.5195443,
+        size.width * 0.6624587,
+        size.height * 0.5187072);
+    path_61.cubicTo(
+        size.width * 0.6627139,
+        size.height * 0.5207531,
+        size.width * 0.6629421,
+        size.height * 0.5227731,
+        size.width * 0.6631432,
+        size.height * 0.5247673);
+    path_61.cubicTo(
+        size.width * 0.6667637,
+        size.height * 0.5606432,
+        size.width * 0.6612729,
+        size.height * 0.5838559,
+        size.width * 0.6476824,
+        size.height * 0.5901454);
+    path_61.cubicTo(
+        size.width * 0.6452327,
+        size.height * 0.5912670,
+        size.width * 0.6425968,
+        size.height * 0.5918326,
+        size.width * 0.6399370,
+        size.height * 0.5918100);
+    path_61.cubicTo(
+        size.width * 0.6271420,
+        size.height * 0.5918100,
+        size.width * 0.6108166,
+        size.height * 0.5798933,
+        size.width * 0.5929661,
+        size.height * 0.5572592);
+    path_61.cubicTo(
+        size.width * 0.5720564,
+        size.height * 0.5307563,
+        size.width * 0.5510627,
+        size.height * 0.4924208,
+        size.width * 0.5338517,
+        size.height * 0.4493342);
+    path_61.cubicTo(
+        size.width * 0.5322125,
+        size.height * 0.4452392,
+        size.width * 0.5306274,
+        size.height * 0.4411474,
+        size.width * 0.5290934,
+        size.height * 0.4370524);
+    path_61.cubicTo(
+        size.width * 0.5287541,
+        size.height * 0.4380511,
+        size.width * 0.5282288,
+        size.height * 0.4389657,
+        size.width * 0.5275533,
+        size.height * 0.4397414);
+    path_61.cubicTo(
+        size.width * 0.5268748,
+        size.height * 0.4405139,
+        size.width * 0.5260612,
+        size.height * 0.4411312,
+        size.width * 0.5251546,
+        size.height * 0.4415579);
+    path_61.cubicTo(
+        size.width * 0.5268568,
+        size.height * 0.4487718,
+        size.width * 0.5300000,
+        size.height * 0.4680155,
+        size.width * 0.5208886,
+        size.height * 0.4862864);
+    path_61.cubicTo(
+        size.width * 0.5101831,
+        size.height * 0.5077473,
+        size.width * 0.4621945,
+        size.height * 0.5257919,
+        size.width * 0.4391324,
+        size.height * 0.5344667);
+    path_61.lineTo(size.width * 0.4353618, size.height * 0.5358856);
+    path_61.cubicTo(
+        size.width * 0.4253107,
+        size.height * 0.5397027,
+        size.width * 0.4203512,
+        size.height * 0.5443407,
+        size.width * 0.4167487,
+        size.height * 0.5477279);
+    path_61.cubicTo(
+        size.width * 0.4133594,
+        size.height * 0.5509050,
+        size.width * 0.4104443,
+        size.height * 0.5536555,
+        size.width * 0.4058661,
+        size.height * 0.5518649);
+    path_61.cubicTo(
+        size.width * 0.4041609,
+        size.height * 0.5511959,
+        size.width * 0.4029901,
+        size.height * 0.5500873,
+        size.width * 0.4023867,
+        size.height * 0.5485714);
+    path_61.cubicTo(
+        size.width * 0.4013059,
+        size.height * 0.5458500,
+        size.width * 0.4024797,
+        size.height * 0.5429767,
+        size.width * 0.4035155,
+        size.height * 0.5404428);
+    path_61.cubicTo(
+        size.width * 0.4038637,
+        size.height * 0.5396380,
+        size.width * 0.4041639,
+        size.height * 0.5388106,
+        size.width * 0.4044161,
+        size.height * 0.5379638);
+    path_61.cubicTo(
+        size.width * 0.4030892,
+        size.height * 0.5378862,
+        size.width * 0.4009126,
+        size.height * 0.5403717,
+        size.width * 0.3986461,
+        size.height * 0.5430058);
+    path_61.cubicTo(
+        size.width * 0.3949114,
+        size.height * 0.5473529,
+        size.width * 0.3902642,
+        size.height * 0.5527634,
+        size.width * 0.3830111,
+        size.height * 0.5548578);
+    path_61.cubicTo(
+        size.width * 0.3791204,
+        size.height * 0.5559825,
+        size.width * 0.3751336,
+        size.height * 0.5566677,
+        size.width * 0.3711108,
+        size.height * 0.5568972);
+    path_61.cubicTo(
+        size.width * 0.3670760,
+        size.height * 0.5572204,
+        size.width * 0.3644101,
+        size.height * 0.5574144,
+        size.width * 0.3596187,
+        size.height * 0.5606820);
+    path_61.cubicTo(
+        size.width * 0.3572171,
+        size.height * 0.5623239,
+        size.width * 0.3553918,
+        size.height * 0.5642372,
+        size.width * 0.3532813,
+        size.height * 0.5664609);
+    path_61.cubicTo(
+        size.width * 0.3479285,
+        size.height * 0.5720944,
+        size.width * 0.3412729,
+        size.height * 0.5791080,
+        size.width * 0.3210297,
+        size.height * 0.5859761);
+    path_61.cubicTo(
+        size.width * 0.3207775,
+        size.height * 0.5860601,
+        size.width * 0.3205134,
+        size.height * 0.5861054,
+        size.width * 0.3202462,
+        size.height * 0.5861054);
+    path_61.cubicTo(
+        size.width * 0.3196638,
+        size.height * 0.5861054,
+        size.width * 0.3190964,
+        size.height * 0.5858920,
+        size.width * 0.3186370,
+        size.height * 0.5855042);
+    path_61.cubicTo(
+        size.width * 0.3181777,
+        size.height * 0.5851164,
+        size.width * 0.3178535,
+        size.height * 0.5845734,
+        size.width * 0.3177154,
+        size.height * 0.5839625);
+    path_61.cubicTo(
+        size.width * 0.3175773,
+        size.height * 0.5833516,
+        size.width * 0.3176313,
+        size.height * 0.5827085,
+        size.width * 0.3178745,
+        size.height * 0.5821364);
+    path_61.cubicTo(
+        size.width * 0.3181147,
+        size.height * 0.5815643,
+        size.width * 0.3185260,
+        size.height * 0.5810957,
+        size.width * 0.3190453,
+        size.height * 0.5808048);
+    path_61.cubicTo(
+        size.width * 0.3244761,
+        size.height * 0.5777796,
+        size.width * 0.3393636,
+        size.height * 0.5686813,
+        size.width * 0.3429481,
+        size.height * 0.5629832);
+    path_61.cubicTo(
+        size.width * 0.3443681,
+        size.height * 0.5607207,
+        size.width * 0.3455659,
+        size.height * 0.5576244,
+        size.width * 0.3468328,
+        size.height * 0.5543407);
+    path_61.cubicTo(
+        size.width * 0.3496397,
+        size.height * 0.5470556,
+        size.width * 0.3528370,
+        size.height * 0.5388009,
+        size.width * 0.3601561,
+        size.height * 0.5345798);
+    path_61.cubicTo(
+        size.width * 0.3637166,
+        size.height * 0.5325307,
+        size.width * 0.3670609,
+        size.height * 0.5313154,
+        size.width * 0.3699820,
+        size.height * 0.5302424);
+    path_61.cubicTo(
+        size.width * 0.3753257,
+        size.height * 0.5283032,
+        size.width * 0.3791864,
+        size.height * 0.5268843,
+        size.width * 0.3822366,
+        size.height * 0.5216839);
+    path_61.cubicTo(
+        size.width * 0.3872261,
+        size.height * 0.5131803,
+        size.width * 0.3872231,
+        size.height * 0.5108824,
+        size.width * 0.3848904,
+        size.height * 0.4967970);
+    path_61.cubicTo(
+        size.width * 0.3824227,
+        size.height * 0.4818940,
+        size.width * 0.3817562,
+        size.height * 0.4737136,
+        size.width * 0.3951576,
+        size.height * 0.4650582);
+    path_61.cubicTo(
+        size.width * 0.4066136,
+        size.height * 0.4576568,
+        size.width * 0.4131702,
+        size.height * 0.4457595,
+        size.width * 0.4131702,
+        size.height * 0.4324144);
+    path_61.cubicTo(
+        size.width * 0.4131702,
+        size.height * 0.4232418,
+        size.width * 0.4183398,
+        size.height * 0.4117712,
+        size.width * 0.4260312,
+        size.height * 0.4038752);
+    path_61.cubicTo(
+        size.width * 0.4305344,
+        size.height * 0.3992405,
+        size.width * 0.4354188,
+        size.height * 0.3964124,
+        size.width * 0.4400300,
+        size.height * 0.3956981);
+    path_61.cubicTo(
+        size.width * 0.4401111,
+        size.height * 0.3945120,
+        size.width * 0.4403933,
+        size.height * 0.3933516,
+        size.width * 0.4408646,
+        size.height * 0.3922786);
+    path_61.cubicTo(
+        size.width * 0.4423657,
+        size.height * 0.3888623,
+        size.width * 0.4456169,
+        size.height * 0.3862702,
+        size.width * 0.4505494,
+        size.height * 0.3845766);
+    path_61.cubicTo(
+        size.width * 0.4611948,
+        size.height * 0.3809179,
+        size.width * 0.4817382,
+        size.height * 0.3918487,
+        size.width * 0.4878655,
+        size.height * 0.3953297);
+    path_61.cubicTo(
+        size.width * 0.4909787,
+        size.height * 0.3932094,
+        size.width * 0.4964215,
+        size.height * 0.3919716,
+        size.width * 0.5019934,
+        size.height * 0.3978151);
+    path_61.cubicTo(
+        size.width * 0.5062474,
+        size.height * 0.4022754,
+        size.width * 0.5077394,
+        size.height * 0.4084648,
+        size.width * 0.5088292,
+        size.height * 0.4129864);
+    path_61.cubicTo(
+        size.width * 0.5092555,
+        size.height * 0.4147544,
+        size.width * 0.5098349,
+        size.height * 0.4171526,
+        size.width * 0.5103062,
+        size.height * 0.4177957);
+    path_61.cubicTo(
+        size.width * 0.5115971,
+        size.height * 0.4183581,
+        size.width * 0.5201621,
+        size.height * 0.4222172,
+        size.width * 0.5254338,
+        size.height * 0.4270911);
+    path_61.cubicTo(
+        size.width * 0.5129090,
+        size.height * 0.3917356,
+        size.width * 0.5046082,
+        size.height * 0.3575275,
+        size.width * 0.5017172,
+        size.height * 0.3289302);
+    path_61.cubicTo(
+        size.width * 0.4980937,
+        size.height * 0.2930543,
+        size.width * 0.5035845,
+        size.height * 0.2698416,
+        size.width * 0.5171780,
+        size.height * 0.2635488);
+    path_61.cubicTo(
+        size.width * 0.5307715,
+        size.height * 0.2572560,
+        size.width * 0.5502011,
+        size.height * 0.2689367,
+        size.width * 0.5718913,
+        size.height * 0.2964383);
+    path_61.cubicTo(
+        size.width * 0.5796968,
+        size.height * 0.3063413,
+        size.width * 0.5875263,
+        size.height * 0.3178927,
+        size.width * 0.5951576,
+        size.height * 0.3307272);
+    path_61.cubicTo(
+        size.width * 0.5967517,
+        size.height * 0.3295410,
+        size.width * 0.5983218,
+        size.height * 0.3284648,
+        size.width * 0.5998439,
+        size.height * 0.3274628);
+    path_61.cubicTo(
+        size.width * 0.6001111,
+        size.height * 0.3272140,
+        size.width * 0.6004173,
+        size.height * 0.3270168,
+        size.width * 0.6007445,
+        size.height * 0.3268778);
+    path_61.lineTo(size.width * 0.6007715, size.height * 0.3268584);
+    path_61.cubicTo(
+        size.width * 0.6031042,
+        size.height * 0.3253749,
+        size.width * 0.6052987,
+        size.height * 0.3241273,
+        size.width * 0.6072351,
+        size.height * 0.3231222);
+    path_61.cubicTo(
+        size.width * 0.5991564,
+        size.height * 0.3156432,
+        size.width * 0.5957430,
+        size.height * 0.3071526,
+        size.width * 0.5946262,
+        size.height * 0.3037298);
+    path_61.cubicTo(
+        size.width * 0.5918793,
+        size.height * 0.3021138,
+        size.width * 0.5853918,
+        size.height * 0.2977052,
+        size.width * 0.5791804,
+        size.height * 0.2889367);
+    path_61.cubicTo(
+        size.width * 0.5722756,
+        size.height * 0.2791823,
+        size.width * 0.5732363,
+        size.height * 0.2639722,
+        size.width * 0.5738487,
+        size.height * 0.2585811);
+    path_61.cubicTo(
+        size.width * 0.5439057,
+        size.height * 0.2299289,
+        size.width * 0.5270159,
+        size.height * 0.1895540,
+        size.width * 0.5236566,
+        size.height * 0.1809955);
+    path_61.cubicTo(
+        size.width * 0.5127109,
+        size.height * 0.1769198,
+        size.width * 0.5015131,
+        size.height * 0.1588688,
+        size.width * 0.5002131,
+        size.height * 0.1567259);
+    path_61.cubicTo(
+        size.width * 0.4999580,
+        size.height * 0.1563051,
+        size.width * 0.4997929,
+        size.height * 0.1558290,
+        size.width * 0.4997268,
+        size.height * 0.1553316);
+    path_61.cubicTo(
+        size.width * 0.4996638,
+        size.height * 0.1548342,
+        size.width * 0.4996998,
+        size.height * 0.1543274,
+        size.width * 0.4998379,
+        size.height * 0.1538471);
+    path_61.cubicTo(
+        size.width * 0.4999760,
+        size.height * 0.1533668,
+        size.width * 0.5002071,
+        size.height * 0.1529250,
+        size.width * 0.5005224,
+        size.height * 0.1525530);
+    path_61.cubicTo(
+        size.width * 0.5008346,
+        size.height * 0.1521807,
+        size.width * 0.5012219,
+        size.height * 0.1518875,
+        size.width * 0.5016512,
+        size.height * 0.1516936);
+    path_61.lineTo(size.width * 0.5083819, size.height * 0.1486652);
+    path_61.cubicTo(
+        size.width * 0.4973882,
+        size.height * 0.1404169,
+        size.width * 0.4928760,
+        size.height * 0.1279606,
+        size.width * 0.4926629,
+        size.height * 0.1273529);
+    path_61.cubicTo(
+        size.width * 0.4924887,
+        size.height * 0.1268575,
+        size.width * 0.4924227,
+        size.height * 0.1263248,
+        size.width * 0.4924707,
+        size.height * 0.1257973);
+    path_61.cubicTo(
+        size.width * 0.4925188,
+        size.height * 0.1252699,
+        size.width * 0.4926809,
+        size.height * 0.1247615,
+        size.width * 0.4929421,
+        size.height * 0.1243125);
+    path_61.cubicTo(
+        size.width * 0.4932032,
+        size.height * 0.1238636,
+        size.width * 0.4935605,
+        size.height * 0.1234864,
+        size.width * 0.4939808,
+        size.height * 0.1232101);
+    path_61.cubicTo(
+        size.width * 0.4944011,
+        size.height * 0.1229341,
+        size.width * 0.4948754,
+        size.height * 0.1227666,
+        size.width * 0.4953648,
+        size.height * 0.1227214);
+    path_61.cubicTo(
+        size.width * 0.4954248,
+        size.height * 0.1227214,
+        size.width * 0.5029601,
+        size.height * 0.1218649,
+        size.width * 0.5121765,
+        size.height * 0.1143827);
+    path_61.cubicTo(
+        size.width * 0.5191024,
+        size.height * 0.1087557,
+        size.width * 0.5261693,
+        size.height * 0.1011312,
+        size.width * 0.5297568,
+        size.height * 0.09710407);
+    path_61.cubicTo(
+        size.width * 0.5180817,
+        size.height * 0.08685197,
+        size.width * 0.5177484,
+        size.height * 0.07380414,
+        size.width * 0.5177484,
+        size.height * 0.07321267);
+    path_61.cubicTo(
+        size.width * 0.5177424,
+        size.height * 0.07274855,
+        size.width * 0.5178235,
+        size.height * 0.07228765,
+        size.width * 0.5179856,
+        size.height * 0.07185811);
+    path_61.cubicTo(
+        size.width * 0.5181507,
+        size.height * 0.07142857,
+        size.width * 0.5183939,
+        size.height * 0.07103943,
+        size.width * 0.5187001,
+        size.height * 0.07071429);
+    path_61.cubicTo(
+        size.width * 0.5190093,
+        size.height * 0.07039173,
+        size.width * 0.5193786,
+        size.height * 0.07013963,
+        size.width * 0.5197808,
+        size.height * 0.06997317);
+    path_61.cubicTo(
+        size.width * 0.5201831,
+        size.height * 0.06980672,
+        size.width * 0.5206124,
+        size.height * 0.06972883,
+        size.width * 0.5210417,
+        size.height * 0.06974467);
+    path_61.cubicTo(
+        size.width * 0.5210417,
+        size.height * 0.06974467,
+        size.width * 0.5267277,
+        size.height * 0.06961862,
+        size.width * 0.5354518,
+        size.height * 0.06150291);
+    path_61.cubicTo(
+        size.width * 0.5490543,
+        size.height * 0.04886555,
+        size.width * 0.5855509,
+        size.height * 0.01808985,
+        size.width * 0.6305284,
+        size.height * 0.005245637);
+    path_61.cubicTo(
+        size.width * 0.6696307,
+        size.height * -0.005917906,
+        size.width * 0.7048604,
+        size.height * 0.004996768,
+        size.width * 0.7169889,
+        size.height * 0.009631545);
+    path_61.lineTo(size.width * 0.7169889, size.height * 0.003425986);
+    path_61.cubicTo(
+        size.width * 0.7169889,
+        size.height * 0.002900301,
+        size.width * 0.7171000,
+        size.height * 0.002381548,
+        size.width * 0.7173161,
+        size.height * 0.001909887);
+    path_61.cubicTo(
+        size.width * 0.7175323,
+        size.height * 0.001438226,
+        size.width * 0.7178445,
+        size.height * 0.001026309,
+        size.width * 0.7182318,
+        size.height * 0.0007060181);
+    path_61.cubicTo(
+        size.width * 0.7186190,
+        size.height * 0.0003857272,
+        size.width * 0.7190693,
+        size.height * 0.0001656597,
+        size.width * 0.7195497,
+        size.height * 0.00006284745);
+    path_61.cubicTo(
+        size.width * 0.7200270,
+        size.height * -0.00003996445,
+        size.width * 0.7205224,
+        size.height * -0.00002276231,
+        size.width * 0.7209937,
+        size.height * 0.0001131228);
+    path_61.cubicTo(
+        size.width * 0.7281687,
+        size.height * 0.002136393,
+        size.width * 0.7415731,
+        size.height * 0.01721073,
+        size.width * 0.7461093,
+        size.height * 0.02249838);
+    path_61.cubicTo(
+        size.width * 0.7619424,
+        size.height * 0.02187460,
+        size.width * 0.7790453,
+        size.height * 0.03326761,
+        size.width * 0.7797899,
+        size.height * 0.03376535);
+    path_61.cubicTo(
+        size.width * 0.7802882,
+        size.height * 0.03410084,
+        size.width * 0.7806935,
+        size.height * 0.03457854,
+        size.width * 0.7809547,
+        size.height * 0.03514577);
+    path_61.cubicTo(
+        size.width * 0.7812159,
+        size.height * 0.03571267,
+        size.width * 0.7813269,
+        size.height * 0.03634680,
+        size.width * 0.7812759,
+        size.height * 0.03697770);
+    path_61.cubicTo(
+        size.width * 0.7812219,
+        size.height * 0.03760860,
+        size.width * 0.7810087,
+        size.height * 0.03821170,
+        size.width * 0.7806575,
+        size.height * 0.03871946);
+    path_61.cubicTo(
+        size.width * 0.7803062,
+        size.height * 0.03922721,
+        size.width * 0.7798289,
+        size.height * 0.03962023,
+        size.width * 0.7792825,
+        size.height * 0.03985456);
+    path_61.lineTo(size.width * 0.7716512, size.height * 0.04312217);
+    path_61.cubicTo(
+        size.width * 0.8026659,
+        size.height * 0.07770524,
+        size.width * 0.8036716,
+        size.height * 0.1513672,
+        size.width * 0.8035815,
+        size.height * 0.1650646);
+    path_61.cubicTo(
+        size.width * 0.8088172,
+        size.height * 0.1684906,
+        size.width * 0.8224947,
+        size.height * 0.1800291,
+        size.width * 0.8175263,
+        size.height * 0.2048546);
+    path_61.cubicTo(
+        size.width * 0.8173822,
+        size.height * 0.2055785,
+        size.width * 0.8172231,
+        size.height * 0.2062841,
+        size.width * 0.8170519,
+        size.height * 0.2069716);
+    path_61.cubicTo(
+        size.width * 0.8324437,
+        size.height * 0.1998610,
+        size.width * 0.8520745,
+        size.height * 0.1948093,
+        size.width * 0.8719063,
+        size.height * 0.2004848);
+    path_61.cubicTo(
+        size.width * 0.9136566,
+        size.height * 0.2124240,
+        size.width * 0.9244821,
+        size.height * 0.2422689,
+        size.width * 0.9249234,
+        size.height * 0.2435326);
+    path_61.cubicTo(
+        size.width * 0.9268028,
+        size.height * 0.2489302,
+        size.width * 0.9261483,
+        size.height * 0.2541176,
+        size.width * 0.9252056,
+        size.height * 0.2565482);
+    path_61.cubicTo(
+        size.width * 0.9258811,
+        size.height * 0.2615449,
+        size.width * 0.9244641,
+        size.height * 0.2657207,
+        size.width * 0.9209847,
+        size.height * 0.2689884);
+    path_61.cubicTo(
+        size.width * 0.9204863,
+        size.height * 0.2737363,
+        size.width * 0.9177694,
+        size.height * 0.2805107,
+        size.width * 0.9100781,
+        size.height * 0.2821816);
+    path_61.cubicTo(
+        size.width * 0.9098979,
+        size.height * 0.2837566,
+        size.width * 0.9093606,
+        size.height * 0.2852595,
+        size.width * 0.9085140,
+        size.height * 0.2865579);
+    path_61.cubicTo(
+        size.width * 0.9074782,
+        size.height * 0.2881189,
+        size.width * 0.9054338,
+        size.height * 0.2900743,
+        size.width * 0.9015911,
+        size.height * 0.2905301);
+    path_61.cubicTo(
+        size.width * 0.8937046,
+        size.height * 0.2914997,
+        size.width * 0.8823446,
+        size.height * 0.2871590,
+        size.width * 0.8785890,
+        size.height * 0.2829638);
+    path_61.cubicTo(
+        size.width * 0.8775893,
+        size.height * 0.2818003,
+        size.width * 0.8767307,
+        size.height * 0.2805061,
+        size.width * 0.8760312,
+        size.height * 0.2791112);
+    path_61.cubicTo(
+        size.width * 0.8747793,
+        size.height * 0.2768003,
+        size.width * 0.8734854,
+        size.height * 0.2744085,
+        size.width * 0.8677484,
+        size.height * 0.2709858);
+    path_61.cubicTo(
+        size.width * 0.8601021,
+        size.height * 0.2664221,
+        size.width * 0.8441579,
+        size.height * 0.2700162,
+        size.width * 0.8225848,
+        size.height * 0.2926988);
+    path_61.cubicTo(
+        size.width * 0.8313930,
+        size.height * 0.3028992,
+        size.width * 0.8459772,
+        size.height * 0.3155721,
+        size.width * 0.8640558,
+        size.height * 0.3155753);
+    path_61.cubicTo(
+        size.width * 0.8656019,
+        size.height * 0.3155756,
+        size.width * 0.8671450,
+        size.height * 0.3154842,
+        size.width * 0.8686791,
+        size.height * 0.3153006);
+    path_61.cubicTo(
+        size.width * 0.8869919,
+        size.height * 0.3131060,
+        size.width * 0.8964695,
+        size.height * 0.3059890,
+        size.width * 0.9074332,
+        size.height * 0.2977473);
+    path_61.cubicTo(
+        size.width * 0.9167938,
+        size.height * 0.2907111,
+        size.width * 0.9264755,
+        size.height * 0.2834357,
+        size.width * 0.9425368,
+        size.height * 0.2785844);
+    path_61.cubicTo(
+        size.width * 0.9603873,
+        size.height * 0.2731868,
+        size.width * 0.9757520,
+        size.height * 0.2758306,
+        size.width * 0.9858061,
+        size.height * 0.2860181);
+    path_61.lineTo(size.width * 0.9857971, size.height * 0.2860181);
     path_61.close();
-    path_61.moveTo(3298.57, 1124.94);
-    path_61.cubicTo(3319.1, 1015.28, 3309.05, 937.86, 3269.17, 900.32);
-    path_61.cubicTo(3233.45, 866.7, 3182.08, 871.96, 3145.29, 882.32);
-    path_61.cubicTo(3095.24, 896.32, 3064.49, 917.83, 3034.76, 938.59);
-    path_61.cubicTo(2997.48, 964.59, 2962.28, 989.19, 2895.88, 996.59);
-    path_61.cubicTo(2819.34, 1005.09, 2759.63, 958.34, 2724.88, 920.93);
-    path_61.cubicTo(2720.92, 925.117, 2716.92, 929.48, 2712.88, 934.02);
-    path_61.cubicTo(2717.29, 943.09, 2725.63, 960.78, 2735.48, 984.25);
-    path_61.cubicTo(2749.12, 994.89, 2763, 1005.15, 2777.38, 1014.31);
-    path_61.cubicTo(2809.3, 1035.24, 2843.63, 1052.75, 2880.55, 1062.49);
-    path_61.cubicTo(2936.37, 1076.18, 2994.44, 1079.96, 3051.79, 1078.21);
-    path_61.cubicTo(3071.01, 1077.5, 3090.61, 1076.05, 3109.13, 1073.49);
-    path_61.cubicTo(3109.43, 1073.49, 3109.72, 1073.43, 3110, 1073.42);
-    path_61.cubicTo(3221.16, 1065, 3275.23, 1100.84, 3298.6, 1125);
-    path_61.lineTo(3298.57, 1124.94);
+    path_61.moveTo(size.width * 0.9902642, size.height * 0.3635876);
+    path_61.cubicTo(
+        size.width * 0.9964275,
+        size.height * 0.3281448,
+        size.width * 0.9934104,
+        size.height * 0.3031222,
+        size.width * 0.9814380,
+        size.height * 0.2909890);
+    path_61.cubicTo(
+        size.width * 0.9707145,
+        size.height * 0.2801228,
+        size.width * 0.9552927,
+        size.height * 0.2818229,
+        size.width * 0.9442480,
+        size.height * 0.2851713);
+    path_61.cubicTo(
+        size.width * 0.9292225,
+        size.height * 0.2896962,
+        size.width * 0.9199910,
+        size.height * 0.2966484,
+        size.width * 0.9110657,
+        size.height * 0.3033581);
+    path_61.cubicTo(
+        size.width * 0.8998739,
+        size.height * 0.3117615,
+        size.width * 0.8893065,
+        size.height * 0.3197123,
+        size.width * 0.8693726,
+        size.height * 0.3221041);
+    path_61.cubicTo(
+        size.width * 0.8463945,
+        size.height * 0.3248513,
+        size.width * 0.8284689,
+        size.height * 0.3097414,
+        size.width * 0.8180366,
+        size.height * 0.2976503);
+    path_61.cubicTo(
+        size.width * 0.8168478,
+        size.height * 0.2990036,
+        size.width * 0.8156470,
+        size.height * 0.3004137,
+        size.width * 0.8144341,
+        size.height * 0.3018811);
+    path_61.cubicTo(
+        size.width * 0.8157580,
+        size.height * 0.3048125,
+        size.width * 0.8182618,
+        size.height * 0.3105301,
+        size.width * 0.8212189,
+        size.height * 0.3181157);
+    path_61.cubicTo(
+        size.width * 0.8253137,
+        size.height * 0.3215546,
+        size.width * 0.8294806,
+        size.height * 0.3248707,
+        size.width * 0.8337977,
+        size.height * 0.3278313);
+    path_61.cubicTo(
+        size.width * 0.8433804,
+        size.height * 0.3345960,
+        size.width * 0.8536866,
+        size.height * 0.3402553,
+        size.width * 0.8647703,
+        size.height * 0.3434034);
+    path_61.cubicTo(
+        size.width * 0.8815281,
+        size.height * 0.3478281,
+        size.width * 0.8989613,
+        size.height * 0.3490498,
+        size.width * 0.9161783,
+        size.height * 0.3484842);
+    path_61.cubicTo(
+        size.width * 0.9219484,
+        size.height * 0.3482547,
+        size.width * 0.9278325,
+        size.height * 0.3477860,
+        size.width * 0.9333924,
+        size.height * 0.3469586);
+    path_61.cubicTo(
+        size.width * 0.9334824,
+        size.height * 0.3469586,
+        size.width * 0.9335695,
+        size.height * 0.3469392,
+        size.width * 0.9336536,
+        size.height * 0.3469360);
+    path_61.cubicTo(
+        size.width * 0.9670249,
+        size.height * 0.3442146,
+        size.width * 0.9832573,
+        size.height * 0.3557983,
+        size.width * 0.9902732,
+        size.height * 0.3636070);
+    path_61.lineTo(size.width * 0.9902642, size.height * 0.3635876);
     path_61.close();
-    path_61.moveTo(3140.78, 1367.6);
-    path_61.cubicTo(3177.99, 1337.43, 3179.29, 1295.77, 3144.63, 1243.79);
-    path_61.cubicTo(3109.97, 1191.81, 3102.17, 1123.22, 3100.4, 1095.93);
-    path_61.cubicTo(3025.12, 1104.6, 2948.79, 1100.09, 2875.49, 1080.39);
-    path_61.cubicTo(2827.69, 1065.64, 2783.63, 1039.85, 2745.11, 1007.99);
-    path_61.cubicTo(2763.73, 1055.38, 2784.66, 1117.99, 2794.43, 1180.27);
-    path_61.cubicTo(2830.38, 1173.82, 2867.44, 1180.16, 2899.21, 1198.17);
-    path_61.cubicTo(2945.99, 1224.51, 2974.08, 1270.17, 2974.35, 1320.36);
-    path_61.cubicTo(2974.55, 1357.17, 2964.44, 1408.96, 2951.04, 1459.36);
-    path_61.cubicTo(2955.95, 1461.22, 2960.87, 1463.04, 2965.74, 1464.81);
-    path_61.cubicTo(2988.58, 1429.29, 3037.36, 1411.25, 3080.74, 1395.19);
-    path_61.cubicTo(3105.33, 1386.11, 3128.54, 1377.52, 3140.78, 1367.6);
+    path_61.moveTo(size.width * 0.9428940, size.height * 0.4420168);
+    path_61.cubicTo(
+        size.width * 0.9540648,
+        size.height * 0.4322657,
+        size.width * 0.9544551,
+        size.height * 0.4188009,
+        size.width * 0.9440498,
+        size.height * 0.4020006);
+    path_61.cubicTo(
+        size.width * 0.9336446,
+        size.height * 0.3852004,
+        size.width * 0.9313029,
+        size.height * 0.3630317,
+        size.width * 0.9307715,
+        size.height * 0.3542114);
+    path_61.cubicTo(
+        size.width * 0.9081717,
+        size.height * 0.3570136,
+        size.width * 0.8852567,
+        size.height * 0.3555559,
+        size.width * 0.8632513,
+        size.height * 0.3491888);
+    path_61.cubicTo(
+        size.width * 0.8489012,
+        size.height * 0.3444215,
+        size.width * 0.8356740,
+        size.height * 0.3360860,
+        size.width * 0.8241099,
+        size.height * 0.3257886);
+    path_61.cubicTo(
+        size.width * 0.8296998,
+        size.height * 0.3411054,
+        size.width * 0.8359832,
+        size.height * 0.3613413,
+        size.width * 0.8389162,
+        size.height * 0.3814706);
+    path_61.cubicTo(
+        size.width * 0.8497088,
+        size.height * 0.3793859,
+        size.width * 0.8608346,
+        size.height * 0.3814350,
+        size.width * 0.8703723,
+        size.height * 0.3872560);
+    path_61.cubicTo(
+        size.width * 0.8844161,
+        size.height * 0.3957692,
+        size.width * 0.8928490,
+        size.height * 0.4105268,
+        size.width * 0.8929301,
+        size.height * 0.4267485);
+    path_61.cubicTo(
+        size.width * 0.8929901,
+        size.height * 0.4386458,
+        size.width * 0.8899550,
+        size.height * 0.4553846,
+        size.width * 0.8859322,
+        size.height * 0.4716742);
+    path_61.cubicTo(
+        size.width * 0.8874062,
+        size.height * 0.4722754,
+        size.width * 0.8888832,
+        size.height * 0.4728636,
+        size.width * 0.8903452,
+        size.height * 0.4734357);
+    path_61.cubicTo(
+        size.width * 0.8972020,
+        size.height * 0.4619554,
+        size.width * 0.9118463,
+        size.height * 0.4561248,
+        size.width * 0.9248694,
+        size.height * 0.4509341);
+    path_61.cubicTo(
+        size.width * 0.9322516,
+        size.height * 0.4479994,
+        size.width * 0.9392195,
+        size.height * 0.4452230,
+        size.width * 0.9428940,
+        size.height * 0.4420168);
     path_61.close();
-    path_61.moveTo(3062.46, 765.36);
-    path_61.cubicTo(3062.08, 763.862, 3061.62, 762.387, 3061.08, 760.94);
-    path_61.cubicTo(3060.75, 760.08, 3027.5, 674.94, 2898.88, 640.78);
-    path_61.cubicTo(2881.62, 636.255, 2863.84, 633.996, 2845.99, 634.06);
-    path_61.cubicTo(2809.53, 634.06, 2774.28, 642.9, 2743.38, 654.79);
-    path_61.cubicTo(2766.5, 679.26, 2814.53, 740.05, 2816.25, 824.1);
-    path_61.cubicTo(2862, 803.86, 2890, 814, 2900.74, 819.9);
-    path_61.cubicTo(2924.95, 833.32, 2931.28, 844.17, 2936.36, 852.9);
-    path_61.cubicTo(2937.85, 855.744, 2939.69, 858.393, 2941.83, 860.79);
-    path_61.cubicTo(2949.58, 868.79, 2980.41, 880.15, 3000.83, 877.85);
-    path_61.cubicTo(3004.83, 877.4, 3007.57, 876.22, 3008.96, 874.33);
-    path_61.cubicTo(3009.92, 872.864, 3010.47, 871.162, 3010.53, 869.41);
-    path_61.cubicTo(2999.41, 861.41, 2989.46, 852.54, 2981.77, 840.65);
-    path_61.cubicTo(2980.78, 838.961, 2980.02, 837.14, 2979.54, 835.24);
-    path_61.cubicTo(2976.89, 824.24, 2988.49, 818.05, 2997.49, 821.69);
-    path_61.cubicTo(3000.75, 822.779, 3003.67, 824.715, 3005.94, 827.3);
-    path_61.cubicTo(3006.13, 827.522, 3006.23, 827.81, 3006.21, 828.103);
-    path_61.cubicTo(3006.19, 828.395, 3006.05, 828.667, 3005.83, 828.86);
-    path_61.cubicTo(3003.12, 830.332, 3000.28, 831.566, 2997.35, 832.55);
-    path_61.cubicTo(2998.42, 833.55, 2999.61, 834.55, 3000.91, 835.55);
-    path_61.cubicTo(3004.58, 838.41, 3008.48, 841.25, 3012.41, 844.11);
-    path_61.cubicTo(3016.34, 846.97, 3020.29, 849.85, 3024.07, 852.78);
-    path_61.cubicTo(3042.51, 850.57, 3046.07, 836.19, 3046.73, 829.78);
-    path_61.cubicTo(3040.53, 820.18, 3035.13, 809.69, 3029.26, 799.86);
-    path_61.cubicTo(3026.61, 795.826, 3025.14, 791.127, 3025.03, 786.3);
-    path_61.cubicTo(3025.02, 785.975, 3025.13, 785.659, 3025.35, 785.419);
-    path_61.cubicTo(3025.57, 785.179, 3025.88, 785.036, 3026.2, 785.02);
-    path_61.cubicTo(3037.63, 784.77, 3043.26, 792.87, 3050.49, 799.51);
-    path_61.cubicTo(3053.59, 802.752, 3056.5, 806.171, 3059.21, 809.75);
-    path_61.cubicTo(3062.21, 804.18, 3061.29, 799.08, 3060.65, 795.56);
-    path_61.cubicTo(3060.65, 795.36, 3060.58, 795.17, 3060.56, 794.98);
-    path_61.cubicTo(3055.26, 787.59, 3050.67, 779.17, 3045.46, 771.73);
-    path_61.cubicTo(3043.46, 769.07, 3042.03, 766.05, 3041.12, 760.55);
-    path_61.cubicTo(3041.07, 760.243, 3041.13, 759.929, 3041.29, 759.661);
-    path_61.cubicTo(3041.44, 759.393, 3041.69, 759.187, 3041.98, 759.08);
-    path_61.cubicTo(3048.31, 756.64, 3055.74, 760, 3062.46, 765.36);
+    path_61.moveTo(size.width * 0.9193816, size.height * 0.2473691);
+    path_61.cubicTo(
+        size.width * 0.9192675,
+        size.height * 0.2468849,
+        size.width * 0.9191294,
+        size.height * 0.2464082,
+        size.width * 0.9189673,
+        size.height * 0.2459405);
+    path_61.cubicTo(
+        size.width * 0.9188682,
+        size.height * 0.2456626,
+        size.width * 0.9088862,
+        size.height * 0.2181448,
+        size.width * 0.8702732,
+        size.height * 0.2071041);
+    path_61.cubicTo(
+        size.width * 0.8650916,
+        size.height * 0.2056416,
+        size.width * 0.8597538,
+        size.height * 0.2049114,
+        size.width * 0.8543951,
+        size.height * 0.2049321);
+    path_61.cubicTo(
+        size.width * 0.8434494,
+        size.height * 0.2049321,
+        size.width * 0.8328670,
+        size.height * 0.2077893,
+        size.width * 0.8235905,
+        size.height * 0.2116322);
+    path_61.cubicTo(
+        size.width * 0.8305314,
+        size.height * 0.2195410,
+        size.width * 0.8449505,
+        size.height * 0.2391888,
+        size.width * 0.8454668,
+        size.height * 0.2663542);
+    path_61.cubicTo(
+        size.width * 0.8592014,
+        size.height * 0.2598125,
+        size.width * 0.8676073,
+        size.height * 0.2630899,
+        size.width * 0.8708316,
+        size.height * 0.2649968);
+    path_61.cubicTo(
+        size.width * 0.8780997,
+        size.height * 0.2693342,
+        size.width * 0.8800000,
+        size.height * 0.2728410,
+        size.width * 0.8815251,
+        size.height * 0.2756626);
+    path_61.cubicTo(
+        size.width * 0.8819724,
+        size.height * 0.2765818,
+        size.width * 0.8825248,
+        size.height * 0.2774379,
+        size.width * 0.8831672,
+        size.height * 0.2782127);
+    path_61.cubicTo(
+        size.width * 0.8854938,
+        size.height * 0.2807983,
+        size.width * 0.8947493,
+        size.height * 0.2844699,
+        size.width * 0.9008796,
+        size.height * 0.2837266);
+    path_61.cubicTo(
+        size.width * 0.9020805,
+        size.height * 0.2835811,
+        size.width * 0.9029030,
+        size.height * 0.2831997,
+        size.width * 0.9033203,
+        size.height * 0.2825889);
+    path_61.cubicTo(
+        size.width * 0.9036085,
+        size.height * 0.2821151,
+        size.width * 0.9037736,
+        size.height * 0.2815650,
+        size.width * 0.9037917,
+        size.height * 0.2809987);
+    path_61.cubicTo(
+        size.width * 0.9004533,
+        size.height * 0.2784131,
+        size.width * 0.8974662,
+        size.height * 0.2755462,
+        size.width * 0.8951576,
+        size.height * 0.2717033);
+    path_61.cubicTo(
+        size.width * 0.8948604,
+        size.height * 0.2711574,
+        size.width * 0.8946322,
+        size.height * 0.2705688,
+        size.width * 0.8944881,
+        size.height * 0.2699548);
+    path_61.cubicTo(
+        size.width * 0.8936926,
+        size.height * 0.2663995,
+        size.width * 0.8971750,
+        size.height * 0.2643988,
+        size.width * 0.8998769,
+        size.height * 0.2655753);
+    path_61.cubicTo(
+        size.width * 0.9008556,
+        size.height * 0.2659273,
+        size.width * 0.9017322,
+        size.height * 0.2665530,
+        size.width * 0.9024137,
+        size.height * 0.2673885);
+    path_61.cubicTo(
+        size.width * 0.9024707,
+        size.height * 0.2674602,
+        size.width * 0.9025008,
+        size.height * 0.2675533,
+        size.width * 0.9024947,
+        size.height * 0.2676480);
+    path_61.cubicTo(
+        size.width * 0.9024887,
+        size.height * 0.2677424,
+        size.width * 0.9024467,
+        size.height * 0.2678303,
+        size.width * 0.9023807,
+        size.height * 0.2678927);
+    path_61.cubicTo(
+        size.width * 0.9015671,
+        size.height * 0.2683685,
+        size.width * 0.9007145,
+        size.height * 0.2687673,
+        size.width * 0.8998349,
+        size.height * 0.2690853);
+    path_61.cubicTo(
+        size.width * 0.9001561,
+        size.height * 0.2694085,
+        size.width * 0.9005134,
+        size.height * 0.2697317,
+        size.width * 0.9009036,
+        size.height * 0.2700549);
+    path_61.cubicTo(
+        size.width * 0.9020054,
+        size.height * 0.2709793,
+        size.width * 0.9031762,
+        size.height * 0.2718972,
+        size.width * 0.9043560,
+        size.height * 0.2728216);
+    path_61.cubicTo(
+        size.width * 0.9055359,
+        size.height * 0.2737460,
+        size.width * 0.9067217,
+        size.height * 0.2746768,
+        size.width * 0.9078565,
+        size.height * 0.2756238);
+    path_61.cubicTo(
+        size.width * 0.9133924,
+        size.height * 0.2749095,
+        size.width * 0.9144611,
+        size.height * 0.2702618,
+        size.width * 0.9146593,
+        size.height * 0.2681900);
+    path_61.cubicTo(
+        size.width * 0.9127980,
+        size.height * 0.2650873,
+        size.width * 0.9111768,
+        size.height * 0.2616968,
+        size.width * 0.9094146,
+        size.height * 0.2585197);
+    path_61.cubicTo(
+        size.width * 0.9086190,
+        size.height * 0.2572159,
+        size.width * 0.9081777,
+        size.height * 0.2556972,
+        size.width * 0.9081447,
+        size.height * 0.2541370);
+    path_61.cubicTo(
+        size.width * 0.9081417,
+        size.height * 0.2540320,
+        size.width * 0.9081747,
+        size.height * 0.2539299,
+        size.width * 0.9082408,
+        size.height * 0.2538523);
+    path_61.cubicTo(
+        size.width * 0.9083068,
+        size.height * 0.2537747,
+        size.width * 0.9083999,
+        size.height * 0.2537285,
+        size.width * 0.9084959,
+        size.height * 0.2537233);
+    path_61.cubicTo(
+        size.width * 0.9119273,
+        size.height * 0.2536425,
+        size.width * 0.9136175,
+        size.height * 0.2562605,
+        size.width * 0.9157881,
+        size.height * 0.2584066);
+    path_61.cubicTo(
+        size.width * 0.9167187,
+        size.height * 0.2594544,
+        size.width * 0.9175923,
+        size.height * 0.2605595,
+        size.width * 0.9184059,
+        size.height * 0.2617162);
+    path_61.cubicTo(
+        size.width * 0.9193065,
+        size.height * 0.2599160,
+        size.width * 0.9190303,
+        size.height * 0.2582676,
+        size.width * 0.9188382,
+        size.height * 0.2571299);
+    path_61.cubicTo(
+        size.width * 0.9188382,
+        size.height * 0.2570653,
+        size.width * 0.9188172,
+        size.height * 0.2570039,
+        size.width * 0.9188112,
+        size.height * 0.2569425);
+    path_61.cubicTo(
+        size.width * 0.9172201,
+        size.height * 0.2545540,
+        size.width * 0.9158421,
+        size.height * 0.2518326,
+        size.width * 0.9142780,
+        size.height * 0.2494279);
+    path_61.cubicTo(
+        size.width * 0.9136776,
+        size.height * 0.2485682,
+        size.width * 0.9132483,
+        size.height * 0.2475921,
+        size.width * 0.9129751,
+        size.height * 0.2458145);
+    path_61.cubicTo(
+        size.width * 0.9129601,
+        size.height * 0.2457153,
+        size.width * 0.9129781,
+        size.height * 0.2456138,
+        size.width * 0.9130261,
+        size.height * 0.2455271);
+    path_61.cubicTo(
+        size.width * 0.9130711,
+        size.height * 0.2454405,
+        size.width * 0.9131462,
+        size.height * 0.2453739,
+        size.width * 0.9132333,
+        size.height * 0.2453394);
+    path_61.cubicTo(
+        size.width * 0.9151336,
+        size.height * 0.2445507,
+        size.width * 0.9173642,
+        size.height * 0.2456367,
+        size.width * 0.9193816,
+        size.height * 0.2473691);
     path_61.close();
-    path_61.moveTo(2903.52, 1600.7);
-    path_61.cubicTo(3017.46, 1596.45, 3080.07, 1551.5, 3106.11, 1526.79);
-    path_61.cubicTo(3044.44, 1521.72, 2974.18, 1490.99, 2966.72, 1487.66);
-    path_61.cubicTo(2959.53, 1485.28, 2952.4, 1482.77, 2945.31, 1480.14);
-    path_61.cubicTo(2931.4, 1529, 2915.25, 1574.33, 2903.52, 1600.7);
+    path_61.moveTo(size.width * 0.8716662, size.height * 0.5173562);
+    path_61.cubicTo(
+        size.width * 0.9058721,
+        size.height * 0.5159825,
+        size.width * 0.9246683,
+        size.height * 0.5014544,
+        size.width * 0.9324857,
+        size.height * 0.4934680);
+    path_61.cubicTo(
+        size.width * 0.9139718,
+        size.height * 0.4918293,
+        size.width * 0.8928790,
+        size.height * 0.4818972,
+        size.width * 0.8906394,
+        size.height * 0.4808209);
+    path_61.cubicTo(
+        size.width * 0.8884809,
+        size.height * 0.4800517,
+        size.width * 0.8863404,
+        size.height * 0.4792405,
+        size.width * 0.8842119,
+        size.height * 0.4783904);
+    path_61.cubicTo(
+        size.width * 0.8800360,
+        size.height * 0.4941823,
+        size.width * 0.8751876,
+        size.height * 0.5088332,
+        size.width * 0.8716662,
+        size.height * 0.5173562);
     path_61.close();
-    path_61.moveTo(2994.16, 833.84);
-    path_61.lineTo(2993.94, 833.93);
-    path_61.cubicTo(2993.21, 834.35, 2992.34, 834.83, 2992.94, 834.82);
-    path_61.cubicTo(2993.17, 834.89, 2993.7, 834.45, 2994.16, 833.84);
+    path_61.moveTo(size.width * 0.8988772, size.height * 0.2695023);
+    path_61.lineTo(size.width * 0.8988112, size.height * 0.2695314);
+    path_61.cubicTo(
+        size.width * 0.8985920,
+        size.height * 0.2696671,
+        size.width * 0.8983308,
+        size.height * 0.2698222,
+        size.width * 0.8985110,
+        size.height * 0.2698190);
+    path_61.cubicTo(
+        size.width * 0.8985800,
+        size.height * 0.2698416,
+        size.width * 0.8987391,
+        size.height * 0.2696994,
+        size.width * 0.8988772,
+        size.height * 0.2695023);
     path_61.close();
-    path_61.moveTo(2927.24, 1450.08);
-    path_61.cubicTo(2937.78, 1410.51, 2946.24, 1369.92, 2948.38, 1336.98);
-    path_61.cubicTo(2904.74, 1287.83, 2847.84, 1273.68, 2798.93, 1272.8);
-    path_61.lineTo(2798.8, 1272.8);
-    path_61.cubicTo(2795.17, 1272.74, 2791.58, 1272.8, 2788.05, 1272.8);
-    path_61.cubicTo(2784.52, 1272.8, 2781.05, 1273.01, 2777.61, 1273.2);
-    path_61.cubicTo(2763, 1274.05, 2748.46, 1275.89, 2734.1, 1278.72);
-    path_61.cubicTo(2721.6, 1281.17, 2711.39, 1283.91, 2704.41, 1286.01);
-    path_61.cubicTo(2701.61, 1292.5, 2699.15, 1299.14, 2697.01, 1305.84);
-    path_61.cubicTo(2685.33, 1342.34, 2682.87, 1380.59, 2682.83, 1405.98);
-    path_61.cubicTo(2682.83, 1412.98, 2682.99, 1418.98, 2683.2, 1423.72);
-    path_61.cubicTo(2721.07, 1424.72, 2776.01, 1441.72, 2790.09, 1474.72);
-    path_61.cubicTo(2790.17, 1474.93, 2790.19, 1475.15, 2790.15, 1475.37);
-    path_61.cubicTo(2790.1, 1475.58, 2790, 1475.78, 2789.85, 1475.94);
-    path_61.cubicTo(2789.7, 1476.1, 2789.51, 1476.22, 2789.3, 1476.28);
-    path_61.cubicTo(2789.09, 1476.34, 2788.86, 1476.33, 2788.65, 1476.27);
-    path_61.cubicTo(2767.45, 1470.18, 2751.9, 1459.78, 2730.89, 1455.69);
-    path_61.cubicTo(2711.69, 1451.42, 2692.07, 1449.32, 2672.4, 1449.44);
-    path_61.cubicTo(2667.12, 1450.25, 2626.21, 1457.83, 2618.12, 1500.58);
-    path_61.cubicTo(2615, 1517.08, 2614.25, 1529.65, 2615.96, 1539.52);
-    path_61.cubicTo(2616.86, 1545.43, 2619.13, 1551.04, 2622.6, 1555.9);
-    path_61.cubicTo(2635.03, 1572.9, 2666.76, 1583.4, 2728.73, 1590.98);
-    path_61.cubicTo(2767.21, 1595.69, 2794.92, 1600.58, 2815.16, 1604.16);
-    path_61.cubicTo(2853.09, 1610.86, 2862.62, 1612.16, 2873.9, 1604.43);
-    path_61.cubicTo(2874.44, 1603.55, 2875.08, 1602.37, 2875.8, 1600.92);
-    path_61.cubicTo(2884.22, 1584.08, 2904.45, 1530.4, 2921.5, 1470.83);
-    path_61.cubicTo(2923.46, 1463.98, 2925.37, 1457.07, 2927.24, 1450.08);
+    path_61.moveTo(size.width * 0.8787872, size.height * 0.4686749);
+    path_61.cubicTo(
+        size.width * 0.8819514,
+        size.height * 0.4558856,
+        size.width * 0.8844911,
+        size.height * 0.4427666,
+        size.width * 0.8851336,
+        size.height * 0.4321202);
+    path_61.cubicTo(
+        size.width * 0.8720324,
+        size.height * 0.4162346,
+        size.width * 0.8549505,
+        size.height * 0.4116613,
+        size.width * 0.8402672,
+        size.height * 0.4113769);
+    path_61.lineTo(size.width * 0.8402282, size.height * 0.4113769);
+    path_61.cubicTo(
+        size.width * 0.8391384,
+        size.height * 0.4113575,
+        size.width * 0.8380606,
+        size.height * 0.4113769,
+        size.width * 0.8370009,
+        size.height * 0.4113769);
+    path_61.cubicTo(
+        size.width * 0.8359412,
+        size.height * 0.4113769,
+        size.width * 0.8348994,
+        size.height * 0.4114447,
+        size.width * 0.8338667,
+        size.height * 0.4115061);
+    path_61.cubicTo(
+        size.width * 0.8294806,
+        size.height * 0.4117809,
+        size.width * 0.8251156,
+        size.height * 0.4123756,
+        size.width * 0.8208046,
+        size.height * 0.4132902);
+    path_61.cubicTo(
+        size.width * 0.8170519,
+        size.height * 0.4140821,
+        size.width * 0.8139868,
+        size.height * 0.4149677,
+        size.width * 0.8118913,
+        size.height * 0.4156464);
+    path_61.cubicTo(
+        size.width * 0.8110507,
+        size.height * 0.4177440,
+        size.width * 0.8103122,
+        size.height * 0.4198901,
+        size.width * 0.8096698,
+        size.height * 0.4220556);
+    path_61.cubicTo(
+        size.width * 0.8061633,
+        size.height * 0.4338526,
+        size.width * 0.8054248,
+        size.height * 0.4462153,
+        size.width * 0.8054128,
+        size.height * 0.4544215);
+    path_61.cubicTo(
+        size.width * 0.8054128,
+        size.height * 0.4566839,
+        size.width * 0.8054608,
+        size.height * 0.4586231,
+        size.width * 0.8055239,
+        size.height * 0.4601551);
+    path_61.cubicTo(
+        size.width * 0.8168928,
+        size.height * 0.4604783,
+        size.width * 0.8333864,
+        size.height * 0.4659729,
+        size.width * 0.8376133,
+        size.height * 0.4766387);
+    path_61.cubicTo(
+        size.width * 0.8376373,
+        size.height * 0.4767065,
+        size.width * 0.8376434,
+        size.height * 0.4767776,
+        size.width * 0.8376313,
+        size.height * 0.4768487);
+    path_61.cubicTo(
+        size.width * 0.8376163,
+        size.height * 0.4769166,
+        size.width * 0.8375863,
+        size.height * 0.4769813,
+        size.width * 0.8375413,
+        size.height * 0.4770330);
+    path_61.cubicTo(
+        size.width * 0.8374962,
+        size.height * 0.4770847,
+        size.width * 0.8374392,
+        size.height * 0.4771235,
+        size.width * 0.8373762,
+        size.height * 0.4771429);
+    path_61.cubicTo(
+        size.width * 0.8373131,
+        size.height * 0.4771622,
+        size.width * 0.8372441,
+        size.height * 0.4771590,
+        size.width * 0.8371810,
+        size.height * 0.4771396);
+    path_61.cubicTo(
+        size.width * 0.8308166,
+        size.height * 0.4751713,
+        size.width * 0.8261483,
+        size.height * 0.4718100,
+        size.width * 0.8198409,
+        size.height * 0.4704880);
+    path_61.cubicTo(
+        size.width * 0.8140769,
+        size.height * 0.4691080,
+        size.width * 0.8081867,
+        size.height * 0.4684292,
+        size.width * 0.8022816,
+        size.height * 0.4684680);
+    path_61.cubicTo(
+        size.width * 0.8006965,
+        size.height * 0.4687298,
+        size.width * 0.7884149,
+        size.height * 0.4711797,
+        size.width * 0.7859862,
+        size.height * 0.4849968);
+    path_61.cubicTo(
+        size.width * 0.7850495,
+        size.height * 0.4903297,
+        size.width * 0.7848244,
+        size.height * 0.4943924,
+        size.width * 0.7853377,
+        size.height * 0.4975824);
+    path_61.cubicTo(
+        size.width * 0.7856079,
+        size.height * 0.4994926,
+        size.width * 0.7862894,
+        size.height * 0.5013058,
+        size.width * 0.7873311,
+        size.height * 0.5028765);
+    path_61.cubicTo(
+        size.width * 0.7910627,
+        size.height * 0.5083710,
+        size.width * 0.8005884,
+        size.height * 0.5117647,
+        size.width * 0.8191924,
+        size.height * 0.5142146);
+    path_61.cubicTo(
+        size.width * 0.8307445,
+        size.height * 0.5157369,
+        size.width * 0.8390633,
+        size.height * 0.5173174,
+        size.width * 0.8451396,
+        size.height * 0.5184745);
+    path_61.cubicTo(
+        size.width * 0.8565266,
+        size.height * 0.5206399,
+        size.width * 0.8593876,
+        size.height * 0.5210601,
+        size.width * 0.8627739,
+        size.height * 0.5185617);
+    path_61.cubicTo(
+        size.width * 0.8629361,
+        size.height * 0.5182773,
+        size.width * 0.8631282,
+        size.height * 0.5178959,
+        size.width * 0.8633443,
+        size.height * 0.5174273);
+    path_61.cubicTo(
+        size.width * 0.8658721,
+        size.height * 0.5119845,
+        size.width * 0.8719454,
+        size.height * 0.4946348,
+        size.width * 0.8770639,
+        size.height * 0.4753814);
+    path_61.cubicTo(
+        size.width * 0.8776524,
+        size.height * 0.4731674,
+        size.width * 0.8782258,
+        size.height * 0.4709341,
+        size.width * 0.8787872,
+        size.height * 0.4686749);
     path_61.close();
-    path_61.moveTo(2947.93, 1306.44);
-    path_61.cubicTo(2943.12, 1271.1, 2920.98, 1239.59, 2886.74, 1220.32);
-    path_61.cubicTo(2858.49, 1204.42, 2827.16, 1199.42, 2797.74, 1205.32);
-    path_61.lineTo(2797.45, 1205.32);
-    path_61.cubicTo(2790.46, 1206.74, 2783.61, 1208.76, 2776.98, 1211.38);
-    path_61.cubicTo(2776.87, 1211.41, 2776.77, 1211.45, 2776.67, 1211.5);
-    path_61.cubicTo(2770.44, 1213.97, 2764.42, 1216.95, 2758.67, 1220.4);
-    path_61.cubicTo(2741.58, 1230.65, 2728.27, 1244.62, 2717.93, 1260.57);
-    path_61.cubicTo(2737.76, 1255.97, 2757.95, 1253.12, 2778.27, 1252.04);
-    path_61.lineTo(2778.79, 1252.04);
-    path_61.cubicTo(2785.48, 1251.7, 2792.4, 1251.57, 2799.47, 1251.7);
-    path_61.lineTo(2800.02, 1251.7);
-    path_61.cubicTo(2847.61, 1252.66, 2902.38, 1265.22, 2947.93, 1306.44);
+    path_61.moveTo(size.width * 0.8849985, size.height * 0.4222495);
+    path_61.cubicTo(
+        size.width * 0.8835545,
+        size.height * 0.4108274,
+        size.width * 0.8769078,
+        size.height * 0.4006432,
+        size.width * 0.8666286,
+        size.height * 0.3944150);
+    path_61.cubicTo(
+        size.width * 0.8581477,
+        size.height * 0.3892760,
+        size.width * 0.8487421,
+        size.height * 0.3876600,
+        size.width * 0.8399099,
+        size.height * 0.3895669);
+    path_61.lineTo(size.width * 0.8398229, size.height * 0.3895669);
+    path_61.cubicTo(
+        size.width * 0.8377244,
+        size.height * 0.3900259,
+        size.width * 0.8356680,
+        size.height * 0.3906787,
+        size.width * 0.8336776,
+        size.height * 0.3915255);
+    path_61.cubicTo(
+        size.width * 0.8336446,
+        size.height * 0.3915352,
+        size.width * 0.8336145,
+        size.height * 0.3915482,
+        size.width * 0.8335845,
+        size.height * 0.3915643);
+    path_61.cubicTo(
+        size.width * 0.8317142,
+        size.height * 0.3923626,
+        size.width * 0.8299069,
+        size.height * 0.3933258,
+        size.width * 0.8281807,
+        size.height * 0.3944409);
+    path_61.cubicTo(
+        size.width * 0.8230501,
+        size.height * 0.3977537,
+        size.width * 0.8190543,
+        size.height * 0.4022689,
+        size.width * 0.8159502,
+        size.height * 0.4074240);
+    path_61.cubicTo(
+        size.width * 0.8219033,
+        size.height * 0.4059373,
+        size.width * 0.8279646,
+        size.height * 0.4050162,
+        size.width * 0.8340648,
+        size.height * 0.4046671);
+    path_61.lineTo(size.width * 0.8342210, size.height * 0.4046671);
+    path_61.cubicTo(
+        size.width * 0.8362294,
+        size.height * 0.4045572,
+        size.width * 0.8383068,
+        size.height * 0.4045152,
+        size.width * 0.8404293,
+        size.height * 0.4045572);
+    path_61.lineTo(size.width * 0.8405944, size.height * 0.4045572);
+    path_61.cubicTo(
+        size.width * 0.8548814,
+        size.height * 0.4048675,
+        size.width * 0.8713239,
+        size.height * 0.4089270,
+        size.width * 0.8849985,
+        size.height * 0.4222495);
     path_61.close();
-    path_61.moveTo(2795, 835.05);
-    path_61.cubicTo(2797.66, 745.5, 2739.66, 680.91, 2722.27, 663.61);
-    path_61.cubicTo(2717.9, 665.61, 2713.65, 667.61, 2709.52, 669.61);
-    path_61.cubicTo(2688.19, 705.76, 2652.8, 715.32, 2636.71, 717.84);
-    path_61.cubicTo(2627.78, 753.01, 2608.71, 794.19, 2571.05, 837.08);
-    path_61.cubicTo(2563.83, 845.3, 2555.9, 853.573, 2547.27, 861.9);
-    path_61.cubicTo(2539.1, 869.747, 2530.25, 877.617, 2520.72, 885.51);
-    path_61.cubicTo(2515.39, 889.91, 2509.83, 894.313, 2504.05, 898.72);
-    path_61.cubicTo(2457.21, 934.34, 2395.18, 969.72, 2313.31, 1002.54);
-    path_61.lineTo(2310.45, 1003.69);
-    path_61.cubicTo(2304.39, 1006.1, 2298.39, 1008.4, 2292.45, 1010.57);
-    path_61.cubicTo(2252.19, 1025.36, 2215.13, 1034.7, 2181.27, 1038.57);
-    path_61.lineTo(2181.07, 1038.57);
-    path_61.cubicTo(2171, 1039.81, 2160.86, 1040.47, 2150.71, 1040.57);
-    path_61.cubicTo(2149.82, 1040.57, 2148.93, 1040.57, 2148.04, 1040.57);
-    path_61.cubicTo(2147.44, 1040.57, 2146.85, 1040.57, 2146.25, 1040.57);
-    path_61.cubicTo(2111.42, 1040.57, 2080.76, 1033.88, 2054.25, 1020.51);
-    path_61.cubicTo(2052.68, 1019.72, 2051.15, 1018.91, 2049.64, 1018.09);
-    path_61.lineTo(2049.29, 1017.9);
-    path_61.cubicTo(2046.57, 1016.44, 2044.29, 1015.13, 2042.52, 1014.02);
-    path_61.cubicTo(2037.88, 1015.91, 2032.1, 1018.58, 2025.52, 1022.02);
-    path_61.cubicTo(2088.94, 1067.24, 2136.85, 1138.43, 2147.13, 1154.38);
-    path_61.cubicTo(2147.92, 1154.74, 2148.69, 1155.12, 2149.47, 1155.51);
-    path_61.cubicTo(2173.89, 1142.16, 2211.97, 1134.45, 2231.39, 1131.18);
-    path_61.cubicTo(2228.62, 1122.03, 2225.62, 1112.64, 2222.5, 1103.78);
-    path_61.cubicTo(2218.28, 1089.85, 2210.72, 1078.84, 2210.23, 1063.34);
-    path_61.cubicTo(2210.21, 1063.16, 2210.23, 1062.97, 2210.31, 1062.8);
-    path_61.cubicTo(2210.39, 1062.63, 2210.51, 1062.49, 2210.66, 1062.38);
-    path_61.cubicTo(2210.82, 1062.28, 2211, 1062.22, 2211.18, 1062.21);
-    path_61.cubicTo(2211.37, 1062.21, 2211.55, 1062.25, 2211.71, 1062.34);
-    path_61.cubicTo(2219.14, 1065.95, 2224.2, 1071.45, 2228.2, 1077.5);
-    path_61.cubicTo(2236.54, 1089.51, 2243.47, 1102.44, 2248.83, 1116.04);
-    path_61.cubicTo(2250.45, 1121.48, 2254.58, 1130.04, 2255.25, 1137.22);
-    path_61.cubicTo(2255.67, 1138.63, 2256.7, 1142.15, 2258.08, 1147.37);
-    path_61.cubicTo(2259.52, 1152.79, 2261.34, 1160.03, 2263.26, 1168.64);
-    path_61.cubicTo(2270.26, 1200.16, 2278.65, 1249.93, 2274.48, 1295.11);
-    path_61.cubicTo(2273.05, 1310.21, 2272.72, 1325.39, 2273.48, 1340.53);
-    path_61.cubicTo(2293.73, 1329.53, 2333.83, 1308.69, 2386.24, 1285.79);
-    path_61.cubicTo(2392.53, 1283.05, 2398.99, 1280.28, 2405.62, 1277.48);
-    path_61.lineTo(2411.86, 1274.87);
-    path_61.lineTo(2419.92, 1256.4);
-    path_61.cubicTo(2420.5, 1255.07, 2421.35, 1253.88, 2422.41, 1252.89);
-    path_61.cubicTo(2423.47, 1251.9, 2424.72, 1251.14, 2426.09, 1250.65);
-    path_61.lineTo(2537.35, 1211.13);
-    path_61.cubicTo(2538.91, 1210.57, 2540.58, 1210.39, 2542.23, 1210.6);
-    path_61.cubicTo(2543.87, 1210.81, 2545.45, 1211.4, 2546.82, 1212.33);
-    path_61.lineTo(2561.3, 1222.09);
-    path_61.cubicTo(2628.04, 1202.96, 2699.63, 1188.88, 2769.21, 1186.97);
-    path_61.cubicTo(2770.67, 1186.42, 2772.14, 1185.89, 2773.61, 1185.4);
-    path_61.cubicTo(2760.88, 1103.25, 2727.39, 1018.4, 2707.08, 972.19);
-    path_61.cubicTo(2704.94, 967.34, 2702.95, 962.91, 2701.15, 958.95);
-    path_61.cubicTo(2700.56, 957.64, 2699.98, 956.38, 2699.42, 955.18);
-    path_61.cubicTo(2696, 947.75, 2693.42, 942.36, 2691.96, 939.43);
-    path_61.lineTo(2690.79, 937.07);
-    path_61.cubicTo(2683.79, 925.4, 2677.6, 913.07, 2671.53, 900.92);
-    path_61.cubicTo(2666.22, 889.1, 2656.93, 875.72, 2655.99, 861.98);
-    path_61.cubicTo(2656, 861.716, 2656.1, 861.466, 2656.29, 861.282);
-    path_61.cubicTo(2656.48, 861.099, 2656.74, 860.997, 2657, 861);
-    path_61.cubicTo(2664.88, 863.53, 2670.31, 869.16, 2674.8, 874.63);
-    path_61.cubicTo(2679.86, 880.89, 2684.73, 887.28, 2689.35, 893.84);
-    path_61.cubicTo(2693.97, 900.4, 2698.35, 907.12, 2702.35, 914.04);
-    path_61.cubicTo(2705.25, 910.867, 2708.12, 907.797, 2710.95, 904.83);
-    path_61.cubicTo(2716.09, 899.423, 2721.13, 894.313, 2726.06, 889.5);
-    path_61.cubicTo(2751.84, 864.35, 2774.82, 846.91, 2795, 835.05);
+    path_61.moveTo(size.width * 0.8390874, size.height * 0.2698933);
+    path_61.cubicTo(
+        size.width * 0.8398859,
+        size.height * 0.2409502,
+        size.width * 0.8224737,
+        size.height * 0.2200743,
+        size.width * 0.8172531,
+        size.height * 0.2144829);
+    path_61.cubicTo(
+        size.width * 0.8159412,
+        size.height * 0.2151293,
+        size.width * 0.8146653,
+        size.height * 0.2157757,
+        size.width * 0.8134254,
+        size.height * 0.2164221);
+    path_61.cubicTo(
+        size.width * 0.8070219,
+        size.height * 0.2281060,
+        size.width * 0.7963975,
+        size.height * 0.2311959,
+        size.width * 0.7915671,
+        size.height * 0.2320103);
+    path_61.cubicTo(
+        size.width * 0.7888862,
+        size.height * 0.2433775,
+        size.width * 0.7831612,
+        size.height * 0.2566871,
+        size.width * 0.7718553,
+        size.height * 0.2705495);
+    path_61.cubicTo(
+        size.width * 0.7696878,
+        size.height * 0.2732062,
+        size.width * 0.7673071,
+        size.height * 0.2758801,
+        size.width * 0.7647163,
+        size.height * 0.2785714);
+    path_61.cubicTo(
+        size.width * 0.7622636,
+        size.height * 0.2811076,
+        size.width * 0.7596067,
+        size.height * 0.2836513,
+        size.width * 0.7567457,
+        size.height * 0.2862023);
+    path_61.cubicTo(
+        size.width * 0.7551456,
+        size.height * 0.2876244,
+        size.width * 0.7534764,
+        size.height * 0.2890475,
+        size.width * 0.7517412,
+        size.height * 0.2904719);
+    path_61.cubicTo(
+        size.width * 0.7376794,
+        size.height * 0.3019845,
+        size.width * 0.7190573,
+        size.height * 0.3134195,
+        size.width * 0.6944791,
+        size.height * 0.3240271);
+    path_61.lineTo(size.width * 0.6936205, size.height * 0.3243988);
+    path_61.cubicTo(
+        size.width * 0.6918013,
+        size.height * 0.3251778,
+        size.width * 0.6900000,
+        size.height * 0.3259211,
+        size.width * 0.6882168,
+        size.height * 0.3266225);
+    path_61.cubicTo(
+        size.width * 0.6761303,
+        size.height * 0.3314027,
+        size.width * 0.6650045,
+        size.height * 0.3344215,
+        size.width * 0.6548394,
+        size.height * 0.3356723);
+    path_61.lineTo(size.width * 0.6547793, size.height * 0.3356723);
+    path_61.cubicTo(
+        size.width * 0.6517562,
+        size.height * 0.3360730,
+        size.width * 0.6487121,
+        size.height * 0.3362864,
+        size.width * 0.6456650,
+        size.height * 0.3363187);
+    path_61.cubicTo(
+        size.width * 0.6453978,
+        size.height * 0.3363187,
+        size.width * 0.6451306,
+        size.height * 0.3363187,
+        size.width * 0.6448634,
+        size.height * 0.3363187);
+    path_61.cubicTo(
+        size.width * 0.6446833,
+        size.height * 0.3363187,
+        size.width * 0.6445062,
+        size.height * 0.3363187,
+        size.width * 0.6443260,
+        size.height * 0.3363187);
+    path_61.cubicTo(
+        size.width * 0.6338697,
+        size.height * 0.3363187,
+        size.width * 0.6246653,
+        size.height * 0.3341564,
+        size.width * 0.6167067,
+        size.height * 0.3298352);
+    path_61.cubicTo(
+        size.width * 0.6162354,
+        size.height * 0.3295798,
+        size.width * 0.6157760,
+        size.height * 0.3293180,
+        size.width * 0.6153227,
+        size.height * 0.3290530);
+    path_61.lineTo(size.width * 0.6152177, size.height * 0.3289916);
+    path_61.cubicTo(
+        size.width * 0.6144011,
+        size.height * 0.3285197,
+        size.width * 0.6137166,
+        size.height * 0.3280963,
+        size.width * 0.6131852,
+        size.height * 0.3277376);
+    path_61.cubicTo(
+        size.width * 0.6117923,
+        size.height * 0.3283484,
+        size.width * 0.6100570,
+        size.height * 0.3292114,
+        size.width * 0.6080817,
+        size.height * 0.3303232);
+    path_61.cubicTo(
+        size.width * 0.6271210,
+        size.height * 0.3449386,
+        size.width * 0.6415041,
+        size.height * 0.3679476,
+        size.width * 0.6445902,
+        size.height * 0.3731028);
+    path_61.cubicTo(
+        size.width * 0.6448274,
+        size.height * 0.3732191,
+        size.width * 0.6450585,
+        size.height * 0.3733420,
+        size.width * 0.6452927,
+        size.height * 0.3734680);
+    path_61.cubicTo(
+        size.width * 0.6526238,
+        size.height * 0.3691532,
+        size.width * 0.6640558,
+        size.height * 0.3666613,
+        size.width * 0.6698859,
+        size.height * 0.3656044);
+    path_61.cubicTo(
+        size.width * 0.6690543,
+        size.height * 0.3626471,
+        size.width * 0.6681537,
+        size.height * 0.3596122,
+        size.width * 0.6672171,
+        size.height * 0.3567485);
+    path_61.cubicTo(
+        size.width * 0.6659502,
+        size.height * 0.3522463,
+        size.width * 0.6636806,
+        size.height * 0.3486878,
+        size.width * 0.6635335,
+        size.height * 0.3436781);
+    path_61.cubicTo(
+        size.width * 0.6635275,
+        size.height * 0.3436199,
+        size.width * 0.6635335,
+        size.height * 0.3435585,
+        size.width * 0.6635575,
+        size.height * 0.3435036);
+    path_61.cubicTo(
+        size.width * 0.6635815,
+        size.height * 0.3434486,
+        size.width * 0.6636175,
+        size.height * 0.3434034,
+        size.width * 0.6636626,
+        size.height * 0.3433678);
+    path_61.cubicTo(
+        size.width * 0.6637106,
+        size.height * 0.3433355,
+        size.width * 0.6637646,
+        size.height * 0.3433161,
+        size.width * 0.6638187,
+        size.height * 0.3433129);
+    path_61.cubicTo(
+        size.width * 0.6638757,
+        size.height * 0.3433129,
+        size.width * 0.6639298,
+        size.height * 0.3433258,
+        size.width * 0.6639778,
+        size.height * 0.3433549);
+    path_61.cubicTo(
+        size.width * 0.6662083,
+        size.height * 0.3445217,
+        size.width * 0.6677274,
+        size.height * 0.3462993,
+        size.width * 0.6689282,
+        size.height * 0.3482547);
+    path_61.cubicTo(
+        size.width * 0.6714320,
+        size.height * 0.3521364,
+        size.width * 0.6735125,
+        size.height * 0.3563154,
+        size.width * 0.6751216,
+        size.height * 0.3607111);
+    path_61.cubicTo(
+        size.width * 0.6756079,
+        size.height * 0.3624693,
+        size.width * 0.6768478,
+        size.height * 0.3652359,
+        size.width * 0.6770489,
+        size.height * 0.3675566);
+    path_61.cubicTo(
+        size.width * 0.6771750,
+        size.height * 0.3680123,
+        size.width * 0.6774842,
+        size.height * 0.3691500,
+        size.width * 0.6778985,
+        size.height * 0.3708371);
+    path_61.cubicTo(
+        size.width * 0.6783308,
+        size.height * 0.3725889,
+        size.width * 0.6788772,
+        size.height * 0.3749289,
+        size.width * 0.6794536,
+        size.height * 0.3777117);
+    path_61.cubicTo(
+        size.width * 0.6815551,
+        size.height * 0.3878992,
+        size.width * 0.6840739,
+        size.height * 0.4039851,
+        size.width * 0.6828220,
+        size.height * 0.4185876);
+    path_61.cubicTo(
+        size.width * 0.6823927,
+        size.height * 0.4234680,
+        size.width * 0.6822936,
+        size.height * 0.4283743,
+        size.width * 0.6825218,
+        size.height * 0.4332676);
+    path_61.cubicTo(
+        size.width * 0.6886010,
+        size.height * 0.4297123,
+        size.width * 0.7006394,
+        size.height * 0.4229767,
+        size.width * 0.7163735,
+        size.height * 0.4155753);
+    path_61.cubicTo(
+        size.width * 0.7182618,
+        size.height * 0.4146897,
+        size.width * 0.7202011,
+        size.height * 0.4137944,
+        size.width * 0.7221915,
+        size.height * 0.4128895);
+    path_61.lineTo(size.width * 0.7240648, size.height * 0.4120459);
+    path_61.lineTo(size.width * 0.7264845, size.height * 0.4060763);
+    path_61.cubicTo(
+        size.width * 0.7266587,
+        size.height * 0.4056464,
+        size.width * 0.7269138,
+        size.height * 0.4052618,
+        size.width * 0.7272321,
+        size.height * 0.4049418);
+    path_61.cubicTo(
+        size.width * 0.7275503,
+        size.height * 0.4046218,
+        size.width * 0.7279255,
+        size.height * 0.4043762,
+        size.width * 0.7283368,
+        size.height * 0.4042178);
+    path_61.lineTo(size.width * 0.7617382, size.height * 0.3914447);
+    path_61.cubicTo(
+        size.width * 0.7622065,
+        size.height * 0.3912637,
+        size.width * 0.7627079,
+        size.height * 0.3912056,
+        size.width * 0.7632032,
+        size.height * 0.3912734);
+    path_61.cubicTo(
+        size.width * 0.7636956,
+        size.height * 0.3913413,
+        size.width * 0.7641699,
+        size.height * 0.3915320,
+        size.width * 0.7645812,
+        size.height * 0.3918326);
+    path_61.lineTo(size.width * 0.7689282, size.height * 0.3949871);
+    path_61.cubicTo(
+        size.width * 0.7889643,
+        size.height * 0.3888041,
+        size.width * 0.8104563,
+        size.height * 0.3842534,
+        size.width * 0.8313449,
+        size.height * 0.3836361);
+    path_61.cubicTo(
+        size.width * 0.8317832,
+        size.height * 0.3834583,
+        size.width * 0.8322246,
+        size.height * 0.3832870,
+        size.width * 0.8326659,
+        size.height * 0.3831286);
+    path_61.cubicTo(
+        size.width * 0.8288442,
+        size.height * 0.3565772,
+        size.width * 0.8187902,
+        size.height * 0.3291532,
+        size.width * 0.8126929,
+        size.height * 0.3142178);
+    path_61.cubicTo(
+        size.width * 0.8120504,
+        size.height * 0.3126503,
+        size.width * 0.8114530,
+        size.height * 0.3112185,
+        size.width * 0.8109126,
+        size.height * 0.3099386);
+    path_61.cubicTo(
+        size.width * 0.8107355,
+        size.height * 0.3095152,
+        size.width * 0.8105614,
+        size.height * 0.3091080,
+        size.width * 0.8103933,
+        size.height * 0.3087201);
+    path_61.cubicTo(
+        size.width * 0.8093666,
+        size.height * 0.3063187,
+        size.width * 0.8085920,
+        size.height * 0.3045766,
+        size.width * 0.8081537,
+        size.height * 0.3036296);
+    path_61.lineTo(size.width * 0.8078025, size.height * 0.3028668);
+    path_61.cubicTo(
+        size.width * 0.8057010,
+        size.height * 0.2990950,
+        size.width * 0.8038427,
+        size.height * 0.2951099,
+        size.width * 0.8020204,
+        size.height * 0.2911829);
+    path_61.cubicTo(
+        size.width * 0.8004263,
+        size.height * 0.2873626,
+        size.width * 0.7976373,
+        size.height * 0.2830381,
+        size.width * 0.7973551,
+        size.height * 0.2785973);
+    path_61.cubicTo(
+        size.width * 0.7973582,
+        size.height * 0.2785120,
+        size.width * 0.7973882,
+        size.height * 0.2784312,
+        size.width * 0.7974452,
+        size.height * 0.2783717);
+    path_61.cubicTo(
+        size.width * 0.7975023,
+        size.height * 0.2783125,
+        size.width * 0.7975803,
+        size.height * 0.2782796,
+        size.width * 0.7976584,
+        size.height * 0.2782805);
+    path_61.cubicTo(
+        size.width * 0.8000240,
+        size.height * 0.2790983,
+        size.width * 0.8016542,
+        size.height * 0.2809179,
+        size.width * 0.8030021,
+        size.height * 0.2826858);
+    path_61.cubicTo(
+        size.width * 0.8045212,
+        size.height * 0.2847091,
+        size.width * 0.8059832,
+        size.height * 0.2867744,
+        size.width * 0.8073702,
+        size.height * 0.2888946);
+    path_61.cubicTo(
+        size.width * 0.8087571,
+        size.height * 0.2910149,
+        size.width * 0.8100721,
+        size.height * 0.2931868,
+        size.width * 0.8112729,
+        size.height * 0.2954234);
+    path_61.cubicTo(
+        size.width * 0.8121435,
+        size.height * 0.2943979,
+        size.width * 0.8130051,
+        size.height * 0.2934056,
+        size.width * 0.8138547,
+        size.height * 0.2924467);
+    path_61.cubicTo(
+        size.width * 0.8153978,
+        size.height * 0.2906991,
+        size.width * 0.8169108,
+        size.height * 0.2890475,
+        size.width * 0.8183909,
+        size.height * 0.2874919);
+    path_61.cubicTo(
+        size.width * 0.8261303,
+        size.height * 0.2793633,
+        size.width * 0.8330291,
+        size.height * 0.2737266,
+        size.width * 0.8390874,
+        size.height * 0.2698933);
     path_61.close();
-    path_61.moveTo(2682.43, 1272.4);
-    path_61.cubicTo(2692.91, 1249.35, 2707.6, 1227.83, 2728.1, 1210.96);
-    path_61.cubicTo(2679.75, 1215.5, 2631.04, 1225.28, 2584.37, 1237.84);
-    path_61.lineTo(2610.37, 1255.36);
-    path_61.cubicTo(2612.22, 1256.61, 2613.63, 1258.41, 2614.4, 1260.5);
-    path_61.cubicTo(2615.16, 1262.6, 2615.25, 1264.88, 2614.64, 1267.03);
-    path_61.lineTo(2603.64, 1305.89);
-    path_61.cubicTo(2629.45, 1299.35, 2653.77, 1293.66, 2675.73, 1288.82);
-    path_61.cubicTo(2676.97, 1285.41, 2678.3, 1282.02, 2679.73, 1278.64);
-    path_61.cubicTo(2679.92, 1276.32, 2680.87, 1274.13, 2682.43, 1272.4);
+    path_61.moveTo(size.width * 0.8052927, size.height * 0.4112476);
+    path_61.cubicTo(
+        size.width * 0.8084389,
+        size.height * 0.4037977,
+        size.width * 0.8128490,
+        size.height * 0.3968423,
+        size.width * 0.8190033,
+        size.height * 0.3913898);
+    path_61.cubicTo(
+        size.width * 0.8044881,
+        size.height * 0.3928571,
+        size.width * 0.7898649,
+        size.height * 0.3960181,
+        size.width * 0.7758541,
+        size.height * 0.4000776);
+    path_61.lineTo(size.width * 0.7836596, size.height * 0.4057401);
+    path_61.cubicTo(
+        size.width * 0.7842150,
+        size.height * 0.4061441,
+        size.width * 0.7846382,
+        size.height * 0.4067259,
+        size.width * 0.7848694,
+        size.height * 0.4074014);
+    path_61.cubicTo(
+        size.width * 0.7850976,
+        size.height * 0.4080802,
+        size.width * 0.7851246,
+        size.height * 0.4088171,
+        size.width * 0.7849415,
+        size.height * 0.4095120);
+    path_61.lineTo(size.width * 0.7816391, size.height * 0.4220718);
+    path_61.cubicTo(
+        size.width * 0.7893876,
+        size.height * 0.4199580,
+        size.width * 0.7966887,
+        size.height * 0.4181189,
+        size.width * 0.8032813,
+        size.height * 0.4165546);
+    path_61.cubicTo(
+        size.width * 0.8036536,
+        size.height * 0.4154525,
+        size.width * 0.8040528,
+        size.height * 0.4143568,
+        size.width * 0.8044821,
+        size.height * 0.4132644);
+    path_61.cubicTo(
+        size.width * 0.8045392,
+        size.height * 0.4125145,
+        size.width * 0.8048244,
+        size.height * 0.4118067,
+        size.width * 0.8052927,
+        size.height * 0.4112476);
     path_61.close();
-    path_61.moveTo(2702.43, 629.4);
-    path_61.cubicTo(2717.53, 559.22, 2672.56, 532.17, 2663.31, 527.4);
-    path_61.cubicTo(2654.56, 527.02, 2614.8, 527.76, 2595.67, 569.28);
-    path_61.cubicTo(2594.96, 570.847, 2593.87, 572.216, 2592.51, 573.268);
-    path_61.cubicTo(2591.15, 574.321, 2589.55, 575.026, 2587.85, 575.321);
-    path_61.cubicTo(2586.16, 575.617, 2584.41, 575.494, 2582.77, 574.964);
-    path_61.cubicTo(2581.14, 574.434, 2579.65, 573.513, 2578.45, 572.28);
-    path_61.cubicTo(2577.8, 571.61, 2512.45, 504.77, 2470.81, 495.94);
-    path_61.cubicTo(2387.58, 478.26, 2335.81, 447.62, 2316.72, 404.78);
-    path_61.cubicTo(2286.05, 424.38, 2198.72, 474.42, 2098.37, 479.94);
-    path_61.cubicTo(2081.19, 493.54, 1990.65, 561.66, 1884.37, 575.57);
-    path_61.cubicTo(1891.45, 600.06, 1904.42, 654.42, 1891.74, 688.43);
-    path_61.cubicTo(1894.92, 700.411, 1898.89, 712.169, 1903.61, 723.63);
-    path_61.cubicTo(1902.54, 705.09, 1906.44, 686.42, 1918.42, 669.27);
-    path_61.cubicTo(1950.75, 622.96, 2013, 606.52, 2103.42, 620.42);
-    path_61.cubicTo(2108.57, 621.19, 2113.83, 620.616, 2118.68, 618.753);
-    path_61.cubicTo(2123.54, 616.891, 2127.84, 613.803, 2131.15, 609.79);
-    path_61.cubicTo(2149.67, 587.31, 2183.43, 553.99, 2239.15, 522.95);
-    path_61.lineTo(2239.26, 522.89);
-    path_61.cubicTo(2243.5, 520.61, 2344.06, 467.72, 2416.1, 534.53);
-    path_61.cubicTo(2453.1, 568.8, 2474.4, 620.53, 2473.16, 673.01);
-    path_61.cubicTo(2472.16, 716.16, 2455.6, 754.35, 2427.8, 777.79);
-    path_61.cubicTo(2371.29, 825.43, 2306.9, 834.72, 2219.05, 807.94);
-    path_61.cubicTo(2208.53, 804.71, 2197.52, 808.16, 2192.87, 816.09);
-    path_61.cubicTo(2180.7, 836.86, 2147.8, 887.29, 2105.32, 906.99);
-    path_61.cubicTo(2089.89, 914.034, 2073.1, 917.611, 2056.13, 917.47);
-    path_61.cubicTo(2044.84, 917.41, 2033.6, 916.068, 2022.61, 913.47);
-    path_61.cubicTo(2014.47, 911.58, 2006.49, 909.076, 1998.73, 905.98);
-    path_61.lineTo(2000.07, 930.59);
-    path_61.cubicTo(2001.91, 936.37, 2013.68, 969.45, 2049.36, 993.41);
-    path_61.lineTo(2050.16, 993.95);
-    path_61.cubicTo(2051.75, 994.95, 2053.38, 996.03, 2055.06, 997.04);
-    path_61.lineTo(2056.06, 997.63);
-    path_61.cubicTo(2072.48, 1006.93, 2122.39, 1029.55, 2198.69, 1014.47);
-    path_61.cubicTo(2226.95, 1008.88, 2261.56, 997.91, 2298.13, 983.47);
-    path_61.lineTo(2298.71, 983.24);
-    path_61.cubicTo(2317.38, 975.83, 2336.56, 967.5, 2355.71, 958.51);
-    path_61.cubicTo(2370.48, 951.56, 2385.2, 944.21, 2399.6, 936.58);
-    path_61.cubicTo(2436.12, 917.23, 2470.6, 896.07, 2498.53, 875);
-    path_61.cubicTo(2504.91, 870.193, 2510.94, 865.397, 2516.61, 860.61);
-    path_61.lineTo(2516.67, 860.61);
-    path_61.cubicTo(2523.55, 854.61, 2530.11, 848.537, 2536.34, 842.39);
-    path_61.lineTo(2536.71, 842.03);
-    path_61.lineTo(2537.04, 841.69);
-    path_61.cubicTo(2539.9, 838.75, 2542.55, 835.83, 2545.04, 832.95);
-    path_61.cubicTo(2599.94, 768.59, 2614.51, 719.67, 2617.24, 708.74);
-    path_61.cubicTo(2617.24, 708.6, 2617.3, 708.46, 2617.34, 708.32);
-    path_61.cubicTo(2617.38, 708.18, 2617.46, 707.84, 2617.5, 707.64);
-    path_61.cubicTo(2617.54, 707.44, 2617.59, 707.27, 2617.62, 707.11);
-    path_61.cubicTo(2617.65, 706.95, 2617.68, 706.84, 2617.7, 706.74);
-    path_61.cubicTo(2617.71, 706.662, 2617.73, 706.586, 2617.75, 706.51);
-    path_61.cubicTo(2617.75, 706.49, 2617.75, 706.47, 2617.75, 706.45);
-    path_61.cubicTo(2617.75, 706.33, 2617.8, 706.2, 2617.83, 706.08);
-    path_61.cubicTo(2617.84, 706.002, 2617.86, 705.925, 2617.89, 705.85);
-    path_61.cubicTo(2617.92, 705.708, 2617.95, 705.567, 2618, 705.43);
-    path_61.cubicTo(2618.06, 705.202, 2618.13, 704.978, 2618.22, 704.76);
-    path_61.cubicTo(2618.22, 704.71, 2618.22, 704.66, 2618.22, 704.61);
-    path_61.cubicTo(2618.31, 704.36, 2618.42, 704.12, 2618.53, 703.88);
-    path_61.cubicTo(2618.52, 703.851, 2618.52, 703.819, 2618.53, 703.79);
-    path_61.cubicTo(2618.63, 703.574, 2618.73, 703.364, 2618.85, 703.16);
-    path_61.cubicTo(2618.88, 703.083, 2618.92, 703.009, 2618.97, 702.94);
-    path_61.cubicTo(2619.12, 702.7, 2619.27, 702.47, 2619.43, 702.24);
-    path_61.cubicTo(2619.59, 702.01, 2619.8, 701.74, 2619.99, 701.51);
-    path_61.cubicTo(2620.17, 701.301, 2620.35, 701.1, 2620.55, 700.91);
-    path_61.cubicTo(2620.82, 700.617, 2621.12, 700.346, 2621.43, 700.1);
-    path_61.cubicTo(2623.27, 698.62, 2625.55, 697.797, 2627.91, 697.76);
-    path_61.cubicTo(2629.99, 697.71, 2673.26, 696.1, 2694.27, 653.38);
-    path_61.cubicTo(2697.99, 645.744, 2700.74, 637.675, 2702.46, 629.36);
-    path_61.lineTo(2702.43, 629.4);
+    path_61.moveTo(size.width * 0.8112969, size.height * 0.2034260);
+    path_61.cubicTo(
+        size.width * 0.8158301,
+        size.height * 0.1807434,
+        size.width * 0.8023296,
+        size.height * 0.1720006,
+        size.width * 0.7995527,
+        size.height * 0.1704590);
+    path_61.cubicTo(
+        size.width * 0.7969258,
+        size.height * 0.1703361,
+        size.width * 0.7849895,
+        size.height * 0.1705753,
+        size.width * 0.7792465,
+        size.height * 0.1839948);
+    path_61.cubicTo(
+        size.width * 0.7790333,
+        size.height * 0.1845013,
+        size.width * 0.7787061,
+        size.height * 0.1849438,
+        size.width * 0.7782978,
+        size.height * 0.1852838);
+    path_61.cubicTo(
+        size.width * 0.7778895,
+        size.height * 0.1856241,
+        size.width * 0.7774092,
+        size.height * 0.1858520,
+        size.width * 0.7768988,
+        size.height * 0.1859473);
+    path_61.cubicTo(
+        size.width * 0.7763915,
+        size.height * 0.1860430,
+        size.width * 0.7758661,
+        size.height * 0.1860032,
+        size.width * 0.7753738,
+        size.height * 0.1858319);
+    path_61.cubicTo(
+        size.width * 0.7748844,
+        size.height * 0.1856606,
+        size.width * 0.7744371,
+        size.height * 0.1853630,
+        size.width * 0.7740769,
+        size.height * 0.1849644);
+    path_61.cubicTo(
+        size.width * 0.7738817,
+        size.height * 0.1847479,
+        size.width * 0.7542630,
+        size.height * 0.1631448,
+        size.width * 0.7417622,
+        size.height * 0.1602909);
+    path_61.cubicTo(
+        size.width * 0.7167757,
+        size.height * 0.1545766,
+        size.width * 0.7012339,
+        size.height * 0.1446736,
+        size.width * 0.6955029,
+        size.height * 0.1308274);
+    path_61.cubicTo(
+        size.width * 0.6862954,
+        size.height * 0.1371622,
+        size.width * 0.6600781,
+        size.height * 0.1533355,
+        size.width * 0.6299520,
+        size.height * 0.1551196);
+    path_61.cubicTo(
+        size.width * 0.6247944,
+        size.height * 0.1595152,
+        size.width * 0.5976133,
+        size.height * 0.1815320,
+        size.width * 0.5657070,
+        size.height * 0.1860278);
+    path_61.cubicTo(
+        size.width * 0.5678325,
+        size.height * 0.1939431,
+        size.width * 0.5717262,
+        size.height * 0.2115126,
+        size.width * 0.5679195,
+        size.height * 0.2225048);
+    path_61.cubicTo(
+        size.width * 0.5688742,
+        size.height * 0.2263772,
+        size.width * 0.5700660,
+        size.height * 0.2301774,
+        size.width * 0.5714830,
+        size.height * 0.2338817);
+    path_61.cubicTo(
+        size.width * 0.5711618,
+        size.height * 0.2278895,
+        size.width * 0.5723326,
+        size.height * 0.2218552,
+        size.width * 0.5759292,
+        size.height * 0.2163122);
+    path_61.cubicTo(
+        size.width * 0.5856349,
+        size.height * 0.2013445,
+        size.width * 0.6043230,
+        size.height * 0.1960310,
+        size.width * 0.6314680,
+        size.height * 0.2005236);
+    path_61.cubicTo(
+        size.width * 0.6330141,
+        size.height * 0.2007725,
+        size.width * 0.6345932,
+        size.height * 0.2005869,
+        size.width * 0.6360492,
+        size.height * 0.1999848);
+    path_61.cubicTo(
+        size.width * 0.6375083,
+        size.height * 0.1993830,
+        size.width * 0.6387992,
+        size.height * 0.1983849,
+        size.width * 0.6397929,
+        size.height * 0.1970879);
+    path_61.cubicTo(
+        size.width * 0.6453527,
+        size.height * 0.1898222,
+        size.width * 0.6554878,
+        size.height * 0.1790530,
+        size.width * 0.6722156,
+        size.height * 0.1690207);
+    path_61.lineTo(size.width * 0.6722486, size.height * 0.1690013);
+    path_61.cubicTo(
+        size.width * 0.6735215,
+        size.height * 0.1682644,
+        size.width * 0.7037106,
+        size.height * 0.1511700,
+        size.width * 0.7253377,
+        size.height * 0.1727634);
+    path_61.cubicTo(
+        size.width * 0.7364455,
+        size.height * 0.1838397,
+        size.width * 0.7428400,
+        size.height * 0.2005591,
+        size.width * 0.7424677,
+        size.height * 0.2175210);
+    path_61.cubicTo(
+        size.width * 0.7421675,
+        size.height * 0.2314674,
+        size.width * 0.7371960,
+        size.height * 0.2438106,
+        size.width * 0.7288502,
+        size.height * 0.2513866);
+    path_61.cubicTo(
+        size.width * 0.7118853,
+        size.height * 0.2667841,
+        size.width * 0.6925548,
+        size.height * 0.2697867,
+        size.width * 0.6661813,
+        size.height * 0.2611312);
+    path_61.cubicTo(
+        size.width * 0.6630231,
+        size.height * 0.2600873,
+        size.width * 0.6597178,
+        size.height * 0.2612023,
+        size.width * 0.6583218,
+        size.height * 0.2637654);
+    path_61.cubicTo(
+        size.width * 0.6546683,
+        size.height * 0.2704783,
+        size.width * 0.6447914,
+        size.height * 0.2867776,
+        size.width * 0.6320384,
+        size.height * 0.2931448);
+    path_61.cubicTo(
+        size.width * 0.6274062,
+        size.height * 0.2954215,
+        size.width * 0.6223657,
+        size.height * 0.2965776,
+        size.width * 0.6172711,
+        size.height * 0.2965320);
+    path_61.cubicTo(
+        size.width * 0.6138817,
+        size.height * 0.2965126,
+        size.width * 0.6105074,
+        size.height * 0.2960789,
+        size.width * 0.6072080,
+        size.height * 0.2952392);
+    path_61.cubicTo(
+        size.width * 0.6047643,
+        size.height * 0.2946283,
+        size.width * 0.6023687,
+        size.height * 0.2938190,
+        size.width * 0.6000390,
+        size.height * 0.2928184);
+    path_61.lineTo(size.width * 0.6004413, size.height * 0.3007725);
+    path_61.cubicTo(
+        size.width * 0.6009937,
+        size.height * 0.3026406,
+        size.width * 0.6045272,
+        size.height * 0.3133323,
+        size.width * 0.6152387,
+        size.height * 0.3210763);
+    path_61.lineTo(size.width * 0.6154788, size.height * 0.3212508);
+    path_61.cubicTo(
+        size.width * 0.6159562,
+        size.height * 0.3215740,
+        size.width * 0.6164455,
+        size.height * 0.3219231,
+        size.width * 0.6169499,
+        size.height * 0.3222495);
+    path_61.lineTo(size.width * 0.6172501, size.height * 0.3224402);
+    path_61.cubicTo(
+        size.width * 0.6221795,
+        size.height * 0.3254460,
+        size.width * 0.6371630,
+        size.height * 0.3327569,
+        size.width * 0.6600690,
+        size.height * 0.3278830);
+    path_61.cubicTo(
+        size.width * 0.6685530,
+        size.height * 0.3260763,
+        size.width * 0.6789433,
+        size.height * 0.3225307,
+        size.width * 0.6899219,
+        size.height * 0.3178636);
+    path_61.lineTo(size.width * 0.6900961, size.height * 0.3177893);
+    path_61.cubicTo(
+        size.width * 0.6957010,
+        size.height * 0.3153943,
+        size.width * 0.7014590,
+        size.height * 0.3127020,
+        size.width * 0.7072080,
+        size.height * 0.3097964);
+    path_61.cubicTo(
+        size.width * 0.7116421,
+        size.height * 0.3075501,
+        size.width * 0.7160612,
+        size.height * 0.3051745,
+        size.width * 0.7203843,
+        size.height * 0.3027085);
+    path_61.cubicTo(
+        size.width * 0.7313479,
+        size.height * 0.2964544,
+        size.width * 0.7416992,
+        size.height * 0.2896154,
+        size.width * 0.7500841,
+        size.height * 0.2828054);
+    path_61.cubicTo(
+        size.width * 0.7519994,
+        size.height * 0.2812518,
+        size.width * 0.7538097,
+        size.height * 0.2797017,
+        size.width * 0.7555119,
+        size.height * 0.2781545);
+    path_61.lineTo(size.width * 0.7555299, size.height * 0.2781545);
+    path_61.cubicTo(
+        size.width * 0.7575953,
+        size.height * 0.2762153,
+        size.width * 0.7595647,
+        size.height * 0.2742524,
+        size.width * 0.7614350,
+        size.height * 0.2722657);
+    path_61.lineTo(size.width * 0.7615461, size.height * 0.2721493);
+    path_61.lineTo(size.width * 0.7616452, size.height * 0.2720394);
+    path_61.cubicTo(
+        size.width * 0.7625038,
+        size.height * 0.2710892,
+        size.width * 0.7632993,
+        size.height * 0.2701454,
+        size.width * 0.7640468,
+        size.height * 0.2692146);
+    path_61.cubicTo(
+        size.width * 0.7805284,
+        size.height * 0.2484131,
+        size.width * 0.7849024,
+        size.height * 0.2326018,
+        size.width * 0.7857220,
+        size.height * 0.2290692);
+    path_61.cubicTo(
+        size.width * 0.7857220,
+        size.height * 0.2290239,
+        size.width * 0.7857400,
+        size.height * 0.2289787,
+        size.width * 0.7857520,
+        size.height * 0.2289334);
+    path_61.cubicTo(
+        size.width * 0.7857640,
+        size.height * 0.2288882,
+        size.width * 0.7857881,
+        size.height * 0.2287783,
+        size.width * 0.7858001,
+        size.height * 0.2287136);
+    path_61.cubicTo(
+        size.width * 0.7858121,
+        size.height * 0.2286490,
+        size.width * 0.7858271,
+        size.height * 0.2285941,
+        size.width * 0.7858361,
+        size.height * 0.2285423);
+    path_61.cubicTo(
+        size.width * 0.7858451,
+        size.height * 0.2284906,
+        size.width * 0.7858541,
+        size.height * 0.2284551,
+        size.width * 0.7858601,
+        size.height * 0.2284228);
+    path_61.cubicTo(
+        size.width * 0.7858631,
+        size.height * 0.2283975,
+        size.width * 0.7858691,
+        size.height * 0.2283730,
+        size.width * 0.7858751,
+        size.height * 0.2283484);
+    path_61.cubicTo(
+        size.width * 0.7858751,
+        size.height * 0.2283420,
+        size.width * 0.7858751,
+        size.height * 0.2283355,
+        size.width * 0.7858751,
+        size.height * 0.2283290);
+    path_61.cubicTo(
+        size.width * 0.7858751,
+        size.height * 0.2282902,
+        size.width * 0.7858901,
+        size.height * 0.2282482,
+        size.width * 0.7858991,
+        size.height * 0.2282094);
+    path_61.cubicTo(
+        size.width * 0.7859021,
+        size.height * 0.2281842,
+        size.width * 0.7859081,
+        size.height * 0.2281593,
+        size.width * 0.7859171,
+        size.height * 0.2281351);
+    path_61.cubicTo(
+        size.width * 0.7859261,
+        size.height * 0.2280892,
+        size.width * 0.7859352,
+        size.height * 0.2280436,
+        size.width * 0.7859502,
+        size.height * 0.2279994);
+    path_61.cubicTo(
+        size.width * 0.7859682,
+        size.height * 0.2279257,
+        size.width * 0.7859892,
+        size.height * 0.2278533,
+        size.width * 0.7860162,
+        size.height * 0.2277828);
+    path_61.cubicTo(
+        size.width * 0.7860162,
+        size.height * 0.2277666,
+        size.width * 0.7860162,
+        size.height * 0.2277505,
+        size.width * 0.7860162,
+        size.height * 0.2277343);
+    path_61.cubicTo(
+        size.width * 0.7860432,
+        size.height * 0.2276535,
+        size.width * 0.7860763,
+        size.height * 0.2275760,
+        size.width * 0.7861093,
+        size.height * 0.2274984);
+    path_61.cubicTo(
+        size.width * 0.7861063,
+        size.height * 0.2274890,
+        size.width * 0.7861063,
+        size.height * 0.2274787,
+        size.width * 0.7861093,
+        size.height * 0.2274693);
+    path_61.cubicTo(
+        size.width * 0.7861393,
+        size.height * 0.2273995,
+        size.width * 0.7861693,
+        size.height * 0.2273316,
+        size.width * 0.7862053,
+        size.height * 0.2272657);
+    path_61.cubicTo(
+        size.width * 0.7862144,
+        size.height * 0.2272408,
+        size.width * 0.7862264,
+        size.height * 0.2272169,
+        size.width * 0.7862414,
+        size.height * 0.2271946);
+    path_61.cubicTo(
+        size.width * 0.7862864,
+        size.height * 0.2271170,
+        size.width * 0.7863314,
+        size.height * 0.2270427,
+        size.width * 0.7863795,
+        size.height * 0.2269683);
+    path_61.cubicTo(
+        size.width * 0.7864275,
+        size.height * 0.2268940,
+        size.width * 0.7864905,
+        size.height * 0.2268067,
+        size.width * 0.7865476,
+        size.height * 0.2267324);
+    path_61.cubicTo(
+        size.width * 0.7866016,
+        size.height * 0.2266648,
+        size.width * 0.7866557,
+        size.height * 0.2265999,
+        size.width * 0.7867157,
+        size.height * 0.2265385);
+    path_61.cubicTo(
+        size.width * 0.7867968,
+        size.height * 0.2264438,
+        size.width * 0.7868868,
+        size.height * 0.2263562,
+        size.width * 0.7869799,
+        size.height * 0.2262767);
+    path_61.cubicTo(
+        size.width * 0.7875323,
+        size.height * 0.2257983,
+        size.width * 0.7882168,
+        size.height * 0.2255323,
+        size.width * 0.7889252,
+        size.height * 0.2255204);
+    path_61.cubicTo(
+        size.width * 0.7895497,
+        size.height * 0.2255042,
+        size.width * 0.8025398,
+        size.height * 0.2249838,
+        size.width * 0.8088472,
+        size.height * 0.2111765);
+    path_61.cubicTo(
+        size.width * 0.8099640,
+        size.height * 0.2087085,
+        size.width * 0.8107896,
+        size.height * 0.2061005,
+        size.width * 0.8113059,
+        size.height * 0.2034131);
+    path_61.lineTo(size.width * 0.8112969, size.height * 0.2034260);
     path_61.close();
-    path_61.moveTo(2657.5, 1420.47);
-    path_61.cubicTo(2656.61, 1397.41, 2657.11, 1355.16, 2668.44, 1312.17);
-    path_61.cubicTo(2646.44, 1317.17, 2622.32, 1322.9, 2596.95, 1329.47);
-    path_61.lineTo(2591.84, 1347.54);
-    path_61.cubicTo(2591.38, 1349.18, 2590.53, 1350.68, 2589.36, 1351.92);
-    path_61.cubicTo(2588.2, 1353.16, 2586.75, 1354.1, 2585.14, 1354.66);
-    path_61.lineTo(2476.43, 1392.66);
-    path_61.cubicTo(2474.99, 1393.17, 2473.46, 1393.36, 2471.94, 1393.21);
-    path_61.cubicTo(2470.42, 1393.07, 2468.95, 1392.6, 2467.63, 1391.84);
-    path_61.lineTo(2441.63, 1376.84);
-    path_61.cubicTo(2438.07, 1378.11, 2434.51, 1379.41, 2430.96, 1380.71);
-    path_61.cubicTo(2386.43, 1397.13, 2342.96, 1415.84, 2304.28, 1436.91);
-    path_61.cubicTo(2313.66, 1446.75, 2324.28, 1455.37, 2336.28, 1461.43);
-    path_61.cubicTo(2347.95, 1467.96, 2339.59, 1485.43, 2327.2, 1480.53);
-    path_61.cubicTo(2306.49, 1471.85, 2291.73, 1454.12, 2281.52, 1434.8);
-    path_61.cubicTo(2279.14, 1432.43, 2276.96, 1429.86, 2275.01, 1427.12);
-    path_61.cubicTo(2255.35, 1461.89, 2211.31, 1549.24, 2228.89, 1606.37);
-    path_61.cubicTo(2244.42, 1654.99, 2277.97, 1688.37, 2308.75, 1710.07);
-    path_61.cubicTo(2332.49, 1705.59, 2446.41, 1677.91, 2471.44, 1557.13);
-    path_61.cubicTo(2465.28, 1553.44, 2463.53, 1551.51, 2462.25, 1548.72);
-    path_61.cubicTo(2460.75, 1545.47, 2458.12, 1539.72, 2471.25, 1504.26);
-    path_61.cubicTo(2457.83, 1505.64, 2444.32, 1505.9, 2430.85, 1505.04);
-    path_61.cubicTo(2411.19, 1503.18, 2391.1, 1502.84, 2373.76, 1491.69);
-    path_61.cubicTo(2373.62, 1491.58, 2373.51, 1491.43, 2373.44, 1491.26);
-    path_61.cubicTo(2373.37, 1491.1, 2373.35, 1490.91, 2373.38, 1490.73);
-    path_61.cubicTo(2373.41, 1490.55, 2373.49, 1490.39, 2373.61, 1490.25);
-    path_61.cubicTo(2373.73, 1490.11, 2373.88, 1490.01, 2374.05, 1489.95);
-    path_61.cubicTo(2393.5, 1484.95, 2411.61, 1488.07, 2430.92, 1486.33);
-    path_61.cubicTo(2449.22, 1485.31, 2467.45, 1483.36, 2485.54, 1480.48);
-    path_61.lineTo(2485.66, 1480.48);
-    path_61.lineTo(2485.72, 1480.48);
-    path_61.lineTo(2485.85, 1480.48);
-    path_61.cubicTo(2486.19, 1480.42, 2490.85, 1479.48, 2498.85, 1477.65);
-    path_61.cubicTo(2504.85, 1476.25, 2512.75, 1474.33, 2522.04, 1471.84);
-    path_61.cubicTo(2556.06, 1462.63, 2608.83, 1446, 2657.53, 1420.43);
-    path_61.lineTo(2657.5, 1420.47);
+    path_61.moveTo(size.width * 0.7978085, size.height * 0.4591047);
+    path_61.cubicTo(
+        size.width * 0.7975413,
+        size.height * 0.4516516,
+        size.width * 0.7976914,
+        size.height * 0.4379961,
+        size.width * 0.8010928,
+        size.height * 0.4241015);
+    path_61.cubicTo(
+        size.width * 0.7944881,
+        size.height * 0.4257175,
+        size.width * 0.7872471,
+        size.height * 0.4275695,
+        size.width * 0.7796307,
+        size.height * 0.4296930);
+    path_61.lineTo(size.width * 0.7780967, size.height * 0.4355333);
+    path_61.cubicTo(
+        size.width * 0.7779586,
+        size.height * 0.4360633,
+        size.width * 0.7777034,
+        size.height * 0.4365482,
+        size.width * 0.7773521,
+        size.height * 0.4369489);
+    path_61.cubicTo(
+        size.width * 0.7770039,
+        size.height * 0.4373497,
+        size.width * 0.7765686,
+        size.height * 0.4376535,
+        size.width * 0.7760853,
+        size.height * 0.4378345);
+    path_61.lineTo(size.width * 0.7434494, size.height * 0.4501164);
+    path_61.cubicTo(
+        size.width * 0.7430171,
+        size.height * 0.4502812,
+        size.width * 0.7425578,
+        size.height * 0.4503426,
+        size.width * 0.7421015,
+        size.height * 0.4502941);
+    path_61.cubicTo(
+        size.width * 0.7416452,
+        size.height * 0.4502489,
+        size.width * 0.7412038,
+        size.height * 0.4500970,
+        size.width * 0.7408076,
+        size.height * 0.4498513);
+    path_61.lineTo(size.width * 0.7330021, size.height * 0.4450032);
+    path_61.cubicTo(
+        size.width * 0.7319334,
+        size.height * 0.4454137,
+        size.width * 0.7308646,
+        size.height * 0.4458339,
+        size.width * 0.7297989,
+        size.height * 0.4462540);
+    path_61.cubicTo(
+        size.width * 0.7164305,
+        size.height * 0.4515611,
+        size.width * 0.7033804,
+        size.height * 0.4576083,
+        size.width * 0.6917682,
+        size.height * 0.4644182);
+    path_61.cubicTo(
+        size.width * 0.6945842,
+        size.height * 0.4675986,
+        size.width * 0.6977724,
+        size.height * 0.4703846,
+        size.width * 0.7013750,
+        size.height * 0.4723432);
+    path_61.cubicTo(
+        size.width * 0.7048784,
+        size.height * 0.4744538,
+        size.width * 0.7023687,
+        size.height * 0.4801002,
+        size.width * 0.6986491,
+        size.height * 0.4785165);
+    path_61.cubicTo(
+        size.width * 0.6924317,
+        size.height * 0.4757111,
+        size.width * 0.6880006,
+        size.height * 0.4699806,
+        size.width * 0.6849355,
+        size.height * 0.4637363);
+    path_61.cubicTo(
+        size.width * 0.6842210,
+        size.height * 0.4629703,
+        size.width * 0.6835665,
+        size.height * 0.4621396,
+        size.width * 0.6829811,
+        size.height * 0.4612540);
+    path_61.cubicTo(
+        size.width * 0.6770790,
+        size.height * 0.4724919,
+        size.width * 0.6638577,
+        size.height * 0.5007240,
+        size.width * 0.6691354,
+        size.height * 0.5191888);
+    path_61.cubicTo(
+        size.width * 0.6737977,
+        size.height * 0.5349030,
+        size.width * 0.6838697,
+        size.height * 0.5456917,
+        size.width * 0.6931102,
+        size.height * 0.5527052);
+    path_61.cubicTo(
+        size.width * 0.7002372,
+        size.height * 0.5512573,
+        size.width * 0.7344371,
+        size.height * 0.5423109,
+        size.width * 0.7419514,
+        size.height * 0.5032741);
+    path_61.cubicTo(
+        size.width * 0.7401021,
+        size.height * 0.5020814,
+        size.width * 0.7395767,
+        size.height * 0.5014577,
+        size.width * 0.7391924,
+        size.height * 0.5005559);
+    path_61.cubicTo(
+        size.width * 0.7387421,
+        size.height * 0.4995055,
+        size.width * 0.7379526,
+        size.height * 0.4976471,
+        size.width * 0.7418943,
+        size.height * 0.4861862);
+    path_61.cubicTo(
+        size.width * 0.7378655,
+        size.height * 0.4866322,
+        size.width * 0.7338097,
+        size.height * 0.4867162,
+        size.width * 0.7297658,
+        size.height * 0.4864383);
+    path_61.cubicTo(
+        size.width * 0.7238637,
+        size.height * 0.4858371,
+        size.width * 0.7178325,
+        size.height * 0.4857272,
+        size.width * 0.7126268,
+        size.height * 0.4821235);
+    path_61.cubicTo(
+        size.width * 0.7125848,
+        size.height * 0.4820879,
+        size.width * 0.7125518,
+        size.height * 0.4820394,
+        size.width * 0.7125308,
+        size.height * 0.4819845);
+    path_61.cubicTo(
+        size.width * 0.7125098,
+        size.height * 0.4819328,
+        size.width * 0.7125038,
+        size.height * 0.4818714,
+        size.width * 0.7125128,
+        size.height * 0.4818132);
+    path_61.cubicTo(
+        size.width * 0.7125218,
+        size.height * 0.4817550,
+        size.width * 0.7125458,
+        size.height * 0.4817033,
+        size.width * 0.7125818,
+        size.height * 0.4816580);
+    path_61.cubicTo(
+        size.width * 0.7126178,
+        size.height * 0.4816128,
+        size.width * 0.7126629,
+        size.height * 0.4815805,
+        size.width * 0.7127139,
+        size.height * 0.4815611);
+    path_61.cubicTo(
+        size.width * 0.7185530,
+        size.height * 0.4799451,
+        size.width * 0.7239898,
+        size.height * 0.4809535,
+        size.width * 0.7297869,
+        size.height * 0.4803911);
+    path_61.cubicTo(
+        size.width * 0.7352807,
+        size.height * 0.4800614,
+        size.width * 0.7407535,
+        size.height * 0.4794312,
+        size.width * 0.7461843,
+        size.height * 0.4785003);
+    path_61.lineTo(size.width * 0.7462204, size.height * 0.4785003);
+    path_61.lineTo(size.width * 0.7462384, size.height * 0.4785003);
+    path_61.lineTo(size.width * 0.7462774, size.height * 0.4785003);
+    path_61.cubicTo(
+        size.width * 0.7463795,
+        size.height * 0.4784809,
+        size.width * 0.7477784,
+        size.height * 0.4781771,
+        size.width * 0.7501801,
+        size.height * 0.4775856);
+    path_61.cubicTo(
+        size.width * 0.7519814,
+        size.height * 0.4771332,
+        size.width * 0.7543530,
+        size.height * 0.4765126,
+        size.width * 0.7571420,
+        size.height * 0.4757078);
+    path_61.cubicTo(
+        size.width * 0.7673551,
+        size.height * 0.4727311,
+        size.width * 0.7831972,
+        size.height * 0.4673562,
+        size.width * 0.7978175,
+        size.height * 0.4590918);
+    path_61.lineTo(size.width * 0.7978085, size.height * 0.4591047);
     path_61.close();
-    path_61.moveTo(2655.5, 506.27);
-    path_61.cubicTo(2655.21, 454.96, 2647.92, 228.66, 2544.13, 137.7);
-    path_61.cubicTo(2542.77, 136.505, 2541.73, 134.979, 2541.12, 133.269);
-    path_61.cubicTo(2540.52, 131.559, 2540.36, 129.722, 2540.67, 127.934);
-    path_61.cubicTo(2540.98, 126.146, 2541.74, 124.468, 2542.89, 123.059);
-    path_61.cubicTo(2544.03, 121.651, 2545.51, 120.559, 2547.2, 119.89);
-    path_61.lineTo(2566.83, 112.08);
-    path_61.cubicTo(2545.99, 101.99, 2511.83, 88.55, 2481.75, 91.08);
-    path_61.cubicTo(2480.13, 91.2147, 2478.5, 90.9735, 2476.98, 90.3751);
-    path_61.cubicTo(2475.47, 89.7768, 2474.11, 88.8374, 2473.02, 87.63);
-    path_61.cubicTo(2456.28, 69.16, 2428.35, 41.3, 2409.5, 28.05);
-    path_61.lineTo(2409.5, 45.23);
-    path_61.cubicTo(2409.49, 46.981, 2409.05, 48.7029, 2408.22, 50.2421);
-    path_61.cubicTo(2407.38, 51.7813, 2406.18, 53.09, 2404.72, 54.0514);
-    path_61.cubicTo(2403.25, 55.0128, 2401.57, 55.5971, 2399.83, 55.7522);
-    path_61.cubicTo(2398.09, 55.9072, 2396.33, 55.6282, 2394.72, 54.94);
-    path_61.cubicTo(2393.36, 54.35, 2256.38, -3.25, 2105.72, 36.73);
-    path_61.cubicTo(1960.12, 75.3, 1841.61, 168.17, 1797.4, 206.31);
-    path_61.cubicTo(1775.61, 225.12, 1758, 232.41, 1747.02, 235.22);
-    path_61.cubicTo(1749.79, 247.97, 1758.58, 271.7, 1786.34, 290.22);
-    path_61.cubicTo(1787.61, 291.064, 1788.68, 292.171, 1789.48, 293.466);
-    path_61.cubicTo(1790.29, 294.762, 1790.8, 296.215, 1790.99, 297.727);
-    path_61.cubicTo(1791.18, 299.239, 1791.04, 300.774, 1790.58, 302.227);
-    path_61.cubicTo(1790.13, 303.681, 1789.36, 305.019, 1788.34, 306.15);
-    path_61.cubicTo(1786.92, 307.73, 1753.08, 344.98, 1718.81, 370.85);
-    path_61.cubicTo(1697.7, 386.78, 1678.71, 394.32, 1666.39, 397.85);
-    path_61.cubicTo(1674.57, 412.69, 1692.23, 438.41, 1721.71, 451.85);
-    path_61.cubicTo(1723.59, 452.706, 1725.17, 454.09, 1726.27, 455.833);
-    path_61.cubicTo(1727.37, 457.575, 1727.94, 459.601, 1727.91, 461.661);
-    path_61.cubicTo(1727.87, 463.722, 1727.24, 465.728, 1726.08, 467.435);
-    path_61.cubicTo(1724.93, 469.141, 1723.3, 470.474, 1721.4, 471.27);
-    path_61.lineTo(1691.29, 483.86);
-    path_61.cubicTo(1706.19, 504.22, 1733.44, 536.31, 1754.43, 540.91);
-    path_61.cubicTo(1756.12, 541.282, 1757.7, 542.063, 1759.02, 543.183);
-    path_61.cubicTo(1760.34, 544.304, 1761.37, 545.731, 1762.01, 547.34);
-    path_61.cubicTo(1762.52, 548.62, 1808.01, 661.16, 1893.07, 752.34);
-    path_61.cubicTo(1876.57, 718.34, 1870.73, 691.76, 1870.3, 689.75);
-    path_61.cubicTo(1869.83, 687.562, 1870.07, 685.281, 1870.99, 683.24);
-    path_61.cubicTo(1882.9, 656.54, 1870.72, 603.09, 1862.79, 577.14);
-    path_61.cubicTo(1852.76, 576.833, 1842.76, 575.713, 1832.91, 573.79);
-    path_61.cubicTo(1828.11, 573.15, 1823.69, 570.863, 1820.39, 567.32);
-    path_61.cubicTo(1820.16, 567.083, 1820.04, 566.768, 1820.04, 566.44);
-    path_61.cubicTo(1820.04, 566.112, 1820.16, 565.797, 1820.39, 565.56);
-    path_61.cubicTo(1823.69, 562.016, 1828.11, 559.723, 1832.9, 559.07);
-    path_61.cubicTo(1845.19, 556.85, 1857.64, 555.07, 1870.14, 555.78);
-    path_61.cubicTo(1950.75, 548.6, 2025.14, 505.14, 2062.53, 479.78);
-    path_61.cubicTo(2059.23, 479.52, 2055.91, 479.21, 2052.59, 478.85);
-    path_61.cubicTo(2038.24, 476.52, 2023.09, 477.01, 2011.4, 466.21);
-    path_61.cubicTo(2011.26, 466.09, 2011.16, 465.935, 2011.11, 465.762);
-    path_61.cubicTo(2011.05, 465.588, 2011.05, 465.403, 2011.09, 465.226);
-    path_61.cubicTo(2011.13, 465.05, 2011.22, 464.887, 2011.35, 464.758);
-    path_61.cubicTo(2011.47, 464.628, 2011.63, 464.535, 2011.81, 464.49);
-    path_61.cubicTo(2026.14, 459.44, 2038.81, 461.39, 2053.21, 460.15);
-    path_61.cubicTo(2066.75, 459.51, 2080.52, 458.8, 2094.03, 458.94);
-    path_61.cubicTo(2211.49, 453.69, 2314.94, 380.56, 2315.97, 379.82);
-    path_61.cubicTo(2317.36, 378.826, 2318.97, 378.183, 2320.66, 377.944);
-    path_61.cubicTo(2322.35, 377.705, 2324.07, 377.878, 2325.68, 378.449);
-    path_61.cubicTo(2327.29, 379.019, 2328.74, 379.97, 2329.9, 381.221);
-    path_61.cubicTo(2331.06, 382.471, 2331.91, 383.984, 2332.36, 385.63);
-    path_61.cubicTo(2343.65, 426.76, 2393.07, 457.74, 2475.26, 475.2);
-    path_61.cubicTo(2512.78, 483.2, 2562.47, 527.38, 2583.59, 547.56);
-    path_61.cubicTo(2603.35, 517.19, 2634.32, 507.51, 2655.5, 506.23);
-    path_61.lineTo(2655.5, 506.27);
+    path_61.moveTo(size.width * 0.7972080, size.height * 0.1636296);
+    path_61.cubicTo(
+        size.width * 0.7971210,
+        size.height * 0.1470459,
+        size.width * 0.7949325,
+        size.height * 0.07390433,
+        size.width * 0.7637736,
+        size.height * 0.04450549);
+    path_61.cubicTo(
+        size.width * 0.7633654,
+        size.height * 0.04411926,
+        size.width * 0.7630531,
+        size.height * 0.04362605,
+        size.width * 0.7628700,
+        size.height * 0.04307337);
+    path_61.cubicTo(
+        size.width * 0.7626899,
+        size.height * 0.04252069,
+        size.width * 0.7626418,
+        size.height * 0.04192696,
+        size.width * 0.7627349,
+        size.height * 0.04134906);
+    path_61.cubicTo(
+        size.width * 0.7628280,
+        size.height * 0.04077117,
+        size.width * 0.7630561,
+        size.height * 0.04022883,
+        size.width * 0.7634014,
+        size.height * 0.03977343);
+    path_61.cubicTo(
+        size.width * 0.7637436,
+        size.height * 0.03931836,
+        size.width * 0.7641879,
+        size.height * 0.03896542,
+        size.width * 0.7646953,
+        size.height * 0.03874919);
+    path_61.lineTo(size.width * 0.7705884, size.height * 0.03622495);
+    path_61.cubicTo(
+        size.width * 0.7643320,
+        size.height * 0.03296380,
+        size.width * 0.7540769,
+        size.height * 0.02861991,
+        size.width * 0.7450465,
+        size.height * 0.02943762);
+    path_61.cubicTo(
+        size.width * 0.7445602,
+        size.height * 0.02948116,
+        size.width * 0.7440708,
+        size.height * 0.02940320,
+        size.width * 0.7436145,
+        size.height * 0.02920979);
+    path_61.cubicTo(
+        size.width * 0.7431612,
+        size.height * 0.02901642,
+        size.width * 0.7427529,
+        size.height * 0.02871280,
+        size.width * 0.7424257,
+        size.height * 0.02832256);
+    path_61.cubicTo(
+        size.width * 0.7374002,
+        size.height * 0.02235294,
+        size.width * 0.7290153,
+        size.height * 0.01334842,
+        size.width * 0.7233563,
+        size.height * 0.009065934);
+    path_61.lineTo(size.width * 0.7233563, size.height * 0.01461862);
+    path_61.cubicTo(
+        size.width * 0.7233533,
+        size.height * 0.01518455,
+        size.width * 0.7232213,
+        size.height * 0.01574108,
+        size.width * 0.7229721,
+        size.height * 0.01623856);
+    path_61.cubicTo(
+        size.width * 0.7227199,
+        size.height * 0.01673604,
+        size.width * 0.7223597,
+        size.height * 0.01715902,
+        size.width * 0.7219213,
+        size.height * 0.01746975);
+    path_61.cubicTo(
+        size.width * 0.7214800,
+        size.height * 0.01778048,
+        size.width * 0.7209757,
+        size.height * 0.01796933,
+        size.width * 0.7204533,
+        size.height * 0.01801946);
+    path_61.cubicTo(
+        size.width * 0.7199310,
+        size.height * 0.01806955,
+        size.width * 0.7194026,
+        size.height * 0.01797938,
+        size.width * 0.7189192,
+        size.height * 0.01775695);
+    path_61.cubicTo(
+        size.width * 0.7185110,
+        size.height * 0.01756626,
+        size.width * 0.6773882,
+        size.height * -0.001050420,
+        size.width * 0.6321585,
+        size.height * 0.01187136);
+    path_61.cubicTo(
+        size.width * 0.5884479,
+        size.height * 0.02433743,
+        size.width * 0.5528700,
+        size.height * 0.05435359,
+        size.width * 0.5395977,
+        size.height * 0.06668067);
+    path_61.cubicTo(
+        size.width * 0.5330561,
+        size.height * 0.07276018,
+        size.width * 0.5277694,
+        size.height * 0.07511635,
+        size.width * 0.5244731,
+        size.height * 0.07602456);
+    path_61.cubicTo(
+        size.width * 0.5253047,
+        size.height * 0.08014544,
+        size.width * 0.5279436,
+        size.height * 0.08781513,
+        size.width * 0.5362774,
+        size.height * 0.09380090);
+    path_61.cubicTo(
+        size.width * 0.5366587,
+        size.height * 0.09407369,
+        size.width * 0.5369799,
+        size.height * 0.09443148,
+        size.width * 0.5372201,
+        size.height * 0.09485003);
+    path_61.cubicTo(
+        size.width * 0.5374632,
+        size.height * 0.09526891,
+        size.width * 0.5376163,
+        size.height * 0.09573853,
+        size.width * 0.5376734,
+        size.height * 0.09622721);
+    path_61.cubicTo(
+        size.width * 0.5377304,
+        size.height * 0.09671590,
+        size.width * 0.5376884,
+        size.height * 0.09721202,
+        size.width * 0.5375503,
+        size.height * 0.09768164);
+    path_61.cubicTo(
+        size.width * 0.5374152,
+        size.height * 0.09815158,
+        size.width * 0.5371840,
+        size.height * 0.09858403,
+        size.width * 0.5368778,
+        size.height * 0.09894958);
+    path_61.cubicTo(
+        size.width * 0.5364515,
+        size.height * 0.09946025,
+        size.width * 0.5262924,
+        size.height * 0.1114997,
+        size.width * 0.5160042,
+        size.height * 0.1198610);
+    path_61.cubicTo(
+        size.width * 0.5096668,
+        size.height * 0.1250097,
+        size.width * 0.5039658,
+        size.height * 0.1274467,
+        size.width * 0.5002672,
+        size.height * 0.1285876);
+    path_61.cubicTo(
+        size.width * 0.5027229,
+        size.height * 0.1333840,
+        size.width * 0.5080246,
+        size.height * 0.1416968,
+        size.width * 0.5168748,
+        size.height * 0.1460407);
+    path_61.cubicTo(
+        size.width * 0.5174392,
+        size.height * 0.1463174,
+        size.width * 0.5179135,
+        size.height * 0.1467647,
+        size.width * 0.5182438,
+        size.height * 0.1473281);
+    path_61.cubicTo(
+        size.width * 0.5185740,
+        size.height * 0.1478911,
+        size.width * 0.5187451,
+        size.height * 0.1485459,
+        size.width * 0.5187361,
+        size.height * 0.1492117);
+    path_61.cubicTo(
+        size.width * 0.5187241,
+        size.height * 0.1498778,
+        size.width * 0.5185350,
+        size.height * 0.1505262,
+        size.width * 0.5181867,
+        size.height * 0.1510779);
+    path_61.cubicTo(
+        size.width * 0.5178415,
+        size.height * 0.1516293,
+        size.width * 0.5173521,
+        size.height * 0.1520601,
+        size.width * 0.5167817,
+        size.height * 0.1523174);
+    path_61.lineTo(size.width * 0.5077424, size.height * 0.1563866);
+    path_61.cubicTo(
+        size.width * 0.5122156,
+        size.height * 0.1629670,
+        size.width * 0.5203963,
+        size.height * 0.1733387,
+        size.width * 0.5266977,
+        size.height * 0.1748255);
+    path_61.cubicTo(
+        size.width * 0.5272050,
+        size.height * 0.1749457,
+        size.width * 0.5276794,
+        size.height * 0.1751981,
+        size.width * 0.5280757,
+        size.height * 0.1755601);
+    path_61.cubicTo(
+        size.width * 0.5284719,
+        size.height * 0.1759224,
+        size.width * 0.5287811,
+        size.height * 0.1763836,
+        size.width * 0.5289733,
+        size.height * 0.1769037);
+    path_61.cubicTo(
+        size.width * 0.5291264,
+        size.height * 0.1773174,
+        size.width * 0.5427829,
+        size.height * 0.2136910,
+        size.width * 0.5683188,
+        size.height * 0.2431610);
+    path_61.cubicTo(
+        size.width * 0.5633654,
+        size.height * 0.2321719,
+        size.width * 0.5616121,
+        size.height * 0.2235811,
+        size.width * 0.5614830,
+        size.height * 0.2229315);
+    path_61.cubicTo(
+        size.width * 0.5613419,
+        size.height * 0.2222243,
+        size.width * 0.5614140,
+        size.height * 0.2214871,
+        size.width * 0.5616902,
+        size.height * 0.2208274);
+    path_61.cubicTo(
+        size.width * 0.5652657,
+        size.height * 0.2121978,
+        size.width * 0.5616091,
+        size.height * 0.1949224,
+        size.width * 0.5592285,
+        size.height * 0.1865352);
+    path_61.cubicTo(
+        size.width * 0.5562174,
+        size.height * 0.1864360,
+        size.width * 0.5532153,
+        size.height * 0.1860740,
+        size.width * 0.5502582,
+        size.height * 0.1854525);
+    path_61.cubicTo(
+        size.width * 0.5488172,
+        size.height * 0.1852456,
+        size.width * 0.5474902,
+        size.height * 0.1845065,
+        size.width * 0.5464995,
+        size.height * 0.1833613);
+    path_61.cubicTo(
+        size.width * 0.5464305,
+        size.height * 0.1832847,
+        size.width * 0.5463945,
+        size.height * 0.1831829,
+        size.width * 0.5463945,
+        size.height * 0.1830769);
+    path_61.cubicTo(
+        size.width * 0.5463945,
+        size.height * 0.1829709,
+        size.width * 0.5464305,
+        size.height * 0.1828691,
+        size.width * 0.5464995,
+        size.height * 0.1827925);
+    path_61.cubicTo(
+        size.width * 0.5474902,
+        size.height * 0.1816471,
+        size.width * 0.5488172,
+        size.height * 0.1809059,
+        size.width * 0.5502552,
+        size.height * 0.1806949);
+    path_61.cubicTo(
+        size.width * 0.5539448,
+        size.height * 0.1799774,
+        size.width * 0.5576824,
+        size.height * 0.1794021,
+        size.width * 0.5614350,
+        size.height * 0.1796315);
+    path_61.cubicTo(
+        size.width * 0.5856349,
+        size.height * 0.1773109,
+        size.width * 0.6079676,
+        size.height * 0.1632644,
+        size.width * 0.6191924,
+        size.height * 0.1550679);
+    path_61.cubicTo(
+        size.width * 0.6182017,
+        size.height * 0.1549838,
+        size.width * 0.6172050,
+        size.height * 0.1548836,
+        size.width * 0.6162083,
+        size.height * 0.1547673);
+    path_61.cubicTo(
+        size.width * 0.6119003,
+        size.height * 0.1540142,
+        size.width * 0.6073521,
+        size.height * 0.1541726,
+        size.width * 0.6038427,
+        size.height * 0.1506820);
+    path_61.cubicTo(
+        size.width * 0.6038007,
+        size.height * 0.1506432,
+        size.width * 0.6037706,
+        size.height * 0.1505931,
+        size.width * 0.6037556,
+        size.height * 0.1505372);
+    path_61.cubicTo(
+        size.width * 0.6037376,
+        size.height * 0.1504809,
+        size.width * 0.6037376,
+        size.height * 0.1504211,
+        size.width * 0.6037496,
+        size.height * 0.1503639);
+    path_61.cubicTo(
+        size.width * 0.6037616,
+        size.height * 0.1503070,
+        size.width * 0.6037887,
+        size.height * 0.1502544,
+        size.width * 0.6038277,
+        size.height * 0.1502127);
+    path_61.cubicTo(
+        size.width * 0.6038637,
+        size.height * 0.1501707,
+        size.width * 0.6039117,
+        size.height * 0.1501406,
+        size.width * 0.6039658,
+        size.height * 0.1501261);
+    path_61.cubicTo(
+        size.width * 0.6082678,
+        size.height * 0.1484939,
+        size.width * 0.6120715,
+        size.height * 0.1491241,
+        size.width * 0.6163945,
+        size.height * 0.1487233);
+    path_61.cubicTo(
+        size.width * 0.6204593,
+        size.height * 0.1485165,
+        size.width * 0.6245932,
+        size.height * 0.1482870,
+        size.width * 0.6286491,
+        size.height * 0.1483323);
+    path_61.cubicTo(
+        size.width * 0.6639117,
+        size.height * 0.1466354,
+        size.width * 0.6949685,
+        size.height * 0.1229994,
+        size.width * 0.6952777,
+        size.height * 0.1227602);
+    path_61.cubicTo(
+        size.width * 0.6956950,
+        size.height * 0.1224389,
+        size.width * 0.6961783,
+        size.height * 0.1222311,
+        size.width * 0.6966857,
+        size.height * 0.1221538);
+    path_61.cubicTo(
+        size.width * 0.6971930,
+        size.height * 0.1220766,
+        size.width * 0.6977094,
+        size.height * 0.1221325,
+        size.width * 0.6981927,
+        size.height * 0.1223171);
+    path_61.cubicTo(
+        size.width * 0.6986761,
+        size.height * 0.1225013,
+        size.width * 0.6991114,
+        size.height * 0.1228087,
+        size.width * 0.6994596,
+        size.height * 0.1232130);
+    path_61.cubicTo(
+        size.width * 0.6998079,
+        size.height * 0.1236170,
+        size.width * 0.7000630,
+        size.height * 0.1241060,
+        size.width * 0.7001981,
+        size.height * 0.1246380);
+    path_61.cubicTo(
+        size.width * 0.7035875,
+        size.height * 0.1379315,
+        size.width * 0.7184239,
+        size.height * 0.1479444,
+        size.width * 0.7430982,
+        size.height * 0.1535876);
+    path_61.cubicTo(
+        size.width * 0.7543621,
+        size.height * 0.1561732,
+        size.width * 0.7692795,
+        size.height * 0.1704525,
+        size.width * 0.7756199,
+        size.height * 0.1769748);
+    path_61.cubicTo(
+        size.width * 0.7815521,
+        size.height * 0.1671590,
+        size.width * 0.7908496,
+        size.height * 0.1640304,
+        size.width * 0.7972080,
+        size.height * 0.1636167);
+    path_61.lineTo(size.width * 0.7972080, size.height * 0.1636296);
     path_61.close();
-    path_61.moveTo(2593.14, 1495.89);
-    path_61.cubicTo(2594.92, 1486.17, 2598.33, 1476.82, 2603.22, 1468.23);
-    path_61.cubicTo(2580.22, 1476.99, 2558.42, 1483.82, 2540.22, 1488.95);
-    path_61.cubicTo(2555.6, 1502.44, 2572.15, 1514.53, 2589.67, 1525.08);
-    path_61.cubicTo(2590.04, 1515.26, 2591.2, 1505.48, 2593.14, 1495.85);
-    path_61.lineTo(2593.14, 1495.89);
+    path_61.moveTo(size.width * 0.7784869, size.height * 0.4834809);
+    path_61.cubicTo(
+        size.width * 0.7790213,
+        size.height * 0.4803394,
+        size.width * 0.7800450,
+        size.height * 0.4773174,
+        size.width * 0.7815131,
+        size.height * 0.4745410);
+    path_61.cubicTo(
+        size.width * 0.7746082,
+        size.height * 0.4773723,
+        size.width * 0.7680636,
+        size.height * 0.4795798,
+        size.width * 0.7625998,
+        size.height * 0.4812379);
+    path_61.cubicTo(
+        size.width * 0.7672171,
+        size.height * 0.4855979,
+        size.width * 0.7721855,
+        size.height * 0.4895055,
+        size.width * 0.7774452,
+        size.height * 0.4929153);
+    path_61.cubicTo(
+        size.width * 0.7775563,
+        size.height * 0.4897414,
+        size.width * 0.7779045,
+        size.height * 0.4865805,
+        size.width * 0.7784869,
+        size.height * 0.4834680);
+    path_61.lineTo(size.width * 0.7784869, size.height * 0.4834809);
     path_61.close();
-    path_61.moveTo(2579.87, 1312.1);
-    path_61.lineTo(2592.15, 1268.68);
-    path_61.lineTo(2557.66, 1245.43);
-    path_61.lineTo(2539.48, 1233.17);
-    path_61.lineTo(2437.58, 1269.37);
-    path_61.lineTo(2427.98, 1291.37);
-    path_61.lineTo(2409.47, 1333.79);
-    path_61.lineTo(2443.79, 1353.61);
-    path_61.lineTo(2468.04, 1367.61);
-    path_61.lineTo(2474.04, 1371.08);
-    path_61.lineTo(2572.97, 1336.47);
-    path_61.lineTo(2573.17, 1335.77);
-    path_61.lineTo(2579.87, 1312.1);
+    path_61.moveTo(size.width * 0.7745032, size.height * 0.4240789);
+    path_61.lineTo(size.width * 0.7781897, size.height * 0.4100452);
+    path_61.lineTo(size.width * 0.7678355, size.height * 0.4025307);
+    path_61.lineTo(size.width * 0.7623777, size.height * 0.3985682);
+    path_61.lineTo(size.width * 0.7317863, size.height * 0.4102683);
+    path_61.lineTo(size.width * 0.7289042, size.height * 0.4173788);
+    path_61.lineTo(size.width * 0.7233473, size.height * 0.4310892);
+    path_61.lineTo(size.width * 0.7336506, size.height * 0.4374952);
+    path_61.lineTo(size.width * 0.7409307, size.height * 0.4420200);
+    path_61.lineTo(size.width * 0.7427319, size.height * 0.4431416);
+    path_61.lineTo(size.width * 0.7724317, size.height * 0.4319554);
+    path_61.lineTo(size.width * 0.7724917, size.height * 0.4317292);
+    path_61.lineTo(size.width * 0.7745032, size.height * 0.4240789);
     path_61.close();
-    path_61.moveTo(2533.41, 1784.43);
-    path_61.cubicTo(2579.58, 1724.24, 2598.63, 1670.31, 2588.48, 1628.43);
-    path_61.cubicTo(2584.63, 1615.91, 2521.92, 1583.57, 2498.32, 1571.43);
-    path_61.cubicTo(2495.61, 1570.03, 2493.12, 1568.75, 2490.82, 1567.55);
-    path_61.cubicTo(2466, 1672.55, 2377.77, 1712.06, 2333.41, 1725.55);
-    path_61.cubicTo(2355.51, 1737.84, 2372.13, 1743.18, 2372.56, 1743.32);
-    path_61.lineTo(2372.9, 1743.44);
-    path_61.lineTo(2372.99, 1743.44);
-    path_61.cubicTo(2381.47, 1745.72, 2389.04, 1750.35, 2396.25, 1755.29);
-    path_61.cubicTo(2398.72, 1756.93, 2400.94, 1759.29, 2402.17, 1764.29);
-    path_61.cubicTo(2402.25, 1764.6, 2402.23, 1764.92, 2402.12, 1765.21);
-    path_61.cubicTo(2402.02, 1765.51, 2401.82, 1765.76, 2401.57, 1765.95);
-    path_61.cubicTo(2397.39, 1769.05, 2394.19, 1769.43, 2391.25, 1769.11);
-    path_61.cubicTo(2386.96, 1768.75, 2382.7, 1768.16, 2378.47, 1767.34);
-    path_61.cubicTo(2375, 1805.45, 2376.38, 1865.67, 2400.33, 1869.59);
-    path_61.cubicTo(2437.79, 1875.72, 2465.4, 1873, 2533.41, 1784.39);
-    path_61.lineTo(2533.41, 1784.43);
+    path_61.moveTo(size.width * 0.7605554, size.height * 0.5767388);
+    path_61.cubicTo(
+        size.width * 0.7744161,
+        size.height * 0.5572851,
+        size.width * 0.7801351,
+        size.height * 0.5398546,
+        size.width * 0.7770880,
+        size.height * 0.5263187);
+    path_61.cubicTo(
+        size.width * 0.7759322,
+        size.height * 0.5222721,
+        size.width * 0.7571060,
+        size.height * 0.5118197,
+        size.width * 0.7500210,
+        size.height * 0.5078959);
+    path_61.cubicTo(
+        size.width * 0.7492074,
+        size.height * 0.5074434,
+        size.width * 0.7484599,
+        size.height * 0.5070297,
+        size.width * 0.7477694,
+        size.height * 0.5066419);
+    path_61.cubicTo(
+        size.width * 0.7403182,
+        size.height * 0.5405785,
+        size.width * 0.7138307,
+        size.height * 0.5533484,
+        size.width * 0.7005134,
+        size.height * 0.5577085);
+    path_61.cubicTo(
+        size.width * 0.7071480,
+        size.height * 0.5616807,
+        size.width * 0.7121375,
+        size.height * 0.5634066,
+        size.width * 0.7122666,
+        size.height * 0.5634518);
+    path_61.lineTo(size.width * 0.7123687, size.height * 0.5634906);
+    path_61.lineTo(size.width * 0.7123957, size.height * 0.5634906);
+    path_61.cubicTo(
+        size.width * 0.7149415,
+        size.height * 0.5642275,
+        size.width * 0.7172140,
+        size.height * 0.5657240,
+        size.width * 0.7193786,
+        size.height * 0.5673206);
+    path_61.cubicTo(
+        size.width * 0.7201201,
+        size.height * 0.5678507,
+        size.width * 0.7207866,
+        size.height * 0.5686134,
+        size.width * 0.7211558,
+        size.height * 0.5702295);
+    path_61.cubicTo(
+        size.width * 0.7211798,
+        size.height * 0.5703297,
+        size.width * 0.7211738,
+        size.height * 0.5704331,
+        size.width * 0.7211408,
+        size.height * 0.5705268);
+    path_61.cubicTo(
+        size.width * 0.7211108,
+        size.height * 0.5706238,
+        size.width * 0.7210507,
+        size.height * 0.5707046,
+        size.width * 0.7209757,
+        size.height * 0.5707660);
+    path_61.cubicTo(
+        size.width * 0.7197208,
+        size.height * 0.5717679,
+        size.width * 0.7187601,
+        size.height * 0.5718908,
+        size.width * 0.7178775,
+        size.height * 0.5717873);
+    path_61.cubicTo(
+        size.width * 0.7165896,
+        size.height * 0.5716710,
+        size.width * 0.7153107,
+        size.height * 0.5714803,
+        size.width * 0.7140408,
+        size.height * 0.5712153);
+    path_61.cubicTo(
+        size.width * 0.7129991,
+        size.height * 0.5835326,
+        size.width * 0.7134134,
+        size.height * 0.6029961,
+        size.width * 0.7206034,
+        size.height * 0.6042631);
+    path_61.cubicTo(
+        size.width * 0.7318493,
+        size.height * 0.6062443,
+        size.width * 0.7401381,
+        size.height * 0.6053652,
+        size.width * 0.7605554,
+        size.height * 0.5767259);
+    path_61.lineTo(size.width * 0.7605554, size.height * 0.5767388);
     path_61.close();
-    path_61.moveTo(2456.22, 672.53);
-    path_61.cubicTo(2457.27, 628.05, 2440.53, 584.17, 2411.1, 553.3);
-    path_61.cubicTo(2408.99, 551.093, 2406.81, 548.95, 2404.58, 546.87);
-    path_61.cubicTo(2341.87, 488.72, 2249.8, 536.41, 2247.34, 537.7);
-    path_61.lineTo(2144.24, 620.48);
-    path_61.cubicTo(2139.06, 626.756, 2132.34, 631.583, 2124.74, 634.492);
-    path_61.cubicTo(2117.13, 637.401, 2108.91, 638.293, 2100.86, 637.08);
-    path_61.cubicTo(2017.34, 624.25, 1960.64, 638.32, 1932.32, 678.88);
-    path_61.cubicTo(1921.32, 694.65, 1918.94, 712.52, 1921.47, 730.35);
-    path_61.cubicTo(1926.36, 764.8, 1949.53, 799.1, 1964.03, 817.69);
-    path_61.cubicTo(1968.03, 821.81, 1972.27, 825.833, 1976.76, 829.76);
-    path_61.cubicTo(1978.76, 831.525, 1980.03, 833.976, 1980.31, 836.63);
-    path_61.lineTo(1984.9, 881.26);
-    path_61.lineTo(1988.16, 883.26);
-    path_61.lineTo(1995.95, 886.08);
-    path_61.cubicTo(1996.29, 886.211, 1996.63, 886.364, 1996.95, 886.54);
-    path_61.cubicTo(1997.46, 886.81, 2050.2, 913.71, 2098.14, 891.47);
-    path_61.cubicTo(2136.28, 873.79, 2166.83, 826.77, 2178.2, 807.37);
-    path_61.cubicTo(2186.91, 792.52, 2205.72, 786.02, 2223.94, 791.58);
-    path_61.cubicTo(2306.8, 816.84, 2364.48, 808.82, 2416.82, 764.69);
-    path_61.cubicTo(2441, 744.43, 2455.32, 710.81, 2456.22, 672.53);
+    path_61.moveTo(size.width * 0.7373822, size.height * 0.2173659);
+    path_61.cubicTo(
+        size.width * 0.7376974,
+        size.height * 0.2029897,
+        size.width * 0.7326719,
+        size.height * 0.1888074,
+        size.width * 0.7238367,
+        size.height * 0.1788300);
+    path_61.cubicTo(
+        size.width * 0.7232032,
+        size.height * 0.1781167,
+        size.width * 0.7225488,
+        size.height * 0.1774240,
+        size.width * 0.7218793,
+        size.height * 0.1767518);
+    path_61.cubicTo(
+        size.width * 0.7030531,
+        size.height * 0.1579573,
+        size.width * 0.6754128,
+        size.height * 0.1733710,
+        size.width * 0.6746743,
+        size.height * 0.1737880);
+    path_61.lineTo(size.width * 0.6437226, size.height * 0.2005430);
+    path_61.cubicTo(
+        size.width * 0.6421675,
+        size.height * 0.2025714,
+        size.width * 0.6401501,
+        size.height * 0.2041315,
+        size.width * 0.6378685,
+        size.height * 0.2050718);
+    path_61.cubicTo(
+        size.width * 0.6355839,
+        size.height * 0.2060120,
+        size.width * 0.6331162,
+        size.height * 0.2063003,
+        size.width * 0.6306995,
+        size.height * 0.2059082);
+    path_61.cubicTo(
+        size.width * 0.6056259,
+        size.height * 0.2017615,
+        size.width * 0.5886040,
+        size.height * 0.2063090,
+        size.width * 0.5801021,
+        size.height * 0.2194182);
+    path_61.cubicTo(
+        size.width * 0.5767998,
+        size.height * 0.2245152,
+        size.width * 0.5760853,
+        size.height * 0.2302909,
+        size.width * 0.5768448,
+        size.height * 0.2360537);
+    path_61.cubicTo(
+        size.width * 0.5783128,
+        size.height * 0.2471881,
+        size.width * 0.5852687,
+        size.height * 0.2582741,
+        size.width * 0.5896217,
+        size.height * 0.2642825);
+    path_61.cubicTo(
+        size.width * 0.5908226,
+        size.height * 0.2656141,
+        size.width * 0.5920955,
+        size.height * 0.2669144,
+        size.width * 0.5934434,
+        size.height * 0.2681836);
+    path_61.cubicTo(
+        size.width * 0.5940438,
+        size.height * 0.2687540,
+        size.width * 0.5944251,
+        size.height * 0.2695462,
+        size.width * 0.5945092,
+        size.height * 0.2704040);
+    path_61.lineTo(size.width * 0.5958871, size.height * 0.2848287);
+    path_61.lineTo(size.width * 0.5968658, size.height * 0.2854751);
+    path_61.lineTo(size.width * 0.5992044, size.height * 0.2863866);
+    path_61.cubicTo(
+        size.width * 0.5993065,
+        size.height * 0.2864289,
+        size.width * 0.5994086,
+        size.height * 0.2864783,
+        size.width * 0.5995047,
+        size.height * 0.2865352);
+    path_61.cubicTo(
+        size.width * 0.5996578,
+        size.height * 0.2866225,
+        size.width * 0.6154908,
+        size.height * 0.2953167,
+        size.width * 0.6298829,
+        size.height * 0.2881286);
+    path_61.cubicTo(
+        size.width * 0.6413329,
+        size.height * 0.2824144,
+        size.width * 0.6505044,
+        size.height * 0.2672172,
+        size.width * 0.6539177,
+        size.height * 0.2609470);
+    path_61.cubicTo(
+        size.width * 0.6565326,
+        size.height * 0.2561474,
+        size.width * 0.6621795,
+        size.height * 0.2540465,
+        size.width * 0.6676494,
+        size.height * 0.2558436);
+    path_61.cubicTo(
+        size.width * 0.6925248,
+        size.height * 0.2640078,
+        size.width * 0.7098409,
+        size.height * 0.2614156,
+        size.width * 0.7255539,
+        size.height * 0.2471526);
+    path_61.cubicTo(
+        size.width * 0.7328130,
+        size.height * 0.2406044,
+        size.width * 0.7371120,
+        size.height * 0.2297382,
+        size.width * 0.7373822,
+        size.height * 0.2173659);
     path_61.close();
-    path_61.moveTo(2417.76, 1363);
-    path_61.lineTo(2390.67, 1347.36);
-    path_61.cubicTo(2388.42, 1346.06, 2386.72, 1343.97, 2385.91, 1341.5);
-    path_61.cubicTo(2385.09, 1339.02, 2385.22, 1336.34, 2386.26, 1333.95);
-    path_61.lineTo(2399.65, 1303.25);
-    path_61.lineTo(2394.55, 1305.48);
-    path_61.cubicTo(2334.65, 1331.68, 2291.11, 1355.17, 2275.71, 1363.73);
-    path_61.cubicTo(2276.96, 1373.06, 2278.82, 1382.29, 2281.27, 1391.38);
-    path_61.cubicTo(2285.7, 1405.55, 2291.15, 1413.66, 2294.79, 1417.88);
-    path_61.cubicTo(2332.55, 1397.41, 2374.6, 1379.14, 2417.76, 1363);
+    path_61.moveTo(size.width * 0.7258361, size.height * 0.4405301);
+    path_61.lineTo(size.width * 0.7177034, size.height * 0.4354751);
+    path_61.cubicTo(
+        size.width * 0.7170279,
+        size.height * 0.4350549,
+        size.width * 0.7165176,
+        size.height * 0.4343794,
+        size.width * 0.7162744,
+        size.height * 0.4335811);
+    path_61.cubicTo(
+        size.width * 0.7160282,
+        size.height * 0.4327796,
+        size.width * 0.7160672,
+        size.height * 0.4319134,
+        size.width * 0.7163795,
+        size.height * 0.4311409);
+    path_61.lineTo(size.width * 0.7203993, size.height * 0.4212185);
+    path_61.lineTo(size.width * 0.7188682, size.height * 0.4219392);
+    path_61.cubicTo(
+        size.width * 0.7008856,
+        size.height * 0.4304072,
+        size.width * 0.6878145,
+        size.height * 0.4379994,
+        size.width * 0.6831912,
+        size.height * 0.4407660);
+    path_61.cubicTo(
+        size.width * 0.6835665,
+        size.height * 0.4437815,
+        size.width * 0.6841249,
+        size.height * 0.4467647,
+        size.width * 0.6848604,
+        size.height * 0.4497027);
+    path_61.cubicTo(
+        size.width * 0.6861903,
+        size.height * 0.4542825,
+        size.width * 0.6878265,
+        size.height * 0.4569037,
+        size.width * 0.6889192,
+        size.height * 0.4582676);
+    path_61.cubicTo(
+        size.width * 0.7002552,
+        size.height * 0.4516516,
+        size.width * 0.7128790,
+        size.height * 0.4457466,
+        size.width * 0.7258361,
+        size.height * 0.4405301);
     path_61.close();
-    path_61.moveTo(2263.25, 1405.09);
-    path_61.cubicTo(2262.52, 1402.93, 2261.65, 1400.09, 2260.71, 1396.7);
-    path_61.cubicTo(2257.24, 1384.88, 2254.96, 1372.74, 2253.89, 1360.47);
-    path_61.cubicTo(2251.43, 1338.19, 2251.28, 1315.71, 2253.43, 1293.4);
-    path_61.cubicTo(2258.43, 1238.88, 2243.43, 1174.88, 2237.3, 1151.85);
-    path_61.cubicTo(2222.44, 1154.29, 2192.3, 1160, 2169.97, 1169.32);
-    path_61.cubicTo(2182.57, 1179.32, 2199.97, 1195.98, 2209.71, 1218.14);
-    path_61.cubicTo(2222.44, 1246.98, 2218.95, 1270.39, 2216.42, 1280.28);
-    path_61.cubicTo(2221.92, 1291.53, 2233.67, 1322.12, 2213.79, 1346.96);
-    path_61.cubicTo(2199.17, 1365.24, 2180.72, 1375.25, 2163.21, 1374.25);
-    path_61.cubicTo(2158.05, 1373.98, 2152.99, 1372.73, 2148.3, 1370.57);
-    path_61.cubicTo(2174.78, 1447.28, 2193.85, 1521.13, 2204.08, 1587.14);
-    path_61.cubicTo(2199.07, 1515.51, 2250.34, 1426.31, 2263.25, 1405.1);
-    path_61.lineTo(2263.25, 1405.09);
+    path_61.moveTo(size.width * 0.6794506, size.height * 0.4541338);
+    path_61.cubicTo(
+        size.width * 0.6792315,
+        size.height * 0.4534357,
+        size.width * 0.6789703,
+        size.height * 0.4525178,
+        size.width * 0.6786881,
+        size.height * 0.4514221);
+    path_61.cubicTo(
+        size.width * 0.6776464,
+        size.height * 0.4476018,
+        size.width * 0.6769619,
+        size.height * 0.4436781,
+        size.width * 0.6766406,
+        size.height * 0.4397123);
+    path_61.cubicTo(
+        size.width * 0.6759021,
+        size.height * 0.4325113,
+        size.width * 0.6758571,
+        size.height * 0.4252456,
+        size.width * 0.6765026,
+        size.height * 0.4180349);
+    path_61.cubicTo(
+        size.width * 0.6780036,
+        size.height * 0.4004137,
+        size.width * 0.6735005,
+        size.height * 0.3797285,
+        size.width * 0.6716602,
+        size.height * 0.3722851);
+    path_61.cubicTo(
+        size.width * 0.6671990,
+        size.height * 0.3730737,
+        size.width * 0.6581507,
+        size.height * 0.3749192,
+        size.width * 0.6514470,
+        size.height * 0.3779315);
+    path_61.cubicTo(
+        size.width * 0.6552297,
+        size.height * 0.3811635,
+        size.width * 0.6604533,
+        size.height * 0.3865482,
+        size.width * 0.6633774,
+        size.height * 0.3937104);
+    path_61.cubicTo(
+        size.width * 0.6671990,
+        size.height * 0.4030317,
+        size.width * 0.6661513,
+        size.height * 0.4105979,
+        size.width * 0.6653918,
+        size.height * 0.4137944);
+    path_61.cubicTo(
+        size.width * 0.6670429,
+        size.height * 0.4174305,
+        size.width * 0.6705704,
+        size.height * 0.4273174,
+        size.width * 0.6646022,
+        size.height * 0.4353458);
+    path_61.cubicTo(
+        size.width * 0.6602131,
+        size.height * 0.4412540,
+        size.width * 0.6546743,
+        size.height * 0.4444893,
+        size.width * 0.6494176,
+        size.height * 0.4441661);
+    path_61.cubicTo(
+        size.width * 0.6478685,
+        size.height * 0.4440789,
+        size.width * 0.6463494,
+        size.height * 0.4436749,
+        size.width * 0.6449415,
+        size.height * 0.4429767);
+    path_61.cubicTo(
+        size.width * 0.6528910,
+        size.height * 0.4677699,
+        size.width * 0.6586160,
+        size.height * 0.4916387,
+        size.width * 0.6616872,
+        size.height * 0.5129735);
+    path_61.cubicTo(
+        size.width * 0.6601831,
+        size.height * 0.4898222,
+        size.width * 0.6755749,
+        size.height * 0.4609922,
+        size.width * 0.6794506,
+        size.height * 0.4541370);
+    path_61.lineTo(size.width * 0.6794506, size.height * 0.4541338);
     path_61.close();
-    path_61.moveTo(2197.25, 1333.73);
-    path_61.cubicTo(2205.3, 1323.67, 2204.42, 1311.04, 2201.82, 1301.42);
-    path_61.cubicTo(2195.62, 1307.05, 2188.52, 1311.6, 2180.82, 1314.88);
-    path_61.cubicTo(2177.63, 1320.12, 2174.12, 1325.16, 2170.3, 1329.96);
-    path_61.cubicTo(2165.02, 1336.71, 2158.98, 1342.82, 2152.3, 1348.18);
-    path_61.cubicTo(2155.65, 1351.1, 2159.87, 1352.83, 2164.3, 1353.1);
-    path_61.cubicTo(2174.67, 1353.73, 2187.25, 1346.23, 2197.24, 1333.74);
-    path_61.lineTo(2197.25, 1333.73);
+    path_61.moveTo(size.width * 0.6596367, size.height * 0.4310698);
+    path_61.cubicTo(
+        size.width * 0.6620534,
+        size.height * 0.4278184,
+        size.width * 0.6617893,
+        size.height * 0.4237363,
+        size.width * 0.6610087,
+        size.height * 0.4206270);
+    path_61.cubicTo(
+        size.width * 0.6591474,
+        size.height * 0.4224467,
+        size.width * 0.6570159,
+        size.height * 0.4239173,
+        size.width * 0.6547043,
+        size.height * 0.4249774);
+    path_61.cubicTo(
+        size.width * 0.6537466,
+        size.height * 0.4266710,
+        size.width * 0.6526929,
+        size.height * 0.4282999,
+        size.width * 0.6515461,
+        size.height * 0.4298513);
+    path_61.cubicTo(
+        size.width * 0.6499610,
+        size.height * 0.4320330,
+        size.width * 0.6481477,
+        size.height * 0.4340078,
+        size.width * 0.6461423,
+        size.height * 0.4357401);
+    path_61.cubicTo(
+        size.width * 0.6471480,
+        size.height * 0.4366839,
+        size.width * 0.6484149,
+        size.height * 0.4372431,
+        size.width * 0.6497448,
+        size.height * 0.4373303);
+    path_61.cubicTo(
+        size.width * 0.6528580,
+        size.height * 0.4375339,
+        size.width * 0.6566346,
+        size.height * 0.4351099,
+        size.width * 0.6596337,
+        size.height * 0.4310730);
+    path_61.lineTo(size.width * 0.6596367, size.height * 0.4310698);
     path_61.close();
-    path_61.moveTo(2195.41, 1276.8);
-    path_61.cubicTo(2196.66, 1272.97, 2202.05, 1253.24, 2190.34, 1226.69);
-    path_61.cubicTo(2176.9, 1196.23, 2144.59, 1177.31, 2144.26, 1177.12);
-    path_61.cubicTo(2143.93, 1176.93, 2143.87, 1176.89, 2143.68, 1176.76);
-    path_61.cubicTo(2128.01, 1168.42, 2110.68, 1164.76, 2093.54, 1160.61);
-    path_61.cubicTo(2090.54, 1159.62, 2087.71, 1158.18, 2085.15, 1156.33);
-    path_61.cubicTo(2085.02, 1156.23, 2084.91, 1156.1, 2084.83, 1155.96);
-    path_61.cubicTo(2084.76, 1155.81, 2084.71, 1155.65, 2084.71, 1155.49);
-    path_61.cubicTo(2084.7, 1155.32, 2084.73, 1155.16, 2084.79, 1155.01);
-    path_61.cubicTo(2084.86, 1154.85, 2084.96, 1154.72, 2085.08, 1154.61);
-    path_61.cubicTo(2094.5, 1146.61, 2105.62, 1147.3, 2116.81, 1147.72);
-    path_61.cubicTo(2095.99, 1118.72, 2054.5, 1066.43, 2005.28, 1033.94);
-    path_61.cubicTo(2001.59, 1036.27, 1997.81, 1038.77, 1994, 1041.44);
-    path_61.cubicTo(2032.53, 1103.86, 2069.34, 1175.13, 2102, 1251.19);
-    path_61.cubicTo(2109.9, 1269.56, 2117.43, 1287.89, 2124.58, 1306.19);
-    path_61.cubicTo(2130.64, 1313.73, 2136.29, 1321.59, 2141.52, 1329.73);
-    path_61.cubicTo(2150.52, 1322.04, 2157.7, 1311.85, 2161.42, 1306.01);
-    path_61.cubicTo(2154.42, 1292.29, 2148.19, 1278.01, 2141.26, 1264.22);
-    path_61.cubicTo(2138.18, 1258.78, 2136.35, 1252.72, 2135.89, 1246.48);
-    path_61.cubicTo(2135.87, 1246.2, 2135.97, 1245.91, 2136.15, 1245.7);
-    path_61.cubicTo(2136.34, 1245.48, 2136.61, 1245.35, 2136.89, 1245.33);
-    path_61.cubicTo(2150.63, 1248.59, 2156.89, 1260.33, 2164.89, 1270.25);
-    path_61.cubicTo(2169.99, 1277.27, 2174.58, 1284.66, 2178.61, 1292.34);
-    path_61.cubicTo(2185.29, 1288.48, 2191.03, 1283.17, 2195.4, 1276.81);
-    path_61.lineTo(2195.41, 1276.8);
+    path_61.moveTo(size.width * 0.6590844, size.height * 0.4126697);
+    path_61.cubicTo(
+        size.width * 0.6594596,
+        size.height * 0.4114318,
+        size.width * 0.6610778,
+        size.height * 0.4050549,
+        size.width * 0.6575623,
+        size.height * 0.3964738);
+    path_61.cubicTo(
+        size.width * 0.6535275,
+        size.height * 0.3866290,
+        size.width * 0.6438277,
+        size.height * 0.3805139,
+        size.width * 0.6437286,
+        size.height * 0.3804525);
+    path_61.cubicTo(
+        size.width * 0.6436295,
+        size.height * 0.3803911,
+        size.width * 0.6436115,
+        size.height * 0.3803782,
+        size.width * 0.6435545,
+        size.height * 0.3803361);
+    path_61.cubicTo(
+        size.width * 0.6388502,
+        size.height * 0.3776406,
+        size.width * 0.6336476,
+        size.height * 0.3764577,
+        size.width * 0.6285020,
+        size.height * 0.3751164);
+    path_61.cubicTo(
+        size.width * 0.6276013,
+        size.height * 0.3747964,
+        size.width * 0.6267517,
+        size.height * 0.3743310,
+        size.width * 0.6259832,
+        size.height * 0.3737330);
+    path_61.cubicTo(
+        size.width * 0.6259442,
+        size.height * 0.3737007,
+        size.width * 0.6259111,
+        size.height * 0.3736587,
+        size.width * 0.6258871,
+        size.height * 0.3736134);
+    path_61.cubicTo(
+        size.width * 0.6258661,
+        size.height * 0.3735650,
+        size.width * 0.6258511,
+        size.height * 0.3735133,
+        size.width * 0.6258511,
+        size.height * 0.3734615);
+    path_61.cubicTo(
+        size.width * 0.6258481,
+        size.height * 0.3734066,
+        size.width * 0.6258571,
+        size.height * 0.3733549,
+        size.width * 0.6258751,
+        size.height * 0.3733064);
+    path_61.cubicTo(
+        size.width * 0.6258961,
+        size.height * 0.3732547,
+        size.width * 0.6259261,
+        size.height * 0.3732127,
+        size.width * 0.6259622,
+        size.height * 0.3731771);
+    path_61.cubicTo(
+        size.width * 0.6287902,
+        size.height * 0.3705915,
+        size.width * 0.6321285,
+        size.height * 0.3708145,
+        size.width * 0.6354878,
+        size.height * 0.3709502);
+    path_61.cubicTo(
+        size.width * 0.6292375,
+        size.height * 0.3615772,
+        size.width * 0.6167817,
+        size.height * 0.3446768,
+        size.width * 0.6020054,
+        size.height * 0.3341758);
+    path_61.cubicTo(
+        size.width * 0.6008976,
+        size.height * 0.3349289,
+        size.width * 0.5997628,
+        size.height * 0.3357369,
+        size.width * 0.5986190,
+        size.height * 0.3365999);
+    path_61.cubicTo(
+        size.width * 0.6101861,
+        size.height * 0.3567744,
+        size.width * 0.6212369,
+        size.height * 0.3798093,
+        size.width * 0.6310417,
+        size.height * 0.4043924);
+    path_61.cubicTo(
+        size.width * 0.6334134,
+        size.height * 0.4103297,
+        size.width * 0.6356740,
+        size.height * 0.4162540,
+        size.width * 0.6378205,
+        size.height * 0.4221687);
+    path_61.cubicTo(
+        size.width * 0.6396397,
+        size.height * 0.4246057,
+        size.width * 0.6413359,
+        size.height * 0.4271461,
+        size.width * 0.6429060,
+        size.height * 0.4297770);
+    path_61.cubicTo(
+        size.width * 0.6456079,
+        size.height * 0.4272915,
+        size.width * 0.6477634,
+        size.height * 0.4239981,
+        size.width * 0.6488802,
+        size.height * 0.4221105);
+    path_61.cubicTo(
+        size.width * 0.6467787,
+        size.height * 0.4176761,
+        size.width * 0.6449084,
+        size.height * 0.4130608,
+        size.width * 0.6428280,
+        size.height * 0.4086037);
+    path_61.cubicTo(
+        size.width * 0.6419033,
+        size.height * 0.4068455,
+        size.width * 0.6413539,
+        size.height * 0.4048869,
+        size.width * 0.6412159,
+        size.height * 0.4028701);
+    path_61.cubicTo(
+        size.width * 0.6412098,
+        size.height * 0.4027796,
+        size.width * 0.6412399,
+        size.height * 0.4026858,
+        size.width * 0.6412939,
+        size.height * 0.4026180);
+    path_61.cubicTo(
+        size.width * 0.6413509,
+        size.height * 0.4025469,
+        size.width * 0.6414320,
+        size.height * 0.4025048,
+        size.width * 0.6415161,
+        size.height * 0.4024984);
+    path_61.cubicTo(
+        size.width * 0.6456409,
+        size.height * 0.4035520,
+        size.width * 0.6475203,
+        size.height * 0.4073465,
+        size.width * 0.6499219,
+        size.height * 0.4105527);
+    path_61.cubicTo(
+        size.width * 0.6514530,
+        size.height * 0.4128216,
+        size.width * 0.6528310,
+        size.height * 0.4152101,
+        size.width * 0.6540408,
+        size.height * 0.4176923);
+    path_61.cubicTo(
+        size.width * 0.6560462,
+        size.height * 0.4164447,
+        size.width * 0.6577694,
+        size.height * 0.4147285,
+        size.width * 0.6590814,
+        size.height * 0.4126729);
+    path_61.lineTo(size.width * 0.6590844, size.height * 0.4126697);
     path_61.close();
-    path_61.moveTo(2179.64, 1769.35);
-    path_61.cubicTo(2191.64, 1737.62, 2194.64, 1688.46, 2187.87, 1626.05);
-    path_61.cubicTo(2179.54, 1549.34, 2157.3, 1459.14, 2123.87, 1364.82);
-    path_61.cubicTo(2121.53, 1358.15, 2119.13, 1351.49, 2116.66, 1344.82);
-    path_61.cubicTo(2111.57, 1331.04, 2106.23, 1317.19, 2100.66, 1303.27);
-    path_61.cubicTo(2097.27, 1294.76, 2093.79, 1286.23, 2090.22, 1277.68);
-    path_61.lineTo(2089.54, 1276.03);
-    path_61.cubicTo(2087.24, 1270.52, 2084.91, 1265.01, 2082.54, 1259.5);
-    path_61.cubicTo(2048.98, 1181.5, 2013.06, 1112.56, 1977.14, 1054.12);
-    path_61.cubicTo(1973.33, 1047.92, 1969.52, 1041.84, 1965.71, 1035.88);
-    path_61.cubicTo(1901.78, 935.74, 1838.63, 869.18, 1789.58, 843.45);
-    path_61.cubicTo(1815.65, 861.93, 1844.58, 891.55, 1875.87, 931.93);
-    path_61.cubicTo(1901.32, 964.8, 1927.26, 1003.56, 1952.93, 1046.8);
-    path_61.cubicTo(1956.62, 1053.02, 1960.3, 1059.33, 1963.99, 1065.74);
-    path_61.cubicTo(1998.73, 1126.23, 2032.75, 1194.64, 2064.06, 1267.44);
-    path_61.cubicTo(2075.81, 1294.77, 2087.06, 1322.56, 2097.56, 1350.44);
-    path_61.cubicTo(2100.12, 1357.18, 2102.63, 1363.93, 2105.09, 1370.68);
-    path_61.cubicTo(2120.55, 1412.96, 2134.34, 1455.17, 2145.9, 1495.92);
-    path_61.cubicTo(2146.62, 1497.1, 2147.03, 1498.44, 2147.11, 1499.82);
-    path_61.cubicTo(2147.11, 1499.97, 2147.11, 1500.11, 2147.11, 1500.26);
-    path_61.cubicTo(2168.8, 1577.58, 2182.36, 1649.48, 2184.02, 1706.49);
-    path_61.cubicTo(2184.09, 1706.98, 2184.12, 1707.48, 2184.1, 1707.98);
-    path_61.cubicTo(2184.11, 1708.07, 2184.11, 1708.17, 2184.1, 1708.26);
-    path_61.cubicTo(2184.65, 1731.32, 2183.26, 1751.9, 2179.63, 1769.36);
-    path_61.lineTo(2179.64, 1769.35);
+    path_61.moveTo(size.width * 0.6543500, size.height * 0.5718649);
+    path_61.cubicTo(
+        size.width * 0.6579526,
+        size.height * 0.5616096,
+        size.width * 0.6588532,
+        size.height * 0.5457207,
+        size.width * 0.6568208,
+        size.height * 0.5255495);
+    path_61.cubicTo(
+        size.width * 0.6543200,
+        size.height * 0.5007563,
+        size.width * 0.6476434,
+        size.height * 0.4716031,
+        size.width * 0.6376073,
+        size.height * 0.4411183);
+    path_61.cubicTo(
+        size.width * 0.6369048,
+        size.height * 0.4389625,
+        size.width * 0.6361843,
+        size.height * 0.4368100,
+        size.width * 0.6354428,
+        size.height * 0.4346542);
+    path_61.cubicTo(
+        size.width * 0.6339147,
+        size.height * 0.4302004,
+        size.width * 0.6323116,
+        size.height * 0.4257240,
+        size.width * 0.6306394,
+        size.height * 0.4212250);
+    path_61.cubicTo(
+        size.width * 0.6296217,
+        size.height * 0.4184745,
+        size.width * 0.6285770,
+        size.height * 0.4157175,
+        size.width * 0.6275053,
+        size.height * 0.4129541);
+    path_61.lineTo(size.width * 0.6273011, size.height * 0.4124208);
+    path_61.cubicTo(
+        size.width * 0.6266106,
+        size.height * 0.4106399,
+        size.width * 0.6259111,
+        size.height * 0.4088591,
+        size.width * 0.6251996,
+        size.height * 0.4070782);
+    path_61.cubicTo(
+        size.width * 0.6151246,
+        size.height * 0.3818681,
+        size.width * 0.6043410,
+        size.height * 0.3595863,
+        size.width * 0.5935575,
+        size.height * 0.3406981);
+    path_61.cubicTo(
+        size.width * 0.5924137,
+        size.height * 0.3386942,
+        size.width * 0.5912699,
+        size.height * 0.3367292,
+        size.width * 0.5901261,
+        size.height * 0.3348028);
+    path_61.cubicTo(
+        size.width * 0.5709337,
+        size.height * 0.3024370,
+        size.width * 0.5519754,
+        size.height * 0.2809244,
+        size.width * 0.5372501,
+        size.height * 0.2726083);
+    path_61.cubicTo(
+        size.width * 0.5450766,
+        size.height * 0.2785811,
+        size.width * 0.5537616,
+        size.height * 0.2881545,
+        size.width * 0.5631552,
+        size.height * 0.3012056);
+    path_61.cubicTo(
+        size.width * 0.5707956,
+        size.height * 0.3118293,
+        size.width * 0.5785830,
+        size.height * 0.3243568,
+        size.width * 0.5862894,
+        size.height * 0.3383323);
+    path_61.cubicTo(
+        size.width * 0.5873972,
+        size.height * 0.3403426,
+        size.width * 0.5885020,
+        size.height * 0.3423820,
+        size.width * 0.5896097,
+        size.height * 0.3444538);
+    path_61.cubicTo(
+        size.width * 0.6000390,
+        size.height * 0.3640045,
+        size.width * 0.6102522,
+        size.height * 0.3861151,
+        size.width * 0.6196518,
+        size.height * 0.4096445);
+    path_61.cubicTo(
+        size.width * 0.6231792,
+        size.height * 0.4184777,
+        size.width * 0.6265566,
+        size.height * 0.4274596,
+        size.width * 0.6297088,
+        size.height * 0.4364706);
+    path_61.cubicTo(
+        size.width * 0.6304773,
+        size.height * 0.4386490,
+        size.width * 0.6312309,
+        size.height * 0.4408306,
+        size.width * 0.6319694,
+        size.height * 0.4430123);
+    path_61.cubicTo(
+        size.width * 0.6366106,
+        size.height * 0.4566774,
+        size.width * 0.6407505,
+        size.height * 0.4703200,
+        size.width * 0.6442210,
+        size.height * 0.4834906);
+    path_61.cubicTo(
+        size.width * 0.6444371,
+        size.height * 0.4838720,
+        size.width * 0.6445602,
+        size.height * 0.4843051,
+        size.width * 0.6445842,
+        size.height * 0.4847511);
+    path_61.cubicTo(
+        size.width * 0.6445842,
+        size.height * 0.4847996,
+        size.width * 0.6445842,
+        size.height * 0.4848449,
+        size.width * 0.6445842,
+        size.height * 0.4848933);
+    path_61.cubicTo(
+        size.width * 0.6510958,
+        size.height * 0.5098836,
+        size.width * 0.6551666,
+        size.height * 0.5331222,
+        size.width * 0.6556650,
+        size.height * 0.5515482);
+    path_61.cubicTo(
+        size.width * 0.6556860,
+        size.height * 0.5517065,
+        size.width * 0.6556950,
+        size.height * 0.5518681,
+        size.width * 0.6556890,
+        size.height * 0.5520297);
+    path_61.cubicTo(
+        size.width * 0.6556920,
+        size.height * 0.5520588,
+        size.width * 0.6556920,
+        size.height * 0.5520911,
+        size.width * 0.6556890,
+        size.height * 0.5521202);
+    path_61.cubicTo(
+        size.width * 0.6558541,
+        size.height * 0.5595734,
+        size.width * 0.6554368,
+        size.height * 0.5662250,
+        size.width * 0.6543470,
+        size.height * 0.5718681);
+    path_61.lineTo(size.width * 0.6543500, size.height * 0.5718649);
     path_61.close();
-    path_61.moveTo(2140.01, 1809.35);
-    path_61.cubicTo(2157.77, 1796.81, 2167.26, 1764.35, 2167.14, 1715.56);
-    path_61.cubicTo(2142.07, 1713.09, 2119.34, 1704.44, 2100.46, 1694.32);
-    path_61.cubicTo(2084.88, 1685.9, 2070.26, 1675.83, 2056.85, 1664.26);
-    path_61.cubicTo(2052.85, 1674.18, 2046.96, 1681.15, 2038.85, 1684.62);
-    path_61.cubicTo(2038.23, 1684.89, 2037.6, 1685.13, 2036.97, 1685.35);
-    path_61.cubicTo(2045.61, 1707.88, 2068.02, 1761.55, 2099.61, 1802.63);
-    path_61.cubicTo(2114.72, 1809.15, 2128.3, 1811.47, 2140, 1809.31);
-    path_61.lineTo(2140.01, 1809.35);
+    path_61.moveTo(size.width * 0.6424527, size.height * 0.5847931);
+    path_61.cubicTo(
+        size.width * 0.6477844,
+        size.height * 0.5807401,
+        size.width * 0.6506334,
+        size.height * 0.5702489,
+        size.width * 0.6505974,
+        size.height * 0.5544796);
+    path_61.cubicTo(
+        size.width * 0.6430711,
+        size.height * 0.5536813,
+        size.width * 0.6362474,
+        size.height * 0.5508856,
+        size.width * 0.6305794,
+        size.height * 0.5476147);
+    path_61.cubicTo(
+        size.width * 0.6259021,
+        size.height * 0.5448933,
+        size.width * 0.6215131,
+        size.height * 0.5416387,
+        size.width * 0.6174872,
+        size.height * 0.5378992);
+    path_61.cubicTo(
+        size.width * 0.6162864,
+        size.height * 0.5411054,
+        size.width * 0.6145182,
+        size.height * 0.5433581,
+        size.width * 0.6120835,
+        size.height * 0.5444796);
+    path_61.cubicTo(
+        size.width * 0.6118973,
+        size.height * 0.5445669,
+        size.width * 0.6117082,
+        size.height * 0.5446445,
+        size.width * 0.6115191,
+        size.height * 0.5447156);
+    path_61.cubicTo(
+        size.width * 0.6141129,
+        size.height * 0.5519974,
+        size.width * 0.6208406,
+        size.height * 0.5693439,
+        size.width * 0.6303242,
+        size.height * 0.5826212);
+    path_61.cubicTo(
+        size.width * 0.6348604,
+        size.height * 0.5847285,
+        size.width * 0.6389373,
+        size.height * 0.5854783,
+        size.width * 0.6424497,
+        size.height * 0.5847802);
+    path_61.lineTo(size.width * 0.6424527, size.height * 0.5847931);
     path_61.close();
-    path_61.moveTo(2166.73, 1698.47);
-    path_61.cubicTo(2164.55, 1648.7, 2153.57, 1584.56, 2132.63, 1509.14);
-    path_61.cubicTo(2130.63, 1509.2, 2128.71, 1509.23, 2126.79, 1509.23);
-    path_61.cubicTo(2109.63, 1509.29, 2092.55, 1506.93, 2076.05, 1502.23);
-    path_61.cubicTo(2063.68, 1498.69, 2051.75, 1493.71, 2040.53, 1487.41);
-    path_61.cubicTo(2058.39, 1552.85, 2067.07, 1609.6, 2061.63, 1645.71);
-    path_61.cubicTo(2075, 1658.07, 2116.13, 1692.58, 2166.72, 1698.43);
-    path_61.lineTo(2166.73, 1698.47);
+    path_61.moveTo(size.width * 0.6504743, size.height * 0.5489560);
+    path_61.cubicTo(
+        size.width * 0.6498199,
+        size.height * 0.5328701,
+        size.width * 0.6465236,
+        size.height * 0.5121396,
+        size.width * 0.6402372,
+        size.height * 0.4877634);
+    path_61.cubicTo(
+        size.width * 0.6396367,
+        size.height * 0.4877828,
+        size.width * 0.6390603,
+        size.height * 0.4877925,
+        size.width * 0.6384839,
+        size.height * 0.4877925);
+    path_61.cubicTo(
+        size.width * 0.6333323,
+        size.height * 0.4878119,
+        size.width * 0.6282047,
+        size.height * 0.4870491,
+        size.width * 0.6232513,
+        size.height * 0.4855301);
+    path_61.cubicTo(
+        size.width * 0.6195377,
+        size.height * 0.4843859,
+        size.width * 0.6159562,
+        size.height * 0.4827763,
+        size.width * 0.6125878,
+        size.height * 0.4807401);
+    path_61.cubicTo(
+        size.width * 0.6179496,
+        size.height * 0.5018908,
+        size.width * 0.6205554,
+        size.height * 0.5202327,
+        size.width * 0.6189222,
+        size.height * 0.5319037);
+    path_61.cubicTo(
+        size.width * 0.6229361,
+        size.height * 0.5358985,
+        size.width * 0.6352837,
+        size.height * 0.5470524,
+        size.width * 0.6504713,
+        size.height * 0.5489431);
+    path_61.lineTo(size.width * 0.6504743, size.height * 0.5489560);
     path_61.close();
-    path_61.moveTo(2033.35, 1462.28);
-    path_61.cubicTo(2044.76, 1471.18, 2077.35, 1492.51, 2127.84, 1492.28);
-    path_61.cubicTo(2117.61, 1457.08, 2105.28, 1419.58, 2090.75, 1380.05);
-    path_61.cubicTo(2088.02, 1372.62, 2085.21, 1365.12, 2082.32, 1357.55);
-    path_61.cubicTo(2072.05, 1330.62, 2060.77, 1302.85, 2048.49, 1274.23);
-    path_61.cubicTo(2017.81, 1202.89, 1984.79, 1136.75, 1951.59, 1078.64);
-    path_61.cubicTo(1949.2, 1074.44, 1946.81, 1070.29, 1944.4, 1066.19);
-    path_61.cubicTo(1924.4, 1096.11, 1908.4, 1136.44, 1902.69, 1151.7);
-    path_61.cubicTo(1907.62, 1160.65, 1912.51, 1169.78, 1917.38, 1179.09);
-    path_61.cubicTo(1936.13, 1215, 1954.27, 1253.31, 1970.96, 1292.09);
-    path_61.cubicTo(1972.96, 1296.69, 1974.92, 1301.3, 1976.83, 1305.92);
-    path_61.cubicTo(1985.51, 1326.57, 1993.77, 1347.36, 2001.5, 1367.99);
-    path_61.cubicTo(2013.54, 1400.12, 2024.31, 1431.91, 2033.34, 1462.24);
-    path_61.lineTo(2033.35, 1462.28);
+    path_61.moveTo(size.width * 0.6104323, size.height * 0.4726180);
+    path_61.cubicTo(
+        size.width * 0.6138577,
+        size.height * 0.4754945,
+        size.width * 0.6236415,
+        size.height * 0.4823885,
+        size.width * 0.6387992,
+        size.height * 0.4823142);
+    path_61.cubicTo(
+        size.width * 0.6357280,
+        size.height * 0.4709373,
+        size.width * 0.6320264,
+        size.height * 0.4588171,
+        size.width * 0.6276644,
+        size.height * 0.4460407);
+    path_61.cubicTo(
+        size.width * 0.6268448,
+        size.height * 0.4436393,
+        size.width * 0.6260012,
+        size.height * 0.4412153,
+        size.width * 0.6251336,
+        size.height * 0.4387686);
+    path_61.cubicTo(
+        size.width * 0.6220504,
+        size.height * 0.4300646,
+        size.width * 0.6186641,
+        size.height * 0.4210892,
+        size.width * 0.6149775,
+        size.height * 0.4118390);
+    path_61.cubicTo(
+        size.width * 0.6057670,
+        size.height * 0.3887815,
+        size.width * 0.5958541,
+        size.height * 0.3674047,
+        size.width * 0.5858871,
+        size.height * 0.3486231);
+    path_61.cubicTo(
+        size.width * 0.5851696,
+        size.height * 0.3472657,
+        size.width * 0.5844521,
+        size.height * 0.3459244,
+        size.width * 0.5837286,
+        size.height * 0.3445992);
+    path_61.cubicTo(
+        size.width * 0.5777244,
+        size.height * 0.3542696,
+        size.width * 0.5729210,
+        size.height * 0.3673045,
+        size.width * 0.5712068,
+        size.height * 0.3722366);
+    path_61.cubicTo(
+        size.width * 0.5726869,
+        size.height * 0.3751293,
+        size.width * 0.5741549,
+        size.height * 0.3780802,
+        size.width * 0.5756169,
+        size.height * 0.3810892);
+    path_61.cubicTo(
+        size.width * 0.5812459,
+        size.height * 0.3926955,
+        size.width * 0.5866917,
+        size.height * 0.4050776,
+        size.width * 0.5917022,
+        size.height * 0.4176115);
+    path_61.cubicTo(
+        size.width * 0.5923026,
+        size.height * 0.4190983,
+        size.width * 0.5928910,
+        size.height * 0.4205882,
+        size.width * 0.5934644,
+        size.height * 0.4220814);
+    path_61.cubicTo(
+        size.width * 0.5960702,
+        size.height * 0.4287557,
+        size.width * 0.5985500,
+        size.height * 0.4354751,
+        size.width * 0.6008706,
+        size.height * 0.4421429);
+    path_61.cubicTo(
+        size.width * 0.6044851,
+        size.height * 0.4525275,
+        size.width * 0.6077184,
+        size.height * 0.4628022,
+        size.width * 0.6104293,
+        size.height * 0.4726050);
+    path_61.lineTo(size.width * 0.6104323, size.height * 0.4726180);
     path_61.close();
-    path_61.moveTo(2065.16, 1782.16);
-    path_61.cubicTo(2040.83, 1742.44, 2024.75, 1701.35, 2019.16, 1686.16);
-    path_61.cubicTo(1995.37, 1681.01, 1965.16, 1653.04, 1929.16, 1602.6);
-    path_61.cubicTo(1927.44, 1600.19, 1925.71, 1597.74, 1923.97, 1595.24);
-    path_61.lineTo(1916.71, 1608.71);
-    path_61.cubicTo(1941.22, 1646.84, 1966.3, 1681.17, 1991.32, 1710.64);
-    path_61.cubicTo(2004.38, 1726.01, 2017.1, 1739.68, 2029.49, 1751.64);
-    path_61.cubicTo(2040.68, 1762.59, 2052.59, 1772.77, 2065.15, 1782.12);
-    path_61.lineTo(2065.16, 1782.16);
+    path_61.moveTo(size.width * 0.6199820, size.height * 0.5760052);
+    path_61.cubicTo(
+        size.width * 0.6126779,
+        size.height * 0.5631674,
+        size.width * 0.6078505,
+        size.height * 0.5498869,
+        size.width * 0.6061723,
+        size.height * 0.5449774);
+    path_61.cubicTo(
+        size.width * 0.5990303,
+        size.height * 0.5433129,
+        size.width * 0.5899610,
+        size.height * 0.5342728,
+        size.width * 0.5791534,
+        size.height * 0.5179703);
+    path_61.cubicTo(
+        size.width * 0.5786370,
+        size.height * 0.5171913,
+        size.width * 0.5781177,
+        size.height * 0.5163995,
+        size.width * 0.5775953,
+        size.height * 0.5155915);
+    path_61.lineTo(size.width * 0.5754158, size.height * 0.5199451);
+    path_61.cubicTo(
+        size.width * 0.5827739,
+        size.height * 0.5322689,
+        size.width * 0.5903032,
+        size.height * 0.5433646,
+        size.width * 0.5978145,
+        size.height * 0.5528895);
+    path_61.cubicTo(
+        size.width * 0.6017352,
+        size.height * 0.5578571,
+        size.width * 0.6055539,
+        size.height * 0.5622754,
+        size.width * 0.6092735,
+        size.height * 0.5661409);
+    path_61.cubicTo(
+        size.width * 0.6126328,
+        size.height * 0.5696800,
+        size.width * 0.6162083,
+        size.height * 0.5729703,
+        size.width * 0.6199790,
+        size.height * 0.5759922);
+    path_61.lineTo(size.width * 0.6199820, size.height * 0.5760052);
     path_61.close();
-    path_61.moveTo(2030.52, 1665.16);
-    path_61.cubicTo(2057.19, 1653.69, 2042.01, 1516.66, 1958.61, 1317.27);
-    path_61.cubicTo(1956.29, 1311.72, 1953.92, 1306.12, 1951.49, 1300.47);
-    path_61.cubicTo(1933.29, 1258.14, 1914.94, 1219.81, 1897.01, 1185.7);
-    path_61.cubicTo(1853.01, 1101.95, 1811.61, 1043.61, 1781.44, 1013.97);
-    path_61.cubicTo(1763.38, 996.22, 1749.34, 988.76, 1741.16, 992.28);
-    path_61.cubicTo(1722.44, 1000.28, 1724.33, 1070.19, 1755.93, 1180.03);
-    path_61.cubicTo(1765.37, 1212.86, 1777.47, 1249.26, 1792.45, 1288.64);
-    path_61.cubicTo(1792.39, 1267.98, 1798.3, 1251.38, 1812.61, 1245.23);
-    path_61.cubicTo(1841.25, 1232.9, 1877.16, 1273.82, 1896.41, 1318.57);
-    path_61.cubicTo(1915.66, 1363.32, 1920.65, 1417.57, 1892.01, 1429.84);
-    path_61.cubicTo(1888.59, 1431.31, 1884.9, 1432.07, 1881.18, 1432.06);
-    path_61.cubicTo(1869.6, 1432.06, 1857.38, 1425.06, 1845.88, 1413.89);
-    path_61.cubicTo(1878.5, 1482.74, 1913.36, 1544.02, 1946.42, 1590.27);
-    path_61.cubicTo(1994.33, 1657.29, 2021.83, 1668.85, 2030.51, 1665.12);
-    path_61.lineTo(2030.52, 1665.16);
+    path_61.moveTo(size.width * 0.6095827, size.height * 0.5381900);
+    path_61.cubicTo(
+        size.width * 0.6175893,
+        size.height * 0.5344829,
+        size.width * 0.6130321,
+        size.height * 0.4901939,
+        size.width * 0.5879946,
+        size.height * 0.4257498);
+    path_61.cubicTo(
+        size.width * 0.5872981,
+        size.height * 0.4239560,
+        size.width * 0.5865866,
+        size.height * 0.4221461,
+        size.width * 0.5858571,
+        size.height * 0.4203200);
+    path_61.cubicTo(
+        size.width * 0.5803933,
+        size.height * 0.4066387,
+        size.width * 0.5748844,
+        size.height * 0.3942502,
+        size.width * 0.5695017,
+        size.height * 0.3832256);
+    path_61.cubicTo(
+        size.width * 0.5562924,
+        size.height * 0.3561571,
+        size.width * 0.5438637,
+        size.height * 0.3373012,
+        size.width * 0.5348064,
+        size.height * 0.3277214);
+    path_61.cubicTo(
+        size.width * 0.5293846,
+        size.height * 0.3219845,
+        size.width * 0.5251696,
+        size.height * 0.3195734,
+        size.width * 0.5227139,
+        size.height * 0.3207111);
+    path_61.cubicTo(
+        size.width * 0.5170940,
+        size.height * 0.3232967,
+        size.width * 0.5176614,
+        size.height * 0.3458920,
+        size.width * 0.5271480,
+        size.height * 0.3813930);
+    path_61.cubicTo(
+        size.width * 0.5299820,
+        size.height * 0.3920039,
+        size.width * 0.5336145,
+        size.height * 0.4037686,
+        size.width * 0.5381117,
+        size.height * 0.4164964);
+    path_61.cubicTo(
+        size.width * 0.5380937,
+        size.height * 0.4098190,
+        size.width * 0.5398679,
+        size.height * 0.4044538,
+        size.width * 0.5441639,
+        size.height * 0.4024661);
+    path_61.cubicTo(
+        size.width * 0.5527619,
+        size.height * 0.3984809,
+        size.width * 0.5635425,
+        size.height * 0.4117065,
+        size.width * 0.5693215,
+        size.height * 0.4261700);
+    path_61.cubicTo(
+        size.width * 0.5751006,
+        size.height * 0.4406335,
+        size.width * 0.5765986,
+        size.height * 0.4581674,
+        size.width * 0.5680006,
+        size.height * 0.4621332);
+    path_61.cubicTo(
+        size.width * 0.5669739,
+        size.height * 0.4626083,
+        size.width * 0.5658661,
+        size.height * 0.4628539,
+        size.width * 0.5647493,
+        size.height * 0.4628507);
+    path_61.cubicTo(
+        size.width * 0.5612729,
+        size.height * 0.4628507,
+        size.width * 0.5576043,
+        size.height * 0.4605882,
+        size.width * 0.5541519,
+        size.height * 0.4569780);
+    path_61.cubicTo(
+        size.width * 0.5639448,
+        size.height * 0.4792308,
+        size.width * 0.5744101,
+        size.height * 0.4990368,
+        size.width * 0.5843350,
+        size.height * 0.5139851);
+    path_61.cubicTo(
+        size.width * 0.5987181,
+        size.height * 0.5356464,
+        size.width * 0.6069739,
+        size.height * 0.5393827,
+        size.width * 0.6095797,
+        size.height * 0.5381771);
+    path_61.lineTo(size.width * 0.6095827, size.height * 0.5381900);
     path_61.close();
-    path_61.moveTo(1977.9, 912.73);
-    path_61.lineTo(1977.29, 901.53);
-    path_61.lineTo(1969.29, 896.53);
-    path_61.cubicTo(1967.92, 895.676, 1966.77, 894.521, 1965.92, 893.154);
-    path_61.cubicTo(1965.07, 891.787, 1964.54, 890.243, 1964.37, 888.64);
-    path_61.lineTo(1959.67, 842.94);
-    path_61.cubicTo(1949.63, 833.811, 1940.3, 823.939, 1931.74, 813.41);
-    path_61.cubicTo(1930.65, 831.7, 1931.54, 861.95, 1946.23, 881.21);
-    path_61.cubicTo(1955.26, 893.134, 1965.92, 903.731, 1977.89, 912.69);
-    path_61.lineTo(1977.9, 912.73);
+    path_61.moveTo(size.width * 0.5937856, size.height * 0.2950000);
+    path_61.lineTo(size.width * 0.5936025, size.height * 0.2913801);
+    path_61.lineTo(size.width * 0.5912008, size.height * 0.2897641);
+    path_61.cubicTo(
+        size.width * 0.5907896,
+        size.height * 0.2894880,
+        size.width * 0.5904443,
+        size.height * 0.2891147,
+        size.width * 0.5901891,
+        size.height * 0.2886729);
+    path_61.cubicTo(
+        size.width * 0.5899340,
+        size.height * 0.2882311,
+        size.width * 0.5897748,
+        size.height * 0.2877321,
+        size.width * 0.5897238,
+        size.height * 0.2872140);
+    path_61.lineTo(size.width * 0.5883128, size.height * 0.2724434);
+    path_61.cubicTo(
+        size.width * 0.5852987,
+        size.height * 0.2694929,
+        size.width * 0.5824977,
+        size.height * 0.2663022,
+        size.width * 0.5799279,
+        size.height * 0.2628992);
+    path_61.cubicTo(
+        size.width * 0.5796007,
+        size.height * 0.2688106,
+        size.width * 0.5798679,
+        size.height * 0.2785876,
+        size.width * 0.5842780,
+        size.height * 0.2848125);
+    path_61.cubicTo(
+        size.width * 0.5869889,
+        size.height * 0.2886665,
+        size.width * 0.5901891,
+        size.height * 0.2920915,
+        size.width * 0.5937826,
+        size.height * 0.2949871);
+    path_61.lineTo(size.width * 0.5937856, size.height * 0.2950000);
     path_61.close();
-    path_61.moveTo(1906.32, 1592.26);
-    path_61.lineTo(1913.26, 1579.41);
-    path_61.cubicTo(1875.84, 1522.76, 1837.06, 1449.35, 1802.36, 1369.15);
-    path_61.lineTo(1794.43, 1374.31);
-    path_61.cubicTo(1795.53, 1376.89, 1796.63, 1379.48, 1797.74, 1382.06);
-    path_61.cubicTo(1814.19, 1420.29, 1831.66, 1457.28, 1849.86, 1492.49);
-    path_61.cubicTo(1868.06, 1527.7, 1887, 1561.09, 1906.31, 1592.22);
-    path_61.lineTo(1906.32, 1592.26);
+    path_61.moveTo(size.width * 0.5722966, size.height * 0.5146283);
+    path_61.lineTo(size.width * 0.5743801, size.height * 0.5104751);
+    path_61.cubicTo(
+        size.width * 0.5631462,
+        size.height * 0.4921655,
+        size.width * 0.5515041,
+        size.height * 0.4684389,
+        size.width * 0.5410868,
+        size.height * 0.4425178);
+    path_61.lineTo(size.width * 0.5387061, size.height * 0.4441855);
+    path_61.cubicTo(
+        size.width * 0.5390363,
+        size.height * 0.4450194,
+        size.width * 0.5393666,
+        size.height * 0.4458565,
+        size.width * 0.5396998,
+        size.height * 0.4466904);
+    path_61.cubicTo(
+        size.width * 0.5446382,
+        size.height * 0.4590465,
+        size.width * 0.5498829,
+        size.height * 0.4710019,
+        size.width * 0.5553467,
+        size.height * 0.4823820);
+    path_61.cubicTo(
+        size.width * 0.5608106,
+        size.height * 0.4937621,
+        size.width * 0.5664965,
+        size.height * 0.5045540,
+        size.width * 0.5722936,
+        size.height * 0.5146154);
+    path_61.lineTo(size.width * 0.5722966, size.height * 0.5146283);
     path_61.close();
-    path_61.moveTo(1891.93, 1132.49);
-    path_61.cubicTo(1900.61, 1110.88, 1916.11, 1076.03, 1934.93, 1050.14);
-    path_61.cubicTo(1895.6, 984.58, 1856.56, 931, 1821.33, 894);
-    path_61.cubicTo(1795.96, 917.25, 1779.9, 963.12, 1774.26, 981.41);
-    path_61.cubicTo(1808.9, 1004.26, 1850.93, 1060.87, 1891.92, 1132.45);
-    path_61.lineTo(1891.93, 1132.49);
+    path_61.moveTo(size.width * 0.5679766, size.height * 0.3660278);
+    path_61.cubicTo(
+        size.width * 0.5705824,
+        size.height * 0.3590433,
+        size.width * 0.5752357,
+        size.height * 0.3477796,
+        size.width * 0.5808856,
+        size.height * 0.3394118);
+    path_61.cubicTo(
+        size.width * 0.5690784,
+        size.height * 0.3182224,
+        size.width * 0.5573582,
+        size.height * 0.3009050,
+        size.width * 0.5467817,
+        size.height * 0.2889463);
+    path_61.cubicTo(
+        size.width * 0.5391654,
+        size.height * 0.2964609,
+        size.width * 0.5343440,
+        size.height * 0.3112864,
+        size.width * 0.5326509,
+        size.height * 0.3171978);
+    path_61.cubicTo(
+        size.width * 0.5430501,
+        size.height * 0.3245831,
+        size.width * 0.5556680,
+        size.height * 0.3428798,
+        size.width * 0.5679736,
+        size.height * 0.3660149);
+    path_61.lineTo(size.width * 0.5679766, size.height * 0.3660278);
     path_61.close();
-    path_61.moveTo(1883.63, 1410.36);
-    path_61.cubicTo(1893.43, 1406.15, 1895.76, 1370.72, 1876.93, 1326.92);
-    path_61.cubicTo(1859.59, 1286.6, 1835.05, 1264.18, 1823.62, 1264.18);
-    path_61.cubicTo(1822.71, 1264.17, 1821.81, 1264.34, 1820.97, 1264.68);
-    path_61.cubicTo(1811.17, 1268.9, 1808.84, 1304.33, 1827.67, 1348.11);
-    path_61.cubicTo(1846.5, 1391.89, 1873.8, 1414.57, 1883.62, 1410.32);
-    path_61.lineTo(1883.63, 1410.36);
+    path_61.moveTo(size.width * 0.5654848, size.height * 0.4558371);
+    path_61.cubicTo(
+        size.width * 0.5684269,
+        size.height * 0.4544764,
+        size.width * 0.5691264,
+        size.height * 0.4430252,
+        size.width * 0.5634734,
+        size.height * 0.4288688);
+    path_61.cubicTo(
+        size.width * 0.5582678,
+        size.height * 0.4158371,
+        size.width * 0.5509006,
+        size.height * 0.4085908,
+        size.width * 0.5474692,
+        size.height * 0.4085908);
+    path_61.cubicTo(
+        size.width * 0.5471960,
+        size.height * 0.4085876,
+        size.width * 0.5469258,
+        size.height * 0.4086425,
+        size.width * 0.5466737,
+        size.height * 0.4087524);
+    path_61.cubicTo(
+        size.width * 0.5437316,
+        size.height * 0.4101164,
+        size.width * 0.5430321,
+        size.height * 0.4215676,
+        size.width * 0.5486851,
+        size.height * 0.4357175);
+    path_61.cubicTo(
+        size.width * 0.5543380,
+        size.height * 0.4498675,
+        size.width * 0.5625338,
+        size.height * 0.4571978,
+        size.width * 0.5654818,
+        size.height * 0.4558242);
+    path_61.lineTo(size.width * 0.5654848, size.height * 0.4558371);
     path_61.close();
-    path_61.moveTo(1787.78, 1358.36);
-    path_61.lineTo(1795.6, 1353.28);
-    path_61.cubicTo(1778.1, 1311.74, 1762.24, 1269.6, 1749, 1229.28);
-    path_61.cubicTo(1735.76, 1188.96, 1725.13, 1150.28, 1718.08, 1115.77);
-    path_61.lineTo(1707.27, 1105.89);
-    path_61.cubicTo(1724, 1184, 1751.5, 1270.59, 1787.77, 1358.36);
-    path_61.lineTo(1787.78, 1358.36);
+    path_61.moveTo(size.width * 0.5367097, size.height * 0.4390304);
+    path_61.lineTo(size.width * 0.5390573, size.height * 0.4373885);
+    path_61.cubicTo(
+        size.width * 0.5338037,
+        size.height * 0.4239625,
+        size.width * 0.5290423,
+        size.height * 0.4103426,
+        size.width * 0.5250675,
+        size.height * 0.3973109);
+    path_61.cubicTo(
+        size.width * 0.5210928,
+        size.height * 0.3842793,
+        size.width * 0.5179015,
+        size.height * 0.3717776,
+        size.width * 0.5157850,
+        size.height * 0.3606238);
+    path_61.lineTo(size.width * 0.5125398, size.height * 0.3574305);
+    path_61.cubicTo(
+        size.width * 0.5175623,
+        size.height * 0.3826761,
+        size.width * 0.5258181,
+        size.height * 0.4106626,
+        size.width * 0.5367067,
+        size.height * 0.4390304);
+    path_61.lineTo(size.width * 0.5367097, size.height * 0.4390304);
     path_61.close();
-    path_61.moveTo(1758.99, 973.36);
-    path_61.cubicTo(1765.7, 952.15, 1782.37, 907.15, 1809.41, 881.93);
-    path_61.cubicTo(1779.82, 853.37, 1753.41, 837.57, 1732.41, 837.57);
-    path_61.cubicTo(1729.91, 837.564, 1727.41, 837.805, 1724.96, 838.29);
-    path_61.cubicTo(1716.88, 843.55, 1710.11, 851.79, 1704.69, 862.79);
-    path_61.cubicTo(1706.2, 926.13, 1722.32, 959.86, 1731.04, 973.57);
-    path_61.cubicTo(1731.61, 973.27, 1732.19, 973, 1732.79, 972.74);
-    path_61.cubicTo(1740.59, 969.4, 1749.4, 969.77, 1759, 973.39);
-    path_61.lineTo(1758.99, 973.36);
+    path_61.moveTo(size.width * 0.5280666, size.height * 0.3145960);
+    path_61.cubicTo(
+        size.width * 0.5300811,
+        size.height * 0.3077408,
+        size.width * 0.5350856,
+        size.height * 0.2931965,
+        size.width * 0.5432032,
+        size.height * 0.2850452);
+    path_61.cubicTo(
+        size.width * 0.5343200,
+        size.height * 0.2758145,
+        size.width * 0.5263915,
+        size.height * 0.2707078,
+        size.width * 0.5200871,
+        size.height * 0.2707078);
+    path_61.cubicTo(
+        size.width * 0.5193365,
+        size.height * 0.2707059,
+        size.width * 0.5185860,
+        size.height * 0.2707838,
+        size.width * 0.5178505,
+        size.height * 0.2709405);
+    path_61.cubicTo(
+        size.width * 0.5154248,
+        size.height * 0.2726406,
+        size.width * 0.5133924,
+        size.height * 0.2753038,
+        size.width * 0.5117652,
+        size.height * 0.2788591);
+    path_61.cubicTo(
+        size.width * 0.5122186,
+        size.height * 0.2993310,
+        size.width * 0.5170579,
+        size.height * 0.3102327,
+        size.width * 0.5196758,
+        size.height * 0.3146639);
+    path_61.cubicTo(
+        size.width * 0.5198469,
+        size.height * 0.3145669,
+        size.width * 0.5200210,
+        size.height * 0.3144796,
+        size.width * 0.5202011,
+        size.height * 0.3143956);
+    path_61.cubicTo(
+        size.width * 0.5225428,
+        size.height * 0.3133161,
+        size.width * 0.5251876,
+        size.height * 0.3134357,
+        size.width * 0.5280696,
+        size.height * 0.3146057);
+    path_61.lineTo(size.width * 0.5280666, size.height * 0.3145960);
     path_61.close();
-    path_61.moveTo(1738.48, 1351.36);
-    path_61.cubicTo(1741.16, 1351.27, 1746, 1350.1, 1746.83, 1343.3);
-    path_61.cubicTo(1745.77, 1335.71, 1712.62, 1316.13, 1693.22, 1308.74);
-    path_61.cubicTo(1684.22, 1305.31, 1681.55, 1295.12, 1678.22, 1282.21);
-    path_61.cubicTo(1674.93, 1269.54, 1670.83, 1253.77, 1660.14, 1243.36);
-    path_61.cubicTo(1645.22, 1228.83, 1634.14, 1237.82, 1632.08, 1239.78);
-    path_61.cubicTo(1630.73, 1241.06, 1629.02, 1241.88, 1627.18, 1242.12);
-    path_61.cubicTo(1625.34, 1242.37, 1623.47, 1242.03, 1621.83, 1241.15);
-    path_61.cubicTo(1598.99, 1228.53, 1533.71, 1197.7, 1506.19, 1206.49);
-    path_61.cubicTo(1494.92, 1210.09, 1487.42, 1215.07, 1484.51, 1220.87);
-    path_61.cubicTo(1483.1, 1223.51, 1482.74, 1226.59, 1483.51, 1229.48);
-    path_61.cubicTo(1483.99, 1230.83, 1484.13, 1232.27, 1483.92, 1233.68);
-    path_61.cubicTo(1483.71, 1235.1, 1483.17, 1236.44, 1482.33, 1237.6);
-    path_61.cubicTo(1481.49, 1238.75, 1480.38, 1239.68, 1479.1, 1240.32);
-    path_61.cubicTo(1477.81, 1240.95, 1476.4, 1241.26, 1474.97, 1241.22);
-    path_61.cubicTo(1474.45, 1241.22, 1473.97, 1241.22, 1473.38, 1241.22);
-    path_61.cubicTo(1460.38, 1241.22, 1445.47, 1248.64, 1431.17, 1262.22);
-    path_61.cubicTo(1409.17, 1283.22, 1393.71, 1314.39, 1393.71, 1337.95);
-    path_61.cubicTo(1393.71, 1385.48, 1368.71, 1427.72, 1325.24, 1453.83);
-    path_61.cubicTo(1290.34, 1474.77, 1291.12, 1488.77, 1299.24, 1534.09);
-    path_61.cubicTo(1307.56, 1580.76, 1307.49, 1592.59, 1287.99, 1623.46);
-    path_61.cubicTo(1274.55, 1644.75, 1256.82, 1650.75, 1238.06, 1657.12);
-    path_61.cubicTo(1228.46, 1660.37, 1218.54, 1663.73, 1207.94, 1669.4);
-    path_61.cubicTo(1188.94, 1679.54, 1180.05, 1701.06, 1171.41, 1721.87);
-    path_61.cubicTo(1168.32, 1729.32, 1165.35, 1736.48, 1161.98, 1742.95);
-    path_61.lineTo(1164.7, 1740.29);
-    path_61.cubicTo(1172.1, 1733.06, 1179.1, 1726.22, 1188.7, 1720.16);
-    path_61.cubicTo(1208.36, 1707.72, 1220.7, 1706.83, 1235.04, 1705.8);
-    path_61.cubicTo(1247.34, 1705.18, 1259.53, 1703.25, 1271.42, 1700.04);
-    path_61.cubicTo(1290.73, 1694.86, 1303.76, 1680.77, 1315.25, 1668.35);
-    path_61.cubicTo(1326.74, 1655.93, 1337.61, 1644.17, 1352.08, 1647.79);
-    path_61.cubicTo(1358.81, 1649.47, 1361.91, 1653.27, 1363.32, 1656.16);
-    path_61.cubicTo(1366.97, 1663.6, 1363.32, 1671.9, 1360.1, 1679.22);
-    path_61.cubicTo(1358.66, 1682.51, 1355.97, 1688.61, 1356.42, 1690.53);
-    path_61.cubicTo(1356.92, 1690.8, 1357.43, 1691.04, 1357.96, 1691.23);
-    path_61.cubicTo(1363.08, 1693.09, 1365.9, 1691.23, 1376.87, 1681.66);
-    path_61.cubicTo(1389.21, 1670.9, 1407.87, 1654.66, 1444.48, 1641.74);
-    path_61.lineTo(1457.08, 1637.32);
-    path_61.cubicTo(1525.99, 1613.25, 1687.37, 1556.89, 1719.83, 1496.44);
-    path_61.cubicTo(1753.67, 1433.44, 1730.54, 1363.55, 1730.3, 1362.85);
-    path_61.cubicTo(1729.86, 1361.54, 1729.73, 1360.15, 1729.94, 1358.78);
-    path_61.cubicTo(1730.14, 1357.41, 1730.66, 1356.11, 1731.47, 1354.99);
-    path_61.cubicTo(1732.27, 1353.87, 1733.33, 1352.95, 1734.56, 1352.32);
-    path_61.cubicTo(1735.79, 1351.69, 1737.15, 1351.35, 1738.53, 1351.35);
-    path_61.lineTo(1738.48, 1351.36);
+    path_61.moveTo(size.width * 0.5219093, size.height * 0.4367679);
+    path_61.cubicTo(
+        size.width * 0.5227139,
+        size.height * 0.4367388,
+        size.width * 0.5241669,
+        size.height * 0.4363607,
+        size.width * 0.5244161,
+        size.height * 0.4341629);
+    path_61.cubicTo(
+        size.width * 0.5240979,
+        size.height * 0.4317098,
+        size.width * 0.5141459,
+        size.height * 0.4253814,
+        size.width * 0.5083218,
+        size.height * 0.4229929);
+    path_61.cubicTo(
+        size.width * 0.5056199,
+        size.height * 0.4218843,
+        size.width * 0.5048184,
+        size.height * 0.4185908,
+        size.width * 0.5038187,
+        size.height * 0.4144182);
+    path_61.cubicTo(
+        size.width * 0.5028310,
+        size.height * 0.4103232,
+        size.width * 0.5016001,
+        size.height * 0.4052262,
+        size.width * 0.4983909,
+        size.height * 0.4018617);
+    path_61.cubicTo(
+        size.width * 0.4939117,
+        size.height * 0.3971655,
+        size.width * 0.4905854,
+        size.height * 0.4000711,
+        size.width * 0.4899670,
+        size.height * 0.4007046);
+    path_61.cubicTo(
+        size.width * 0.4895617,
+        size.height * 0.4011183,
+        size.width * 0.4890483,
+        size.height * 0.4013833,
+        size.width * 0.4884959,
+        size.height * 0.4014609);
+    path_61.cubicTo(
+        size.width * 0.4879436,
+        size.height * 0.4015417,
+        size.width * 0.4873822,
+        size.height * 0.4014318,
+        size.width * 0.4868898,
+        size.height * 0.4011474);
+    path_61.cubicTo(
+        size.width * 0.4800330,
+        size.height * 0.3970685,
+        size.width * 0.4604353,
+        size.height * 0.3871041,
+        size.width * 0.4521735,
+        size.height * 0.3899451);
+    path_61.cubicTo(
+        size.width * 0.4487902,
+        size.height * 0.3911086,
+        size.width * 0.4465386,
+        size.height * 0.3927182,
+        size.width * 0.4456650,
+        size.height * 0.3945928);
+    path_61.cubicTo(
+        size.width * 0.4452417,
+        size.height * 0.3954460,
+        size.width * 0.4451336,
+        size.height * 0.3964415,
+        size.width * 0.4453648,
+        size.height * 0.3973756);
+    path_61.cubicTo(
+        size.width * 0.4455089,
+        size.height * 0.3978119,
+        size.width * 0.4455509,
+        size.height * 0.3982773,
+        size.width * 0.4454878,
+        size.height * 0.3987330);
+    path_61.cubicTo(
+        size.width * 0.4454248,
+        size.height * 0.3991920,
+        size.width * 0.4452627,
+        size.height * 0.3996251,
+        size.width * 0.4450105,
+        size.height * 0.4000000);
+    path_61.cubicTo(
+        size.width * 0.4447583,
+        size.height * 0.4003717,
+        size.width * 0.4444251,
+        size.height * 0.4006723,
+        size.width * 0.4440408,
+        size.height * 0.4008791);
+    path_61.cubicTo(
+        size.width * 0.4436536,
+        size.height * 0.4010827,
+        size.width * 0.4432303,
+        size.height * 0.4011829,
+        size.width * 0.4428010,
+        size.height * 0.4011700);
+    path_61.cubicTo(
+        size.width * 0.4426449,
+        size.height * 0.4011700,
+        size.width * 0.4425008,
+        size.height * 0.4011700,
+        size.width * 0.4423236,
+        size.height * 0.4011700);
+    path_61.cubicTo(
+        size.width * 0.4384209,
+        size.height * 0.4011700,
+        size.width * 0.4339448,
+        size.height * 0.4035682,
+        size.width * 0.4296518,
+        size.height * 0.4079573);
+    path_61.cubicTo(
+        size.width * 0.4230471,
+        size.height * 0.4147447,
+        size.width * 0.4184059,
+        size.height * 0.4248190,
+        size.width * 0.4184059,
+        size.height * 0.4324337);
+    path_61.cubicTo(
+        size.width * 0.4184059,
+        size.height * 0.4477957,
+        size.width * 0.4109006,
+        size.height * 0.4614480,
+        size.width * 0.3978505,
+        size.height * 0.4698869);
+    path_61.cubicTo(
+        size.width * 0.3873732,
+        size.height * 0.4766548,
+        size.width * 0.3876073,
+        size.height * 0.4811797,
+        size.width * 0.3900450,
+        size.height * 0.4958274);
+    path_61.cubicTo(
+        size.width * 0.3925428,
+        size.height * 0.5109114,
+        size.width * 0.3925218,
+        size.height * 0.5147350,
+        size.width * 0.3866677,
+        size.height * 0.5247123);
+    path_61.cubicTo(
+        size.width * 0.3826328,
+        size.height * 0.5315934,
+        size.width * 0.3773101,
+        size.height * 0.5335326,
+        size.width * 0.3716782,
+        size.height * 0.5355915);
+    path_61.cubicTo(
+        size.width * 0.3687962,
+        size.height * 0.5366419,
+        size.width * 0.3658181,
+        size.height * 0.5377279,
+        size.width * 0.3626358,
+        size.height * 0.5395604);
+    path_61.cubicTo(
+        size.width * 0.3569319,
+        size.height * 0.5428378,
+        size.width * 0.3542630,
+        size.height * 0.5497931,
+        size.width * 0.3516692,
+        size.height * 0.5565191);
+    path_61.cubicTo(
+        size.width * 0.3507415,
+        size.height * 0.5589270,
+        size.width * 0.3498499,
+        size.height * 0.5612411,
+        size.width * 0.3488382,
+        size.height * 0.5633323);
+    path_61.lineTo(size.width * 0.3496548, size.height * 0.5624725);
+    path_61.cubicTo(
+        size.width * 0.3518763,
+        size.height * 0.5601357,
+        size.width * 0.3539778,
+        size.height * 0.5579250,
+        size.width * 0.3568598,
+        size.height * 0.5559664);
+    path_61.cubicTo(
+        size.width * 0.3627619,
+        size.height * 0.5519457,
+        size.width * 0.3664665,
+        size.height * 0.5516580,
+        size.width * 0.3707715,
+        size.height * 0.5513251);
+    path_61.cubicTo(
+        size.width * 0.3744641,
+        size.height * 0.5511248,
+        size.width * 0.3781237,
+        size.height * 0.5505010,
+        size.width * 0.3816932,
+        size.height * 0.5494635);
+    path_61.cubicTo(
+        size.width * 0.3874902,
+        size.height * 0.5477893,
+        size.width * 0.3914020,
+        size.height * 0.5432353,
+        size.width * 0.3948514,
+        size.height * 0.5392211);
+    path_61.cubicTo(
+        size.width * 0.3983008,
+        size.height * 0.5352069,
+        size.width * 0.4015641,
+        size.height * 0.5314059,
+        size.width * 0.4059081,
+        size.height * 0.5325760);
+    path_61.cubicTo(
+        size.width * 0.4079285,
+        size.height * 0.5331189,
+        size.width * 0.4088592,
+        size.height * 0.5343471,
+        size.width * 0.4092825,
+        size.height * 0.5352812);
+    path_61.cubicTo(
+        size.width * 0.4103783,
+        size.height * 0.5376858,
+        size.width * 0.4092825,
+        size.height * 0.5403685,
+        size.width * 0.4083158,
+        size.height * 0.5427343);
+    path_61.cubicTo(
+        size.width * 0.4078835,
+        size.height * 0.5437977,
+        size.width * 0.4070760,
+        size.height * 0.5457692,
+        size.width * 0.4072110,
+        size.height * 0.5463898);
+    path_61.cubicTo(
+        size.width * 0.4073612,
+        size.height * 0.5464771,
+        size.width * 0.4075143,
+        size.height * 0.5465546,
+        size.width * 0.4076734,
+        size.height * 0.5466160);
+    path_61.cubicTo(
+        size.width * 0.4092104,
+        size.height * 0.5472172,
+        size.width * 0.4100570,
+        size.height * 0.5466160,
+        size.width * 0.4133503,
+        size.height * 0.5435229);
+    path_61.cubicTo(
+        size.width * 0.4170549,
+        size.height * 0.5400452,
+        size.width * 0.4226569,
+        size.height * 0.5347964,
+        size.width * 0.4336476,
+        size.height * 0.5306206);
+    path_61.lineTo(size.width * 0.4374302, size.height * 0.5291920);
+    path_61.cubicTo(
+        size.width * 0.4581177,
+        size.height * 0.5214124,
+        size.width * 0.5065656,
+        size.height * 0.5031965,
+        size.width * 0.5163104,
+        size.height * 0.4836587);
+    path_61.cubicTo(
+        size.width * 0.5264695,
+        size.height * 0.4632967,
+        size.width * 0.5195257,
+        size.height * 0.4407078,
+        size.width * 0.5194536,
+        size.height * 0.4404816);
+    path_61.cubicTo(
+        size.width * 0.5193215,
+        size.height * 0.4400582,
+        size.width * 0.5192825,
+        size.height * 0.4396089,
+        size.width * 0.5193455,
+        size.height * 0.4391661);
+    path_61.cubicTo(
+        size.width * 0.5194056,
+        size.height * 0.4387233,
+        size.width * 0.5195617,
+        size.height * 0.4383032,
+        size.width * 0.5198049,
+        size.height * 0.4379412);
+    path_61.cubicTo(
+        size.width * 0.5200450,
+        size.height * 0.4375792,
+        size.width * 0.5203633,
+        size.height * 0.4372818,
+        size.width * 0.5207325,
+        size.height * 0.4370782);
+    path_61.cubicTo(
+        size.width * 0.5211018,
+        size.height * 0.4368746,
+        size.width * 0.5215101,
+        size.height * 0.4367647,
+        size.width * 0.5219243,
+        size.height * 0.4367647);
+    path_61.lineTo(size.width * 0.5219093, size.height * 0.4367679);
     path_61.close();
 
     Paint paint_61_fill = Paint()..style = PaintingStyle.fill;
@@ -2681,19 +13729,91 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_61, paint_61_fill);
 
     Path path_62 = Path();
-    path_62.moveTo(2655.1, 578);
-    path_62.cubicTo(2655.87, 578.1, 2656.57, 578.496, 2657.06, 579.105);
-    path_62.cubicTo(2657.54, 579.713, 2657.77, 580.486, 2657.7, 581.26);
-    path_62.cubicTo(2657.64, 581.739, 2657.47, 582.197, 2657.2, 582.596);
-    path_62.cubicTo(2656.93, 582.995, 2656.57, 583.322, 2656.14, 583.55);
-    path_62.cubicTo(2648.49, 588.04, 2640.56, 592.06, 2633.14, 596.66);
-    path_62.cubicTo(2653.72, 609.75, 2664.68, 640.46, 2647.97, 660.29);
-    path_62.cubicTo(2646.17, 662.57, 2642.37, 660.79, 2642.82, 657.98);
-    path_62.cubicTo(2644.47, 640.48, 2638.09, 626.43, 2628.88, 612.13);
-    path_62.cubicTo(2627.17, 609.26, 2625.34, 606.31, 2623.53, 603.24);
-    path_62.cubicTo(2615.62, 609.353, 2608.09, 615.953, 2601, 623);
-    path_62.cubicTo(2599.37, 625.23, 2595.57, 624.17, 2595.6, 621.34);
-    path_62.cubicTo(2596.72, 592.69, 2628.91, 574.9, 2655.1, 578);
+    path_62.moveTo(size.width * 0.7970880, size.height * 0.1868132);
+    path_62.cubicTo(
+        size.width * 0.7973191,
+        size.height * 0.1868455,
+        size.width * 0.7975293,
+        size.height * 0.1869735,
+        size.width * 0.7976764,
+        size.height * 0.1871703);
+    path_62.cubicTo(
+        size.width * 0.7978205,
+        size.height * 0.1873668,
+        size.width * 0.7978895,
+        size.height * 0.1876167,
+        size.width * 0.7978685,
+        size.height * 0.1878668);
+    path_62.cubicTo(
+        size.width * 0.7978505,
+        size.height * 0.1880217,
+        size.width * 0.7977995,
+        size.height * 0.1881697,
+        size.width * 0.7977184,
+        size.height * 0.1882986);
+    path_62.cubicTo(
+        size.width * 0.7976373,
+        size.height * 0.1884276,
+        size.width * 0.7975293,
+        size.height * 0.1885333,
+        size.width * 0.7974002,
+        size.height * 0.1886070);
+    path_62.cubicTo(
+        size.width * 0.7951036,
+        size.height * 0.1900582,
+        size.width * 0.7927229,
+        size.height * 0.1913575,
+        size.width * 0.7904953,
+        size.height * 0.1928442);
+    path_62.cubicTo(
+        size.width * 0.7966737,
+        size.height * 0.1970750,
+        size.width * 0.7999640,
+        size.height * 0.2070006,
+        size.width * 0.7949475,
+        size.height * 0.2134098);
+    path_62.cubicTo(
+        size.width * 0.7944071,
+        size.height * 0.2141467,
+        size.width * 0.7932663,
+        size.height * 0.2135714,
+        size.width * 0.7934014,
+        size.height * 0.2126632);
+    path_62.cubicTo(
+        size.width * 0.7938967,
+        size.height * 0.2070071,
+        size.width * 0.7919814,
+        size.height * 0.2024661,
+        size.width * 0.7892165,
+        size.height * 0.1978442);
+    path_62.cubicTo(
+        size.width * 0.7887031,
+        size.height * 0.1969166,
+        size.width * 0.7881537,
+        size.height * 0.1959632,
+        size.width * 0.7876103,
+        size.height * 0.1949709);
+    path_62.cubicTo(
+        size.width * 0.7852357,
+        size.height * 0.1969467,
+        size.width * 0.7829751,
+        size.height * 0.1990798,
+        size.width * 0.7808466,
+        size.height * 0.2013575);
+    path_62.cubicTo(
+        size.width * 0.7803573,
+        size.height * 0.2020782,
+        size.width * 0.7792165,
+        size.height * 0.2017356,
+        size.width * 0.7792255,
+        size.height * 0.2008209);
+    path_62.cubicTo(
+        size.width * 0.7795617,
+        size.height * 0.1915611,
+        size.width * 0.7892255,
+        size.height * 0.1858112,
+        size.width * 0.7970880,
+        size.height * 0.1868132);
     path_62.close();
 
     Paint paint_62_fill = Paint()..style = PaintingStyle.fill;
@@ -2701,60 +13821,258 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_62, paint_62_fill);
 
     Path path_63 = Path();
-    path_63.moveTo(2533.32, 1094.65);
-    path_63.cubicTo(2534.33, 1096, 2534.91, 1097.63, 2534.99, 1099.31);
-    path_63.cubicTo(2535.07, 1101, 2534.65, 1102.67, 2533.77, 1104.12);
-    path_63.cubicTo(2532.9, 1105.56, 2531.61, 1106.71, 2530.08, 1107.42);
-    path_63.cubicTo(2528.55, 1108.12, 2526.84, 1108.36, 2525.17, 1108.09);
-    path_63.lineTo(2470.78, 1099.21);
-    path_63.lineTo(2437.15, 1148.91);
-    path_63.cubicTo(2436.38, 1150.06, 2435.33, 1150.99, 2434.11, 1151.64);
-    path_63.cubicTo(2432.89, 1152.3, 2431.53, 1152.64, 2430.15, 1152.64);
-    path_63.cubicTo(2429.48, 1152.65, 2428.81, 1152.57, 2428.15, 1152.41);
-    path_63.cubicTo(2426.47, 1152.01, 2424.96, 1151.11, 2423.81, 1149.83);
-    path_63.cubicTo(2422.66, 1148.55, 2421.92, 1146.95, 2421.7, 1145.24);
-    path_63.lineTo(2413.83, 1083.91);
-    path_63.lineTo(2360.51, 1068.46);
-    path_63.cubicTo(2358.84, 1067.97, 2357.36, 1066.99, 2356.27, 1065.64);
-    path_63.cubicTo(2355.18, 1064.28, 2354.54, 1062.63, 2354.42, 1060.89);
-    path_63.cubicTo(2354.3, 1059.16, 2354.72, 1057.43, 2355.61, 1055.94);
-    path_63.cubicTo(2356.51, 1054.45, 2357.84, 1053.28, 2359.43, 1052.57);
-    path_63.lineTo(2410.27, 1030.04);
-    path_63.cubicTo(2410.43, 1022.75, 2410.93, 1007.64, 2412.13, 975.37);
-    path_63.cubicTo(2412.19, 973.691, 2412.76, 972.069, 2413.74, 970.71);
-    path_63.cubicTo(2414.73, 969.351, 2416.1, 968.316, 2417.68, 967.736);
-    path_63.cubicTo(2419.26, 967.156, 2420.97, 967.058, 2422.6, 967.454);
-    path_63.cubicTo(2424.24, 967.85, 2425.71, 968.722, 2426.85, 969.96);
-    path_63.lineTo(2460.91, 1007.13);
-    path_63.lineTo(2517.21, 989);
-    path_63.cubicTo(2518.82, 988.493, 2520.55, 988.479, 2522.17, 988.959);
-    path_63.cubicTo(2523.79, 989.439, 2525.22, 990.392, 2526.3, 991.695);
-    path_63.cubicTo(2527.37, 992.998, 2528.03, 994.592, 2528.2, 996.273);
-    path_63.cubicTo(2528.36, 997.954, 2528.02, 999.645, 2527.21, 1001.13);
-    path_63.lineTo(2500.21, 1050.5);
-    path_63.lineTo(2533.32, 1094.65);
+    path_63.moveTo(size.width * 0.7605284, size.height * 0.3537977);
+    path_63.cubicTo(
+        size.width * 0.7608316,
+        size.height * 0.3542340,
+        size.width * 0.7610057,
+        size.height * 0.3547608,
+        size.width * 0.7610297,
+        size.height * 0.3553038);
+    path_63.cubicTo(
+        size.width * 0.7610537,
+        size.height * 0.3558500,
+        size.width * 0.7609276,
+        size.height * 0.3563898,
+        size.width * 0.7606635,
+        size.height * 0.3568584);
+    path_63.cubicTo(
+        size.width * 0.7604023,
+        size.height * 0.3573239,
+        size.width * 0.7600150,
+        size.height * 0.3576955,
+        size.width * 0.7595557,
+        size.height * 0.3579250);
+    path_63.cubicTo(
+        size.width * 0.7590964,
+        size.height * 0.3581513,
+        size.width * 0.7585830,
+        size.height * 0.3582288,
+        size.width * 0.7580817,
+        size.height * 0.3581416);
+    path_63.lineTo(size.width * 0.7417532, size.height * 0.3552715);
+    path_63.lineTo(size.width * 0.7316572, size.height * 0.3713348);
+    path_63.cubicTo(
+        size.width * 0.7314260,
+        size.height * 0.3717065,
+        size.width * 0.7311108,
+        size.height * 0.3720071,
+        size.width * 0.7307445,
+        size.height * 0.3722172);
+    path_63.cubicTo(
+        size.width * 0.7303783,
+        size.height * 0.3724305,
+        size.width * 0.7299700,
+        size.height * 0.3725404,
+        size.width * 0.7295557,
+        size.height * 0.3725404);
+    path_63.cubicTo(
+        size.width * 0.7293545,
+        size.height * 0.3725436,
+        size.width * 0.7291534,
+        size.height * 0.3725178,
+        size.width * 0.7289553,
+        size.height * 0.3724661);
+    path_63.cubicTo(
+        size.width * 0.7284509,
+        size.height * 0.3723368,
+        size.width * 0.7279976,
+        size.height * 0.3720459,
+        size.width * 0.7276524,
+        size.height * 0.3716322);
+    path_63.cubicTo(
+        size.width * 0.7273071,
+        size.height * 0.3712185,
+        size.width * 0.7270850,
+        size.height * 0.3707014,
+        size.width * 0.7270189,
+        size.height * 0.3701487);
+    path_63.lineTo(size.width * 0.7246563, size.height * 0.3503264);
+    path_63.lineTo(size.width * 0.7086491, size.height * 0.3453329);
+    path_63.cubicTo(
+        size.width * 0.7081477,
+        size.height * 0.3451745,
+        size.width * 0.7077034,
+        size.height * 0.3448578,
+        size.width * 0.7073762,
+        size.height * 0.3444215);
+    path_63.cubicTo(
+        size.width * 0.7070489,
+        size.height * 0.3439819,
+        size.width * 0.7068568,
+        size.height * 0.3434486,
+        size.width * 0.7068208,
+        size.height * 0.3428862);
+    path_63.cubicTo(
+        size.width * 0.7067847,
+        size.height * 0.3423271,
+        size.width * 0.7069108,
+        size.height * 0.3417679,
+        size.width * 0.7071780,
+        size.height * 0.3412864);
+    path_63.cubicTo(
+        size.width * 0.7074482,
+        size.height * 0.3408048,
+        size.width * 0.7078475,
+        size.height * 0.3404266,
+        size.width * 0.7083248,
+        size.height * 0.3401972);
+    path_63.lineTo(size.width * 0.7235875, size.height * 0.3329153);
+    path_63.cubicTo(
+        size.width * 0.7236355,
+        size.height * 0.3305591,
+        size.width * 0.7237856,
+        size.height * 0.3256755,
+        size.width * 0.7241459,
+        size.height * 0.3152456);
+    path_63.cubicTo(
+        size.width * 0.7241639,
+        size.height * 0.3147030,
+        size.width * 0.7243350,
+        size.height * 0.3141787,
+        size.width * 0.7246292,
+        size.height * 0.3137395);
+    path_63.cubicTo(
+        size.width * 0.7249264,
+        size.height * 0.3133003,
+        size.width * 0.7253377,
+        size.height * 0.3129657,
+        size.width * 0.7258121,
+        size.height * 0.3127783);
+    path_63.cubicTo(
+        size.width * 0.7262864,
+        size.height * 0.3125908,
+        size.width * 0.7267998,
+        size.height * 0.3125591,
+        size.width * 0.7272891,
+        size.height * 0.3126871);
+    path_63.cubicTo(
+        size.width * 0.7277814,
+        size.height * 0.3128151,
+        size.width * 0.7282228,
+        size.height * 0.3130970,
+        size.width * 0.7285650,
+        size.height * 0.3134971);
+    path_63.lineTo(size.width * 0.7387902, size.height * 0.3255107);
+    path_63.lineTo(size.width * 0.7556920, size.height * 0.3196509);
+    path_63.cubicTo(
+        size.width * 0.7561753,
+        size.height * 0.3194871,
+        size.width * 0.7566947,
+        size.height * 0.3194825,
+        size.width * 0.7571810,
+        size.height * 0.3196377);
+    path_63.cubicTo(
+        size.width * 0.7576674,
+        size.height * 0.3197928,
+        size.width * 0.7580967,
+        size.height * 0.3201008,
+        size.width * 0.7584209,
+        size.height * 0.3205220);
+    path_63.cubicTo(
+        size.width * 0.7587421,
+        size.height * 0.3209431,
+        size.width * 0.7589403,
+        size.height * 0.3214583,
+        size.width * 0.7589913,
+        size.height * 0.3220016);
+    path_63.cubicTo(
+        size.width * 0.7590393,
+        size.height * 0.3225449,
+        size.width * 0.7589373,
+        size.height * 0.3230915,
+        size.width * 0.7586941,
+        size.height * 0.3235714);
+    path_63.lineTo(size.width * 0.7505884, size.height * 0.3395281);
+    path_63.lineTo(size.width * 0.7605284, size.height * 0.3537977);
     path_63.close();
-    path_63.moveTo(2507.17, 1087.97);
-    path_63.lineTo(2483.47, 1056.29);
-    path_63.cubicTo(2482.5, 1054.99, 2481.92, 1053.44, 2481.8, 1051.82);
-    path_63.cubicTo(2481.69, 1050.19, 2482.04, 1048.58, 2482.82, 1047.15);
-    path_63.lineTo(2502.21, 1011.65);
-    path_63.lineTo(2461, 1024.93);
-    path_63.cubicTo(2459.46, 1025.43, 2457.8, 1025.48, 2456.23, 1025.06);
-    path_63.cubicTo(2454.66, 1024.65, 2453.25, 1023.8, 2452.15, 1022.6);
-    path_63.lineTo(2428.39, 996.6);
-    path_63.cubicTo(2427.76, 1014.3, 2427.16, 1032.23, 2427.19, 1034.94);
-    path_63.cubicTo(2427.32, 1036.68, 2426.9, 1038.41, 2426.01, 1039.9);
-    path_63.cubicTo(2425.11, 1041.4, 2423.78, 1042.58, 2422.19, 1043.29);
-    path_63.lineTo(2387.65, 1058.6);
-    path_63.lineTo(2423.98, 1069.12);
-    path_63.cubicTo(2425.57, 1069.58, 2426.99, 1070.5, 2428.06, 1071.75);
-    path_63.cubicTo(2429.14, 1073.01, 2429.82, 1074.55, 2430.03, 1076.19);
-    path_63.lineTo(2435.75, 1120.79);
-    path_63.lineTo(2459.85, 1085.17);
-    path_63.cubicTo(2460.76, 1083.84, 2462.03, 1082.79, 2463.52, 1082.15);
-    path_63.cubicTo(2465, 1081.51, 2466.63, 1081.3, 2468.23, 1081.55);
-    path_63.lineTo(2507.17, 1087.97);
+    path_63.moveTo(size.width * 0.7526779, size.height * 0.3516387);
+    path_63.lineTo(size.width * 0.7455629, size.height * 0.3413995);
+    path_63.cubicTo(
+        size.width * 0.7452717,
+        size.height * 0.3409793,
+        size.width * 0.7450976,
+        size.height * 0.3404783,
+        size.width * 0.7450615,
+        size.height * 0.3399548);
+    path_63.cubicTo(
+        size.width * 0.7450285,
+        size.height * 0.3394279,
+        size.width * 0.7451336,
+        size.height * 0.3389076,
+        size.width * 0.7453678,
+        size.height * 0.3384454);
+    path_63.lineTo(size.width * 0.7511888, size.height * 0.3269716);
+    path_63.lineTo(size.width * 0.7388172, size.height * 0.3312637);
+    path_63.cubicTo(
+        size.width * 0.7383548,
+        size.height * 0.3314253,
+        size.width * 0.7378565,
+        size.height * 0.3314415,
+        size.width * 0.7373852,
+        size.height * 0.3313058);
+    path_63.cubicTo(
+        size.width * 0.7369138,
+        size.height * 0.3311732,
+        size.width * 0.7364905,
+        size.height * 0.3308985,
+        size.width * 0.7361603,
+        size.height * 0.3305107);
+    path_63.lineTo(size.width * 0.7290273, size.height * 0.3221073);
+    path_63.cubicTo(
+        size.width * 0.7288382,
+        size.height * 0.3278281,
+        size.width * 0.7286581,
+        size.height * 0.3336231,
+        size.width * 0.7286671,
+        size.height * 0.3344990);
+    path_63.cubicTo(
+        size.width * 0.7287061,
+        size.height * 0.3350614,
+        size.width * 0.7285800,
+        size.height * 0.3356206,
+        size.width * 0.7283128,
+        size.height * 0.3361021);
+    path_63.cubicTo(
+        size.width * 0.7280426,
+        size.height * 0.3365869,
+        size.width * 0.7276434,
+        size.height * 0.3369683,
+        size.width * 0.7271660,
+        size.height * 0.3371978);
+    path_63.lineTo(size.width * 0.7167968, size.height * 0.3421461);
+    path_63.lineTo(size.width * 0.7277034, size.height * 0.3455462);
+    path_63.cubicTo(
+        size.width * 0.7281807,
+        size.height * 0.3456949,
+        size.width * 0.7286070,
+        size.height * 0.3459922,
+        size.width * 0.7289282,
+        size.height * 0.3463963);
+    path_63.cubicTo(
+        size.width * 0.7292525,
+        size.height * 0.3468035,
+        size.width * 0.7294566,
+        size.height * 0.3473012,
+        size.width * 0.7295197,
+        size.height * 0.3478313);
+    path_63.lineTo(size.width * 0.7312369, size.height * 0.3622463);
+    path_63.lineTo(size.width * 0.7384719, size.height * 0.3507337);
+    path_63.cubicTo(
+        size.width * 0.7387451,
+        size.height * 0.3503038,
+        size.width * 0.7391264,
+        size.height * 0.3499644,
+        size.width * 0.7395737,
+        size.height * 0.3497576);
+    path_63.cubicTo(
+        size.width * 0.7400180,
+        size.height * 0.3495507,
+        size.width * 0.7405074,
+        size.height * 0.3494829,
+        size.width * 0.7409877,
+        size.height * 0.3495637);
+    path_63.lineTo(size.width * 0.7526779, size.height * 0.3516387);
     path_63.close();
 
     Paint paint_63_fill = Paint()..style = PaintingStyle.fill;
@@ -2762,82 +14080,418 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_63, paint_63_fill);
 
     Path path_64 = Path();
-    path_64.moveTo(2376.24, 719.74);
-    path_64.cubicTo(2383.32, 719, 2387.4, 720.38, 2383.83, 726.01);
-    path_64.cubicTo(2365.39, 740.907, 2344.53, 752.526, 2322.16, 760.36);
-    path_64.cubicTo(2314.63, 762.77, 2306.92, 764.84, 2298.44, 765.36);
-    path_64.cubicTo(2297.69, 765.399, 2296.95, 765.218, 2296.3, 764.838);
-    path_64.cubicTo(2295.65, 764.459, 2295.13, 763.899, 2294.79, 763.226);
-    path_64.cubicTo(2294.46, 762.553, 2294.33, 761.798, 2294.42, 761.052);
-    path_64.cubicTo(2294.51, 760.306, 2294.82, 759.604, 2295.3, 759.03);
-    path_64.cubicTo(2295.97, 758.27, 2296.67, 757.52, 2297.4, 756.78);
-    path_64.cubicTo(2288.04, 751.798, 2280.7, 743.712, 2276.64, 733.91);
-    path_64.lineTo(2264, 703.55);
-    path_64.lineTo(2253.59, 680.84);
-    path_64.lineTo(2253.08, 681.25);
-    path_64.cubicTo(2251.93, 682.05, 2250.63, 682.612, 2249.25, 682.904);
-    path_64.cubicTo(2247.88, 683.196, 2246.46, 683.212, 2245.08, 682.95);
-    path_64.cubicTo(2234.21, 679.87, 2229.37, 668.1, 2225.21, 659.39);
-    path_64.cubicTo(2223.66, 655.96, 2228.21, 652.75, 2230.94, 655.27);
-    path_64.cubicTo(2235.6, 658.6, 2240.12, 663.27, 2244.68, 665.84);
-    path_64.lineTo(2249.25, 660.06);
-    path_64.cubicTo(2273.88, 629.88, 2300.68, 601.14, 2331.48, 576.96);
-    path_64.cubicTo(2334.43, 574.58, 2338.79, 578.39, 2336.79, 581.62);
-    path_64.cubicTo(2331.77, 590.291, 2326.29, 598.692, 2320.39, 606.79);
-    path_64.cubicTo(2320.87, 607, 2321.39, 607.22, 2321.83, 607.45);
-    path_64.cubicTo(2327.73, 609.638, 2333.12, 613.022, 2337.65, 617.389);
-    path_64.cubicTo(2342.19, 621.757, 2345.77, 627.013, 2348.18, 632.83);
-    path_64.lineTo(2361.18, 664.13);
-    path_64.lineTo(2363.6, 669.4);
-    path_64.cubicTo(2364.57, 671.51, 2365.39, 673.681, 2366.07, 675.9);
-    path_64.lineTo(2373.46, 693.7);
-    path_64.cubicTo(2376.91, 701.922, 2377.88, 710.975, 2376.24, 719.74);
+    path_64.moveTo(size.width * 0.7133714, size.height * 0.2326244);
+    path_64.cubicTo(
+        size.width * 0.7154968,
+        size.height * 0.2323853,
+        size.width * 0.7167217,
+        size.height * 0.2328313,
+        size.width * 0.7156500,
+        size.height * 0.2346509);
+    path_64.cubicTo(
+        size.width * 0.7101141,
+        size.height * 0.2394657,
+        size.width * 0.7038517,
+        size.height * 0.2432211,
+        size.width * 0.6971360,
+        size.height * 0.2457531);
+    path_64.cubicTo(
+        size.width * 0.6948754,
+        size.height * 0.2465320,
+        size.width * 0.6925608,
+        size.height * 0.2472010,
+        size.width * 0.6900150,
+        size.height * 0.2473691);
+    path_64.cubicTo(
+        size.width * 0.6897899,
+        size.height * 0.2473817,
+        size.width * 0.6895677,
+        size.height * 0.2473232,
+        size.width * 0.6893726,
+        size.height * 0.2472004);
+    path_64.cubicTo(
+        size.width * 0.6891774,
+        size.height * 0.2470779,
+        size.width * 0.6890213,
+        size.height * 0.2468969,
+        size.width * 0.6889192,
+        size.height * 0.2466794);
+    path_64.cubicTo(
+        size.width * 0.6888202,
+        size.height * 0.2464619,
+        size.width * 0.6887811,
+        size.height * 0.2462178,
+        size.width * 0.6888082,
+        size.height * 0.2459767);
+    path_64.cubicTo(
+        size.width * 0.6888352,
+        size.height * 0.2457356,
+        size.width * 0.6889282,
+        size.height * 0.2455087,
+        size.width * 0.6890724,
+        size.height * 0.2453232);
+    path_64.cubicTo(
+        size.width * 0.6892735,
+        size.height * 0.2450776,
+        size.width * 0.6894836,
+        size.height * 0.2448352,
+        size.width * 0.6897028,
+        size.height * 0.2445960);
+    path_64.cubicTo(
+        size.width * 0.6868928,
+        size.height * 0.2429858,
+        size.width * 0.6846893,
+        size.height * 0.2403723,
+        size.width * 0.6834704,
+        size.height * 0.2372043);
+    path_64.lineTo(size.width * 0.6796758, size.height * 0.2273917);
+    path_64.lineTo(size.width * 0.6765506, size.height * 0.2200517);
+    path_64.lineTo(size.width * 0.6763975, size.height * 0.2201842);
+    path_64.cubicTo(
+        size.width * 0.6760522,
+        size.height * 0.2204428,
+        size.width * 0.6756620,
+        size.height * 0.2206244,
+        size.width * 0.6752477,
+        size.height * 0.2207188);
+    path_64.cubicTo(
+        size.width * 0.6748364,
+        size.height * 0.2208132,
+        size.width * 0.6744101,
+        size.height * 0.2208184,
+        size.width * 0.6739958,
+        size.height * 0.2207337);
+    path_64.cubicTo(
+        size.width * 0.6707325,
+        size.height * 0.2197382,
+        size.width * 0.6692795,
+        size.height * 0.2159341,
+        size.width * 0.6680306,
+        size.height * 0.2131189);
+    path_64.cubicTo(
+        size.width * 0.6675653,
+        size.height * 0.2120103,
+        size.width * 0.6689313,
+        size.height * 0.2109729,
+        size.width * 0.6697508,
+        size.height * 0.2117873);
+    path_64.cubicTo(
+        size.width * 0.6711498,
+        size.height * 0.2128636,
+        size.width * 0.6725068,
+        size.height * 0.2143730,
+        size.width * 0.6738757,
+        size.height * 0.2152036);
+    path_64.lineTo(size.width * 0.6752477, size.height * 0.2133355);
+    path_64.cubicTo(
+        size.width * 0.6826418,
+        size.height * 0.2035811,
+        size.width * 0.6906875,
+        size.height * 0.1942922,
+        size.width * 0.6999340,
+        size.height * 0.1864771);
+    path_64.cubicTo(
+        size.width * 0.7008196,
+        size.height * 0.1857078,
+        size.width * 0.7021285,
+        size.height * 0.1869392,
+        size.width * 0.7015281,
+        size.height * 0.1879832);
+    path_64.cubicTo(
+        size.width * 0.7000210,
+        size.height * 0.1907857,
+        size.width * 0.6983759,
+        size.height * 0.1935010,
+        size.width * 0.6966046,
+        size.height * 0.1961183);
+    path_64.cubicTo(
+        size.width * 0.6967487,
+        size.height * 0.1961862,
+        size.width * 0.6969048,
+        size.height * 0.1962573,
+        size.width * 0.6970369,
+        size.height * 0.1963316);
+    path_64.cubicTo(
+        size.width * 0.6988082,
+        size.height * 0.1970388,
+        size.width * 0.7004263,
+        size.height * 0.1981325,
+        size.width * 0.7017863,
+        size.height * 0.1995440);
+    path_64.cubicTo(
+        size.width * 0.7031492,
+        size.height * 0.2009557,
+        size.width * 0.7042240,
+        size.height * 0.2026545,
+        size.width * 0.7049475,
+        size.height * 0.2045346);
+    path_64.lineTo(size.width * 0.7088502, size.height * 0.2146509);
+    path_64.lineTo(size.width * 0.7095767, size.height * 0.2163542);
+    path_64.cubicTo(
+        size.width * 0.7098679,
+        size.height * 0.2170362,
+        size.width * 0.7101141,
+        size.height * 0.2177379,
+        size.width * 0.7103182,
+        size.height * 0.2184551);
+    path_64.lineTo(size.width * 0.7125368, size.height * 0.2242081);
+    path_64.cubicTo(
+        size.width * 0.7135725,
+        size.height * 0.2268655,
+        size.width * 0.7138637,
+        size.height * 0.2297915,
+        size.width * 0.7133714,
+        size.height * 0.2326244);
     path_64.close();
-    path_64.moveTo(2331.36, 649.81);
-    path_64.cubicTo(2332.79, 646.56, 2333.51, 643.04, 2333.46, 639.489);
-    path_64.cubicTo(2333.41, 635.938, 2332.6, 632.439, 2331.08, 629.23);
-    path_64.cubicTo(2330.74, 628.48, 2330.36, 627.76, 2329.96, 627.06);
-    path_64.cubicTo(2329.83, 626.83, 2329.7, 626.61, 2329.56, 626.39);
-    path_64.cubicTo(2329.42, 626.17, 2329.18, 625.79, 2328.99, 625.5);
-    path_64.cubicTo(2327.71, 624.407, 2326.28, 623.486, 2324.76, 622.76);
-    path_64.cubicTo(2324, 622.381, 2323.21, 622.047, 2322.41, 621.76);
-    path_64.cubicTo(2320.79, 621.208, 2319.11, 620.852, 2317.41, 620.7);
-    path_64.cubicTo(2314.72, 620.464, 2312.01, 620.715, 2309.41, 621.44);
-    path_64.cubicTo(2304.07, 628.29, 2298.64, 635.06, 2293.03, 641.66);
-    path_64.cubicTo(2292.97, 645.61, 2294.15, 649.48, 2296.41, 652.72);
-    path_64.cubicTo(2297.17, 653.812, 2298.04, 654.818, 2299.02, 655.72);
-    path_64.cubicTo(2299.98, 656.622, 2301.03, 657.423, 2302.16, 658.11);
-    path_64.cubicTo(2305.14, 659.879, 2308.49, 660.919, 2311.95, 661.147);
-    path_64.cubicTo(2315.41, 661.374, 2318.87, 660.783, 2322.05, 659.42);
-    path_64.cubicTo(2322.63, 659.18, 2323.19, 658.92, 2323.73, 658.64);
-    path_64.lineTo(2324.17, 658.35);
-    path_64.lineTo(2324.67, 658.01);
-    path_64.cubicTo(2325.34, 657.544, 2325.97, 657.033, 2326.56, 656.48);
-    path_64.lineTo(2327.11, 655.96);
-    path_64.lineTo(2327.63, 655.42);
-    path_64.cubicTo(2327.88, 655.16, 2328.12, 654.89, 2328.35, 654.61);
-    path_64.cubicTo(2328.49, 654.45, 2328.61, 654.29, 2328.74, 654.13);
-    path_64.cubicTo(2329.19, 653.574, 2329.6, 652.993, 2329.98, 652.39);
-    path_64.cubicTo(2330.1, 652.2, 2330.22, 652.01, 2330.33, 651.81);
-    path_64.cubicTo(2330.43, 651.652, 2330.53, 651.489, 2330.61, 651.32);
-    path_64.cubicTo(2330.7, 651.18, 2330.78, 651.03, 2330.86, 650.88);
-    path_64.lineTo(2331.09, 650.42);
-    path_64.cubicTo(2331.17, 650.22, 2331.27, 650, 2331.36, 649.81);
+    path_64.moveTo(size.width * 0.6998979, size.height * 0.2100226);
+    path_64.cubicTo(
+        size.width * 0.7003272,
+        size.height * 0.2089722,
+        size.width * 0.7005434,
+        size.height * 0.2078345,
+        size.width * 0.7005284,
+        size.height * 0.2066868);
+    path_64.cubicTo(
+        size.width * 0.7005134,
+        size.height * 0.2055391,
+        size.width * 0.7002702,
+        size.height * 0.2044082,
+        size.width * 0.6998139,
+        size.height * 0.2033710);
+    path_64.cubicTo(
+        size.width * 0.6997118,
+        size.height * 0.2031286,
+        size.width * 0.6995977,
+        size.height * 0.2028959,
+        size.width * 0.6994776,
+        size.height * 0.2026697);
+    path_64.cubicTo(
+        size.width * 0.6994386,
+        size.height * 0.2025953,
+        size.width * 0.6993996,
+        size.height * 0.2025242,
+        size.width * 0.6993576,
+        size.height * 0.2024531);
+    path_64.cubicTo(
+        size.width * 0.6993155,
+        size.height * 0.2023820,
+        size.width * 0.6992435,
+        size.height * 0.2022592,
+        size.width * 0.6991864,
+        size.height * 0.2021655);
+    path_64.cubicTo(
+        size.width * 0.6988022,
+        size.height * 0.2018122,
+        size.width * 0.6983729,
+        size.height * 0.2015145,
+        size.width * 0.6979165,
+        size.height * 0.2012799);
+    path_64.cubicTo(
+        size.width * 0.6976884,
+        size.height * 0.2011574,
+        size.width * 0.6974512,
+        size.height * 0.2010495,
+        size.width * 0.6972110,
+        size.height * 0.2009567);
+    path_64.cubicTo(
+        size.width * 0.6967247,
+        size.height * 0.2007783,
+        size.width * 0.6962204,
+        size.height * 0.2006632,
+        size.width * 0.6957100,
+        size.height * 0.2006141);
+    path_64.cubicTo(
+        size.width * 0.6949024,
+        size.height * 0.2005378,
+        size.width * 0.6940889,
+        size.height * 0.2006189,
+        size.width * 0.6933083,
+        size.height * 0.2008533);
+    path_64.cubicTo(
+        size.width * 0.6917052,
+        size.height * 0.2030672,
+        size.width * 0.6900751,
+        size.height * 0.2052553,
+        size.width * 0.6883909,
+        size.height * 0.2073885);
+    path_64.cubicTo(
+        size.width * 0.6883729,
+        size.height * 0.2086652,
+        size.width * 0.6887271,
+        size.height * 0.2099160,
+        size.width * 0.6894056,
+        size.height * 0.2109632);
+    path_64.cubicTo(
+        size.width * 0.6896337,
+        size.height * 0.2113161,
+        size.width * 0.6898949,
+        size.height * 0.2116412,
+        size.width * 0.6901891,
+        size.height * 0.2119328);
+    path_64.cubicTo(
+        size.width * 0.6904773,
+        size.height * 0.2122243,
+        size.width * 0.6907926,
+        size.height * 0.2124832,
+        size.width * 0.6911318,
+        size.height * 0.2127052);
+    path_64.cubicTo(
+        size.width * 0.6920264,
+        size.height * 0.2132770,
+        size.width * 0.6930321,
+        size.height * 0.2136131,
+        size.width * 0.6940708,
+        size.height * 0.2136868);
+    path_64.cubicTo(
+        size.width * 0.6951096,
+        size.height * 0.2137602,
+        size.width * 0.6961483,
+        size.height * 0.2135692,
+        size.width * 0.6971030,
+        size.height * 0.2131286);
+    path_64.cubicTo(
+        size.width * 0.6972771,
+        size.height * 0.2130511,
+        size.width * 0.6974452,
+        size.height * 0.2129670,
+        size.width * 0.6976073,
+        size.height * 0.2128765);
+    path_64.lineTo(size.width * 0.6977394, size.height * 0.2127828);
+    path_64.lineTo(size.width * 0.6978895, size.height * 0.2126729);
+    path_64.cubicTo(
+        size.width * 0.6980907,
+        size.height * 0.2125223,
+        size.width * 0.6982798,
+        size.height * 0.2123571,
+        size.width * 0.6984569,
+        size.height * 0.2121784);
+    path_64.lineTo(size.width * 0.6986220, size.height * 0.2120103);
+    path_64.lineTo(size.width * 0.6987781, size.height * 0.2118358);
+    path_64.cubicTo(
+        size.width * 0.6988532,
+        size.height * 0.2117518,
+        size.width * 0.6989252,
+        size.height * 0.2116645,
+        size.width * 0.6989943,
+        size.height * 0.2115740);
+    path_64.cubicTo(
+        size.width * 0.6990363,
+        size.height * 0.2115223,
+        size.width * 0.6990724,
+        size.height * 0.2114706,
+        size.width * 0.6991114,
+        size.height * 0.2114189);
+    path_64.cubicTo(
+        size.width * 0.6992465,
+        size.height * 0.2112392,
+        size.width * 0.6993696,
+        size.height * 0.2110514,
+        size.width * 0.6994836,
+        size.height * 0.2108565);
+    path_64.cubicTo(
+        size.width * 0.6995197,
+        size.height * 0.2107951,
+        size.width * 0.6995557,
+        size.height * 0.2107337,
+        size.width * 0.6995887,
+        size.height * 0.2106690);
+    path_64.cubicTo(
+        size.width * 0.6996187,
+        size.height * 0.2106180,
+        size.width * 0.6996488,
+        size.height * 0.2105653,
+        size.width * 0.6996728,
+        size.height * 0.2105107);
+    path_64.cubicTo(
+        size.width * 0.6996998,
+        size.height * 0.2104654,
+        size.width * 0.6997238,
+        size.height * 0.2104169,
+        size.width * 0.6997478,
+        size.height * 0.2103685);
+    path_64.lineTo(size.width * 0.6998169, size.height * 0.2102198);
+    path_64.cubicTo(
+        size.width * 0.6998409,
+        size.height * 0.2101551,
+        size.width * 0.6998709,
+        size.height * 0.2100840,
+        size.width * 0.6998979,
+        size.height * 0.2100226);
     path_64.close();
-    path_64.moveTo(2309.69, 703.36);
-    path_64.cubicTo(2309.7, 702.085, 2309.5, 700.817, 2309.09, 699.61);
-    path_64.cubicTo(2309.01, 699.38, 2308.93, 699.15, 2308.83, 698.92);
-    path_64.cubicTo(2306.28, 692.77, 2298.83, 690.02, 2292.25, 692.76);
-    path_64.cubicTo(2285.67, 695.5, 2282.36, 702.76, 2284.91, 708.85);
-    path_64.cubicTo(2287.46, 714.94, 2294.91, 717.76, 2301.49, 715.01);
-    path_64.lineTo(2301.73, 714.9);
-    path_64.cubicTo(2302.18, 714.712, 2302.62, 714.492, 2303.04, 714.24);
-    path_64.cubicTo(2305, 713.166, 2306.65, 711.596, 2307.82, 709.687);
-    path_64.cubicTo(2308.98, 707.778, 2309.63, 705.596, 2309.69, 703.36);
+    path_64.moveTo(size.width * 0.6933924, size.height * 0.2273303);
+    path_64.cubicTo(
+        size.width * 0.6933954,
+        size.height * 0.2269182,
+        size.width * 0.6933353,
+        size.height * 0.2265084,
+        size.width * 0.6932122,
+        size.height * 0.2261183);
+    path_64.cubicTo(
+        size.width * 0.6931882,
+        size.height * 0.2260440,
+        size.width * 0.6931642,
+        size.height * 0.2259696,
+        size.width * 0.6931342,
+        size.height * 0.2258953);
+    path_64.cubicTo(
+        size.width * 0.6923687,
+        size.height * 0.2239076,
+        size.width * 0.6901321,
+        size.height * 0.2230187,
+        size.width * 0.6881567,
+        size.height * 0.2239043);
+    path_64.cubicTo(
+        size.width * 0.6861813,
+        size.height * 0.2247899,
+        size.width * 0.6851876,
+        size.height * 0.2271364,
+        size.width * 0.6859532,
+        size.height * 0.2291047);
+    path_64.cubicTo(
+        size.width * 0.6867187,
+        size.height * 0.2310730,
+        size.width * 0.6889553,
+        size.height * 0.2319845,
+        size.width * 0.6909307,
+        size.height * 0.2310957);
+    path_64.lineTo(size.width * 0.6910027, size.height * 0.2310601);
+    path_64.cubicTo(
+        size.width * 0.6911378,
+        size.height * 0.2309994,
+        size.width * 0.6912699,
+        size.height * 0.2309282,
+        size.width * 0.6913960,
+        size.height * 0.2308468);
+    path_64.cubicTo(
+        size.width * 0.6919844,
+        size.height * 0.2304997,
+        size.width * 0.6924797,
+        size.height * 0.2299922,
+        size.width * 0.6928310,
+        size.height * 0.2293752);
+    path_64.cubicTo(
+        size.width * 0.6931792,
+        size.height * 0.2287582,
+        size.width * 0.6933744,
+        size.height * 0.2280530,
+        size.width * 0.6933924,
+        size.height * 0.2273303);
     path_64.close();
-    path_64.moveTo(2246.85, 666.86);
-    path_64.cubicTo(2247.21, 667.009, 2247.57, 667.139, 2247.94, 667.25);
-    path_64.cubicTo(2247.62, 667.023, 2247.24, 666.888, 2246.85, 666.86);
+    path_64.moveTo(size.width * 0.6745272, size.height * 0.2155333);
+    path_64.cubicTo(
+        size.width * 0.6746352,
+        size.height * 0.2155814,
+        size.width * 0.6747433,
+        size.height * 0.2156235,
+        size.width * 0.6748544,
+        size.height * 0.2156593);
+    path_64.cubicTo(
+        size.width * 0.6747583,
+        size.height * 0.2155860,
+        size.width * 0.6746443,
+        size.height * 0.2155423,
+        size.width * 0.6745272,
+        size.height * 0.2155333);
     path_64.close();
 
     Paint paint_64_fill = Paint()..style = PaintingStyle.fill;
@@ -2845,34 +14499,178 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_64, paint_64_fill);
 
     Path path_65 = Path();
-    path_65.moveTo(2285, 875.78);
-    path_65.cubicTo(2285.41, 876.92, 2285.57, 878.134, 2285.47, 879.341);
-    path_65.cubicTo(2285.37, 880.548, 2285.01, 881.719, 2284.42, 882.776);
-    path_65.cubicTo(2283.83, 883.832, 2283.02, 884.75, 2282.04, 885.467);
-    path_65.cubicTo(2281.06, 886.183, 2279.95, 886.682, 2278.76, 886.93);
-    path_65.cubicTo(2278.3, 887.03, 2233.34, 896.45, 2207.01, 904.24);
-    path_65.cubicTo(2200.84, 906.71, 2194.14, 907.24, 2187.53, 907.39);
-    path_65.cubicTo(2185.29, 907.47, 2182.88, 906.99, 2179.8, 904.29);
-    path_65.cubicTo(2179.61, 904.128, 2179.47, 903.914, 2179.4, 903.675);
-    path_65.cubicTo(2179.33, 903.436, 2179.32, 903.181, 2179.39, 902.94);
-    path_65.cubicTo(2181.26, 896.22, 2185.27, 895.62, 2189.93, 892.7);
-    path_65.cubicTo(2190.67, 892.31, 2191.42, 891.93, 2192.17, 891.57);
-    path_65.cubicTo(2187.91, 886.448, 2182.45, 882.454, 2176.28, 879.94);
-    path_65.cubicTo(2174.8, 879.309, 2173.52, 878.266, 2172.61, 876.936);
-    path_65.cubicTo(2171.69, 875.605, 2171.18, 874.042, 2171.12, 872.429);
-    path_65.cubicTo(2171.07, 870.816, 2171.47, 869.221, 2172.29, 867.83);
-    path_65.cubicTo(2173.11, 866.44, 2174.31, 865.313, 2175.75, 864.58);
-    path_65.cubicTo(2176.15, 864.38, 2216.35, 843.78, 2231.35, 824.34);
-    path_65.cubicTo(2232.72, 822.562, 2234.74, 821.4, 2236.96, 821.109);
-    path_65.cubicTo(2239.19, 820.818, 2241.44, 821.423, 2243.22, 822.79);
-    path_65.cubicTo(2244.44, 823.78, 2274.73, 847.27, 2285, 875.78);
+    path_65.moveTo(size.width * 0.6859802, size.height * 0.2830575);
+    path_65.cubicTo(
+        size.width * 0.6861033,
+        size.height * 0.2834260,
+        size.width * 0.6861513,
+        size.height * 0.2838184,
+        size.width * 0.6861213,
+        size.height * 0.2842085);
+    path_65.cubicTo(
+        size.width * 0.6860913,
+        size.height * 0.2845986,
+        size.width * 0.6859832,
+        size.height * 0.2849771,
+        size.width * 0.6858061,
+        size.height * 0.2853187);
+    path_65.cubicTo(
+        size.width * 0.6856289,
+        size.height * 0.2856600,
+        size.width * 0.6853858,
+        size.height * 0.2859567,
+        size.width * 0.6850916,
+        size.height * 0.2861884);
+    path_65.cubicTo(
+        size.width * 0.6847974,
+        size.height * 0.2864198,
+        size.width * 0.6844641,
+        size.height * 0.2865811,
+        size.width * 0.6841069,
+        size.height * 0.2866613);
+    path_65.cubicTo(
+        size.width * 0.6839688,
+        size.height * 0.2866936,
+        size.width * 0.6704713,
+        size.height * 0.2897382,
+        size.width * 0.6625668,
+        size.height * 0.2922560);
+    path_65.cubicTo(
+        size.width * 0.6607145,
+        size.height * 0.2930543,
+        size.width * 0.6587031,
+        size.height * 0.2932256,
+        size.width * 0.6567187,
+        size.height * 0.2932741);
+    path_65.cubicTo(
+        size.width * 0.6560462,
+        size.height * 0.2932999,
+        size.width * 0.6553227,
+        size.height * 0.2931448,
+        size.width * 0.6543981,
+        size.height * 0.2922721);
+    path_65.cubicTo(
+        size.width * 0.6543410,
+        size.height * 0.2922198,
+        size.width * 0.6542990,
+        size.height * 0.2921506,
+        size.width * 0.6542780,
+        size.height * 0.2920734);
+    path_65.cubicTo(
+        size.width * 0.6542570,
+        size.height * 0.2919961,
+        size.width * 0.6542540,
+        size.height * 0.2919137,
+        size.width * 0.6542750,
+        size.height * 0.2918358);
+    path_65.cubicTo(
+        size.width * 0.6548364,
+        size.height * 0.2896639,
+        size.width * 0.6560402,
+        size.height * 0.2894699,
+        size.width * 0.6574392,
+        size.height * 0.2885262);
+    path_65.cubicTo(
+        size.width * 0.6576614,
+        size.height * 0.2884001,
+        size.width * 0.6578865,
+        size.height * 0.2882773,
+        size.width * 0.6581117,
+        size.height * 0.2881610);
+    path_65.cubicTo(
+        size.width * 0.6568328,
+        size.height * 0.2865055,
+        size.width * 0.6551936,
+        size.height * 0.2852146,
+        size.width * 0.6533413,
+        size.height * 0.2844021);
+    path_65.cubicTo(
+        size.width * 0.6528970,
+        size.height * 0.2841981,
+        size.width * 0.6525128,
+        size.height * 0.2838610,
+        size.width * 0.6522396,
+        size.height * 0.2834312);
+    path_65.cubicTo(
+        size.width * 0.6519634,
+        size.height * 0.2830010,
+        size.width * 0.6518103,
+        size.height * 0.2824958,
+        size.width * 0.6517923,
+        size.height * 0.2819745);
+    path_65.cubicTo(
+        size.width * 0.6517772,
+        size.height * 0.2814531,
+        size.width * 0.6518973,
+        size.height * 0.2809376,
+        size.width * 0.6521435,
+        size.height * 0.2804880);
+    path_65.cubicTo(
+        size.width * 0.6523897,
+        size.height * 0.2800388,
+        size.width * 0.6527499,
+        size.height * 0.2796745,
+        size.width * 0.6531822,
+        size.height * 0.2794376);
+    path_65.cubicTo(
+        size.width * 0.6533023,
+        size.height * 0.2793730,
+        size.width * 0.6653708,
+        size.height * 0.2727149,
+        size.width * 0.6698739,
+        size.height * 0.2664318);
+    path_65.cubicTo(
+        size.width * 0.6702852,
+        size.height * 0.2658571,
+        size.width * 0.6708916,
+        size.height * 0.2654816,
+        size.width * 0.6715581,
+        size.height * 0.2653875);
+    path_65.cubicTo(
+        size.width * 0.6722276,
+        size.height * 0.2652935,
+        size.width * 0.6729030,
+        size.height * 0.2654890,
+        size.width * 0.6734374,
+        size.height * 0.2659308);
+    path_65.cubicTo(
+        size.width * 0.6738037,
+        size.height * 0.2662508,
+        size.width * 0.6828970,
+        size.height * 0.2738429,
+        size.width * 0.6859802,
+        size.height * 0.2830575);
     path_65.close();
-    path_65.moveTo(2265, 872.55);
-    path_65.cubicTo(2257.7, 859.31, 2246, 847.7, 2239, 841.35);
-    path_65.cubicTo(2226.85, 853.77, 2208.9, 865.29, 2196.72, 872.35);
-    path_65.cubicTo(2201.59, 876.156, 2205.76, 880.778, 2209.04, 886.01);
-    path_65.cubicTo(2227.65, 880.86, 2251.49, 875.48, 2264.91, 872.55);
-    path_65.lineTo(2265, 872.55);
+    path_65.moveTo(size.width * 0.6799760, size.height * 0.2820136);
+    path_65.cubicTo(
+        size.width * 0.6777844,
+        size.height * 0.2777343,
+        size.width * 0.6742720,
+        size.height * 0.2739819,
+        size.width * 0.6721705,
+        size.height * 0.2719295);
+    path_65.cubicTo(
+        size.width * 0.6685230,
+        size.height * 0.2759438,
+        size.width * 0.6631342,
+        size.height * 0.2796671,
+        size.width * 0.6594776,
+        size.height * 0.2819489);
+    path_65.cubicTo(
+        size.width * 0.6609397,
+        size.height * 0.2831791,
+        size.width * 0.6621915,
+        size.height * 0.2846729,
+        size.width * 0.6631762,
+        size.height * 0.2863639);
+    path_65.cubicTo(
+        size.width * 0.6687631,
+        size.height * 0.2846994,
+        size.width * 0.6759201,
+        size.height * 0.2829606,
+        size.width * 0.6799490,
+        size.height * 0.2820136);
+    path_65.lineTo(size.width * 0.6799760, size.height * 0.2820136);
     path_65.close();
 
     Paint paint_65_fill = Paint()..style = PaintingStyle.fill;
@@ -2880,73 +14678,403 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_65, paint_65_fill);
 
     Path path_66 = Path();
-    path_66.moveTo(2095.76, 826.19);
-    path_66.cubicTo(2099.19, 826.07, 2100.85, 830.77, 2098.16, 832.83);
-    path_66.cubicTo(2081.34, 846.583, 2062.44, 857.564, 2042.16, 865.36);
-    path_66.cubicTo(2035.13, 867.999, 2027.78, 869.717, 2020.31, 870.47);
-    path_66.cubicTo(2019.57, 870.517, 2018.84, 870.354, 2018.19, 870);
-    path_66.cubicTo(2017.54, 869.646, 2017.01, 869.116, 2016.65, 868.471);
-    path_66.cubicTo(2016.3, 867.826, 2016.13, 867.093, 2016.17, 866.356);
-    path_66.cubicTo(2016.21, 865.62, 2016.46, 864.91, 2016.89, 864.31);
-    path_66.cubicTo(2017.33, 863.74, 2017.78, 863.19, 2018.24, 862.64);
-    path_66.cubicTo(2009.61, 857.422, 2002.88, 849.57, 1999.04, 840.24);
-    path_66.lineTo(1976.04, 784.88);
-    path_66.cubicTo(1969.04, 767.97, 1972.41, 749.45, 1983.26, 736.99);
-    path_66.cubicTo(1976.78, 734.732, 1970.44, 732.111, 1964.26, 729.14);
-    path_66.cubicTo(1960.97, 727.63, 1962.04, 722.34, 1965.63, 722.21);
-    path_66.cubicTo(1975.19, 721.671, 1984.77, 721.805, 1994.31, 722.61);
-    path_66.cubicTo(2015.72, 724.284, 2036.93, 728.004, 2057.63, 733.72);
-    path_66.cubicTo(2058.63, 731.49, 2059.78, 728.72, 2060.42, 727.5);
-    path_66.cubicTo(2060.73, 726.821, 2061.23, 726.247, 2061.86, 725.849);
-    path_66.cubicTo(2062.49, 725.45, 2063.22, 725.245, 2063.96, 725.259);
-    path_66.cubicTo(2064.71, 725.273, 2065.43, 725.505, 2066.05, 725.926);
-    path_66.cubicTo(2066.66, 726.348, 2067.14, 726.94, 2067.42, 727.63);
-    path_66.cubicTo(2070.72, 735.39, 2072.33, 748.69, 2061.42, 750.91);
-    path_66.lineTo(2083.88, 805.01);
-    path_66.cubicTo(2086.3, 810.791, 2087.55, 816.993, 2087.56, 823.26);
-    path_66.cubicTo(2087.56, 824.45, 2087.51, 825.63, 2087.42, 826.81);
-    path_66.cubicTo(2090.19, 826.457, 2092.97, 826.25, 2095.76, 826.19);
+    path_66.moveTo(size.width * 0.6291684, size.height * 0.2670297);
+    path_66.cubicTo(
+        size.width * 0.6301981,
+        size.height * 0.2669910,
+        size.width * 0.6306965,
+        size.height * 0.2685100,
+        size.width * 0.6298889,
+        size.height * 0.2691758);
+    path_66.cubicTo(
+        size.width * 0.6248394,
+        size.height * 0.2736209,
+        size.width * 0.6191654,
+        size.height * 0.2771700,
+        size.width * 0.6130772,
+        size.height * 0.2796897);
+    path_66.cubicTo(
+        size.width * 0.6109667,
+        size.height * 0.2805427,
+        size.width * 0.6087601,
+        size.height * 0.2810979,
+        size.width * 0.6065176,
+        size.height * 0.2813413);
+    path_66.cubicTo(
+        size.width * 0.6062954,
+        size.height * 0.2813565,
+        size.width * 0.6060763,
+        size.height * 0.2813038,
+        size.width * 0.6058811,
+        size.height * 0.2811894);
+    path_66.cubicTo(
+        size.width * 0.6056860,
+        size.height * 0.2810750,
+        size.width * 0.6055269,
+        size.height * 0.2809037,
+        size.width * 0.6054188,
+        size.height * 0.2806952);
+    path_66.cubicTo(
+        size.width * 0.6053137,
+        size.height * 0.2804867,
+        size.width * 0.6052627,
+        size.height * 0.2802498,
+        size.width * 0.6052747,
+        size.height * 0.2800116);
+    path_66.cubicTo(
+        size.width * 0.6052867,
+        size.height * 0.2797738,
+        size.width * 0.6053618,
+        size.height * 0.2795443,
+        size.width * 0.6054908,
+        size.height * 0.2793504);
+    path_66.cubicTo(
+        size.width * 0.6056229,
+        size.height * 0.2791661,
+        size.width * 0.6057580,
+        size.height * 0.2789884,
+        size.width * 0.6058961,
+        size.height * 0.2788106);
+    path_66.cubicTo(
+        size.width * 0.6033053,
+        size.height * 0.2771241,
+        size.width * 0.6012849,
+        size.height * 0.2745863,
+        size.width * 0.6001321,
+        size.height * 0.2715708);
+    path_66.lineTo(size.width * 0.5932273, size.height * 0.2536781);
+    path_66.cubicTo(
+        size.width * 0.5911258,
+        size.height * 0.2482127,
+        size.width * 0.5921375,
+        size.height * 0.2422269,
+        size.width * 0.5953948,
+        size.height * 0.2381997);
+    path_66.cubicTo(
+        size.width * 0.5934494,
+        size.height * 0.2374699,
+        size.width * 0.5915461,
+        size.height * 0.2366228,
+        size.width * 0.5896908,
+        size.height * 0.2356626);
+    path_66.cubicTo(
+        size.width * 0.5887031,
+        size.height * 0.2351745,
+        size.width * 0.5890243,
+        size.height * 0.2334648,
+        size.width * 0.5901021,
+        size.height * 0.2334228);
+    path_66.cubicTo(
+        size.width * 0.5929721,
+        size.height * 0.2332485,
+        size.width * 0.5958481,
+        size.height * 0.2332919,
+        size.width * 0.5987121,
+        size.height * 0.2335520);
+    path_66.cubicTo(
+        size.width * 0.6051396,
+        size.height * 0.2340931,
+        size.width * 0.6115071,
+        size.height * 0.2352954,
+        size.width * 0.6177214,
+        size.height * 0.2371429);
+    path_66.cubicTo(
+        size.width * 0.6180216,
+        size.height * 0.2364221,
+        size.width * 0.6183669,
+        size.height * 0.2355268,
+        size.width * 0.6185590,
+        size.height * 0.2351325);
+    path_66.cubicTo(
+        size.width * 0.6186521,
+        size.height * 0.2349131,
+        size.width * 0.6188022,
+        size.height * 0.2347275,
+        size.width * 0.6189913,
+        size.height * 0.2345989);
+    path_66.cubicTo(
+        size.width * 0.6191804,
+        size.height * 0.2344699,
+        size.width * 0.6193996,
+        size.height * 0.2344037,
+        size.width * 0.6196217,
+        size.height * 0.2344082);
+    path_66.cubicTo(
+        size.width * 0.6198469,
+        size.height * 0.2344127,
+        size.width * 0.6200630,
+        size.height * 0.2344877,
+        size.width * 0.6202492,
+        size.height * 0.2346238);
+    path_66.cubicTo(
+        size.width * 0.6204323,
+        size.height * 0.2347602,
+        size.width * 0.6205764,
+        size.height * 0.2349515,
+        size.width * 0.6206605,
+        size.height * 0.2351745);
+    path_66.cubicTo(
+        size.width * 0.6216512,
+        size.height * 0.2376826,
+        size.width * 0.6221345,
+        size.height * 0.2419813,
+        size.width * 0.6188592,
+        size.height * 0.2426988);
+    path_66.lineTo(size.width * 0.6256019, size.height * 0.2601842);
+    path_66.cubicTo(
+        size.width * 0.6263284,
+        size.height * 0.2620527,
+        size.width * 0.6267037,
+        size.height * 0.2640572,
+        size.width * 0.6267067,
+        size.height * 0.2660827);
+    path_66.cubicTo(
+        size.width * 0.6267067,
+        size.height * 0.2664674,
+        size.width * 0.6266917,
+        size.height * 0.2668487,
+        size.width * 0.6266647,
+        size.height * 0.2672301);
+    path_66.cubicTo(
+        size.width * 0.6274962,
+        size.height * 0.2671160,
+        size.width * 0.6283308,
+        size.height * 0.2670491,
+        size.width * 0.6291684,
+        size.height * 0.2670297);
     path_66.close();
-    path_66.moveTo(2056, 736.69);
-    path_66.cubicTo(2056.28, 736.286, 2056.53, 735.865, 2056.75, 735.43);
-    path_66.cubicTo(2055.93, 735.843, 2055.29, 736.56, 2054.99, 737.43);
-    path_66.cubicTo(2055, 738.05, 2055.63, 737.37, 2056, 736.69);
+    path_66.moveTo(size.width * 0.6172321, size.height * 0.2381028);
+    path_66.cubicTo(
+        size.width * 0.6173161,
+        size.height * 0.2379722,
+        size.width * 0.6173912,
+        size.height * 0.2378361,
+        size.width * 0.6174572,
+        size.height * 0.2376955);
+    path_66.cubicTo(
+        size.width * 0.6172110,
+        size.height * 0.2378290,
+        size.width * 0.6170189,
+        size.height * 0.2380608,
+        size.width * 0.6169289,
+        size.height * 0.2383420);
+    path_66.cubicTo(
+        size.width * 0.6169319,
+        size.height * 0.2385423,
+        size.width * 0.6171210,
+        size.height * 0.2383226,
+        size.width * 0.6172321,
+        size.height * 0.2381028);
     path_66.close();
-    path_66.moveTo(2048.78, 759.22);
-    path_66.cubicTo(2049.14, 757.623, 2049.29, 755.986, 2049.24, 754.35);
-    path_66.cubicTo(2049.2, 753.234, 2049.07, 752.123, 2048.84, 751.03);
-    path_66.cubicTo(2045, 750.82, 2041.17, 750.43, 2037.35, 749.93);
-    path_66.cubicTo(2031, 749.09, 2024.69, 747.93, 2018.49, 746.65);
-    path_66.cubicTo(2016.83, 746.29, 2015.17, 745.93, 2013.49, 745.55);
-    path_66.cubicTo(2013.3, 745.91, 2013.13, 746.27, 2012.97, 746.64);
-    path_66.cubicTo(2011.92, 749.048, 2011.37, 751.645, 2011.34, 754.273);
-    path_66.cubicTo(2011.32, 756.901, 2011.84, 759.505, 2012.85, 761.93);
-    path_66.cubicTo(2013.59, 763.753, 2014.61, 765.454, 2015.85, 766.98);
-    path_66.cubicTo(2018.54, 770.21, 2022.21, 772.477, 2026.3, 773.44);
-    path_66.cubicTo(2026.66, 773.52, 2027.03, 773.6, 2027.41, 773.66);
-    path_66.cubicTo(2028.15, 773.789, 2028.91, 773.872, 2029.66, 773.91);
-    path_66.lineTo(2030.8, 773.91);
-    path_66.cubicTo(2033.91, 773.86, 2036.95, 773.032, 2039.65, 771.501);
-    path_66.cubicTo(2042.35, 769.971, 2044.63, 767.787, 2046.27, 765.15);
-    path_66.cubicTo(2047.44, 763.331, 2048.3, 761.326, 2048.8, 759.22);
-    path_66.lineTo(2048.78, 759.22);
+    path_66.moveTo(size.width * 0.6150645, size.height * 0.2453846);
+    path_66.cubicTo(
+        size.width * 0.6151726,
+        size.height * 0.2448685,
+        size.width * 0.6152177,
+        size.height * 0.2443394,
+        size.width * 0.6152026,
+        size.height * 0.2438106);
+    path_66.cubicTo(
+        size.width * 0.6151906,
+        size.height * 0.2434499,
+        size.width * 0.6151516,
+        size.height * 0.2430908,
+        size.width * 0.6150826,
+        size.height * 0.2427376);
+    path_66.cubicTo(
+        size.width * 0.6139298,
+        size.height * 0.2426697,
+        size.width * 0.6127799,
+        size.height * 0.2425436,
+        size.width * 0.6116331,
+        size.height * 0.2423820);
+    path_66.cubicTo(
+        size.width * 0.6097268,
+        size.height * 0.2421105,
+        size.width * 0.6078325,
+        size.height * 0.2417356,
+        size.width * 0.6059712,
+        size.height * 0.2413219);
+    path_66.cubicTo(
+        size.width * 0.6054728,
+        size.height * 0.2412056,
+        size.width * 0.6049745,
+        size.height * 0.2410892,
+        size.width * 0.6044701,
+        size.height * 0.2409664);
+    path_66.cubicTo(
+        size.width * 0.6044131,
+        size.height * 0.2410827,
+        size.width * 0.6043621,
+        size.height * 0.2411991,
+        size.width * 0.6043140,
+        size.height * 0.2413187);
+    path_66.cubicTo(
+        size.width * 0.6039988,
+        size.height * 0.2420970,
+        size.width * 0.6038337,
+        size.height * 0.2429363,
+        size.width * 0.6038247,
+        size.height * 0.2437857);
+    path_66.cubicTo(
+        size.width * 0.6038187,
+        size.height * 0.2446351,
+        size.width * 0.6039748,
+        size.height * 0.2454767,
+        size.width * 0.6042780,
+        size.height * 0.2462605);
+    path_66.cubicTo(
+        size.width * 0.6045002,
+        size.height * 0.2468497,
+        size.width * 0.6048064,
+        size.height * 0.2473995,
+        size.width * 0.6051786,
+        size.height * 0.2478927);
+    path_66.cubicTo(
+        size.width * 0.6059862,
+        size.height * 0.2489367,
+        size.width * 0.6070880,
+        size.height * 0.2496694,
+        size.width * 0.6083158,
+        size.height * 0.2499806);
+    path_66.cubicTo(
+        size.width * 0.6084239,
+        size.height * 0.2500065,
+        size.width * 0.6085350,
+        size.height * 0.2500323,
+        size.width * 0.6086491,
+        size.height * 0.2500517);
+    path_66.cubicTo(
+        size.width * 0.6088712,
+        size.height * 0.2500934,
+        size.width * 0.6090994,
+        size.height * 0.2501202,
+        size.width * 0.6093245,
+        size.height * 0.2501325);
+    path_66.lineTo(size.width * 0.6096668, size.height * 0.2501325);
+    path_66.cubicTo(
+        size.width * 0.6106004,
+        size.height * 0.2501164,
+        size.width * 0.6115131,
+        size.height * 0.2498487,
+        size.width * 0.6123236,
+        size.height * 0.2493539);
+    path_66.cubicTo(
+        size.width * 0.6131342,
+        size.height * 0.2488594,
+        size.width * 0.6138187,
+        size.height * 0.2481535,
+        size.width * 0.6143110,
+        size.height * 0.2473012);
+    path_66.cubicTo(
+        size.width * 0.6146623,
+        size.height * 0.2467133,
+        size.width * 0.6149204,
+        size.height * 0.2460653,
+        size.width * 0.6150705,
+        size.height * 0.2453846);
+    path_66.lineTo(size.width * 0.6150645, size.height * 0.2453846);
     path_66.close();
-    path_66.moveTo(2028.11, 814.11);
-    path_66.cubicTo(2028.11, 813.214, 2028.01, 812.322, 2027.8, 811.45);
-    path_66.cubicTo(2027.66, 810.815, 2027.46, 810.193, 2027.21, 809.59);
-    path_66.cubicTo(2026.37, 807.685, 2025.02, 806.048, 2023.31, 804.859);
-    path_66.cubicTo(2021.6, 803.67, 2019.6, 802.975, 2017.52, 802.85);
-    path_66.cubicTo(2015.44, 802.725, 2013.36, 803.175, 2011.52, 804.15);
-    path_66.cubicTo(2009.68, 805.125, 2008.15, 806.589, 2007.09, 808.379);
-    path_66.cubicTo(2006.02, 810.17, 2005.47, 812.219, 2005.5, 814.301);
-    path_66.cubicTo(2005.52, 816.384, 2006.12, 818.419, 2007.22, 820.185);
-    path_66.cubicTo(2008.33, 821.95, 2009.9, 823.377, 2011.76, 824.31);
-    path_66.cubicTo(2013.62, 825.242, 2015.7, 825.643, 2017.78, 825.47);
-    path_66.cubicTo(2018.95, 825.376, 2020.1, 825.1, 2021.18, 824.65);
-    path_66.cubicTo(2022.01, 824.31, 2022.79, 823.866, 2023.5, 823.33);
-    path_66.cubicTo(2024.94, 822.263, 2026.11, 820.872, 2026.91, 819.271);
-    path_66.cubicTo(2027.72, 817.67, 2028.13, 815.902, 2028.13, 814.11);
-    path_66.lineTo(2028.11, 814.11);
+    path_66.moveTo(size.width * 0.6088592, size.height * 0.2631254);
+    path_66.cubicTo(
+        size.width * 0.6088592,
+        size.height * 0.2628358,
+        size.width * 0.6088292,
+        size.height * 0.2625475,
+        size.width * 0.6087661,
+        size.height * 0.2622657);
+    path_66.cubicTo(
+        size.width * 0.6087241,
+        size.height * 0.2620604,
+        size.width * 0.6086641,
+        size.height * 0.2618594,
+        size.width * 0.6085890,
+        size.height * 0.2616645);
+    path_66.cubicTo(
+        size.width * 0.6083368,
+        size.height * 0.2610488,
+        size.width * 0.6079316,
+        size.height * 0.2605197,
+        size.width * 0.6074182,
+        size.height * 0.2601354);
+    path_66.cubicTo(
+        size.width * 0.6069048,
+        size.height * 0.2597511,
+        size.width * 0.6063044,
+        size.height * 0.2595265,
+        size.width * 0.6056800,
+        size.height * 0.2594861);
+    path_66.cubicTo(
+        size.width * 0.6050555,
+        size.height * 0.2594457,
+        size.width * 0.6044311,
+        size.height * 0.2595911,
+        size.width * 0.6038787,
+        size.height * 0.2599063);
+    path_66.cubicTo(
+        size.width * 0.6033263,
+        size.height * 0.2602214,
+        size.width * 0.6028670,
+        size.height * 0.2606946,
+        size.width * 0.6025488,
+        size.height * 0.2612731);
+    path_66.cubicTo(
+        size.width * 0.6022276,
+        size.height * 0.2618520,
+        size.width * 0.6020624,
+        size.height * 0.2625142,
+        size.width * 0.6020715,
+        size.height * 0.2631871);
+    path_66.cubicTo(
+        size.width * 0.6020775,
+        size.height * 0.2638604,
+        size.width * 0.6022576,
+        size.height * 0.2645181,
+        size.width * 0.6025878,
+        size.height * 0.2650889);
+    path_66.cubicTo(
+        size.width * 0.6029210,
+        size.height * 0.2656593,
+        size.width * 0.6033924,
+        size.height * 0.2661206,
+        size.width * 0.6039508,
+        size.height * 0.2664221);
+    path_66.cubicTo(
+        size.width * 0.6045092,
+        size.height * 0.2667233,
+        size.width * 0.6051336,
+        size.height * 0.2668529,
+        size.width * 0.6057580,
+        size.height * 0.2667970);
+    path_66.cubicTo(
+        size.width * 0.6061093,
+        size.height * 0.2667666,
+        size.width * 0.6064545,
+        size.height * 0.2666774,
+        size.width * 0.6067787,
+        size.height * 0.2665320);
+    path_66.cubicTo(
+        size.width * 0.6070279,
+        size.height * 0.2664221,
+        size.width * 0.6072621,
+        size.height * 0.2662786,
+        size.width * 0.6074752,
+        size.height * 0.2661054);
+    path_66.cubicTo(
+        size.width * 0.6079075,
+        size.height * 0.2657605,
+        size.width * 0.6082588,
+        size.height * 0.2653109,
+        size.width * 0.6084989,
+        size.height * 0.2647935);
+    path_66.cubicTo(
+        size.width * 0.6087421,
+        size.height * 0.2642760,
+        size.width * 0.6088652,
+        size.height * 0.2637046,
+        size.width * 0.6088652,
+        size.height * 0.2631254);
+    path_66.lineTo(size.width * 0.6088592, size.height * 0.2631254);
     path_66.close();
 
     Paint paint_66_fill = Paint()..style = PaintingStyle.fill;
@@ -2954,674 +15082,3872 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_66, paint_66_fill);
 
     Path path_67 = Path();
-    path_67.moveTo(1928.72, 2249.74);
-    path_67.cubicTo(1930.94, 2251.09, 1932.59, 2253.22, 1933.35, 2255.71);
-    path_67.cubicTo(1934.1, 2258.2, 1933.92, 2260.88, 1932.82, 2263.24);
-    path_67.cubicTo(1842.33, 2458.67, 1671.63, 2639.24, 1464.49, 2758.52);
-    path_67.cubicTo(1442.36, 2771.27, 1420.09, 2783.14, 1397.7, 2794.12);
-    path_67.cubicTo(1399.12, 2795.59, 1400.52, 2797.09, 1401.89, 2798.61);
-    path_67.cubicTo(1431.12, 2829.09, 1431.98, 2877.8, 1412.31, 2914.03);
-    path_67.cubicTo(1399.44, 2938.36, 1376.02, 2952.12, 1350.93, 2955.49);
-    path_67.cubicTo(1349.92, 2955.77, 1348.86, 2955.89, 1347.81, 2955.85);
-    path_67.cubicTo(1319.09, 2958.71, 1288.69, 2948.1, 1269.73, 2924.25);
-    path_67.cubicTo(1261.58, 2914.61, 1254.77, 2903.92, 1249.47, 2892.46);
-    path_67.cubicTo(1244.1, 2881.22, 1239.8, 2869.52, 1235.57, 2857.82);
-    path_67.cubicTo(1184.07, 2873.25, 1131.25, 2883.84, 1077.78, 2889.45);
-    path_67.cubicTo(1084.17, 2893.2, 1090.35, 2897.3, 1096.3, 2901.71);
-    path_67.cubicTo(1111.7, 2913.71, 1152.3, 2972.94, 1161.09, 3010.71);
-    path_67.cubicTo(1167.09, 3036.38, 1163.42, 3058.71, 1150.74, 3073.57);
-    path_67.cubicTo(1139.25, 3087.05, 1121.35, 3093.86, 1097.46, 3093.86);
-    path_67.cubicTo(1094.27, 3093.86, 1090.97, 3093.74, 1087.57, 3093.49);
-    path_67.cubicTo(1035.57, 3089.78, 1017.94, 3054.3, 1005.05, 3028.4);
-    path_67.cubicTo(1001.05, 3020.4, 997.35, 3012.94, 993.38, 3008.02);
-    path_67.cubicTo(989.23, 3002.87, 970.56, 3003.45, 952.52, 3004.02);
-    path_67.cubicTo(916.39, 3005.16, 866.9, 3006.66, 819.64, 2976.52);
-    path_67.cubicTo(786.06, 2955.11, 766.08, 2925.2, 754.2, 2897.63);
-    path_67.cubicTo(745.366, 2876.97, 739.686, 2855.09, 737.35, 2832.74);
-    path_67.cubicTo(608.05, 2767.82, 534.96, 2665.13, 494.35, 2579.74);
-    path_67.cubicTo(489.64, 2589.42, 482.876, 2597.95, 474.53, 2604.74);
-    path_67.cubicTo(464.934, 2612.43, 452.99, 2616.61, 440.69, 2616.56);
-    path_67.cubicTo(437.048, 2616.55, 433.414, 2616.21, 429.83, 2615.56);
-    path_67.cubicTo(399.28, 2610.03, 378.19, 2589.65, 366.89, 2554.83);
-    path_67.lineTo(366.84, 2554.83);
-    path_67.cubicTo(308.44, 2543.95, 280.07, 2558.72, 267.98, 2569.15);
-    path_67.cubicTo(270.81, 2580.75, 270.46, 2585.84, 268.13, 2589.77);
-    path_67.cubicTo(267.266, 2591.25, 266.088, 2592.52, 264.68, 2593.49);
-    path_67.cubicTo(263.272, 2594.47, 261.668, 2595.12, 259.98, 2595.41);
-    path_67.cubicTo(258.185, 2595.72, 256.341, 2595.55, 254.627, 2594.94);
-    path_67.cubicTo(252.913, 2594.32, 251.388, 2593.27, 250.2, 2591.89);
-    path_67.cubicTo(248.4, 2589.81, 246.63, 2587.7, 244.89, 2585.57);
-    path_67.cubicTo(154, 2615.56, 108.79, 2722, 94.6904, 2762);
-    path_67.cubicTo(94.7604, 2762.72, 94.8304, 2763.43, 94.8904, 2764.12);
-    path_67.cubicTo(96.4304, 2780.95, 97.2004, 2789.39, 87.8904, 2792.31);
-    path_67.cubicTo(86.8414, 2792.64, 85.749, 2792.8, 84.6504, 2792.8);
-    path_67.cubicTo(82.5837, 2792.79, 80.5612, 2792.2, 78.8081, 2791.1);
-    path_67.cubicTo(77.055, 2790.01, 75.6399, 2788.45, 74.7204, 2786.6);
-    path_67.lineTo(74.1604, 2785.54);
-    path_67.cubicTo(73.8304, 2784.91, 73.3604, 2784, 72.7704, 2782.84);
-    path_67.cubicTo(71.5895, 2781.88, 70.6291, 2780.68, 69.9544, 2779.32);
-    path_67.cubicTo(69.2797, 2777.95, 68.9065, 2776.46, 68.8604, 2774.94);
-    path_67.cubicTo(47.5304, 2730.44, -23.4296, 2565, 7.84039, 2387.28);
-    path_67.cubicTo(42.2504, 2191.75, 133.76, 2157.62, 137.64, 2156.28);
-    path_67.cubicTo(139.522, 2155.62, 141.552, 2155.5, 143.497, 2155.94);
-    path_67.cubicTo(145.443, 2156.38, 147.225, 2157.35, 148.64, 2158.76);
-    path_67.cubicTo(181.45, 2191.32, 194.85, 2203.57, 283.3, 2268.08);
-    path_67.cubicTo(319.97, 2294.82, 378.77, 2318.84, 430.48, 2336.7);
-    path_67.cubicTo(417.25, 2238.52, 439, 2163, 447, 2139.53);
-    path_67.cubicTo(433.12, 2127.53, 423.17, 2117.45, 417.77, 2111.73);
-    path_67.cubicTo(382.37, 2121, 312.29, 2137, 293.28, 2124);
-    path_67.cubicTo(276.79, 2112.79, 276.47, 2086.27, 278.36, 2068.71);
-    path_67.cubicTo(259.09, 2071.55, 232.59, 2073.26, 221.23, 2063.9);
-    path_67.cubicTo(216.97, 2060.4, 204.74, 2050.33, 231.23, 1986.12);
-    path_67.cubicTo(127.23, 2003.55, 53.5004, 1960, 44.0004, 1935.36);
-    path_67.cubicTo(40.7004, 1926.8, 43.4304, 1918.61, 50.9404, 1914.48);
-    path_67.cubicTo(51.2345, 1914.31, 51.5384, 1914.16, 51.8504, 1914.03);
-    path_67.cubicTo(106.69, 1890.43, 162.85, 1842.35, 189.03, 1818.19);
-    path_67.cubicTo(130.94, 1804.09, 121.03, 1758.04, 120.59, 1755.87);
-    path_67.cubicTo(120.288, 1754.35, 120.321, 1752.79, 120.686, 1751.29);
-    path_67.cubicTo(121.052, 1749.79, 121.741, 1748.38, 122.707, 1747.18);
-    path_67.cubicTo(123.672, 1745.97, 124.889, 1744.99, 126.273, 1744.3);
-    path_67.cubicTo(127.658, 1743.61, 129.175, 1743.24, 130.72, 1743.2);
-    path_67.cubicTo(187.64, 1741.82, 314.72, 1696.44, 348.29, 1673.09);
-    path_67.cubicTo(349.35, 1672.35, 350.537, 1671.5, 351.85, 1670.54);
-    path_67.lineTo(352.04, 1670.39);
-    path_67.lineTo(352.4, 1670.13);
-    path_67.cubicTo(358.99, 1665.24, 368.4, 1657.8, 379.72, 1648.82);
-    path_67.cubicTo(438.04, 1602.6, 546.61, 1516.57, 638.72, 1486.57);
-    path_67.cubicTo(731.63, 1456.29, 842.65, 1493.68, 902.3, 1513.77);
-    path_67.cubicTo(916.59, 1518.58, 927.87, 1522.38, 933.76, 1523.45);
-    path_67.cubicTo(943.53, 1525.22, 955.34, 1520.04, 969.04, 1514.04);
-    path_67.cubicTo(992.98, 1503.55, 1022.78, 1490.5, 1064.04, 1502.12);
-    path_67.cubicTo(1130.47, 1520.8, 1163.39, 1585.17, 1164.76, 1587.9);
-    path_67.cubicTo(1165.48, 1589.33, 1165.86, 1590.91, 1165.88, 1592.51);
-    path_67.cubicTo(1165.9, 1594.11, 1165.56, 1595.69, 1164.88, 1597.14);
-    path_67.cubicTo(1164.2, 1598.59, 1163.2, 1599.87, 1161.96, 1600.88);
-    path_67.cubicTo(1160.72, 1601.88, 1159.26, 1602.6, 1157.7, 1602.96);
-    path_67.cubicTo(1142.21, 1606.58, 1118.35, 1614.23, 1103.04, 1622.96);
-    path_67.lineTo(1102.9, 1623.04);
-    path_67.cubicTo(1102.52, 1623.3, 1102.13, 1623.53, 1101.73, 1623.74);
-    path_67.lineTo(1101.46, 1623.88);
-    path_67.lineTo(1101.34, 1623.95);
-    path_67.cubicTo(1096.45, 1626.95, 1092.59, 1629.95, 1090.4, 1633.04);
-    path_67.cubicTo(1081.23, 1645.88, 1072.27, 1682.55, 1064.4, 1714.9);
-    path_67.cubicTo(1060.76, 1729.77, 1057.33, 1743.82, 1053.8, 1756.17);
-    path_67.cubicTo(1045.48, 1785.31, 1033.49, 1812.66, 1026.8, 1827.01);
-    path_67.cubicTo(1081.31, 1845.89, 1148.45, 1823.78, 1151.8, 1822.65);
-    path_67.cubicTo(1152.03, 1822.57, 1152.25, 1822.5, 1152.48, 1822.44);
-    path_67.lineTo(1152.81, 1822.34);
-    path_67.cubicTo(1153.06, 1822.27, 1153.32, 1822.23, 1153.57, 1822.18);
-    path_67.lineTo(1153.67, 1822.18);
-    path_67.cubicTo(1153.88, 1822.18, 1154.09, 1822.12, 1154.3, 1822.1);
-    path_67.lineTo(1154.53, 1822.1);
-    path_67.lineTo(1154.61, 1822.1);
-    path_67.cubicTo(1155.28, 1822.03, 1155.95, 1822.03, 1156.61, 1822.1);
-    path_67.lineTo(1156.74, 1822.1);
-    path_67.cubicTo(1156.95, 1822.12, 1157.15, 1822.16, 1157.35, 1822.2);
-    path_67.lineTo(1157.68, 1822.26);
-    path_67.lineTo(1158.28, 1822.41);
-    path_67.lineTo(1158.4, 1822.41);
-    path_67.lineTo(1158.46, 1822.41);
-    path_67.lineTo(1159.12, 1822.63);
-    path_67.lineTo(1159.81, 1822.91);
-    path_67.lineTo(1160.18, 1823.1);
-    path_67.lineTo(1160.51, 1823.27);
-    path_67.lineTo(1161.01, 1823.56);
-    path_67.lineTo(1161.15, 1823.65);
-    path_67.lineTo(1161.25, 1823.72);
-    path_67.cubicTo(1161.5, 1823.89, 1161.75, 1824.07, 1161.99, 1824.27);
-    path_67.lineTo(1162.22, 1824.45);
-    path_67.cubicTo(1162.44, 1824.64, 1162.66, 1824.85, 1162.87, 1825.06);
-    path_67.lineTo(1163.02, 1825.2);
-    path_67.lineTo(1163.11, 1825.3);
-    path_67.lineTo(1163.2, 1825.39);
-    path_67.lineTo(1163.43, 1825.64);
-    path_67.cubicTo(1163.56, 1825.79, 1163.68, 1825.95, 1163.8, 1826.11);
-    path_67.cubicTo(1163.8, 1826.11, 1163.8, 1826.11, 1163.8, 1826.19);
-    path_67.cubicTo(1163.87, 1826.27, 1163.93, 1826.36, 1163.99, 1826.45);
-    path_67.cubicTo(1164.04, 1826.51, 1164.09, 1826.57, 1164.12, 1826.64);
-    path_67.cubicTo(1164.18, 1826.72, 1164.23, 1826.81, 1164.28, 1826.9);
-    path_67.cubicTo(1164.53, 1827.31, 1164.76, 1827.73, 1164.95, 1828.17);
-    path_67.cubicTo(1165.02, 1828.31, 1165.08, 1828.45, 1165.13, 1828.59);
-    path_67.cubicTo(1165.16, 1828.65, 1165.19, 1828.71, 1165.21, 1828.78);
-    path_67.lineTo(1165.21, 1828.88);
-    path_67.cubicTo(1165.25, 1828.97, 1165.28, 1829.07, 1165.3, 1829.17);
-    path_67.cubicTo(1165.36, 1829.34, 1165.41, 1829.52, 1165.46, 1829.7);
-    path_67.lineTo(1165.58, 1830.16);
-    path_67.cubicTo(1165.59, 1830.24, 1165.61, 1830.31, 1165.63, 1830.39);
-    path_67.cubicTo(1165.63, 1830.51, 1165.63, 1830.64, 1165.69, 1830.76);
-    path_67.cubicTo(1165.75, 1830.88, 1165.69, 1830.92, 1165.69, 1830.99);
-    path_67.cubicTo(1165.69, 1831.06, 1165.69, 1831.4, 1165.76, 1831.6);
-    path_67.cubicTo(1165.76, 1831.63, 1165.76, 1831.67, 1165.76, 1831.7);
-    path_67.cubicTo(1165.76, 1831.82, 1165.76, 1831.93, 1165.76, 1832.04);
-    path_67.cubicTo(1166.07, 1836.65, 1167.84, 1872.28, 1149.9, 1896.55);
-    path_67.cubicTo(1138.68, 1911.72, 1102.8, 1938.22, 1064.81, 1966.26);
-    path_67.cubicTo(1042.39, 1982.81, 1019.22, 1999.93, 1002.16, 2014.02);
-    path_67.cubicTo(991.28, 2023.02, 980.16, 2040.33, 967.16, 2060.4);
-    path_67.cubicTo(937.25, 2106.86, 894.94, 2172.58, 808.32, 2210.4);
-    path_67.cubicTo(803.93, 2221.61, 803.32, 2229.81, 806.32, 2234.83);
-    path_67.cubicTo(815.22, 2249.31, 857.76, 2252.1, 912.24, 2255.15);
-    path_67.cubicTo(952.35, 2219.49, 1043.74, 2134.15, 1073.49, 2071.41);
-    path_67.cubicTo(1117.66, 1978.35, 1122.74, 1962.34, 1133.55, 1921.16);
-    path_67.cubicTo(1134.07, 1919.19, 1135.14, 1917.42, 1136.64, 1916.04);
-    path_67.cubicTo(1138.13, 1914.67, 1140, 1913.75, 1142, 1913.41);
-    path_67.cubicTo(1146.55, 1912.63, 1255.33, 1895.73, 1413.56, 2031.72);
-    path_67.cubicTo(1485.76, 2093.78, 1531.4, 2165.72, 1560.01, 2227.97);
-    path_67.cubicTo(1588.62, 2290.22, 1600.2, 2342.7, 1604.29, 2365.84);
-    path_67.cubicTo(1605.25, 2367.17, 1605.88, 2368.7, 1606.14, 2370.32);
-    path_67.cubicTo(1606.41, 2371.93, 1606.29, 2373.59, 1605.8, 2375.15);
-    path_67.cubicTo(1606.09, 2377.2, 1606.22, 2378.35, 1606.24, 2378.49);
-    path_67.cubicTo(1606.6, 2381.01, 1606.09, 2383.58, 1604.77, 2385.77);
-    path_67.cubicTo(1603.46, 2387.96, 1601.44, 2389.62, 1599.04, 2390.49);
-    path_67.cubicTo(1597.76, 2390.96, 1596.41, 2391.22, 1595.04, 2391.24);
-    path_67.cubicTo(1588.48, 2391.24, 1583.96, 2384.5, 1576.19, 2372.92);
-    path_67.lineTo(1574.9, 2370.98);
-    path_67.cubicTo(1535.18, 2346.15, 1420.97, 2283.32, 1311.45, 2304.14);
-    path_67.cubicTo(1311.16, 2306.35, 1310.83, 2308.55, 1310.45, 2310.75);
-    path_67.cubicTo(1310.14, 2312.68, 1309.3, 2314.48, 1308.03, 2315.96);
-    path_67.cubicTo(1306.76, 2317.44, 1305.11, 2318.55, 1303.25, 2319.15);
-    path_67.cubicTo(1301.7, 2319.65, 1300.06, 2319.83, 1298.44, 2319.68);
-    path_67.cubicTo(1296.82, 2319.54, 1295.24, 2319.08, 1293.8, 2318.32);
-    path_67.cubicTo(1291.52, 2317.1, 1289.55, 2315.36, 1288.06, 2313.24);
-    path_67.cubicTo(1285.67, 2309.86, 1283.66, 2306.22, 1282.06, 2302.4);
-    path_67.cubicTo(1277.7, 2301.76, 1273.3, 2301.45, 1268.9, 2301.46);
-    path_67.cubicTo(1247.9, 2301.46, 1215.08, 2308.09, 1173.97, 2338.11);
-    path_67.cubicTo(1209.49, 2367.11, 1238.97, 2404.92, 1256.97, 2452.77);
-    path_67.cubicTo(1295.9, 2556.02, 1353.46, 2601.51, 1545.86, 2546.25);
-    path_67.cubicTo(1724.54, 2494.92, 1912.75, 2254.55, 1914.63, 2252.12);
-    path_67.cubicTo(1916.26, 2250.04, 1918.61, 2248.64, 1921.21, 2248.2);
-    path_67.cubicTo(1923.82, 2247.76, 1926.5, 2248.31, 1928.72, 2249.74);
+    path_67.moveTo(size.width * 0.5790213, size.height * 0.7271299);
+    path_67.cubicTo(
+        size.width * 0.5796878,
+        size.height * 0.7275663,
+        size.width * 0.5801831,
+        size.height * 0.7282547,
+        size.width * 0.5804113,
+        size.height * 0.7290595);
+    path_67.cubicTo(
+        size.width * 0.5806364,
+        size.height * 0.7298643,
+        size.width * 0.5805824,
+        size.height * 0.7307304,
+        size.width * 0.5802522,
+        size.height * 0.7314932);
+    path_67.cubicTo(
+        size.width * 0.5530862,
+        size.height * 0.7946574,
+        size.width * 0.5018403,
+        size.height * 0.8530187,
+        size.width * 0.4396548,
+        size.height * 0.8915708);
+    path_67.cubicTo(
+        size.width * 0.4330111,
+        size.height * 0.8956917,
+        size.width * 0.4263254,
+        size.height * 0.8995281,
+        size.width * 0.4196037,
+        size.height * 0.9030769);
+    path_67.cubicTo(
+        size.width * 0.4200300,
+        size.height * 0.9035520,
+        size.width * 0.4204503,
+        size.height * 0.9040368,
+        size.width * 0.4208616,
+        size.height * 0.9045281);
+    path_67.cubicTo(
+        size.width * 0.4296367,
+        size.height * 0.9143794,
+        size.width * 0.4298949,
+        size.height * 0.9301228,
+        size.width * 0.4239898,
+        size.height * 0.9418326);
+    path_67.cubicTo(
+        size.width * 0.4201261,
+        size.height * 0.9496962,
+        size.width * 0.4130952,
+        size.height * 0.9541435,
+        size.width * 0.4055629,
+        size.height * 0.9552327);
+    path_67.cubicTo(
+        size.width * 0.4052597,
+        size.height * 0.9553232,
+        size.width * 0.4049415,
+        size.height * 0.9553620,
+        size.width * 0.4046262,
+        size.height * 0.9553491);
+    path_67.cubicTo(
+        size.width * 0.3960042,
+        size.height * 0.9562734,
+        size.width * 0.3868778,
+        size.height * 0.9528442,
+        size.width * 0.3811858,
+        size.height * 0.9451357);
+    path_67.cubicTo(
+        size.width * 0.3787391,
+        size.height * 0.9420200,
+        size.width * 0.3766947,
+        size.height * 0.9385650,
+        size.width * 0.3751036,
+        size.height * 0.9348610);
+    path_67.cubicTo(
+        size.width * 0.3734914,
+        size.height * 0.9312282,
+        size.width * 0.3722005,
+        size.height * 0.9274467,
+        size.width * 0.3709307,
+        size.height * 0.9236652);
+    path_67.cubicTo(
+        size.width * 0.3554698,
+        size.height * 0.9286522,
+        size.width * 0.3396127,
+        size.height * 0.9320750,
+        size.width * 0.3235605,
+        size.height * 0.9338882);
+    path_67.cubicTo(
+        size.width * 0.3254788,
+        size.height * 0.9351002,
+        size.width * 0.3273341,
+        size.height * 0.9364253,
+        size.width * 0.3291204,
+        size.height * 0.9378507);
+    path_67.cubicTo(
+        size.width * 0.3337436,
+        size.height * 0.9417292,
+        size.width * 0.3459322,
+        size.height * 0.9608727,
+        size.width * 0.3485710,
+        size.height * 0.9730802);
+    path_67.cubicTo(
+        size.width * 0.3503723,
+        size.height * 0.9813769,
+        size.width * 0.3492705,
+        size.height * 0.9885941,
+        size.width * 0.3454638,
+        size.height * 0.9933969);
+    path_67.cubicTo(
+        size.width * 0.3420144,
+        size.height * 0.9977537,
+        size.width * 0.3366406,
+        size.height * 0.9999548,
+        size.width * 0.3294686,
+        size.height * 0.9999548);
+    path_67.cubicTo(
+        size.width * 0.3285110,
+        size.height * 0.9999548,
+        size.width * 0.3275203,
+        size.height * 0.9999160,
+        size.width * 0.3264995,
+        size.height * 0.9998352);
+    path_67.cubicTo(
+        size.width * 0.3108886,
+        size.height * 0.9986361,
+        size.width * 0.3055959,
+        size.height * 0.9871687,
+        size.width * 0.3017262,
+        size.height * 0.9787977);
+    path_67.cubicTo(
+        size.width * 0.3005254,
+        size.height * 0.9762120,
+        size.width * 0.2994146,
+        size.height * 0.9738009,
+        size.width * 0.2982228,
+        size.height * 0.9722107);
+    path_67.cubicTo(
+        size.width * 0.2969769,
+        size.height * 0.9705462,
+        size.width * 0.2913720,
+        size.height * 0.9707337,
+        size.width * 0.2859562,
+        size.height * 0.9709179);
+    path_67.cubicTo(
+        size.width * 0.2751096,
+        size.height * 0.9712864,
+        size.width * 0.2602522,
+        size.height * 0.9717712,
+        size.width * 0.2460642,
+        size.height * 0.9620297);
+    path_67.cubicTo(
+        size.width * 0.2359832,
+        size.height * 0.9551099,
+        size.width * 0.2299850,
+        size.height * 0.9454428,
+        size.width * 0.2264185,
+        size.height * 0.9365320);
+    path_67.cubicTo(
+        size.width * 0.2237664,
+        size.height * 0.9298546,
+        size.width * 0.2220612,
+        size.height * 0.9227828,
+        size.width * 0.2213600,
+        size.height * 0.9155591);
+    path_67.cubicTo(
+        size.width * 0.1825428,
+        size.height * 0.8945766,
+        size.width * 0.1606004,
+        size.height * 0.8613866,
+        size.width * 0.1484089,
+        size.height * 0.8337880);
+    path_67.cubicTo(
+        size.width * 0.1469949,
+        size.height * 0.8369166,
+        size.width * 0.1449643,
+        size.height * 0.8396736,
+        size.width * 0.1424587,
+        size.height * 0.8418681);
+    path_67.cubicTo(
+        size.width * 0.1395779,
+        size.height * 0.8443536,
+        size.width * 0.1359922,
+        size.height * 0.8457046,
+        size.width * 0.1322996,
+        size.height * 0.8456884);
+    path_67.cubicTo(
+        size.width * 0.1312062,
+        size.height * 0.8456852,
+        size.width * 0.1301153,
+        size.height * 0.8455753,
+        size.width * 0.1290393,
+        size.height * 0.8453652);
+    path_67.cubicTo(
+        size.width * 0.1198679,
+        size.height * 0.8435779,
+        size.width * 0.1135365,
+        size.height * 0.8369910,
+        size.width * 0.1101441,
+        size.height * 0.8257369);
+    path_67.lineTo(size.width * 0.1101291, size.height * 0.8257369);
+    path_67.cubicTo(
+        size.width * 0.09259682,
+        size.height * 0.8222204,
+        size.width * 0.08407986,
+        size.height * 0.8269942,
+        size.width * 0.08045032,
+        size.height * 0.8303652);
+    path_67.cubicTo(
+        size.width * 0.08129991,
+        size.height * 0.8341144,
+        size.width * 0.08119484,
+        size.height * 0.8357595,
+        size.width * 0.08049535,
+        size.height * 0.8370297);
+    path_67.cubicTo(
+        size.width * 0.08023597,
+        size.height * 0.8375081,
+        size.width * 0.07988232,
+        size.height * 0.8379186,
+        size.width * 0.07945962,
+        size.height * 0.8382321);
+    path_67.cubicTo(
+        size.width * 0.07903693,
+        size.height * 0.8385488,
+        size.width * 0.07855539,
+        size.height * 0.8387589,
+        size.width * 0.07804863,
+        size.height * 0.8388526);
+    path_67.cubicTo(
+        size.width * 0.07750976,
+        size.height * 0.8389528,
+        size.width * 0.07695617,
+        size.height * 0.8388979,
+        size.width * 0.07644161,
+        size.height * 0.8387007);
+    path_67.cubicTo(
+        size.width * 0.07592705,
+        size.height * 0.8385003,
+        size.width * 0.07546923,
+        size.height * 0.8381610,
+        size.width * 0.07511258,
+        size.height * 0.8377149);
+    path_67.cubicTo(
+        size.width * 0.07457220,
+        size.height * 0.8370427,
+        size.width * 0.07404083,
+        size.height * 0.8363607,
+        size.width * 0.07351846,
+        size.height * 0.8356723);
+    path_67.cubicTo(
+        size.width * 0.04623236,
+        size.height * 0.8453652,
+        size.width * 0.03265986,
+        size.height * 0.8797673,
+        size.width * 0.02842702,
+        size.height * 0.8926955);
+    path_67.cubicTo(
+        size.width * 0.02844803,
+        size.height * 0.8929282,
+        size.width * 0.02846905,
+        size.height * 0.8931577,
+        size.width * 0.02848706,
+        size.height * 0.8933807);
+    path_67.cubicTo(
+        size.width * 0.02894938,
+        size.height * 0.8988203,
+        size.width * 0.02918055,
+        size.height * 0.9015482,
+        size.width * 0.02638559,
+        size.height * 0.9024919);
+    path_67.cubicTo(
+        size.width * 0.02607067,
+        size.height * 0.9025986,
+        size.width * 0.02574272,
+        size.height * 0.9026503,
+        size.width * 0.02541291,
+        size.height * 0.9026503);
+    path_67.cubicTo(
+        size.width * 0.02479246,
+        size.height * 0.9026471,
+        size.width * 0.02418529,
+        size.height * 0.9024564,
+        size.width * 0.02365899,
+        size.height * 0.9021008);
+    path_67.cubicTo(
+        size.width * 0.02313269,
+        size.height * 0.9017485,
+        size.width * 0.02270787,
+        size.height * 0.9012443,
+        size.width * 0.02243182,
+        size.height * 0.9006464);
+    path_67.lineTo(size.width * 0.02226370, size.height * 0.9003038);
+    path_67.cubicTo(
+        size.width * 0.02216464,
+        size.height * 0.9001002,
+        size.width * 0.02202354,
+        size.height * 0.8998061,
+        size.width * 0.02184641,
+        size.height * 0.8994312);
+    path_67.cubicTo(
+        size.width * 0.02149189,
+        size.height * 0.8991209,
+        size.width * 0.02120357,
+        size.height * 0.8987330,
+        size.width * 0.02100102,
+        size.height * 0.8982935);
+    path_67.cubicTo(
+        size.width * 0.02079847,
+        size.height * 0.8978507,
+        size.width * 0.02068643,
+        size.height * 0.8973691,
+        size.width * 0.02067259,
+        size.height * 0.8968778);
+    path_67.cubicTo(
+        size.width * 0.01426911,
+        size.height * 0.8824952,
+        size.width * -0.007033804,
+        size.height * 0.8290239,
+        size.width * 0.002353765,
+        size.height * 0.7715837);
+    path_67.cubicTo(
+        size.width * 0.01268400,
+        size.height * 0.7083872,
+        size.width * 0.04015611,
+        size.height * 0.6973562,
+        size.width * 0.04132092,
+        size.height * 0.6969231);
+    path_67.cubicTo(
+        size.width * 0.04188592,
+        size.height * 0.6967098,
+        size.width * 0.04249535,
+        size.height * 0.6966710,
+        size.width * 0.04307926,
+        size.height * 0.6968132);
+    path_67.cubicTo(
+        size.width * 0.04366346,
+        size.height * 0.6969554,
+        size.width * 0.04419844,
+        size.height * 0.6972689,
+        size.width * 0.04462324,
+        size.height * 0.6977246);
+    path_67.cubicTo(
+        size.width * 0.05447313,
+        size.height * 0.7082482,
+        size.width * 0.05849595,
+        size.height * 0.7122075,
+        size.width * 0.08504953,
+        size.height * 0.7330575);
+    path_67.cubicTo(
+        size.width * 0.09605824,
+        size.height * 0.7417001,
+        size.width * 0.1137106,
+        size.height * 0.7494635,
+        size.width * 0.1292345,
+        size.height * 0.7552359);
+    path_67.cubicTo(
+        size.width * 0.1252627,
+        size.height * 0.7235036,
+        size.width * 0.1317923,
+        size.height * 0.6990950,
+        size.width * 0.1341939,
+        size.height * 0.6915094);
+    path_67.cubicTo(
+        size.width * 0.1300270,
+        size.height * 0.6876309,
+        size.width * 0.1270399,
+        size.height * 0.6843730,
+        size.width * 0.1254188,
+        size.height * 0.6825242);
+    path_67.cubicTo(
+        size.width * 0.1147914,
+        size.height * 0.6855204,
+        size.width * 0.09375263,
+        size.height * 0.6906917,
+        size.width * 0.08804563,
+        size.height * 0.6864900);
+    path_67.cubicTo(
+        size.width * 0.08309517,
+        size.height * 0.6828668,
+        size.width * 0.08299910,
+        size.height * 0.6742954,
+        size.width * 0.08356650,
+        size.height * 0.6686199);
+    path_67.cubicTo(
+        size.width * 0.07778145,
+        size.height * 0.6695378,
+        size.width * 0.06982588,
+        size.height * 0.6700905,
+        size.width * 0.06641549,
+        size.height * 0.6670653);
+    path_67.cubicTo(
+        size.width * 0.06513660,
+        size.height * 0.6659341,
+        size.width * 0.06146503,
+        size.height * 0.6626794,
+        size.width * 0.06941759,
+        size.height * 0.6419263);
+    path_67.cubicTo(
+        size.width * 0.03819574,
+        size.height * 0.6475598,
+        size.width * 0.01606136,
+        size.height * 0.6334842,
+        size.width * 0.01320937,
+        size.height * 0.6255204);
+    path_67.cubicTo(
+        size.width * 0.01221867,
+        size.height * 0.6227537,
+        size.width * 0.01303825,
+        size.height * 0.6201067,
+        size.width * 0.01529282,
+        size.height * 0.6187718);
+    path_67.cubicTo(
+        size.width * 0.01538112,
+        size.height * 0.6187169,
+        size.width * 0.01547235,
+        size.height * 0.6186684,
+        size.width * 0.01556602,
+        size.height * 0.6186264);
+    path_67.cubicTo(
+        size.width * 0.03202942,
+        size.height * 0.6109987,
+        size.width * 0.04888922,
+        size.height * 0.5954590,
+        size.width * 0.05674872,
+        size.height * 0.5876503);
+    path_67.cubicTo(
+        size.width * 0.03930952,
+        size.height * 0.5830931,
+        size.width * 0.03633443,
+        size.height * 0.5682094,
+        size.width * 0.03620234,
+        size.height * 0.5675081);
+    path_67.cubicTo(
+        size.width * 0.03611168,
+        size.height * 0.5670168,
+        size.width * 0.03612159,
+        size.height * 0.5665126,
+        size.width * 0.03623116,
+        size.height * 0.5660278);
+    path_67.cubicTo(
+        size.width * 0.03634104,
+        size.height * 0.5655430,
+        size.width * 0.03654788,
+        size.height * 0.5650873,
+        size.width * 0.03683789,
+        size.height * 0.5646994);
+    path_67.cubicTo(
+        size.width * 0.03712759,
+        size.height * 0.5643083,
+        size.width * 0.03749295,
+        size.height * 0.5639916,
+        size.width * 0.03790844,
+        size.height * 0.5637686);
+    path_67.cubicTo(
+        size.width * 0.03832423,
+        size.height * 0.5635456,
+        size.width * 0.03877965,
+        size.height * 0.5634260,
+        size.width * 0.03924347,
+        size.height * 0.5634131);
+    path_67.cubicTo(
+        size.width * 0.05633143,
+        size.height * 0.5629670,
+        size.width * 0.09448214,
+        size.height * 0.5482999,
+        size.width * 0.1045602,
+        size.height * 0.5407531);
+    path_67.cubicTo(
+        size.width * 0.1048784,
+        size.height * 0.5405139,
+        size.width * 0.1052348,
+        size.height * 0.5402392,
+        size.width * 0.1056289,
+        size.height * 0.5399289);
+    path_67.lineTo(size.width * 0.1056860, size.height * 0.5398804);
+    path_67.lineTo(size.width * 0.1057941, size.height * 0.5397964);
+    path_67.cubicTo(
+        size.width * 0.1077724,
+        size.height * 0.5382159,
+        size.width * 0.1105974,
+        size.height * 0.5358112,
+        size.width * 0.1139958,
+        size.height * 0.5329089);
+    path_67.cubicTo(
+        size.width * 0.1315041,
+        size.height * 0.5179703,
+        size.width * 0.1640979,
+        size.height * 0.4901648,
+        size.width * 0.1917502,
+        size.height * 0.4804686);
+    path_67.cubicTo(
+        size.width * 0.2196427,
+        size.height * 0.4706820,
+        size.width * 0.2529721,
+        size.height * 0.4827666,
+        size.width * 0.2708796,
+        size.height * 0.4892599);
+    path_67.cubicTo(
+        size.width * 0.2751696,
+        size.height * 0.4908145,
+        size.width * 0.2785560,
+        size.height * 0.4920427,
+        size.width * 0.2803242,
+        size.height * 0.4923885);
+    path_67.cubicTo(
+        size.width * 0.2832573,
+        size.height * 0.4929606,
+        size.width * 0.2868028,
+        size.height * 0.4912864,
+        size.width * 0.2909156,
+        size.height * 0.4893471);
+    path_67.cubicTo(
+        size.width * 0.2981027,
+        size.height * 0.4859567,
+        size.width * 0.3070489,
+        size.height * 0.4817388,
+        size.width * 0.3194356,
+        size.height * 0.4854945);
+    path_67.cubicTo(
+        size.width * 0.3393786,
+        size.height * 0.4915320,
+        size.width * 0.3492615,
+        size.height * 0.5123368,
+        size.width * 0.3496728,
+        size.height * 0.5132191);
+    path_67.cubicTo(
+        size.width * 0.3498889,
+        size.height * 0.5136813,
+        size.width * 0.3500030,
+        size.height * 0.5141920,
+        size.width * 0.3500090,
+        size.height * 0.5147091);
+    path_67.cubicTo(
+        size.width * 0.3500150,
+        size.height * 0.5152262,
+        size.width * 0.3499129,
+        size.height * 0.5157369,
+        size.width * 0.3497088,
+        size.height * 0.5162056);
+    path_67.cubicTo(
+        size.width * 0.3495047,
+        size.height * 0.5166742,
+        size.width * 0.3492044,
+        size.height * 0.5170879,
+        size.width * 0.3488322,
+        size.height * 0.5174144);
+    path_67.cubicTo(
+        size.width * 0.3484599,
+        size.height * 0.5177376,
+        size.width * 0.3480216,
+        size.height * 0.5179703,
+        size.width * 0.3475533,
+        size.height * 0.5180866);
+    path_67.cubicTo(
+        size.width * 0.3429030,
+        size.height * 0.5192566,
+        size.width * 0.3357400,
+        size.height * 0.5217292,
+        size.width * 0.3311438,
+        size.height * 0.5245507);
+    path_67.lineTo(size.width * 0.3311018, size.height * 0.5245766);
+    path_67.cubicTo(
+        size.width * 0.3309877,
+        size.height * 0.5246606,
+        size.width * 0.3308706,
+        size.height * 0.5247350,
+        size.width * 0.3307505,
+        size.height * 0.5248028);
+    path_67.lineTo(size.width * 0.3306695, size.height * 0.5248481);
+    path_67.lineTo(size.width * 0.3306334, size.height * 0.5248707);
+    path_67.cubicTo(
+        size.width * 0.3291654,
+        size.height * 0.5258403,
+        size.width * 0.3280066,
+        size.height * 0.5268100,
+        size.width * 0.3273491,
+        size.height * 0.5278087);
+    path_67.cubicTo(
+        size.width * 0.3245962,
+        size.height * 0.5319586,
+        size.width * 0.3219063,
+        size.height * 0.5438106,
+        size.width * 0.3195437,
+        size.height * 0.5542663);
+    path_67.cubicTo(
+        size.width * 0.3184509,
+        size.height * 0.5590724,
+        size.width * 0.3174212,
+        size.height * 0.5636134,
+        size.width * 0.3163615,
+        size.height * 0.5676050);
+    path_67.cubicTo(
+        size.width * 0.3138637,
+        size.height * 0.5770233,
+        size.width * 0.3102642,
+        size.height * 0.5858630,
+        size.width * 0.3082558,
+        size.height * 0.5905010);
+    path_67.cubicTo(
+        size.width * 0.3246202,
+        size.height * 0.5966031,
+        size.width * 0.3447763,
+        size.height * 0.5894570,
+        size.width * 0.3457820,
+        size.height * 0.5890918);
+    path_67.cubicTo(
+        size.width * 0.3458511,
+        size.height * 0.5890659,
+        size.width * 0.3459171,
+        size.height * 0.5890433,
+        size.width * 0.3459862,
+        size.height * 0.5890239);
+    path_67.lineTo(size.width * 0.3460853, size.height * 0.5889916);
+    path_67.cubicTo(
+        size.width * 0.3461603,
+        size.height * 0.5889690,
+        size.width * 0.3462384,
+        size.height * 0.5889560,
+        size.width * 0.3463134,
+        size.height * 0.5889399);
+    path_67.lineTo(size.width * 0.3463434, size.height * 0.5889399);
+    path_67.cubicTo(
+        size.width * 0.3464065,
+        size.height * 0.5889399,
+        size.width * 0.3464695,
+        size.height * 0.5889205,
+        size.width * 0.3465326,
+        size.height * 0.5889140);
+    path_67.lineTo(size.width * 0.3466016, size.height * 0.5889140);
+    path_67.lineTo(size.width * 0.3466256, size.height * 0.5889140);
+    path_67.cubicTo(
+        size.width * 0.3468268,
+        size.height * 0.5888914,
+        size.width * 0.3470279,
+        size.height * 0.5888914,
+        size.width * 0.3472261,
+        size.height * 0.5889140);
+    path_67.lineTo(size.width * 0.3472651, size.height * 0.5889140);
+    path_67.cubicTo(
+        size.width * 0.3473281,
+        size.height * 0.5889205,
+        size.width * 0.3473882,
+        size.height * 0.5889334,
+        size.width * 0.3474482,
+        size.height * 0.5889463);
+    path_67.lineTo(size.width * 0.3475473, size.height * 0.5889657);
+    path_67.lineTo(size.width * 0.3477274, size.height * 0.5890142);
+    path_67.lineTo(size.width * 0.3477634, size.height * 0.5890142);
+    path_67.lineTo(size.width * 0.3477814, size.height * 0.5890142);
+    path_67.lineTo(size.width * 0.3479796, size.height * 0.5890853);
+    path_67.lineTo(size.width * 0.3481867, size.height * 0.5891758);
+    path_67.lineTo(size.width * 0.3482978, size.height * 0.5892372);
+    path_67.lineTo(size.width * 0.3483969, size.height * 0.5892922);
+    path_67.lineTo(size.width * 0.3485470, size.height * 0.5893859);
+    path_67.lineTo(size.width * 0.3485890, size.height * 0.5894150);
+    path_67.lineTo(size.width * 0.3486190, size.height * 0.5894376);
+    path_67.cubicTo(
+        size.width * 0.3486941,
+        size.height * 0.5894926,
+        size.width * 0.3487691,
+        size.height * 0.5895507,
+        size.width * 0.3488412,
+        size.height * 0.5896154);
+    path_67.lineTo(size.width * 0.3489102, size.height * 0.5896736);
+    path_67.cubicTo(
+        size.width * 0.3489763,
+        size.height * 0.5897350,
+        size.width * 0.3490423,
+        size.height * 0.5898028,
+        size.width * 0.3491054,
+        size.height * 0.5898707);
+    path_67.lineTo(size.width * 0.3491504, size.height * 0.5899160);
+    path_67.lineTo(size.width * 0.3491774, size.height * 0.5899483);
+    path_67.lineTo(size.width * 0.3492044, size.height * 0.5899774);
+    path_67.lineTo(size.width * 0.3492735, size.height * 0.5900582);
+    path_67.cubicTo(
+        size.width * 0.3493125,
+        size.height * 0.5901067,
+        size.width * 0.3493485,
+        size.height * 0.5901584,
+        size.width * 0.3493846,
+        size.height * 0.5902101);
+    path_67.cubicTo(
+        size.width * 0.3493846,
+        size.height * 0.5902101,
+        size.width * 0.3493846,
+        size.height * 0.5902101,
+        size.width * 0.3493846,
+        size.height * 0.5902359);
+    path_67.cubicTo(
+        size.width * 0.3494056,
+        size.height * 0.5902618,
+        size.width * 0.3494236,
+        size.height * 0.5902909,
+        size.width * 0.3494416,
+        size.height * 0.5903200);
+    path_67.cubicTo(
+        size.width * 0.3494566,
+        size.height * 0.5903394,
+        size.width * 0.3494716,
+        size.height * 0.5903588,
+        size.width * 0.3494806,
+        size.height * 0.5903814);
+    path_67.cubicTo(
+        size.width * 0.3494986,
+        size.height * 0.5904072,
+        size.width * 0.3495137,
+        size.height * 0.5904363,
+        size.width * 0.3495287,
+        size.height * 0.5904654);
+    path_67.cubicTo(
+        size.width * 0.3496037,
+        size.height * 0.5905979,
+        size.width * 0.3496728,
+        size.height * 0.5907337,
+        size.width * 0.3497298,
+        size.height * 0.5908759);
+    path_67.cubicTo(
+        size.width * 0.3497508,
+        size.height * 0.5909211,
+        size.width * 0.3497688,
+        size.height * 0.5909664,
+        size.width * 0.3497838,
+        size.height * 0.5910116);
+    path_67.cubicTo(
+        size.width * 0.3497929,
+        size.height * 0.5910310,
+        size.width * 0.3498019,
+        size.height * 0.5910504,
+        size.width * 0.3498079,
+        size.height * 0.5910730);
+    path_67.lineTo(size.width * 0.3498079, size.height * 0.5911054);
+    path_67.cubicTo(
+        size.width * 0.3498199,
+        size.height * 0.5911345,
+        size.width * 0.3498289,
+        size.height * 0.5911668,
+        size.width * 0.3498349,
+        size.height * 0.5911991);
+    path_67.cubicTo(
+        size.width * 0.3498529,
+        size.height * 0.5912540,
+        size.width * 0.3498679,
+        size.height * 0.5913122,
+        size.width * 0.3498829,
+        size.height * 0.5913704);
+    path_67.lineTo(size.width * 0.3499189, size.height * 0.5915191);
+    path_67.cubicTo(
+        size.width * 0.3499219,
+        size.height * 0.5915449,
+        size.width * 0.3499279,
+        size.height * 0.5915676,
+        size.width * 0.3499340,
+        size.height * 0.5915934);
+    path_67.cubicTo(
+        size.width * 0.3499340,
+        size.height * 0.5916322,
+        size.width * 0.3499340,
+        size.height * 0.5916742,
+        size.width * 0.3499520,
+        size.height * 0.5917130);
+    path_67.cubicTo(
+        size.width * 0.3499700,
+        size.height * 0.5917518,
+        size.width * 0.3499520,
+        size.height * 0.5917647,
+        size.width * 0.3499520,
+        size.height * 0.5917873);
+    path_67.cubicTo(
+        size.width * 0.3499520,
+        size.height * 0.5918100,
+        size.width * 0.3499520,
+        size.height * 0.5919198,
+        size.width * 0.3499730,
+        size.height * 0.5919845);
+    path_67.cubicTo(
+        size.width * 0.3499730,
+        size.height * 0.5919942,
+        size.width * 0.3499730,
+        size.height * 0.5920071,
+        size.width * 0.3499730,
+        size.height * 0.5920168);
+    path_67.cubicTo(
+        size.width * 0.3499730,
+        size.height * 0.5920556,
+        size.width * 0.3499730,
+        size.height * 0.5920911,
+        size.width * 0.3499730,
+        size.height * 0.5921267);
+    path_67.cubicTo(
+        size.width * 0.3500660,
+        size.height * 0.5936167,
+        size.width * 0.3505974,
+        size.height * 0.6051325,
+        size.width * 0.3452116,
+        size.height * 0.6129767);
+    path_67.cubicTo(
+        size.width * 0.3418433,
+        size.height * 0.6178798,
+        size.width * 0.3310718,
+        size.height * 0.6264447,
+        size.width * 0.3196668,
+        size.height * 0.6355074);
+    path_67.cubicTo(
+        size.width * 0.3129361,
+        size.height * 0.6408565,
+        size.width * 0.3059802,
+        size.height * 0.6463898,
+        size.width * 0.3008586,
+        size.height * 0.6509438);
+    path_67.cubicTo(
+        size.width * 0.2975923,
+        size.height * 0.6538526,
+        size.width * 0.2942540,
+        size.height * 0.6594473,
+        size.width * 0.2903512,
+        size.height * 0.6659341);
+    path_67.cubicTo(
+        size.width * 0.2813720,
+        size.height * 0.6809502,
+        size.width * 0.2686701,
+        size.height * 0.7021913,
+        size.width * 0.2426659,
+        size.height * 0.7144150);
+    path_67.cubicTo(
+        size.width * 0.2413479,
+        size.height * 0.7180381,
+        size.width * 0.2411648,
+        size.height * 0.7206884,
+        size.width * 0.2420654,
+        size.height * 0.7223109);
+    path_67.cubicTo(
+        size.width * 0.2447373,
+        size.height * 0.7269910,
+        size.width * 0.2575083,
+        size.height * 0.7278927,
+        size.width * 0.2738637,
+        size.height * 0.7288785);
+    path_67.cubicTo(
+        size.width * 0.2859051,
+        size.height * 0.7173529,
+        size.width * 0.3133413,
+        size.height * 0.6897705,
+        size.width * 0.3222726,
+        size.height * 0.6694926);
+    path_67.cubicTo(
+        size.width * 0.3355329,
+        size.height * 0.6394150,
+        size.width * 0.3370579,
+        size.height * 0.6342405,
+        size.width * 0.3403032,
+        size.height * 0.6209308);
+    path_67.cubicTo(
+        size.width * 0.3404593,
+        size.height * 0.6202941,
+        size.width * 0.3407805,
+        size.height * 0.6197220,
+        size.width * 0.3412309,
+        size.height * 0.6192760);
+    path_67.cubicTo(
+        size.width * 0.3416782,
+        size.height * 0.6188332,
+        size.width * 0.3422396,
+        size.height * 0.6185359,
+        size.width * 0.3428400,
+        size.height * 0.6184260);
+    path_67.cubicTo(
+        size.width * 0.3442059,
+        size.height * 0.6181739,
+        size.width * 0.3768628,
+        size.height * 0.6127117,
+        size.width * 0.4243651,
+        size.height * 0.6566645);
+    path_67.cubicTo(
+        size.width * 0.4460402,
+        size.height * 0.6767227,
+        size.width * 0.4597418,
+        size.height * 0.6999741,
+        size.width * 0.4683308,
+        size.height * 0.7200937);
+    path_67.cubicTo(
+        size.width * 0.4769198,
+        size.height * 0.7402133,
+        size.width * 0.4803963,
+        size.height * 0.7571752,
+        size.width * 0.4816241,
+        size.height * 0.7646542);
+    path_67.cubicTo(
+        size.width * 0.4819123,
+        size.height * 0.7650840,
+        size.width * 0.4821015,
+        size.height * 0.7655785,
+        size.width * 0.4821795,
+        size.height * 0.7661021);
+    path_67.cubicTo(
+        size.width * 0.4822606,
+        size.height * 0.7666225,
+        size.width * 0.4822246,
+        size.height * 0.7671590,
+        size.width * 0.4820775,
+        size.height * 0.7676632);
+    path_67.cubicTo(
+        size.width * 0.4821645,
+        size.height * 0.7683258,
+        size.width * 0.4822035,
+        size.height * 0.7686975,
+        size.width * 0.4822095,
+        size.height * 0.7687427);
+    path_67.cubicTo(
+        size.width * 0.4823176,
+        size.height * 0.7695572,
+        size.width * 0.4821645,
+        size.height * 0.7703878,
+        size.width * 0.4817682,
+        size.height * 0.7710957);
+    path_67.cubicTo(
+        size.width * 0.4813750,
+        size.height * 0.7718035,
+        size.width * 0.4807685,
+        size.height * 0.7723400,
+        size.width * 0.4800480,
+        size.height * 0.7726212);
+    path_67.cubicTo(
+        size.width * 0.4796638,
+        size.height * 0.7727731,
+        size.width * 0.4792585,
+        size.height * 0.7728571,
+        size.width * 0.4788472,
+        size.height * 0.7728636);
+    path_67.cubicTo(
+        size.width * 0.4768778,
+        size.height * 0.7728636,
+        size.width * 0.4755209,
+        size.height * 0.7706852,
+        size.width * 0.4731882,
+        size.height * 0.7669425);
+    path_67.lineTo(size.width * 0.4728010, size.height * 0.7663154);
+    path_67.cubicTo(
+        size.width * 0.4608766,
+        size.height * 0.7582902,
+        size.width * 0.4265896,
+        size.height * 0.7379832,
+        size.width * 0.3937106,
+        size.height * 0.7447123);
+    path_67.cubicTo(
+        size.width * 0.3936235,
+        size.height * 0.7454266,
+        size.width * 0.3935245,
+        size.height * 0.7461377,
+        size.width * 0.3934104,
+        size.height * 0.7468487);
+    path_67.cubicTo(
+        size.width * 0.3933173,
+        size.height * 0.7474725,
+        size.width * 0.3930651,
+        size.height * 0.7480543,
+        size.width * 0.3926839,
+        size.height * 0.7485326);
+    path_67.cubicTo(
+        size.width * 0.3923026,
+        size.height * 0.7490110,
+        size.width * 0.3918073,
+        size.height * 0.7493697,
+        size.width * 0.3912489,
+        size.height * 0.7495637);
+    path_67.cubicTo(
+        size.width * 0.3907835,
+        size.height * 0.7497253,
+        size.width * 0.3902912,
+        size.height * 0.7497835,
+        size.width * 0.3898049,
+        size.height * 0.7497350);
+    path_67.cubicTo(
+        size.width * 0.3893185,
+        size.height * 0.7496897,
+        size.width * 0.3888442,
+        size.height * 0.7495410,
+        size.width * 0.3884119,
+        size.height * 0.7492954);
+    path_67.cubicTo(
+        size.width * 0.3877274,
+        size.height * 0.7489011,
+        size.width * 0.3871360,
+        size.height * 0.7483387,
+        size.width * 0.3866887,
+        size.height * 0.7476535);
+    path_67.cubicTo(
+        size.width * 0.3859712,
+        size.height * 0.7465611,
+        size.width * 0.3853678,
+        size.height * 0.7453846,
+        size.width * 0.3848874,
+        size.height * 0.7441500);
+    path_67.cubicTo(
+        size.width * 0.3835785,
+        size.height * 0.7439431,
+        size.width * 0.3822576,
+        size.height * 0.7438429,
+        size.width * 0.3809367,
+        size.height * 0.7438462);
+    path_67.cubicTo(
+        size.width * 0.3746322,
+        size.height * 0.7438462,
+        size.width * 0.3647793,
+        size.height * 0.7459890,
+        size.width * 0.3524377,
+        size.height * 0.7556917);
+    path_67.cubicTo(
+        size.width * 0.3631012,
+        size.height * 0.7650646,
+        size.width * 0.3719514,
+        size.height * 0.7772851,
+        size.width * 0.3773551,
+        size.height * 0.7927505);
+    path_67.cubicTo(
+        size.width * 0.3890423,
+        size.height * 0.8261215,
+        size.width * 0.4063224,
+        size.height * 0.8408242,
+        size.width * 0.4640829,
+        size.height * 0.8229638);
+    path_67.cubicTo(
+        size.width * 0.5177244,
+        size.height * 0.8063736,
+        size.width * 0.5742270,
+        size.height * 0.7286846,
+        size.width * 0.5747914,
+        size.height * 0.7278992);
+    path_67.cubicTo(
+        size.width * 0.5752807,
+        size.height * 0.7272269,
+        size.width * 0.5759862,
+        size.height * 0.7267744,
+        size.width * 0.5767667,
+        size.height * 0.7266322);
+    path_67.cubicTo(
+        size.width * 0.5775503,
+        size.height * 0.7264900,
+        size.width * 0.5783548,
+        size.height * 0.7266677,
+        size.width * 0.5790213,
+        size.height * 0.7271299);
     path_67.close();
-    path_67.moveTo(1817.42, 2416.42);
-    path_67.cubicTo(1836.29, 2390.58, 1853.73, 2364.21, 1869.76, 2337.3);
-    path_67.cubicTo(1798.29, 2414.81, 1674.86, 2531.47, 1551.92, 2566.78);
-    path_67.cubicTo(1494.72, 2583.21, 1447.35, 2591.78, 1407.75, 2591.78);
-    path_67.cubicTo(1320.75, 2591.78, 1271.31, 2550.47, 1237.35, 2460.41);
-    path_67.cubicTo(1227.18, 2433.34, 1212.3, 2408.29, 1193.4, 2386.41);
-    path_67.cubicTo(1175.36, 2365.68, 1154.31, 2347.78, 1130.95, 2333.3);
-    path_67.cubicTo(1128.73, 2331.9, 1126.48, 2330.55, 1124.22, 2329.21);
-    path_67.cubicTo(1086.48, 2306.84, 1044.42, 2292.59, 1003.52, 2285.02);
-    path_67.cubicTo(991.36, 2282.77, 979.3, 2281.12, 967.52, 2280.02);
-    path_67.cubicTo(965.84, 2279.86, 964.16, 2279.71, 962.52, 2279.58);
-    path_67.cubicTo(960.56, 2279.42, 958.61, 2279.28, 956.67, 2279.15);
-    path_67.cubicTo(942.53, 2278.22, 929.14, 2277.48, 916.58, 2276.77);
-    path_67.cubicTo(907.48, 2276.26, 898.85, 2275.77, 890.68, 2275.28);
-    path_67.cubicTo(835.54, 2271.87, 801.58, 2267.33, 788.52, 2246.1);
-    path_67.lineTo(788.11, 2245.4);
-    path_67.cubicTo(776.762, 2269.05, 769.281, 2294.38, 765.95, 2320.4);
-    path_67.cubicTo(803.41, 2297.35, 855.58, 2293.93, 883.85, 2326.4);
-    path_67.cubicTo(884.332, 2327.01, 884.612, 2327.76, 884.651, 2328.54);
-    path_67.cubicTo(884.689, 2329.32, 884.485, 2330.09, 884.065, 2330.75);
-    path_67.cubicTo(883.646, 2331.41, 883.033, 2331.92, 882.31, 2332.22);
-    path_67.cubicTo(881.587, 2332.51, 880.791, 2332.58, 880.03, 2332.4);
-    path_67.cubicTo(847.4, 2328.4, 817.3, 2318.58, 786.87, 2333.35);
-    path_67.cubicTo(778.638, 2337, 771.02, 2341.9, 764.29, 2347.88);
-    path_67.cubicTo(757.683, 2353.67, 752.252, 2360.69, 748.29, 2368.53);
-    path_67.cubicTo(744.811, 2375.47, 742.974, 2383.11, 742.92, 2390.87);
-    path_67.cubicTo(759.92, 2385.65, 782.49, 2384.41, 791.79, 2396.65);
-    path_67.cubicTo(791.886, 2396.78, 791.952, 2396.93, 791.986, 2397.09);
-    path_67.cubicTo(792.019, 2397.25, 792.018, 2397.41, 791.983, 2397.57);
-    path_67.cubicTo(791.948, 2397.73, 791.88, 2397.88, 791.783, 2398.01);
-    path_67.cubicTo(791.686, 2398.14, 791.562, 2398.25, 791.42, 2398.33);
-    path_67.cubicTo(786.899, 2400.82, 781.931, 2402.4, 776.8, 2402.97);
-    path_67.cubicTo(763.8, 2404.89, 750.59, 2410.49, 738.54, 2415.59);
-    path_67.cubicTo(737.976, 2415.82, 737.394, 2416, 736.8, 2416.13);
-    path_67.lineTo(736.73, 2416.26);
-    path_67.cubicTo(737.79, 2415.98, 736.99, 2416.2, 736.89, 2416.26);
-    path_67.cubicTo(721.03, 2427.63, 716.89, 2449.47, 713.24, 2468.12);
-    path_67.cubicTo(710.68, 2482.04, 709.33, 2500.6, 711.71, 2517.78);
-    path_67.cubicTo(712.284, 2522.08, 713.143, 2526.34, 714.28, 2530.53);
-    path_67.cubicTo(719.56, 2549.74, 731.05, 2564.82, 752.99, 2565.53);
-    path_67.cubicTo(753.255, 2559.56, 754.232, 2553.65, 755.9, 2547.91);
-    path_67.cubicTo(759.39, 2538.3, 761.62, 2528.33, 772.41, 2523.8);
-    path_67.cubicTo(772.557, 2523.74, 772.715, 2523.71, 772.874, 2523.71);
-    path_67.cubicTo(773.032, 2523.71, 773.189, 2523.74, 773.335, 2523.81);
-    path_67.cubicTo(773.481, 2523.87, 773.614, 2523.96, 773.724, 2524.07);
-    path_67.cubicTo(773.835, 2524.19, 773.922, 2524.32, 773.98, 2524.47);
-    path_67.cubicTo(777.69, 2533.55, 774.3, 2542.1, 774.33, 2551.15);
-    path_67.cubicTo(774.135, 2554.44, 774.135, 2557.74, 774.33, 2561.03);
-    path_67.cubicTo(786.12, 2556.37, 796.58, 2548.27, 799.33, 2536.35);
-    path_67.lineTo(799.49, 2536.23);
-    path_67.cubicTo(799.513, 2535.26, 799.674, 2534.3, 799.97, 2533.37);
-    path_67.cubicTo(802.61, 2524.64, 806.11, 2515.87, 809.59, 2507.37);
-    path_67.cubicTo(809.75, 2507, 809.9, 2506.63, 810.05, 2506.26);
-    path_67.cubicTo(812.52, 2500.97, 814.2, 2495.01, 816.95, 2489.57);
-    path_67.cubicTo(818.757, 2485.78, 821.327, 2482.41, 824.5, 2479.67);
-    path_67.cubicTo(824.614, 2479.56, 824.748, 2479.48, 824.894, 2479.43);
-    path_67.cubicTo(825.04, 2479.38, 825.195, 2479.36, 825.349, 2479.36);
-    path_67.cubicTo(825.504, 2479.37, 825.656, 2479.41, 825.795, 2479.48);
-    path_67.cubicTo(825.934, 2479.55, 826.058, 2479.64, 826.16, 2479.76);
-    path_67.cubicTo(829.9, 2485.26, 830.35, 2490.87, 829.92, 2496.02);
-    path_67.cubicTo(829.7, 2498.69, 829.44, 2501.35, 829.11, 2504.02);
-    path_67.cubicTo(828.29, 2511, 826.99, 2517.92, 825.22, 2524.73);
-    path_67.cubicTo(824.87, 2526.09, 824.49, 2527.45, 824.08, 2528.79);
-    path_67.cubicTo(825.954, 2529.01, 827.834, 2529.19, 829.72, 2529.34);
-    path_67.cubicTo(837.694, 2529.98, 845.711, 2529.8, 853.65, 2528.83);
-    path_67.cubicTo(860.47, 2528.02, 867.178, 2526.45, 873.65, 2524.15);
-    path_67.cubicTo(895.02, 2516.75, 902.83, 2500.29, 921.39, 2486.57);
-    path_67.cubicTo(921.954, 2486.13, 922.626, 2485.84, 923.337, 2485.74);
-    path_67.cubicTo(924.048, 2485.64, 924.773, 2485.73, 925.438, 2486);
-    path_67.cubicTo(926.103, 2486.27, 926.684, 2486.71, 927.122, 2487.28);
-    path_67.cubicTo(927.56, 2487.85, 927.839, 2488.53, 927.93, 2489.24);
-    path_67.cubicTo(929.33, 2519.83, 902.93, 2538.13, 873.74, 2546.15);
-    path_67.cubicTo(900.66, 2567.95, 932.454, 2588.56, 969.12, 2607.99);
-    path_67.cubicTo(1322.61, 2795, 1649.13, 2572.34, 1817.42, 2416.42);
+    path_67.moveTo(size.width * 0.5456079, size.height * 0.7810019);
+    path_67.cubicTo(
+        size.width * 0.5512729,
+        size.height * 0.7726503,
+        size.width * 0.5565086,
+        size.height * 0.7641273,
+        size.width * 0.5613209,
+        size.height * 0.7554299);
+    path_67.cubicTo(
+        size.width * 0.5398649,
+        size.height * 0.7804816,
+        size.width * 0.5028100,
+        size.height * 0.8181868,
+        size.width * 0.4659021,
+        size.height * 0.8295992);
+    path_67.cubicTo(
+        size.width * 0.4487301,
+        size.height * 0.8349095,
+        size.width * 0.4345092,
+        size.height * 0.8376794,
+        size.width * 0.4226208,
+        size.height * 0.8376794);
+    path_67.cubicTo(
+        size.width * 0.3965026,
+        size.height * 0.8376794,
+        size.width * 0.3816602,
+        size.height * 0.8243277,
+        size.width * 0.3714650,
+        size.height * 0.7952198);
+    path_67.cubicTo(
+        size.width * 0.3684119,
+        size.height * 0.7864706,
+        size.width * 0.3639448,
+        size.height * 0.7783743,
+        size.width * 0.3582708,
+        size.height * 0.7713025);
+    path_67.cubicTo(
+        size.width * 0.3528550,
+        size.height * 0.7646025,
+        size.width * 0.3465356,
+        size.height * 0.7588171,
+        size.width * 0.3395227,
+        size.height * 0.7541370);
+    path_67.cubicTo(
+        size.width * 0.3388562,
+        size.height * 0.7536846,
+        size.width * 0.3381807,
+        size.height * 0.7532482,
+        size.width * 0.3375023,
+        size.height * 0.7528151);
+    path_67.cubicTo(
+        size.width * 0.3261723,
+        size.height * 0.7455850,
+        size.width * 0.3135455,
+        size.height * 0.7409793,
+        size.width * 0.3012669,
+        size.height * 0.7385326);
+    path_67.cubicTo(
+        size.width * 0.2976163,
+        size.height * 0.7378054,
+        size.width * 0.2939958,
+        size.height * 0.7372721,
+        size.width * 0.2904593,
+        size.height * 0.7369166);
+    path_67.cubicTo(
+        size.width * 0.2899550,
+        size.height * 0.7368649,
+        size.width * 0.2894506,
+        size.height * 0.7368164,
+        size.width * 0.2889583,
+        size.height * 0.7367744);
+    path_67.cubicTo(
+        size.width * 0.2883699,
+        size.height * 0.7367227,
+        size.width * 0.2877844,
+        size.height * 0.7366774,
+        size.width * 0.2872020,
+        size.height * 0.7366354);
+    path_67.cubicTo(
+        size.width * 0.2829571,
+        size.height * 0.7363348,
+        size.width * 0.2789373,
+        size.height * 0.7360957,
+        size.width * 0.2751666,
+        size.height * 0.7358662);
+    path_67.cubicTo(
+        size.width * 0.2724347,
+        size.height * 0.7357014,
+        size.width * 0.2698439,
+        size.height * 0.7355430,
+        size.width * 0.2673912,
+        size.height * 0.7353846);
+    path_67.cubicTo(
+        size.width * 0.2508376,
+        size.height * 0.7342825,
+        size.width * 0.2406424,
+        size.height * 0.7328151,
+        size.width * 0.2367217,
+        size.height * 0.7259535);
+    path_67.lineTo(size.width * 0.2365986, size.height * 0.7257272);
+    path_67.cubicTo(
+        size.width * 0.2331918,
+        size.height * 0.7333710,
+        size.width * 0.2309460,
+        size.height * 0.7415579,
+        size.width * 0.2299460,
+        size.height * 0.7499677);
+    path_67.cubicTo(
+        size.width * 0.2411918,
+        size.height * 0.7425178,
+        size.width * 0.2568538,
+        size.height * 0.7414124,
+        size.width * 0.2653407,
+        size.height * 0.7519069);
+    path_67.cubicTo(
+        size.width * 0.2654854,
+        size.height * 0.7521041,
+        size.width * 0.2655695,
+        size.height * 0.7523465,
+        size.width * 0.2655812,
+        size.height * 0.7525986);
+    path_67.cubicTo(
+        size.width * 0.2655926,
+        size.height * 0.7528507,
+        size.width * 0.2655314,
+        size.height * 0.7530995,
+        size.width * 0.2654053,
+        size.height * 0.7533129);
+    path_67.cubicTo(
+        size.width * 0.2652795,
+        size.height * 0.7535262,
+        size.width * 0.2650955,
+        size.height * 0.7536910,
+        size.width * 0.2648784,
+        size.height * 0.7537880);
+    path_67.cubicTo(
+        size.width * 0.2646614,
+        size.height * 0.7538817,
+        size.width * 0.2644224,
+        size.height * 0.7539043,
+        size.width * 0.2641939,
+        size.height * 0.7538462);
+    path_67.cubicTo(
+        size.width * 0.2543981,
+        size.height * 0.7525533,
+        size.width * 0.2453618,
+        size.height * 0.7493794,
+        size.width * 0.2362264,
+        size.height * 0.7541532);
+    path_67.cubicTo(
+        size.width * 0.2337550,
+        size.height * 0.7553329,
+        size.width * 0.2314680,
+        size.height * 0.7569166,
+        size.width * 0.2294476,
+        size.height * 0.7588494);
+    path_67.cubicTo(
+        size.width * 0.2274641,
+        size.height * 0.7607207,
+        size.width * 0.2258337,
+        size.height * 0.7629897,
+        size.width * 0.2246443,
+        size.height * 0.7655236);
+    path_67.cubicTo(
+        size.width * 0.2235998,
+        size.height * 0.7677666,
+        size.width * 0.2230483,
+        size.height * 0.7702359,
+        size.width * 0.2230321,
+        size.height * 0.7727440);
+    path_67.cubicTo(
+        size.width * 0.2281357,
+        size.height * 0.7710569,
+        size.width * 0.2349114,
+        size.height * 0.7706561,
+        size.width * 0.2377034,
+        size.height * 0.7746122);
+    path_67.cubicTo(
+        size.width * 0.2377322,
+        size.height * 0.7746542,
+        size.width * 0.2377520,
+        size.height * 0.7747027,
+        size.width * 0.2377622,
+        size.height * 0.7747544);
+    path_67.cubicTo(
+        size.width * 0.2377721,
+        size.height * 0.7748061,
+        size.width * 0.2377718,
+        size.height * 0.7748578,
+        size.width * 0.2377613,
+        size.height * 0.7749095);
+    path_67.cubicTo(
+        size.width * 0.2377508,
+        size.height * 0.7749612,
+        size.width * 0.2377304,
+        size.height * 0.7750097,
+        size.width * 0.2377013,
+        size.height * 0.7750517);
+    path_67.cubicTo(
+        size.width * 0.2376722,
+        size.height * 0.7750937,
+        size.width * 0.2376349,
+        size.height * 0.7751293,
+        size.width * 0.2375923,
+        size.height * 0.7751551);
+    path_67.cubicTo(
+        size.width * 0.2362351,
+        size.height * 0.7759599,
+        size.width * 0.2347436,
+        size.height * 0.7764706,
+        size.width * 0.2332032,
+        size.height * 0.7766548);
+    path_67.cubicTo(
+        size.width * 0.2293005,
+        size.height * 0.7772754,
+        size.width * 0.2253347,
+        size.height * 0.7790853,
+        size.width * 0.2217172,
+        size.height * 0.7807337);
+    path_67.cubicTo(
+        size.width * 0.2215479,
+        size.height * 0.7808080,
+        size.width * 0.2213732,
+        size.height * 0.7808662,
+        size.width * 0.2211948,
+        size.height * 0.7809082);
+    path_67.lineTo(size.width * 0.2211738, size.height * 0.7809502);
+    path_67.cubicTo(
+        size.width * 0.2214920,
+        size.height * 0.7808597,
+        size.width * 0.2212519,
+        size.height * 0.7809308,
+        size.width * 0.2212219,
+        size.height * 0.7809502);
+    path_67.cubicTo(
+        size.width * 0.2164605,
+        size.height * 0.7846251,
+        size.width * 0.2152177,
+        size.height * 0.7916839,
+        size.width * 0.2141219,
+        size.height * 0.7977117);
+    path_67.cubicTo(
+        size.width * 0.2133533,
+        size.height * 0.8022107,
+        size.width * 0.2129481,
+        size.height * 0.8082094,
+        size.width * 0.2136626,
+        size.height * 0.8137621);
+    path_67.cubicTo(
+        size.width * 0.2138349,
+        size.height * 0.8151519,
+        size.width * 0.2140928,
+        size.height * 0.8165288,
+        size.width * 0.2144341,
+        size.height * 0.8178830);
+    path_67.cubicTo(
+        size.width * 0.2160192,
+        size.height * 0.8240918,
+        size.width * 0.2194686,
+        size.height * 0.8289657,
+        size.width * 0.2260552,
+        size.height * 0.8291952);
+    path_67.cubicTo(
+        size.width * 0.2261348,
+        size.height * 0.8272657,
+        size.width * 0.2264281,
+        size.height * 0.8253555,
+        size.width * 0.2269289,
+        size.height * 0.8235003);
+    path_67.cubicTo(
+        size.width * 0.2279766,
+        size.height * 0.8203943,
+        size.width * 0.2286461,
+        size.height * 0.8171719,
+        size.width * 0.2318853,
+        size.height * 0.8157078);
+    path_67.cubicTo(
+        size.width * 0.2319295,
+        size.height * 0.8156884,
+        size.width * 0.2319769,
+        size.height * 0.8156787,
+        size.width * 0.2320246,
+        size.height * 0.8156787);
+    path_67.cubicTo(
+        size.width * 0.2320721,
+        size.height * 0.8156787,
+        size.width * 0.2321192,
+        size.height * 0.8156884,
+        size.width * 0.2321630,
+        size.height * 0.8157111);
+    path_67.cubicTo(
+        size.width * 0.2322068,
+        size.height * 0.8157304,
+        size.width * 0.2322468,
+        size.height * 0.8157595,
+        size.width * 0.2322798,
+        size.height * 0.8157951);
+    path_67.cubicTo(
+        size.width * 0.2323131,
+        size.height * 0.8158339,
+        size.width * 0.2323392,
+        size.height * 0.8158759,
+        size.width * 0.2323566,
+        size.height * 0.8159244);
+    path_67.cubicTo(
+        size.width * 0.2334704,
+        size.height * 0.8188591,
+        size.width * 0.2324527,
+        size.height * 0.8216225,
+        size.width * 0.2324617,
+        size.height * 0.8245475);
+    path_67.cubicTo(
+        size.width * 0.2324032,
+        size.height * 0.8256109,
+        size.width * 0.2324032,
+        size.height * 0.8266774,
+        size.width * 0.2324617,
+        size.height * 0.8277408);
+    path_67.cubicTo(
+        size.width * 0.2360012,
+        size.height * 0.8262346,
+        size.width * 0.2391414,
+        size.height * 0.8236167,
+        size.width * 0.2399670,
+        size.height * 0.8197641);
+    path_67.lineTo(size.width * 0.2400150, size.height * 0.8197253);
+    path_67.cubicTo(
+        size.width * 0.2400219,
+        size.height * 0.8194118,
+        size.width * 0.2400702,
+        size.height * 0.8191015,
+        size.width * 0.2401591,
+        size.height * 0.8188009);
+    path_67.cubicTo(
+        size.width * 0.2409517,
+        size.height * 0.8159793,
+        size.width * 0.2420024,
+        size.height * 0.8131448,
+        size.width * 0.2430471,
+        size.height * 0.8103975);
+    path_67.cubicTo(
+        size.width * 0.2430952,
+        size.height * 0.8102780,
+        size.width * 0.2431402,
+        size.height * 0.8101584,
+        size.width * 0.2431852,
+        size.height * 0.8100388);
+    path_67.cubicTo(
+        size.width * 0.2439267,
+        size.height * 0.8083290,
+        size.width * 0.2444311,
+        size.height * 0.8064027,
+        size.width * 0.2452567,
+        size.height * 0.8046445);
+    path_67.cubicTo(
+        size.width * 0.2457992,
+        size.height * 0.8034195,
+        size.width * 0.2465707,
+        size.height * 0.8023303,
+        size.width * 0.2475233,
+        size.height * 0.8014447);
+    path_67.cubicTo(
+        size.width * 0.2475575,
+        size.height * 0.8014092,
+        size.width * 0.2475977,
+        size.height * 0.8013833,
+        size.width * 0.2476415,
+        size.height * 0.8013672);
+    path_67.cubicTo(
+        size.width * 0.2476854,
+        size.height * 0.8013510,
+        size.width * 0.2477319,
+        size.height * 0.8013445,
+        size.width * 0.2477781,
+        size.height * 0.8013445);
+    path_67.cubicTo(
+        size.width * 0.2478247,
+        size.height * 0.8013478,
+        size.width * 0.2478703,
+        size.height * 0.8013607,
+        size.width * 0.2479120,
+        size.height * 0.8013833);
+    path_67.cubicTo(
+        size.width * 0.2479538,
+        size.height * 0.8014059,
+        size.width * 0.2479910,
+        size.height * 0.8014350,
+        size.width * 0.2480216,
+        size.height * 0.8014738);
+    path_67.cubicTo(
+        size.width * 0.2491444,
+        size.height * 0.8032515,
+        size.width * 0.2492795,
+        size.height * 0.8050646,
+        size.width * 0.2491504,
+        size.height * 0.8067292);
+    path_67.cubicTo(
+        size.width * 0.2490844,
+        size.height * 0.8075921,
+        size.width * 0.2490063,
+        size.height * 0.8084518,
+        size.width * 0.2489072,
+        size.height * 0.8093148);
+    path_67.cubicTo(
+        size.width * 0.2486611,
+        size.height * 0.8115708,
+        size.width * 0.2482708,
+        size.height * 0.8138074,
+        size.width * 0.2477394,
+        size.height * 0.8160084);
+    path_67.cubicTo(
+        size.width * 0.2476343,
+        size.height * 0.8164480,
+        size.width * 0.2475203,
+        size.height * 0.8168875,
+        size.width * 0.2473972,
+        size.height * 0.8173206);
+    path_67.cubicTo(
+        size.width * 0.2479598,
+        size.height * 0.8173917,
+        size.width * 0.2485242,
+        size.height * 0.8174499,
+        size.width * 0.2490904,
+        size.height * 0.8174984);
+    path_67.cubicTo(
+        size.width * 0.2514842,
+        size.height * 0.8177052,
+        size.width * 0.2538910,
+        size.height * 0.8176471,
+        size.width * 0.2562744,
+        size.height * 0.8173335);
+    path_67.cubicTo(
+        size.width * 0.2583218,
+        size.height * 0.8170718,
+        size.width * 0.2603356,
+        size.height * 0.8165643,
+        size.width * 0.2622786,
+        size.height * 0.8158209);
+    path_67.cubicTo(
+        size.width * 0.2686941,
+        size.height * 0.8134292,
+        size.width * 0.2710387,
+        size.height * 0.8081092,
+        size.width * 0.2766106,
+        size.height * 0.8036749);
+    path_67.cubicTo(
+        size.width * 0.2767799,
+        size.height * 0.8035326,
+        size.width * 0.2769817,
+        size.height * 0.8034389,
+        size.width * 0.2771951,
+        size.height * 0.8034066);
+    path_67.cubicTo(
+        size.width * 0.2774086,
+        size.height * 0.8033743,
+        size.width * 0.2776262,
+        size.height * 0.8034034,
+        size.width * 0.2778259,
+        size.height * 0.8034906);
+    path_67.cubicTo(
+        size.width * 0.2780255,
+        size.height * 0.8035779,
+        size.width * 0.2781999,
+        size.height * 0.8037201,
+        size.width * 0.2783314,
+        size.height * 0.8039043);
+    path_67.cubicTo(
+        size.width * 0.2784629,
+        size.height * 0.8040886,
+        size.width * 0.2785467,
+        size.height * 0.8043083,
+        size.width * 0.2785740,
+        size.height * 0.8045378);
+    path_67.cubicTo(
+        size.width * 0.2789943,
+        size.height * 0.8144247,
+        size.width * 0.2710687,
+        size.height * 0.8203394,
+        size.width * 0.2623056,
+        size.height * 0.8229315);
+    path_67.cubicTo(
+        size.width * 0.2703873,
+        size.height * 0.8299774,
+        size.width * 0.2799322,
+        size.height * 0.8366387,
+        size.width * 0.2909397,
+        size.height * 0.8429186);
+    path_67.cubicTo(
+        size.width * 0.3970609,
+        size.height * 0.9033613,
+        size.width * 0.4950856,
+        size.height * 0.8313963,
+        size.width * 0.5456079,
+        size.height * 0.7810019);
     path_67.close();
-    path_67.moveTo(1597.62, 2642.89);
-    path_67.cubicTo(1656.58, 2596.59, 1711.01, 2544.81, 1760.19, 2488.24);
-    path_67.cubicTo(1708.91, 2529.49, 1647.98, 2571.92, 1579.62, 2607.56);
-    path_67.cubicTo(1590.82, 2615.28, 1596.93, 2629.1, 1597.62, 2642.9);
-    path_67.lineTo(1597.62, 2642.89);
+    path_67.moveTo(size.width * 0.4796217, size.height * 0.8541984);
+    path_67.cubicTo(
+        size.width * 0.4973221,
+        size.height * 0.8392340,
+        size.width * 0.5136626,
+        size.height * 0.8224984,
+        size.width * 0.5284269,
+        size.height * 0.8042146);
+    path_67.cubicTo(
+        size.width * 0.5130321,
+        size.height * 0.8175469,
+        size.width * 0.4947403,
+        size.height * 0.8312605,
+        size.width * 0.4742180,
+        size.height * 0.8427796);
+    path_67.cubicTo(
+        size.width * 0.4775803,
+        size.height * 0.8452747,
+        size.width * 0.4794146,
+        size.height * 0.8497414,
+        size.width * 0.4796217,
+        size.height * 0.8542017);
+    path_67.lineTo(size.width * 0.4796217, size.height * 0.8541984);
     path_67.close();
-    path_67.moveTo(1586.16, 2651.81);
-    path_67.cubicTo(1581.78, 2641.7, 1578.03, 2631.81, 1573.57, 2621.59);
-    path_67.cubicTo(1572.45, 2618.67, 1571.26, 2615.59, 1570.18, 2612.4);
-    path_67.cubicTo(1530.68, 2632.56, 1489.64, 2649.54, 1447.44, 2663.17);
-    path_67.cubicTo(1277.72, 2717.39, 1114.12, 2703.84, 961.17, 2622.87);
-    path_67.cubicTo(918.537, 2600.3, 882.204, 2576.05, 852.17, 2550.12);
-    path_67.cubicTo(843.403, 2551.13, 834.551, 2551.14, 825.78, 2550.17);
-    path_67.cubicTo(822.91, 2549.89, 820.14, 2549.59, 817.34, 2549.17);
-    path_67.cubicTo(808.98, 2568.81, 787.87, 2580.56, 767.72, 2585.05);
-    path_67.cubicTo(734.03, 2593.79, 704.02, 2571.29, 694.9, 2539.64);
-    path_67.cubicTo(694.73, 2539.12, 694.57, 2538.64, 694.42, 2538.07);
-    path_67.cubicTo(680.192, 2543.05, 665.696, 2547.24, 651, 2550.6);
-    path_67.cubicTo(617.27, 2558.41, 582.52, 2562.72, 547.9, 2559.93);
-    path_67.cubicTo(550.405, 2571.49, 553.513, 2582.92, 557.21, 2594.16);
-    path_67.cubicTo(591.52, 2698.46, 674.65, 2780.57, 804.44, 2838.52);
-    path_67.cubicTo(818.32, 2843.51, 832.577, 2848.01, 847.21, 2852.02);
-    path_67.cubicTo(896.34, 2865.51, 948.8, 2872.16, 1003.4, 2872.16);
-    path_67.cubicTo(1012.6, 2872.16, 1021.86, 2871.97, 1031.19, 2871.59);
-    path_67.cubicTo(1033.19, 2871.51, 1035.21, 2871.42, 1037.25, 2871.32);
-    path_67.cubicTo(1039.82, 2871.19, 1042.39, 2871.06, 1044.96, 2870.9);
-    path_67.cubicTo(1101.13, 2867.55, 1159.18, 2857.49, 1217.85, 2840.9);
-    path_67.cubicTo(1226.62, 2838.43, 1235.41, 2835.81, 1244.2, 2833.03);
-    path_67.lineTo(1248.09, 2831.81);
-    path_67.cubicTo(1286.15, 2819.63, 1323.45, 2805.19, 1359.79, 2788.59);
-    path_67.cubicTo(1361.16, 2787.97, 1362.53, 2787.32, 1363.9, 2786.69);
-    path_67.cubicTo(1369.65, 2784.02, 1375.4, 2781.32, 1381.15, 2778.58);
-    path_67.cubicTo(1398.81, 2770.07, 1416.41, 2760.99, 1433.95, 2751.35);
-    path_67.cubicTo(1433.46, 2750.91, 1433.13, 2750.32, 1433.01, 2749.68);
-    path_67.cubicTo(1430.77, 2738.85, 1429.13, 2724.37, 1427.46, 2713.5);
-    path_67.cubicTo(1425.81, 2701.2, 1424.21, 2689.29, 1425.1, 2676.6);
-    path_67.cubicTo(1425.14, 2676.01, 1425.36, 2675.44, 1425.73, 2674.97);
-    path_67.cubicTo(1426.09, 2674.5, 1426.59, 2674.15, 1427.16, 2673.96);
-    path_67.cubicTo(1427.73, 2673.77, 1428.33, 2673.76, 1428.91, 2673.92);
-    path_67.cubicTo(1429.48, 2674.09, 1429.99, 2674.42, 1430.38, 2674.87);
-    path_67.cubicTo(1446.24, 2695.23, 1448.61, 2724.55, 1439.47, 2748.3);
-    path_67.cubicTo(1444.28, 2745.63, 1449.08, 2742.91, 1453.88, 2740.14);
-    path_67.cubicTo(1476.93, 2726.86, 1499.5, 2712.84, 1521.58, 2698.07);
-    path_67.cubicTo(1543.66, 2683.3, 1565.19, 2667.88, 1586.16, 2651.81);
+    path_67.moveTo(size.width * 0.4761813, size.height * 0.8570814);
+    path_67.cubicTo(
+        size.width * 0.4748664,
+        size.height * 0.8538138,
+        size.width * 0.4737406,
+        size.height * 0.8506173,
+        size.width * 0.4724017,
+        size.height * 0.8473142);
+    path_67.cubicTo(
+        size.width * 0.4720654,
+        size.height * 0.8463704,
+        size.width * 0.4717082,
+        size.height * 0.8453749,
+        size.width * 0.4713840,
+        size.height * 0.8443439);
+    path_67.cubicTo(
+        size.width * 0.4595257,
+        size.height * 0.8508597,
+        size.width * 0.4472050,
+        size.height * 0.8563478,
+        size.width * 0.4345362,
+        size.height * 0.8607531);
+    path_67.cubicTo(
+        size.width * 0.3835845,
+        size.height * 0.8782773,
+        size.width * 0.3344701,
+        size.height * 0.8738979,
+        size.width * 0.2885530,
+        size.height * 0.8477279);
+    path_67.cubicTo(
+        size.width * 0.2757541,
+        size.height * 0.8404331,
+        size.width * 0.2648466,
+        size.height * 0.8325953,
+        size.width * 0.2558301,
+        size.height * 0.8242146);
+    path_67.cubicTo(
+        size.width * 0.2531981,
+        size.height * 0.8245410,
+        size.width * 0.2505407,
+        size.height * 0.8245443,
+        size.width * 0.2479075,
+        size.height * 0.8242308);
+    path_67.cubicTo(
+        size.width * 0.2470459,
+        size.height * 0.8241403,
+        size.width * 0.2462144,
+        size.height * 0.8240433,
+        size.width * 0.2453738,
+        size.height * 0.8239076);
+    path_67.cubicTo(
+        size.width * 0.2428640,
+        size.height * 0.8302553,
+        size.width * 0.2365266,
+        size.height * 0.8340530,
+        size.width * 0.2304773,
+        size.height * 0.8355042);
+    path_67.cubicTo(
+        size.width * 0.2203633,
+        size.height * 0.8383290,
+        size.width * 0.2113539,
+        size.height * 0.8310569,
+        size.width * 0.2086160,
+        size.height * 0.8208274);
+    path_67.cubicTo(
+        size.width * 0.2085650,
+        size.height * 0.8206593,
+        size.width * 0.2085170,
+        size.height * 0.8205042,
+        size.width * 0.2084719,
+        size.height * 0.8203200);
+    path_67.cubicTo(
+        size.width * 0.2042005,
+        size.height * 0.8219295,
+        size.width * 0.1998487,
+        size.height * 0.8232838,
+        size.width * 0.1954368,
+        size.height * 0.8243697);
+    path_67.cubicTo(
+        size.width * 0.1853107,
+        size.height * 0.8268940,
+        size.width * 0.1748784,
+        size.height * 0.8282870,
+        size.width * 0.1644851,
+        size.height * 0.8273853);
+    path_67.cubicTo(
+        size.width * 0.1652372,
+        size.height * 0.8311215,
+        size.width * 0.1661702,
+        size.height * 0.8348158,
+        size.width * 0.1672801,
+        size.height * 0.8384486);
+    path_67.cubicTo(
+        size.width * 0.1775803,
+        size.height * 0.8721590,
+        size.width * 0.2025368,
+        size.height * 0.8986975,
+        size.width * 0.2415011,
+        size.height * 0.9174273);
+    path_67.cubicTo(
+        size.width * 0.2456680,
+        size.height * 0.9190401,
+        size.width * 0.2499481,
+        size.height * 0.9204945,
+        size.width * 0.2543410,
+        size.height * 0.9217906);
+    path_67.cubicTo(
+        size.width * 0.2690904,
+        size.height * 0.9261506,
+        size.width * 0.2848394,
+        size.height * 0.9282999,
+        size.width * 0.3012309,
+        size.height * 0.9282999);
+    path_67.cubicTo(
+        size.width * 0.3039928,
+        size.height * 0.9282999,
+        size.width * 0.3067727,
+        size.height * 0.9282385,
+        size.width * 0.3095737,
+        size.height * 0.9281157);
+    path_67.cubicTo(
+        size.width * 0.3101741,
+        size.height * 0.9280899,
+        size.width * 0.3107805,
+        size.height * 0.9280608,
+        size.width * 0.3113930,
+        size.height * 0.9280284);
+    path_67.cubicTo(
+        size.width * 0.3121645,
+        size.height * 0.9279864,
+        size.width * 0.3129361,
+        size.height * 0.9279444,
+        size.width * 0.3137076,
+        size.height * 0.9278927);
+    path_67.cubicTo(
+        size.width * 0.3305704,
+        size.height * 0.9268100,
+        size.width * 0.3479976,
+        size.height * 0.9235585,
+        size.width * 0.3656109,
+        size.height * 0.9181965);
+    path_67.cubicTo(
+        size.width * 0.3682438,
+        size.height * 0.9173982,
+        size.width * 0.3708826,
+        size.height * 0.9165514,
+        size.width * 0.3735215,
+        size.height * 0.9156529);
+    path_67.lineTo(size.width * 0.3746893, size.height * 0.9152586);
+    path_67.cubicTo(
+        size.width * 0.3861153,
+        size.height * 0.9113219,
+        size.width * 0.3973131,
+        size.height * 0.9066548,
+        size.width * 0.4082228,
+        size.height * 0.9012896);
+    path_67.cubicTo(
+        size.width * 0.4086340,
+        size.height * 0.9010892,
+        size.width * 0.4090453,
+        size.height * 0.9008791,
+        size.width * 0.4094566,
+        size.height * 0.9006755);
+    path_67.cubicTo(
+        size.width * 0.4111828,
+        size.height * 0.8998125,
+        size.width * 0.4129090,
+        size.height * 0.8989399,
+        size.width * 0.4146352,
+        size.height * 0.8980543);
+    path_67.cubicTo(
+        size.width * 0.4199370,
+        size.height * 0.8953038,
+        size.width * 0.4252207,
+        size.height * 0.8923691,
+        size.width * 0.4304863,
+        size.height * 0.8892534);
+    path_67.cubicTo(
+        size.width * 0.4303392,
+        size.height * 0.8891112,
+        size.width * 0.4302402,
+        size.height * 0.8889205,
+        size.width * 0.4302041,
+        size.height * 0.8887136);
+    path_67.cubicTo(
+        size.width * 0.4295317,
+        size.height * 0.8852133,
+        size.width * 0.4290393,
+        size.height * 0.8805333,
+        size.width * 0.4285380,
+        size.height * 0.8770200);
+    path_67.cubicTo(
+        size.width * 0.4280426,
+        size.height * 0.8730446,
+        size.width * 0.4275623,
+        size.height * 0.8691952,
+        size.width * 0.4278295,
+        size.height * 0.8650937);
+    path_67.cubicTo(
+        size.width * 0.4278415,
+        size.height * 0.8649030,
+        size.width * 0.4279075,
+        size.height * 0.8647188,
+        size.width * 0.4280186,
+        size.height * 0.8645669);
+    path_67.cubicTo(
+        size.width * 0.4281267,
+        size.height * 0.8644150,
+        size.width * 0.4282768,
+        size.height * 0.8643019,
+        size.width * 0.4284479,
+        size.height * 0.8642405);
+    path_67.cubicTo(
+        size.width * 0.4286190,
+        size.height * 0.8641791,
+        size.width * 0.4287992,
+        size.height * 0.8641758,
+        size.width * 0.4289733,
+        size.height * 0.8642275);
+    path_67.cubicTo(
+        size.width * 0.4291444,
+        size.height * 0.8642825,
+        size.width * 0.4292975,
+        size.height * 0.8643891,
+        size.width * 0.4294146,
+        size.height * 0.8645346);
+    path_67.cubicTo(
+        size.width * 0.4341759,
+        size.height * 0.8711151,
+        size.width * 0.4348874,
+        size.height * 0.8805915,
+        size.width * 0.4321435,
+        size.height * 0.8882676);
+    path_67.cubicTo(
+        size.width * 0.4335875,
+        size.height * 0.8874047,
+        size.width * 0.4350285,
+        size.height * 0.8865255,
+        size.width * 0.4364695,
+        size.height * 0.8856303);
+    path_67.cubicTo(
+        size.width * 0.4433894,
+        size.height * 0.8813381,
+        size.width * 0.4501651,
+        size.height * 0.8768067,
+        size.width * 0.4567938,
+        size.height * 0.8720330);
+    path_67.cubicTo(
+        size.width * 0.4634224,
+        size.height * 0.8672592,
+        size.width * 0.4698859,
+        size.height * 0.8622754,
+        size.width * 0.4761813,
+        size.height * 0.8570814);
     path_67.close();
-    path_67.moveTo(1570.47, 2325);
-    path_67.cubicTo(1572.16, 2327.63, 1573.85, 2330.28, 1575.53, 2332.91);
-    path_67.cubicTo(1558.26, 2266.82, 1512.87, 2145, 1399.93, 2047.91);
-    path_67.cubicTo(1271.57, 1937.59, 1177.32, 1932.91, 1152.32, 1933.91);
-    path_67.cubicTo(1142.46, 1970.82, 1134.98, 1991.79, 1092.81, 2080.63);
-    path_67.cubicTo(1064.65, 2140, 988, 2215.32, 942.29, 2257);
-    path_67.cubicTo(947.41, 2257.31, 952.644, 2257.65, 957.99, 2258);
-    path_67.cubicTo(970.39, 2258.81, 983.1, 2260.21, 995.99, 2262.23);
-    path_67.cubicTo(1119.23, 2131.39, 1160.49, 1997.88, 1160.91, 1996.5);
-    path_67.cubicTo(1161.46, 1994.67, 1162.5, 1993.02, 1163.91, 1991.73);
-    path_67.cubicTo(1165.32, 1990.44, 1167.05, 1989.56, 1168.92, 1989.18);
-    path_67.cubicTo(1170.79, 1988.79, 1172.73, 1988.92, 1174.54, 1989.55);
-    path_67.cubicTo(1176.34, 1990.18, 1177.94, 1991.28, 1179.17, 1992.75);
-    path_67.cubicTo(1219.09, 2040.39, 1252.93, 2146.4, 1277.63, 2223.81);
-    path_67.cubicTo(1282.63, 2239.56, 1288, 2256.31, 1292.76, 2270.21);
-    path_67.cubicTo(1293.95, 2145.8, 1214.3, 2005.35, 1213.41, 2003.8);
-    path_67.cubicTo(1212.27, 2001.8, 1211.81, 1999.49, 1212.1, 1997.21);
-    path_67.cubicTo(1212.39, 1994.92, 1213.42, 1992.8, 1215.02, 1991.15);
-    path_67.cubicTo(1216.62, 1989.5, 1218.72, 1988.42, 1220.99, 1988.07);
-    path_67.cubicTo(1223.27, 1987.72, 1225.59, 1988.11, 1227.62, 1989.2);
-    path_67.cubicTo(1234.04, 1992.65, 1385.82, 2074.8, 1453.28, 2156.11);
-    path_67.cubicTo(1493.32, 2204.41, 1539.75, 2277, 1570.47, 2325);
+    path_67.moveTo(size.width * 0.4714710, size.height * 0.7514544);
+    path_67.cubicTo(
+        size.width * 0.4719784,
+        size.height * 0.7523045,
+        size.width * 0.4724857,
+        size.height * 0.7531610,
+        size.width * 0.4729901,
+        size.height * 0.7540110);
+    path_67.cubicTo(
+        size.width * 0.4678055,
+        size.height * 0.7326503,
+        size.width * 0.4541789,
+        size.height * 0.6932773,
+        size.width * 0.4202732,
+        size.height * 0.6618972);
+    path_67.cubicTo(
+        size.width * 0.3817382,
+        size.height * 0.6262411,
+        size.width * 0.3534434,
+        size.height * 0.6247285,
+        size.width * 0.3459382,
+        size.height * 0.6250517);
+    path_67.cubicTo(
+        size.width * 0.3429781,
+        size.height * 0.6369813,
+        size.width * 0.3407325,
+        size.height * 0.6437589,
+        size.width * 0.3280727,
+        size.height * 0.6724725);
+    path_67.cubicTo(
+        size.width * 0.3196187,
+        size.height * 0.6916613,
+        size.width * 0.2966076,
+        size.height * 0.7160052,
+        size.width * 0.2828850,
+        size.height * 0.7294764);
+    path_67.cubicTo(
+        size.width * 0.2844221,
+        size.height * 0.7295766,
+        size.width * 0.2859934,
+        size.height * 0.7296865,
+        size.width * 0.2875983,
+        size.height * 0.7297996);
+    path_67.cubicTo(
+        size.width * 0.2913209,
+        size.height * 0.7300614,
+        size.width * 0.2951366,
+        size.height * 0.7305139,
+        size.width * 0.2990063,
+        size.height * 0.7311668);
+    path_67.cubicTo(
+        size.width * 0.3360042,
+        size.height * 0.6888785,
+        size.width * 0.3483909,
+        size.height * 0.6457272,
+        size.width * 0.3485170,
+        size.height * 0.6452812);
+    path_67.cubicTo(
+        size.width * 0.3486821,
+        size.height * 0.6446897,
+        size.width * 0.3489943,
+        size.height * 0.6441564,
+        size.width * 0.3494176,
+        size.height * 0.6437395);
+    path_67.cubicTo(
+        size.width * 0.3498409,
+        size.height * 0.6433226,
+        size.width * 0.3503603,
+        size.height * 0.6430381,
+        size.width * 0.3509216,
+        size.height * 0.6429153);
+    path_67.cubicTo(
+        size.width * 0.3514830,
+        size.height * 0.6427893,
+        size.width * 0.3520654,
+        size.height * 0.6428313,
+        size.width * 0.3526088,
+        size.height * 0.6430349);
+    path_67.cubicTo(
+        size.width * 0.3531492,
+        size.height * 0.6432385,
+        size.width * 0.3536295,
+        size.height * 0.6435941,
+        size.width * 0.3539988,
+        size.height * 0.6440692);
+    path_67.cubicTo(
+        size.width * 0.3659832,
+        size.height * 0.6594667,
+        size.width * 0.3761423,
+        size.height * 0.6937298,
+        size.width * 0.3835575,
+        size.height * 0.7187492);
+    path_67.cubicTo(
+        size.width * 0.3850585,
+        size.height * 0.7238397,
+        size.width * 0.3866707,
+        size.height * 0.7292534,
+        size.width * 0.3880997,
+        size.height * 0.7337460);
+    path_67.cubicTo(
+        size.width * 0.3884569,
+        size.height * 0.6935359,
+        size.width * 0.3645452,
+        size.height * 0.6481416,
+        size.width * 0.3642780,
+        size.height * 0.6476406);
+    path_67.cubicTo(
+        size.width * 0.3639358,
+        size.height * 0.6469942,
+        size.width * 0.3637977,
+        size.height * 0.6462476,
+        size.width * 0.3638847,
+        size.height * 0.6455107);
+    path_67.cubicTo(
+        size.width * 0.3639718,
+        size.height * 0.6447705,
+        size.width * 0.3642810,
+        size.height * 0.6440853,
+        size.width * 0.3647613,
+        size.height * 0.6435520);
+    path_67.cubicTo(
+        size.width * 0.3652417,
+        size.height * 0.6430187,
+        size.width * 0.3658721,
+        size.height * 0.6426697,
+        size.width * 0.3665536,
+        size.height * 0.6425566);
+    path_67.cubicTo(
+        size.width * 0.3672381,
+        size.height * 0.6424434,
+        size.width * 0.3679346,
+        size.height * 0.6425695,
+        size.width * 0.3685440,
+        size.height * 0.6429218);
+    path_67.cubicTo(
+        size.width * 0.3704713,
+        size.height * 0.6440368,
+        size.width * 0.4160372,
+        size.height * 0.6705882,
+        size.width * 0.4362894,
+        size.height * 0.6968681);
+    path_67.cubicTo(
+        size.width * 0.4483098,
+        size.height * 0.7124790,
+        size.width * 0.4622486,
+        size.height * 0.7359405,
+        size.width * 0.4714710,
+        size.height * 0.7514544);
     path_67.close();
-    path_67.moveTo(1549.77, 2332);
-    path_67.cubicTo(1519.36, 2284.47, 1474.98, 2215.48, 1436.96, 2169.66);
-    path_67.cubicTo(1390.09, 2113.18, 1297.11, 2054.23, 1248.61, 2025.6);
-    path_67.cubicTo(1274.06, 2077.88, 1318.61, 2184.6, 1313.61, 2282.44);
-    path_67.cubicTo(1404.49, 2267.31, 1495, 2303.17, 1549.77, 2332);
+    path_67.moveTo(size.width * 0.4652567, size.height * 0.7537169);
+    path_67.cubicTo(
+        size.width * 0.4561273,
+        size.height * 0.7383549,
+        size.width * 0.4428040,
+        size.height * 0.7160569,
+        size.width * 0.4313900,
+        size.height * 0.7012476);
+    path_67.cubicTo(
+        size.width * 0.4173191,
+        size.height * 0.6829929,
+        size.width * 0.3894056,
+        size.height * 0.6639399,
+        size.width * 0.3748454,
+        size.height * 0.6546865);
+    path_67.cubicTo(
+        size.width * 0.3824857,
+        size.height * 0.6715837,
+        size.width * 0.3958601,
+        size.height * 0.7060763,
+        size.width * 0.3943591,
+        size.height * 0.7376988);
+    path_67.cubicTo(
+        size.width * 0.4216421,
+        size.height * 0.7328087,
+        size.width * 0.4488142,
+        size.height * 0.7443988,
+        size.width * 0.4652567,
+        size.height * 0.7537169);
     path_67.close();
-    path_67.moveTo(1398.77, 2892.65);
-    path_67.cubicTo(1405.15, 2875.79, 1406.28, 2857.4, 1402.03, 2839.88);
-    path_67.cubicTo(1397.69, 2825.78, 1388.44, 2814.13, 1377.56, 2803.79);
-    path_67.cubicTo(1338, 2822.29, 1297.3, 2838.27, 1255.72, 2851.63);
-    path_67.cubicTo(1267.41, 2883.88, 1282.49, 2918.01, 1312.38, 2930.36);
-    path_67.cubicTo(1307.24, 2922.11, 1305.05, 2912.94, 1308.66, 2904.57);
-    path_67.cubicTo(1308.73, 2904.43, 1308.83, 2904.3, 1308.96, 2904.2);
-    path_67.cubicTo(1309.08, 2904.09, 1309.23, 2904.02, 1309.38, 2903.98);
-    path_67.cubicTo(1309.54, 2903.93, 1309.7, 2903.92, 1309.86, 2903.95);
-    path_67.cubicTo(1310.02, 2903.97, 1310.17, 2904.02, 1310.31, 2904.11);
-    path_67.cubicTo(1315.85, 2907.67, 1318.54, 2911.11, 1321.31, 2914.48);
-    path_67.cubicTo(1328.68, 2923.8, 1339.02, 2929.8, 1349.71, 2934.48);
-    path_67.cubicTo(1366.01, 2932.34, 1378.94, 2923.79, 1388.15, 2911.83);
-    path_67.cubicTo(1380.28, 2904.13, 1374.18, 2894.81, 1370.28, 2884.51);
-    path_67.cubicTo(1368.57, 2879.98, 1367.89, 2874.57, 1370.88, 2869.13);
-    path_67.cubicTo(1370.96, 2868.99, 1371.07, 2868.86, 1371.2, 2868.76);
-    path_67.cubicTo(1371.33, 2868.66, 1371.47, 2868.58, 1371.63, 2868.54);
-    path_67.cubicTo(1371.79, 2868.5, 1371.96, 2868.49, 1372.12, 2868.51);
-    path_67.cubicTo(1372.28, 2868.54, 1372.44, 2868.59, 1372.58, 2868.68);
-    path_67.cubicTo(1376.69, 2870.76, 1380.29, 2873.72, 1383.14, 2877.34);
-    path_67.cubicTo(1387.98, 2882.79, 1393.19, 2887.9, 1398.72, 2892.65);
-    path_67.lineTo(1398.77, 2892.65);
+    path_67.moveTo(size.width * 0.4199249, size.height * 0.9349224);
+    path_67.cubicTo(
+        size.width * 0.4218403,
+        size.height * 0.9294732,
+        size.width * 0.4221795,
+        size.height * 0.9235294,
+        size.width * 0.4209036,
+        size.height * 0.9178668);
+    path_67.cubicTo(
+        size.width * 0.4196007,
+        size.height * 0.9133096,
+        size.width * 0.4168238,
+        size.height * 0.9095443,
+        size.width * 0.4135575,
+        size.height * 0.9062023);
+    path_67.cubicTo(
+        size.width * 0.4016812,
+        size.height * 0.9121816,
+        size.width * 0.3894626,
+        size.height * 0.9173465,
+        size.width * 0.3769799,
+        size.height * 0.9216645);
+    path_67.cubicTo(
+        size.width * 0.3804893,
+        size.height * 0.9320879,
+        size.width * 0.3850165,
+        size.height * 0.9431189,
+        size.width * 0.3939898,
+        size.height * 0.9471105);
+    path_67.cubicTo(
+        size.width * 0.3924467,
+        size.height * 0.9444441,
+        size.width * 0.3917893,
+        size.height * 0.9414803,
+        size.width * 0.3928730,
+        size.height * 0.9387750);
+    path_67.cubicTo(
+        size.width * 0.3928940,
+        size.height * 0.9387298,
+        size.width * 0.3929240,
+        size.height * 0.9386878,
+        size.width * 0.3929631,
+        size.height * 0.9386555);
+    path_67.cubicTo(
+        size.width * 0.3929991,
+        size.height * 0.9386199,
+        size.width * 0.3930441,
+        size.height * 0.9385973,
+        size.width * 0.3930892,
+        size.height * 0.9385844);
+    path_67.cubicTo(
+        size.width * 0.3931372,
+        size.height * 0.9385682,
+        size.width * 0.3931852,
+        size.height * 0.9385650,
+        size.width * 0.3932333,
+        size.height * 0.9385747);
+    path_67.cubicTo(
+        size.width * 0.3932813,
+        size.height * 0.9385811,
+        size.width * 0.3933263,
+        size.height * 0.9385973,
+        size.width * 0.3933684,
+        size.height * 0.9386264);
+    path_67.cubicTo(
+        size.width * 0.3950315,
+        size.height * 0.9397770,
+        size.width * 0.3958391,
+        size.height * 0.9408888,
+        size.width * 0.3966707,
+        size.height * 0.9419780);
+    path_67.cubicTo(
+        size.width * 0.3988832,
+        size.height * 0.9449903,
+        size.width * 0.4019874,
+        size.height * 0.9469295,
+        size.width * 0.4051966,
+        size.height * 0.9484421);
+    path_67.cubicTo(
+        size.width * 0.4100901,
+        size.height * 0.9477505,
+        size.width * 0.4139718,
+        size.height * 0.9449871,
+        size.width * 0.4167367,
+        size.height * 0.9411215);
+    path_67.cubicTo(
+        size.width * 0.4143741,
+        size.height * 0.9386328,
+        size.width * 0.4125428,
+        size.height * 0.9356206,
+        size.width * 0.4113720,
+        size.height * 0.9322915);
+    path_67.cubicTo(
+        size.width * 0.4108586,
+        size.height * 0.9308274,
+        size.width * 0.4106545,
+        size.height * 0.9290789,
+        size.width * 0.4115521,
+        size.height * 0.9273206);
+    path_67.cubicTo(
+        size.width * 0.4115761,
+        size.height * 0.9272754,
+        size.width * 0.4116091,
+        size.height * 0.9272334,
+        size.width * 0.4116482,
+        size.height * 0.9272010);
+    path_67.cubicTo(
+        size.width * 0.4116872,
+        size.height * 0.9271687,
+        size.width * 0.4117292,
+        size.height * 0.9271429,
+        size.width * 0.4117772,
+        size.height * 0.9271299);
+    path_67.cubicTo(
+        size.width * 0.4118253,
+        size.height * 0.9271170,
+        size.width * 0.4118763,
+        size.height * 0.9271138,
+        size.width * 0.4119243,
+        size.height * 0.9271202);
+    path_67.cubicTo(
+        size.width * 0.4119724,
+        size.height * 0.9271299,
+        size.width * 0.4120204,
+        size.height * 0.9271461,
+        size.width * 0.4120624,
+        size.height * 0.9271752);
+    path_67.cubicTo(
+        size.width * 0.4132963,
+        size.height * 0.9278474,
+        size.width * 0.4143771,
+        size.height * 0.9288041,
+        size.width * 0.4152327,
+        size.height * 0.9299741);
+    path_67.cubicTo(
+        size.width * 0.4166857,
+        size.height * 0.9317356,
+        size.width * 0.4182498,
+        size.height * 0.9333872,
+        size.width * 0.4199099,
+        size.height * 0.9349224);
+    path_67.lineTo(size.width * 0.4199249, size.height * 0.9349224);
     path_67.close();
-    path_67.moveTo(1164.4, 2319.2);
-    path_67.cubicTo(1211.21, 2285.85, 1249.4, 2279.68, 1273.92, 2280.66);
-    path_67.cubicTo(1269.64, 2268.32, 1264.35, 2251.98, 1257.42, 2230.27);
-    path_67.cubicTo(1236.98, 2166.22, 1207.18, 2072.82, 1174.42, 2022.13);
-    path_67.cubicTo(1158.8, 2063.52, 1114.42, 2164.13, 1020.64, 2266.87);
-    path_67.cubicTo(1041.24, 2271.34, 1061.47, 2277.39, 1081.14, 2284.97);
-    path_67.cubicTo(1101.29, 2292.7, 1120.7, 2302.22, 1139.14, 2313.42);
-    path_67.lineTo(1164.4, 2319.2);
+    path_67.moveTo(size.width * 0.3495647, size.height * 0.7495798);
+    path_67.cubicTo(
+        size.width * 0.3636175,
+        size.height * 0.7388009,
+        size.width * 0.3750826,
+        size.height * 0.7368067,
+        size.width * 0.3824437,
+        size.height * 0.7371235);
+    path_67.cubicTo(
+        size.width * 0.3811588,
+        size.height * 0.7331351,
+        size.width * 0.3795707,
+        size.height * 0.7278539,
+        size.width * 0.3774902,
+        size.height * 0.7208371);
+    path_67.cubicTo(
+        size.width * 0.3713539,
+        size.height * 0.7001357,
+        size.width * 0.3624077,
+        size.height * 0.6699483,
+        size.width * 0.3525728,
+        size.height * 0.6535650);
+    path_67.cubicTo(
+        size.width * 0.3478835,
+        size.height * 0.6669425,
+        size.width * 0.3345602,
+        size.height * 0.6994602,
+        size.width * 0.3064065,
+        size.height * 0.7326665);
+    path_67.cubicTo(
+        size.width * 0.3125908,
+        size.height * 0.7341112,
+        size.width * 0.3186641,
+        size.height * 0.7360666,
+        size.width * 0.3245692,
+        size.height * 0.7385165);
+    path_67.cubicTo(
+        size.width * 0.3306184,
+        size.height * 0.7410149,
+        size.width * 0.3364455,
+        size.height * 0.7440918,
+        size.width * 0.3419814,
+        size.height * 0.7477117);
+    path_67.lineTo(size.width * 0.3495647, size.height * 0.7495798);
     path_67.close();
-    path_67.moveTo(1143.87, 1853.55);
-    path_67.cubicTo(1088.51, 1889.68, 1034.25, 1901.39, 987.2, 1901.4);
-    path_67.cubicTo(901.45, 1901.4, 839.64, 1862.53, 838.65, 1861.9);
-    path_67.cubicTo(836.766, 1860.69, 835.315, 1858.91, 834.507, 1856.82);
-    path_67.cubicTo(833.698, 1854.72, 833.574, 1852.43, 834.152, 1850.27);
-    path_67.cubicTo(834.731, 1848.1, 835.981, 1846.17, 837.724, 1844.76);
-    path_67.cubicTo(839.466, 1843.35, 841.612, 1842.53, 843.85, 1842.42);
-    path_67.cubicTo(941.95, 1837.42, 974.3, 1770.34, 1002.85, 1711.18);
-    path_67.cubicTo(1005.69, 1705.29, 1008.47, 1699.53, 1011.25, 1693.96);
-    path_67.cubicTo(1043.32, 1629.82, 1090.18, 1605.85, 1092.16, 1604.86);
-    path_67.lineTo(1092.49, 1604.72);
-    path_67.lineTo(1092.6, 1604.65);
-    path_67.cubicTo(1107.52, 1596.05, 1126.21, 1589.74, 1138.91, 1586.04);
-    path_67.cubicTo(1127.03, 1568.13, 1099.85, 1534.23, 1058.25, 1522.53);
-    path_67.cubicTo(1024.25, 1512.98, 999.41, 1523.87, 977.48, 1533.47);
-    path_67.cubicTo(961.3, 1540.55, 946.03, 1547.26, 929.91, 1544.31);
-    path_67.cubicTo(922.51, 1542.97, 911.17, 1539.15, 895.47, 1533.87);
-    path_67.cubicTo(838.15, 1514.57, 731.47, 1478.65, 645.22, 1506.74);
-    path_67.cubicTo(556.76, 1535.56, 450.14, 1620.05, 392.86, 1665.44);
-    path_67.cubicTo(381.47, 1674.44, 372, 1681.97, 365.08, 1687.11);
-    path_67.cubicTo(299.75, 1748.32, 224.08, 1814.49, 219.02, 1818.88);
-    path_67.cubicTo(212.97, 1824.97, 140.56, 1896.88, 65.7504, 1931.06);
-    path_67.cubicTo(78.5804, 1946.66, 147.42, 1984.95, 246.58, 1961.47);
-    path_67.lineTo(247.09, 1961.36);
-    path_67.lineTo(311.25, 1949.6);
-    path_67.cubicTo(313.031, 1949.27, 314.867, 1949.4, 316.583, 1949.98);
-    path_67.cubicTo(318.299, 1950.56, 319.838, 1951.57, 321.053, 1952.92);
-    path_67.cubicTo(322.268, 1954.26, 323.119, 1955.89, 323.524, 1957.66);
-    path_67.cubicTo(323.93, 1959.42, 323.877, 1961.26, 323.37, 1963);
-    path_67.cubicTo(313.37, 1997.39, 301.67, 2057.21, 301.55, 2057.81);
-    path_67.cubicTo(301.555, 2057.84, 301.555, 2057.87, 301.55, 2057.9);
-    path_67.cubicTo(301.55, 2058.03, 301.55, 2058.15, 301.47, 2058.28);
-    path_67.cubicTo(297.87, 2075.09, 297.17, 2101.07, 305.21, 2106.54);
-    path_67.cubicTo(313.85, 2111.54, 365.73, 2103.85, 418.46, 2089.65);
-    path_67.cubicTo(419.356, 2089.4, 420.281, 2089.28, 421.21, 2089.28);
-    path_67.cubicTo(422.724, 2089.28, 424.221, 2089.6, 425.601, 2090.22);
-    path_67.cubicTo(426.981, 2090.84, 428.211, 2091.75, 429.21, 2092.89);
-    path_67.cubicTo(429.7, 2093.45, 448.34, 2114.32, 480.21, 2138.75);
-    path_67.cubicTo(481.12, 2139.45, 482.05, 2140.16, 482.99, 2140.86);
-    path_67.cubicTo(483.93, 2141.56, 484.65, 2142.12, 485.5, 2142.75);
-    path_67.lineTo(486.2, 2143.26);
-    path_67.lineTo(488.73, 2145.13);
-    path_67.cubicTo(490.35, 2146.32, 492.017, 2147.51, 493.73, 2148.7);
-    path_67.cubicTo(497.117, 2151.11, 500.62, 2153.52, 504.24, 2155.95);
-    path_67.cubicTo(506.38, 2157.38, 508.557, 2158.81, 510.77, 2160.24);
-    path_67.cubicTo(512.437, 2161.31, 514.13, 2162.38, 515.85, 2163.45);
-    path_67.cubicTo(516.85, 2164.06, 517.85, 2164.66, 518.8, 2165.27);
-    path_67.cubicTo(519.59, 2165.76, 520.39, 2166.27, 521.19, 2166.72);
-    path_67.lineTo(524.64, 2168.79);
-    path_67.cubicTo(528.29, 2170.94, 532.03, 2173.08, 535.86, 2175.17);
-    path_67.lineTo(539.4, 2177.09);
-    path_67.lineTo(539.62, 2177.21);
-    path_67.lineTo(543.38, 2179.21);
-    path_67.cubicTo(544.61, 2179.86, 545.86, 2180.49, 547.1, 2181.12);
-    path_67.cubicTo(547.88, 2181.52, 548.66, 2181.91, 549.44, 2182.29);
-    path_67.cubicTo(550.14, 2182.65, 550.83, 2182.99, 551.53, 2183.29);
-    path_67.cubicTo(552.67, 2183.86, 553.83, 2184.42, 555, 2184.97);
-    path_67.lineTo(555.19, 2185.06);
-    path_67.cubicTo(556.43, 2185.66, 557.68, 2186.25, 558.94, 2186.83);
-    path_67.cubicTo(561.894, 2188.2, 564.874, 2189.53, 567.88, 2190.83);
-    path_67.cubicTo(569.04, 2191.33, 570.21, 2191.83, 571.39, 2192.32);
-    path_67.cubicTo(572.57, 2192.81, 573.8, 2193.32, 575.01, 2193.81);
-    path_67.lineTo(576.89, 2194.57);
-    path_67.lineTo(577.34, 2194.74);
-    path_67.cubicTo(578.84, 2195.35, 580.34, 2195.93, 581.87, 2196.51);
-    path_67.cubicTo(585.657, 2197.96, 589.5, 2199.34, 593.4, 2200.65);
-    path_67.cubicTo(594.72, 2201.11, 596.04, 2201.54, 597.4, 2201.98);
-    path_67.lineTo(597.72, 2202.08);
-    path_67.lineTo(598.09, 2202.2);
-    path_67.cubicTo(599.34, 2202.6, 600.59, 2203, 601.84, 2203.38);
-    path_67.lineTo(603.99, 2204.03);
-    path_67.lineTo(605.64, 2204.53);
-    path_67.lineTo(606.35, 2204.74);
-    path_67.lineTo(608.84, 2205.45);
-    path_67.lineTo(610.18, 2205.83);
-    path_67.lineTo(612.1, 2206.35);
-    path_67.lineTo(614.4, 2206.97);
-    path_67.lineTo(614.74, 2207.06);
-    path_67.cubicTo(615.96, 2207.38, 617.18, 2207.69, 618.41, 2207.99);
-    path_67.lineTo(618.68, 2208.06);
-    path_67.lineTo(622.45, 2208.97);
-    path_67.lineTo(626.07, 2209.79);
-    path_67.cubicTo(627.58, 2210.12, 629.07, 2210.44, 630.62, 2210.79);
-    path_67.cubicTo(632.17, 2211.14, 633.37, 2211.35, 634.75, 2211.6);
-    path_67.cubicTo(635.91, 2211.82, 637.08, 2212.04, 638.25, 2212.24);
-    path_67.lineTo(640.25, 2212.59);
-    path_67.cubicTo(640.67, 2212.67, 641.1, 2212.74, 641.53, 2212.8);
-    path_67.cubicTo(642.21, 2212.92, 642.89, 2213.03, 643.58, 2213.13);
-    path_67.cubicTo(644.8, 2213.32, 646.02, 2213.51, 647.25, 2213.68);
-    path_67.cubicTo(659.086, 2215.38, 671.023, 2216.27, 682.98, 2216.36);
-    path_67.cubicTo(684.62, 2216.36, 686.26, 2216.36, 687.91, 2216.36);
-    path_67.cubicTo(688.91, 2216.36, 690, 2216.36, 691.04, 2216.3);
-    path_67.cubicTo(691.76, 2216.3, 692.48, 2216.28, 693.2, 2216.24);
-    path_67.lineTo(695.61, 2216.15);
-    path_67.cubicTo(696.5, 2216.15, 697.39, 2216.07, 698.29, 2216.02);
-    path_67.lineTo(700.82, 2215.88);
-    path_67.lineTo(702.92, 2215.74);
-    path_67.lineTo(705.71, 2215.53);
-    path_67.lineTo(708.34, 2215.3);
-    path_67.lineTo(708.94, 2215.24);
-    path_67.cubicTo(709.85, 2215.16, 710.76, 2215.07, 711.68, 2214.96);
-    path_67.lineTo(712.11, 2214.96);
-    path_67.cubicTo(713.87, 2214.77, 715.64, 2214.56, 717.41, 2214.33);
-    path_67.lineTo(718, 2214.26);
-    path_67.lineTo(718.52, 2214.19);
-    path_67.cubicTo(720.19, 2213.97, 721.86, 2213.73, 723.52, 2213.48);
-    path_67.lineTo(724.42, 2213.34);
-    path_67.cubicTo(726.16, 2213.06, 727.91, 2212.77, 729.65, 2212.46);
-    path_67.lineTo(730.21, 2212.36);
-    path_67.cubicTo(732.09, 2212.02, 733.974, 2211.66, 735.86, 2211.28);
-    path_67.cubicTo(738.367, 2210.77, 740.847, 2210.24, 743.3, 2209.68);
-    path_67.lineTo(743.55, 2209.68);
-    path_67.cubicTo(745.77, 2209.18, 747.95, 2208.68, 750.12, 2208.12);
-    path_67.lineTo(750.92, 2207.93);
-    path_67.lineTo(751.71, 2207.73);
-    path_67.cubicTo(753.824, 2207.2, 755.914, 2206.65, 757.98, 2206.1);
-    path_67.lineTo(758.48, 2205.96);
-    path_67.cubicTo(760.48, 2205.42, 762.43, 2204.86, 764.33, 2204.29);
-    path_67.lineTo(765.53, 2203.95);
-    path_67.cubicTo(767.08, 2203.49, 768.59, 2203.01, 770.12, 2202.53);
-    path_67.cubicTo(771.65, 2202.05, 772.88, 2201.66, 774.25, 2201.2);
-    path_67.cubicTo(775.62, 2200.74, 776.99, 2200.3, 778.33, 2199.84);
-    path_67.lineTo(778.94, 2199.63);
-    path_67.cubicTo(781.16, 2198.87, 783.35, 2198.08, 785.51, 2197.27);
-    path_67.lineTo(785.57, 2197.27);
-    path_67.cubicTo(787.71, 2196.47, 789.824, 2195.65, 791.91, 2194.82);
-    path_67.cubicTo(793.997, 2193.99, 795.997, 2193.17, 797.91, 2192.37);
-    path_67.cubicTo(879.91, 2157.57, 919.32, 2096.37, 949.6, 2049.31);
-    path_67.cubicTo(963.48, 2027.76, 975.46, 2009.14, 988.88, 1998.06);
-    path_67.cubicTo(1006.38, 1983.6, 1029.79, 1966.32, 1052.43, 1949.6);
-    path_67.cubicTo(1085.86, 1924.92, 1123.74, 1896.95, 1133.07, 1884.34);
-    path_67.cubicTo(1139.34, 1875.5, 1142.47, 1863.81, 1143.87, 1853.55);
+    path_67.moveTo(size.width * 0.3434014, size.height * 0.5990789);
+    path_67.cubicTo(
+        size.width * 0.3267817,
+        size.height * 0.6107563,
+        size.width * 0.3104923,
+        size.height * 0.6145410,
+        size.width * 0.2963675,
+        size.height * 0.6145443);
+    path_67.cubicTo(
+        size.width * 0.2706244,
+        size.height * 0.6145443,
+        size.width * 0.2520684,
+        size.height * 0.6019813,
+        size.width * 0.2517712,
+        size.height * 0.6017776);
+    path_67.cubicTo(
+        size.width * 0.2512056,
+        size.height * 0.6013866,
+        size.width * 0.2507700,
+        size.height * 0.6008112,
+        size.width * 0.2505275,
+        size.height * 0.6001357);
+    path_67.cubicTo(
+        size.width * 0.2502846,
+        size.height * 0.5994570,
+        size.width * 0.2502474,
+        size.height * 0.5987169,
+        size.width * 0.2504209,
+        size.height * 0.5980187);
+    path_67.cubicTo(
+        size.width * 0.2505947,
+        size.height * 0.5973174,
+        size.width * 0.2509700,
+        size.height * 0.5966936,
+        size.width * 0.2514932,
+        size.height * 0.5962379);
+    path_67.cubicTo(
+        size.width * 0.2520162,
+        size.height * 0.5957822,
+        size.width * 0.2526605,
+        size.height * 0.5955171,
+        size.width * 0.2533323,
+        size.height * 0.5954816);
+    path_67.cubicTo(
+        size.width * 0.2827829,
+        size.height * 0.5938655,
+        size.width * 0.2924947,
+        size.height * 0.5721849,
+        size.width * 0.3010657,
+        size.height * 0.5530640);
+    path_67.cubicTo(
+        size.width * 0.3019183,
+        size.height * 0.5511603,
+        size.width * 0.3027529,
+        size.height * 0.5492986,
+        size.width * 0.3035875,
+        size.height * 0.5474984);
+    path_67.cubicTo(
+        size.width * 0.3132153,
+        size.height * 0.5267679,
+        size.width * 0.3272831,
+        size.height * 0.5190207,
+        size.width * 0.3278775,
+        size.height * 0.5187007);
+    path_67.lineTo(size.width * 0.3279766, size.height * 0.5186555);
+    path_67.lineTo(size.width * 0.3280096, size.height * 0.5186328);
+    path_67.cubicTo(
+        size.width * 0.3324887,
+        size.height * 0.5158533,
+        size.width * 0.3380997,
+        size.height * 0.5138138,
+        size.width * 0.3419123,
+        size.height * 0.5126180);
+    path_67.cubicTo(
+        size.width * 0.3383458,
+        size.height * 0.5068293,
+        size.width * 0.3301861,
+        size.height * 0.4958727,
+        size.width * 0.3176974,
+        size.height * 0.4920911);
+    path_67.cubicTo(
+        size.width * 0.3074902,
+        size.height * 0.4890045,
+        size.width * 0.3000330,
+        size.height * 0.4925242,
+        size.width * 0.2934494,
+        size.height * 0.4956270);
+    path_67.cubicTo(
+        size.width * 0.2885920,
+        size.height * 0.4979153,
+        size.width * 0.2840078,
+        size.height * 0.5000840,
+        size.width * 0.2791684,
+        size.height * 0.4991306);
+    path_67.cubicTo(
+        size.width * 0.2769469,
+        size.height * 0.4986975,
+        size.width * 0.2735425,
+        size.height * 0.4974628,
+        size.width * 0.2688292,
+        size.height * 0.4957563);
+    path_67.cubicTo(
+        size.width * 0.2516211,
+        size.height * 0.4895184,
+        size.width * 0.2195947,
+        size.height * 0.4779089,
+        size.width * 0.1937016,
+        size.height * 0.4869877);
+    path_67.cubicTo(
+        size.width * 0.1671450,
+        size.height * 0.4963025,
+        size.width * 0.1351366,
+        size.height * 0.5236102,
+        size.width * 0.1179406,
+        size.height * 0.5382805);
+    path_67.cubicTo(
+        size.width * 0.1145212,
+        size.height * 0.5411894,
+        size.width * 0.1116782,
+        size.height * 0.5436231,
+        size.width * 0.1096007,
+        size.height * 0.5452844);
+    path_67.cubicTo(
+        size.width * 0.08998799,
+        size.height * 0.5650679,
+        size.width * 0.06727109,
+        size.height * 0.5864544,
+        size.width * 0.06575203,
+        size.height * 0.5878733);
+    path_67.cubicTo(
+        size.width * 0.06393576,
+        size.height * 0.5898416,
+        size.width * 0.04219754,
+        size.height * 0.6130834,
+        size.width * 0.01973894,
+        size.height * 0.6241306);
+    path_67.cubicTo(
+        size.width * 0.02359063,
+        size.height * 0.6291726,
+        size.width * 0.04425698,
+        size.height * 0.6415482,
+        size.width * 0.07402582,
+        size.height * 0.6339593);
+    path_67.lineTo(size.width * 0.07417893, size.height * 0.6339237);
+    path_67.lineTo(size.width * 0.09344041, size.height * 0.6301228);
+    path_67.cubicTo(
+        size.width * 0.09397508,
+        size.height * 0.6300162,
+        size.width * 0.09452627,
+        size.height * 0.6300582,
+        size.width * 0.09504143,
+        size.height * 0.6302456);
+    path_67.cubicTo(
+        size.width * 0.09555659,
+        size.height * 0.6304331,
+        size.width * 0.09601861,
+        size.height * 0.6307595,
+        size.width * 0.09638337,
+        size.height * 0.6311959);
+    path_67.cubicTo(
+        size.width * 0.09674812,
+        size.height * 0.6316290,
+        size.width * 0.09700360,
+        size.height * 0.6321558,
+        size.width * 0.09712519,
+        size.height * 0.6327279);
+    path_67.cubicTo(
+        size.width * 0.09724707,
+        size.height * 0.6332967,
+        size.width * 0.09723116,
+        size.height * 0.6338914,
+        size.width * 0.09707896,
+        size.height * 0.6344538);
+    path_67.cubicTo(
+        size.width * 0.09407685,
+        size.height * 0.6455688,
+        size.width * 0.09056440,
+        size.height * 0.6649030,
+        size.width * 0.09052837,
+        size.height * 0.6650970);
+    path_67.cubicTo(
+        size.width * 0.09052987,
+        size.height * 0.6651067,
+        size.width * 0.09052987,
+        size.height * 0.6651164,
+        size.width * 0.09052837,
+        size.height * 0.6651261);
+    path_67.cubicTo(
+        size.width * 0.09052837,
+        size.height * 0.6651681,
+        size.width * 0.09052837,
+        size.height * 0.6652069,
+        size.width * 0.09050435,
+        size.height * 0.6652489);
+    path_67.cubicTo(
+        size.width * 0.08942360,
+        size.height * 0.6706820,
+        size.width * 0.08921345,
+        size.height * 0.6790789,
+        size.width * 0.09162714,
+        size.height * 0.6808468);
+    path_67.cubicTo(
+        size.width * 0.09422095,
+        size.height * 0.6824628,
+        size.width * 0.1097959,
+        size.height * 0.6799774,
+        size.width * 0.1256259,
+        size.height * 0.6753878);
+    path_67.cubicTo(
+        size.width * 0.1258949,
+        size.height * 0.6753070,
+        size.width * 0.1261726,
+        size.height * 0.6752683,
+        size.width * 0.1264515,
+        size.height * 0.6752683);
+    path_67.cubicTo(
+        size.width * 0.1269060,
+        size.height * 0.6752683,
+        size.width * 0.1273554,
+        size.height * 0.6753717,
+        size.width * 0.1277697,
+        size.height * 0.6755721);
+    path_67.cubicTo(
+        size.width * 0.1281840,
+        size.height * 0.6757725,
+        size.width * 0.1285533,
+        size.height * 0.6760666,
+        size.width * 0.1288532,
+        size.height * 0.6764350);
+    path_67.cubicTo(
+        size.width * 0.1290003,
+        size.height * 0.6766160,
+        size.width * 0.1345962,
+        size.height * 0.6833613,
+        size.width * 0.1441639,
+        size.height * 0.6912573);
+    path_67.cubicTo(
+        size.width * 0.1444371,
+        size.height * 0.6914835,
+        size.width * 0.1447163,
+        size.height * 0.6917130,
+        size.width * 0.1449985,
+        size.height * 0.6919392);
+    path_67.cubicTo(
+        size.width * 0.1452807,
+        size.height * 0.6921655,
+        size.width * 0.1454968,
+        size.height * 0.6923465,
+        size.width * 0.1457520,
+        size.height * 0.6925501);
+    path_67.lineTo(size.width * 0.1459622, size.height * 0.6927149);
+    path_67.lineTo(size.width * 0.1467217, size.height * 0.6933193);
+    path_67.cubicTo(
+        size.width * 0.1472080,
+        size.height * 0.6937039,
+        size.width * 0.1477085,
+        size.height * 0.6940886,
+        size.width * 0.1482228,
+        size.height * 0.6944732);
+    path_67.cubicTo(
+        size.width * 0.1492396,
+        size.height * 0.6952521,
+        size.width * 0.1502912,
+        size.height * 0.6960310,
+        size.width * 0.1513780,
+        size.height * 0.6968164);
+    path_67.cubicTo(
+        size.width * 0.1520204,
+        size.height * 0.6972786,
+        size.width * 0.1526740,
+        size.height * 0.6977408,
+        size.width * 0.1533383,
+        size.height * 0.6982030);
+    path_67.cubicTo(
+        size.width * 0.1538388,
+        size.height * 0.6985488,
+        size.width * 0.1543470,
+        size.height * 0.6988946,
+        size.width * 0.1548634,
+        size.height * 0.6992405);
+    path_67.cubicTo(
+        size.width * 0.1551636,
+        size.height * 0.6994376,
+        size.width * 0.1554638,
+        size.height * 0.6996315,
+        size.width * 0.1557490,
+        size.height * 0.6998287);
+    path_67.cubicTo(
+        size.width * 0.1559862,
+        size.height * 0.6999871,
+        size.width * 0.1562264,
+        size.height * 0.7001519,
+        size.width * 0.1564665,
+        size.height * 0.7002973);
+    path_67.lineTo(size.width * 0.1575023, size.height * 0.7009664);
+    path_67.cubicTo(
+        size.width * 0.1585980,
+        size.height * 0.7016613,
+        size.width * 0.1597208,
+        size.height * 0.7023529,
+        size.width * 0.1608706,
+        size.height * 0.7030284);
+    path_67.lineTo(size.width * 0.1619334, size.height * 0.7036490);
+    path_67.lineTo(size.width * 0.1619994, size.height * 0.7036878);
+    path_67.lineTo(size.width * 0.1631282, size.height * 0.7043342);
+    path_67.cubicTo(
+        size.width * 0.1634974,
+        size.height * 0.7045443,
+        size.width * 0.1638727,
+        size.height * 0.7047479,
+        size.width * 0.1642450,
+        size.height * 0.7049515);
+    path_67.cubicTo(
+        size.width * 0.1644791,
+        size.height * 0.7050808,
+        size.width * 0.1647133,
+        size.height * 0.7052069,
+        size.width * 0.1649475,
+        size.height * 0.7053297);
+    path_67.cubicTo(
+        size.width * 0.1651576,
+        size.height * 0.7054460,
+        size.width * 0.1653648,
+        size.height * 0.7055559,
+        size.width * 0.1655749,
+        size.height * 0.7056529);
+    path_67.cubicTo(
+        size.width * 0.1659171,
+        size.height * 0.7058371,
+        size.width * 0.1662654,
+        size.height * 0.7060181,
+        size.width * 0.1666166,
+        size.height * 0.7061959);
+    path_67.lineTo(size.width * 0.1666737, size.height * 0.7062250);
+    path_67.cubicTo(
+        size.width * 0.1670459,
+        size.height * 0.7064189,
+        size.width * 0.1674212,
+        size.height * 0.7066096,
+        size.width * 0.1677995,
+        size.height * 0.7067970);
+    path_67.cubicTo(
+        size.width * 0.1686863,
+        size.height * 0.7072398,
+        size.width * 0.1695809,
+        size.height * 0.7076697,
+        size.width * 0.1704833,
+        size.height * 0.7080899);
+    path_67.cubicTo(
+        size.width * 0.1708316,
+        size.height * 0.7082515,
+        size.width * 0.1711828,
+        size.height * 0.7084131,
+        size.width * 0.1715371,
+        size.height * 0.7085714);
+    path_67.cubicTo(
+        size.width * 0.1718913,
+        size.height * 0.7087298,
+        size.width * 0.1722606,
+        size.height * 0.7088946,
+        size.width * 0.1726238,
+        size.height * 0.7090530);
+    path_67.lineTo(size.width * 0.1731882, size.height * 0.7092986);
+    path_67.lineTo(size.width * 0.1733233, size.height * 0.7093536);
+    path_67.cubicTo(
+        size.width * 0.1737736,
+        size.height * 0.7095507,
+        size.width * 0.1742240,
+        size.height * 0.7097382,
+        size.width * 0.1746833,
+        size.height * 0.7099257);
+    path_67.cubicTo(
+        size.width * 0.1758202,
+        size.height * 0.7103943,
+        size.width * 0.1769739,
+        size.height * 0.7108403,
+        size.width * 0.1781447,
+        size.height * 0.7112637);
+    path_67.cubicTo(
+        size.width * 0.1785410,
+        size.height * 0.7114124,
+        size.width * 0.1789373,
+        size.height * 0.7115514,
+        size.width * 0.1793455,
+        size.height * 0.7116936);
+    path_67.lineTo(size.width * 0.1794416, size.height * 0.7117259);
+    path_67.lineTo(size.width * 0.1795527, size.height * 0.7117647);
+    path_67.cubicTo(
+        size.width * 0.1799279,
+        size.height * 0.7118940,
+        size.width * 0.1803032,
+        size.height * 0.7120233,
+        size.width * 0.1806785,
+        size.height * 0.7121461);
+    path_67.lineTo(size.width * 0.1813239, size.height * 0.7123562);
+    path_67.lineTo(size.width * 0.1818193, size.height * 0.7125178);
+    path_67.lineTo(size.width * 0.1820324, size.height * 0.7125856);
+    path_67.lineTo(size.width * 0.1827799, size.height * 0.7128151);
+    path_67.lineTo(size.width * 0.1831822, size.height * 0.7129379);
+    path_67.lineTo(size.width * 0.1837586, size.height * 0.7131060);
+    path_67.lineTo(size.width * 0.1844491, size.height * 0.7133064);
+    path_67.lineTo(size.width * 0.1845512, size.height * 0.7133355);
+    path_67.cubicTo(
+        size.width * 0.1849174,
+        size.height * 0.7134389,
+        size.width * 0.1852837,
+        size.height * 0.7135391,
+        size.width * 0.1856530,
+        size.height * 0.7136361);
+    path_67.lineTo(size.width * 0.1857340, size.height * 0.7136587);
+    path_67.lineTo(size.width * 0.1868658, size.height * 0.7139528);
+    path_67.lineTo(size.width * 0.1879526, size.height * 0.7142178);
+    path_67.cubicTo(
+        size.width * 0.1884059,
+        size.height * 0.7143245,
+        size.width * 0.1888532,
+        size.height * 0.7144279,
+        size.width * 0.1893185,
+        size.height * 0.7145410);
+    path_67.cubicTo(
+        size.width * 0.1897838,
+        size.height * 0.7146542,
+        size.width * 0.1901441,
+        size.height * 0.7147220,
+        size.width * 0.1905584,
+        size.height * 0.7148028);
+    path_67.cubicTo(
+        size.width * 0.1909066,
+        size.height * 0.7148739,
+        size.width * 0.1912579,
+        size.height * 0.7149451,
+        size.width * 0.1916091,
+        size.height * 0.7150097);
+    path_67.lineTo(size.width * 0.1922095, size.height * 0.7151228);
+    path_67.cubicTo(
+        size.width * 0.1923356,
+        size.height * 0.7151487,
+        size.width * 0.1924647,
+        size.height * 0.7151713,
+        size.width * 0.1925938,
+        size.height * 0.7151907);
+    path_67.cubicTo(
+        size.width * 0.1927980,
+        size.height * 0.7152295,
+        size.width * 0.1930021,
+        size.height * 0.7152650,
+        size.width * 0.1932092,
+        size.height * 0.7152973);
+    path_67.cubicTo(
+        size.width * 0.1935755,
+        size.height * 0.7153588,
+        size.width * 0.1939418,
+        size.height * 0.7154202,
+        size.width * 0.1943110,
+        size.height * 0.7154751);
+    path_67.cubicTo(
+        size.width * 0.1978643,
+        size.height * 0.7160246,
+        size.width * 0.2014479,
+        size.height * 0.7163122,
+        size.width * 0.2050375,
+        size.height * 0.7163413);
+    path_67.cubicTo(
+        size.width * 0.2055299,
+        size.height * 0.7163413,
+        size.width * 0.2060222,
+        size.height * 0.7163413,
+        size.width * 0.2065176,
+        size.height * 0.7163413);
+    path_67.cubicTo(
+        size.width * 0.2068178,
+        size.height * 0.7163413,
+        size.width * 0.2071450,
+        size.height * 0.7163413,
+        size.width * 0.2074572,
+        size.height * 0.7163219);
+    path_67.cubicTo(
+        size.width * 0.2076734,
+        size.height * 0.7163219,
+        size.width * 0.2078895,
+        size.height * 0.7163154,
+        size.width * 0.2081057,
+        size.height * 0.7163025);
+    path_67.lineTo(size.width * 0.2088292, size.height * 0.7162734);
+    path_67.cubicTo(
+        size.width * 0.2090964,
+        size.height * 0.7162734,
+        size.width * 0.2093636,
+        size.height * 0.7162476,
+        size.width * 0.2096337,
+        size.height * 0.7162314);
+    path_67.lineTo(size.width * 0.2103933, size.height * 0.7161862);
+    path_67.lineTo(size.width * 0.2110237, size.height * 0.7161409);
+    path_67.lineTo(size.width * 0.2118613, size.height * 0.7160730);
+    path_67.lineTo(size.width * 0.2126509, size.height * 0.7159987);
+    path_67.lineTo(size.width * 0.2128310, size.height * 0.7159793);
+    path_67.cubicTo(
+        size.width * 0.2131042,
+        size.height * 0.7159535,
+        size.width * 0.2133774,
+        size.height * 0.7159244,
+        size.width * 0.2136536,
+        size.height * 0.7158888);
+    path_67.lineTo(size.width * 0.2137826, size.height * 0.7158888);
+    path_67.cubicTo(
+        size.width * 0.2143110,
+        size.height * 0.7158274,
+        size.width * 0.2148424,
+        size.height * 0.7157595,
+        size.width * 0.2153738,
+        size.height * 0.7156852);
+    path_67.lineTo(size.width * 0.2155509, size.height * 0.7156626);
+    path_67.lineTo(size.width * 0.2157070, size.height * 0.7156399);
+    path_67.cubicTo(
+        size.width * 0.2162083,
+        size.height * 0.7155688,
+        size.width * 0.2167097,
+        size.height * 0.7154913,
+        size.width * 0.2172080,
+        size.height * 0.7154105);
+    path_67.lineTo(size.width * 0.2174782, size.height * 0.7153652);
+    path_67.cubicTo(
+        size.width * 0.2180006,
+        size.height * 0.7152747,
+        size.width * 0.2185260,
+        size.height * 0.7151810,
+        size.width * 0.2190483,
+        size.height * 0.7150808);
+    path_67.lineTo(size.width * 0.2192165, size.height * 0.7150485);
+    path_67.cubicTo(
+        size.width * 0.2197808,
+        size.height * 0.7149386,
+        size.width * 0.2203464,
+        size.height * 0.7148222,
+        size.width * 0.2209126,
+        size.height * 0.7146994);
+    path_67.cubicTo(
+        size.width * 0.2216653,
+        size.height * 0.7145346,
+        size.width * 0.2224098,
+        size.height * 0.7143633,
+        size.width * 0.2231462,
+        size.height * 0.7141823);
+    path_67.lineTo(size.width * 0.2232213, size.height * 0.7141823);
+    path_67.cubicTo(
+        size.width * 0.2238877,
+        size.height * 0.7140207,
+        size.width * 0.2245422,
+        size.height * 0.7138591,
+        size.width * 0.2251936,
+        size.height * 0.7136781);
+    path_67.lineTo(size.width * 0.2254338, size.height * 0.7136167);
+    path_67.lineTo(size.width * 0.2256710, size.height * 0.7135520);
+    path_67.cubicTo(
+        size.width * 0.2263056,
+        size.height * 0.7133807,
+        size.width * 0.2269331,
+        size.height * 0.7132030,
+        size.width * 0.2275533,
+        size.height * 0.7130252);
+    path_67.lineTo(size.width * 0.2277034, size.height * 0.7129800);
+    path_67.cubicTo(
+        size.width * 0.2283038,
+        size.height * 0.7128054,
+        size.width * 0.2288892,
+        size.height * 0.7126244,
+        size.width * 0.2294596,
+        size.height * 0.7124402);
+    path_67.lineTo(size.width * 0.2298199, size.height * 0.7123303);
+    path_67.cubicTo(
+        size.width * 0.2302852,
+        size.height * 0.7121816,
+        size.width * 0.2307385,
+        size.height * 0.7120265,
+        size.width * 0.2311978,
+        size.height * 0.7118714);
+    path_67.cubicTo(
+        size.width * 0.2316572,
+        size.height * 0.7117162,
+        size.width * 0.2320264,
+        size.height * 0.7115902,
+        size.width * 0.2324377,
+        size.height * 0.7114415);
+    path_67.cubicTo(
+        size.width * 0.2328490,
+        size.height * 0.7112928,
+        size.width * 0.2332603,
+        size.height * 0.7111506,
+        size.width * 0.2336626,
+        size.height * 0.7110019);
+    path_67.lineTo(size.width * 0.2338457, size.height * 0.7109341);
+    path_67.cubicTo(
+        size.width * 0.2345122,
+        size.height * 0.7106884,
+        size.width * 0.2351696,
+        size.height * 0.7104331,
+        size.width * 0.2358181,
+        size.height * 0.7101713);
+    path_67.lineTo(size.width * 0.2358361, size.height * 0.7101713);
+    path_67.cubicTo(
+        size.width * 0.2364785,
+        size.height * 0.7099127,
+        size.width * 0.2371132,
+        size.height * 0.7096477,
+        size.width * 0.2377394,
+        size.height * 0.7093794);
+    path_67.cubicTo(
+        size.width * 0.2383660,
+        size.height * 0.7091112,
+        size.width * 0.2389664,
+        size.height * 0.7088462,
+        size.width * 0.2395407,
+        size.height * 0.7085876);
+    path_67.cubicTo(
+        size.width * 0.2641579,
+        size.height * 0.6973400,
+        size.width * 0.2759892,
+        size.height * 0.6775598,
+        size.width * 0.2850796,
+        size.height * 0.6623497);
+    path_67.cubicTo(
+        size.width * 0.2892465,
+        size.height * 0.6553846,
+        size.width * 0.2928430,
+        size.height * 0.6493665,
+        size.width * 0.2968718,
+        size.height * 0.6457854);
+    path_67.cubicTo(
+        size.width * 0.3021255,
+        size.height * 0.6411118,
+        size.width * 0.3091534,
+        size.height * 0.6355268,
+        size.width * 0.3159502,
+        size.height * 0.6301228);
+    path_67.cubicTo(
+        size.width * 0.3259862,
+        size.height * 0.6221461,
+        size.width * 0.3373582,
+        size.height * 0.6131060,
+        size.width * 0.3401591,
+        size.height * 0.6090304);
+    path_67.cubicTo(
+        size.width * 0.3420414,
+        size.height * 0.6061732,
+        size.width * 0.3429811,
+        size.height * 0.6023950,
+        size.width * 0.3434014,
+        size.height * 0.5990789);
     path_67.close();
-    path_67.moveTo(1134.62, 3059.8);
-    path_67.cubicTo(1145.68, 3046.8, 1143.03, 3026.49, 1140.46, 3015.52);
-    path_67.cubicTo(1132.72, 2982.47, 1094.76, 2927.36, 1083.29, 2918.44);
-    path_67.cubicTo(1078.47, 2914.7, 1070.48, 2909.7, 1062.29, 2904.88);
-    path_67.cubicTo(1054.1, 2900.06, 1045.71, 2895.4, 1040.09, 2892.34);
-    path_67.cubicTo(1027.73, 2893.01, 1015.47, 2893.34, 1003.31, 2893.34);
-    path_67.cubicTo(946.83, 2893.34, 892.52, 2886.47, 841.61, 2872.49);
-    path_67.cubicTo(813.843, 2864.92, 786.686, 2855.26, 760.37, 2843.6);
-    path_67.cubicTo(762.289, 2854.43, 765.05, 2865.08, 768.63, 2875.48);
-    path_67.cubicTo(778.24, 2903.35, 796.5, 2936.61, 831.06, 2958.65);
-    path_67.cubicTo(872.8, 2985.26, 918.5, 2983.86, 951.89, 2982.84);
-    path_67.cubicTo(978.28, 2982.04, 999.13, 2981.39, 1009.89, 2994.73);
-    path_67.cubicTo(1015.31, 3001.45, 1019.55, 3009.96, 1024.03, 3018.97);
-    path_67.cubicTo(1036.41, 3043.82, 1049.2, 3069.52, 1089.1, 3072.37);
-    path_67.cubicTo(1090.57, 3072.47, 1092.01, 3072.55, 1093.42, 3072.6);
-    path_67.cubicTo(1083.71, 3062.48, 1076.6, 3049.91, 1079.93, 3038.93);
-    path_67.cubicTo(1079.98, 3038.78, 1080.06, 3038.64, 1080.17, 3038.52);
-    path_67.cubicTo(1080.28, 3038.4, 1080.42, 3038.3, 1080.56, 3038.24);
-    path_67.cubicTo(1080.71, 3038.18, 1080.87, 3038.14, 1081.03, 3038.15);
-    path_67.cubicTo(1081.19, 3038.15, 1081.35, 3038.18, 1081.5, 3038.25);
-    path_67.cubicTo(1086.17, 3040.46, 1090.36, 3043.56, 1093.84, 3047.38);
-    path_67.cubicTo(1101.92, 3055.63, 1112.4, 3062.38, 1122.43, 3068.48);
-    path_67.cubicTo(1127.12, 3066.59, 1131.3, 3063.62, 1134.62, 3059.8);
+    path_67.moveTo(size.width * 0.3406244, size.height * 0.9889463);
+    path_67.cubicTo(
+        size.width * 0.3439448,
+        size.height * 0.9847447,
+        size.width * 0.3431492,
+        size.height * 0.9781803,
+        size.width * 0.3423777,
+        size.height * 0.9746348);
+    path_67.cubicTo(
+        size.width * 0.3400540,
+        size.height * 0.9639528,
+        size.width * 0.3286581,
+        size.height * 0.9461409,
+        size.width * 0.3252147,
+        size.height * 0.9432579);
+    path_67.cubicTo(
+        size.width * 0.3237676,
+        size.height * 0.9420491,
+        size.width * 0.3213690,
+        size.height * 0.9404331,
+        size.width * 0.3189102,
+        size.height * 0.9388752);
+    path_67.cubicTo(
+        size.width * 0.3164515,
+        size.height * 0.9373174,
+        size.width * 0.3139328,
+        size.height * 0.9358112,
+        size.width * 0.3122456,
+        size.height * 0.9348222);
+    path_67.cubicTo(
+        size.width * 0.3085350,
+        size.height * 0.9350388,
+        size.width * 0.3048544,
+        size.height * 0.9351454,
+        size.width * 0.3012038,
+        size.height * 0.9351454);
+    path_67.cubicTo(
+        size.width * 0.2842480,
+        size.height * 0.9351454,
+        size.width * 0.2679436,
+        size.height * 0.9329250,
+        size.width * 0.2526599,
+        size.height * 0.9284066);
+    path_67.cubicTo(
+        size.width * 0.2443239,
+        size.height * 0.9259599,
+        size.width * 0.2361711,
+        size.height * 0.9228378,
+        size.width * 0.2282708,
+        size.height * 0.9190692);
+    path_67.cubicTo(
+        size.width * 0.2288469,
+        size.height * 0.9225695,
+        size.width * 0.2296758,
+        size.height * 0.9260116,
+        size.width * 0.2307505,
+        size.height * 0.9293730);
+    path_67.cubicTo(
+        size.width * 0.2336355,
+        size.height * 0.9383807,
+        size.width * 0.2391174,
+        size.height * 0.9491306,
+        size.width * 0.2494926,
+        size.height * 0.9562540);
+    path_67.cubicTo(
+        size.width * 0.2620234,
+        size.height * 0.9648546,
+        size.width * 0.2757430,
+        size.height * 0.9644021,
+        size.width * 0.2857670,
+        size.height * 0.9640724);
+    path_67.cubicTo(
+        size.width * 0.2936896,
+        size.height * 0.9638138,
+        size.width * 0.2999490,
+        size.height * 0.9636037,
+        size.width * 0.3031792,
+        size.height * 0.9679153);
+    path_67.cubicTo(
+        size.width * 0.3048064,
+        size.height * 0.9700873,
+        size.width * 0.3060793,
+        size.height * 0.9728378,
+        size.width * 0.3074242,
+        size.height * 0.9757498);
+    path_67.cubicTo(
+        size.width * 0.3111408,
+        size.height * 0.9837815,
+        size.width * 0.3149805,
+        size.height * 0.9920879,
+        size.width * 0.3269589,
+        size.height * 0.9930090);
+    path_67.cubicTo(
+        size.width * 0.3274002,
+        size.height * 0.9930414,
+        size.width * 0.3278325,
+        size.height * 0.9930672,
+        size.width * 0.3282558,
+        size.height * 0.9930834);
+    path_67.cubicTo(
+        size.width * 0.3253407,
+        size.height * 0.9898125,
+        size.width * 0.3232062,
+        size.height * 0.9857498,
+        size.width * 0.3242059,
+        size.height * 0.9822010);
+    path_67.cubicTo(
+        size.width * 0.3242210,
+        size.height * 0.9821526,
+        size.width * 0.3242450,
+        size.height * 0.9821073,
+        size.width * 0.3242780,
+        size.height * 0.9820685);
+    path_67.cubicTo(
+        size.width * 0.3243110,
+        size.height * 0.9820297,
+        size.width * 0.3243530,
+        size.height * 0.9819974,
+        size.width * 0.3243951,
+        size.height * 0.9819780);
+    path_67.cubicTo(
+        size.width * 0.3244401,
+        size.height * 0.9819586,
+        size.width * 0.3244881,
+        size.height * 0.9819457,
+        size.width * 0.3245362,
+        size.height * 0.9819489);
+    path_67.cubicTo(
+        size.width * 0.3245842,
+        size.height * 0.9819489,
+        size.width * 0.3246322,
+        size.height * 0.9819586,
+        size.width * 0.3246773,
+        size.height * 0.9819813);
+    path_67.cubicTo(
+        size.width * 0.3260793,
+        size.height * 0.9826955,
+        size.width * 0.3273371,
+        size.height * 0.9836975,
+        size.width * 0.3283819,
+        size.height * 0.9849321);
+    path_67.cubicTo(
+        size.width * 0.3308076,
+        size.height * 0.9875986,
+        size.width * 0.3339538,
+        size.height * 0.9897802,
+        size.width * 0.3369649,
+        size.height * 0.9917518);
+    path_67.cubicTo(
+        size.width * 0.3383729,
+        size.height * 0.9911409,
+        size.width * 0.3396277,
+        size.height * 0.9901810,
+        size.width * 0.3406244,
+        size.height * 0.9889463);
     path_67.close();
-    path_67.moveTo(1098.56, 1854.91);
-    path_67.cubicTo(1070.73, 1857.42, 1037.37, 1855.91, 1007.73, 1842.28);
-    path_67.cubicTo(1006.43, 1841.68, 1005.26, 1840.83, 1004.3, 1839.77);
-    path_67.cubicTo(1003.34, 1838.71, 1002.61, 1837.47, 1002.14, 1836.12);
-    path_67.cubicTo(1001.67, 1834.77, 1001.48, 1833.34, 1001.58, 1831.91);
-    path_67.cubicTo(1001.69, 1830.48, 1002.08, 1829.09, 1002.73, 1827.82);
-    path_67.cubicTo(1002.92, 1827.45, 1022, 1790, 1033.32, 1750.39);
-    path_67.cubicTo(1036.73, 1738.39, 1040.12, 1724.59, 1043.71, 1709.92);
-    path_67.cubicTo(1045.71, 1701.92, 1047.62, 1693.92, 1049.56, 1686.29);
-    path_67.cubicTo(1051.5, 1678.66, 1053.47, 1671.22, 1055.47, 1664.29);
-    path_67.cubicTo(1045.63, 1676.38, 1037.15, 1689.52, 1030.2, 1703.48);
-    path_67.cubicTo(1027.47, 1708.95, 1024.73, 1714.63, 1021.93, 1720.48);
-    path_67.cubicTo(995.71, 1774.82, 963.78, 1840.96, 879.69, 1859.16);
-    path_67.cubicTo(922.32, 1877.08, 1005.92, 1899.53, 1098.56, 1854.91);
+    path_67.moveTo(size.width * 0.3297989, size.height * 0.5995184);
+    path_67.cubicTo(
+        size.width * 0.3214440,
+        size.height * 0.6003297,
+        size.width * 0.3114290,
+        size.height * 0.5998416,
+        size.width * 0.3025308,
+        size.height * 0.5954363);
+    path_67.cubicTo(
+        size.width * 0.3021405,
+        size.height * 0.5952424,
+        size.width * 0.3017893,
+        size.height * 0.5949677,
+        size.width * 0.3015011,
+        size.height * 0.5946251);
+    path_67.cubicTo(
+        size.width * 0.3012128,
+        size.height * 0.5942825,
+        size.width * 0.3009937,
+        size.height * 0.5938817,
+        size.width * 0.3008526,
+        size.height * 0.5934454);
+    path_67.cubicTo(
+        size.width * 0.3007115,
+        size.height * 0.5930090,
+        size.width * 0.3006545,
+        size.height * 0.5925469,
+        size.width * 0.3006845,
+        size.height * 0.5920847);
+    path_67.cubicTo(
+        size.width * 0.3007175,
+        size.height * 0.5916225,
+        size.width * 0.3008346,
+        size.height * 0.5911732,
+        size.width * 0.3010297,
+        size.height * 0.5907628);
+    path_67.cubicTo(
+        size.width * 0.3010868,
+        size.height * 0.5906432,
+        size.width * 0.3068148,
+        size.height * 0.5785391,
+        size.width * 0.3102131,
+        size.height * 0.5657369);
+    path_67.cubicTo(
+        size.width * 0.3112369,
+        size.height * 0.5618584,
+        size.width * 0.3122546,
+        size.height * 0.5573982,
+        size.width * 0.3133323,
+        size.height * 0.5526568);
+    path_67.cubicTo(
+        size.width * 0.3139328,
+        size.height * 0.5500711,
+        size.width * 0.3145062,
+        size.height * 0.5474855,
+        size.width * 0.3150886,
+        size.height * 0.5450194);
+    path_67.cubicTo(
+        size.width * 0.3156710,
+        size.height * 0.5425533,
+        size.width * 0.3162624,
+        size.height * 0.5401487,
+        size.width * 0.3168628,
+        size.height * 0.5379089);
+    path_67.cubicTo(
+        size.width * 0.3139087,
+        size.height * 0.5418164,
+        size.width * 0.3113630,
+        size.height * 0.5460633,
+        size.width * 0.3092765,
+        size.height * 0.5505753);
+    path_67.cubicTo(
+        size.width * 0.3084569,
+        size.height * 0.5523432,
+        size.width * 0.3076343,
+        size.height * 0.5541791,
+        size.width * 0.3067938,
+        size.height * 0.5560698);
+    path_67.cubicTo(
+        size.width * 0.2989222,
+        size.height * 0.5736328,
+        size.width * 0.2893365,
+        size.height * 0.5950097,
+        size.width * 0.2640919,
+        size.height * 0.6008920);
+    path_67.cubicTo(
+        size.width * 0.2768898,
+        size.height * 0.6066839,
+        size.width * 0.3019874,
+        size.height * 0.6139399,
+        size.width * 0.3297989,
+        size.height * 0.5995184);
     path_67.close();
-    path_67.moveTo(753.12, 2293.64);
-    path_67.cubicTo(758.897, 2268.08, 768.527, 2243.54, 781.68, 2220.87);
-    path_67.cubicTo(768.025, 2225.42, 754.106, 2229.14, 740, 2232);
-    path_67.cubicTo(721.419, 2235.78, 702.503, 2237.69, 683.54, 2237.69);
-    path_67.cubicTo(656.599, 2237.63, 629.79, 2233.93, 603.84, 2226.69);
-    path_67.cubicTo(576.76, 2280.51, 519.68, 2415.36, 546.33, 2552.32);
-    path_67.cubicTo(595.15, 2545.25, 643.53, 2536.23, 691.05, 2523.55);
-    path_67.cubicTo(687.67, 2503.55, 689.22, 2483.6, 692.29, 2464.67);
-    path_67.cubicTo(696.1, 2443.42, 703.22, 2414.3, 722.35, 2400.67);
-    path_67.cubicTo(721.404, 2393.26, 721.593, 2385.76, 722.91, 2378.41);
-    path_67.cubicTo(725.66, 2361.73, 734.75, 2346.75, 747.49, 2334.6);
-    path_67.cubicTo(748.043, 2323.97, 749.303, 2313.39, 751.26, 2302.93);
-    path_67.cubicTo(712.26, 2320.23, 666.67, 2319.48, 625.14, 2313.19);
-    path_67.cubicTo(609.82, 2310.47, 594.7, 2306.95, 580.09, 2301.07);
-    path_67.cubicTo(577.14, 2299.97, 578.21, 2295.24, 581.36, 2295.57);
-    path_67.cubicTo(639.1, 2297.82, 696.51, 2306.43, 753.12, 2293.64);
+    path_67.moveTo(size.width * 0.2260943, size.height * 0.7413187);
+    path_67.cubicTo(
+        size.width * 0.2278286,
+        size.height * 0.7330575,
+        size.width * 0.2307196,
+        size.height * 0.7251261,
+        size.width * 0.2346683,
+        size.height * 0.7177990);
+    path_67.cubicTo(
+        size.width * 0.2305689,
+        size.height * 0.7192696,
+        size.width * 0.2263903,
+        size.height * 0.7204719,
+        size.width * 0.2221555,
+        size.height * 0.7213963);
+    path_67.cubicTo(
+        size.width * 0.2165773,
+        size.height * 0.7226180,
+        size.width * 0.2108985,
+        size.height * 0.7232353,
+        size.width * 0.2052056,
+        size.height * 0.7232353);
+    path_67.cubicTo(
+        size.width * 0.1971177,
+        size.height * 0.7232159,
+        size.width * 0.1890693,
+        size.height * 0.7220200,
+        size.width * 0.1812789,
+        size.height * 0.7196800);
+    path_67.cubicTo(
+        size.width * 0.1731492,
+        size.height * 0.7370750,
+        size.width * 0.1560132,
+        size.height * 0.7806593,
+        size.width * 0.1640138,
+        size.height * 0.8249257);
+    path_67.cubicTo(
+        size.width * 0.1786701,
+        size.height * 0.8226406,
+        size.width * 0.1931942,
+        size.height * 0.8197253,
+        size.width * 0.2074602,
+        size.height * 0.8156270);
+    path_67.cubicTo(
+        size.width * 0.2064455,
+        size.height * 0.8091629,
+        size.width * 0.2069108,
+        size.height * 0.8027149,
+        size.width * 0.2078325,
+        size.height * 0.7965966);
+    path_67.cubicTo(
+        size.width * 0.2089763,
+        size.height * 0.7897285,
+        size.width * 0.2111138,
+        size.height * 0.7803167,
+        size.width * 0.2168568,
+        size.height * 0.7759114);
+    path_67.cubicTo(
+        size.width * 0.2165728,
+        size.height * 0.7735165,
+        size.width * 0.2166295,
+        size.height * 0.7710924,
+        size.width * 0.2170249,
+        size.height * 0.7687169);
+    path_67.cubicTo(
+        size.width * 0.2178505,
+        size.height * 0.7633258,
+        size.width * 0.2205794,
+        size.height * 0.7584842,
+        size.width * 0.2244041,
+        size.height * 0.7545572);
+    path_67.cubicTo(
+        size.width * 0.2245701,
+        size.height * 0.7511215,
+        size.width * 0.2249484,
+        size.height * 0.7477020,
+        size.width * 0.2255359,
+        size.height * 0.7443213);
+    path_67.cubicTo(
+        size.width * 0.2138277,
+        size.height * 0.7499127,
+        size.width * 0.2001411,
+        size.height * 0.7496703,
+        size.width * 0.1876734,
+        size.height * 0.7476374);
+    path_67.cubicTo(
+        size.width * 0.1830742,
+        size.height * 0.7467582,
+        size.width * 0.1785350,
+        size.height * 0.7456206,
+        size.width * 0.1741489,
+        size.height * 0.7437201);
+    path_67.cubicTo(
+        size.width * 0.1732633,
+        size.height * 0.7433646,
+        size.width * 0.1735845,
+        size.height * 0.7418358,
+        size.width * 0.1745302,
+        size.height * 0.7419425);
+    path_67.cubicTo(
+        size.width * 0.1918643,
+        size.height * 0.7426697,
+        size.width * 0.2090994,
+        size.height * 0.7454525,
+        size.width * 0.2260943,
+        size.height * 0.7413187);
     path_67.close();
-    path_67.moveTo(573.12, 2669.87);
-    path_67.lineTo(573.06, 2669.78);
-    path_67.cubicTo(559.825, 2647.55, 549.076, 2623.94, 541.01, 2599.36);
-    path_67.cubicTo(490.42, 2445.36, 555.83, 2285.12, 587.33, 2221.61);
-    path_67.cubicTo(536.86, 2204.86, 494.74, 2177.76, 464.55, 2154.08);
-    path_67.cubicTo(455.97, 2182.54, 439.8, 2251.45, 451.79, 2336.74);
-    path_67.cubicTo(452.144, 2339.22, 452.517, 2341.72, 452.91, 2344.23);
-    path_67.cubicTo(452.91, 2344.23, 452.91, 2344.29, 452.91, 2344.32);
-    path_67.cubicTo(452.97, 2344.72, 453.01, 2345.14, 453.03, 2345.55);
-    path_67.cubicTo(453.027, 2345.59, 453.027, 2345.62, 453.03, 2345.66);
-    path_67.lineTo(453.03, 2345.72);
-    path_67.cubicTo(453.09, 2346.97, 453.51, 2354.65, 454.98, 2367.29);
-    path_67.cubicTo(456.21, 2377.8, 458.16, 2391.72, 461.24, 2408.22);
-    path_67.cubicTo(461.94, 2412, 462.707, 2415.91, 463.54, 2419.96);
-    path_67.cubicTo(463.77, 2421.12, 464.02, 2422.29, 464.27, 2423.47);
-    path_67.cubicTo(464.88, 2426.41, 465.54, 2429.47, 466.27, 2432.47);
-    path_67.lineTo(466.48, 2433.47);
-    path_67.cubicTo(466.56, 2433.78, 466.63, 2434.1, 466.7, 2434.47);
-    path_67.cubicTo(467.747, 2439.08, 468.877, 2443.82, 470.09, 2448.68);
-    path_67.cubicTo(471.35, 2453.74, 472.71, 2458.92, 474.17, 2464.21);
-    path_67.cubicTo(477.69, 2477, 481.78, 2490.44, 486.55, 2504.34);
-    path_67.cubicTo(491.32, 2518.24, 496.75, 2532.59, 502.95, 2547.2);
-    path_67.cubicTo(504.857, 2551.72, 506.857, 2556.26, 508.95, 2560.83);
-    path_67.cubicTo(527.11, 2600.91, 548.497, 2637.24, 573.11, 2669.83);
-    path_67.lineTo(573.12, 2669.87);
+    path_67.moveTo(size.width * 0.1720564, size.height * 0.8629186);
+    path_67.lineTo(size.width * 0.1720384, size.height * 0.8628895);
+    path_67.cubicTo(
+        size.width * 0.1680651,
+        size.height * 0.8557046,
+        size.width * 0.1648382,
+        size.height * 0.8480737,
+        size.width * 0.1624167,
+        size.height * 0.8401293);
+    path_67.cubicTo(
+        size.width * 0.1472291,
+        size.height * 0.7903555,
+        size.width * 0.1668658,
+        size.height * 0.7385650,
+        size.width * 0.1763224,
+        size.height * 0.7180381);
+    path_67.cubicTo(
+        size.width * 0.1611708,
+        size.height * 0.7126244,
+        size.width * 0.1485260,
+        size.height * 0.7038655,
+        size.width * 0.1394626,
+        size.height * 0.6962120);
+    path_67.cubicTo(
+        size.width * 0.1368868,
+        size.height * 0.7054105,
+        size.width * 0.1320324,
+        size.height * 0.7276826,
+        size.width * 0.1356319,
+        size.height * 0.7552489);
+    path_67.cubicTo(
+        size.width * 0.1357382,
+        size.height * 0.7560504,
+        size.width * 0.1358502,
+        size.height * 0.7568584,
+        size.width * 0.1359682,
+        size.height * 0.7576697);
+    path_67.cubicTo(
+        size.width * 0.1359682,
+        size.height * 0.7576697,
+        size.width * 0.1359682,
+        size.height * 0.7576891,
+        size.width * 0.1359682,
+        size.height * 0.7576988);
+    path_67.cubicTo(
+        size.width * 0.1359862,
+        size.height * 0.7578281,
+        size.width * 0.1359982,
+        size.height * 0.7579638,
+        size.width * 0.1360042,
+        size.height * 0.7580963);
+    path_67.cubicTo(
+        size.width * 0.1360033,
+        size.height * 0.7581092,
+        size.width * 0.1360033,
+        size.height * 0.7581189,
+        size.width * 0.1360042,
+        size.height * 0.7581319);
+    path_67.lineTo(size.width * 0.1360042, size.height * 0.7581513);
+    path_67.cubicTo(
+        size.width * 0.1360222,
+        size.height * 0.7585553,
+        size.width * 0.1361483,
+        size.height * 0.7610375,
+        size.width * 0.1365896,
+        size.height * 0.7651228);
+    path_67.cubicTo(
+        size.width * 0.1369589,
+        size.height * 0.7685197,
+        size.width * 0.1375443,
+        size.height * 0.7730187,
+        size.width * 0.1384689,
+        size.height * 0.7783516);
+    path_67.cubicTo(
+        size.width * 0.1386791,
+        size.height * 0.7795734,
+        size.width * 0.1389093,
+        size.height * 0.7808371,
+        size.width * 0.1391594,
+        size.height * 0.7821461);
+    path_67.cubicTo(
+        size.width * 0.1392285,
+        size.height * 0.7825210,
+        size.width * 0.1393035,
+        size.height * 0.7828992,
+        size.width * 0.1393786,
+        size.height * 0.7832805);
+    path_67.cubicTo(
+        size.width * 0.1395617,
+        size.height * 0.7842308,
+        size.width * 0.1397598,
+        size.height * 0.7852198,
+        size.width * 0.1399790,
+        size.height * 0.7861894);
+    path_67.lineTo(size.width * 0.1400420, size.height * 0.7865126);
+    path_67.cubicTo(
+        size.width * 0.1400660,
+        size.height * 0.7866128,
+        size.width * 0.1400871,
+        size.height * 0.7867162,
+        size.width * 0.1401081,
+        size.height * 0.7868358);
+    path_67.cubicTo(
+        size.width * 0.1404224,
+        size.height * 0.7883258,
+        size.width * 0.1407616,
+        size.height * 0.7898578,
+        size.width * 0.1411258,
+        size.height * 0.7914286);
+    path_67.cubicTo(
+        size.width * 0.1415041,
+        size.height * 0.7930640,
+        size.width * 0.1419123,
+        size.height * 0.7947382,
+        size.width * 0.1423506,
+        size.height * 0.7964480);
+    path_67.cubicTo(
+        size.width * 0.1434074,
+        size.height * 0.8005818,
+        size.width * 0.1446352,
+        size.height * 0.8049257,
+        size.width * 0.1460672,
+        size.height * 0.8094182);
+    path_67.cubicTo(
+        size.width * 0.1474992,
+        size.height * 0.8139108,
+        size.width * 0.1491294,
+        size.height * 0.8185488,
+        size.width * 0.1509907,
+        size.height * 0.8232708);
+    path_67.cubicTo(
+        size.width * 0.1515632,
+        size.height * 0.8247317,
+        size.width * 0.1521636,
+        size.height * 0.8261991,
+        size.width * 0.1527920,
+        size.height * 0.8276761);
+    path_67.cubicTo(
+        size.width * 0.1582438,
+        size.height * 0.8406303,
+        size.width * 0.1646644,
+        size.height * 0.8523723,
+        size.width * 0.1720534,
+        size.height * 0.8629056);
+    path_67.lineTo(size.width * 0.1720564, size.height * 0.8629186);
     path_67.close();
-    path_67.moveTo(477.63, 2564.93);
-    path_67.cubicTo(479.494, 2560.39, 480.784, 2555.63, 481.47, 2550.77);
-    path_67.cubicTo(470.199, 2523.63, 460.68, 2495.79, 452.97, 2467.43);
-    path_67.cubicTo(450.637, 2458.9, 448.554, 2450.69, 446.72, 2442.8);
-    path_67.cubicTo(445.847, 2439.08, 445.027, 2435.44, 444.26, 2431.87);
-    path_67.cubicTo(425.18, 2433.87, 407.59, 2446.14, 393.06, 2458.06);
-    path_67.cubicTo(389.86, 2464.32, 378.35, 2489, 380.35, 2515.84);
-    path_67.cubicTo(380.48, 2517.64, 380.68, 2519.46, 380.94, 2521.28);
-    path_67.cubicTo(381.927, 2528.29, 383.332, 2535.23, 385.15, 2542.07);
-    path_67.cubicTo(390.09, 2560.33, 397.66, 2573.83, 407.98, 2582.72);
-    path_67.cubicTo(407.579, 2578.29, 407.482, 2573.84, 407.69, 2569.4);
-    path_67.cubicTo(407.703, 2564.45, 409.669, 2559.71, 413.16, 2556.21);
-    path_67.cubicTo(413.384, 2555.97, 413.69, 2555.84, 414.014, 2555.82);
-    path_67.cubicTo(414.338, 2555.81, 414.656, 2555.92, 414.9, 2556.13);
-    path_67.cubicTo(418.469, 2559.12, 421.048, 2563.12, 422.3, 2567.61);
-    path_67.cubicTo(424.68, 2574.91, 427.51, 2582.04, 430.49, 2588.93);
-    path_67.cubicTo(430.68, 2589.33, 431.92, 2592.04, 433.08, 2594.57);
-    path_67.lineTo(433.56, 2594.67);
-    path_67.cubicTo(439.791, 2595.94, 446.252, 2595.47, 452.23, 2593.3);
-    path_67.cubicTo(446.9, 2580.83, 445.05, 2563.56, 453.82, 2556.18);
-    path_67.cubicTo(454.065, 2555.97, 454.378, 2555.85, 454.7, 2555.85);
-    path_67.cubicTo(455.023, 2555.85, 455.336, 2555.97, 455.58, 2556.18);
-    path_67.cubicTo(463.08, 2562.25, 462.78, 2568.09, 466.58, 2575.18);
-    path_67.cubicTo(467.38, 2576.84, 468.24, 2578.5, 469.13, 2580.18);
-    path_67.cubicTo(472.665, 2575.51, 475.541, 2570.38, 477.68, 2564.93);
-    path_67.lineTo(477.63, 2564.93);
+    path_67.moveTo(size.width * 0.1433894, size.height * 0.8290013);
+    path_67.cubicTo(
+        size.width * 0.1439490,
+        size.height * 0.8275339,
+        size.width * 0.1443362,
+        size.height * 0.8259955,
+        size.width * 0.1445422,
+        size.height * 0.8244247);
+    path_67.cubicTo(
+        size.width * 0.1411585,
+        size.height * 0.8156529,
+        size.width * 0.1383008,
+        size.height * 0.8066548,
+        size.width * 0.1359862,
+        size.height * 0.7974887);
+    path_67.cubicTo(
+        size.width * 0.1352858,
+        size.height * 0.7947317,
+        size.width * 0.1346605,
+        size.height * 0.7920782,
+        size.width * 0.1341099,
+        size.height * 0.7895281);
+    path_67.cubicTo(
+        size.width * 0.1338478,
+        size.height * 0.7883258,
+        size.width * 0.1336016,
+        size.height * 0.7871493,
+        size.width * 0.1333714,
+        size.height * 0.7859955);
+    path_67.cubicTo(
+        size.width * 0.1276434,
+        size.height * 0.7866419,
+        size.width * 0.1223627,
+        size.height * 0.7906076,
+        size.width * 0.1180006,
+        size.height * 0.7944602);
+    path_67.cubicTo(
+        size.width * 0.1170399,
+        size.height * 0.7964835,
+        size.width * 0.1135845,
+        size.height * 0.8044602,
+        size.width * 0.1141849,
+        size.height * 0.8131351);
+    path_67.cubicTo(
+        size.width * 0.1142240,
+        size.height * 0.8137169,
+        size.width * 0.1142840,
+        size.height * 0.8143051,
+        size.width * 0.1143621,
+        size.height * 0.8148933);
+    path_67.cubicTo(
+        size.width * 0.1146584,
+        size.height * 0.8171590,
+        size.width * 0.1150802,
+        size.height * 0.8194021,
+        size.width * 0.1156259,
+        size.height * 0.8216128);
+    path_67.cubicTo(
+        size.width * 0.1171090,
+        size.height * 0.8275145,
+        size.width * 0.1193816,
+        size.height * 0.8318778,
+        size.width * 0.1224797,
+        size.height * 0.8347511);
+    path_67.cubicTo(
+        size.width * 0.1223594,
+        size.height * 0.8333193,
+        size.width * 0.1223302,
+        size.height * 0.8318811,
+        size.width * 0.1223927,
+        size.height * 0.8304460);
+    path_67.cubicTo(
+        size.width * 0.1223966,
+        size.height * 0.8288462,
+        size.width * 0.1229868,
+        size.height * 0.8273142,
+        size.width * 0.1240348,
+        size.height * 0.8261829);
+    path_67.cubicTo(
+        size.width * 0.1241021,
+        size.height * 0.8261054,
+        size.width * 0.1241939,
+        size.height * 0.8260633,
+        size.width * 0.1242912,
+        size.height * 0.8260569);
+    path_67.cubicTo(
+        size.width * 0.1243885,
+        size.height * 0.8260537,
+        size.width * 0.1244839,
+        size.height * 0.8260892,
+        size.width * 0.1245572,
+        size.height * 0.8261571);
+    path_67.cubicTo(
+        size.width * 0.1256286,
+        size.height * 0.8271235,
+        size.width * 0.1264029,
+        size.height * 0.8284163,
+        size.width * 0.1267787,
+        size.height * 0.8298675);
+    path_67.cubicTo(
+        size.width * 0.1274932,
+        size.height * 0.8322269,
+        size.width * 0.1283428,
+        size.height * 0.8345314,
+        size.width * 0.1292375,
+        size.height * 0.8367582);
+    path_67.cubicTo(
+        size.width * 0.1292945,
+        size.height * 0.8368875,
+        size.width * 0.1296668,
+        size.height * 0.8377634,
+        size.width * 0.1300150,
+        size.height * 0.8385811);
+    path_67.lineTo(size.width * 0.1301591, size.height * 0.8386134);
+    path_67.cubicTo(
+        size.width * 0.1320297,
+        size.height * 0.8390239,
+        size.width * 0.1339694,
+        size.height * 0.8388720,
+        size.width * 0.1357640,
+        size.height * 0.8381707);
+    path_67.cubicTo(
+        size.width * 0.1341639,
+        size.height * 0.8341403,
+        size.width * 0.1336085,
+        size.height * 0.8285585,
+        size.width * 0.1362414,
+        size.height * 0.8261732);
+    path_67.cubicTo(
+        size.width * 0.1363149,
+        size.height * 0.8261054,
+        size.width * 0.1364089,
+        size.height * 0.8260666,
+        size.width * 0.1365056,
+        size.height * 0.8260666);
+    path_67.cubicTo(
+        size.width * 0.1366025,
+        size.height * 0.8260666,
+        size.width * 0.1366965,
+        size.height * 0.8261054,
+        size.width * 0.1367697,
+        size.height * 0.8261732);
+    path_67.cubicTo(
+        size.width * 0.1390213,
+        size.height * 0.8281351,
+        size.width * 0.1389313,
+        size.height * 0.8300226,
+        size.width * 0.1400721,
+        size.height * 0.8323142);
+    path_67.cubicTo(
+        size.width * 0.1403122,
+        size.height * 0.8328507,
+        size.width * 0.1405704,
+        size.height * 0.8333872,
+        size.width * 0.1408376,
+        size.height * 0.8339302);
+    path_67.cubicTo(
+        size.width * 0.1418988,
+        size.height * 0.8324208,
+        size.width * 0.1427622,
+        size.height * 0.8307628,
+        size.width * 0.1434044,
+        size.height * 0.8290013);
+    path_67.lineTo(size.width * 0.1433894, size.height * 0.8290013);
     path_67.close();
-    path_67.moveTo(427.42, 2416.37);
-    path_67.cubicTo(431.83, 2415.45, 436.326, 2415.01, 440.83, 2415.05);
-    path_67.cubicTo(439.777, 2409.55, 438.847, 2404.32, 438.04, 2399.37);
-    path_67.cubicTo(436.84, 2392.15, 435.87, 2385.54, 435.09, 2379.62);
-    path_67.cubicTo(434.31, 2373.7, 433.71, 2368.46, 433.25, 2364);
-    path_67.cubicTo(429.51, 2367.32, 425.47, 2371.11, 421.57, 2375.18);
-    path_67.cubicTo(417.693, 2379.19, 414.108, 2383.48, 410.84, 2388);
-    path_67.cubicTo(410.4, 2388.61, 409.99, 2389.22, 409.58, 2389.83);
-    path_67.cubicTo(408.85, 2390.9, 408.16, 2391.97, 407.52, 2393.04);
-    path_67.cubicTo(404.974, 2397.45, 402.96, 2402.15, 401.52, 2407.04);
-    path_67.cubicTo(399.448, 2414.05, 397.94, 2421.21, 397.01, 2428.46);
-    path_67.cubicTo(405.696, 2423.21, 415.135, 2419.32, 425, 2416.93);
-    path_67.cubicTo(425.81, 2416.73, 426.64, 2416.55, 427.47, 2416.37);
-    path_67.lineTo(427.42, 2416.37);
+    path_67.moveTo(size.width * 0.1283158, size.height * 0.7809858);
+    path_67.cubicTo(
+        size.width * 0.1296397,
+        size.height * 0.7806884,
+        size.width * 0.1309895,
+        size.height * 0.7805462,
+        size.width * 0.1323416,
+        size.height * 0.7805591);
+    path_67.cubicTo(
+        size.width * 0.1320255,
+        size.height * 0.7787815,
+        size.width * 0.1317463,
+        size.height * 0.7770911,
+        size.width * 0.1315041,
+        size.height * 0.7754913);
+    path_67.cubicTo(
+        size.width * 0.1311438,
+        size.height * 0.7731577,
+        size.width * 0.1308526,
+        size.height * 0.7710213,
+        size.width * 0.1306184,
+        size.height * 0.7691080);
+    path_67.cubicTo(
+        size.width * 0.1303843,
+        size.height * 0.7671946,
+        size.width * 0.1302041,
+        size.height * 0.7655010,
+        size.width * 0.1300660,
+        size.height * 0.7640595);
+    path_67.cubicTo(
+        size.width * 0.1289433,
+        size.height * 0.7651325,
+        size.width * 0.1277304,
+        size.height * 0.7663575,
+        size.width * 0.1265596,
+        size.height * 0.7676729);
+    path_67.cubicTo(
+        size.width * 0.1253957,
+        size.height * 0.7689690,
+        size.width * 0.1243194,
+        size.height * 0.7703555,
+        size.width * 0.1233383,
+        size.height * 0.7718164);
+    path_67.cubicTo(
+        size.width * 0.1232062,
+        size.height * 0.7720136,
+        size.width * 0.1230832,
+        size.height * 0.7722107,
+        size.width * 0.1229601,
+        size.height * 0.7724079);
+    path_67.cubicTo(
+        size.width * 0.1227409,
+        size.height * 0.7727537,
+        size.width * 0.1225338,
+        size.height * 0.7730995,
+        size.width * 0.1223416,
+        size.height * 0.7734454);
+    path_67.cubicTo(
+        size.width * 0.1215773,
+        size.height * 0.7748707,
+        size.width * 0.1209727,
+        size.height * 0.7763898,
+        size.width * 0.1205404,
+        size.height * 0.7779703);
+    path_67.cubicTo(
+        size.width * 0.1199183,
+        size.height * 0.7802359,
+        size.width * 0.1194656,
+        size.height * 0.7825501,
+        size.width * 0.1191864,
+        size.height * 0.7848933);
+    path_67.cubicTo(
+        size.width * 0.1217941,
+        size.height * 0.7831965,
+        size.width * 0.1246277,
+        size.height * 0.7819392,
+        size.width * 0.1275893,
+        size.height * 0.7811668);
+    path_67.cubicTo(
+        size.width * 0.1278325,
+        size.height * 0.7811021,
+        size.width * 0.1280817,
+        size.height * 0.7810440,
+        size.width * 0.1283308,
+        size.height * 0.7809858);
+    path_67.lineTo(size.width * 0.1283158, size.height * 0.7809858);
     path_67.close();
-    path_67.moveTo(401.69, 2365.52);
-    path_67.cubicTo(405.52, 2361.17, 409.57, 2357.07, 413.5, 2353.35);
-    path_67.cubicTo(362.95, 2335.35, 307.25, 2311.83, 270.73, 2285.19);
-    path_67.cubicTo(186.26, 2223.58, 168.47, 2208.19, 138.96, 2179.06);
-    path_67.cubicTo(119.69, 2190, 55.8404, 2236.83, 28.7104, 2391);
-    path_67.cubicTo(5.05039, 2525.49, 42.0704, 2652.73, 69.1104, 2722.12);
-    path_67.cubicTo(62.7504, 2664.88, 53.2204, 2578.9, 53.5404, 2517.55);
-    path_67.cubicTo(54.0904, 2413.55, 116.01, 2270.79, 118.65, 2264.76);
-    path_67.cubicTo(119.568, 2262.66, 121.144, 2260.91, 123.14, 2259.78);
-    path_67.cubicTo(125.136, 2258.65, 127.445, 2258.2, 129.719, 2258.5);
-    path_67.cubicTo(131.993, 2258.79, 134.11, 2259.82, 135.752, 2261.42);
-    path_67.cubicTo(137.393, 2263.02, 138.47, 2265.11, 138.82, 2267.38);
-    path_67.cubicTo(139.09, 2269.14, 163.95, 2424.38, 235.69, 2536.68);
-    path_67.cubicTo(231.69, 2524.98, 227.2, 2512.13, 222.75, 2499.44);
-    path_67.cubicTo(194.38, 2418.44, 155.52, 2307.53, 156.13, 2246.69);
-    path_67.cubicTo(156.131, 2244.62, 156.737, 2242.6, 157.875, 2240.87);
-    path_67.cubicTo(159.013, 2239.14, 160.633, 2237.78, 162.534, 2236.96);
-    path_67.cubicTo(164.435, 2236.15, 166.535, 2235.9, 168.572, 2236.26);
-    path_67.cubicTo(170.61, 2236.63, 172.497, 2237.58, 174, 2239);
-    path_67.cubicTo(174.5, 2239.47, 195.63, 2259, 233.24, 2286.24);
-    path_67.cubicTo(282.87, 2322.1, 335.771, 2353.19, 391.24, 2379.11);
-    path_67.cubicTo(394.414, 2374.34, 397.923, 2369.8, 401.74, 2365.52);
-    path_67.lineTo(401.69, 2365.52);
+    path_67.moveTo(size.width * 0.1205914, size.height * 0.7645507);
+    path_67.cubicTo(
+        size.width * 0.1217412,
+        size.height * 0.7631448,
+        size.width * 0.1229571,
+        size.height * 0.7618197,
+        size.width * 0.1241369,
+        size.height * 0.7606173);
+    path_67.cubicTo(
+        size.width * 0.1089613,
+        size.height * 0.7547996,
+        size.width * 0.09223957,
+        size.height * 0.7471978,
+        size.width * 0.08127589,
+        size.height * 0.7385876);
+    path_67.cubicTo(
+        size.width * 0.05591714,
+        size.height * 0.7186749,
+        size.width * 0.05057640,
+        size.height * 0.7137007,
+        size.width * 0.04171720,
+        size.height * 0.7042857);
+    path_67.cubicTo(
+        size.width * 0.03593215,
+        size.height * 0.7078216,
+        size.width * 0.01676385,
+        size.height * 0.7229573,
+        size.width * 0.008619153,
+        size.height * 0.7727860);
+    path_67.cubicTo(
+        size.width * 0.001516178,
+        size.height * 0.8162540,
+        size.width * 0.01262996,
+        size.height * 0.8573788,
+        size.width * 0.02074764,
+        size.height * 0.8798061);
+    path_67.cubicTo(
+        size.width * 0.01883831,
+        size.height * 0.8613058,
+        size.width * 0.01597730,
+        size.height * 0.8335165,
+        size.width * 0.01607337,
+        size.height * 0.8136878);
+    path_67.cubicTo(
+        size.width * 0.01623849,
+        size.height * 0.7800743,
+        size.width * 0.03482738,
+        size.height * 0.7339334,
+        size.width * 0.03561993,
+        size.height * 0.7319845);
+    path_67.cubicTo(
+        size.width * 0.03589553,
+        size.height * 0.7313058,
+        size.width * 0.03636866,
+        size.height * 0.7307401,
+        size.width * 0.03696788,
+        size.height * 0.7303749);
+    path_67.cubicTo(
+        size.width * 0.03756710,
+        size.height * 0.7300097,
+        size.width * 0.03826028,
+        size.height * 0.7298643,
+        size.width * 0.03894296,
+        size.height * 0.7299612);
+    path_67.cubicTo(
+        size.width * 0.03962564,
+        size.height * 0.7300549,
+        size.width * 0.04026118,
+        size.height * 0.7303878,
+        size.width * 0.04075413,
+        size.height * 0.7309050);
+    path_67.cubicTo(
+        size.width * 0.04124677,
+        size.height * 0.7314221,
+        size.width * 0.04157010,
+        size.height * 0.7320976,
+        size.width * 0.04167517,
+        size.height * 0.7328313);
+    path_67.cubicTo(
+        size.width * 0.04175623,
+        size.height * 0.7334001,
+        size.width * 0.04921945,
+        size.height * 0.7835747,
+        size.width * 0.07075653,
+        size.height * 0.8198707);
+    path_67.cubicTo(
+        size.width * 0.06955569,
+        size.height * 0.8160892,
+        size.width * 0.06820775,
+        size.height * 0.8119360,
+        size.width * 0.06687181,
+        size.height * 0.8078345);
+    path_67.cubicTo(
+        size.width * 0.05835485,
+        size.height * 0.7816548,
+        size.width * 0.04668868,
+        size.height * 0.7458080,
+        size.width * 0.04687181,
+        size.height * 0.7261441);
+    path_67.cubicTo(
+        size.width * 0.04687211,
+        size.height * 0.7254751,
+        size.width * 0.04705404,
+        size.height * 0.7248222,
+        size.width * 0.04739568,
+        size.height * 0.7242631);
+    path_67.cubicTo(
+        size.width * 0.04773732,
+        size.height * 0.7237039,
+        size.width * 0.04822366,
+        size.height * 0.7232644,
+        size.width * 0.04879436,
+        size.height * 0.7229994);
+    path_67.cubicTo(
+        size.width * 0.04936506,
+        size.height * 0.7227376,
+        size.width * 0.04999550,
+        size.height * 0.7226568,
+        size.width * 0.05060702,
+        size.height * 0.7227731);
+    path_67.cubicTo(
+        size.width * 0.05121885,
+        size.height * 0.7228927,
+        size.width * 0.05178535,
+        size.height * 0.7231997,
+        size.width * 0.05223657,
+        size.height * 0.7236587);
+    path_67.cubicTo(
+        size.width * 0.05238667,
+        size.height * 0.7238106,
+        size.width * 0.05873011,
+        size.height * 0.7301228,
+        size.width * 0.07002101,
+        size.height * 0.7389270);
+    path_67.cubicTo(
+        size.width * 0.08492044,
+        size.height * 0.7505171,
+        size.width * 0.1008019,
+        size.height * 0.7605656,
+        size.width * 0.1174542,
+        size.height * 0.7689431);
+    path_67.cubicTo(
+        size.width * 0.1184071,
+        size.height * 0.7674014,
+        size.width * 0.1194605,
+        size.height * 0.7659341,
+        size.width * 0.1206064,
+        size.height * 0.7645507);
+    path_67.lineTo(size.width * 0.1205914, size.height * 0.7645507);
     path_67.close();
-    path_67.moveTo(374.1, 2448.52);
-    path_67.cubicTo(374.31, 2440.76, 375.49, 2418.19, 382.1, 2398.24);
-    path_67.cubicTo(283.65, 2352.38, 211.56, 2298.05, 178.88, 2271.19);
-    path_67.cubicTo(186.58, 2332.19, 219.75, 2426.88, 242.68, 2492.35);
-    path_67.cubicTo(251.11, 2516.4, 257.26, 2534.16, 261.57, 2547.48);
-    path_67.cubicTo(279.09, 2535.73, 309.98, 2524.63, 361.27, 2532.33);
-    path_67.cubicTo(360.79, 2529.71, 360.35, 2527.02, 359.95, 2524.33);
-    path_67.cubicTo(355, 2489.49, 369.51, 2457.64, 374.15, 2448.56);
-    path_67.lineTo(374.1, 2448.52);
+    path_67.moveTo(size.width * 0.1123086, size.height * 0.7913769);
+    path_67.cubicTo(
+        size.width * 0.1123717,
+        size.height * 0.7888688,
+        size.width * 0.1127259,
+        size.height * 0.7815740,
+        size.width * 0.1147103,
+        size.height * 0.7751261);
+    path_67.cubicTo(
+        size.width * 0.08515461,
+        size.height * 0.7603038,
+        size.width * 0.06351246,
+        size.height * 0.7427440,
+        size.width * 0.05370159,
+        size.height * 0.7340627);
+    path_67.cubicTo(
+        size.width * 0.05601321,
+        size.height * 0.7537783,
+        size.width * 0.06597118,
+        size.height * 0.7843827,
+        size.width * 0.07285500,
+        size.height * 0.8055430);
+    path_67.cubicTo(
+        size.width * 0.07538577,
+        size.height * 0.8133161,
+        size.width * 0.07723206,
+        size.height * 0.8190562,
+        size.width * 0.07852597,
+        size.height * 0.8233613);
+    path_67.cubicTo(
+        size.width * 0.08378565,
+        size.height * 0.8195637,
+        size.width * 0.09305914,
+        size.height * 0.8159761,
+        size.width * 0.1084569,
+        size.height * 0.8184648);
+    path_67.cubicTo(
+        size.width * 0.1083128,
+        size.height * 0.8176180,
+        size.width * 0.1081807,
+        size.height * 0.8167485,
+        size.width * 0.1080606,
+        size.height * 0.8158791);
+    path_67.cubicTo(
+        size.width * 0.1065746,
+        size.height * 0.8046186,
+        size.width * 0.1109307,
+        size.height * 0.7943245,
+        size.width * 0.1123236,
+        size.height * 0.7913898);
+    path_67.lineTo(size.width * 0.1123086, size.height * 0.7913769);
     path_67.close();
-    path_67.moveTo(298.5, 1973.42);
-    path_67.lineTo(256.37, 1981.14);
-    path_67.cubicTo(243.67, 2010.05, 234.55, 2039.62, 235.71, 2048.14);
-    path_67.cubicTo(241.82, 2050.75, 261.98, 2050.05, 282.1, 2046.63);
-    path_67.cubicTo(285, 2032.59, 291.64, 2000.35, 298.55, 1973.46);
-    path_67.lineTo(298.5, 1973.42);
+    path_67.moveTo(size.width * 0.08961273, size.height * 0.6378216);
+    path_67.lineTo(size.width * 0.07696488, size.height * 0.6403167);
+    path_67.cubicTo(
+        size.width * 0.07315221,
+        size.height * 0.6496606,
+        size.width * 0.07041429,
+        size.height * 0.6592178,
+        size.width * 0.07076253,
+        size.height * 0.6619716);
+    path_67.cubicTo(
+        size.width * 0.07259682,
+        size.height * 0.6628151,
+        size.width * 0.07864905,
+        size.height * 0.6625889,
+        size.width * 0.08468928,
+        size.height * 0.6614835);
+    path_67.cubicTo(
+        size.width * 0.08555989,
+        size.height * 0.6569457,
+        size.width * 0.08755329,
+        size.height * 0.6465255,
+        size.width * 0.08962774,
+        size.height * 0.6378345);
+    path_67.lineTo(size.width * 0.08961273, size.height * 0.6378216);
     path_67.close();
-    path_67.moveTo(208.23, 1800.07);
-    path_67.cubicTo(219.3, 1790.37, 255.7, 1758.39, 296.78, 1721.07);
-    path_67.cubicTo(249, 1740, 187.71, 1758.68, 146.05, 1763.32);
-    path_67.cubicTo(153.09, 1776.17, 169.93, 1795.63, 208.28, 1800.11);
-    path_67.lineTo(208.23, 1800.07);
+    path_67.moveTo(size.width * 0.06251276, size.height * 0.5817938);
+    path_67.cubicTo(
+        size.width * 0.06583609,
+        size.height * 0.5786587,
+        size.width * 0.07676373,
+        size.height * 0.5683226,
+        size.width * 0.08909637,
+        size.height * 0.5562605);
+    path_67.cubicTo(
+        size.width * 0.07475233,
+        size.height * 0.5623788,
+        size.width * 0.05635245,
+        size.height * 0.5684163,
+        size.width * 0.04384569,
+        size.height * 0.5699160);
+    path_67.cubicTo(
+        size.width * 0.04595917,
+        size.height * 0.5740692,
+        size.width * 0.05101471,
+        size.height * 0.5803588,
+        size.width * 0.06252777,
+        size.height * 0.5818067);
+    path_67.lineTo(size.width * 0.06251276, size.height * 0.5817938);
     path_67.close();
-    path_67.moveTo(231.23, 2567.82);
-    path_67.cubicTo(168.7, 2481.62, 137.31, 2364.6, 124.7, 2306.34);
-    path_67.cubicTo(106.23, 2354.89, 75.0504, 2447.16, 74.7004, 2517.58);
-    path_67.cubicTo(74.3904, 2576.73, 83.5304, 2660.17, 89.8304, 2716.9);
-    path_67.cubicTo(113, 2666.47, 157.26, 2595.56, 231.28, 2567.86);
-    path_67.lineTo(231.23, 2567.82);
+    path_67.moveTo(size.width * 0.06941759, size.height * 0.8299354);
+    path_67.cubicTo(
+        size.width * 0.05064545,
+        size.height * 0.8020750,
+        size.width * 0.04122186,
+        size.height * 0.7642534,
+        size.width * 0.03743621,
+        size.height * 0.7454234);
+    path_67.cubicTo(
+        size.width * 0.03189132,
+        size.height * 0.7611151,
+        size.width * 0.02253089,
+        size.height * 0.7909373,
+        size.width * 0.02242582,
+        size.height * 0.8136975);
+    path_67.cubicTo(
+        size.width * 0.02233275,
+        size.height * 0.8328151,
+        size.width * 0.02507667,
+        size.height * 0.8597835,
+        size.width * 0.02696800,
+        size.height * 0.8781189);
+    path_67.cubicTo(
+        size.width * 0.03392375,
+        size.height * 0.8618197,
+        size.width * 0.04721105,
+        size.height * 0.8389011,
+        size.width * 0.06943260,
+        size.height * 0.8299483);
+    path_67.lineTo(size.width * 0.06941759, size.height * 0.8299354);
     path_67.close();
 
     Paint paint_67_fill = Paint()..style = PaintingStyle.fill;
@@ -3629,24 +18955,108 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_67, paint_67_fill);
 
     Path path_68 = Path();
-    path_68.moveTo(1325.7, 1751.92);
-    path_68.cubicTo(1326.29, 1770.98, 1313.58, 1795.26, 1300.02, 1800.92);
-    path_68.cubicTo(1298.1, 1801.75, 1296.04, 1802.19, 1293.95, 1802.21);
-    path_68.cubicTo(1292.02, 1802.18, 1290.12, 1801.76, 1288.36, 1800.96);
-    path_68.cubicTo(1286.61, 1800.16, 1285.04, 1799.01, 1283.75, 1797.57);
-    path_68.cubicTo(1268.75, 1781.85, 1299.26, 1737.67, 1305.54, 1728.97);
-    path_68.cubicTo(1306.13, 1728.16, 1306.98, 1727.58, 1307.95, 1727.34);
-    path_68.cubicTo(1309.63, 1727, 1311.37, 1727.04, 1313.04, 1727.43);
-    path_68.cubicTo(1314.71, 1727.83, 1316.28, 1728.58, 1317.63, 1729.64);
-    path_68.cubicTo(1322.64, 1733.46, 1325.35, 1740.94, 1325.7, 1751.92);
+    path_68.moveTo(size.width * 0.3979886, size.height * 0.5662314);
+    path_68.cubicTo(
+        size.width * 0.3981657,
+        size.height * 0.5723917,
+        size.width * 0.3943500,
+        size.height * 0.5802392,
+        size.width * 0.3902792,
+        size.height * 0.5820685);
+    path_68.cubicTo(
+        size.width * 0.3897028,
+        size.height * 0.5823368,
+        size.width * 0.3890844,
+        size.height * 0.5824790,
+        size.width * 0.3884569,
+        size.height * 0.5824855);
+    path_68.cubicTo(
+        size.width * 0.3878775,
+        size.height * 0.5824758,
+        size.width * 0.3873071,
+        size.height * 0.5823400,
+        size.width * 0.3867787,
+        size.height * 0.5820814);
+    path_68.cubicTo(
+        size.width * 0.3862534,
+        size.height * 0.5818229,
+        size.width * 0.3857820,
+        size.height * 0.5814512,
+        size.width * 0.3853948,
+        size.height * 0.5809858);
+    path_68.cubicTo(
+        size.width * 0.3808916,
+        size.height * 0.5759050,
+        size.width * 0.3900510,
+        size.height * 0.5616257,
+        size.width * 0.3919364,
+        size.height * 0.5588138);
+    path_68.cubicTo(
+        size.width * 0.3921135,
+        size.height * 0.5585520,
+        size.width * 0.3923687,
+        size.height * 0.5583646,
+        size.width * 0.3926599,
+        size.height * 0.5582870);
+    path_68.cubicTo(
+        size.width * 0.3931642,
+        size.height * 0.5581771,
+        size.width * 0.3936866,
+        size.height * 0.5581900,
+        size.width * 0.3941879,
+        size.height * 0.5583161);
+    path_68.cubicTo(
+        size.width * 0.3946893,
+        size.height * 0.5584454,
+        size.width * 0.3951606,
+        size.height * 0.5586878,
+        size.width * 0.3955659,
+        size.height * 0.5590304);
+    path_68.cubicTo(
+        size.width * 0.3970699,
+        size.height * 0.5602650,
+        size.width * 0.3978835,
+        size.height * 0.5626826,
+        size.width * 0.3979886,
+        size.height * 0.5662314);
     path_68.close();
-    path_68.moveTo(1296.7, 1793.13);
-    path_68.cubicTo(1306.08, 1789.19, 1317.7, 1768.63, 1317.19, 1752.19);
-    path_68.cubicTo(1316.85, 1741.54, 1314.19, 1737.82, 1312.63, 1736.55);
-    path_68.cubicTo(1312.19, 1736.17, 1311.67, 1735.89, 1311.11, 1735.73);
-    path_68.cubicTo(1297.54, 1755.05, 1282.55, 1784.11, 1289.84, 1791.73);
-    path_68.cubicTo(1291.92, 1793.87, 1294, 1794.29, 1296.74, 1793.13);
-    path_68.lineTo(1296.7, 1793.13);
+    path_68.moveTo(size.width * 0.3892825, size.height * 0.5795507);
+    path_68.cubicTo(
+        size.width * 0.3920985,
+        size.height * 0.5782773,
+        size.width * 0.3955869,
+        size.height * 0.5716322,
+        size.width * 0.3954338,
+        size.height * 0.5663187);
+    path_68.cubicTo(
+        size.width * 0.3953317,
+        size.height * 0.5628765,
+        size.width * 0.3945332,
+        size.height * 0.5616742,
+        size.width * 0.3940648,
+        size.height * 0.5612637);
+    path_68.cubicTo(
+        size.width * 0.3939328,
+        size.height * 0.5611409,
+        size.width * 0.3937766,
+        size.height * 0.5610504,
+        size.width * 0.3936085,
+        size.height * 0.5609987);
+    path_68.cubicTo(
+        size.width * 0.3895347,
+        size.height * 0.5672431,
+        size.width * 0.3850345,
+        size.height * 0.5766354,
+        size.width * 0.3872231,
+        size.height * 0.5790983);
+    path_68.cubicTo(
+        size.width * 0.3878475,
+        size.height * 0.5797899,
+        size.width * 0.3884719,
+        size.height * 0.5799257,
+        size.width * 0.3892945,
+        size.height * 0.5795507);
+    path_68.lineTo(size.width * 0.3892825, size.height * 0.5795507);
     path_68.close();
 
     Paint paint_68_fill = Paint()..style = PaintingStyle.fill;
@@ -3654,21 +19064,87 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_68, paint_68_fill);
 
     Path path_69 = Path();
-    path_69.moveTo(1202.46, 1610.82);
-    path_69.cubicTo(1203.46, 1620.4, 1184.71, 1636.61, 1176.62, 1643.13);
-    path_69.cubicTo(1175.87, 1643.74, 1174.93, 1644.07, 1173.96, 1644.07);
-    path_69.cubicTo(1173.19, 1644.07, 1172.43, 1643.87, 1171.77, 1643.47);
-    path_69.cubicTo(1163.36, 1638.39, 1161.24, 1630.17, 1166.11, 1621.47);
-    path_69.cubicTo(1172.3, 1610.47, 1189.36, 1600.19, 1198.32, 1604.83);
-    path_69.cubicTo(1199.47, 1605.39, 1200.45, 1606.24, 1201.17, 1607.28);
-    path_69.cubicTo(1201.9, 1608.33, 1202.34, 1609.55, 1202.46, 1610.82);
+    path_69.moveTo(size.width * 0.3609907, size.height * 0.5206270);
+    path_69.cubicTo(
+        size.width * 0.3612909,
+        size.height * 0.5237233,
+        size.width * 0.3556620,
+        size.height * 0.5289625,
+        size.width * 0.3532333,
+        size.height * 0.5310698);
+    path_69.cubicTo(
+        size.width * 0.3530081,
+        size.height * 0.5312670,
+        size.width * 0.3527259,
+        size.height * 0.5313736,
+        size.width * 0.3524347,
+        size.height * 0.5313736);
+    path_69.cubicTo(
+        size.width * 0.3522035,
+        size.height * 0.5313736,
+        size.width * 0.3519754,
+        size.height * 0.5313090,
+        size.width * 0.3517772,
+        size.height * 0.5311797);
+    path_69.cubicTo(
+        size.width * 0.3492525,
+        size.height * 0.5295378,
+        size.width * 0.3486160,
+        size.height * 0.5268811,
+        size.width * 0.3500781,
+        size.height * 0.5240692);
+    path_69.cubicTo(
+        size.width * 0.3519364,
+        size.height * 0.5205139,
+        size.width * 0.3570579,
+        size.height * 0.5171913,
+        size.width * 0.3597478,
+        size.height * 0.5186910);
+    path_69.cubicTo(
+        size.width * 0.3600931,
+        size.height * 0.5188720,
+        size.width * 0.3603873,
+        size.height * 0.5191467,
+        size.width * 0.3606034,
+        size.height * 0.5194829);
+    path_69.cubicTo(
+        size.width * 0.3608226,
+        size.height * 0.5198222,
+        size.width * 0.3609547,
+        size.height * 0.5202165,
+        size.width * 0.3609907,
+        size.height * 0.5206270);
     path_69.close();
-    path_69.moveTo(1193.96, 1612.21);
-    path_69.cubicTo(1193.66, 1612.15, 1193.36, 1612.12, 1193.06, 1612.12);
-    path_69.cubicTo(1188.56, 1612.12, 1177.94, 1617.71, 1173.51, 1625.63);
-    path_69.cubicTo(1171.08, 1629.95, 1172, 1632.63, 1173.83, 1634.46);
-    path_69.cubicTo(1184.38, 1625.57, 1193.17, 1615.88, 1194, 1612.21);
-    path_69.lineTo(1193.96, 1612.21);
+    path_69.moveTo(size.width * 0.3584389, size.height * 0.5210763);
+    path_69.cubicTo(
+        size.width * 0.3583488,
+        size.height * 0.5210569,
+        size.width * 0.3582588,
+        size.height * 0.5210472,
+        size.width * 0.3581687,
+        size.height * 0.5210472);
+    path_69.cubicTo(
+        size.width * 0.3568178,
+        size.height * 0.5210472,
+        size.width * 0.3536295,
+        size.height * 0.5228539,
+        size.width * 0.3522996,
+        size.height * 0.5254137);
+    path_69.cubicTo(
+        size.width * 0.3515701,
+        size.height * 0.5268100,
+        size.width * 0.3518463,
+        size.height * 0.5276761,
+        size.width * 0.3523957,
+        size.height * 0.5282676);
+    path_69.cubicTo(
+        size.width * 0.3555629,
+        size.height * 0.5253943,
+        size.width * 0.3582017,
+        size.height * 0.5222624,
+        size.width * 0.3584509,
+        size.height * 0.5210763);
+    path_69.lineTo(size.width * 0.3584389, size.height * 0.5210763);
     path_69.close();
 
     Paint paint_69_fill = Paint()..style = PaintingStyle.fill;
@@ -3676,17 +19152,77 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_69, paint_69_fill);
 
     Path path_70 = Path();
-    path_70.moveTo(1196.55, 2725.82);
-    path_70.cubicTo(1197.09, 2726.03, 1197.55, 2726.41, 1197.88, 2726.89);
-    path_70.cubicTo(1198.2, 2727.37, 1198.37, 2727.94, 1198.37, 2728.52);
-    path_70.cubicTo(1198.23, 2740.85, 1195.09, 2752.93, 1190.97, 2764.39);
-    path_70.cubicTo(1188.83, 2770.08, 1186.4, 2775.66, 1183.7, 2781.1);
-    path_70.cubicTo(1175.7, 2797.32, 1165.72, 2812.49, 1153.99, 2826.26);
-    path_70.cubicTo(1146.11, 2835.26, 1137.78, 2843.92, 1127.89, 2851.15);
-    path_70.cubicTo(1125.49, 2853.01, 1122.08, 2849.93, 1123.69, 2847.37);
-    path_70.cubicTo(1145.89, 2807.47, 1176.41, 2770.37, 1192.85, 2727.45);
-    path_70.cubicTo(1193.12, 2726.74, 1193.67, 2726.18, 1194.36, 2725.87);
-    path_70.cubicTo(1195.06, 2725.56, 1195.84, 2725.55, 1196.55, 2725.82);
+    path_70.moveTo(size.width * 0.3592165, size.height * 0.8810019);
+    path_70.cubicTo(
+        size.width * 0.3593786,
+        size.height * 0.8810698,
+        size.width * 0.3595167,
+        size.height * 0.8811926,
+        size.width * 0.3596157,
+        size.height * 0.8813478);
+    path_70.cubicTo(
+        size.width * 0.3597118,
+        size.height * 0.8815029,
+        size.width * 0.3597628,
+        size.height * 0.8816871,
+        size.width * 0.3597628,
+        size.height * 0.8818746);
+    path_70.cubicTo(
+        size.width * 0.3597208,
+        size.height * 0.8858597,
+        size.width * 0.3587781,
+        size.height * 0.8897641,
+        size.width * 0.3575413,
+        size.height * 0.8934680);
+    path_70.cubicTo(
+        size.width * 0.3568988,
+        size.height * 0.8953070,
+        size.width * 0.3561693,
+        size.height * 0.8971105,
+        size.width * 0.3553588,
+        size.height * 0.8988688);
+    path_70.cubicTo(
+        size.width * 0.3529571,
+        size.height * 0.9041112,
+        size.width * 0.3499610,
+        size.height * 0.9090142,
+        size.width * 0.3464395,
+        size.height * 0.9134648);
+    path_70.cubicTo(
+        size.width * 0.3440739,
+        size.height * 0.9163736,
+        size.width * 0.3415731,
+        size.height * 0.9191726,
+        size.width * 0.3386040,
+        size.height * 0.9215094);
+    path_70.cubicTo(
+        size.width * 0.3378835,
+        size.height * 0.9221105,
+        size.width * 0.3368598,
+        size.height * 0.9211151,
+        size.width * 0.3373431,
+        size.height * 0.9202877);
+    path_70.cubicTo(
+        size.width * 0.3440078,
+        size.height * 0.9073917,
+        size.width * 0.3531702,
+        size.height * 0.8954008,
+        size.width * 0.3581057,
+        size.height * 0.8815288);
+    path_70.cubicTo(
+        size.width * 0.3581867,
+        size.height * 0.8812993,
+        size.width * 0.3583518,
+        size.height * 0.8811183,
+        size.width * 0.3585590,
+        size.height * 0.8810181);
+    path_70.cubicTo(
+        size.width * 0.3587691,
+        size.height * 0.8809179,
+        size.width * 0.3590033,
+        size.height * 0.8809147,
+        size.width * 0.3592165,
+        size.height * 0.8810019);
     path_70.close();
 
     Paint paint_70_fill = Paint()..style = PaintingStyle.fill;
@@ -3694,14 +19230,56 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_70, paint_70_fill);
 
     Path path_71 = Path();
-    path_71.moveTo(1024.4, 1535.27);
-    path_71.cubicTo(1036.76, 1536.89, 1036.62, 1554.92, 1024.4, 1556.46);
-    path_71.cubicTo(1017.19, 1557.21, 1010.06, 1555.46, 1003.19, 1553.23);
-    path_71.cubicTo(1000.83, 1552.53, 998.47, 1551.09, 996.11, 1546.75);
-    path_71.cubicTo(995.967, 1546.48, 995.893, 1546.18, 995.893, 1545.87);
-    path_71.cubicTo(995.893, 1545.56, 995.967, 1545.26, 996.11, 1544.99);
-    path_71.cubicTo(998.47, 1540.65, 1000.83, 1539.21, 1003.19, 1538.51);
-    path_71.cubicTo(1010.06, 1536.33, 1017.19, 1534.53, 1024.4, 1535.27);
+    path_71.moveTo(size.width * 0.3075353, size.height * 0.4962088);
+    path_71.cubicTo(
+        size.width * 0.3112459,
+        size.height * 0.4967324,
+        size.width * 0.3112038,
+        size.height * 0.5025598,
+        size.width * 0.3075353,
+        size.height * 0.5030575);
+    path_71.cubicTo(
+        size.width * 0.3053708,
+        size.height * 0.5032999,
+        size.width * 0.3032303,
+        size.height * 0.5027343,
+        size.width * 0.3011678,
+        size.height * 0.5020136);
+    path_71.cubicTo(
+        size.width * 0.3004593,
+        size.height * 0.5017873,
+        size.width * 0.2997508,
+        size.height * 0.5013219,
+        size.width * 0.2990423,
+        size.height * 0.4999192);
+    path_71.cubicTo(
+        size.width * 0.2989994,
+        size.height * 0.4998319,
+        size.width * 0.2989772,
+        size.height * 0.4997350,
+        size.width * 0.2989772,
+        size.height * 0.4996348);
+    path_71.cubicTo(
+        size.width * 0.2989772,
+        size.height * 0.4995346,
+        size.width * 0.2989994,
+        size.height * 0.4994376,
+        size.width * 0.2990423,
+        size.height * 0.4993504);
+    path_71.cubicTo(
+        size.width * 0.2997508,
+        size.height * 0.4979476,
+        size.width * 0.3004593,
+        size.height * 0.4974822,
+        size.width * 0.3011678,
+        size.height * 0.4972560);
+    path_71.cubicTo(
+        size.width * 0.3032303,
+        size.height * 0.4965514,
+        size.width * 0.3053708,
+        size.height * 0.4959696,
+        size.width * 0.3075353,
+        size.height * 0.4962088);
     path_71.close();
 
     Paint paint_71_fill = Paint()..style = PaintingStyle.fill;
@@ -3709,14 +19287,56 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_71, paint_71_fill);
 
     Path path_72 = Path();
-    path_72.moveTo(952.15, 2628.18);
-    path_72.cubicTo(953.98, 2625.47, 958.55, 2627.85, 957.06, 2630.98);
-    path_72.cubicTo(919.67, 2707.14, 842.58, 2767.9, 759.58, 2785.73);
-    path_72.cubicTo(751.15, 2787.05, 741.58, 2788.54, 733.2, 2789.59);
-    path_72.cubicTo(729.75, 2790.02, 728.73, 2784.83, 732.2, 2784.03);
-    path_72.cubicTo(757.26, 2776.59, 781.34, 2768.11, 804.32, 2756.3);
-    path_72.cubicTo(842.17, 2736.3, 876.32, 2710.22, 906.51, 2679.82);
-    path_72.cubicTo(922.76, 2663.55, 938.002, 2646.31, 952.15, 2628.18);
+    path_72.moveTo(size.width * 0.2858451, size.height * 0.8494441);
+    path_72.cubicTo(
+        size.width * 0.2863945,
+        size.height * 0.8485682,
+        size.width * 0.2877664,
+        size.height * 0.8493374,
+        size.width * 0.2873191,
+        size.height * 0.8503491);
+    path_72.cubicTo(
+        size.width * 0.2760943,
+        size.height * 0.8749644,
+        size.width * 0.2529511,
+        size.height * 0.8946025,
+        size.width * 0.2280336,
+        size.height * 0.9003652);
+    path_72.cubicTo(
+        size.width * 0.2255029,
+        size.height * 0.9007919,
+        size.width * 0.2226298,
+        size.height * 0.9012734,
+        size.width * 0.2201141,
+        size.height * 0.9016128);
+    path_72.cubicTo(
+        size.width * 0.2190784,
+        size.height * 0.9017518,
+        size.width * 0.2187721,
+        size.height * 0.9000743,
+        size.width * 0.2198139,
+        size.height * 0.8998158);
+    path_72.cubicTo(
+        size.width * 0.2273371,
+        size.height * 0.8974111,
+        size.width * 0.2345662,
+        size.height * 0.8946703,
+        size.width * 0.2414650,
+        size.height * 0.8908533);
+    path_72.cubicTo(
+        size.width * 0.2528280,
+        size.height * 0.8843891,
+        size.width * 0.2630802,
+        size.height * 0.8759599,
+        size.width * 0.2721435,
+        size.height * 0.8661345);
+    path_72.cubicTo(
+        size.width * 0.2770219,
+        size.height * 0.8608759,
+        size.width * 0.2815977,
+        size.height * 0.8553038,
+        size.width * 0.2858451,
+        size.height * 0.8494441);
     path_72.close();
 
     Paint paint_72_fill = Paint()..style = PaintingStyle.fill;
@@ -3724,51 +19344,279 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_72, paint_72_fill);
 
     Path path_73 = Path();
-    path_73.moveTo(848.9, 1633.31);
-    path_73.cubicTo(873.97, 1671.07, 872.54, 1716.13, 845.7, 1733.95);
-    path_73.cubicTo(818.86, 1751.77, 776.77, 1735.61, 751.7, 1697.85);
-    path_73.cubicTo(740.84, 1681.5, 735, 1663.78, 734, 1647.5);
-    path_73.cubicTo(729, 1648, 724, 1648.35, 718.87, 1648.5);
-    path_73.cubicTo(715.06, 1648.72, 713.74, 1643.09, 717.25, 1641.63);
-    path_73.cubicTo(729.45, 1636.04, 741.88, 1631.49, 754.31, 1627.12);
-    path_73.cubicTo(776.84, 1618.88, 800.03, 1612.97, 822.17, 1604.22);
-    path_73.lineTo(823.1, 1603.85);
-    path_73.lineTo(823.45, 1603.63);
-    path_73.cubicTo(824.5, 1603.08, 825.15, 1603.63, 825.55, 1601.63);
-    path_73.cubicTo(825.81, 1593.9, 820.25, 1585.95, 816.32, 1578.63);
-    path_73.cubicTo(814.09, 1575.57, 818.01, 1571.45, 821.15, 1573.48);
-    path_73.cubicTo(835.701, 1581.28, 852.03, 1603.62, 836.51, 1617.76);
-    path_73.cubicTo(841.087, 1622.57, 845.233, 1627.77, 848.9, 1633.31);
+    path_73.moveTo(size.width * 0.2548484, size.height * 0.5278959);
+    path_73.cubicTo(
+        size.width * 0.2623747,
+        size.height * 0.5401002,
+        size.width * 0.2619454,
+        size.height * 0.5546639,
+        size.width * 0.2538877,
+        size.height * 0.5604234);
+    path_73.cubicTo(
+        size.width * 0.2458301,
+        size.height * 0.5661829,
+        size.width * 0.2331942,
+        size.height * 0.5609599,
+        size.width * 0.2256680,
+        size.height * 0.5487557);
+    path_73.cubicTo(
+        size.width * 0.2224077,
+        size.height * 0.5434712,
+        size.width * 0.2206545,
+        size.height * 0.5377440,
+        size.width * 0.2203542,
+        size.height * 0.5324822);
+    path_73.cubicTo(
+        size.width * 0.2188532,
+        size.height * 0.5326438,
+        size.width * 0.2173521,
+        size.height * 0.5327569,
+        size.width * 0.2158121,
+        size.height * 0.5328054);
+    path_73.cubicTo(
+        size.width * 0.2146683,
+        size.height * 0.5328765,
+        size.width * 0.2142720,
+        size.height * 0.5310569,
+        size.width * 0.2153257,
+        size.height * 0.5305850);
+    path_73.cubicTo(
+        size.width * 0.2189883,
+        size.height * 0.5287783,
+        size.width * 0.2227199,
+        size.height * 0.5273077,
+        size.width * 0.2264515,
+        size.height * 0.5258953);
+    path_73.cubicTo(
+        size.width * 0.2332153,
+        size.height * 0.5232321,
+        size.width * 0.2401771,
+        size.height * 0.5213219,
+        size.width * 0.2468238,
+        size.height * 0.5184939);
+    path_73.lineTo(size.width * 0.2471030, size.height * 0.5183743);
+    path_73.lineTo(size.width * 0.2472080, size.height * 0.5183032);
+    path_73.cubicTo(
+        size.width * 0.2475233,
+        size.height * 0.5181254,
+        size.width * 0.2477184,
+        size.height * 0.5183032,
+        size.width * 0.2478385,
+        size.height * 0.5176568);
+    path_73.cubicTo(
+        size.width * 0.2479165,
+        size.height * 0.5151584,
+        size.width * 0.2462474,
+        size.height * 0.5125889,
+        size.width * 0.2450675,
+        size.height * 0.5102230);
+    path_73.cubicTo(
+        size.width * 0.2443981,
+        size.height * 0.5092340,
+        size.width * 0.2455749,
+        size.height * 0.5079024,
+        size.width * 0.2465176,
+        size.height * 0.5085585);
+    path_73.cubicTo(
+        size.width * 0.2508859,
+        size.height * 0.5110795,
+        size.width * 0.2557881,
+        size.height * 0.5182999,
+        size.width * 0.2511288,
+        size.height * 0.5228701);
+    path_73.cubicTo(
+        size.width * 0.2525029,
+        size.height * 0.5244247,
+        size.width * 0.2537475,
+        size.height * 0.5261054,
+        size.width * 0.2548484,
+        size.height * 0.5278959);
     path_73.close();
-    path_73.moveTo(841.77, 1641.75);
-    path_73.cubicTo(841.77, 1639.61, 841.348, 1637.48, 840.528, 1635.5);
-    path_73.cubicTo(839.708, 1633.52, 838.506, 1631.73, 836.99, 1630.21);
-    path_73.cubicTo(835.475, 1628.69, 833.676, 1627.49, 831.696, 1626.67);
-    path_73.cubicTo(829.716, 1625.85, 827.594, 1625.43, 825.45, 1625.43);
-    path_73.cubicTo(824.805, 1625.43, 824.161, 1625.47, 823.52, 1625.55);
-    path_73.cubicTo(820.787, 1626.78, 818.03, 1627.94, 815.25, 1629.01);
-    path_73.cubicTo(813.096, 1630.73, 811.414, 1632.98, 810.362, 1635.53);
-    path_73.cubicTo(809.31, 1638.08, 808.923, 1640.86, 809.236, 1643.6);
-    path_73.cubicTo(809.549, 1646.34, 810.552, 1648.96, 812.152, 1651.21);
-    path_73.cubicTo(813.752, 1653.46, 815.896, 1655.27, 818.384, 1656.46);
-    path_73.cubicTo(820.871, 1657.66, 823.622, 1658.2, 826.377, 1658.04);
-    path_73.cubicTo(829.133, 1657.89, 831.804, 1657.03, 834.14, 1655.56);
-    path_73.cubicTo(836.476, 1654.09, 838.401, 1652.06, 839.736, 1649.64);
-    path_73.cubicTo(841.07, 1647.22, 841.77, 1644.51, 841.77, 1641.75);
+    path_73.moveTo(size.width * 0.2527079, size.height * 0.5306238);
+    path_73.cubicTo(
+        size.width * 0.2527079,
+        size.height * 0.5299321,
+        size.width * 0.2525812,
+        size.height * 0.5292437,
+        size.width * 0.2523350,
+        size.height * 0.5286037);
+    path_73.cubicTo(
+        size.width * 0.2520889,
+        size.height * 0.5279638,
+        size.width * 0.2517280,
+        size.height * 0.5273853,
+        size.width * 0.2512729,
+        size.height * 0.5268940);
+    path_73.cubicTo(
+        size.width * 0.2508181,
+        size.height * 0.5264027,
+        size.width * 0.2502780,
+        size.height * 0.5260149,
+        size.width * 0.2496836,
+        size.height * 0.5257498);
+    path_73.cubicTo(
+        size.width * 0.2490892,
+        size.height * 0.5254848,
+        size.width * 0.2484521,
+        size.height * 0.5253491,
+        size.width * 0.2478085,
+        size.height * 0.5253491);
+    path_73.cubicTo(
+        size.width * 0.2476148,
+        size.height * 0.5253491,
+        size.width * 0.2474215,
+        size.height * 0.5253620,
+        size.width * 0.2472291,
+        size.height * 0.5253878);
+    path_73.cubicTo(
+        size.width * 0.2464086,
+        size.height * 0.5257854,
+        size.width * 0.2455809,
+        size.height * 0.5261603,
+        size.width * 0.2447463,
+        size.height * 0.5265061);
+    path_73.cubicTo(
+        size.width * 0.2440997,
+        size.height * 0.5270621,
+        size.width * 0.2435947,
+        size.height * 0.5277893,
+        size.width * 0.2432789,
+        size.height * 0.5286134);
+    path_73.cubicTo(
+        size.width * 0.2429631,
+        size.height * 0.5294376,
+        size.width * 0.2428469,
+        size.height * 0.5303361,
+        size.width * 0.2429409,
+        size.height * 0.5312217);
+    path_73.cubicTo(
+        size.width * 0.2430348,
+        size.height * 0.5321073,
+        size.width * 0.2433359,
+        size.height * 0.5329541,
+        size.width * 0.2438163,
+        size.height * 0.5336813);
+    path_73.cubicTo(
+        size.width * 0.2442966,
+        size.height * 0.5344085,
+        size.width * 0.2449403,
+        size.height * 0.5349935,
+        size.width * 0.2456872,
+        size.height * 0.5353782);
+    path_73.cubicTo(
+        size.width * 0.2464338,
+        size.height * 0.5357660,
+        size.width * 0.2472597,
+        size.height * 0.5359405,
+        size.width * 0.2480868,
+        size.height * 0.5358888);
+    path_73.cubicTo(
+        size.width * 0.2489141,
+        size.height * 0.5358403,
+        size.width * 0.2497160,
+        size.height * 0.5355624,
+        size.width * 0.2504173,
+        size.height * 0.5350873);
+    path_73.cubicTo(
+        size.width * 0.2511186,
+        size.height * 0.5346122,
+        size.width * 0.2516965,
+        size.height * 0.5339560,
+        size.width * 0.2520973,
+        size.height * 0.5331739);
+    path_73.cubicTo(
+        size.width * 0.2524977,
+        size.height * 0.5323917,
+        size.width * 0.2527079,
+        size.height * 0.5315158,
+        size.width * 0.2527079,
+        size.height * 0.5306238);
     path_73.close();
-    path_73.moveTo(822.68, 1695.33);
-    path_73.cubicTo(822.68, 1693.78, 822.222, 1692.27, 821.364, 1690.99);
-    path_73.cubicTo(820.505, 1689.71, 819.285, 1688.7, 817.857, 1688.11);
-    path_73.cubicTo(816.429, 1687.52, 814.858, 1687.37, 813.343, 1687.67);
-    path_73.cubicTo(811.828, 1687.97, 810.436, 1688.72, 809.344, 1689.81);
-    path_73.cubicTo(808.253, 1690.9, 807.51, 1692.3, 807.209, 1693.81);
-    path_73.cubicTo(806.909, 1695.33, 807.065, 1696.9, 807.658, 1698.33);
-    path_73.cubicTo(808.25, 1699.75, 809.253, 1700.97, 810.539, 1701.83);
-    path_73.cubicTo(811.824, 1702.69, 813.335, 1703.14, 814.88, 1703.14);
-    path_73.cubicTo(815.906, 1703.14, 816.921, 1702.94, 817.868, 1702.55);
-    path_73.cubicTo(818.815, 1702.15, 819.675, 1701.58, 820.399, 1700.85);
-    path_73.cubicTo(821.124, 1700.13, 821.698, 1699.27, 822.09, 1698.32);
-    path_73.cubicTo(822.481, 1697.37, 822.682, 1696.35, 822.68, 1695.33);
+    path_73.moveTo(size.width * 0.2469769, size.height * 0.5479412);
+    path_73.cubicTo(
+        size.width * 0.2469769,
+        size.height * 0.5474402,
+        size.width * 0.2468394,
+        size.height * 0.5469522,
+        size.width * 0.2465818,
+        size.height * 0.5465385);
+    path_73.cubicTo(
+        size.width * 0.2463239,
+        size.height * 0.5461248,
+        size.width * 0.2459577,
+        size.height * 0.5457983,
+        size.width * 0.2455290,
+        size.height * 0.5456076);
+    path_73.cubicTo(
+        size.width * 0.2451003,
+        size.height * 0.5454169,
+        size.width * 0.2446286,
+        size.height * 0.5453685,
+        size.width * 0.2441738,
+        size.height * 0.5454654);
+    path_73.cubicTo(
+        size.width * 0.2437190,
+        size.height * 0.5455624,
+        size.width * 0.2433011,
+        size.height * 0.5458048,
+        size.width * 0.2429733,
+        size.height * 0.5461571);
+    path_73.cubicTo(
+        size.width * 0.2426458,
+        size.height * 0.5465094,
+        size.width * 0.2424227,
+        size.height * 0.5469619,
+        size.width * 0.2423323,
+        size.height * 0.5474499);
+    path_73.cubicTo(
+        size.width * 0.2422423,
+        size.height * 0.5479412,
+        size.width * 0.2422891,
+        size.height * 0.5484486,
+        size.width * 0.2424671,
+        size.height * 0.5489108);
+    path_73.cubicTo(
+        size.width * 0.2426449,
+        size.height * 0.5493697,
+        size.width * 0.2429460,
+        size.height * 0.5497641,
+        size.width * 0.2433320,
+        size.height * 0.5500420);
+    path_73.cubicTo(
+        size.width * 0.2437178,
+        size.height * 0.5503200,
+        size.width * 0.2441714,
+        size.height * 0.5504654,
+        size.width * 0.2446352,
+        size.height * 0.5504654);
+    path_73.cubicTo(
+        size.width * 0.2449433,
+        size.height * 0.5504654,
+        size.width * 0.2452480,
+        size.height * 0.5504008,
+        size.width * 0.2455323,
+        size.height * 0.5502747);
+    path_73.cubicTo(
+        size.width * 0.2458166,
+        size.height * 0.5501454,
+        size.width * 0.2460748,
+        size.height * 0.5499612,
+        size.width * 0.2462921,
+        size.height * 0.5497253);
+    path_73.cubicTo(
+        size.width * 0.2465098,
+        size.height * 0.5494926,
+        size.width * 0.2466821,
+        size.height * 0.5492146,
+        size.width * 0.2467998,
+        size.height * 0.5489076);
+    path_73.cubicTo(
+        size.width * 0.2469171,
+        size.height * 0.5486005,
+        size.width * 0.2469775,
+        size.height * 0.5482708,
+        size.width * 0.2469769,
+        size.height * 0.5479412);
     path_73.close();
 
     Paint paint_73_fill = Paint()..style = PaintingStyle.fill;
@@ -3776,23 +19624,119 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_73, paint_73_fill);
 
     Path path_74 = Path();
-    path_74.moveTo(760.13, 2072.17);
-    path_74.cubicTo(762.06, 2090.72, 756.6, 2112.04, 739.33, 2121.86);
-    path_74.cubicTo(721.18, 2132.33, 698.55, 2128.6, 680.78, 2120.02);
-    path_74.cubicTo(655.68, 2109.2, 657.6, 2077.76, 667.63, 2057.4);
-    path_74.cubicTo(671.087, 2049.62, 675.544, 2042.32, 680.89, 2035.69);
-    path_74.cubicTo(681.423, 2035.04, 682.165, 2034.6, 682.988, 2034.44);
-    path_74.cubicTo(683.811, 2034.29, 684.663, 2034.42, 685.397, 2034.83);
-    path_74.cubicTo(686.13, 2035.23, 686.699, 2035.88, 687.005, 2036.66);
-    path_74.cubicTo(687.311, 2037.44, 687.334, 2038.3, 687.07, 2039.1);
-    path_74.cubicTo(682.99, 2056.49, 671.2, 2089.87, 687.89, 2099.99);
-    path_74.cubicTo(713.3, 2112.59, 740.34, 2112.67, 747.83, 2080.24);
-    path_74.cubicTo(749.01, 2074.99, 750.41, 2065.65, 750.99, 2060.24);
-    path_74.cubicTo(751.066, 2059.4, 751.436, 2058.62, 752.035, 2058.03);
-    path_74.cubicTo(752.634, 2057.44, 753.423, 2057.08, 754.262, 2057.01);
-    path_74.cubicTo(755.101, 2056.95, 755.936, 2057.18, 756.618, 2057.67);
-    path_74.cubicTo(757.301, 2058.17, 757.787, 2058.88, 757.99, 2059.7);
-    path_74.cubicTo(758.83, 2063.76, 759.67, 2067.92, 760.13, 2072.17);
+    path_74.moveTo(size.width * 0.2281987, size.height * 0.6697382);
+    path_74.cubicTo(
+        size.width * 0.2287781,
+        size.height * 0.6757337,
+        size.width * 0.2271390,
+        size.height * 0.6826244,
+        size.width * 0.2219544,
+        size.height * 0.6857983);
+    path_74.cubicTo(
+        size.width * 0.2165056,
+        size.height * 0.6891823,
+        size.width * 0.2097118,
+        size.height * 0.6879767,
+        size.width * 0.2043771,
+        size.height * 0.6852036);
+    path_74.cubicTo(
+        size.width * 0.1968418,
+        size.height * 0.6817065,
+        size.width * 0.1974182,
+        size.height * 0.6715449,
+        size.width * 0.2004293,
+        size.height * 0.6649644);
+    path_74.cubicTo(
+        size.width * 0.2014671,
+        size.height * 0.6624499,
+        size.width * 0.2028052,
+        size.height * 0.6600905,
+        size.width * 0.2044101,
+        size.height * 0.6579476);
+    path_74.cubicTo(
+        size.width * 0.2045701,
+        size.height * 0.6577376,
+        size.width * 0.2047929,
+        size.height * 0.6575953,
+        size.width * 0.2050399,
+        size.height * 0.6575436);
+    path_74.cubicTo(
+        size.width * 0.2052870,
+        size.height * 0.6574952,
+        size.width * 0.2055428,
+        size.height * 0.6575372,
+        size.width * 0.2057631,
+        size.height * 0.6576697);
+    path_74.cubicTo(
+        size.width * 0.2059832,
+        size.height * 0.6577990,
+        size.width * 0.2061540,
+        size.height * 0.6580090,
+        size.width * 0.2062459,
+        size.height * 0.6582612);
+    path_74.cubicTo(
+        size.width * 0.2063377,
+        size.height * 0.6585133,
+        size.width * 0.2063446,
+        size.height * 0.6587912,
+        size.width * 0.2062654,
+        size.height * 0.6590498);
+    path_74.cubicTo(
+        size.width * 0.2050405,
+        size.height * 0.6646703,
+        size.width * 0.2015011,
+        size.height * 0.6754590,
+        size.width * 0.2065116,
+        size.height * 0.6787298);
+    path_74.cubicTo(
+        size.width * 0.2141399,
+        size.height * 0.6828022,
+        size.width * 0.2222576,
+        size.height * 0.6828281,
+        size.width * 0.2245062,
+        size.height * 0.6723465);
+    path_74.cubicTo(
+        size.width * 0.2248604,
+        size.height * 0.6706496,
+        size.width * 0.2252807,
+        size.height * 0.6676309,
+        size.width * 0.2254548,
+        size.height * 0.6658824);
+    path_74.cubicTo(
+        size.width * 0.2254776,
+        size.height * 0.6656109,
+        size.width * 0.2255887,
+        size.height * 0.6653588,
+        size.width * 0.2257685,
+        size.height * 0.6651681);
+    path_74.cubicTo(
+        size.width * 0.2259484,
+        size.height * 0.6649774,
+        size.width * 0.2261852,
+        size.height * 0.6648610,
+        size.width * 0.2264371,
+        size.height * 0.6648384);
+    path_74.cubicTo(
+        size.width * 0.2266890,
+        size.height * 0.6648190,
+        size.width * 0.2269397,
+        size.height * 0.6648933,
+        size.width * 0.2271444,
+        size.height * 0.6650517);
+    path_74.cubicTo(
+        size.width * 0.2273494,
+        size.height * 0.6652133,
+        size.width * 0.2274953,
+        size.height * 0.6654428,
+        size.width * 0.2275563,
+        size.height * 0.6657078);
+    path_74.cubicTo(
+        size.width * 0.2278085,
+        size.height * 0.6670200,
+        size.width * 0.2280606,
+        size.height * 0.6683646,
+        size.width * 0.2281987,
+        size.height * 0.6697382);
     path_74.close();
 
     Paint paint_74_fill = Paint()..style = PaintingStyle.fill;
@@ -3800,19 +19744,91 @@ class RPSCustomPainter extends CustomPainter {
     canvas.drawPath(path_74, paint_74_fill);
 
     Path path_75 = Path();
-    path_75.moveTo(643.341, 2021.84);
-    path_75.cubicTo(644.701, 2017.93, 650.781, 2019.43, 650.191, 2023.51);
-    path_75.cubicTo(643.951, 2085.51, 590.631, 2125.74, 535.741, 2083.65);
-    path_75.cubicTo(493.151, 2048.93, 506.171, 1987.75, 552.371, 1963.41);
-    path_75.cubicTo(557.945, 1960.25, 563.838, 1957.69, 569.951, 1955.77);
-    path_75.cubicTo(570.793, 1955.51, 571.703, 1955.57, 572.503, 1955.94);
-    path_75.cubicTo(573.304, 1956.31, 573.938, 1956.96, 574.281, 1957.78);
-    path_75.cubicTo(574.624, 1958.59, 574.653, 1959.5, 574.36, 1960.33);
-    path_75.cubicTo(574.068, 1961.17, 573.477, 1961.86, 572.701, 1962.28);
-    path_75.cubicTo(553.411, 1975.08, 536.611, 1992.79, 531.551, 2012.89);
-    path_75.cubicTo(526.491, 2032.99, 532.801, 2054.19, 549.181, 2067.59);
-    path_75.cubicTo(576.041, 2090.48, 610.061, 2083.4, 628.301, 2053.43);
-    path_75.cubicTo(634.501, 2043.91, 639.211, 2033.07, 643.341, 2021.84);
+    path_75.moveTo(size.width * 0.1931375, size.height * 0.6534712);
+    path_75.cubicTo(
+        size.width * 0.1935458,
+        size.height * 0.6522075,
+        size.width * 0.1953711,
+        size.height * 0.6526923,
+        size.width * 0.1951939,
+        size.height * 0.6540110);
+    path_75.cubicTo(
+        size.width * 0.1933206,
+        size.height * 0.6740498,
+        size.width * 0.1773134,
+        size.height * 0.6870524,
+        size.width * 0.1608349,
+        size.height * 0.6734486);
+    path_75.cubicTo(
+        size.width * 0.1480489,
+        size.height * 0.6622269,
+        size.width * 0.1519577,
+        size.height * 0.6424531,
+        size.width * 0.1658274,
+        size.height * 0.6345863);
+    path_75.cubicTo(
+        size.width * 0.1675008,
+        size.height * 0.6335650,
+        size.width * 0.1692699,
+        size.height * 0.6327376,
+        size.width * 0.1711051,
+        size.height * 0.6321170);
+    path_75.cubicTo(
+        size.width * 0.1713579,
+        size.height * 0.6320330,
+        size.width * 0.1716310,
+        size.height * 0.6320524,
+        size.width * 0.1718712,
+        size.height * 0.6321719);
+    path_75.cubicTo(
+        size.width * 0.1721117,
+        size.height * 0.6322915,
+        size.width * 0.1723020,
+        size.height * 0.6325016,
+        size.width * 0.1724050,
+        size.height * 0.6327666);
+    path_75.cubicTo(
+        size.width * 0.1725080,
+        size.height * 0.6330284,
+        size.width * 0.1725167,
+        size.height * 0.6333226,
+        size.width * 0.1724287,
+        size.height * 0.6335908);
+    path_75.cubicTo(
+        size.width * 0.1723410,
+        size.height * 0.6338623,
+        size.width * 0.1721636,
+        size.height * 0.6340853,
+        size.width * 0.1719307,
+        size.height * 0.6342211);
+    path_75.cubicTo(
+        size.width * 0.1661396,
+        size.height * 0.6383581,
+        size.width * 0.1610961,
+        size.height * 0.6440821,
+        size.width * 0.1595770,
+        size.height * 0.6505785);
+    path_75.cubicTo(
+        size.width * 0.1580579,
+        size.height * 0.6570750,
+        size.width * 0.1599523,
+        size.height * 0.6639270,
+        size.width * 0.1648697,
+        size.height * 0.6682579);
+    path_75.cubicTo(
+        size.width * 0.1729334,
+        size.height * 0.6756561,
+        size.width * 0.1831465,
+        size.height * 0.6733678,
+        size.width * 0.1886223,
+        size.height * 0.6636813);
+    path_75.cubicTo(
+        size.width * 0.1904836,
+        size.height * 0.6606044,
+        size.width * 0.1918976,
+        size.height * 0.6571008,
+        size.width * 0.1931375,
+        size.height * 0.6534712);
     path_75.close();
 
     Paint paint_75_fill = Paint()..style = PaintingStyle.fill;
@@ -3823,5 +19839,10 @@ class RPSCustomPainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
     return true;
+  }
+
+  @override
+  bool? hitTest(Offset position) {
+    return _path?.contains(position) ?? false;
   }
 }

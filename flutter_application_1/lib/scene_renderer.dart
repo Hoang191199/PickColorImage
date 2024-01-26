@@ -1,14 +1,11 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_application_1/svg_data.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:path_drawing/path_drawing.dart';
 
-// import 'package:svg_colorization/providers/svg_data.dart';
-
-/// An [SvgPicture] widget that renders the svg.
 class SceneRenderer extends StatelessWidget {
   SceneRenderer({Key? key}) : super(key: key);
   final svgController = Get.put(SVGDataController());
@@ -31,7 +28,6 @@ class SceneRenderer extends StatelessWidget {
                     RenderBox renderBox =
                         context.findRenderObject() as RenderBox;
                     var local = renderBox.globalToLocal(details.globalPosition);
-                    print(localAb(local));
                     svgController.updateCode(
                         svgController.previousColor.value, "#4B0082");
                     // var localPosition = details.localPosition;
@@ -49,13 +45,5 @@ class SceneRenderer extends StatelessWidget {
         });
       },
     );
-  }
-
-  int localAb(Offset position) {
-    return position.dx.toInt();
-  }
-
-  int calculateIndex(Offset localOffset) {
-    return localOffset.dx.toInt();
   }
 }

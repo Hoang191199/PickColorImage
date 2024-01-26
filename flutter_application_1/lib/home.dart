@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/colorchange.dart';
 import 'package:flutter_application_1/custom_image_2.dart';
+import 'package:flutter_application_1/custom_imgae_3.dart';
+import 'package:flutter_application_1/draw.dart';
 import 'package:flutter_application_1/scene_renderer.dart';
 import 'package:get/get.dart';
 
@@ -12,6 +15,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = 300.0;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -30,11 +34,22 @@ class Home extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             // ColorChangeSVG(),
+            // Expanded(child: Draw()),
+
+            InkWell(
+              highlightColor: Colors.transparent,
+              splashColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              onTap: () {
+                svgController.loadSvgImage();
+              },
+              child: CustomPaint(
+                size: Size(width, (width * 0.9288501951365956).toDouble()),
+                painter: CustomPainterImage2(),
+              ),
+            ),
+
             SceneRenderer(),
-            // CustomPaint(
-            //   size: const Size(300, 300),
-            //   painter: RPSCustomPainter(),
-            // ),
           ],
         ),
       ),

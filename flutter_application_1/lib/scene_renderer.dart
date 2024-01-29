@@ -28,8 +28,8 @@ class SceneRenderer extends StatelessWidget {
                     RenderBox renderBox =
                         context.findRenderObject() as RenderBox;
                     var local = renderBox.globalToLocal(details.globalPosition);
-                    svgController.updateCode(
-                        svgController.previousColor.value, "#4B0082");
+                    // svgController.updateCode(
+                    //     svgController.previousColor.value, "#4B0082");
                     // var localPosition = details.localPosition;
                     // int tappedPathIndex = calculateIndex(localPosition);
                     // svgController.changeColorAtPosition(32, "#22B14C");
@@ -37,8 +37,6 @@ class SceneRenderer extends StatelessWidget {
                   child: Center(
                       child: SvgPicture.string(
                     svgController.code.value,
-                    width: 300,
-                    height: 300,
                   )),
                 )
               : const Center(child: CircularProgressIndicator.adaptive());

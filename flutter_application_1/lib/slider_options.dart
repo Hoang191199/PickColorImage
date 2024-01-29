@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/canvas_controller.dart';
 import 'package:flutter_application_1/circular_button.dart';
 import 'package:flutter_application_1/svg_data.dart';
 import 'package:get/get.dart';
@@ -25,7 +26,7 @@ class SliderOptions extends StatelessWidget {
   };
 
   /// Triggers when tapped on a color.
-  final svgController = Get.put(SVGDataController());
+  final canvasController = Get.put(CanvasSvgController());
 
   SliderOptions({Key? key}) : super(key: key);
 
@@ -40,9 +41,7 @@ class SliderOptions extends StatelessWidget {
           return CircularButton(
             innerColor: HexColor(mapEntry.value),
             onTap: () {
-              svgController.updateCode(
-                  svgController.previousColor.value, mapEntry.value);
-              svgController.updateValue(mapEntry.value);
+              canvasController.pickColor.value = mapEntry.value;
             },
             shadow: [
               BoxShadow(color: HexColor(mapEntry.value)),

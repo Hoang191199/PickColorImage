@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_application_1/country.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:path_drawing/path_drawing.dart';
 import 'package:xml/xml.dart';
@@ -19,7 +20,7 @@ class SVGDataController extends GetxController {
 
   @override
   void onInit() async {
-    svgData.value = await rootBundle.loadString("assets/image_3.svg");
+    // svgData.value = await rootBundle.loadString("assets/image_3.svg");
     code.value = svgData.value;
     previousColor.value = 'white';
     loadSvgImage();
@@ -50,7 +51,7 @@ class SVGDataController extends GetxController {
           '#', ''); // remove the hash symbol if present
       data.assign(Country(path: partPath, color: colorString));
       if (path.contains(clickPostion.value)) {
-        changeColorAtPosition(i, '#333333');
+        changeColorAtPosition(i, '#4B0082');
         print({'xxxx222123123312', clickPostion.value, i});
       }
     }
